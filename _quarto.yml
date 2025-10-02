@@ -5,7 +5,10 @@ project:
 book:
   title: "Foundations of Genomics and Proteomics"
   subtitle: "Life's Source Code – From DNA to Data"
-  author: "Foundations Team"
+  author:
+    name: "Pawan Rama Mali"
+    email: "prm@outlook.in"
+    orcid: "0000-0001-7864-5819"
   date: today
 
   chapters:
