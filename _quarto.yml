@@ -61,7 +61,3 @@ format:
     code-fold: false
     link-external-icon: true
     link-external-newwindow: true
-  pdf:
-    documentclass: scrbook
-    toc: true
-    number-sections: true

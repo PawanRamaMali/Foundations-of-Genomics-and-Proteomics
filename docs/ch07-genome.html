@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>7&nbsp; What is a Genome? – Foundations of Genomics and Proteomics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ch08-prokaryotic-eukaryotic.html" rel="next">
+<link href="./ch06-molecular-era.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch07-genome.html">Part III – Genomes</a></li><li class="breadcrumb-item"><a href="./ch07-genome.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">What is a Genome?</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Foundations of Genomics and Proteomics</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome!</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part I – Foundations of Molecular Biology</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch01-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to the Course</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch02-basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Basics of Molecular Biology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch03-central-dogma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Central Dogma</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part II – Historical Perspectives</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch04-classical-genetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Classical Genetics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch05-dna-discovery.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discovery of DNA as Genetic Material</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch06-molecular-era.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Molecular Era</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part III – Genomes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch07-genome.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">What is a Genome?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch08-prokaryotic-eukaryotic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Prokaryotic vs Eukaryotic Genomes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch09-packaging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Genome Packaging</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch10-c-value-paradox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">The C-Value Paradox</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch11-mitochondria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mitochondrial and Organelle Genomes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part IV – Beyond the Genome</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch12-transcriptomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Transcriptomics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch13-proteomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Proteomics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch14-epigenetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Epigenetics and Epigenomics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part V – Experimental Tools and Applications</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch15-sequencing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Sequencing Technologies</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch16-experimental-methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Experimental Proofs and Methods</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch17-applications.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Applications of Genomics and Proteomics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part VI – Reflection and Future Directions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch18-discussion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Discussion Questions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch19-future-omics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">The Future of Omics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References and Further Reading</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#your-complete-instruction-manual" id="toc-your-complete-instruction-manual" class="nav-link active" data-scroll-target="#your-complete-instruction-manual"><span class="header-section-number">7.1</span> Your Complete Instruction Manual</a>
+  <ul class="collapse">
+  <li><a href="#defining-the-genome" id="toc-defining-the-genome" class="nav-link" data-scroll-target="#defining-the-genome"><span class="header-section-number">7.1.1</span> Defining the Genome</a></li>
+  <li><a href="#genome-size" id="toc-genome-size" class="nav-link" data-scroll-target="#genome-size"><span class="header-section-number">7.1.2</span> Genome Size</a></li>
+  </ul></li>
+  <li><a href="#haploid-vs.-diploid" id="toc-haploid-vs.-diploid" class="nav-link" data-scroll-target="#haploid-vs.-diploid"><span class="header-section-number">7.2</span> Haploid vs.&nbsp;Diploid</a>
+  <ul class="collapse">
+  <li><a href="#understanding-sets-of-chromosomes" id="toc-understanding-sets-of-chromosomes" class="nav-link" data-scroll-target="#understanding-sets-of-chromosomes"><span class="header-section-number">7.2.1</span> Understanding Sets of Chromosomes</a></li>
+  <li><a href="#why-do-we-have-both" id="toc-why-do-we-have-both" class="nav-link" data-scroll-target="#why-do-we-have-both"><span class="header-section-number">7.2.2</span> Why Do We Have Both?</a></li>
+  <li><a href="#backup-copies" id="toc-backup-copies" class="nav-link" data-scroll-target="#backup-copies"><span class="header-section-number">7.2.3</span> Backup Copies</a></li>
+  </ul></li>
+  <li><a href="#coding-and-non-coding-dna" id="toc-coding-and-non-coding-dna" class="nav-link" data-scroll-target="#coding-and-non-coding-dna"><span class="header-section-number">7.3</span> Coding and Non-Coding DNA</a>
+  <ul class="collapse">
+  <li><a href="#not-all-dna-is-the-same" id="toc-not-all-dna-is-the-same" class="nav-link" data-scroll-target="#not-all-dna-is-the-same"><span class="header-section-number">7.3.1</span> Not All DNA Is the Same</a></li>
+  <li><a href="#coding-dna-genes" id="toc-coding-dna-genes" class="nav-link" data-scroll-target="#coding-dna-genes"><span class="header-section-number">7.3.2</span> Coding DNA (Genes)</a></li>
+  <li><a href="#non-coding-dna" id="toc-non-coding-dna" class="nav-link" data-scroll-target="#non-coding-dna"><span class="header-section-number">7.3.3</span> Non-Coding DNA</a></li>
+  </ul></li>
+  <li><a href="#regulatory-elements-the-control-switches" id="toc-regulatory-elements-the-control-switches" class="nav-link" data-scroll-target="#regulatory-elements-the-control-switches"><span class="header-section-number">7.4</span> Regulatory Elements: The Control Switches</a>
+  <ul class="collapse">
+  <li><a href="#turning-genes-on-and-off" id="toc-turning-genes-on-and-off" class="nav-link" data-scroll-target="#turning-genes-on-and-off"><span class="header-section-number">7.4.1</span> Turning Genes On and Off</a></li>
+  <li><a href="#types-of-regulatory-elements" id="toc-types-of-regulatory-elements" class="nav-link" data-scroll-target="#types-of-regulatory-elements"><span class="header-section-number">7.4.2</span> Types of Regulatory Elements</a></li>
+  <li><a href="#why-regulation-matters" id="toc-why-regulation-matters" class="nav-link" data-scroll-target="#why-regulation-matters"><span class="header-section-number">7.4.3</span> Why Regulation Matters</a></li>
+  </ul></li>
+  <li><a href="#junk-dna-vs.-functional-non-coding-dna" id="toc-junk-dna-vs.-functional-non-coding-dna" class="nav-link" data-scroll-target="#junk-dna-vs.-functional-non-coding-dna"><span class="header-section-number">7.5</span> “Junk DNA” vs.&nbsp;Functional Non-Coding DNA</a>
+  <ul class="collapse">
+  <li><a href="#the-junk-dna-story" id="toc-the-junk-dna-story" class="nav-link" data-scroll-target="#the-junk-dna-story"><span class="header-section-number">7.5.1</span> The Junk DNA Story</a></li>
+  <li><a href="#not-junk-after-all" id="toc-not-junk-after-all" class="nav-link" data-scroll-target="#not-junk-after-all"><span class="header-section-number">7.5.2</span> Not Junk After All!</a></li>
+  <li><a href="#the-onion-test" id="toc-the-onion-test" class="nav-link" data-scroll-target="#the-onion-test"><span class="header-section-number">7.5.3</span> The Onion Test</a></li>
+  <li><a href="#how-we-know-its-functional" id="toc-how-we-know-its-functional" class="nav-link" data-scroll-target="#how-we-know-its-functional"><span class="header-section-number">7.5.4</span> How We Know It’s Functional</a></li>
+  </ul></li>
+  <li><a href="#the-genomes-organization" id="toc-the-genomes-organization" class="nav-link" data-scroll-target="#the-genomes-organization"><span class="header-section-number">7.6</span> The Genome’s Organization</a>
+  <ul class="collapse">
+  <li><a href="#its-not-random" id="toc-its-not-random" class="nav-link" data-scroll-target="#its-not-random"><span class="header-section-number">7.6.1</span> It’s Not Random!</a></li>
+  </ul></li>
+  <li><a href="#comparing-genomes" id="toc-comparing-genomes" class="nav-link" data-scroll-target="#comparing-genomes"><span class="header-section-number">7.7</span> Comparing Genomes</a>
+  <ul class="collapse">
+  <li><a href="#what-we-learn-from-comparisons" id="toc-what-we-learn-from-comparisons" class="nav-link" data-scroll-target="#what-we-learn-from-comparisons"><span class="header-section-number">7.7.1</span> What We Learn from Comparisons</a></li>
+  <li><a href="#the-universal-genome-features" id="toc-the-universal-genome-features" class="nav-link" data-scroll-target="#the-universal-genome-features"><span class="header-section-number">7.7.2</span> The Universal Genome Features</a></li>
+  </ul></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">7.8</span> Key Takeaways</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch07-genome.html">Part III – Genomes</a></li><li class="breadcrumb-item"><a href="./ch07-genome.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">What is a Genome?</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">What is a Genome?</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="your-complete-instruction-manual" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="your-complete-instruction-manual"><span class="header-section-number">7.1</span> Your Complete Instruction Manual</h2>
+<section id="defining-the-genome" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="defining-the-genome"><span class="header-section-number">7.1.1</span> Defining the Genome</h3>
+<p>A <strong>genome</strong> is the complete set of genetic instructions for building and running a living organism. It’s like having the ENTIRE library of instruction manuals for your body!</p>
+<p>Think of it like: - 📚 A complete encyclopedia (all volumes together) - 🗺️ A complete set of maps for a whole country - 💿 The master copy of all the software that runs your body</p>
+<p><strong>Your genome includes</strong>: - All of your DNA - All of your genes - All of your chromosomes - Everything needed to make YOU!</p>
+</section>
+<section id="genome-size" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="genome-size"><span class="header-section-number">7.1.2</span> Genome Size</h3>
+<p>Different organisms have genomes of different sizes:</p>
+<p><strong>Measured in “base pairs”</strong> (the rungs on the DNA ladder): - <strong>Humans</strong>: ~3.2 billion base pairs - <strong>Mouse</strong>: ~2.5 billion base pairs - <strong>Fruit fly</strong>: ~140 million base pairs - <strong>E. coli (bacteria)</strong>: ~4.6 million base pairs - <strong>Virus</strong>: As small as 5,000 base pairs</p>
+<p>Bigger organisms don’t always have bigger genomes! (We’ll learn why in the C-value paradox chapter)</p>
+</section>
+</section>
+<section id="haploid-vs.-diploid" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="haploid-vs.-diploid"><span class="header-section-number">7.2</span> Haploid vs.&nbsp;Diploid</h2>
+<section id="understanding-sets-of-chromosomes" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="understanding-sets-of-chromosomes"><span class="header-section-number">7.2.1</span> Understanding Sets of Chromosomes</h3>
+<p>Remember that humans have 46 chromosomes? Well, there’s more to the story!</p>
+<p><strong>Diploid</strong> (2 sets): - Having TWO complete sets of chromosomes - One set from mom, one set from dad - Most of your cells are diploid - Humans have 46 chromosomes (23 pairs) - Symbol: <strong>2n</strong> (where n = 23 for humans)</p>
+<p><strong>Haploid</strong> (1 set): - Having only ONE complete set of chromosomes - Your egg and sperm cells are haploid - Humans have 23 chromosomes (no pairs) - Symbol: <strong>n</strong> (where n = 23 for humans)</p>
+</section>
+<section id="why-do-we-have-both" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="why-do-we-have-both"><span class="header-section-number">7.2.2</span> Why Do We Have Both?</h3>
+<p>Think of it like a card game: - Your <strong>body cells</strong> need two complete decks (diploid) to work properly - Your <strong>egg or sperm cells</strong> have only one deck (haploid) - When egg and sperm combine, the baby gets two decks again!</p>
+<p><strong>Mom’s egg (23)</strong> + <strong>Dad’s sperm (23)</strong> = <strong>Baby (46 chromosomes)</strong></p>
+<p>This is why you get traits from both parents!</p>
+</section>
+<section id="backup-copies" class="level3" data-number="7.2.3">
+<h3 data-number="7.2.3" class="anchored" data-anchor-id="backup-copies"><span class="header-section-number">7.2.3</span> Backup Copies</h3>
+<p>Having two copies of each chromosome is helpful: - If one gene is broken, you usually have a backup copy - It’s like having a spare tire in your car - This is why recessive diseases need two broken copies to show up</p>
+</section>
+</section>
+<section id="coding-and-non-coding-dna" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="coding-and-non-coding-dna"><span class="header-section-number">7.3</span> Coding and Non-Coding DNA</h2>
+<section id="not-all-dna-is-the-same" class="level3" data-number="7.3.1">
+<h3 data-number="7.3.1" class="anchored" data-anchor-id="not-all-dna-is-the-same"><span class="header-section-number">7.3.1</span> Not All DNA Is the Same</h3>
+<p>Here’s a surprise: <strong>Only about 1-2% of your DNA actually codes for proteins!</strong></p>
+<p>So what’s the rest doing?</p>
+</section>
+<section id="coding-dna-genes" class="level3" data-number="7.3.2">
+<h3 data-number="7.3.2" class="anchored" data-anchor-id="coding-dna-genes"><span class="header-section-number">7.3.2</span> Coding DNA (Genes)</h3>
+<p><strong>Coding DNA</strong> = DNA that has instructions for making proteins</p>
+<ul>
+<li>These are your <strong>genes</strong></li>
+<li>About 20,000-25,000 genes in humans</li>
+<li>They’re like the actual recipes in your cookbook</li>
+<li>They tell cells how to make proteins</li>
+</ul>
+<p><strong>Example</strong>: The gene for making insulin (the protein that controls blood sugar)</p>
+</section>
+<section id="non-coding-dna" class="level3" data-number="7.3.3">
+<h3 data-number="7.3.3" class="anchored" data-anchor-id="non-coding-dna"><span class="header-section-number">7.3.3</span> Non-Coding DNA</h3>
+<p><strong>Non-coding DNA</strong> = DNA that doesn’t code for proteins</p>
+<p>But “non-coding” does NOT mean “useless”! This DNA has many important jobs:</p>
+<p><strong>1. Regulatory Regions</strong> (we’ll discuss these next) - Control when and where genes are turned on</p>
+<p><strong>2. Spacers</strong> - DNA between genes - Like margins and spacing in a book</p>
+<p><strong>3. Introns</strong> - Parts of genes that get removed before making proteins - Like deleted scenes in a movie</p>
+<p><strong>4. Repetitive DNA</strong> - Repeated sequences - Some help organize chromosomes - Some are ancient viral DNA</p>
+<p><strong>5. RNA genes</strong> - Code for RNA molecules that do jobs (but don’t make proteins) - Examples: tRNA, rRNA</p>
+<p><strong>6. Structural DNA</strong> - Helps organize and package DNA - Like the table of contents in a book</p>
+</section>
+</section>
+<section id="regulatory-elements-the-control-switches" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="regulatory-elements-the-control-switches"><span class="header-section-number">7.4</span> Regulatory Elements: The Control Switches</h2>
+<section id="turning-genes-on-and-off" class="level3" data-number="7.4.1">
+<h3 data-number="7.4.1" class="anchored" data-anchor-id="turning-genes-on-and-off"><span class="header-section-number">7.4.1</span> Turning Genes On and Off</h3>
+<p>Genes need to be controlled! You wouldn’t want your stomach making proteins that belong in your eyeball!</p>
+<p><strong>Regulatory elements</strong> are like light switches that turn genes on and off.</p>
+</section>
+<section id="types-of-regulatory-elements" class="level3" data-number="7.4.2">
+<h3 data-number="7.4.2" class="anchored" data-anchor-id="types-of-regulatory-elements"><span class="header-section-number">7.4.2</span> Types of Regulatory Elements</h3>
+<p><strong>1. Promoters</strong> 🚦 - Located right before a gene - Signal where to START reading the gene - Like a “Start Here” sign</p>
+<p><strong>How they work</strong>: - Special proteins bind to promoters - This signals: “Start making mRNA from this gene!” - Like pressing a start button</p>
+<p><strong>2. Enhancers</strong> 🔊 - Can be far away from the gene they control - INCREASE gene activity (make more protein) - Like turning up the volume</p>
+<p><strong>How they work</strong>: - Special proteins bind to enhancers - DNA loops around so the enhancer touches the gene - This boosts protein production</p>
+<p><strong>3. Silencers</strong> 🔇 - The opposite of enhancers - DECREASE gene activity (make less protein) - Like turning down the volume or muting</p>
+<p><strong>4. Operators</strong> (mainly in bacteria) - Act like on/off switches - Can completely block gene reading - Part of bacterial gene regulation systems (like the lac operon)</p>
+</section>
+<section id="why-regulation-matters" class="level3" data-number="7.4.3">
+<h3 data-number="7.4.3" class="anchored" data-anchor-id="why-regulation-matters"><span class="header-section-number">7.4.3</span> Why Regulation Matters</h3>
+<p>Think about your different cells: - <strong>Brain cells</strong> need different proteins than <strong>muscle cells</strong> - <strong>Eye cells</strong> need different proteins than <strong>stomach cells</strong> - All these cells have the SAME genes! - But different genes are turned on in different cells</p>
+<p>It’s like having the same cookbook in every room of your house, but only using certain recipes in the kitchen, different ones in the workshop, etc.</p>
+</section>
+</section>
+<section id="junk-dna-vs.-functional-non-coding-dna" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="junk-dna-vs.-functional-non-coding-dna"><span class="header-section-number">7.5</span> “Junk DNA” vs.&nbsp;Functional Non-Coding DNA</h2>
+<section id="the-junk-dna-story" class="level3" data-number="7.5.1">
+<h3 data-number="7.5.1" class="anchored" data-anchor-id="the-junk-dna-story"><span class="header-section-number">7.5.1</span> The Junk DNA Story</h3>
+<p>When scientists first sequenced the human genome, they were shocked: - Only 1-2% codes for proteins - What about the other 98%?</p>
+<p>Some scientists called it <strong>“junk DNA”</strong>—useless leftover DNA from evolution.</p>
+<p><strong>But they were WRONG!</strong></p>
+</section>
+<section id="not-junk-after-all" class="level3" data-number="7.5.2">
+<h3 data-number="7.5.2" class="anchored" data-anchor-id="not-junk-after-all"><span class="header-section-number">7.5.2</span> Not Junk After All!</h3>
+<p>Scientists now know that much of “junk DNA” is actually very important:</p>
+<p><strong>What “Junk DNA” Actually Does</strong>:</p>
+<ol type="1">
+<li><strong>Gene Regulation</strong> 🎛️
+<ul>
+<li>Controls when and where genes are turned on</li>
+<li>Contains enhancers and silencers</li>
+</ul></li>
+<li><strong>Chromosome Structure</strong> 📦
+<ul>
+<li>Helps organize and package DNA</li>
+<li>Contains centromeres (where chromosomes attach during cell division)</li>
+<li>Contains telomeres (protective caps on chromosome ends)</li>
+</ul></li>
+<li><strong>Evolution Playground</strong> 🧬
+<ul>
+<li>Provides raw material for evolution</li>
+<li>New genes can form from “junk DNA”</li>
+<li>Like a spare parts bin for evolution to work with</li>
+</ul></li>
+<li><strong>Produces Functional RNAs</strong> 📝
+<ul>
+<li>Some non-coding DNA makes RNA that does jobs (without making protein)</li>
+<li>Examples: microRNAs that regulate genes</li>
+</ul></li>
+<li><strong>Protection</strong> 🛡️
+<ul>
+<li>Spacing between genes can protect them</li>
+<li>Like bubble wrap protecting fragile items</li>
+</ul></li>
+</ol>
+</section>
+<section id="the-onion-test" class="level3" data-number="7.5.3">
+<h3 data-number="7.5.3" class="anchored" data-anchor-id="the-onion-test"><span class="header-section-number">7.5.3</span> The Onion Test</h3>
+<p>Here’s a funny way to think about it:</p>
+<p><strong>Question</strong>: Does an onion need 5 times more genes than you to be an onion?</p>
+<p><strong>Answer</strong>: No! Onions have bigger genomes than humans, but they’re not more complex!</p>
+<p>This proves that genome size isn’t everything. Much of the “extra” DNA in onions probably IS junk!</p>
+<p>In humans, though, most of our non-coding DNA seems to have functions we’re still discovering.</p>
+</section>
+<section id="how-we-know-its-functional" class="level3" data-number="7.5.4">
+<h3 data-number="7.5.4" class="anchored" data-anchor-id="how-we-know-its-functional"><span class="header-section-number">7.5.4</span> How We Know It’s Functional</h3>
+<p>Scientists discovered non-coding DNA is important because: - It’s <strong>conserved</strong> (stays similar across many species through evolution) - If it were truly junk, evolution would have deleted it - Mutations in non-coding DNA can cause diseases - Non-coding DNA is transcribed into RNA (sign of activity)</p>
+<p>Think of it like: - If a recipe ingredient has been used for 1000 years, it’s probably important! - If people have tried removing it and the dish failed, it’s definitely important!</p>
+</section>
+</section>
+<section id="the-genomes-organization" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="the-genomes-organization"><span class="header-section-number">7.6</span> The Genome’s Organization</h2>
+<section id="its-not-random" class="level3" data-number="7.6.1">
+<h3 data-number="7.6.1" class="anchored" data-anchor-id="its-not-random"><span class="header-section-number">7.6.1</span> It’s Not Random!</h3>
+<p>Your genome isn’t just randomly scattered DNA. It’s organized like a well-planned library:</p>
+<p><strong>1. Chromosomes</strong> = Different books - 23 different chromosomes (in one set) - Each chromosome has different genes</p>
+<p><strong>2. Genes</strong> = Chapters in the books - Each gene is a separate instruction - Genes can be different sizes</p>
+<p><strong>3. Regulatory Regions</strong> = Table of contents and index - Help find and control genes</p>
+<p><strong>4. Non-Coding Regions</strong> = Margins, spacing, footnotes - Organize and support the main content</p>
+</section>
+</section>
+<section id="comparing-genomes" class="level2" data-number="7.7">
+<h2 data-number="7.7" class="anchored" data-anchor-id="comparing-genomes"><span class="header-section-number">7.7</span> Comparing Genomes</h2>
+<section id="what-we-learn-from-comparisons" class="level3" data-number="7.7.1">
+<h3 data-number="7.7.1" class="anchored" data-anchor-id="what-we-learn-from-comparisons"><span class="header-section-number">7.7.1</span> What We Learn from Comparisons</h3>
+<p>Comparing genomes between species tells us amazing things:</p>
+<p><strong>Humans vs.&nbsp;Chimpanzees</strong>: - 96% identical - The 4% difference makes us human! - Shows we share a recent common ancestor</p>
+<p><strong>Humans vs.&nbsp;Mice</strong>: - 90% of genes are similar - Why mice are good for medical research - Many mouse genes can be swapped with human genes!</p>
+<p><strong>Humans vs.&nbsp;Fruit Flies</strong>: - 60% of genes are similar - Even insects share our basic genetic toolkit - Disease genes are often similar</p>
+<p><strong>Humans vs.&nbsp;Bananas</strong>: - 50% of genes are similar - Shows all life on Earth is related - We share basic cellular machinery with plants!</p>
+</section>
+<section id="the-universal-genome-features" class="level3" data-number="7.7.2">
+<h3 data-number="7.7.2" class="anchored" data-anchor-id="the-universal-genome-features"><span class="header-section-number">7.7.2</span> The Universal Genome Features</h3>
+<p>Almost all genomes have: - DNA as genetic material (some viruses use RNA) - Genes that code for proteins - Regulatory elements - A genetic code (with rare exceptions)</p>
+<p>This shows all life on Earth is related—we’re all part of the same family tree!</p>
+</section>
+</section>
+<section id="key-takeaways" class="level2" data-number="7.8">
+<h2 data-number="7.8" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">7.8</span> Key Takeaways</h2>
+<ul>
+<li><strong>Genome</strong> = All of an organism’s DNA, genes, and chromosomes</li>
+<li><strong>Diploid</strong> = Two sets of chromosomes (most body cells); <strong>Haploid</strong> = One set (egg and sperm)</li>
+<li><strong>Coding DNA</strong> (~1-2% in humans) = Genes that code for proteins</li>
+<li><strong>Non-coding DNA</strong> (~98% in humans) = Doesn’t code for proteins but has many important functions</li>
+<li><strong>Regulatory elements</strong> control gene activity:
+<ul>
+<li><strong>Promoters</strong> = Start signals</li>
+<li><strong>Enhancers</strong> = Volume up</li>
+<li><strong>Silencers</strong> = Volume down</li>
+<li><strong>Operators</strong> = On/off switches (bacteria)</li>
+</ul></li>
+<li><strong>“Junk DNA”</strong> is mostly NOT junk—it has important regulatory and structural functions</li>
+<li>Genomes are organized like libraries with books (chromosomes), chapters (genes), and organizational elements</li>
+<li>Comparing genomes shows all life is related</li>
+</ul>
+<hr>
+<p><strong>Sources</strong>: Information adapted from NHGRI Genome Glossary, Nature Education, Khan Academy, and current genomics research on non-coding DNA function.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./ch06-molecular-era.html" class="pagination-link" aria-label="The Molecular Era">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Molecular Era</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ch08-prokaryotic-eukaryotic.html" class="pagination-link" aria-label="Prokaryotic vs Eukaryotic Genomes">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Prokaryotic vs Eukaryotic Genomes</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

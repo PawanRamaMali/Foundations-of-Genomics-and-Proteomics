@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; The Central Dogma – Foundations of Genomics and Proteomics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ch04-classical-genetics.html" rel="next">
+<link href="./ch02-basics.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch01-introduction.html">Part I – Foundations of Molecular Biology</a></li><li class="breadcrumb-item"><a href="./ch03-central-dogma.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Central Dogma</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Foundations of Genomics and Proteomics</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome!</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part I – Foundations of Molecular Biology</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch01-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to the Course</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch02-basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Basics of Molecular Biology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch03-central-dogma.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Central Dogma</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part II – Historical Perspectives</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch04-classical-genetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Classical Genetics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch05-dna-discovery.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discovery of DNA as Genetic Material</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch06-molecular-era.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Molecular Era</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part III – Genomes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch07-genome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">What is a Genome?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch08-prokaryotic-eukaryotic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Prokaryotic vs Eukaryotic Genomes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch09-packaging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Genome Packaging</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch10-c-value-paradox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">The C-Value Paradox</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch11-mitochondria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mitochondrial and Organelle Genomes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part IV – Beyond the Genome</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch12-transcriptomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Transcriptomics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch13-proteomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Proteomics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch14-epigenetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Epigenetics and Epigenomics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part V – Experimental Tools and Applications</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch15-sequencing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Sequencing Technologies</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch16-experimental-methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Experimental Proofs and Methods</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch17-applications.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Applications of Genomics and Proteomics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part VI – Reflection and Future Directions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch18-discussion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Discussion Questions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch19-future-omics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">The Future of Omics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References and Further Reading</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-most-important-rule-in-biology" id="toc-the-most-important-rule-in-biology" class="nav-link active" data-scroll-target="#the-most-important-rule-in-biology"><span class="header-section-number">3.1</span> The Most Important Rule in Biology</a>
+  <ul class="collapse">
+  <li><a href="#what-is-the-central-dogma" id="toc-what-is-the-central-dogma" class="nav-link" data-scroll-target="#what-is-the-central-dogma"><span class="header-section-number">3.1.1</span> What Is the Central Dogma?</a></li>
+  <li><a href="#the-simple-version" id="toc-the-simple-version" class="nav-link" data-scroll-target="#the-simple-version"><span class="header-section-number">3.1.2</span> The Simple Version</a></li>
+  </ul></li>
+  <li><a href="#the-two-main-steps" id="toc-the-two-main-steps" class="nav-link" data-scroll-target="#the-two-main-steps"><span class="header-section-number">3.2</span> The Two Main Steps</a>
+  <ul class="collapse">
+  <li><a href="#step-1-transcription-dna-rna" id="toc-step-1-transcription-dna-rna" class="nav-link" data-scroll-target="#step-1-transcription-dna-rna"><span class="header-section-number">3.2.1</span> Step 1: Transcription (DNA → RNA)</a></li>
+  <li><a href="#step-2-translation-rna-protein" id="toc-step-2-translation-rna-protein" class="nav-link" data-scroll-target="#step-2-translation-rna-protein"><span class="header-section-number">3.2.2</span> Step 2: Translation (RNA → Protein)</a></li>
+  </ul></li>
+  <li><a href="#replication-making-copies-of-dna" id="toc-replication-making-copies-of-dna" class="nav-link" data-scroll-target="#replication-making-copies-of-dna"><span class="header-section-number">3.3</span> Replication: Making Copies of DNA</a>
+  <ul class="collapse">
+  <li><a href="#what-is-replication" id="toc-what-is-replication" class="nav-link" data-scroll-target="#what-is-replication"><span class="header-section-number">3.3.1</span> What Is Replication?</a></li>
+  </ul></li>
+  <li><a href="#exceptions-to-the-rule" id="toc-exceptions-to-the-rule" class="nav-link" data-scroll-target="#exceptions-to-the-rule"><span class="header-section-number">3.4</span> Exceptions to the Rule</a>
+  <ul class="collapse">
+  <li><a href="#exception-1-reverse-transcription" id="toc-exception-1-reverse-transcription" class="nav-link" data-scroll-target="#exception-1-reverse-transcription"><span class="header-section-number">3.4.1</span> Exception 1: Reverse Transcription</a></li>
+  <li><a href="#exception-2-rna-dependent-rna-synthesis" id="toc-exception-2-rna-dependent-rna-synthesis" class="nav-link" data-scroll-target="#exception-2-rna-dependent-rna-synthesis"><span class="header-section-number">3.4.2</span> Exception 2: RNA-Dependent RNA Synthesis</a></li>
+  <li><a href="#exception-3-proteins-directly-affecting-dna" id="toc-exception-3-proteins-directly-affecting-dna" class="nav-link" data-scroll-target="#exception-3-proteins-directly-affecting-dna"><span class="header-section-number">3.4.3</span> Exception 3: Proteins Directly Affecting DNA</a></li>
+  </ul></li>
+  <li><a href="#viral-genomes-special-cases" id="toc-viral-genomes-special-cases" class="nav-link" data-scroll-target="#viral-genomes-special-cases"><span class="header-section-number">3.5</span> Viral Genomes: Special Cases</a>
+  <ul class="collapse">
+  <li><a href="#viruses-are-weird" id="toc-viruses-are-weird" class="nav-link" data-scroll-target="#viruses-are-weird"><span class="header-section-number">3.5.1</span> Viruses Are Weird!</a></li>
+  <li><a href="#why-this-matters" id="toc-why-this-matters" class="nav-link" data-scroll-target="#why-this-matters"><span class="header-section-number">3.5.2</span> Why This Matters:</a></li>
+  </ul></li>
+  <li><a href="#putting-it-all-together" id="toc-putting-it-all-together" class="nav-link" data-scroll-target="#putting-it-all-together"><span class="header-section-number">3.6</span> Putting It All Together</a>
+  <ul class="collapse">
+  <li><a href="#the-normal-path" id="toc-the-normal-path" class="nav-link" data-scroll-target="#the-normal-path"><span class="header-section-number">3.6.1</span> The Normal Path:</a></li>
+  <li><a href="#the-big-picture" id="toc-the-big-picture" class="nav-link" data-scroll-target="#the-big-picture"><span class="header-section-number">3.6.2</span> The Big Picture:</a></li>
+  </ul></li>
+  <li><a href="#why-is-this-important" id="toc-why-is-this-important" class="nav-link" data-scroll-target="#why-is-this-important"><span class="header-section-number">3.7</span> Why Is This Important?</a></li>
+  <li><a href="#fun-facts" id="toc-fun-facts" class="nav-link" data-scroll-target="#fun-facts"><span class="header-section-number">3.8</span> Fun Facts! 🎉</a></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">3.9</span> Key Takeaways</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch01-introduction.html">Part I – Foundations of Molecular Biology</a></li><li class="breadcrumb-item"><a href="./ch03-central-dogma.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Central Dogma</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Central Dogma</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-most-important-rule-in-biology" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="the-most-important-rule-in-biology"><span class="header-section-number">3.1</span> The Most Important Rule in Biology</h2>
+<section id="what-is-the-central-dogma" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="what-is-the-central-dogma"><span class="header-section-number">3.1.1</span> What Is the Central Dogma?</h3>
+<p>The <strong>Central Dogma</strong> is the most important rule about how genetic information flows in living things. It describes the journey from DNA to proteins.</p>
+<p>Don’t worry—“dogma” is just a fancy word for a rule or principle. And “central” means it’s super important!</p>
+</section>
+<section id="the-simple-version" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="the-simple-version"><span class="header-section-number">3.1.2</span> The Simple Version</h3>
+<p>Here’s the central dogma in its simplest form:</p>
+<p><strong>DNA → RNA → Protein</strong></p>
+<p>Or in words: <strong>DNA makes RNA, and RNA makes Protein</strong></p>
+<p>Think of it like a factory assembly line: 1. <strong>DNA</strong> is the blueprint/instruction manual (stored in the office) 2. <strong>RNA</strong> is the work order/copy of instructions (delivered to the factory floor) 3. <strong>Protein</strong> is the finished product (built following the instructions)</p>
+</section>
+</section>
+<section id="the-two-main-steps" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="the-two-main-steps"><span class="header-section-number">3.2</span> The Two Main Steps</h2>
+<p>The central dogma has two main steps with fancy names. Let’s learn what they mean!</p>
+<section id="step-1-transcription-dna-rna" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="step-1-transcription-dna-rna"><span class="header-section-number">3.2.1</span> Step 1: Transcription (DNA → RNA)</h3>
+<p><strong>Transcription</strong> means “copying” or “writing out.”</p>
+<section id="what-happens" class="level4" data-number="3.2.1.1">
+<h4 data-number="3.2.1.1" class="anchored" data-anchor-id="what-happens"><span class="header-section-number">3.2.1.1</span> What Happens:</h4>
+<ul>
+<li>The DNA stays safely in the nucleus (like the original cookbook stays in the library)</li>
+<li>A special enzyme “reads” the DNA</li>
+<li>It makes a copy of the instructions using RNA letters</li>
+<li>This copy is called <strong>mRNA</strong> (messenger RNA)</li>
+</ul>
+</section>
+<section id="think-of-it-like-this" class="level4" data-number="3.2.1.2">
+<h4 data-number="3.2.1.2" class="anchored" data-anchor-id="think-of-it-like-this"><span class="header-section-number">3.2.1.2</span> Think of It Like This:</h4>
+<p>Imagine you have a precious, old cookbook you want to protect: - You wouldn’t take it into the kitchen where it might get dirty - Instead, you’d photocopy the recipe you need - The photocopy goes to the kitchen, not the original book!</p>
+<p>That’s exactly what transcription does—it makes a temporary copy (RNA) of the permanent instructions (DNA).</p>
+</section>
+<section id="the-details" class="level4" data-number="3.2.1.3">
+<h4 data-number="3.2.1.3" class="anchored" data-anchor-id="the-details"><span class="header-section-number">3.2.1.3</span> The Details:</h4>
+<ol type="1">
+<li>DNA unzips (the twisted ladder opens up)</li>
+<li>An enzyme called <strong>RNA polymerase</strong> reads one side of the DNA</li>
+<li>It builds an RNA strand using the DNA as a template</li>
+<li>The RNA uses the same letters as DNA, except U (Uracil) instead of T (Thymine)</li>
+</ol>
+<p><strong>Pairing Rules:</strong> - DNA has <strong>A</strong> → RNA gets <strong>U</strong> - DNA has <strong>T</strong> → RNA gets <strong>A</strong> - DNA has <strong>G</strong> → RNA gets <strong>C</strong> - DNA has <strong>C</strong> → RNA gets <strong>G</strong></p>
+</section>
+</section>
+<section id="step-2-translation-rna-protein" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="step-2-translation-rna-protein"><span class="header-section-number">3.2.2</span> Step 2: Translation (RNA → Protein)</h3>
+<p><strong>Translation</strong> means changing from one language to another.</p>
+<section id="what-happens-1" class="level4" data-number="3.2.2.1">
+<h4 data-number="3.2.2.1" class="anchored" data-anchor-id="what-happens-1"><span class="header-section-number">3.2.2.1</span> What Happens:</h4>
+<ul>
+<li>The mRNA leaves the nucleus and goes to a protein-making factory called a <strong>ribosome</strong></li>
+<li>The ribosome “reads” the RNA code</li>
+<li>It translates the RNA letters into amino acids</li>
+<li>The amino acids link together to make a protein</li>
+</ul>
+</section>
+<section id="think-of-it-like-this-1" class="level4" data-number="3.2.2.2">
+<h4 data-number="3.2.2.2" class="anchored" data-anchor-id="think-of-it-like-this-1"><span class="header-section-number">3.2.2.2</span> Think of It Like This:</h4>
+<p>Imagine you have a recipe written in French, but you speak English: - You need to <strong>translate</strong> the recipe from French to English - Once translated, you can follow the instructions to make the dish</p>
+<p>That’s what translation does—it changes the “language” from RNA code into amino acid sequences!</p>
+</section>
+<section id="the-details-1" class="level4" data-number="3.2.2.3">
+<h4 data-number="3.2.2.3" class="anchored" data-anchor-id="the-details-1"><span class="header-section-number">3.2.2.3</span> The Details:</h4>
+<ol type="1">
+<li>mRNA attaches to a ribosome</li>
+<li>The ribosome reads the mRNA in groups of 3 letters at a time</li>
+<li>Each group of 3 letters is called a <strong>codon</strong></li>
+<li>Each codon tells the ribosome which amino acid to add next</li>
+<li><strong>tRNA</strong> (transfer RNA) brings the correct amino acids</li>
+<li>The amino acids link together like beads on a string to form a protein</li>
+</ol>
+</section>
+<section id="the-genetic-code" class="level4" data-number="3.2.2.4">
+<h4 data-number="3.2.2.4" class="anchored" data-anchor-id="the-genetic-code"><span class="header-section-number">3.2.2.4</span> The Genetic Code:</h4>
+<p>Every 3 letters of RNA code for 1 amino acid. For example: - <strong>AUG</strong> = Start making the protein! (and codes for amino acid Methionine) - <strong>UUU</strong> = Add the amino acid Phenylalanine - <strong>GGG</strong> = Add the amino acid Glycine - <strong>UAA</strong> = Stop! The protein is finished!</p>
+<p>This code is used by almost all living things on Earth—from bacteria to blue whales to you!</p>
+</section>
+</section>
+</section>
+<section id="replication-making-copies-of-dna" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="replication-making-copies-of-dna"><span class="header-section-number">3.3</span> Replication: Making Copies of DNA</h2>
+<p>Before we move on, there’s one more important process: <strong>Replication</strong>.</p>
+<section id="what-is-replication" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="what-is-replication"><span class="header-section-number">3.3.1</span> What Is Replication?</h3>
+<p><strong>Replication</strong> means making a copy of DNA.</p>
+<p>Every time a cell divides (to make new cells), it needs to copy all its DNA so the new cell gets a complete set of instructions.</p>
+<section id="how-it-works" class="level4" data-number="3.3.1.1">
+<h4 data-number="3.3.1.1" class="anchored" data-anchor-id="how-it-works"><span class="header-section-number">3.3.1.1</span> How It Works:</h4>
+<ol type="1">
+<li>The DNA double helix unzips down the middle</li>
+<li>Each side serves as a template</li>
+<li>New DNA letters attach to each side following the pairing rules (A with T, G with C)</li>
+<li>You end up with two identical copies of the original DNA</li>
+</ol>
+<p>Think of it like: - Unzipping a zipper - Each side of the zipper gets new matching teeth - Now you have two complete zippers!</p>
+</section>
+</section>
+</section>
+<section id="exceptions-to-the-rule" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="exceptions-to-the-rule"><span class="header-section-number">3.4</span> Exceptions to the Rule</h2>
+<p>The central dogma works for most living things, most of the time. But biology has some rule-breakers!</p>
+<section id="exception-1-reverse-transcription" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="exception-1-reverse-transcription"><span class="header-section-number">3.4.1</span> Exception 1: Reverse Transcription</h3>
+<p><strong>What Normally Happens</strong>: DNA → RNA → Protein</p>
+<p><strong>What Sometimes Happens</strong>: RNA → DNA</p>
+<p>Some viruses (like HIV) store their genetic information as RNA instead of DNA. When they infect a cell, they can make DNA from their RNA using an enzyme called <strong>reverse transcriptase</strong>.</p>
+<p>It’s like going backward on a one-way street!</p>
+</section>
+<section id="exception-2-rna-dependent-rna-synthesis" class="level3" data-number="3.4.2">
+<h3 data-number="3.4.2" class="anchored" data-anchor-id="exception-2-rna-dependent-rna-synthesis"><span class="header-section-number">3.4.2</span> Exception 2: RNA-Dependent RNA Synthesis</h3>
+<p><strong>What Normally Happens</strong>: DNA → RNA → Protein</p>
+<p><strong>What Sometimes Happens</strong>: RNA → RNA</p>
+<p>Some viruses can make RNA directly from RNA, without using DNA at all!</p>
+</section>
+<section id="exception-3-proteins-directly-affecting-dna" class="level3" data-number="3.4.3">
+<h3 data-number="3.4.3" class="anchored" data-anchor-id="exception-3-proteins-directly-affecting-dna"><span class="header-section-number">3.4.3</span> Exception 3: Proteins Directly Affecting DNA</h3>
+<p>Sometimes proteins can affect which genes are turned on or off, creating a feedback loop. It’s not breaking the central dogma, but it shows that biology is more complex than a simple one-way street!</p>
+</section>
+</section>
+<section id="viral-genomes-special-cases" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="viral-genomes-special-cases"><span class="header-section-number">3.5</span> Viral Genomes: Special Cases</h2>
+<section id="viruses-are-weird" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="viruses-are-weird"><span class="header-section-number">3.5.1</span> Viruses Are Weird!</h3>
+<p>Viruses are not quite alive and not quite dead. They’re in between! And they have strange genomes:</p>
+<p><strong>Types of Viral Genomes:</strong></p>
+<ol type="1">
+<li><strong>DNA Viruses</strong>
+<ul>
+<li>Their genome is DNA (like ours)</li>
+<li>They follow the normal central dogma</li>
+<li>Examples: Chickenpox, herpes</li>
+</ul></li>
+<li><strong>RNA Viruses</strong>
+<ul>
+<li>Their genome is RNA (not DNA!)</li>
+<li>They need to make proteins directly from RNA</li>
+<li>Examples: Flu, common cold, COVID-19</li>
+</ul></li>
+<li><strong>Retroviruses</strong>
+<ul>
+<li>Their genome is RNA</li>
+<li>They convert their RNA into DNA using reverse transcriptase</li>
+<li>Then they follow normal DNA → RNA → Protein</li>
+<li>Example: HIV</li>
+</ul></li>
+</ol>
+</section>
+<section id="why-this-matters" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="why-this-matters"><span class="header-section-number">3.5.2</span> Why This Matters:</h3>
+<p>Understanding how viruses break the rules helps scientists: - Develop better medicines and vaccines - Understand evolution - Learn about the flexibility of life</p>
+</section>
+</section>
+<section id="putting-it-all-together" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="putting-it-all-together"><span class="header-section-number">3.6</span> Putting It All Together</h2>
+<p>Let’s review the complete journey from DNA to protein:</p>
+<section id="the-normal-path" class="level3" data-number="3.6.1">
+<h3 data-number="3.6.1" class="anchored" data-anchor-id="the-normal-path"><span class="header-section-number">3.6.1</span> The Normal Path:</h3>
+<ol type="1">
+<li><strong>Replication</strong> (when cells divide)
+<ul>
+<li>DNA → DNA</li>
+<li>Making copies of the instruction manual</li>
+</ul></li>
+<li><strong>Transcription</strong> (making mRNA)
+<ul>
+<li>DNA → RNA</li>
+<li>Copying instructions from the manual</li>
+</ul></li>
+<li><strong>Translation</strong> (making proteins)
+<ul>
+<li>RNA → Protein</li>
+<li>Building the final product</li>
+</ul></li>
+</ol>
+</section>
+<section id="the-big-picture" class="level3" data-number="3.6.2">
+<h3 data-number="3.6.2" class="anchored" data-anchor-id="the-big-picture"><span class="header-section-number">3.6.2</span> The Big Picture:</h3>
+<p>Think of your cells like a factory: - <strong>DNA</strong> = The master blueprints (kept safe in the office) - <strong>Transcription</strong> = Photocopying specific blueprints - <strong>mRNA</strong> = The photocopied work orders - <strong>Translation</strong> = Following the work orders on the factory floor - <strong>Proteins</strong> = The finished products that do the work - <strong>Replication</strong> = Making exact copies of all the blueprints (for new factories)</p>
+</section>
+</section>
+<section id="why-is-this-important" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="why-is-this-important"><span class="header-section-number">3.7</span> Why Is This Important?</h2>
+<p>Understanding the central dogma helps us:</p>
+<ol type="1">
+<li><strong>Understand Diseases</strong>
+<ul>
+<li>Many diseases happen when something goes wrong in these processes</li>
+<li>Some medicines work by affecting transcription or translation</li>
+</ul></li>
+<li><strong>Develop New Technologies</strong>
+<ul>
+<li>Scientists can now “edit” DNA (like spell-check for genes!)</li>
+<li>We can make bacteria produce human proteins (like insulin for diabetes)</li>
+</ul></li>
+<li><strong>Study Evolution</strong>
+<ul>
+<li>All living things use the same basic process</li>
+<li>This shows we’re all connected through deep time</li>
+</ul></li>
+<li><strong>Personalize Medicine</strong>
+<ul>
+<li>Understanding your DNA can help doctors choose the best treatments for you</li>
+</ul></li>
+</ol>
+</section>
+<section id="fun-facts" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="fun-facts"><span class="header-section-number">3.8</span> Fun Facts! 🎉</h2>
+<ul>
+<li>Your cells transcribe genes into RNA constantly—thousands of times per second!</li>
+<li>A typical human cell makes about 10,000 different proteins</li>
+<li>Translation happens incredibly fast—a ribosome can add about 20 amino acids per second</li>
+<li>The genetic code is almost universal—the same codons mean the same amino acids in nearly all living things</li>
+<li>Some proteins are just a few dozen amino acids long, while others have thousands!</li>
+</ul>
+</section>
+<section id="key-takeaways" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">3.9</span> Key Takeaways</h2>
+<ul>
+<li><strong>Central Dogma</strong>: DNA → RNA → Protein (the flow of genetic information)</li>
+<li><strong>Transcription</strong>: Making RNA from DNA (like photocopying a recipe)</li>
+<li><strong>Translation</strong>: Making proteins from RNA (like following the recipe to cook)</li>
+<li><strong>Replication</strong>: Making copies of DNA (when cells divide)</li>
+<li><strong>Genetic Code</strong>: 3 RNA letters = 1 amino acid</li>
+<li><strong>Exceptions exist</strong>: Some viruses use reverse transcription (RNA → DNA)</li>
+<li><strong>Universal process</strong>: Almost all living things use the same basic system</li>
+<li>This understanding helps us develop medicines, study evolution, and understand diseases</li>
+</ul>
+<hr>
+<p><strong>Sources</strong>: Information adapted from Khan Academy (Intro to Gene Expression - Central Dogma), NHGRI Genetics Glossary, Nature Scitable, and Biology LibreTexts (Central Dogma of Molecular Biology).</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./ch02-basics.html" class="pagination-link" aria-label="Basics of Molecular Biology">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Basics of Molecular Biology</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ch04-classical-genetics.html" class="pagination-link" aria-label="Classical Genetics">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Classical Genetics</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

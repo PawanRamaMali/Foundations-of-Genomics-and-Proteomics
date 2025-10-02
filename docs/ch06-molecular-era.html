@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>6&nbsp; The Molecular Era – Foundations of Genomics and Proteomics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ch07-genome.html" rel="next">
+<link href="./ch05-dna-discovery.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch04-classical-genetics.html">Part II – Historical Perspectives</a></li><li class="breadcrumb-item"><a href="./ch06-molecular-era.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Molecular Era</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Foundations of Genomics and Proteomics</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome!</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part I – Foundations of Molecular Biology</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch01-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to the Course</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch02-basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Basics of Molecular Biology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch03-central-dogma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Central Dogma</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part II – Historical Perspectives</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch04-classical-genetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Classical Genetics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch05-dna-discovery.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discovery of DNA as Genetic Material</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch06-molecular-era.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Molecular Era</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part III – Genomes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch07-genome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">What is a Genome?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch08-prokaryotic-eukaryotic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Prokaryotic vs Eukaryotic Genomes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch09-packaging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Genome Packaging</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch10-c-value-paradox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">The C-Value Paradox</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch11-mitochondria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mitochondrial and Organelle Genomes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part IV – Beyond the Genome</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch12-transcriptomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Transcriptomics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch13-proteomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Proteomics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch14-epigenetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Epigenetics and Epigenomics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part V – Experimental Tools and Applications</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch15-sequencing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Sequencing Technologies</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch16-experimental-methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Experimental Proofs and Methods</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch17-applications.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Applications of Genomics and Proteomics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part VI – Reflection and Future Directions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch18-discussion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Discussion Questions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch19-future-omics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">The Future of Omics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References and Further Reading</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#the-dawn-of-a-new-age" id="toc-the-dawn-of-a-new-age" class="nav-link active" data-scroll-target="#the-dawn-of-a-new-age"><span class="header-section-number">6.1</span> The Dawn of a New Age</a>
+  <ul class="collapse">
+  <li><a href="#from-peas-to-molecules" id="toc-from-peas-to-molecules" class="nav-link" data-scroll-target="#from-peas-to-molecules"><span class="header-section-number">6.1.1</span> From Peas to Molecules</a></li>
+  </ul></li>
+  <li><a href="#key-milestones-in-molecular-biology" id="toc-key-milestones-in-molecular-biology" class="nav-link" data-scroll-target="#key-milestones-in-molecular-biology"><span class="header-section-number">6.2</span> Key Milestones in Molecular Biology</a>
+  <ul class="collapse">
+  <li><a href="#the-double-helix" id="toc-the-double-helix" class="nav-link" data-scroll-target="#the-double-helix"><span class="header-section-number">6.2.1</span> 1953: The Double Helix</a></li>
+  <li><a href="#cracking-the-genetic-code" id="toc-cracking-the-genetic-code" class="nav-link" data-scroll-target="#cracking-the-genetic-code"><span class="header-section-number">6.2.2</span> 1961: Cracking the Genetic Code</a></li>
+  <li><a href="#recombinant-dna-technology" id="toc-recombinant-dna-technology" class="nav-link" data-scroll-target="#recombinant-dna-technology"><span class="header-section-number">6.2.3</span> 1973: Recombinant DNA Technology</a></li>
+  <li><a href="#dna-sequencing-methods" id="toc-dna-sequencing-methods" class="nav-link" data-scroll-target="#dna-sequencing-methods"><span class="header-section-number">6.2.4</span> 1977: DNA Sequencing Methods</a></li>
+  <li><a href="#pcr---the-copy-machine" id="toc-pcr---the-copy-machine" class="nav-link" data-scroll-target="#pcr---the-copy-machine"><span class="header-section-number">6.2.5</span> 1983: PCR - The Copy Machine</a></li>
+  <li><a href="#dolly-the-sheep" id="toc-dolly-the-sheep" class="nav-link" data-scroll-target="#dolly-the-sheep"><span class="header-section-number">6.2.6</span> 1996: Dolly the Sheep</a></li>
+  <li><a href="#first-draft-of-human-genome" id="toc-first-draft-of-human-genome" class="nav-link" data-scroll-target="#first-draft-of-human-genome"><span class="header-section-number">6.2.7</span> 2003: First Draft of Human Genome</a></li>
+  </ul></li>
+  <li><a href="#the-human-genome-project-a-historic-achievement" id="toc-the-human-genome-project-a-historic-achievement" class="nav-link" data-scroll-target="#the-human-genome-project-a-historic-achievement"><span class="header-section-number">6.3</span> The Human Genome Project: A Historic Achievement</a>
+  <ul class="collapse">
+  <li><a href="#the-most-ambitious-biology-project-ever" id="toc-the-most-ambitious-biology-project-ever" class="nav-link" data-scroll-target="#the-most-ambitious-biology-project-ever"><span class="header-section-number">6.3.1</span> The Most Ambitious Biology Project Ever</a></li>
+  <li><a href="#the-timeline" id="toc-the-timeline" class="nav-link" data-scroll-target="#the-timeline"><span class="header-section-number">6.3.2</span> The Timeline</a></li>
+  <li><a href="#the-race-public-vs.-private" id="toc-the-race-public-vs.-private" class="nav-link" data-scroll-target="#the-race-public-vs.-private"><span class="header-section-number">6.3.3</span> The Race: Public vs.&nbsp;Private</a></li>
+  <li><a href="#what-did-we-learn" id="toc-what-did-we-learn" class="nav-link" data-scroll-target="#what-did-we-learn"><span class="header-section-number">6.3.4</span> What Did We Learn?</a></li>
+  <li><a href="#the-costs-then-and-now" id="toc-the-costs-then-and-now" class="nav-link" data-scroll-target="#the-costs-then-and-now"><span class="header-section-number">6.3.5</span> The Costs: Then and Now</a></li>
+  <li><a href="#the-impact" id="toc-the-impact" class="nav-link" data-scroll-target="#the-impact"><span class="header-section-number">6.3.6</span> The Impact</a></li>
+  </ul></li>
+  <li><a href="#craig-venter-and-the-synthetic-genome" id="toc-craig-venter-and-the-synthetic-genome" class="nav-link" data-scroll-target="#craig-venter-and-the-synthetic-genome"><span class="header-section-number">6.4</span> Craig Venter and the Synthetic Genome</a>
+  <ul class="collapse">
+  <li><a href="#making-life-from-scratch" id="toc-making-life-from-scratch" class="nav-link" data-scroll-target="#making-life-from-scratch"><span class="header-section-number">6.4.1</span> Making Life from Scratch?</a></li>
+  <li><a href="#the-first-synthetic-genome-2010" id="toc-the-first-synthetic-genome-2010" class="nav-link" data-scroll-target="#the-first-synthetic-genome-2010"><span class="header-section-number">6.4.2</span> The First Synthetic Genome (2010)</a></li>
+  <li><a href="#minimal-genome-project" id="toc-minimal-genome-project" class="nav-link" data-scroll-target="#minimal-genome-project"><span class="header-section-number">6.4.3</span> Minimal Genome Project</a></li>
+  <li><a href="#applications-of-synthetic-biology" id="toc-applications-of-synthetic-biology" class="nav-link" data-scroll-target="#applications-of-synthetic-biology"><span class="header-section-number">6.4.4</span> Applications of Synthetic Biology</a></li>
+  </ul></li>
+  <li><a href="#other-major-milestones" id="toc-other-major-milestones" class="nav-link" data-scroll-target="#other-major-milestones"><span class="header-section-number">6.5</span> Other Major Milestones</a>
+  <ul class="collapse">
+  <li><a href="#crispr-cas9-2012" id="toc-crispr-cas9-2012" class="nav-link" data-scroll-target="#crispr-cas9-2012"><span class="header-section-number">6.5.1</span> CRISPR-Cas9 (2012)</a></li>
+  <li><a href="#single-cell-sequencing-2010s" id="toc-single-cell-sequencing-2010s" class="nav-link" data-scroll-target="#single-cell-sequencing-2010s"><span class="header-section-number">6.5.2</span> Single-Cell Sequencing (2010s)</a></li>
+  <li><a href="#long-read-sequencing-2010s-2020s" id="toc-long-read-sequencing-2010s-2020s" class="nav-link" data-scroll-target="#long-read-sequencing-2010s-2020s"><span class="header-section-number">6.5.3</span> Long-Read Sequencing (2010s-2020s)</a></li>
+  </ul></li>
+  <li><a href="#the-impact-on-society" id="toc-the-impact-on-society" class="nav-link" data-scroll-target="#the-impact-on-society"><span class="header-section-number">6.6</span> The Impact on Society</a>
+  <ul class="collapse">
+  <li><a href="#medicine" id="toc-medicine" class="nav-link" data-scroll-target="#medicine"><span class="header-section-number">6.6.1</span> Medicine</a></li>
+  <li><a href="#agriculture" id="toc-agriculture" class="nav-link" data-scroll-target="#agriculture"><span class="header-section-number">6.6.2</span> Agriculture</a></li>
+  <li><a href="#forensics" id="toc-forensics" class="nav-link" data-scroll-target="#forensics"><span class="header-section-number">6.6.3</span> Forensics</a></li>
+  <li><a href="#ethics-and-society" id="toc-ethics-and-society" class="nav-link" data-scroll-target="#ethics-and-society"><span class="header-section-number">6.6.4</span> Ethics and Society</a></li>
+  </ul></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">6.7</span> Key Takeaways</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch04-classical-genetics.html">Part II – Historical Perspectives</a></li><li class="breadcrumb-item"><a href="./ch06-molecular-era.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Molecular Era</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Molecular Era</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="the-dawn-of-a-new-age" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="the-dawn-of-a-new-age"><span class="header-section-number">6.1</span> The Dawn of a New Age</h2>
+<section id="from-peas-to-molecules" class="level3" data-number="6.1.1">
+<h3 data-number="6.1.1" class="anchored" data-anchor-id="from-peas-to-molecules"><span class="header-section-number">6.1.1</span> From Peas to Molecules</h3>
+<p>In the previous chapters, we learned how scientists discovered that DNA is the genetic material. But knowing that DNA carries information and actually understanding HOW it works are two different things!</p>
+<p>The <strong>Molecular Era</strong> is when scientists started understanding life at the molecular level—looking at the tiny machines and molecules inside cells.</p>
+<p>Think of it like this: - Before: We knew books contained stories (DNA contains information) - Molecular Era: We learned how to read the words and understand the language!</p>
+</section>
+</section>
+<section id="key-milestones-in-molecular-biology" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="key-milestones-in-molecular-biology"><span class="header-section-number">6.2</span> Key Milestones in Molecular Biology</h2>
+<p>Let’s explore the amazing discoveries that changed our understanding of life!</p>
+<section id="the-double-helix" class="level3" data-number="6.2.1">
+<h3 data-number="6.2.1" class="anchored" data-anchor-id="the-double-helix"><span class="header-section-number">6.2.1</span> 1953: The Double Helix</h3>
+<p><strong>Who</strong>: James Watson and Francis Crick (with crucial help from Rosalind Franklin and Maurice Wilkins)</p>
+<p><strong>What They Discovered</strong>: The structure of DNA—the famous “double helix”!</p>
+<p><strong>Why It Matters</strong>: - Finally, we could see what DNA looked like - The structure explained how DNA copies itself - It showed how information could be stored in the sequence of bases - The two strands are complementary (A pairs with T, G pairs with C)</p>
+<p><strong>Fun Fact</strong>: Rosalind Franklin’s X-ray images of DNA (called “Photo 51”) were crucial to discovering the structure, but she didn’t get proper credit until much later.</p>
+</section>
+<section id="cracking-the-genetic-code" class="level3" data-number="6.2.2">
+<h3 data-number="6.2.2" class="anchored" data-anchor-id="cracking-the-genetic-code"><span class="header-section-number">6.2.2</span> 1961: Cracking the Genetic Code</h3>
+<p><strong>Who</strong>: Marshall Nirenberg, Heinrich Matthaei, and others</p>
+<p><strong>What They Discovered</strong>: How DNA’s code translates into proteins (which triplets of letters code for which amino acids)</p>
+<p><strong>Why It Matters</strong>: - We could now “read” DNA like a language - Understanding that 3 DNA letters (a codon) = 1 amino acid - This is the “dictionary” that translates from DNA language to protein language</p>
+</section>
+<section id="recombinant-dna-technology" class="level3" data-number="6.2.3">
+<h3 data-number="6.2.3" class="anchored" data-anchor-id="recombinant-dna-technology"><span class="header-section-number">6.2.3</span> 1973: Recombinant DNA Technology</h3>
+<p><strong>Who</strong>: Stanley Cohen and Herbert Boyer</p>
+<p><strong>What They Discovered</strong>: How to cut and paste DNA from different organisms</p>
+<p><strong>Why It Matters</strong>: - We could move genes from one organism to another - Led to genetic engineering - Made it possible to produce human insulin in bacteria (helping millions of diabetics!)</p>
+<p>Think of it like being able to copy a sentence from one book and paste it into another book!</p>
+</section>
+<section id="dna-sequencing-methods" class="level3" data-number="6.2.4">
+<h3 data-number="6.2.4" class="anchored" data-anchor-id="dna-sequencing-methods"><span class="header-section-number">6.2.4</span> 1977: DNA Sequencing Methods</h3>
+<p><strong>Who</strong>: Frederick Sanger (and independently, Walter Gilbert)</p>
+<p><strong>What They Discovered</strong>: A method to read the sequence of DNA letters</p>
+<p><strong>Why It Matters</strong>: - We could finally read the exact order of A’s, T’s, G’s, and C’s in DNA - This method (called “Sanger sequencing”) was used for decades - It made the Human Genome Project possible</p>
+</section>
+<section id="pcr---the-copy-machine" class="level3" data-number="6.2.5">
+<h3 data-number="6.2.5" class="anchored" data-anchor-id="pcr---the-copy-machine"><span class="header-section-number">6.2.5</span> 1983: PCR - The Copy Machine</h3>
+<p><strong>Who</strong>: Kary Mullis</p>
+<p><strong>What They Discovered</strong>: Polymerase Chain Reaction (PCR)—a way to make millions of copies of DNA</p>
+<p><strong>Why It Matters</strong>: - Could amplify tiny amounts of DNA - Made DNA fingerprinting possible (used in crime investigations!) - Made research much easier and faster - Currently used in COVID-19 tests!</p>
+<p>Think of PCR as a super-fast photocopier for DNA!</p>
+</section>
+<section id="dolly-the-sheep" class="level3" data-number="6.2.6">
+<h3 data-number="6.2.6" class="anchored" data-anchor-id="dolly-the-sheep"><span class="header-section-number">6.2.6</span> 1996: Dolly the Sheep</h3>
+<p><strong>Who</strong>: Ian Wilmut and Keith Campbell</p>
+<p><strong>What They Discovered</strong>: The first cloned mammal from an adult cell</p>
+<p><strong>Why It Matters</strong>: - Proved that adult cells could be “reprogrammed” - Showed that cloning was possible - Raised important ethical questions - Led to stem cell research</p>
+</section>
+<section id="first-draft-of-human-genome" class="level3" data-number="6.2.7">
+<h3 data-number="6.2.7" class="anchored" data-anchor-id="first-draft-of-human-genome"><span class="header-section-number">6.2.7</span> 2003: First Draft of Human Genome</h3>
+<p><strong>Who</strong>: The Human Genome Project consortium (thousands of scientists worldwide)</p>
+<p><strong>What They Discovered</strong>: The complete sequence of human DNA</p>
+<p><strong>Why It Matters</strong>: This deserves its own section!</p>
+</section>
+</section>
+<section id="the-human-genome-project-a-historic-achievement" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="the-human-genome-project-a-historic-achievement"><span class="header-section-number">6.3</span> The Human Genome Project: A Historic Achievement</h2>
+<section id="the-most-ambitious-biology-project-ever" class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="the-most-ambitious-biology-project-ever"><span class="header-section-number">6.3.1</span> The Most Ambitious Biology Project Ever</h3>
+<p>The <strong>Human Genome Project</strong> (HGP) was one of the greatest scientific achievements in history!</p>
+<p><strong>The Goal</strong>: Read all 3 billion letters of human DNA</p>
+<p>Think of it like this: - If you wrote out the human genome in normal-sized letters, it would fill 200 telephone books (each 1,000 pages long!) - Reading one letter per second, it would take 95 years to read the entire genome without sleeping!</p>
+</section>
+<section id="the-timeline" class="level3" data-number="6.3.2">
+<h3 data-number="6.3.2" class="anchored" data-anchor-id="the-timeline"><span class="header-section-number">6.3.2</span> The Timeline</h3>
+<p><strong>1990</strong>: Project officially started - Estimated cost: $3 billion - Estimated time: 15 years - Technology: Slow, expensive Sanger sequencing</p>
+<p><strong>2000</strong>: First rough draft announced - President Bill Clinton and Prime Minister Tony Blair made the announcement - Finished 3 years early thanks to competition and improved technology!</p>
+<p><strong>2003</strong>: Project completed - Final, high-quality sequence published - Coincided with the 50th anniversary of Watson and Crick’s discovery of DNA structure!</p>
+</section>
+<section id="the-race-public-vs.-private" class="level3" data-number="6.3.3">
+<h3 data-number="6.3.3" class="anchored" data-anchor-id="the-race-public-vs.-private"><span class="header-section-number">6.3.3</span> The Race: Public vs.&nbsp;Private</h3>
+<p>An exciting race happened:</p>
+<p><strong>Team 1: The Public Effort</strong> - Led by Francis Collins - International collaboration - Made data freely available to everyone - Funded by governments</p>
+<p><strong>Team 2: The Private Company</strong> - Led by Craig Venter (Celera Genomics) - Wanted to patent genes - Used newer, faster technology - Funded by private investors</p>
+<p>In the end, both announced their draft together in 2000! Science won!</p>
+</section>
+<section id="what-did-we-learn" class="level3" data-number="6.3.4">
+<h3 data-number="6.3.4" class="anchored" data-anchor-id="what-did-we-learn"><span class="header-section-number">6.3.4</span> What Did We Learn?</h3>
+<p><strong>Surprise Findings</strong>:</p>
+<ol type="1">
+<li><strong>Humans have only ~20,000-25,000 genes</strong>
+<ul>
+<li>We expected 100,000 genes!</li>
+<li>A tiny worm has about 20,000 genes too</li>
+<li>We’re not that special (genetically speaking)!</li>
+</ul></li>
+<li><strong>Only ~1.5% of DNA codes for proteins</strong>
+<ul>
+<li>The rest was called “junk DNA” (but we now know it’s not junk!)</li>
+<li>Much of it regulates genes (turns them on and off)</li>
+</ul></li>
+<li><strong>We share 99.9% of our DNA with each other</strong>
+<ul>
+<li>Only 0.1% makes you unique!</li>
+<li>That tiny difference accounts for all human diversity</li>
+</ul></li>
+<li><strong>We share a lot of DNA with other species</strong>
+<ul>
+<li>~96% with chimpanzees</li>
+<li>~90% with mice</li>
+<li>~60% with fruit flies</li>
+<li>~50% with bananas!</li>
+</ul></li>
+</ol>
+</section>
+<section id="the-costs-then-and-now" class="level3" data-number="6.3.5">
+<h3 data-number="6.3.5" class="anchored" data-anchor-id="the-costs-then-and-now"><span class="header-section-number">6.3.5</span> The Costs: Then and Now</h3>
+<p><strong>Human Genome Project (1990-2003)</strong>: - Cost: $3 billion - Time: 13 years - Result: One complete human genome</p>
+<p><strong>Today (2025)</strong>: - Cost: Less than $1,000 - Time: A few days - Result: High-quality personal genome</p>
+<p>That’s a <strong>3 million times</strong> reduction in cost! It’s like going from buying a house to buying a cup of coffee!</p>
+</section>
+<section id="the-impact" class="level3" data-number="6.3.6">
+<h3 data-number="6.3.6" class="anchored" data-anchor-id="the-impact"><span class="header-section-number">6.3.6</span> The Impact</h3>
+<p>The Human Genome Project led to: - <strong>Personalized medicine</strong>: Treatments based on your specific genes - <strong>Disease discovery</strong>: Finding genes linked to diseases - <strong>Ancestry testing</strong>: Companies like 23andMe and Ancestry.com - <strong>Cancer treatment</strong>: Understanding cancer mutations - <strong>Drug development</strong>: Designing better medicines - <strong>Understanding evolution</strong>: How humans evolved and migrated</p>
+</section>
+</section>
+<section id="craig-venter-and-the-synthetic-genome" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="craig-venter-and-the-synthetic-genome"><span class="header-section-number">6.4</span> Craig Venter and the Synthetic Genome</h2>
+<section id="making-life-from-scratch" class="level3" data-number="6.4.1">
+<h3 data-number="6.4.1" class="anchored" data-anchor-id="making-life-from-scratch"><span class="header-section-number">6.4.1</span> Making Life from Scratch?</h3>
+<p><strong>Craig Venter</strong> didn’t stop after the Human Genome Project. He had an even crazier idea: <strong>create artificial life</strong>!</p>
+</section>
+<section id="the-first-synthetic-genome-2010" class="level3" data-number="6.4.2">
+<h3 data-number="6.4.2" class="anchored" data-anchor-id="the-first-synthetic-genome-2010"><span class="header-section-number">6.4.2</span> The First Synthetic Genome (2010)</h3>
+<p><strong>What Venter Did</strong>: 1. Read the complete genome of a simple bacterium 2. Built that genome from scratch using chemicals 3. Inserted the synthetic genome into a cell 4. The cell came to life and started reproducing!</p>
+<p><strong>Why It’s Amazing</strong>: - First self-replicating cell with a completely synthetic genome - Proved we could design and build genomes - Opened the door to designing custom organisms</p>
+<p>Think of it like: - Reading the blueprint for a house - Building a new house from scratch based on that blueprint - The house is fully functional!</p>
+</section>
+<section id="minimal-genome-project" class="level3" data-number="6.4.3">
+<h3 data-number="6.4.3" class="anchored" data-anchor-id="minimal-genome-project"><span class="header-section-number">6.4.3</span> Minimal Genome Project</h3>
+<p>Venter’s team also asked: <strong>What’s the minimum number of genes needed for life?</strong></p>
+<p>They found: About <strong>473 genes</strong> is the minimum for a simple bacterium to survive!</p>
+</section>
+<section id="applications-of-synthetic-biology" class="level3" data-number="6.4.4">
+<h3 data-number="6.4.4" class="anchored" data-anchor-id="applications-of-synthetic-biology"><span class="header-section-number">6.4.4</span> Applications of Synthetic Biology</h3>
+<p>Creating synthetic genomes could lead to: - <strong>Custom bacteria</strong> that produce biofuels (replacing gasoline) - <strong>Medical factories</strong> that produce medicines in bacteria - <strong>Environmental cleanup</strong> organisms that eat pollution - <strong>New materials</strong> made by engineered organisms - <strong>Space exploration</strong> organisms that could produce oxygen on Mars!</p>
+</section>
+</section>
+<section id="other-major-milestones" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="other-major-milestones"><span class="header-section-number">6.5</span> Other Major Milestones</h2>
+<section id="crispr-cas9-2012" class="level3" data-number="6.5.1">
+<h3 data-number="6.5.1" class="anchored" data-anchor-id="crispr-cas9-2012"><span class="header-section-number">6.5.1</span> CRISPR-Cas9 (2012)</h3>
+<p><strong>Who</strong>: Jennifer Doudna and Emmanuelle Charpentier</p>
+<p><strong>What</strong>: A precise “molecular scissors” for editing DNA</p>
+<p><strong>Why It Matters</strong>: - Can cut DNA at exact locations - Like “find and replace” in a word processor, but for genes! - Much easier, cheaper, and more accurate than previous methods - Won the Nobel Prize in 2020</p>
+<p><strong>Applications</strong>: - Treating genetic diseases - Creating disease-resistant crops - Fighting cancer - Potentially curing HIV</p>
+</section>
+<section id="single-cell-sequencing-2010s" class="level3" data-number="6.5.2">
+<h3 data-number="6.5.2" class="anchored" data-anchor-id="single-cell-sequencing-2010s"><span class="header-section-number">6.5.2</span> Single-Cell Sequencing (2010s)</h3>
+<p><strong>What</strong>: Reading the genome of individual cells</p>
+<p><strong>Why It Matters</strong>: - Discovered that cells in the same organ can be very different - Helps understand cancer (which cells are dangerous?) - Reveals how embryos develop - Shows how our immune system works</p>
+</section>
+<section id="long-read-sequencing-2010s-2020s" class="level3" data-number="6.5.3">
+<h3 data-number="6.5.3" class="anchored" data-anchor-id="long-read-sequencing-2010s-2020s"><span class="header-section-number">6.5.3</span> Long-Read Sequencing (2010s-2020s)</h3>
+<p><strong>What</strong>: New technology that reads very long pieces of DNA</p>
+<p><strong>Why It Matters</strong>: - Can read through difficult regions of the genome - Helps complete the “missing” parts of the human genome - Better for finding large mutations - In 2022, the truly complete human genome was finally published!</p>
+</section>
+</section>
+<section id="the-impact-on-society" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="the-impact-on-society"><span class="header-section-number">6.6</span> The Impact on Society</h2>
+<section id="medicine" class="level3" data-number="6.6.1">
+<h3 data-number="6.6.1" class="anchored" data-anchor-id="medicine"><span class="header-section-number">6.6.1</span> Medicine</h3>
+<p><strong>Before Molecular Era</strong>: - Treat symptoms, not causes - One-size-fits-all medicine - Limited understanding of diseases</p>
+<p><strong>After Molecular Era</strong>: - Understand genetic causes of diseases - Personalized medicine based on your genes - Gene therapy to fix broken genes - Designer drugs for specific mutations</p>
+</section>
+<section id="agriculture" class="level3" data-number="6.6.2">
+<h3 data-number="6.6.2" class="anchored" data-anchor-id="agriculture"><span class="header-section-number">6.6.2</span> Agriculture</h3>
+<ul>
+<li>Crops resistant to drought, pests, and diseases</li>
+<li>More nutritious food (like golden rice with vitamin A)</li>
+<li>Faster breeding of better varieties</li>
+<li>Understanding plant biology at the molecular level</li>
+</ul>
+</section>
+<section id="forensics" class="level3" data-number="6.6.3">
+<h3 data-number="6.6.3" class="anchored" data-anchor-id="forensics"><span class="header-section-number">6.6.3</span> Forensics</h3>
+<ul>
+<li>DNA fingerprinting to solve crimes</li>
+<li>Identifying disaster victims</li>
+<li>Paternity testing</li>
+<li>Catching criminals years after crimes</li>
+</ul>
+</section>
+<section id="ethics-and-society" class="level3" data-number="6.6.4">
+<h3 data-number="6.6.4" class="anchored" data-anchor-id="ethics-and-society"><span class="header-section-number">6.6.4</span> Ethics and Society</h3>
+<p>The Molecular Era also raised important questions: - Should we edit human embryos? - Who owns genetic information? - Should we patent genes? - Could genetic information be used to discriminate? - Should we bring back extinct species?</p>
+</section>
+</section>
+<section id="key-takeaways" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">6.7</span> Key Takeaways</h2>
+<ul>
+<li><strong>Molecular Era</strong> = Understanding life at the molecular level</li>
+<li><strong>1953</strong>: Discovery of DNA double helix structure</li>
+<li><strong>1961</strong>: Cracking the genetic code (how DNA codes for proteins)</li>
+<li><strong>1973</strong>: Recombinant DNA technology (cutting and pasting genes)</li>
+<li><strong>1977</strong>: DNA sequencing methods developed</li>
+<li><strong>1983</strong>: PCR invented (copying DNA)</li>
+<li><strong>Human Genome Project (1990-2003)</strong>: Read all human DNA
+<ul>
+<li>Cost: $3 billion over 13 years</li>
+<li>Found ~20,000-25,000 genes</li>
+<li>Today costs &lt;$1,000 and takes days</li>
+</ul></li>
+<li><strong>Craig Venter</strong>: Created first synthetic genome (2010)</li>
+<li><strong>CRISPR (2012)</strong>: Precise gene editing tool</li>
+<li>These discoveries revolutionized medicine, agriculture, forensics, and our understanding of life</li>
+<li>Raised important ethical questions about genetic engineering</li>
+</ul>
+<hr>
+<p><strong>Sources</strong>: Information adapted from NHGRI Human Genome Project Fact Sheet, Nature Education, Britannica (Human Genome Project), and historical accounts of molecular biology milestones.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./ch05-dna-discovery.html" class="pagination-link" aria-label="Discovery of DNA as Genetic Material">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discovery of DNA as Genetic Material</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ch07-genome.html" class="pagination-link" aria-label="What is a Genome?">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">What is a Genome?</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

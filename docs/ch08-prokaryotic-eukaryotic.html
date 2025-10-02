@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>8&nbsp; Prokaryotic vs Eukaryotic Genomes – Foundations of Genomics and Proteomics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ch09-packaging.html" rel="next">
+<link href="./ch07-genome.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch07-genome.html">Part III – Genomes</a></li><li class="breadcrumb-item"><a href="./ch08-prokaryotic-eukaryotic.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Prokaryotic vs Eukaryotic Genomes</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Foundations of Genomics and Proteomics</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome!</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part I – Foundations of Molecular Biology</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch01-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to the Course</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch02-basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Basics of Molecular Biology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch03-central-dogma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Central Dogma</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part II – Historical Perspectives</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch04-classical-genetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Classical Genetics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch05-dna-discovery.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discovery of DNA as Genetic Material</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch06-molecular-era.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Molecular Era</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part III – Genomes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch07-genome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">What is a Genome?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch08-prokaryotic-eukaryotic.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Prokaryotic vs Eukaryotic Genomes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch09-packaging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Genome Packaging</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch10-c-value-paradox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">The C-Value Paradox</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch11-mitochondria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mitochondrial and Organelle Genomes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part IV – Beyond the Genome</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch12-transcriptomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Transcriptomics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch13-proteomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Proteomics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch14-epigenetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Epigenetics and Epigenomics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part V – Experimental Tools and Applications</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch15-sequencing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Sequencing Technologies</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch16-experimental-methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Experimental Proofs and Methods</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch17-applications.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Applications of Genomics and Proteomics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part VI – Reflection and Future Directions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch18-discussion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Discussion Questions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch19-future-omics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">The Future of Omics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References and Further Reading</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#two-fundamentally-different-cell-types" id="toc-two-fundamentally-different-cell-types" class="nav-link active" data-scroll-target="#two-fundamentally-different-cell-types"><span class="header-section-number">8.1</span> Two Fundamentally Different Cell Types</a>
+  <ul class="collapse">
+  <li><a href="#the-great-divide-in-life" id="toc-the-great-divide-in-life" class="nav-link" data-scroll-target="#the-great-divide-in-life"><span class="header-section-number">8.1.1</span> The Great Divide in Life</a></li>
+  <li><a href="#who-are-the-prokaryotes" id="toc-who-are-the-prokaryotes" class="nav-link" data-scroll-target="#who-are-the-prokaryotes"><span class="header-section-number">8.1.2</span> Who Are the Prokaryotes?</a></li>
+  <li><a href="#who-are-the-eukaryotes" id="toc-who-are-the-eukaryotes" class="nav-link" data-scroll-target="#who-are-the-eukaryotes"><span class="header-section-number">8.1.3</span> Who Are the Eukaryotes?</a></li>
+  </ul></li>
+  <li><a href="#chromosome-organization" id="toc-chromosome-organization" class="nav-link" data-scroll-target="#chromosome-organization"><span class="header-section-number">8.2</span> Chromosome Organization</a>
+  <ul class="collapse">
+  <li><a href="#prokaryotic-chromosome-organization" id="toc-prokaryotic-chromosome-organization" class="nav-link" data-scroll-target="#prokaryotic-chromosome-organization"><span class="header-section-number">8.2.1</span> Prokaryotic Chromosome Organization</a></li>
+  <li><a href="#eukaryotic-chromosome-organization" id="toc-eukaryotic-chromosome-organization" class="nav-link" data-scroll-target="#eukaryotic-chromosome-organization"><span class="header-section-number">8.2.2</span> Eukaryotic Chromosome Organization</a></li>
+  </ul></li>
+  <li><a href="#histones-vs.-histone-like-proteins" id="toc-histones-vs.-histone-like-proteins" class="nav-link" data-scroll-target="#histones-vs.-histone-like-proteins"><span class="header-section-number">8.3</span> Histones vs.&nbsp;Histone-Like Proteins</a>
+  <ul class="collapse">
+  <li><a href="#what-are-histones" id="toc-what-are-histones" class="nav-link" data-scroll-target="#what-are-histones"><span class="header-section-number">8.3.1</span> What Are Histones?</a></li>
+  <li><a href="#histone-like-proteins-in-prokaryotes" id="toc-histone-like-proteins-in-prokaryotes" class="nav-link" data-scroll-target="#histone-like-proteins-in-prokaryotes"><span class="header-section-number">8.3.2</span> Histone-Like Proteins in Prokaryotes</a></li>
+  </ul></li>
+  <li><a href="#gene-structure-differences" id="toc-gene-structure-differences" class="nav-link" data-scroll-target="#gene-structure-differences"><span class="header-section-number">8.4</span> Gene Structure Differences</a>
+  <ul class="collapse">
+  <li><a href="#prokaryotic-genes-are-simple" id="toc-prokaryotic-genes-are-simple" class="nav-link" data-scroll-target="#prokaryotic-genes-are-simple"><span class="header-section-number">8.4.1</span> Prokaryotic Genes Are Simple</a></li>
+  <li><a href="#eukaryotic-genes-are-complex" id="toc-eukaryotic-genes-are-complex" class="nav-link" data-scroll-target="#eukaryotic-genes-are-complex"><span class="header-section-number">8.4.2</span> Eukaryotic Genes Are Complex</a></li>
+  <li><a href="#open-reading-frames-orfs" id="toc-open-reading-frames-orfs" class="nav-link" data-scroll-target="#open-reading-frames-orfs"><span class="header-section-number">8.4.3</span> Open Reading Frames (ORFs)</a></li>
+  </ul></li>
+  <li><a href="#mrna-differences" id="toc-mrna-differences" class="nav-link" data-scroll-target="#mrna-differences"><span class="header-section-number">8.5</span> mRNA Differences</a>
+  <ul class="collapse">
+  <li><a href="#polycistronic-mrna-prokaryotes" id="toc-polycistronic-mrna-prokaryotes" class="nav-link" data-scroll-target="#polycistronic-mrna-prokaryotes"><span class="header-section-number">8.5.1</span> Polycistronic mRNA (Prokaryotes)</a></li>
+  <li><a href="#monocistronic-mrna-eukaryotes" id="toc-monocistronic-mrna-eukaryotes" class="nav-link" data-scroll-target="#monocistronic-mrna-eukaryotes"><span class="header-section-number">8.5.2</span> Monocistronic mRNA (Eukaryotes)</a></li>
+  </ul></li>
+  <li><a href="#operons-and-gene-regulation" id="toc-operons-and-gene-regulation" class="nav-link" data-scroll-target="#operons-and-gene-regulation"><span class="header-section-number">8.6</span> Operons and Gene Regulation</a>
+  <ul class="collapse">
+  <li><a href="#what-is-an-operon" id="toc-what-is-an-operon" class="nav-link" data-scroll-target="#what-is-an-operon"><span class="header-section-number">8.6.1</span> What Is an Operon?</a></li>
+  <li><a href="#the-famous-lac-operon" id="toc-the-famous-lac-operon" class="nav-link" data-scroll-target="#the-famous-lac-operon"><span class="header-section-number">8.6.2</span> The Famous Lac Operon</a></li>
+  <li><a href="#why-operons-are-efficient" id="toc-why-operons-are-efficient" class="nav-link" data-scroll-target="#why-operons-are-efficient"><span class="header-section-number">8.6.3</span> Why Operons Are Efficient</a></li>
+  </ul></li>
+  <li><a href="#summary-of-key-differences" id="toc-summary-of-key-differences" class="nav-link" data-scroll-target="#summary-of-key-differences"><span class="header-section-number">8.7</span> Summary of Key Differences</a></li>
+  <li><a href="#why-these-differences-matter" id="toc-why-these-differences-matter" class="nav-link" data-scroll-target="#why-these-differences-matter"><span class="header-section-number">8.8</span> Why These Differences Matter</a>
+  <ul class="collapse">
+  <li><a href="#different-lifestyles" id="toc-different-lifestyles" class="nav-link" data-scroll-target="#different-lifestyles"><span class="header-section-number">8.8.1</span> Different Lifestyles</a></li>
+  <li><a href="#evolution" id="toc-evolution" class="nav-link" data-scroll-target="#evolution"><span class="header-section-number">8.8.2</span> Evolution</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">8.8.3</span> Applications</a></li>
+  </ul></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">8.9</span> Key Takeaways</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch07-genome.html">Part III – Genomes</a></li><li class="breadcrumb-item"><a href="./ch08-prokaryotic-eukaryotic.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Prokaryotic vs Eukaryotic Genomes</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Prokaryotic vs Eukaryotic Genomes</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="two-fundamentally-different-cell-types" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="two-fundamentally-different-cell-types"><span class="header-section-number">8.1</span> Two Fundamentally Different Cell Types</h2>
+<section id="the-great-divide-in-life" class="level3" data-number="8.1.1">
+<h3 data-number="8.1.1" class="anchored" data-anchor-id="the-great-divide-in-life"><span class="header-section-number">8.1.1</span> The Great Divide in Life</h3>
+<p>All life on Earth falls into two main categories based on cell structure:</p>
+<ol type="1">
+<li><strong>Prokaryotes</strong> - Simple cells WITHOUT a nucleus</li>
+<li><strong>Eukaryotes</strong> - Complex cells WITH a nucleus</li>
+</ol>
+<p>Think of it like: - <strong>Prokaryotes</strong> = Studio apartment (everything in one room) - <strong>Eukaryotes</strong> = House with many rooms (compartments for different activities)</p>
+</section>
+<section id="who-are-the-prokaryotes" class="level3" data-number="8.1.2">
+<h3 data-number="8.1.2" class="anchored" data-anchor-id="who-are-the-prokaryotes"><span class="header-section-number">8.1.2</span> Who Are the Prokaryotes?</h3>
+<p><strong>Prokaryotes include</strong>: - 🦠 <strong>Bacteria</strong> (like E. coli, strep throat bacteria) - 🌡️ <strong>Archaea</strong> (extremophiles that live in hot springs, salt lakes, etc.)</p>
+<p><strong>Prokaryotes are</strong>: - Usually single-celled - Very small (0.1-5 micrometers) - Found everywhere on Earth - The first life forms (existed 3.5 billion years ago!)</p>
+</section>
+<section id="who-are-the-eukaryotes" class="level3" data-number="8.1.3">
+<h3 data-number="8.1.3" class="anchored" data-anchor-id="who-are-the-eukaryotes"><span class="header-section-number">8.1.3</span> Who Are the Eukaryotes?</h3>
+<p><strong>Eukaryotes include</strong>: - 🧍 Animals (including you!) - 🌳 Plants - 🍄 Fungi (mushrooms, yeast) - 🦠 Protists (amoebas, algae)</p>
+<p><strong>Eukaryotes are</strong>: - Can be single-celled or multicellular - Larger (10-100 micrometers) - More complex - Evolved about 2 billion years ago</p>
+</section>
+</section>
+<section id="chromosome-organization" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="chromosome-organization"><span class="header-section-number">8.2</span> Chromosome Organization</h2>
+<section id="prokaryotic-chromosome-organization" class="level3" data-number="8.2.1">
+<h3 data-number="8.2.1" class="anchored" data-anchor-id="prokaryotic-chromosome-organization"><span class="header-section-number">8.2.1</span> Prokaryotic Chromosome Organization</h3>
+<p><strong>The Nucleoid</strong>: - Prokaryotes don’t have a nucleus! - Their DNA floats in a region called the <strong>nucleoid</strong> - “Nucleoid” means “nucleus-like” but it’s NOT a true nucleus - No membrane surrounds the DNA - It’s like having your valuables in a pile instead of in a safe</p>
+<p><strong>Shape</strong>: - Usually ONE circular chromosome - Shaped like a loop or ring - Much smaller than eukaryotic chromosomes - Some bacteria also have small extra DNA circles called <strong>plasmids</strong></p>
+<p><strong>Organization</strong>: - DNA is compact but not as organized as eukaryotic DNA - Uses special proteins to help fold and organize DNA - Like a loose coil of rope</p>
+</section>
+<section id="eukaryotic-chromosome-organization" class="level3" data-number="8.2.2">
+<h3 data-number="8.2.2" class="anchored" data-anchor-id="eukaryotic-chromosome-organization"><span class="header-section-number">8.2.2</span> Eukaryotic Chromosome Organization</h3>
+<p><strong>The Nucleus</strong>: - Eukaryotes have a true <strong>nucleus</strong> - Membrane surrounds and protects the DNA - Like keeping valuables in a locked safe - Keeps DNA separate from the rest of the cell</p>
+<p><strong>Shape</strong>: - MULTIPLE linear chromosomes - Shaped like straight lines (not circles!) - Humans have 46 chromosomes - Organized in pairs</p>
+<p><strong>Organization</strong>: - Highly organized and compact - DNA wraps around special proteins called <strong>histones</strong> - Forms structures called <strong>nucleosomes</strong> (we’ll discuss this more in the next chapter!) - Like a well-organized library with labeled shelves</p>
+</section>
+</section>
+<section id="histones-vs.-histone-like-proteins" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="histones-vs.-histone-like-proteins"><span class="header-section-number">8.3</span> Histones vs.&nbsp;Histone-Like Proteins</h2>
+<section id="what-are-histones" class="level3" data-number="8.3.1">
+<h3 data-number="8.3.1" class="anchored" data-anchor-id="what-are-histones"><span class="header-section-number">8.3.1</span> What Are Histones?</h3>
+<p><strong>Histones</strong> are special proteins that help organize DNA in eukaryotes.</p>
+<p>Think of histones like: - 🎁 Spools that DNA wraps around - 📦 Packaging materials that keep DNA organized - 🏗️ Scaffolding that gives structure</p>
+<p><strong>Key facts</strong>: - DNA wraps around histones like thread on a spool - This helps compact 2 meters of DNA into a tiny nucleus! - Histones also help control which genes are turned on or off - Very ancient proteins (barely changed over millions of years)</p>
+</section>
+<section id="histone-like-proteins-in-prokaryotes" class="level3" data-number="8.3.2">
+<h3 data-number="8.3.2" class="anchored" data-anchor-id="histone-like-proteins-in-prokaryotes"><span class="header-section-number">8.3.2</span> Histone-Like Proteins in Prokaryotes</h3>
+<p><strong>Prokaryotes don’t have true histones</strong> (with a few exceptions).</p>
+<p>Instead, they have <strong>histone-like proteins</strong>: - Similar job (organizing DNA) - Different structure - Not as sophisticated as true histones - Like having a simple organizer instead of a fancy filing system</p>
+<p><strong>Examples</strong>: - HU proteins - IHF proteins - H-NS proteins</p>
+<p>These proteins help: - Compact the DNA - Organize the nucleoid - Regulate some genes</p>
+</section>
+</section>
+<section id="gene-structure-differences" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="gene-structure-differences"><span class="header-section-number">8.4</span> Gene Structure Differences</h2>
+<section id="prokaryotic-genes-are-simple" class="level3" data-number="8.4.1">
+<h3 data-number="8.4.1" class="anchored" data-anchor-id="prokaryotic-genes-are-simple"><span class="header-section-number">8.4.1</span> Prokaryotic Genes Are Simple</h3>
+<p><strong>Prokaryotic gene structure</strong>: - Genes are <strong>continuous</strong> (no interruptions) - DNA sequence goes straight from start to finish - Like reading a sentence without any gaps: “Thecatsat”</p>
+<p><strong>No introns</strong>: - The entire gene codes for protein - No extra stuff to remove - Simple and efficient!</p>
+</section>
+<section id="eukaryotic-genes-are-complex" class="level3" data-number="8.4.2">
+<h3 data-number="8.4.2" class="anchored" data-anchor-id="eukaryotic-genes-are-complex"><span class="header-section-number">8.4.2</span> Eukaryotic Genes Are Complex</h3>
+<p><strong>Eukaryotic gene structure</strong>: - Genes are <strong>split up</strong> into pieces - Have introns (removed) and exons (kept) - Like a sentence with gaps: “The … cat … sat”</p>
+<p><strong>Introns and Exons</strong>: - <strong>Exons</strong> = EXpressed regions (kept in final mRNA, used to make protein) - <strong>Introns</strong> = INTervening regions (removed, not used)</p>
+<p><strong>Why have introns</strong>? - Allows <strong>alternative splicing</strong> (making different proteins from one gene) - Provides flexibility - Allows evolution to create new genes</p>
+<p>Think of it like: - Having extra footage when making a movie - You can edit it different ways to make different versions!</p>
+</section>
+<section id="open-reading-frames-orfs" class="level3" data-number="8.4.3">
+<h3 data-number="8.4.3" class="anchored" data-anchor-id="open-reading-frames-orfs"><span class="header-section-number">8.4.3</span> Open Reading Frames (ORFs)</h3>
+<p><strong>What’s an ORF</strong>? - A stretch of DNA that could code for a protein - Starts with a START codon (ATG) - Ends with a STOP codon (TAA, TAG, or TGA) - No STOP codons in the middle</p>
+<p><strong>Why it matters</strong>: - Scientists look for ORFs to find potential genes - Like looking for sentences that start with a capital letter and end with a period</p>
+<p><strong>In prokaryotes</strong>: - ORFs are usually complete genes - Easy to identify genes</p>
+<p><strong>In eukaryotes</strong>: - ORFs can be interrupted by introns - Harder to identify complete genes</p>
+</section>
+</section>
+<section id="mrna-differences" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="mrna-differences"><span class="header-section-number">8.5</span> mRNA Differences</h2>
+<section id="polycistronic-mrna-prokaryotes" class="level3" data-number="8.5.1">
+<h3 data-number="8.5.1" class="anchored" data-anchor-id="polycistronic-mrna-prokaryotes"><span class="header-section-number">8.5.1</span> Polycistronic mRNA (Prokaryotes)</h3>
+<p><strong>Polycistronic</strong> = One mRNA codes for MULTIPLE proteins</p>
+<p>Think of it like: - One ticket gets you into multiple movies - One message contains multiple instructions</p>
+<p><strong>How it works</strong>: - Multiple genes are transcribed together - One long mRNA molecule - Multiple START and STOP codons - Makes several different proteins from one mRNA - Very efficient!</p>
+<p><strong>Example</strong>: The lac operon in bacteria makes one mRNA that codes for 3 different proteins!</p>
+</section>
+<section id="monocistronic-mrna-eukaryotes" class="level3" data-number="8.5.2">
+<h3 data-number="8.5.2" class="anchored" data-anchor-id="monocistronic-mrna-eukaryotes"><span class="header-section-number">8.5.2</span> Monocistronic mRNA (Eukaryotes)</h3>
+<p><strong>Monocistronic</strong> = One mRNA codes for ONE protein</p>
+<p>Think of it like: - One ticket for one movie - One message contains one instruction</p>
+<p><strong>How it works</strong>: - Each gene is transcribed separately - One mRNA molecule per gene - One protein made per mRNA - More control, but less efficient</p>
+<p><strong>Why different</strong>? - Eukaryotes have more complex regulation needs - Allows independent control of each gene - More flexible but requires more energy</p>
+</section>
+</section>
+<section id="operons-and-gene-regulation" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="operons-and-gene-regulation"><span class="header-section-number">8.6</span> Operons and Gene Regulation</h2>
+<section id="what-is-an-operon" class="level3" data-number="8.6.1">
+<h3 data-number="8.6.1" class="anchored" data-anchor-id="what-is-an-operon"><span class="header-section-number">8.6.1</span> What Is an Operon?</h3>
+<p>An <strong>operon</strong> is a group of genes controlled together (found mainly in prokaryotes).</p>
+<p>Think of an operon like: - 🎼 A orchestra playing together (all start and stop together) - 📦 A bundle of products (controlled as one package) - 🚦 Multiple traffic lights synchronized</p>
+</section>
+<section id="the-famous-lac-operon" class="level3" data-number="8.6.2">
+<h3 data-number="8.6.2" class="anchored" data-anchor-id="the-famous-lac-operon"><span class="header-section-number">8.6.2</span> The Famous Lac Operon</h3>
+<p>The <strong>lac operon</strong> in E. coli bacteria is the most famous example!</p>
+<p><strong>The Setup</strong>: - E. coli bacteria can eat lactose (milk sugar) - But making lactose-digesting proteins is expensive (uses energy) - So bacteria only make these proteins when lactose is present</p>
+<p><strong>The Genes</strong>: The lac operon has 3 genes that work together: - <strong>lacZ</strong> - Makes an enzyme that breaks apart lactose - <strong>lacY</strong> - Makes a protein that brings lactose into the cell - <strong>lacA</strong> - Makes an enzyme that modifies lactose</p>
+<p><strong>How It Works</strong>:</p>
+<p><strong>When there’s NO lactose</strong>: 1. A repressor protein sits on the operator (like a lock) 2. RNA polymerase can’t read the genes 3. No proteins are made 4. Saves energy!</p>
+<p><strong>When lactose IS present</strong>: 1. Lactose binds to the repressor protein 2. Repressor falls off the operator (lock opens!) 3. RNA polymerase can now read the genes 4. Proteins are made 5. Bacteria can eat lactose!</p>
+<p>Think of it like: - A vending machine that only turns on when you insert money - No point wasting electricity when nobody’s using it!</p>
+</section>
+<section id="why-operons-are-efficient" class="level3" data-number="8.6.3">
+<h3 data-number="8.6.3" class="anchored" data-anchor-id="why-operons-are-efficient"><span class="header-section-number">8.6.3</span> Why Operons Are Efficient</h3>
+<p><strong>Advantages for prokaryotes</strong>: - Coordinate related genes (turn on/off together) - Save energy (don’t make proteins you don’t need) - Quick response to environmental changes - Simple control system</p>
+<p><strong>Why eukaryotes don’t use operons much</strong>: - Eukaryotes have more complex needs - Need independent control of genes - Have more sophisticated regulation systems - Can afford to be less efficient (more resources available)</p>
+</section>
+</section>
+<section id="summary-of-key-differences" class="level2" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="summary-of-key-differences"><span class="header-section-number">8.7</span> Summary of Key Differences</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 26%">
+<col style="width: 38%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Prokaryotes</th>
+<th>Eukaryotes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Nucleus</strong></td>
+<td>No nucleus (nucleoid)</td>
+<td>True nucleus with membrane</td>
+</tr>
+<tr class="even">
+<td><strong>Chromosomes</strong></td>
+<td>1 circular chromosome</td>
+<td>Multiple linear chromosomes</td>
+</tr>
+<tr class="odd">
+<td><strong>DNA packaging</strong></td>
+<td>Histone-like proteins</td>
+<td>True histones</td>
+</tr>
+<tr class="even">
+<td><strong>Gene structure</strong></td>
+<td>Continuous (no introns)</td>
+<td>Split (introns + exons)</td>
+</tr>
+<tr class="odd">
+<td><strong>mRNA type</strong></td>
+<td>Polycistronic (multiple proteins)</td>
+<td>Monocistronic (one protein)</td>
+</tr>
+<tr class="even">
+<td><strong>Gene organization</strong></td>
+<td>Often in operons</td>
+<td>Rarely in operons</td>
+</tr>
+<tr class="odd">
+<td><strong>Size</strong></td>
+<td>Small (0.1-5 μm)</td>
+<td>Large (10-100 μm)</td>
+</tr>
+<tr class="even">
+<td><strong>Gene regulation</strong></td>
+<td>Simple (operons)</td>
+<td>Complex (multiple levels)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="why-these-differences-matter" class="level2" data-number="8.8">
+<h2 data-number="8.8" class="anchored" data-anchor-id="why-these-differences-matter"><span class="header-section-number">8.8</span> Why These Differences Matter</h2>
+<section id="different-lifestyles" class="level3" data-number="8.8.1">
+<h3 data-number="8.8.1" class="anchored" data-anchor-id="different-lifestyles"><span class="header-section-number">8.8.1</span> Different Lifestyles</h3>
+<p><strong>Prokaryotes</strong>: - Need to respond quickly to environment - Limited resources - Simple, efficient gene regulation - Like a small, agile speedboat</p>
+<p><strong>Eukaryotes</strong>: - More complex needs - Can afford sophisticated regulation - More flexible gene expression - Like a large ship with many specialized compartments</p>
+</section>
+<section id="evolution" class="level3" data-number="8.8.2">
+<h3 data-number="8.8.2" class="anchored" data-anchor-id="evolution"><span class="header-section-number">8.8.2</span> Evolution</h3>
+<p>These differences show: - Prokaryotes evolved first (simpler design) - Eukaryotes evolved from prokaryotes (more complex design) - Both strategies are successful (bacteria are everywhere!) - Complexity isn’t always better (bacteria thrive with simplicity)</p>
+</section>
+<section id="applications" class="level3" data-number="8.8.3">
+<h3 data-number="8.8.3" class="anchored" data-anchor-id="applications"><span class="header-section-number">8.8.3</span> Applications</h3>
+<p>Understanding these differences helps us: - <strong>Make medicines</strong>: Antibiotics target prokaryotic features - <strong>Genetic engineering</strong>: Use bacteria to make proteins (insulin, vaccines) - <strong>Understand diseases</strong>: Know how bacteria work differently from human cells - <strong>Study evolution</strong>: See how complex life evolved from simple life</p>
+</section>
+</section>
+<section id="key-takeaways" class="level2" data-number="8.9">
+<h2 data-number="8.9" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">8.9</span> Key Takeaways</h2>
+<ul>
+<li><strong>Prokaryotes</strong> = Simple cells without nucleus (bacteria, archaea)</li>
+<li><strong>Eukaryotes</strong> = Complex cells with nucleus (animals, plants, fungi)</li>
+<li><strong>Nucleoid vs.&nbsp;Nucleus</strong>: Prokaryotes have DNA in nucleoid; eukaryotes in nucleus</li>
+<li><strong>Circular vs.&nbsp;Linear</strong>: Prokaryote chromosomes are circular; eukaryote chromosomes are linear</li>
+<li><strong>Histone-like vs.&nbsp;Histones</strong>: Both organize DNA, but histones (eukaryotes) are more sophisticated</li>
+<li><strong>Continuous vs.&nbsp;Split genes</strong>: Prokaryotic genes have no introns; eukaryotic genes have introns and exons</li>
+<li><strong>Polycistronic vs.&nbsp;Monocistronic</strong>: Prokaryotic mRNA codes for multiple proteins; eukaryotic for one</li>
+<li><strong>Operons</strong>: Groups of genes controlled together (mainly in prokaryotes)</li>
+<li><strong>Lac operon</strong>: Classic example of gene regulation in bacteria</li>
+<li>These differences reflect different evolutionary strategies and lifestyles</li>
+</ul>
+<hr>
+<p><strong>Sources</strong>: Information adapted from Khan Academy Biology, Nature Scitable, Biology LibreTexts (Comparing Prokaryotic and Eukaryotic Cells), and molecular biology textbooks.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./ch07-genome.html" class="pagination-link" aria-label="What is a Genome?">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">What is a Genome?</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ch09-packaging.html" class="pagination-link" aria-label="Genome Packaging">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Genome Packaging</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

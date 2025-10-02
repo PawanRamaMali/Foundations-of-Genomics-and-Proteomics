@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>17&nbsp; Applications of Genomics and Proteomics – Foundations of Genomics and Proteomics</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ch18-discussion.html" rel="next">
+<link href="./ch16-experimental-methods.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch15-sequencing.html">Part V – Experimental Tools and Applications</a></li><li class="breadcrumb-item"><a href="./ch17-applications.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Applications of Genomics and Proteomics</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Foundations of Genomics and Proteomics</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome!</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part I – Foundations of Molecular Biology</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch01-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to the Course</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch02-basics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Basics of Molecular Biology</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch03-central-dogma.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">The Central Dogma</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part II – Historical Perspectives</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch04-classical-genetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Classical Genetics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch05-dna-discovery.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discovery of DNA as Genetic Material</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch06-molecular-era.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Molecular Era</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part III – Genomes</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch07-genome.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">What is a Genome?</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch08-prokaryotic-eukaryotic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Prokaryotic vs Eukaryotic Genomes</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch09-packaging.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Genome Packaging</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch10-c-value-paradox.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">The C-Value Paradox</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch11-mitochondria.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mitochondrial and Organelle Genomes</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part IV – Beyond the Genome</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch12-transcriptomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Transcriptomics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch13-proteomics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Proteomics</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch14-epigenetics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Epigenetics and Epigenomics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part V – Experimental Tools and Applications</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch15-sequencing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Sequencing Technologies</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch16-experimental-methods.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Experimental Proofs and Methods</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch17-applications.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Applications of Genomics and Proteomics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Part VI – Reflection and Future Directions</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch18-discussion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Discussion Questions</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ch19-future-omics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">19</span>&nbsp; <span class="chapter-title">The Future of Omics</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References and Further Reading</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#transforming-the-world" id="toc-transforming-the-world" class="nav-link active" data-scroll-target="#transforming-the-world"><span class="header-section-number">17.1</span> Transforming the World</a></li>
+  <li><a href="#medicine-and-diagnostics" id="toc-medicine-and-diagnostics" class="nav-link" data-scroll-target="#medicine-and-diagnostics"><span class="header-section-number">17.2</span> Medicine and Diagnostics</a>
+  <ul class="collapse">
+  <li><a href="#personalized-medicine" id="toc-personalized-medicine" class="nav-link" data-scroll-target="#personalized-medicine"><span class="header-section-number">17.2.1</span> Personalized Medicine</a></li>
+  <li><a href="#early-disease-detection" id="toc-early-disease-detection" class="nav-link" data-scroll-target="#early-disease-detection"><span class="header-section-number">17.2.2</span> Early Disease Detection</a></li>
+  <li><a href="#understanding-disease-mechanisms" id="toc-understanding-disease-mechanisms" class="nav-link" data-scroll-target="#understanding-disease-mechanisms"><span class="header-section-number">17.2.3</span> Understanding Disease Mechanisms</a></li>
+  </ul></li>
+  <li><a href="#biotechnology-and-synthetic-biology" id="toc-biotechnology-and-synthetic-biology" class="nav-link" data-scroll-target="#biotechnology-and-synthetic-biology"><span class="header-section-number">17.3</span> Biotechnology and Synthetic Biology</a>
+  <ul class="collapse">
+  <li><a href="#making-useful-products" id="toc-making-useful-products" class="nav-link" data-scroll-target="#making-useful-products"><span class="header-section-number">17.3.1</span> Making Useful Products</a></li>
+  <li><a href="#therapeutic-proteins" id="toc-therapeutic-proteins" class="nav-link" data-scroll-target="#therapeutic-proteins"><span class="header-section-number">17.3.2</span> 1. Therapeutic Proteins</a></li>
+  <li><a href="#industrial-enzymes" id="toc-industrial-enzymes" class="nav-link" data-scroll-target="#industrial-enzymes"><span class="header-section-number">17.3.3</span> 2. Industrial Enzymes</a></li>
+  <li><a href="#synthetic-biology" id="toc-synthetic-biology" class="nav-link" data-scroll-target="#synthetic-biology"><span class="header-section-number">17.3.4</span> 3. Synthetic Biology</a></li>
+  </ul></li>
+  <li><a href="#agriculture-and-food" id="toc-agriculture-and-food" class="nav-link" data-scroll-target="#agriculture-and-food"><span class="header-section-number">17.4</span> Agriculture and Food</a>
+  <ul class="collapse">
+  <li><a href="#feeding-the-world" id="toc-feeding-the-world" class="nav-link" data-scroll-target="#feeding-the-world"><span class="header-section-number">17.4.1</span> Feeding the World</a></li>
+  <li><a href="#crop-improvement" id="toc-crop-improvement" class="nav-link" data-scroll-target="#crop-improvement"><span class="header-section-number">17.4.2</span> Crop Improvement</a></li>
+  <li><a href="#livestock-genomics" id="toc-livestock-genomics" class="nav-link" data-scroll-target="#livestock-genomics"><span class="header-section-number">17.4.3</span> Livestock Genomics</a></li>
+  <li><a href="#precision-agriculture" id="toc-precision-agriculture" class="nav-link" data-scroll-target="#precision-agriculture"><span class="header-section-number">17.4.4</span> Precision Agriculture</a></li>
+  </ul></li>
+  <li><a href="#evolutionary-studies" id="toc-evolutionary-studies" class="nav-link" data-scroll-target="#evolutionary-studies"><span class="header-section-number">17.5</span> Evolutionary Studies</a>
+  <ul class="collapse">
+  <li><a href="#understanding-our-past" id="toc-understanding-our-past" class="nav-link" data-scroll-target="#understanding-our-past"><span class="header-section-number">17.5.1</span> Understanding Our Past</a></li>
+  <li><a href="#comparing-genomes-across-species" id="toc-comparing-genomes-across-species" class="nav-link" data-scroll-target="#comparing-genomes-across-species"><span class="header-section-number">17.5.2</span> Comparing Genomes Across Species</a></li>
+  <li><a href="#ancient-dna" id="toc-ancient-dna" class="nav-link" data-scroll-target="#ancient-dna"><span class="header-section-number">17.5.3</span> Ancient DNA</a></li>
+  <li><a href="#conservation" id="toc-conservation" class="nav-link" data-scroll-target="#conservation"><span class="header-section-number">17.5.4</span> Conservation</a></li>
+  </ul></li>
+  <li><a href="#personalized-medicine---the-future" id="toc-personalized-medicine---the-future" class="nav-link" data-scroll-target="#personalized-medicine---the-future"><span class="header-section-number">17.6</span> Personalized Medicine - The Future</a>
+  <ul class="collapse">
+  <li><a href="#your-genome-your-health" id="toc-your-genome-your-health" class="nav-link" data-scroll-target="#your-genome-your-health"><span class="header-section-number">17.6.1</span> Your Genome, Your Health</a></li>
+  </ul></li>
+  <li><a href="#forensics-and-ancestry" id="toc-forensics-and-ancestry" class="nav-link" data-scroll-target="#forensics-and-ancestry"><span class="header-section-number">17.7</span> Forensics and Ancestry</a>
+  <ul class="collapse">
+  <li><a href="#dna-in-the-courtroom" id="toc-dna-in-the-courtroom" class="nav-link" data-scroll-target="#dna-in-the-courtroom"><span class="header-section-number">17.7.1</span> DNA in the Courtroom</a></li>
+  <li><a href="#ancestry-testing" id="toc-ancestry-testing" class="nav-link" data-scroll-target="#ancestry-testing"><span class="header-section-number">17.7.2</span> Ancestry Testing</a></li>
+  </ul></li>
+  <li><a href="#ethical-considerations" id="toc-ethical-considerations" class="nav-link" data-scroll-target="#ethical-considerations"><span class="header-section-number">17.8</span> Ethical Considerations</a>
+  <ul class="collapse">
+  <li><a href="#with-great-power" id="toc-with-great-power" class="nav-link" data-scroll-target="#with-great-power"><span class="header-section-number">17.8.1</span> With Great Power…</a></li>
+  </ul></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">17.9</span> Key Takeaways</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch15-sequencing.html">Part V – Experimental Tools and Applications</a></li><li class="breadcrumb-item"><a href="./ch17-applications.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Applications of Genomics and Proteomics</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Applications of Genomics and Proteomics</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="transforming-the-world" class="level2" data-number="17.1">
+<h2 data-number="17.1" class="anchored" data-anchor-id="transforming-the-world"><span class="header-section-number">17.1</span> Transforming the World</h2>
+<p>Genomics and proteomics aren’t just academic subjects—they’re changing our world in practical ways every day!</p>
+</section>
+<section id="medicine-and-diagnostics" class="level2" data-number="17.2">
+<h2 data-number="17.2" class="anchored" data-anchor-id="medicine-and-diagnostics"><span class="header-section-number">17.2</span> Medicine and Diagnostics</h2>
+<section id="personalized-medicine" class="level3" data-number="17.2.1">
+<h3 data-number="17.2.1" class="anchored" data-anchor-id="personalized-medicine"><span class="header-section-number">17.2.1</span> Personalized Medicine</h3>
+<p><strong>Traditional medicine</strong>: One-size-fits-all approach <strong>Personalized medicine</strong>: Treatment tailored to YOUR genes!</p>
+<p><strong>How it works</strong>: - Sequence your genome - Identify genetic variants - Predict disease risks - Choose best treatments for YOU</p>
+<p><strong>Examples</strong>:</p>
+<p><strong>1. Cancer Treatment</strong>: - Sequence tumor DNA - Find specific mutations - Choose drugs targeting those exact mutations - Example: Herceptin for HER2-positive breast cancer</p>
+<p><strong>2. Pharmacogenomics</strong>: - Your genes affect how you process drugs - Some people metabolize drugs quickly, some slowly - Genetic testing chooses right dose for YOU - Avoid dangerous reactions!</p>
+<p><strong>Example - Warfarin dosing</strong>: - Blood thinner with narrow safe range - Genes affect proper dose (3-fold variation!) - Genetic test determines your safe dose - Prevents bleeding or clotting</p>
+<p><strong>3. Rare Disease Diagnosis</strong>: - Many rare diseases have genetic causes - Whole genome sequencing finds mutations - Often ends “diagnostic odyssey” - Enables treatment or management</p>
+<p><strong>Success story</strong>: - Child with mysterious illness - Years of tests, no diagnosis - Genome sequencing finds rare mutation - Diagnosis leads to treatment - Child improves!</p>
+</section>
+<section id="early-disease-detection" class="level3" data-number="17.2.2">
+<h3 data-number="17.2.2" class="anchored" data-anchor-id="early-disease-detection"><span class="header-section-number">17.2.2</span> Early Disease Detection</h3>
+<p><strong>Finding diseases before symptoms appear</strong>:</p>
+<p><strong>1. Cancer Screening</strong>: - BRCA1/BRCA2 mutations → high breast/ovarian cancer risk - Early screening saves lives - Preventive surgery option</p>
+<p><strong>2. Liquid Biopsies</strong>: - Test blood for cancer DNA - Catch cancer very early - Monitor treatment response - Detect recurrence</p>
+<p><strong>3. Carrier Screening</strong>: - Before having children, test if you carry disease genes - Cystic fibrosis, sickle cell, Tay-Sachs, many others - Informed reproductive choices</p>
+<p><strong>4. Newborn Screening</strong>: - Test babies for genetic conditions - Early treatment prevents problems - Example: PKU (phenylketonuria) - special diet prevents brain damage</p>
+</section>
+<section id="understanding-disease-mechanisms" class="level3" data-number="17.2.3">
+<h3 data-number="17.2.3" class="anchored" data-anchor-id="understanding-disease-mechanisms"><span class="header-section-number">17.2.3</span> Understanding Disease Mechanisms</h3>
+<p><strong>Genomics reveals HOW diseases work</strong>:</p>
+<p><strong>Alzheimer’s Disease</strong>: - Multiple genes involved - APP, PSEN1, PSEN2 cause early-onset forms - APOE4 increases late-onset risk - Understanding guides drug development</p>
+<p><strong>Diabetes</strong>: - Type 1: Autoimmune (some genetic risk factors) - Type 2: Complex, many genes involved - Monogenic diabetes: Single gene mutations (different treatment!)</p>
+<p><strong>Heart Disease</strong>: - Familial hypercholesterolemia: LDLR gene mutations - Very high cholesterol from birth - Gene therapy in development!</p>
+</section>
+</section>
+<section id="biotechnology-and-synthetic-biology" class="level2" data-number="17.3">
+<h2 data-number="17.3" class="anchored" data-anchor-id="biotechnology-and-synthetic-biology"><span class="header-section-number">17.3</span> Biotechnology and Synthetic Biology</h2>
+<section id="making-useful-products" class="level3" data-number="17.3.1">
+<h3 data-number="17.3.1" class="anchored" data-anchor-id="making-useful-products"><span class="header-section-number">17.3.1</span> Making Useful Products</h3>
+<p><strong>Using organisms as factories</strong>:</p>
+</section>
+<section id="therapeutic-proteins" class="level3" data-number="17.3.2">
+<h3 data-number="17.3.2" class="anchored" data-anchor-id="therapeutic-proteins"><span class="header-section-number">17.3.2</span> 1. Therapeutic Proteins</h3>
+<p><strong>Insulin for Diabetes</strong>: - Traditionally from pig/cow pancreases - Now made in bacteria with human insulin gene! - Cheaper, safer, unlimited supply</p>
+<p><strong>Other examples</strong>: - Growth hormone - Clotting factors for hemophilia - Antibodies for cancer/autoimmune diseases - Vaccines (hepatitis B, HPV)</p>
+<p><strong>How it’s done</strong>: 1. Insert human gene into bacteria/yeast 2. Bacteria make human protein 3. Purify protein 4. Give to patients!</p>
+</section>
+<section id="industrial-enzymes" class="level3" data-number="17.3.3">
+<h3 data-number="17.3.3" class="anchored" data-anchor-id="industrial-enzymes"><span class="header-section-number">17.3.3</span> 2. Industrial Enzymes</h3>
+<p><strong>Laundry Detergent</strong>: - Contains enzymes that break down stains - Engineered for better performance - Work in cold water (save energy!)</p>
+<p><strong>Food Processing</strong>: - Cheese making (rennet) - Brewing (specialized yeasts) - Sweeteners (high-fructose corn syrup)</p>
+<p><strong>Biofuels</strong>: - Engineer microbes to make ethanol, biodiesel - From agricultural waste - Renewable energy source!</p>
+</section>
+<section id="synthetic-biology" class="level3" data-number="17.3.4">
+<h3 data-number="17.3.4" class="anchored" data-anchor-id="synthetic-biology"><span class="header-section-number">17.3.4</span> 3. Synthetic Biology</h3>
+<p><strong>Designing organisms from scratch</strong>:</p>
+<p><strong>Craig Venter’s Synthetic Genome</strong>: - First synthetic self-replicating cell (2010) - Designed genome on computer - Built it from chemicals - Worked!</p>
+<p><strong>Applications</strong>: - Bacteria that produce biofuels - Organisms that clean up pollution - Microbes that make medicines - Programmable cells</p>
+<p><strong>Artemisinin production</strong>: - Anti-malaria drug - Traditionally from plant (expensive!) - Engineered yeast to produce it - Cheaper medicine saves lives!</p>
+</section>
+</section>
+<section id="agriculture-and-food" class="level2" data-number="17.4">
+<h2 data-number="17.4" class="anchored" data-anchor-id="agriculture-and-food"><span class="header-section-number">17.4</span> Agriculture and Food</h2>
+<section id="feeding-the-world" class="level3" data-number="17.4.1">
+<h3 data-number="17.4.1" class="anchored" data-anchor-id="feeding-the-world"><span class="header-section-number">17.4.1</span> Feeding the World</h3>
+<p><strong>Genomics improves crops and livestock</strong>:</p>
+</section>
+<section id="crop-improvement" class="level3" data-number="17.4.2">
+<h3 data-number="17.4.2" class="anchored" data-anchor-id="crop-improvement"><span class="header-section-number">17.4.2</span> Crop Improvement</h3>
+<p><strong>1. Disease Resistance</strong>: - Identify resistance genes - Breed disease-resistant varieties - Reduces pesticide use - More sustainable</p>
+<p><strong>2. Drought Tolerance</strong>: - Find genes for drought resistance - Important for climate change - Crops survive with less water</p>
+<p><strong>3. Nutritional Enhancement</strong>: - <strong>Golden Rice</strong>: Engineered with vitamin A - Prevents blindness in developing countries - <strong>Biofortification</strong>: More iron, zinc, etc.</p>
+<p><strong>4. Better Yields</strong>: - Genomics accelerates breeding - Select best plants faster - Feed growing population</p>
+<p><strong>5. Longer Shelf Life</strong>: - Tomatoes that don’t spoil quickly - Reduces food waste</p>
+</section>
+<section id="livestock-genomics" class="level3" data-number="17.4.3">
+<h3 data-number="17.4.3" class="anchored" data-anchor-id="livestock-genomics"><span class="header-section-number">17.4.3</span> Livestock Genomics</h3>
+<p><strong>Breeding better animals</strong>: - Disease resistance - Better meat/milk production - Animal welfare - Efficiency (less environmental impact)</p>
+<p><strong>Example - Dairy Cows</strong>: - Genomic selection for milk production - Healthier cows - Higher efficiency</p>
+</section>
+<section id="precision-agriculture" class="level3" data-number="17.4.4">
+<h3 data-number="17.4.4" class="anchored" data-anchor-id="precision-agriculture"><span class="header-section-number">17.4.4</span> Precision Agriculture</h3>
+<p><strong>Using genomics with technology</strong>: - Sequence soil microbes - Understand plant-microbe interactions - Optimize conditions for each field - Sustainable farming</p>
+</section>
+</section>
+<section id="evolutionary-studies" class="level2" data-number="17.5">
+<h2 data-number="17.5" class="anchored" data-anchor-id="evolutionary-studies"><span class="header-section-number">17.5</span> Evolutionary Studies</h2>
+<section id="understanding-our-past" class="level3" data-number="17.5.1">
+<h3 data-number="17.5.1" class="anchored" data-anchor-id="understanding-our-past"><span class="header-section-number">17.5.1</span> Understanding Our Past</h3>
+<p><strong>Genomics revolutionized evolutionary biology</strong>:</p>
+</section>
+<section id="comparing-genomes-across-species" class="level3" data-number="17.5.2">
+<h3 data-number="17.5.2" class="anchored" data-anchor-id="comparing-genomes-across-species"><span class="header-section-number">17.5.2</span> Comparing Genomes Across Species</h3>
+<p><strong>What we’ve learned</strong>: - All life shares common ancestor - Humans share 96% DNA with chimpanzees - Even share 50% with bananas! - Shows unity of life</p>
+<p><strong>Molecular Clocks</strong>: - Mutations accumulate over time - Compare genomes to estimate when species diverged - Reconstruct tree of life!</p>
+</section>
+<section id="ancient-dna" class="level3" data-number="17.5.3">
+<h3 data-number="17.5.3" class="anchored" data-anchor-id="ancient-dna"><span class="header-section-number">17.5.3</span> Ancient DNA</h3>
+<p><strong>Sequencing extinct species</strong>:</p>
+<p><strong>Neanderthals</strong>: - Sequenced Neanderthal genome - Found they interbred with humans - Most people have 1-4% Neanderthal DNA! - Tells us about our ancestors</p>
+<p><strong>Woolly Mammoths</strong>: - Sequenced from frozen remains - Understand what made them different from elephants - De-extinction projects in progress!</p>
+<p><strong>Ancient Humans</strong>: - Trace human migration out of Africa - Understand population history - See how humans adapted to environments</p>
+</section>
+<section id="conservation" class="level3" data-number="17.5.4">
+<h3 data-number="17.5.4" class="anchored" data-anchor-id="conservation"><span class="header-section-number">17.5.4</span> Conservation</h3>
+<p><strong>Saving endangered species</strong>:</p>
+<p><strong>Genetic Diversity</strong>: - Sequence endangered species - Measure genetic diversity - Plan breeding to maintain diversity - Prevent inbreeding</p>
+<p><strong>Example - Cheetahs</strong>: - Very low genetic diversity - Genomics helps manage breeding programs - Preserve species</p>
+<p><strong>Forensics</strong>: - Catch wildlife poachers - Identify illegally traded animals - Track ivory sources</p>
+</section>
+</section>
+<section id="personalized-medicine---the-future" class="level2" data-number="17.6">
+<h2 data-number="17.6" class="anchored" data-anchor-id="personalized-medicine---the-future"><span class="header-section-number">17.6</span> Personalized Medicine - The Future</h2>
+<section id="your-genome-your-health" class="level3" data-number="17.6.1">
+<h3 data-number="17.6.1" class="anchored" data-anchor-id="your-genome-your-health"><span class="header-section-number">17.6.1</span> Your Genome, Your Health</h3>
+<p><strong>What’s possible now</strong>: - Whole genome sequencing: &lt;$1,000 - Identify disease risks - Pharmacogenomic testing - Carrier screening</p>
+<p><strong>What’s coming</strong>:</p>
+<p><strong>1. Preventive Medicine</strong>: - Know your risks early - Lifestyle changes prevent disease - Targeted screening - Earlier interventions</p>
+<p><strong>2. Gene Therapy</strong>: - Fix disease-causing mutations - Already working for some diseases! - Sickle cell disease cured in trials - Inherited blindness treated</p>
+<p><strong>3. Cancer Vaccines</strong>: - Personalized cancer vaccines - Based on YOUR tumor mutations - Teach immune system to attack cancer</p>
+<p><strong>4. Microbiome Medicine</strong>: - Sequence gut bacteria - Understand how microbiome affects health - Personalized probiotics - Treat diseases by modifying microbiome</p>
+<p><strong>5. Precision Public Health</strong>: - Track disease outbreaks (COVID-19!) - Understand antibiotic resistance - Predict epidemics - Targeted interventions</p>
+</section>
+</section>
+<section id="forensics-and-ancestry" class="level2" data-number="17.7">
+<h2 data-number="17.7" class="anchored" data-anchor-id="forensics-and-ancestry"><span class="header-section-number">17.7</span> Forensics and Ancestry</h2>
+<section id="dna-in-the-courtroom" class="level3" data-number="17.7.1">
+<h3 data-number="17.7.1" class="anchored" data-anchor-id="dna-in-the-courtroom"><span class="header-section-number">17.7.1</span> DNA in the Courtroom</h3>
+<p><strong>Criminal Justice</strong>: - DNA fingerprinting identifies suspects - Exonerates the innocent - Solves cold cases - Identify disaster victims</p>
+<p><strong>How it works</strong>: - Compare DNA from crime scene to suspect - Look at specific variable regions (STRs) - Match = very strong evidence</p>
+<p><strong>Paternity Testing</strong>: - Determine biological relationships - &gt;99.9% accuracy - Child inherits half DNA from each parent</p>
+</section>
+<section id="ancestry-testing" class="level3" data-number="17.7.2">
+<h3 data-number="17.7.2" class="anchored" data-anchor-id="ancestry-testing"><span class="header-section-number">17.7.2</span> Ancestry Testing</h3>
+<p><strong>Consumer Genomics</strong> (23andMe, Ancestry.com):</p>
+<p><strong>What you learn</strong>: - Ethnic background - Geographic origins - Find relatives - Trait predictions - Some health information</p>
+<p><strong>How it works</strong>: - Genotype ~1 million SNPs - Compare to reference populations - Statistical analysis</p>
+<p><strong>Cautions</strong>: - Estimates, not certainties - Privacy concerns - Surprising findings possible - Not comprehensive medical test</p>
+</section>
+</section>
+<section id="ethical-considerations" class="level2" data-number="17.8">
+<h2 data-number="17.8" class="anchored" data-anchor-id="ethical-considerations"><span class="header-section-number">17.8</span> Ethical Considerations</h2>
+<section id="with-great-power" class="level3" data-number="17.8.1">
+<h3 data-number="17.8.1" class="anchored" data-anchor-id="with-great-power"><span class="header-section-number">17.8.1</span> With Great Power…</h3>
+<p><strong>Important questions</strong>:</p>
+<p><strong>Privacy</strong>: - Who owns your genetic data? - Can insurance companies use it? - Employment discrimination? - Data security?</p>
+<p><strong>Equity</strong>: - Will benefits reach everyone? - Or only wealthy people/countries? - Access to treatments?</p>
+<p><strong>Gene Editing</strong>: - Should we edit human embryos? - Enhancement vs.&nbsp;treatment? - Unintended consequences? - Playing God?</p>
+<p><strong>Consent</strong>: - Who can consent for children? - Incidental findings (finding unexpected diseases)? - Right not to know?</p>
+<p>These questions don’t have easy answers, but we must consider them!</p>
+</section>
+</section>
+<section id="key-takeaways" class="level2" data-number="17.9">
+<h2 data-number="17.9" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">17.9</span> Key Takeaways</h2>
+<ul>
+<li><strong>Medicine</strong>: Personalized treatment, early detection, understanding diseases</li>
+<li><strong>Biotechnology</strong>: Making therapeutic proteins, industrial enzymes, synthetic organisms</li>
+<li><strong>Agriculture</strong>: Better crops (disease-resistant, drought-tolerant, nutritious), improved livestock</li>
+<li><strong>Evolution</strong>: Understanding our past, comparing species, ancient DNA</li>
+<li><strong>Conservation</strong>: Saving endangered species, maintaining genetic diversity</li>
+<li><strong>Personalized medicine</strong>: Prevention, gene therapy, cancer vaccines</li>
+<li><strong>Forensics</strong>: Criminal justice, paternity testing, ancestry</li>
+<li><strong>Ethical considerations</strong>: Privacy, equity, gene editing, consent</li>
+<li>Genomics and proteomics touch nearly every aspect of modern life!</li>
+<li>These fields continue to expand and create new applications</li>
+</ul>
+<hr>
+<p><strong>Sources</strong>: Information adapted from medical genomics literature, biotechnology applications, agricultural genomics, and ethical discussions in genetics.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          if (link.getAttribute("rel") === null) {
+            link.setAttribute("rel", "noopener");
+          }
+          // default icon
+          link.classList.add("external");
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./ch16-experimental-methods.html" class="pagination-link" aria-label="Experimental Proofs and Methods">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Experimental Proofs and Methods</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ch18-discussion.html" class="pagination-link" aria-label="Discussion Questions">
+        <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Discussion Questions</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
