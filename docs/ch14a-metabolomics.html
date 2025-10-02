@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; Discovery of DNA as Genetic Material – Foundations of Genomics and Proteomics</title>
+<title>17&nbsp; Metabolomics and the Metabolome – Foundations of Genomics and Proteomics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./ch06-molecular-era.html" rel="next">
-<link href="./ch04-classical-genetics.html" rel="prev">
+<link href="./ch15-sequencing.html" rel="next">
+<link href="./ch14-epigenetics.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch04-classical-genetics.html">Part II – Historical Perspectives</a></li><li class="breadcrumb-item"><a href="./ch05-dna-discovery.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discovery of DNA as Genetic Material</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch12-transcriptomics.html">Part IV – Beyond the Genome</a></li><li class="breadcrumb-item"><a href="./ch14a-metabolomics.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Metabolomics and the Metabolome</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -158,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch05-dna-discovery.html" class="sidebar-item-text sidebar-link active">
+  <a href="./ch05-dna-discovery.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discovery of DNA as Genetic Material</span></span></a>
   </div>
 </li>
@@ -252,7 +252,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch14a-metabolomics.html" class="sidebar-item-text sidebar-link">
+  <a href="./ch14a-metabolomics.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Metabolomics and the Metabolome</span></span></a>
   </div>
 </li>
@@ -338,52 +338,76 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#the-great-mystery" id="toc-the-great-mystery" class="nav-link active" data-scroll-target="#the-great-mystery"><span class="header-section-number">5.1</span> The Great Mystery</a>
+  <li><a href="#the-chemistry-of-life" id="toc-the-chemistry-of-life" class="nav-link active" data-scroll-target="#the-chemistry-of-life"><span class="header-section-number">17.1</span> The Chemistry of Life</a>
   <ul class="collapse">
-  <li><a href="#what-scientists-wondered" id="toc-what-scientists-wondered" class="nav-link" data-scroll-target="#what-scientists-wondered"><span class="header-section-number">5.1.1</span> What Scientists Wondered</a></li>
+  <li><a href="#what-is-metabolomics" id="toc-what-is-metabolomics" class="nav-link" data-scroll-target="#what-is-metabolomics"><span class="header-section-number">17.1.1</span> What Is Metabolomics?</a></li>
+  <li><a href="#the-ome-family" id="toc-the-ome-family" class="nav-link" data-scroll-target="#the-ome-family"><span class="header-section-number">17.1.2</span> The “Ome” Family</a></li>
   </ul></li>
-  <li><a href="#the-first-clue-griffiths-experiment-1928" id="toc-the-first-clue-griffiths-experiment-1928" class="nav-link" data-scroll-target="#the-first-clue-griffiths-experiment-1928"><span class="header-section-number">5.2</span> The First Clue: Griffith’s Experiment (1928)</a>
+  <li><a href="#why-study-the-metabolome" id="toc-why-study-the-metabolome" class="nav-link" data-scroll-target="#why-study-the-metabolome"><span class="header-section-number">17.2</span> Why Study the Metabolome?</a>
   <ul class="collapse">
-  <li><a href="#the-mystery-of-the-killer-bacteria" id="toc-the-mystery-of-the-killer-bacteria" class="nav-link" data-scroll-target="#the-mystery-of-the-killer-bacteria"><span class="header-section-number">5.2.1</span> The Mystery of the Killer Bacteria</a></li>
-  <li><a href="#the-surprising-discovery" id="toc-the-surprising-discovery" class="nav-link" data-scroll-target="#the-surprising-discovery"><span class="header-section-number">5.2.2</span> The Surprising Discovery</a></li>
-  <li><a href="#what-happened" id="toc-what-happened" class="nav-link" data-scroll-target="#what-happened"><span class="header-section-number">5.2.3</span> What Happened?</a></li>
+  <li><a href="#the-endpoint-of-biology" id="toc-the-endpoint-of-biology" class="nav-link" data-scroll-target="#the-endpoint-of-biology"><span class="header-section-number">17.2.1</span> The Endpoint of Biology</a></li>
+  <li><a href="#health-and-disease" id="toc-health-and-disease" class="nav-link" data-scroll-target="#health-and-disease"><span class="header-section-number">17.2.2</span> Health and Disease</a></li>
+  <li><a href="#personalized-medicine" id="toc-personalized-medicine" class="nav-link" data-scroll-target="#personalized-medicine"><span class="header-section-number">17.2.3</span> Personalized Medicine</a></li>
   </ul></li>
-  <li><a href="#the-second-clue-avery-macleod-and-mccarty-1944" id="toc-the-second-clue-avery-macleod-and-mccarty-1944" class="nav-link" data-scroll-target="#the-second-clue-avery-macleod-and-mccarty-1944"><span class="header-section-number">5.3</span> The Second Clue: Avery, MacLeod, and McCarty (1944)</a>
+  <li><a href="#the-metabolome" id="toc-the-metabolome" class="nav-link" data-scroll-target="#the-metabolome"><span class="header-section-number">17.3</span> The Metabolome</a>
   <ul class="collapse">
-  <li><a href="#detective-work" id="toc-detective-work" class="nav-link" data-scroll-target="#detective-work"><span class="header-section-number">5.3.1</span> Detective Work!</a></li>
-  <li><a href="#the-experiment-plan" id="toc-the-experiment-plan" class="nav-link" data-scroll-target="#the-experiment-plan"><span class="header-section-number">5.3.2</span> The Experiment Plan</a></li>
-  <li><a href="#the-process" id="toc-the-process" class="nav-link" data-scroll-target="#the-process"><span class="header-section-number">5.3.3</span> The Process</a></li>
-  <li><a href="#the-big-discovery" id="toc-the-big-discovery" class="nav-link" data-scroll-target="#the-big-discovery"><span class="header-section-number">5.3.4</span> The Big Discovery</a></li>
+  <li><a href="#how-many-metabolites" id="toc-how-many-metabolites" class="nav-link" data-scroll-target="#how-many-metabolites"><span class="header-section-number">17.3.1</span> How Many Metabolites?</a></li>
+  <li><a href="#types-of-metabolites" id="toc-types-of-metabolites" class="nav-link" data-scroll-target="#types-of-metabolites"><span class="header-section-number">17.3.2</span> Types of Metabolites</a></li>
   </ul></li>
-  <li><a href="#the-final-proof-the-hershey-chase-experiment-1952" id="toc-the-final-proof-the-hershey-chase-experiment-1952" class="nav-link" data-scroll-target="#the-final-proof-the-hershey-chase-experiment-1952"><span class="header-section-number">5.4</span> The Final Proof: The Hershey-Chase Experiment (1952)</a>
+  <li><a href="#how-metabolomics-works" id="toc-how-metabolomics-works" class="nav-link" data-scroll-target="#how-metabolomics-works"><span class="header-section-number">17.4</span> How Metabolomics Works</a>
   <ul class="collapse">
-  <li><a href="#enter-the-bacteriophages" id="toc-enter-the-bacteriophages" class="nav-link" data-scroll-target="#enter-the-bacteriophages"><span class="header-section-number">5.4.1</span> Enter the Bacteriophages!</a></li>
-  <li><a href="#the-clever-trick-radioactive-labels" id="toc-the-clever-trick-radioactive-labels" class="nav-link" data-scroll-target="#the-clever-trick-radioactive-labels"><span class="header-section-number">5.4.2</span> The Clever Trick: Radioactive Labels</a></li>
-  <li><a href="#the-experiment" id="toc-the-experiment" class="nav-link" data-scroll-target="#the-experiment"><span class="header-section-number">5.4.3</span> The Experiment</a></li>
-  <li><a href="#the-final-verdict" id="toc-the-final-verdict" class="nav-link" data-scroll-target="#the-final-verdict"><span class="header-section-number">5.4.4</span> The Final Verdict</a></li>
+  <li><a href="#the-challenge" id="toc-the-challenge" class="nav-link" data-scroll-target="#the-challenge"><span class="header-section-number">17.4.1</span> The Challenge</a></li>
+  <li><a href="#analytical-techniques" id="toc-analytical-techniques" class="nav-link" data-scroll-target="#analytical-techniques"><span class="header-section-number">17.4.2</span> Analytical Techniques</a></li>
+  <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow"><span class="header-section-number">17.4.3</span> Workflow</a></li>
   </ul></li>
-  <li><a href="#why-these-experiments-were-brilliant" id="toc-why-these-experiments-were-brilliant" class="nav-link" data-scroll-target="#why-these-experiments-were-brilliant"><span class="header-section-number">5.5</span> Why These Experiments Were Brilliant</a>
+  <li><a href="#metabolic-pathways" id="toc-metabolic-pathways" class="nav-link" data-scroll-target="#metabolic-pathways"><span class="header-section-number">17.5</span> Metabolic Pathways</a>
   <ul class="collapse">
-  <li><a href="#they-used-the-scientific-method" id="toc-they-used-the-scientific-method" class="nav-link" data-scroll-target="#they-used-the-scientific-method"><span class="header-section-number">5.5.1</span> They Used the Scientific Method</a></li>
-  <li><a href="#they-were-creative" id="toc-they-were-creative" class="nav-link" data-scroll-target="#they-were-creative"><span class="header-section-number">5.5.2</span> They Were Creative</a></li>
-  <li><a href="#they-built-on-each-others-work" id="toc-they-built-on-each-others-work" class="nav-link" data-scroll-target="#they-built-on-each-others-work"><span class="header-section-number">5.5.3</span> They Built on Each Other’s Work</a></li>
+  <li><a href="#networks-of-chemical-reactions" id="toc-networks-of-chemical-reactions" class="nav-link" data-scroll-target="#networks-of-chemical-reactions"><span class="header-section-number">17.5.1</span> Networks of Chemical Reactions</a></li>
+  <li><a href="#major-pathways" id="toc-major-pathways" class="nav-link" data-scroll-target="#major-pathways"><span class="header-section-number">17.5.2</span> Major Pathways</a></li>
+  <li><a href="#pathway-databases" id="toc-pathway-databases" class="nav-link" data-scroll-target="#pathway-databases"><span class="header-section-number">17.5.3</span> Pathway Databases</a></li>
   </ul></li>
-  <li><a href="#the-impact" id="toc-the-impact" class="nav-link" data-scroll-target="#the-impact"><span class="header-section-number">5.6</span> The Impact</a>
+  <li><a href="#metabolomics-approaches" id="toc-metabolomics-approaches" class="nav-link" data-scroll-target="#metabolomics-approaches"><span class="header-section-number">17.6</span> Metabolomics Approaches</a>
   <ul class="collapse">
-  <li><a href="#changing-biology-forever" id="toc-changing-biology-forever" class="nav-link" data-scroll-target="#changing-biology-forever"><span class="header-section-number">5.6.1</span> Changing Biology Forever</a></li>
-  <li><a href="#real-world-applications-today" id="toc-real-world-applications-today" class="nav-link" data-scroll-target="#real-world-applications-today"><span class="header-section-number">5.6.2</span> Real-World Applications Today</a></li>
+  <li><a href="#targeted-vs.-untargeted" id="toc-targeted-vs.-untargeted" class="nav-link" data-scroll-target="#targeted-vs.-untargeted"><span class="header-section-number">17.6.1</span> Targeted vs.&nbsp;Untargeted</a></li>
+  <li><a href="#lipidomics-specialized-metabolomics" id="toc-lipidomics-specialized-metabolomics" class="nav-link" data-scroll-target="#lipidomics-specialized-metabolomics"><span class="header-section-number">17.6.2</span> Lipidomics: Specialized Metabolomics</a></li>
   </ul></li>
-  <li><a href="#fun-facts" id="toc-fun-facts" class="nav-link" data-scroll-target="#fun-facts"><span class="header-section-number">5.7</span> Fun Facts! 🎉</a></li>
-  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">5.8</span> Key Takeaways</a></li>
+  <li><a href="#applications-of-metabolomics" id="toc-applications-of-metabolomics" class="nav-link" data-scroll-target="#applications-of-metabolomics"><span class="header-section-number">17.7</span> Applications of Metabolomics</a>
+  <ul class="collapse">
+  <li><a href="#medicine-and-diagnostics" id="toc-medicine-and-diagnostics" class="nav-link" data-scroll-target="#medicine-and-diagnostics"><span class="header-section-number">17.7.1</span> Medicine and Diagnostics</a></li>
+  <li><a href="#nutrition" id="toc-nutrition" class="nav-link" data-scroll-target="#nutrition"><span class="header-section-number">17.7.2</span> Nutrition</a></li>
+  <li><a href="#drug-development" id="toc-drug-development" class="nav-link" data-scroll-target="#drug-development"><span class="header-section-number">17.7.3</span> Drug Development</a></li>
+  <li><a href="#agriculture" id="toc-agriculture" class="nav-link" data-scroll-target="#agriculture"><span class="header-section-number">17.7.4</span> Agriculture</a></li>
+  <li><a href="#environmental-science" id="toc-environmental-science" class="nav-link" data-scroll-target="#environmental-science"><span class="header-section-number">17.7.5</span> Environmental Science</a></li>
+  </ul></li>
+  <li><a href="#integration-with-other-omics" id="toc-integration-with-other-omics" class="nav-link" data-scroll-target="#integration-with-other-omics"><span class="header-section-number">17.8</span> Integration with Other Omics</a>
+  <ul class="collapse">
+  <li><a href="#systems-biology-approach" id="toc-systems-biology-approach" class="nav-link" data-scroll-target="#systems-biology-approach"><span class="header-section-number">17.8.1</span> Systems Biology Approach</a></li>
+  <li><a href="#machine-learning" id="toc-machine-learning" class="nav-link" data-scroll-target="#machine-learning"><span class="header-section-number">17.8.2</span> Machine Learning</a></li>
+  </ul></li>
+  <li><a href="#the-metabolome-and-microbiome" id="toc-the-metabolome-and-microbiome" class="nav-link" data-scroll-target="#the-metabolome-and-microbiome"><span class="header-section-number">17.9</span> The Metabolome and Microbiome</a>
+  <ul class="collapse">
+  <li><a href="#microbial-metabolites" id="toc-microbial-metabolites" class="nav-link" data-scroll-target="#microbial-metabolites"><span class="header-section-number">17.9.1</span> Microbial Metabolites</a></li>
+  </ul></li>
+  <li><a href="#challenges-in-metabolomics" id="toc-challenges-in-metabolomics" class="nav-link" data-scroll-target="#challenges-in-metabolomics"><span class="header-section-number">17.10</span> Challenges in Metabolomics</a>
+  <ul class="collapse">
+  <li><a href="#technical-challenges" id="toc-technical-challenges" class="nav-link" data-scroll-target="#technical-challenges"><span class="header-section-number">17.10.1</span> Technical Challenges</a></li>
+  <li><a href="#biological-challenges" id="toc-biological-challenges" class="nav-link" data-scroll-target="#biological-challenges"><span class="header-section-number">17.10.2</span> Biological Challenges</a></li>
+  </ul></li>
+  <li><a href="#the-future-of-metabolomics" id="toc-the-future-of-metabolomics" class="nav-link" data-scroll-target="#the-future-of-metabolomics"><span class="header-section-number">17.11</span> The Future of Metabolomics</a>
+  <ul class="collapse">
+  <li><a href="#emerging-technologies" id="toc-emerging-technologies" class="nav-link" data-scroll-target="#emerging-technologies"><span class="header-section-number">17.11.1</span> Emerging Technologies</a></li>
+  <li><a href="#personalized-medicine-1" id="toc-personalized-medicine-1" class="nav-link" data-scroll-target="#personalized-medicine-1"><span class="header-section-number">17.11.2</span> Personalized Medicine</a></li>
+  </ul></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">17.12</span> Key Takeaways</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch04-classical-genetics.html">Part II – Historical Perspectives</a></li><li class="breadcrumb-item"><a href="./ch05-dna-discovery.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discovery of DNA as Genetic Material</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch12-transcriptomics.html">Part IV – Beyond the Genome</a></li><li class="breadcrumb-item"><a href="./ch14a-metabolomics.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Metabolomics and the Metabolome</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discovery of DNA as Genetic Material</span></h1>
+<h1 class="title"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Metabolomics and the Metabolome</span></h1>
 </div>
 
 
@@ -400,160 +424,259 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="the-great-mystery" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="the-great-mystery"><span class="header-section-number">5.1</span> The Great Mystery</h2>
-<section id="what-scientists-wondered" class="level3" data-number="5.1.1">
-<h3 data-number="5.1.1" class="anchored" data-anchor-id="what-scientists-wondered"><span class="header-section-number">5.1.1</span> What Scientists Wondered</h3>
-<p>In the early 1900s, scientists knew that children inherited traits from their parents (thanks to Mendel!). But they had a big question:</p>
-<p><strong>What exactly carries genetic information from parents to children?</strong></p>
-<p>It’s like knowing that letters get delivered to your house, but not knowing who delivers them!</p>
-<p>Scientists knew cells had several important parts: - Proteins (which do most of the work) - DNA (which was known but seemed too simple) - RNA (also known but mysterious) - Carbohydrates (sugars) and lipids (fats)</p>
-<p>Most scientists thought <strong>proteins</strong> must carry genetic information because they seemed complex enough. DNA seemed too simple with only 4 “letters”!</p>
-<p>They were wrong—and it took clever experiments to prove it!</p>
+<section id="the-chemistry-of-life" class="level2" data-number="17.1">
+<h2 data-number="17.1" class="anchored" data-anchor-id="the-chemistry-of-life"><span class="header-section-number">17.1</span> The Chemistry of Life</h2>
+<section id="what-is-metabolomics" class="level3" data-number="17.1.1">
+<h3 data-number="17.1.1" class="anchored" data-anchor-id="what-is-metabolomics"><span class="header-section-number">17.1.1</span> What Is Metabolomics?</h3>
+<p><strong>Metabolomics</strong> = Study of all small molecules (metabolites) in a biological system</p>
+<p><strong>Metabolites</strong> = Small molecules involved in metabolism: - Sugars (glucose, fructose) - Amino acids (building blocks of proteins) - Lipids (fats) - Nucleotides (building blocks of DNA/RNA) - Vitamins - Hormones - And thousands more!</p>
+<p>Think of it like: - Genome = The cookbook - Transcriptome = The recipes being read - Proteome = The chefs and kitchen tools - <strong>Metabolome</strong> = The actual food and ingredients!</p>
+</section>
+<section id="the-ome-family" class="level3" data-number="17.1.2">
+<h3 data-number="17.1.2" class="anchored" data-anchor-id="the-ome-family"><span class="header-section-number">17.1.2</span> The “Ome” Family</h3>
+<p><strong>Comparing the omes</strong>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 18%">
+<col style="width: 31%">
+<col style="width: 34%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ome</th>
+<th>What</th>
+<th>How Many</th>
+<th>Timescale</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Genome</strong></td>
+<td>DNA</td>
+<td>~20,000 genes</td>
+<td>Stable (lifetime)</td>
+</tr>
+<tr class="even">
+<td><strong>Transcriptome</strong></td>
+<td>RNA</td>
+<td>~100,000 transcripts</td>
+<td>Hours</td>
+</tr>
+<tr class="odd">
+<td><strong>Proteome</strong></td>
+<td>Proteins</td>
+<td>~1 million forms</td>
+<td>Hours to days</td>
+</tr>
+<tr class="even">
+<td><strong>Metabolome</strong></td>
+<td>Small molecules</td>
+<td>~20,000+ metabolites</td>
+<td>Seconds to minutes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key insight</strong>: Metabolome is the FASTEST changing! - Responds immediately to changes - Reflects what’s happening RIGHT NOW - Real-time snapshot of cell state</p>
 </section>
 </section>
-<section id="the-first-clue-griffiths-experiment-1928" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="the-first-clue-griffiths-experiment-1928"><span class="header-section-number">5.2</span> The First Clue: Griffith’s Experiment (1928)</h2>
-<section id="the-mystery-of-the-killer-bacteria" class="level3" data-number="5.2.1">
-<h3 data-number="5.2.1" class="anchored" data-anchor-id="the-mystery-of-the-killer-bacteria"><span class="header-section-number">5.2.1</span> The Mystery of the Killer Bacteria</h3>
-<p>A British scientist named <strong>Frederick Griffith</strong> was studying bacteria that caused pneumonia (a lung disease).</p>
-<p>He discovered two types of these bacteria:</p>
-<p><strong>S-type bacteria (Smooth)</strong>: - Had a smooth, slimy coating - Made mice sick and killed them - Looked smooth and shiny in a dish</p>
-<p><strong>R-type bacteria (Rough)</strong>: - Had no coating - Did NOT make mice sick - Looked rough and bumpy in a dish</p>
-<p>Think of the S-type as wearing a protective raincoat, while the R-type bacteria were naked and harmless!</p>
+<section id="why-study-the-metabolome" class="level2" data-number="17.2">
+<h2 data-number="17.2" class="anchored" data-anchor-id="why-study-the-metabolome"><span class="header-section-number">17.2</span> Why Study the Metabolome?</h2>
+<section id="the-endpoint-of-biology" class="level3" data-number="17.2.1">
+<h3 data-number="17.2.1" class="anchored" data-anchor-id="the-endpoint-of-biology"><span class="header-section-number">17.2.1</span> The Endpoint of Biology</h3>
+<p><strong>The metabolome is where the action is</strong>: - Genes can be present but inactive - RNA can be made but not translated - Proteins can be made but not active - <strong>Metabolites</strong> = actual work being done!</p>
+<p><strong>Example</strong>: - Gene for insulin → might be present - mRNA for insulin → might be made - Insulin protein → might be produced - <strong>Blood glucose level</strong> → shows if insulin WORKING</p>
+<p><strong>Phenotype</strong> (what we see) is determined by metabolites!</p>
 </section>
-<section id="the-surprising-discovery" class="level3" data-number="5.2.2">
-<h3 data-number="5.2.2" class="anchored" data-anchor-id="the-surprising-discovery"><span class="header-section-number">5.2.2</span> The Surprising Discovery</h3>
-<p>Griffith did four experiments:</p>
-<p><strong>Experiment 1</strong>: Give live S-type bacteria to a mouse - <strong>Result</strong>: Mouse dies 😢</p>
-<p><strong>Experiment 2</strong>: Give live R-type bacteria to a mouse - <strong>Result</strong>: Mouse lives! 😊</p>
-<p><strong>Experiment 3</strong>: Heat-kill the S-type bacteria (they’re dead!), then give them to a mouse - <strong>Result</strong>: Mouse lives! 😊 - Makes sense—dead bacteria can’t hurt you!</p>
-<p><strong>Experiment 4</strong>: Mix dead S-type bacteria with live R-type bacteria, give to mouse - <strong>Result</strong>: Mouse dies! 😱</p>
-<p><strong>Wait, what?!</strong> The dead bacteria somehow made the harmless bacteria deadly!</p>
+<section id="health-and-disease" class="level3" data-number="17.2.2">
+<h3 data-number="17.2.2" class="anchored" data-anchor-id="health-and-disease"><span class="header-section-number">17.2.2</span> Health and Disease</h3>
+<p><strong>Metabolites reflect health status</strong>: - <strong>Diabetes</strong>: High blood glucose - <strong>Kidney disease</strong>: High creatinine - <strong>Heart disease</strong>: Abnormal cholesterol - <strong>Cancer</strong>: Altered metabolism</p>
+<p><strong>Biomarkers</strong>: - Metabolites that indicate disease - Used for diagnosis - Monitor treatment - Predict outcomes</p>
 </section>
-<section id="what-happened" class="level3" data-number="5.2.3">
-<h3 data-number="5.2.3" class="anchored" data-anchor-id="what-happened"><span class="header-section-number">5.2.3</span> What Happened?</h3>
-<p>Griffith found that: - Something from the dead S-type bacteria “transformed” the living R-type bacteria - The R-type bacteria became S-type bacteria and could now kill mice - Even worse, the transformed bacteria stayed S-type forever and passed this on to their babies!</p>
-<p>Griffith called this <strong>transformation</strong>—something from the dead bacteria changed the living bacteria’s genetic information permanently!</p>
-<p><strong>But what was that “something”?</strong> Griffith didn’t know. He guessed it was some kind of “transforming principle.”</p>
+<section id="personalized-medicine" class="level3" data-number="17.2.3">
+<h3 data-number="17.2.3" class="anchored" data-anchor-id="personalized-medicine"><span class="header-section-number">17.2.3</span> Personalized Medicine</h3>
+<p><strong>Pharmacometabolomics</strong>: - How drugs affect your metabolism - Predict drug responses - Avoid side effects - Optimize dosing</p>
+<p><strong>Everyone metabolizes differently</strong>: - Genetics - Microbiome - Diet - Lifestyle</p>
 </section>
 </section>
-<section id="the-second-clue-avery-macleod-and-mccarty-1944" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="the-second-clue-avery-macleod-and-mccarty-1944"><span class="header-section-number">5.3</span> The Second Clue: Avery, MacLeod, and McCarty (1944)</h2>
-<section id="detective-work" class="level3" data-number="5.3.1">
-<h3 data-number="5.3.1" class="anchored" data-anchor-id="detective-work"><span class="header-section-number">5.3.1</span> Detective Work!</h3>
-<p>Sixteen years later, three scientists—<strong>Oswald Avery</strong>, <strong>Colin MacLeod</strong>, and <strong>Maclyn McCarty</strong>—decided to solve Griffith’s mystery.</p>
-<p>They wanted to find out: <strong>What exactly is the “transforming principle”?</strong></p>
+<section id="the-metabolome" class="level2" data-number="17.3">
+<h2 data-number="17.3" class="anchored" data-anchor-id="the-metabolome"><span class="header-section-number">17.3</span> The Metabolome</h2>
+<section id="how-many-metabolites" class="level3" data-number="17.3.1">
+<h3 data-number="17.3.1" class="anchored" data-anchor-id="how-many-metabolites"><span class="header-section-number">17.3.1</span> How Many Metabolites?</h3>
+<p><strong>Estimated numbers</strong>: - <strong>Human metabolome</strong>: ~110,000+ metabolites - <strong>Plant metabolome</strong>: Even more! (&gt;200,000) - <strong>Microbial metabolome</strong>: Highly variable</p>
+<p><strong>Much more complex than genome</strong>: - Same atoms, different arrangements - Isomers (same formula, different structure) - Chemical diversity is huge!</p>
 </section>
-<section id="the-experiment-plan" class="level3" data-number="5.3.2">
-<h3 data-number="5.3.2" class="anchored" data-anchor-id="the-experiment-plan"><span class="header-section-number">5.3.2</span> The Experiment Plan</h3>
-<p>They were like detectives eliminating suspects one by one!</p>
-<p>Here’s what they did: 1. Took dead S-type bacteria 2. Separated the bacteria into different parts (proteins, DNA, RNA, carbohydrates, lipids) 3. Tested each part to see which one could transform R-type bacteria into S-type</p>
-</section>
-<section id="the-process" class="level3" data-number="5.3.3">
-<h3 data-number="5.3.3" class="anchored" data-anchor-id="the-process"><span class="header-section-number">5.3.3</span> The Process</h3>
-<p><strong>Test 1: Remove all the proteins</strong> - Mixed the remaining stuff with R-type bacteria - <strong>Result</strong>: Transformation still happened! - <strong>Conclusion</strong>: It’s NOT proteins! (This was shocking—everyone thought it was proteins!)</p>
-<p><strong>Test 2: Remove all the RNA</strong> - Mixed the remaining stuff with R-type bacteria - <strong>Result</strong>: Transformation still happened! - <strong>Conclusion</strong>: It’s NOT RNA!</p>
-<p><strong>Test 3: Remove all the carbohydrates and lipids</strong> - Mixed the remaining stuff with R-type bacteria - <strong>Result</strong>: Transformation still happened! - <strong>Conclusion</strong>: It’s NOT carbohydrates or lipids!</p>
-<p><strong>Test 4: Destroy only the DNA</strong> (using an enzyme called DNase) - Mixed the remaining stuff with R-type bacteria - <strong>Result</strong>: NO transformation happened! - <strong>Conclusion</strong>: IT’S DNA!!!</p>
-</section>
-<section id="the-big-discovery" class="level3" data-number="5.3.4">
-<h3 data-number="5.3.4" class="anchored" data-anchor-id="the-big-discovery"><span class="header-section-number">5.3.4</span> The Big Discovery</h3>
-<p>Avery, MacLeod, and McCarty proved that: - <strong>DNA</strong> is the genetic material - DNA carries information from one generation to the next - Proteins are NOT the genetic material (surprise!)</p>
-<p>This was HUGE news! But some scientists still didn’t believe it. They needed more proof.</p>
+<section id="types-of-metabolites" class="level3" data-number="17.3.2">
+<h3 data-number="17.3.2" class="anchored" data-anchor-id="types-of-metabolites"><span class="header-section-number">17.3.2</span> Types of Metabolites</h3>
+<p><strong>Primary metabolites</strong>: - Essential for life - Present in all organisms - Amino acids, sugars, nucleotides - Conserved across species</p>
+<p><strong>Secondary metabolites</strong>: - Not essential for survival - Organism-specific - Defense, signaling, communication - Plants are champions (colors, scents, toxins!)</p>
 </section>
 </section>
-<section id="the-final-proof-the-hershey-chase-experiment-1952" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="the-final-proof-the-hershey-chase-experiment-1952"><span class="header-section-number">5.4</span> The Final Proof: The Hershey-Chase Experiment (1952)</h2>
-<section id="enter-the-bacteriophages" class="level3" data-number="5.4.1">
-<h3 data-number="5.4.1" class="anchored" data-anchor-id="enter-the-bacteriophages"><span class="header-section-number">5.4.1</span> Enter the Bacteriophages!</h3>
-<p>Eight years later, two scientists—<strong>Alfred Hershey</strong> and <strong>Martha Chase</strong>—did another brilliant experiment.</p>
-<p>They studied <strong>bacteriophages</strong> (we can call them “phages” for short). Phages are viruses that attack bacteria.</p>
-<p>Think of phages like tiny spaceships that: - Land on bacteria - Inject something inside - Use the bacteria to make more phages - Eventually burst the bacteria and release new phages</p>
-<p><strong>The Question</strong>: What do phages inject into bacteria—DNA or protein?</p>
+<section id="how-metabolomics-works" class="level2" data-number="17.4">
+<h2 data-number="17.4" class="anchored" data-anchor-id="how-metabolomics-works"><span class="header-section-number">17.4</span> How Metabolomics Works</h2>
+<section id="the-challenge" class="level3" data-number="17.4.1">
+<h3 data-number="17.4.1" class="anchored" data-anchor-id="the-challenge"><span class="header-section-number">17.4.1</span> The Challenge</h3>
+<p><strong>Unlike genes</strong>: - Metabolites are chemically diverse - Different sizes, properties - Water-loving (hydrophilic) vs.&nbsp;fat-loving (hydrophobic) - Can’t use one method to detect all!</p>
 </section>
-<section id="the-clever-trick-radioactive-labels" class="level3" data-number="5.4.2">
-<h3 data-number="5.4.2" class="anchored" data-anchor-id="the-clever-trick-radioactive-labels"><span class="header-section-number">5.4.2</span> The Clever Trick: Radioactive Labels</h3>
-<p>Hershey and Chase used a brilliant trick—they “tagged” molecules with radioactive labels (like putting glow-in-the-dark stickers on things so you can track them!).</p>
-<p><strong>Key Facts About Phages</strong>: - Phages have a protein coat on the outside - Phages have DNA on the inside - Proteins contain an element called <strong>sulfur</strong> - DNA contains an element called <strong>phosphorus</strong></p>
+<section id="analytical-techniques" class="level3" data-number="17.4.2">
+<h3 data-number="17.4.2" class="anchored" data-anchor-id="analytical-techniques"><span class="header-section-number">17.4.2</span> Analytical Techniques</h3>
+<p><strong>1. Mass Spectrometry (MS)</strong></p>
+<p><strong>What it does</strong>: Measures mass of molecules</p>
+<p><strong>How it works</strong>: 1. Ionize metabolites (give them a charge) 2. Separate by mass-to-charge ratio 3. Detect ions 4. Identify based on mass</p>
+<p><strong>Why it’s good</strong>: - Very sensitive - Can identify unknown metabolites - High-throughput</p>
+<p><strong>Coupled with chromatography</strong>: - <strong>LC-MS</strong> (Liquid Chromatography-MS): Separate first, then measure - <strong>GC-MS</strong> (Gas Chromatography-MS): For volatile metabolites</p>
+<p><strong>2. Nuclear Magnetic Resonance (NMR)</strong></p>
+<p><strong>What it does</strong>: Uses magnets to identify molecules</p>
+<p><strong>How it works</strong>: - Put sample in strong magnetic field - Radio waves excite atoms - Atoms emit signals - Pattern reveals molecular structure</p>
+<p><strong>Why it’s good</strong>: - Non-destructive - Quantitative - Less sample preparation - Can identify unknown structures</p>
+<p><strong>Why it’s limited</strong>: - Less sensitive than MS - Expensive equipment - Need lots of sample</p>
 </section>
-<section id="the-experiment" class="level3" data-number="5.4.3">
-<h3 data-number="5.4.3" class="anchored" data-anchor-id="the-experiment"><span class="header-section-number">5.4.3</span> The Experiment</h3>
-<p>They did two experiments:</p>
-<p><strong>Experiment 1: Label the Protein</strong> 1. Grew phages with radioactive <strong>sulfur</strong> (this labels the protein) 2. Let the phages infect bacteria 3. Used a blender to separate the phage coats from the bacteria (yes, really—a blender!) 4. Checked where the radioactive label was</p>
-<p><strong>Result</strong>: The radioactive sulfur stayed OUTSIDE the bacteria (in the phage coat) <strong>Conclusion</strong>: Protein doesn’t go into the bacteria</p>
-<p><strong>Experiment 2: Label the DNA</strong> 1. Grew phages with radioactive <strong>phosphorus</strong> (this labels the DNA) 2. Let the phages infect bacteria 3. Used a blender to separate the phage coats from the bacteria 4. Checked where the radioactive label was</p>
-<p><strong>Result</strong>: The radioactive phosphorus was found INSIDE the bacteria! <strong>Conclusion</strong>: DNA goes into the bacteria</p>
-</section>
-<section id="the-final-verdict" class="level3" data-number="5.4.4">
-<h3 data-number="5.4.4" class="anchored" data-anchor-id="the-final-verdict"><span class="header-section-number">5.4.4</span> The Final Verdict</h3>
-<p>After the bacteria were infected: - New phages were created - These new phages had radioactive phosphorus (DNA), NOT radioactive sulfur (protein)</p>
-<p><strong>This proved</strong>: DNA is the genetic material that gets passed from parent to offspring!</p>
-<p>Think of it like this: - The phage is a syringe - The protein coat is the syringe body (stays outside) - The DNA is the medicine (gets injected inside) - The DNA contains the instructions to make new phages!</p>
+<section id="workflow" class="level3" data-number="17.4.3">
+<h3 data-number="17.4.3" class="anchored" data-anchor-id="workflow"><span class="header-section-number">17.4.3</span> Workflow</h3>
+<p><strong>1. Sample Collection</strong> - Blood, urine, tissue, cells - Time-sensitive (metabolites change quickly!) - Immediate freezing often needed</p>
+<p><strong>2. Sample Preparation</strong> - Extract metabolites - Different methods for different types - Remove proteins and other interfering molecules</p>
+<p><strong>3. Analysis</strong> - Run on MS or NMR - Generate data</p>
+<p><strong>4. Data Processing</strong> - Identify peaks - Match to known metabolites - Quantify amounts</p>
+<p><strong>5. Data Analysis</strong> - Statistical analysis - Find differences between groups - Pathway analysis</p>
 </section>
 </section>
-<section id="why-these-experiments-were-brilliant" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="why-these-experiments-were-brilliant"><span class="header-section-number">5.5</span> Why These Experiments Were Brilliant</h2>
-<section id="they-used-the-scientific-method" class="level3" data-number="5.5.1">
-<h3 data-number="5.5.1" class="anchored" data-anchor-id="they-used-the-scientific-method"><span class="header-section-number">5.5.1</span> They Used the Scientific Method</h3>
-<p>All three experiments followed great scientific thinking:</p>
-<ol type="1">
-<li><strong>Observation</strong>: Something interesting happens</li>
-<li><strong>Question</strong>: Why does it happen?</li>
-<li><strong>Hypothesis</strong>: Maybe it’s because of X</li>
-<li><strong>Experiment</strong>: Test if X is true</li>
-<li><strong>Conclusion</strong>: Based on results, accept or reject the hypothesis</li>
-</ol>
+<section id="metabolic-pathways" class="level2" data-number="17.5">
+<h2 data-number="17.5" class="anchored" data-anchor-id="metabolic-pathways"><span class="header-section-number">17.5</span> Metabolic Pathways</h2>
+<section id="networks-of-chemical-reactions" class="level3" data-number="17.5.1">
+<h3 data-number="17.5.1" class="anchored" data-anchor-id="networks-of-chemical-reactions"><span class="header-section-number">17.5.1</span> Networks of Chemical Reactions</h3>
+<p><strong>Metabolic pathway</strong> = Series of chemical reactions converting one molecule to another</p>
+<p><strong>Example - Glycolysis</strong>: - Glucose → Pyruvate - 10 enzymatic steps - Produces energy (ATP) - Happens in all cells!</p>
 </section>
-<section id="they-were-creative" class="level3" data-number="5.5.2">
-<h3 data-number="5.5.2" class="anchored" data-anchor-id="they-were-creative"><span class="header-section-number">5.5.2</span> They Were Creative</h3>
+<section id="major-pathways" class="level3" data-number="17.5.2">
+<h3 data-number="17.5.2" class="anchored" data-anchor-id="major-pathways"><span class="header-section-number">17.5.2</span> Major Pathways</h3>
+<p><strong>Energy metabolism</strong>: - <strong>Glycolysis</strong>: Break down glucose - <strong>TCA cycle</strong> (Krebs cycle): Generate energy - <strong>Oxidative phosphorylation</strong>: Make ATP</p>
+<p><strong>Biosynthesis</strong>: - <strong>Amino acid synthesis</strong>: Make building blocks - <strong>Nucleotide synthesis</strong>: Make DNA/RNA components - <strong>Lipid synthesis</strong>: Make fats and membranes</p>
+<p><strong>Specialized metabolism</strong>: - <strong>Xenobiotic metabolism</strong>: Process drugs and toxins - <strong>Secondary metabolism</strong>: Plants make defense compounds</p>
+</section>
+<section id="pathway-databases" class="level3" data-number="17.5.3">
+<h3 data-number="17.5.3" class="anchored" data-anchor-id="pathway-databases"><span class="header-section-number">17.5.3</span> Pathway Databases</h3>
+<p><strong>KEGG</strong> (Kyoto Encyclopedia of Genes and Genomes): - Maps of metabolic pathways - Links genes, enzymes, metabolites - Visualize metabolism</p>
+<p><strong>MetaCyc</strong>: - Thousands of pathways - From all organisms - Experimentally verified</p>
+</section>
+</section>
+<section id="metabolomics-approaches" class="level2" data-number="17.6">
+<h2 data-number="17.6" class="anchored" data-anchor-id="metabolomics-approaches"><span class="header-section-number">17.6</span> Metabolomics Approaches</h2>
+<section id="targeted-vs.-untargeted" class="level3" data-number="17.6.1">
+<h3 data-number="17.6.1" class="anchored" data-anchor-id="targeted-vs.-untargeted"><span class="header-section-number">17.6.1</span> Targeted vs.&nbsp;Untargeted</h3>
+<p><strong>Targeted Metabolomics</strong>: - Look for specific known metabolites - Quantitative (exact amounts) - Like counting specific items on grocery list</p>
+<p><strong>Uses</strong>: - Clinical diagnostics - Monitor known biomarkers - Validate findings</p>
+<p><strong>Untargeted Metabolomics</strong>: - Look at everything - Discovery mode - Find unexpected changes - Like browsing whole grocery store</p>
+<p><strong>Uses</strong>: - Biomarker discovery - Understanding disease mechanisms - Exploratory research</p>
+</section>
+<section id="lipidomics-specialized-metabolomics" class="level3" data-number="17.6.2">
+<h3 data-number="17.6.2" class="anchored" data-anchor-id="lipidomics-specialized-metabolomics"><span class="header-section-number">17.6.2</span> Lipidomics: Specialized Metabolomics</h3>
+<p><strong>Lipidomics</strong> = Study of all lipids (fats and fat-like molecules)</p>
+<p><strong>Why separate field?</strong> - Lipids are super diverse (&gt;10,000 species!) - Different properties from other metabolites - Specialized analytical methods</p>
+<p><strong>Importance</strong>: - Cell membranes - Signaling molecules - Energy storage - Neurological function</p>
+</section>
+</section>
+<section id="applications-of-metabolomics" class="level2" data-number="17.7">
+<h2 data-number="17.7" class="anchored" data-anchor-id="applications-of-metabolomics"><span class="header-section-number">17.7</span> Applications of Metabolomics</h2>
+<section id="medicine-and-diagnostics" class="level3" data-number="17.7.1">
+<h3 data-number="17.7.1" class="anchored" data-anchor-id="medicine-and-diagnostics"><span class="header-section-number">17.7.1</span> Medicine and Diagnostics</h3>
+<p><strong>Disease Diagnosis</strong>: - Inborn errors of metabolism (PKU, etc.) - Cancer detection - Diabetes monitoring - Cardiovascular disease</p>
+<p><strong>Newborn Screening</strong>: - Blood spot test - Detects ~50 metabolic disorders - Early treatment saves lives!</p>
+<p><strong>Precision Medicine</strong>: - Metabolic profiling - Predict drug responses - Personalized treatments</p>
+</section>
+<section id="nutrition" class="level3" data-number="17.7.2">
+<h3 data-number="17.7.2" class="anchored" data-anchor-id="nutrition"><span class="header-section-number">17.7.2</span> Nutrition</h3>
+<p><strong>Nutritional Metabolomics</strong>: - How diet affects metabolism - Identify dietary biomarkers - Understand food-health connections</p>
+<p><strong>Examples</strong>: - Mediterranean diet → specific metabolite profile - High sugar → metabolic changes - Vitamin deficiencies → characteristic patterns</p>
+<p><strong>Applications</strong>: - Personalized nutrition - Dietary recommendations - Food quality assessment</p>
+</section>
+<section id="drug-development" class="level3" data-number="17.7.3">
+<h3 data-number="17.7.3" class="anchored" data-anchor-id="drug-development"><span class="header-section-number">17.7.3</span> Drug Development</h3>
+<p><strong>Pharmacometabolomics</strong>: - Drug effects on metabolism - Identify side effects - Predict responders vs.&nbsp;non-responders - Optimize dosing</p>
+<p><strong>Toxicology</strong>: - Detect toxic effects - Understand mechanisms - Safety testing - Environmental toxins</p>
+</section>
+<section id="agriculture" class="level3" data-number="17.7.4">
+<h3 data-number="17.7.4" class="anchored" data-anchor-id="agriculture"><span class="header-section-number">17.7.4</span> Agriculture</h3>
+<p><strong>Plant Metabolomics</strong>: - Crop quality - Stress responses - Pest resistance - Flavor and nutrition</p>
+<p><strong>Animal Science</strong>: - Feed optimization - Disease monitoring - Meat quality - Milk composition</p>
+</section>
+<section id="environmental-science" class="level3" data-number="17.7.5">
+<h3 data-number="17.7.5" class="anchored" data-anchor-id="environmental-science"><span class="header-section-number">17.7.5</span> Environmental Science</h3>
+<p><strong>Environmental Metabolomics</strong>: - Ecosystem health - Pollution effects - Climate change impacts - Biodiversity assessment</p>
+</section>
+</section>
+<section id="integration-with-other-omics" class="level2" data-number="17.8">
+<h2 data-number="17.8" class="anchored" data-anchor-id="integration-with-other-omics"><span class="header-section-number">17.8</span> Integration with Other Omics</h2>
+<section id="systems-biology-approach" class="level3" data-number="17.8.1">
+<h3 data-number="17.8.1" class="anchored" data-anchor-id="systems-biology-approach"><span class="header-section-number">17.8.1</span> Systems Biology Approach</h3>
+<p><strong>Multi-omics integration</strong>: - Genome + Transcriptome + Proteome + Metabolome - Complete picture of biological system - Understand complexity</p>
+<p><strong>Example pathway</strong>: 1. <strong>Gene</strong> (genome) encodes enzyme 2. <strong>mRNA</strong> (transcriptome) carries message 3. <strong>Enzyme</strong> (proteome) catalyzes reaction 4. <strong>Metabolite</strong> (metabolome) is produced</p>
+<p><strong>Integration reveals</strong>: - Which genetic changes cause metabolic changes? - How gene expression correlates with metabolite levels? - Network-level understanding</p>
+</section>
+<section id="machine-learning" class="level3" data-number="17.8.2">
+<h3 data-number="17.8.2" class="anchored" data-anchor-id="machine-learning"><span class="header-section-number">17.8.2</span> Machine Learning</h3>
+<p><strong>AI in metabolomics</strong>: - Pattern recognition - Disease prediction - Biomarker discovery - Identify metabolites</p>
+<p><strong>Challenges</strong>: - High-dimensional data - Need large datasets - Biological variability</p>
+</section>
+</section>
+<section id="the-metabolome-and-microbiome" class="level2" data-number="17.9">
+<h2 data-number="17.9" class="anchored" data-anchor-id="the-metabolome-and-microbiome"><span class="header-section-number">17.9</span> The Metabolome and Microbiome</h2>
+<section id="microbial-metabolites" class="level3" data-number="17.9.1">
+<h3 data-number="17.9.1" class="anchored" data-anchor-id="microbial-metabolites"><span class="header-section-number">17.9.1</span> Microbial Metabolites</h3>
+<p><strong>Your microbiome produces thousands of metabolites</strong>: - <strong>Short-chain fatty acids</strong> (butyrate, propionate, acetate) - <strong>Vitamins</strong> (K, B12) - <strong>Neurotransmitter precursors</strong> - <strong>Toxins</strong> (in dysbiosis)</p>
+<p><strong>Co-metabolism</strong>: - Human and microbe metabolism intertwined - Microbes modify dietary compounds - Produce unique metabolites</p>
+<p><strong>Impact on health</strong>: - Gut-brain axis - Immune modulation - Energy homeostasis - Disease (obesity, diabetes, IBD)</p>
+</section>
+</section>
+<section id="challenges-in-metabolomics" class="level2" data-number="17.10">
+<h2 data-number="17.10" class="anchored" data-anchor-id="challenges-in-metabolomics"><span class="header-section-number">17.10</span> Challenges in Metabolomics</h2>
+<section id="technical-challenges" class="level3" data-number="17.10.1">
+<h3 data-number="17.10.1" class="anchored" data-anchor-id="technical-challenges"><span class="header-section-number">17.10.1</span> Technical Challenges</h3>
+<p><strong>1. Coverage</strong>: - Can’t detect all metabolites in one run - Need multiple methods - Trade-off: breadth vs.&nbsp;depth</p>
+<p><strong>2. Identification</strong>: - Many metabolites unknown - Databases incomplete - Isomers hard to distinguish</p>
+<p><strong>3. Quantification</strong>: - Absolute quantification difficult - Relative changes easier - Need standards (expensive!)</p>
+<p><strong>4. Dynamic Range</strong>: - Metabolites vary in concentration 1,000,000-fold! - Glucose: millimolar - Hormones: nanomolar - Hard to detect both in one sample</p>
+<p><strong>5. Sample Handling</strong>: - Metabolites change rapidly - Degradation during processing - Strict protocols needed</p>
+</section>
+<section id="biological-challenges" class="level3" data-number="17.10.2">
+<h3 data-number="17.10.2" class="anchored" data-anchor-id="biological-challenges"><span class="header-section-number">17.10.2</span> Biological Challenges</h3>
+<p><strong>Variability</strong>: - Diet affects metabolome - Time of day matters (circadian rhythms) - Stress, exercise, sleep - Hard to control all variables!</p>
+<p><strong>Interpretation</strong>: - Correlation ≠ causation - Which changes are important? - Biological vs.&nbsp;technical variation</p>
+</section>
+</section>
+<section id="the-future-of-metabolomics" class="level2" data-number="17.11">
+<h2 data-number="17.11" class="anchored" data-anchor-id="the-future-of-metabolomics"><span class="header-section-number">17.11</span> The Future of Metabolomics</h2>
+<section id="emerging-technologies" class="level3" data-number="17.11.1">
+<h3 data-number="17.11.1" class="anchored" data-anchor-id="emerging-technologies"><span class="header-section-number">17.11.1</span> Emerging Technologies</h3>
+<p><strong>1. Single-Cell Metabolomics</strong>: - Measure metabolites in individual cells - See cell-to-cell differences - Technically very challenging!</p>
+<p><strong>2. Spatial Metabolomics</strong>: - Map metabolites in tissues - See where reactions occur - Imaging mass spectrometry</p>
+<p><strong>3. Real-Time Monitoring</strong>: - Continuous metabolite measurements - Wearable biosensors - Immediate health feedback</p>
+<p><strong>4. Multi-Omics Integration</strong>: - Combine all omics layers - AI-powered analysis - Systems-level understanding</p>
+</section>
+<section id="personalized-medicine-1" class="level3" data-number="17.11.2">
+<h3 data-number="17.11.2" class="anchored" data-anchor-id="personalized-medicine-1"><span class="header-section-number">17.11.2</span> Personalized Medicine</h3>
+<p><strong>Your metabolic profile</strong>: - Unique as fingerprint - Reflects genetics, diet, microbiome, lifestyle - Guide personalized interventions</p>
+<p><strong>Applications</strong>: - Precision nutrition - Optimized medications - Disease prevention - Performance optimization (athletes!)</p>
+</section>
+</section>
+<section id="key-takeaways" class="level2" data-number="17.12">
+<h2 data-number="17.12" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">17.12</span> Key Takeaways</h2>
 <ul>
-<li>Griffith: Used living and dead bacteria in different combinations</li>
-<li>Avery, MacLeod, McCarty: Systematically removed different molecules</li>
-<li>Hershey and Chase: Used radioactive labels to track molecules</li>
-</ul>
-</section>
-<section id="they-built-on-each-others-work" class="level3" data-number="5.5.3">
-<h3 data-number="5.5.3" class="anchored" data-anchor-id="they-built-on-each-others-work"><span class="header-section-number">5.5.3</span> They Built on Each Other’s Work</h3>
-<p>Science is like building a tower—each scientist adds new blocks on top of previous discoveries: - Griffith found transformation (but didn’t know what caused it) - Avery, MacLeod, McCarty identified DNA as the transforming principle - Hershey and Chase confirmed DNA is the genetic material</p>
-</section>
-</section>
-<section id="the-impact" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="the-impact"><span class="header-section-number">5.6</span> The Impact</h2>
-<section id="changing-biology-forever" class="level3" data-number="5.6.1">
-<h3 data-number="5.6.1" class="anchored" data-anchor-id="changing-biology-forever"><span class="header-section-number">5.6.1</span> Changing Biology Forever</h3>
-<p>These discoveries: - Proved DNA carries genetic information - Shifted the focus of biology to DNA research - Led to the discovery of DNA’s structure (the double helix) in 1953 - Started the age of molecular biology - Eventually led to the Human Genome Project - Made modern genetic engineering possible</p>
-</section>
-<section id="real-world-applications-today" class="level3" data-number="5.6.2">
-<h3 data-number="5.6.2" class="anchored" data-anchor-id="real-world-applications-today"><span class="header-section-number">5.6.2</span> Real-World Applications Today</h3>
-<p>Understanding that DNA is genetic material allows us to: - Identify criminals through DNA fingerprinting - Test for genetic diseases - Create GMO crops that resist pests - Develop personalized medicine - Study evolution and how species are related - Bring back extinct species (like trying to revive mammoths!)</p>
-</section>
-</section>
-<section id="fun-facts" class="level2" data-number="5.7">
-<h2 data-number="5.7" class="anchored" data-anchor-id="fun-facts"><span class="header-section-number">5.7</span> Fun Facts! 🎉</h2>
-<ul>
-<li><strong>Griffith</strong> never knew his work would lead to discovering DNA as genetic material—he died in 1941, before Avery’s team published their results!</li>
-<li><strong>Avery</strong> was 67 years old when he made his discovery—proving you’re never too old to do great science!</li>
-<li><strong>Martha Chase</strong> left science to raise a family but her contribution to the Hershey-Chase experiment was crucial</li>
-<li><strong>Alfred Hershey</strong> won the Nobel Prize in 1969 (for different work on phages)</li>
-<li>The “blender” they used was actually called a Waring blender—the same kind used to make smoothies!</li>
-<li>Before these experiments, most scientists bet on proteins being genetic material because proteins seemed more complex</li>
-</ul>
-</section>
-<section id="key-takeaways" class="level2" data-number="5.8">
-<h2 data-number="5.8" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">5.8</span> Key Takeaways</h2>
-<ul>
-<li><strong>Early Mystery</strong>: Scientists knew traits were inherited but didn’t know what molecule carried genetic information</li>
-<li><strong>Griffith (1928)</strong>: Discovered “transformation”—something from dead bacteria could change living bacteria</li>
-<li><strong>Avery, MacLeod, McCarty (1944)</strong>: Identified DNA as the “transforming principle”</li>
-<li><strong>Hershey-Chase (1952)</strong>: Confirmed DNA (not protein) is injected into bacteria and carries genetic information</li>
-<li><strong>Radioactive labeling</strong>: Clever technique to track molecules</li>
-<li>These discoveries proved <strong>DNA is the genetic material</strong></li>
-<li>This knowledge revolutionized biology and medicine</li>
-<li>Science builds on previous discoveries—each experiment answered new questions</li>
+<li><strong>Metabolomics</strong> studies all small molecules (metabolites) in biological systems</li>
+<li><strong>Metabolome</strong> is the endpoint of biological information flow</li>
+<li>~110,000+ metabolites in humans</li>
+<li><strong>Fastest changing</strong> ome (seconds to minutes)</li>
+<li><strong>Main techniques</strong>: Mass spectrometry (MS) and NMR</li>
+<li><strong>Targeted</strong> = known metabolites; <strong>Untargeted</strong> = discovery</li>
+<li><strong>Applications</strong>: Disease diagnosis, nutrition, drug development, agriculture</li>
+<li><strong>Biomarkers</strong> = metabolites indicating disease</li>
+<li>Integrates with other omics for systems biology</li>
+<li><strong>Microbiome</strong> produces many metabolites affecting health</li>
+<li><strong>Challenges</strong>: Coverage, identification, variability</li>
+<li><strong>Future</strong>: Single-cell, spatial, real-time, AI-integrated</li>
+<li>Essential for personalized/precision medicine</li>
 </ul>
 <hr>
-<p><strong>Sources</strong>: Information adapted from Nature Scitable, Khan Academy Biology, university molecular biology courses, and historical accounts of these famous experiments.</p>
+<p><strong>Sources</strong>: Information adapted from metabolomics research literature, clinical applications, and systems biology studies.</p>
 
 
 </section>
@@ -988,13 +1111,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./ch04-classical-genetics.html" class="pagination-link" aria-label="Classical Genetics">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Classical Genetics</span></span>
+      <a href="./ch14-epigenetics.html" class="pagination-link" aria-label="Epigenetics and Epigenomics">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Epigenetics and Epigenomics</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./ch06-molecular-era.html" class="pagination-link" aria-label="The Molecular Era">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Molecular Era</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./ch15-sequencing.html" class="pagination-link" aria-label="Sequencing Technologies">
+        <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Sequencing Technologies</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

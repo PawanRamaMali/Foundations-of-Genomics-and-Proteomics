@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; Discovery of DNA as Genetic Material – Foundations of Genomics and Proteomics</title>
+<title>12&nbsp; Comparative Genomics and Evolution – Foundations of Genomics and Proteomics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./ch06-molecular-era.html" rel="next">
-<link href="./ch04-classical-genetics.html" rel="prev">
+<link href="./ch12-transcriptomics.html" rel="next">
+<link href="./ch11-mitochondria.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch04-classical-genetics.html">Part II – Historical Perspectives</a></li><li class="breadcrumb-item"><a href="./ch05-dna-discovery.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discovery of DNA as Genetic Material</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch07-genome.html">Part III – Genomes</a></li><li class="breadcrumb-item"><a href="./ch11a-comparative-genomics.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Comparative Genomics and Evolution</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -158,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch05-dna-discovery.html" class="sidebar-item-text sidebar-link active">
+  <a href="./ch05-dna-discovery.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discovery of DNA as Genetic Material</span></span></a>
   </div>
 </li>
@@ -211,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch11a-comparative-genomics.html" class="sidebar-item-text sidebar-link">
+  <a href="./ch11a-comparative-genomics.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Comparative Genomics and Evolution</span></span></a>
   </div>
 </li>
@@ -338,52 +338,79 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#the-great-mystery" id="toc-the-great-mystery" class="nav-link active" data-scroll-target="#the-great-mystery"><span class="header-section-number">5.1</span> The Great Mystery</a>
+  <li><a href="#comparing-genomes-to-understand-life" id="toc-comparing-genomes-to-understand-life" class="nav-link active" data-scroll-target="#comparing-genomes-to-understand-life"><span class="header-section-number">12.1</span> Comparing Genomes to Understand Life</a>
   <ul class="collapse">
-  <li><a href="#what-scientists-wondered" id="toc-what-scientists-wondered" class="nav-link" data-scroll-target="#what-scientists-wondered"><span class="header-section-number">5.1.1</span> What Scientists Wondered</a></li>
+  <li><a href="#what-is-comparative-genomics" id="toc-what-is-comparative-genomics" class="nav-link" data-scroll-target="#what-is-comparative-genomics"><span class="header-section-number">12.1.1</span> What Is Comparative Genomics?</a></li>
   </ul></li>
-  <li><a href="#the-first-clue-griffiths-experiment-1928" id="toc-the-first-clue-griffiths-experiment-1928" class="nav-link" data-scroll-target="#the-first-clue-griffiths-experiment-1928"><span class="header-section-number">5.2</span> The First Clue: Griffith’s Experiment (1928)</a>
+  <li><a href="#why-compare-genomes" id="toc-why-compare-genomes" class="nav-link" data-scroll-target="#why-compare-genomes"><span class="header-section-number">12.2</span> Why Compare Genomes?</a>
   <ul class="collapse">
-  <li><a href="#the-mystery-of-the-killer-bacteria" id="toc-the-mystery-of-the-killer-bacteria" class="nav-link" data-scroll-target="#the-mystery-of-the-killer-bacteria"><span class="header-section-number">5.2.1</span> The Mystery of the Killer Bacteria</a></li>
-  <li><a href="#the-surprising-discovery" id="toc-the-surprising-discovery" class="nav-link" data-scroll-target="#the-surprising-discovery"><span class="header-section-number">5.2.2</span> The Surprising Discovery</a></li>
-  <li><a href="#what-happened" id="toc-what-happened" class="nav-link" data-scroll-target="#what-happened"><span class="header-section-number">5.2.3</span> What Happened?</a></li>
+  <li><a href="#what-we-learn" id="toc-what-we-learn" class="nav-link" data-scroll-target="#what-we-learn"><span class="header-section-number">12.2.1</span> What We Learn</a></li>
   </ul></li>
-  <li><a href="#the-second-clue-avery-macleod-and-mccarty-1944" id="toc-the-second-clue-avery-macleod-and-mccarty-1944" class="nav-link" data-scroll-target="#the-second-clue-avery-macleod-and-mccarty-1944"><span class="header-section-number">5.3</span> The Second Clue: Avery, MacLeod, and McCarty (1944)</a>
+  <li><a href="#the-tree-of-life" id="toc-the-tree-of-life" class="nav-link" data-scroll-target="#the-tree-of-life"><span class="header-section-number">12.3</span> The Tree of Life</a>
   <ul class="collapse">
-  <li><a href="#detective-work" id="toc-detective-work" class="nav-link" data-scroll-target="#detective-work"><span class="header-section-number">5.3.1</span> Detective Work!</a></li>
-  <li><a href="#the-experiment-plan" id="toc-the-experiment-plan" class="nav-link" data-scroll-target="#the-experiment-plan"><span class="header-section-number">5.3.2</span> The Experiment Plan</a></li>
-  <li><a href="#the-process" id="toc-the-process" class="nav-link" data-scroll-target="#the-process"><span class="header-section-number">5.3.3</span> The Process</a></li>
-  <li><a href="#the-big-discovery" id="toc-the-big-discovery" class="nav-link" data-scroll-target="#the-big-discovery"><span class="header-section-number">5.3.4</span> The Big Discovery</a></li>
+  <li><a href="#all-life-is-related" id="toc-all-life-is-related" class="nav-link" data-scroll-target="#all-life-is-related"><span class="header-section-number">12.3.1</span> All Life Is Related</a></li>
+  <li><a href="#how-close-are-we-related" id="toc-how-close-are-we-related" class="nav-link" data-scroll-target="#how-close-are-we-related"><span class="header-section-number">12.3.2</span> How Close Are We Related?</a></li>
+  <li><a href="#what-the-numbers-mean" id="toc-what-the-numbers-mean" class="nav-link" data-scroll-target="#what-the-numbers-mean"><span class="header-section-number">12.3.3</span> What the Numbers Mean</a></li>
   </ul></li>
-  <li><a href="#the-final-proof-the-hershey-chase-experiment-1952" id="toc-the-final-proof-the-hershey-chase-experiment-1952" class="nav-link" data-scroll-target="#the-final-proof-the-hershey-chase-experiment-1952"><span class="header-section-number">5.4</span> The Final Proof: The Hershey-Chase Experiment (1952)</a>
+  <li><a href="#conserved-genes-and-sequences" id="toc-conserved-genes-and-sequences" class="nav-link" data-scroll-target="#conserved-genes-and-sequences"><span class="header-section-number">12.4</span> Conserved Genes and Sequences</a>
   <ul class="collapse">
-  <li><a href="#enter-the-bacteriophages" id="toc-enter-the-bacteriophages" class="nav-link" data-scroll-target="#enter-the-bacteriophages"><span class="header-section-number">5.4.1</span> Enter the Bacteriophages!</a></li>
-  <li><a href="#the-clever-trick-radioactive-labels" id="toc-the-clever-trick-radioactive-labels" class="nav-link" data-scroll-target="#the-clever-trick-radioactive-labels"><span class="header-section-number">5.4.2</span> The Clever Trick: Radioactive Labels</a></li>
-  <li><a href="#the-experiment" id="toc-the-experiment" class="nav-link" data-scroll-target="#the-experiment"><span class="header-section-number">5.4.3</span> The Experiment</a></li>
-  <li><a href="#the-final-verdict" id="toc-the-final-verdict" class="nav-link" data-scroll-target="#the-final-verdict"><span class="header-section-number">5.4.4</span> The Final Verdict</a></li>
+  <li><a href="#whats-been-preserved-through-evolution" id="toc-whats-been-preserved-through-evolution" class="nav-link" data-scroll-target="#whats-been-preserved-through-evolution"><span class="header-section-number">12.4.1</span> What’s Been Preserved Through Evolution?</a></li>
+  <li><a href="#highly-conserved-genes" id="toc-highly-conserved-genes" class="nav-link" data-scroll-target="#highly-conserved-genes"><span class="header-section-number">12.4.2</span> Highly Conserved Genes</a></li>
+  <li><a href="#ultraconserved-elements" id="toc-ultraconserved-elements" class="nav-link" data-scroll-target="#ultraconserved-elements"><span class="header-section-number">12.4.3</span> Ultraconserved Elements</a></li>
   </ul></li>
-  <li><a href="#why-these-experiments-were-brilliant" id="toc-why-these-experiments-were-brilliant" class="nav-link" data-scroll-target="#why-these-experiments-were-brilliant"><span class="header-section-number">5.5</span> Why These Experiments Were Brilliant</a>
+  <li><a href="#synteny-gene-order-conservation" id="toc-synteny-gene-order-conservation" class="nav-link" data-scroll-target="#synteny-gene-order-conservation"><span class="header-section-number">12.5</span> Synteny: Gene Order Conservation</a>
   <ul class="collapse">
-  <li><a href="#they-used-the-scientific-method" id="toc-they-used-the-scientific-method" class="nav-link" data-scroll-target="#they-used-the-scientific-method"><span class="header-section-number">5.5.1</span> They Used the Scientific Method</a></li>
-  <li><a href="#they-were-creative" id="toc-they-were-creative" class="nav-link" data-scroll-target="#they-were-creative"><span class="header-section-number">5.5.2</span> They Were Creative</a></li>
-  <li><a href="#they-built-on-each-others-work" id="toc-they-built-on-each-others-work" class="nav-link" data-scroll-target="#they-built-on-each-others-work"><span class="header-section-number">5.5.3</span> They Built on Each Other’s Work</a></li>
+  <li><a href="#genes-stay-together" id="toc-genes-stay-together" class="nav-link" data-scroll-target="#genes-stay-together"><span class="header-section-number">12.5.1</span> Genes Stay Together</a></li>
   </ul></li>
-  <li><a href="#the-impact" id="toc-the-impact" class="nav-link" data-scroll-target="#the-impact"><span class="header-section-number">5.6</span> The Impact</a>
+  <li><a href="#molecular-clocks" id="toc-molecular-clocks" class="nav-link" data-scroll-target="#molecular-clocks"><span class="header-section-number">12.6</span> Molecular Clocks</a>
   <ul class="collapse">
-  <li><a href="#changing-biology-forever" id="toc-changing-biology-forever" class="nav-link" data-scroll-target="#changing-biology-forever"><span class="header-section-number">5.6.1</span> Changing Biology Forever</a></li>
-  <li><a href="#real-world-applications-today" id="toc-real-world-applications-today" class="nav-link" data-scroll-target="#real-world-applications-today"><span class="header-section-number">5.6.2</span> Real-World Applications Today</a></li>
+  <li><a href="#dating-evolution-with-dna" id="toc-dating-evolution-with-dna" class="nav-link" data-scroll-target="#dating-evolution-with-dna"><span class="header-section-number">12.6.1</span> Dating Evolution with DNA</a></li>
+  <li><a href="#calibrating-the-clock" id="toc-calibrating-the-clock" class="nav-link" data-scroll-target="#calibrating-the-clock"><span class="header-section-number">12.6.2</span> Calibrating the Clock</a></li>
   </ul></li>
-  <li><a href="#fun-facts" id="toc-fun-facts" class="nav-link" data-scroll-target="#fun-facts"><span class="header-section-number">5.7</span> Fun Facts! 🎉</a></li>
-  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">5.8</span> Key Takeaways</a></li>
+  <li><a href="#gene-families-and-evolution" id="toc-gene-families-and-evolution" class="nav-link" data-scroll-target="#gene-families-and-evolution"><span class="header-section-number">12.7</span> Gene Families and Evolution</a>
+  <ul class="collapse">
+  <li><a href="#genes-evolve-by-duplication" id="toc-genes-evolve-by-duplication" class="nav-link" data-scroll-target="#genes-evolve-by-duplication"><span class="header-section-number">12.7.1</span> Genes Evolve by Duplication</a></li>
+  <li><a href="#types-of-gene-relationships" id="toc-types-of-gene-relationships" class="nav-link" data-scroll-target="#types-of-gene-relationships"><span class="header-section-number">12.7.2</span> Types of Gene Relationships</a></li>
+  <li><a href="#example-globin-gene-family" id="toc-example-globin-gene-family" class="nav-link" data-scroll-target="#example-globin-gene-family"><span class="header-section-number">12.7.3</span> Example: Globin Gene Family</a></li>
+  </ul></li>
+  <li><a href="#what-makes-humans-human" id="toc-what-makes-humans-human" class="nav-link" data-scroll-target="#what-makes-humans-human"><span class="header-section-number">12.8</span> What Makes Humans Human?</a>
+  <ul class="collapse">
+  <li><a href="#the-2-difference" id="toc-the-2-difference" class="nav-link" data-scroll-target="#the-2-difference"><span class="header-section-number">12.8.1</span> The 2% Difference</a></li>
+  </ul></li>
+  <li><a href="#evo-devo-evolution-meets-development" id="toc-evo-devo-evolution-meets-development" class="nav-link" data-scroll-target="#evo-devo-evolution-meets-development"><span class="header-section-number">12.9</span> Evo-Devo: Evolution Meets Development</a>
+  <ul class="collapse">
+  <li><a href="#how-body-plans-evolve" id="toc-how-body-plans-evolve" class="nav-link" data-scroll-target="#how-body-plans-evolve"><span class="header-section-number">12.9.1</span> How Body Plans Evolve</a></li>
+  </ul></li>
+  <li><a href="#genomic-islands-and-hotspots" id="toc-genomic-islands-and-hotspots" class="nav-link" data-scroll-target="#genomic-islands-and-hotspots"><span class="header-section-number">12.10</span> Genomic Islands and Hotspots</a>
+  <ul class="collapse">
+  <li><a href="#regions-of-rapid-evolution" id="toc-regions-of-rapid-evolution" class="nav-link" data-scroll-target="#regions-of-rapid-evolution"><span class="header-section-number">12.10.1</span> Regions of Rapid Evolution</a></li>
+  </ul></li>
+  <li><a href="#ancient-dna-and-extinct-species" id="toc-ancient-dna-and-extinct-species" class="nav-link" data-scroll-target="#ancient-dna-and-extinct-species"><span class="header-section-number">12.11</span> Ancient DNA and Extinct Species</a>
+  <ul class="collapse">
+  <li><a href="#learning-from-the-past" id="toc-learning-from-the-past" class="nav-link" data-scroll-target="#learning-from-the-past"><span class="header-section-number">12.11.1</span> Learning from the Past</a></li>
+  </ul></li>
+  <li><a href="#horizontal-gene-transfer" id="toc-horizontal-gene-transfer" class="nav-link" data-scroll-target="#horizontal-gene-transfer"><span class="header-section-number">12.12</span> Horizontal Gene Transfer</a>
+  <ul class="collapse">
+  <li><a href="#genes-jump-between-species" id="toc-genes-jump-between-species" class="nav-link" data-scroll-target="#genes-jump-between-species"><span class="header-section-number">12.12.1</span> Genes Jump Between Species!</a></li>
+  </ul></li>
+  <li><a href="#applications-of-comparative-genomics" id="toc-applications-of-comparative-genomics" class="nav-link" data-scroll-target="#applications-of-comparative-genomics"><span class="header-section-number">12.13</span> Applications of Comparative Genomics</a>
+  <ul class="collapse">
+  <li><a href="#practical-uses" id="toc-practical-uses" class="nav-link" data-scroll-target="#practical-uses"><span class="header-section-number">12.13.1</span> Practical Uses</a></li>
+  </ul></li>
+  <li><a href="#the-genome-as-a-history-book" id="toc-the-genome-as-a-history-book" class="nav-link" data-scroll-target="#the-genome-as-a-history-book"><span class="header-section-number">12.14</span> The Genome as a History Book</a>
+  <ul class="collapse">
+  <li><a href="#reading-our-past" id="toc-reading-our-past" class="nav-link" data-scroll-target="#reading-our-past"><span class="header-section-number">12.14.1</span> Reading Our Past</a></li>
+  </ul></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">12.15</span> Key Takeaways</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch04-classical-genetics.html">Part II – Historical Perspectives</a></li><li class="breadcrumb-item"><a href="./ch05-dna-discovery.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discovery of DNA as Genetic Material</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch07-genome.html">Part III – Genomes</a></li><li class="breadcrumb-item"><a href="./ch11a-comparative-genomics.html"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Comparative Genomics and Evolution</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discovery of DNA as Genetic Material</span></h1>
+<h1 class="title"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Comparative Genomics and Evolution</span></h1>
 </div>
 
 
@@ -400,160 +427,277 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="the-great-mystery" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="the-great-mystery"><span class="header-section-number">5.1</span> The Great Mystery</h2>
-<section id="what-scientists-wondered" class="level3" data-number="5.1.1">
-<h3 data-number="5.1.1" class="anchored" data-anchor-id="what-scientists-wondered"><span class="header-section-number">5.1.1</span> What Scientists Wondered</h3>
-<p>In the early 1900s, scientists knew that children inherited traits from their parents (thanks to Mendel!). But they had a big question:</p>
-<p><strong>What exactly carries genetic information from parents to children?</strong></p>
-<p>It’s like knowing that letters get delivered to your house, but not knowing who delivers them!</p>
-<p>Scientists knew cells had several important parts: - Proteins (which do most of the work) - DNA (which was known but seemed too simple) - RNA (also known but mysterious) - Carbohydrates (sugars) and lipids (fats)</p>
-<p>Most scientists thought <strong>proteins</strong> must carry genetic information because they seemed complex enough. DNA seemed too simple with only 4 “letters”!</p>
-<p>They were wrong—and it took clever experiments to prove it!</p>
+<section id="comparing-genomes-to-understand-life" class="level2" data-number="12.1">
+<h2 data-number="12.1" class="anchored" data-anchor-id="comparing-genomes-to-understand-life"><span class="header-section-number">12.1</span> Comparing Genomes to Understand Life</h2>
+<section id="what-is-comparative-genomics" class="level3" data-number="12.1.1">
+<h3 data-number="12.1.1" class="anchored" data-anchor-id="what-is-comparative-genomics"><span class="header-section-number">12.1.1</span> What Is Comparative Genomics?</h3>
+<p><strong>Comparative genomics</strong> = Comparing genomes from different species to understand: - How we’re related - How we evolved - What makes each species unique - Which genes are important</p>
+<p>Think of it like: - Comparing different recipes to see what’s essential - Looking at different car models to understand basic car design - Studying different languages to find common roots</p>
 </section>
 </section>
-<section id="the-first-clue-griffiths-experiment-1928" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="the-first-clue-griffiths-experiment-1928"><span class="header-section-number">5.2</span> The First Clue: Griffith’s Experiment (1928)</h2>
-<section id="the-mystery-of-the-killer-bacteria" class="level3" data-number="5.2.1">
-<h3 data-number="5.2.1" class="anchored" data-anchor-id="the-mystery-of-the-killer-bacteria"><span class="header-section-number">5.2.1</span> The Mystery of the Killer Bacteria</h3>
-<p>A British scientist named <strong>Frederick Griffith</strong> was studying bacteria that caused pneumonia (a lung disease).</p>
-<p>He discovered two types of these bacteria:</p>
-<p><strong>S-type bacteria (Smooth)</strong>: - Had a smooth, slimy coating - Made mice sick and killed them - Looked smooth and shiny in a dish</p>
-<p><strong>R-type bacteria (Rough)</strong>: - Had no coating - Did NOT make mice sick - Looked rough and bumpy in a dish</p>
-<p>Think of the S-type as wearing a protective raincoat, while the R-type bacteria were naked and harmless!</p>
-</section>
-<section id="the-surprising-discovery" class="level3" data-number="5.2.2">
-<h3 data-number="5.2.2" class="anchored" data-anchor-id="the-surprising-discovery"><span class="header-section-number">5.2.2</span> The Surprising Discovery</h3>
-<p>Griffith did four experiments:</p>
-<p><strong>Experiment 1</strong>: Give live S-type bacteria to a mouse - <strong>Result</strong>: Mouse dies 😢</p>
-<p><strong>Experiment 2</strong>: Give live R-type bacteria to a mouse - <strong>Result</strong>: Mouse lives! 😊</p>
-<p><strong>Experiment 3</strong>: Heat-kill the S-type bacteria (they’re dead!), then give them to a mouse - <strong>Result</strong>: Mouse lives! 😊 - Makes sense—dead bacteria can’t hurt you!</p>
-<p><strong>Experiment 4</strong>: Mix dead S-type bacteria with live R-type bacteria, give to mouse - <strong>Result</strong>: Mouse dies! 😱</p>
-<p><strong>Wait, what?!</strong> The dead bacteria somehow made the harmless bacteria deadly!</p>
-</section>
-<section id="what-happened" class="level3" data-number="5.2.3">
-<h3 data-number="5.2.3" class="anchored" data-anchor-id="what-happened"><span class="header-section-number">5.2.3</span> What Happened?</h3>
-<p>Griffith found that: - Something from the dead S-type bacteria “transformed” the living R-type bacteria - The R-type bacteria became S-type bacteria and could now kill mice - Even worse, the transformed bacteria stayed S-type forever and passed this on to their babies!</p>
-<p>Griffith called this <strong>transformation</strong>—something from the dead bacteria changed the living bacteria’s genetic information permanently!</p>
-<p><strong>But what was that “something”?</strong> Griffith didn’t know. He guessed it was some kind of “transforming principle.”</p>
+<section id="why-compare-genomes" class="level2" data-number="12.2">
+<h2 data-number="12.2" class="anchored" data-anchor-id="why-compare-genomes"><span class="header-section-number">12.2</span> Why Compare Genomes?</h2>
+<section id="what-we-learn" class="level3" data-number="12.2.1">
+<h3 data-number="12.2.1" class="anchored" data-anchor-id="what-we-learn"><span class="header-section-number">12.2.1</span> What We Learn</h3>
+<p><strong>1. Evolutionary Relationships</strong> - Which species are closely related? - When did species diverge? - How did we evolve from common ancestors?</p>
+<p><strong>2. Gene Function</strong> - Genes conserved across species are probably important! - If mice and humans share a gene, it must be essential - Can study gene function in simple organisms</p>
+<p><strong>3. Human Health</strong> - Understand genetic diseases - Why some species don’t get certain diseases - Identify drug targets</p>
+<p><strong>4. Conservation</strong> - Genetic diversity in endangered species - Evolutionary distinctiveness - Guide conservation efforts</p>
 </section>
 </section>
-<section id="the-second-clue-avery-macleod-and-mccarty-1944" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="the-second-clue-avery-macleod-and-mccarty-1944"><span class="header-section-number">5.3</span> The Second Clue: Avery, MacLeod, and McCarty (1944)</h2>
-<section id="detective-work" class="level3" data-number="5.3.1">
-<h3 data-number="5.3.1" class="anchored" data-anchor-id="detective-work"><span class="header-section-number">5.3.1</span> Detective Work!</h3>
-<p>Sixteen years later, three scientists—<strong>Oswald Avery</strong>, <strong>Colin MacLeod</strong>, and <strong>Maclyn McCarty</strong>—decided to solve Griffith’s mystery.</p>
-<p>They wanted to find out: <strong>What exactly is the “transforming principle”?</strong></p>
+<section id="the-tree-of-life" class="level2" data-number="12.3">
+<h2 data-number="12.3" class="anchored" data-anchor-id="the-tree-of-life"><span class="header-section-number">12.3</span> The Tree of Life</h2>
+<section id="all-life-is-related" class="level3" data-number="12.3.1">
+<h3 data-number="12.3.1" class="anchored" data-anchor-id="all-life-is-related"><span class="header-section-number">12.3.1</span> All Life Is Related</h3>
+<p><strong>The amazing truth</strong>: Every living thing shares a common ancestor!</p>
+<p><strong>Evidence from genomes</strong>: - All life uses DNA (except some viruses use RNA) - All use the same genetic code (mostly) - All share some genes</p>
+<p><strong>Three domains of life</strong>: 1. <strong>Bacteria</strong> - Prokaryotes (no nucleus) 2. <strong>Archaea</strong> - Prokaryotes (extremophiles) 3. <strong>Eukarya</strong> - Eukaryotes (nucleus)</p>
 </section>
-<section id="the-experiment-plan" class="level3" data-number="5.3.2">
-<h3 data-number="5.3.2" class="anchored" data-anchor-id="the-experiment-plan"><span class="header-section-number">5.3.2</span> The Experiment Plan</h3>
-<p>They were like detectives eliminating suspects one by one!</p>
-<p>Here’s what they did: 1. Took dead S-type bacteria 2. Separated the bacteria into different parts (proteins, DNA, RNA, carbohydrates, lipids) 3. Tested each part to see which one could transform R-type bacteria into S-type</p>
+<section id="how-close-are-we-related" class="level3" data-number="12.3.2">
+<h3 data-number="12.3.2" class="anchored" data-anchor-id="how-close-are-we-related"><span class="header-section-number">12.3.2</span> How Close Are We Related?</h3>
+<p><strong>Genome similarity to humans</strong>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Species</th>
+<th>% DNA Similar</th>
+<th>Relationship</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Chimpanzees</strong></td>
+<td>96-98%</td>
+<td>Closest living relatives</td>
+</tr>
+<tr class="even">
+<td><strong>Bonobos</strong></td>
+<td>96-98%</td>
+<td>Also very close</td>
+</tr>
+<tr class="odd">
+<td><strong>Gorillas</strong></td>
+<td>95-98%</td>
+<td>Great apes</td>
+</tr>
+<tr class="even">
+<td><strong>Orangutans</strong></td>
+<td>94-97%</td>
+<td>Great apes</td>
+</tr>
+<tr class="odd">
+<td><strong>Mice</strong></td>
+<td>~90%</td>
+<td>Common mammal ancestor ~75M years ago</td>
+</tr>
+<tr class="even">
+<td><strong>Dogs</strong></td>
+<td>~84%</td>
+<td>Mammals</td>
+</tr>
+<tr class="odd">
+<td><strong>Chickens</strong></td>
+<td>~65%</td>
+<td>Common ancestor ~300M years ago</td>
+</tr>
+<tr class="even">
+<td><strong>Zebrafish</strong></td>
+<td>~70%</td>
+<td>Vertebrates</td>
+</tr>
+<tr class="odd">
+<td><strong>Fruit flies</strong></td>
+<td>~60%</td>
+<td>Basic animal biology</td>
+</tr>
+<tr class="even">
+<td><strong>C. elegans (worm)</strong></td>
+<td>~38%</td>
+<td>Basic genes</td>
+</tr>
+<tr class="odd">
+<td><strong>Yeast</strong></td>
+<td>~23%</td>
+<td>Basic cellular functions</td>
+</tr>
+<tr class="even">
+<td><strong>Bananas</strong></td>
+<td>~50%*</td>
+<td>Basic life processes</td>
+</tr>
+<tr class="odd">
+<td><strong>E. coli (bacteria)</strong></td>
+<td>~7%*</td>
+<td>Universal genes</td>
+</tr>
+</tbody>
+</table>
+<p>*Shared genes, not overall DNA similarity</p>
 </section>
-<section id="the-process" class="level3" data-number="5.3.3">
-<h3 data-number="5.3.3" class="anchored" data-anchor-id="the-process"><span class="header-section-number">5.3.3</span> The Process</h3>
-<p><strong>Test 1: Remove all the proteins</strong> - Mixed the remaining stuff with R-type bacteria - <strong>Result</strong>: Transformation still happened! - <strong>Conclusion</strong>: It’s NOT proteins! (This was shocking—everyone thought it was proteins!)</p>
-<p><strong>Test 2: Remove all the RNA</strong> - Mixed the remaining stuff with R-type bacteria - <strong>Result</strong>: Transformation still happened! - <strong>Conclusion</strong>: It’s NOT RNA!</p>
-<p><strong>Test 3: Remove all the carbohydrates and lipids</strong> - Mixed the remaining stuff with R-type bacteria - <strong>Result</strong>: Transformation still happened! - <strong>Conclusion</strong>: It’s NOT carbohydrates or lipids!</p>
-<p><strong>Test 4: Destroy only the DNA</strong> (using an enzyme called DNase) - Mixed the remaining stuff with R-type bacteria - <strong>Result</strong>: NO transformation happened! - <strong>Conclusion</strong>: IT’S DNA!!!</p>
-</section>
-<section id="the-big-discovery" class="level3" data-number="5.3.4">
-<h3 data-number="5.3.4" class="anchored" data-anchor-id="the-big-discovery"><span class="header-section-number">5.3.4</span> The Big Discovery</h3>
-<p>Avery, MacLeod, and McCarty proved that: - <strong>DNA</strong> is the genetic material - DNA carries information from one generation to the next - Proteins are NOT the genetic material (surprise!)</p>
-<p>This was HUGE news! But some scientists still didn’t believe it. They needed more proof.</p>
-</section>
-</section>
-<section id="the-final-proof-the-hershey-chase-experiment-1952" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="the-final-proof-the-hershey-chase-experiment-1952"><span class="header-section-number">5.4</span> The Final Proof: The Hershey-Chase Experiment (1952)</h2>
-<section id="enter-the-bacteriophages" class="level3" data-number="5.4.1">
-<h3 data-number="5.4.1" class="anchored" data-anchor-id="enter-the-bacteriophages"><span class="header-section-number">5.4.1</span> Enter the Bacteriophages!</h3>
-<p>Eight years later, two scientists—<strong>Alfred Hershey</strong> and <strong>Martha Chase</strong>—did another brilliant experiment.</p>
-<p>They studied <strong>bacteriophages</strong> (we can call them “phages” for short). Phages are viruses that attack bacteria.</p>
-<p>Think of phages like tiny spaceships that: - Land on bacteria - Inject something inside - Use the bacteria to make more phages - Eventually burst the bacteria and release new phages</p>
-<p><strong>The Question</strong>: What do phages inject into bacteria—DNA or protein?</p>
-</section>
-<section id="the-clever-trick-radioactive-labels" class="level3" data-number="5.4.2">
-<h3 data-number="5.4.2" class="anchored" data-anchor-id="the-clever-trick-radioactive-labels"><span class="header-section-number">5.4.2</span> The Clever Trick: Radioactive Labels</h3>
-<p>Hershey and Chase used a brilliant trick—they “tagged” molecules with radioactive labels (like putting glow-in-the-dark stickers on things so you can track them!).</p>
-<p><strong>Key Facts About Phages</strong>: - Phages have a protein coat on the outside - Phages have DNA on the inside - Proteins contain an element called <strong>sulfur</strong> - DNA contains an element called <strong>phosphorus</strong></p>
-</section>
-<section id="the-experiment" class="level3" data-number="5.4.3">
-<h3 data-number="5.4.3" class="anchored" data-anchor-id="the-experiment"><span class="header-section-number">5.4.3</span> The Experiment</h3>
-<p>They did two experiments:</p>
-<p><strong>Experiment 1: Label the Protein</strong> 1. Grew phages with radioactive <strong>sulfur</strong> (this labels the protein) 2. Let the phages infect bacteria 3. Used a blender to separate the phage coats from the bacteria (yes, really—a blender!) 4. Checked where the radioactive label was</p>
-<p><strong>Result</strong>: The radioactive sulfur stayed OUTSIDE the bacteria (in the phage coat) <strong>Conclusion</strong>: Protein doesn’t go into the bacteria</p>
-<p><strong>Experiment 2: Label the DNA</strong> 1. Grew phages with radioactive <strong>phosphorus</strong> (this labels the DNA) 2. Let the phages infect bacteria 3. Used a blender to separate the phage coats from the bacteria 4. Checked where the radioactive label was</p>
-<p><strong>Result</strong>: The radioactive phosphorus was found INSIDE the bacteria! <strong>Conclusion</strong>: DNA goes into the bacteria</p>
-</section>
-<section id="the-final-verdict" class="level3" data-number="5.4.4">
-<h3 data-number="5.4.4" class="anchored" data-anchor-id="the-final-verdict"><span class="header-section-number">5.4.4</span> The Final Verdict</h3>
-<p>After the bacteria were infected: - New phages were created - These new phages had radioactive phosphorus (DNA), NOT radioactive sulfur (protein)</p>
-<p><strong>This proved</strong>: DNA is the genetic material that gets passed from parent to offspring!</p>
-<p>Think of it like this: - The phage is a syringe - The protein coat is the syringe body (stays outside) - The DNA is the medicine (gets injected inside) - The DNA contains the instructions to make new phages!</p>
-</section>
-</section>
-<section id="why-these-experiments-were-brilliant" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="why-these-experiments-were-brilliant"><span class="header-section-number">5.5</span> Why These Experiments Were Brilliant</h2>
-<section id="they-used-the-scientific-method" class="level3" data-number="5.5.1">
-<h3 data-number="5.5.1" class="anchored" data-anchor-id="they-used-the-scientific-method"><span class="header-section-number">5.5.1</span> They Used the Scientific Method</h3>
-<p>All three experiments followed great scientific thinking:</p>
-<ol type="1">
-<li><strong>Observation</strong>: Something interesting happens</li>
-<li><strong>Question</strong>: Why does it happen?</li>
-<li><strong>Hypothesis</strong>: Maybe it’s because of X</li>
-<li><strong>Experiment</strong>: Test if X is true</li>
-<li><strong>Conclusion</strong>: Based on results, accept or reject the hypothesis</li>
-</ol>
-</section>
-<section id="they-were-creative" class="level3" data-number="5.5.2">
-<h3 data-number="5.5.2" class="anchored" data-anchor-id="they-were-creative"><span class="header-section-number">5.5.2</span> They Were Creative</h3>
+<section id="what-the-numbers-mean" class="level3" data-number="12.3.3">
+<h3 data-number="12.3.3" class="anchored" data-anchor-id="what-the-numbers-mean"><span class="header-section-number">12.3.3</span> What the Numbers Mean</h3>
+<p><strong>High similarity doesn’t mean we’re the same!</strong></p>
 <ul>
-<li>Griffith: Used living and dead bacteria in different combinations</li>
-<li>Avery, MacLeod, McCarty: Systematically removed different molecules</li>
-<li>Hershey and Chase: Used radioactive labels to track molecules</li>
+<li>That small % difference creates huge changes</li>
+<li>Gene regulation matters as much as genes themselves</li>
+<li>Timing and location of gene expression crucial</li>
 </ul>
-</section>
-<section id="they-built-on-each-others-work" class="level3" data-number="5.5.3">
-<h3 data-number="5.5.3" class="anchored" data-anchor-id="they-built-on-each-others-work"><span class="header-section-number">5.5.3</span> They Built on Each Other’s Work</h3>
-<p>Science is like building a tower—each scientist adds new blocks on top of previous discoveries: - Griffith found transformation (but didn’t know what caused it) - Avery, MacLeod, McCarty identified DNA as the transforming principle - Hershey and Chase confirmed DNA is the genetic material</p>
+<p><strong>Example - Humans vs Chimpanzees</strong>: - 98% similar genomes - But very different! - Differences in: - Brain size and structure - Language ability - Bipedal walking - Reduced body hair - Longer lifespan</p>
 </section>
 </section>
-<section id="the-impact" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="the-impact"><span class="header-section-number">5.6</span> The Impact</h2>
-<section id="changing-biology-forever" class="level3" data-number="5.6.1">
-<h3 data-number="5.6.1" class="anchored" data-anchor-id="changing-biology-forever"><span class="header-section-number">5.6.1</span> Changing Biology Forever</h3>
-<p>These discoveries: - Proved DNA carries genetic information - Shifted the focus of biology to DNA research - Led to the discovery of DNA’s structure (the double helix) in 1953 - Started the age of molecular biology - Eventually led to the Human Genome Project - Made modern genetic engineering possible</p>
+<section id="conserved-genes-and-sequences" class="level2" data-number="12.4">
+<h2 data-number="12.4" class="anchored" data-anchor-id="conserved-genes-and-sequences"><span class="header-section-number">12.4</span> Conserved Genes and Sequences</h2>
+<section id="whats-been-preserved-through-evolution" class="level3" data-number="12.4.1">
+<h3 data-number="12.4.1" class="anchored" data-anchor-id="whats-been-preserved-through-evolution"><span class="header-section-number">12.4.1</span> What’s Been Preserved Through Evolution?</h3>
+<p><strong>Conserved sequences</strong> = DNA/protein sequences that haven’t changed much over millions of years</p>
+<p><strong>Why conserve?</strong> - If it works, don’t change it! - Changes would be harmful - Under “purifying selection” (bad changes eliminated)</p>
 </section>
-<section id="real-world-applications-today" class="level3" data-number="5.6.2">
-<h3 data-number="5.6.2" class="anchored" data-anchor-id="real-world-applications-today"><span class="header-section-number">5.6.2</span> Real-World Applications Today</h3>
-<p>Understanding that DNA is genetic material allows us to: - Identify criminals through DNA fingerprinting - Test for genetic diseases - Create GMO crops that resist pests - Develop personalized medicine - Study evolution and how species are related - Bring back extinct species (like trying to revive mammoths!)</p>
+<section id="highly-conserved-genes" class="level3" data-number="12.4.2">
+<h3 data-number="12.4.2" class="anchored" data-anchor-id="highly-conserved-genes"><span class="header-section-number">12.4.2</span> Highly Conserved Genes</h3>
+<p><strong>Housekeeping genes</strong>: - Needed by all cells - Basic cellular functions - DNA replication, transcription, translation - Energy production</p>
+<p><strong>Example - Histones</strong>: - DNA packaging proteins - Nearly identical from yeast to humans - Changed very little in 1 billion years!</p>
+<p><strong>Example - Ribosomal RNA</strong>: - Used to build ribosomes - Extremely conserved - Used to construct tree of life!</p>
+</section>
+<section id="ultraconserved-elements" class="level3" data-number="12.4.3">
+<h3 data-number="12.4.3" class="anchored" data-anchor-id="ultraconserved-elements"><span class="header-section-number">12.4.3</span> Ultraconserved Elements</h3>
+<p><strong>Ultraconserved elements</strong> = DNA sequences 100% identical across species</p>
+<p><strong>Mind-blowing fact</strong>: - Some sequences are EXACTLY the same in humans, mice, rats - Over 200 base pairs long - Separated by ~75 million years of evolution - Must be VERY important!</p>
+<p><strong>What do they do?</strong> - Many are enhancers (regulate genes) - Control development - We’re still figuring it out!</p>
 </section>
 </section>
-<section id="fun-facts" class="level2" data-number="5.7">
-<h2 data-number="5.7" class="anchored" data-anchor-id="fun-facts"><span class="header-section-number">5.7</span> Fun Facts! 🎉</h2>
+<section id="synteny-gene-order-conservation" class="level2" data-number="12.5">
+<h2 data-number="12.5" class="anchored" data-anchor-id="synteny-gene-order-conservation"><span class="header-section-number">12.5</span> Synteny: Gene Order Conservation</h2>
+<section id="genes-stay-together" class="level3" data-number="12.5.1">
+<h3 data-number="12.5.1" class="anchored" data-anchor-id="genes-stay-together"><span class="header-section-number">12.5.1</span> Genes Stay Together</h3>
+<p><strong>Synteny</strong> = Genes located in the same order on chromosomes across species</p>
+<p><strong>Example</strong>: - Human chromosome 1 has genes A-B-C-D-E - Mouse chromosome 2 might have genes A-B-C-D-E in same order - Shows common ancestry!</p>
+<p><strong>Why it matters</strong>: - Helps identify corresponding genes across species - Understanding chromosome evolution - Clues about gene function</p>
+<p><strong>Exceptions</strong>: - Chromosomal rearrangements happen - Inversions, translocations - Create differences between species</p>
+</section>
+</section>
+<section id="molecular-clocks" class="level2" data-number="12.6">
+<h2 data-number="12.6" class="anchored" data-anchor-id="molecular-clocks"><span class="header-section-number">12.6</span> Molecular Clocks</h2>
+<section id="dating-evolution-with-dna" class="level3" data-number="12.6.1">
+<h3 data-number="12.6.1" class="anchored" data-anchor-id="dating-evolution-with-dna"><span class="header-section-number">12.6.1</span> Dating Evolution with DNA</h3>
+<p><strong>Molecular clock</strong> = Using mutation rate to estimate when species diverged</p>
+<p><strong>The concept</strong>: - Mutations accumulate over time - At roughly constant rate - More differences = longer time since common ancestor</p>
+<p><strong>How it works</strong>: 1. Compare DNA sequences between two species 2. Count differences 3. Know mutation rate 4. Calculate time since divergence</p>
+<p><strong>Example</strong>: - Humans and chimps differ by ~35 million base pairs - Mutation rate ~ 1 change per billion bases per year - Estimate divergence: 5-7 million years ago - Matches fossil evidence!</p>
+</section>
+<section id="calibrating-the-clock" class="level3" data-number="12.6.2">
+<h3 data-number="12.6.2" class="anchored" data-anchor-id="calibrating-the-clock"><span class="header-section-number">12.6.2</span> Calibrating the Clock</h3>
+<p><strong>Problems</strong>: - Mutation rates aren’t perfectly constant - Vary between species - Vary across genome</p>
+<p><strong>Solution</strong>: - Use fossil evidence to calibrate - Known divergence dates from fossils - Adjust molecular clock accordingly</p>
+</section>
+</section>
+<section id="gene-families-and-evolution" class="level2" data-number="12.7">
+<h2 data-number="12.7" class="anchored" data-anchor-id="gene-families-and-evolution"><span class="header-section-number">12.7</span> Gene Families and Evolution</h2>
+<section id="genes-evolve-by-duplication" class="level3" data-number="12.7.1">
+<h3 data-number="12.7.1" class="anchored" data-anchor-id="genes-evolve-by-duplication"><span class="header-section-number">12.7.1</span> Genes Evolve by Duplication</h3>
+<p><strong>Gene families</strong> = Groups of related genes from a common ancestor</p>
+<p><strong>How they form</strong>: 1. Gene duplicates (DNA copying error) 2. Now two copies of same gene 3. One copy can mutate freely 4. Diverge to perform new or specialized functions</p>
+</section>
+<section id="types-of-gene-relationships" class="level3" data-number="12.7.2">
+<h3 data-number="12.7.2" class="anchored" data-anchor-id="types-of-gene-relationships"><span class="header-section-number">12.7.2</span> Types of Gene Relationships</h3>
+<p><strong>Orthologs</strong>: - Same gene in different species - Separated by speciation - Usually same function - Example: Human insulin vs.&nbsp;mouse insulin</p>
+<p><strong>Paralogs</strong>: - Related genes within same genome - Separated by duplication - Often different functions - Example: α-globin vs.&nbsp;β-globin (both in hemoglobin)</p>
+</section>
+<section id="example-globin-gene-family" class="level3" data-number="12.7.3">
+<h3 data-number="12.7.3" class="anchored" data-anchor-id="example-globin-gene-family"><span class="header-section-number">12.7.3</span> Example: Globin Gene Family</h3>
+<p><strong>The story</strong>: - Ancient globin gene - Duplicated many times - Diverged into specialized forms - Myoglobin (stores oxygen in muscle) - Hemoglobin α and β chains (transport oxygen in blood) - Fetal hemoglobin (binds oxygen better than adult form)</p>
+<p><strong>Cool fact</strong>: All from one ancestral gene!</p>
+</section>
+</section>
+<section id="what-makes-humans-human" class="level2" data-number="12.8">
+<h2 data-number="12.8" class="anchored" data-anchor-id="what-makes-humans-human"><span class="header-section-number">12.8</span> What Makes Humans Human?</h2>
+<section id="the-2-difference" class="level3" data-number="12.8.1">
+<h3 data-number="12.8.1" class="anchored" data-anchor-id="the-2-difference"><span class="header-section-number">12.8.1</span> The 2% Difference</h3>
+<p>Humans and chimps share 98% of DNA. What accounts for the 2%?</p>
+<p><strong>Key differences</strong>:</p>
+<p><strong>1. FOXP2 Gene</strong>: - Transcription factor - Important for language and speech - Humans have 2 amino acid changes vs.&nbsp;chimps - Linked to speech development</p>
+<p><strong>2. HAR1 (Human Accelerated Region 1)</strong>: - Rapidly evolved in humans - Involved in brain development - Controls cortex formation - Only 18 changes but huge impact!</p>
+<p><strong>3. Gene Regulation Changes</strong>: - Not just which genes, but WHEN and WHERE - Brain genes expressed more in humans - Different expression patterns during development</p>
+<p><strong>4. Copy Number Variations</strong>: - Humans have more copies of some genes - Salivary amylase (digests starch) - varies by diet - Brain development genes - duplications</p>
+<p><strong>5. Lost Genes</strong>: - Humans LOST some genes chimps have - Loss of jaw muscle gene → bigger brain case - Loss of spine genes → smoother skin</p>
+</section>
+</section>
+<section id="evo-devo-evolution-meets-development" class="level2" data-number="12.9">
+<h2 data-number="12.9" class="anchored" data-anchor-id="evo-devo-evolution-meets-development"><span class="header-section-number">12.9</span> Evo-Devo: Evolution Meets Development</h2>
+<section id="how-body-plans-evolve" class="level3" data-number="12.9.1">
+<h3 data-number="12.9.1" class="anchored" data-anchor-id="how-body-plans-evolve"><span class="header-section-number">12.9.1</span> How Body Plans Evolve</h3>
+<p><strong>Evo-Devo</strong> = Evolutionary developmental biology</p>
+<p><strong>Key insight</strong>: Changes in development genes create new body forms</p>
+<p><strong>Hox Genes Across Animals</strong>: - ALL animals have Hox genes! - Control body plan (head to tail) - Same genes in flies, fish, mice, humans - Different regulation = different bodies</p>
+<p><strong>Example - Snakes</strong>: - Have Hox genes like mice - But expressed differently - Extended body region - No limbs (limb genes repressed)</p>
+<p><strong>Example - Giraffe Neck</strong>: - Same number of neck bones as mice (7) - But each vertebra is much longer - Changed growth regulation, not genes themselves!</p>
+</section>
+</section>
+<section id="genomic-islands-and-hotspots" class="level2" data-number="12.10">
+<h2 data-number="12.10" class="anchored" data-anchor-id="genomic-islands-and-hotspots"><span class="header-section-number">12.10</span> Genomic Islands and Hotspots</h2>
+<section id="regions-of-rapid-evolution" class="level3" data-number="12.10.1">
+<h3 data-number="12.10.1" class="anchored" data-anchor-id="regions-of-rapid-evolution"><span class="header-section-number">12.10.1</span> Regions of Rapid Evolution</h3>
+<p><strong>Genomic islands</strong>: - Regions that evolve faster than average - Often involved in adaptation - Species-specific traits</p>
+<p><strong>Examples</strong>: - Immune system genes (pathogen arms race) - Sensory genes (different environments) - Reproductive genes (sexual selection)</p>
+</section>
+</section>
+<section id="ancient-dna-and-extinct-species" class="level2" data-number="12.11">
+<h2 data-number="12.11" class="anchored" data-anchor-id="ancient-dna-and-extinct-species"><span class="header-section-number">12.11</span> Ancient DNA and Extinct Species</h2>
+<section id="learning-from-the-past" class="level3" data-number="12.11.1">
+<h3 data-number="12.11.1" class="anchored" data-anchor-id="learning-from-the-past"><span class="header-section-number">12.11.1</span> Learning from the Past</h3>
+<p><strong>Paleogenomics</strong> = Sequencing DNA from extinct species</p>
+<p><strong>Success stories</strong>:</p>
+<p><strong>1. Neanderthals</strong>: - Sequenced whole genome - Interbred with humans - 1-4% of non-African human DNA is Neanderthal - Contributed immunity genes</p>
+<p><strong>2. Denisovans</strong>: - Known only from DNA (and few bones) - Interbred with humans - Contributed high-altitude adaptation genes (Tibetans)</p>
+<p><strong>3. Woolly Mammoths</strong>: - Sequenced from frozen specimens - Understanding adaptation to cold - De-extinction efforts underway!</p>
+<p><strong>4. Ancient Humans</strong>: - Track human migrations out of Africa - Understand population history - Admixture events</p>
+</section>
+</section>
+<section id="horizontal-gene-transfer" class="level2" data-number="12.12">
+<h2 data-number="12.12" class="anchored" data-anchor-id="horizontal-gene-transfer"><span class="header-section-number">12.12</span> Horizontal Gene Transfer</h2>
+<section id="genes-jump-between-species" class="level3" data-number="12.12.1">
+<h3 data-number="12.12.1" class="anchored" data-anchor-id="genes-jump-between-species"><span class="header-section-number">12.12.1</span> Genes Jump Between Species!</h3>
+<p><strong>Horizontal gene transfer (HGT)</strong> = Genes transferred between species (not parent to offspring)</p>
+<p><strong>Common in bacteria</strong>: - Antibiotic resistance genes spread this way - Public health concern!</p>
+<p><strong>Also in eukaryotes</strong>: - Bdelloid rotifers: 8% of genes from bacteria, fungi, plants! - Aphids: Got bacterial genes for making pigments - Tardigrades: Extreme survival partly from borrowed genes</p>
+<p><strong>Implications</strong>: - Tree of life is more like a web - Evolution more complex than thought - Challenges traditional classification</p>
+</section>
+</section>
+<section id="applications-of-comparative-genomics" class="level2" data-number="12.13">
+<h2 data-number="12.13" class="anchored" data-anchor-id="applications-of-comparative-genomics"><span class="header-section-number">12.13</span> Applications of Comparative Genomics</h2>
+<section id="practical-uses" class="level3" data-number="12.13.1">
+<h3 data-number="12.13.1" class="anchored" data-anchor-id="practical-uses"><span class="header-section-number">12.13.1</span> Practical Uses</h3>
+<p><strong>1. Medicine</strong>: - Model organisms (mice, zebrafish, flies) - Test genes in simple organisms - Understand human disease genes - Predict drug targets</p>
+<p><strong>2. Agriculture</strong>: - Compare crop genomes - Find genes for drought tolerance, disease resistance - Breed better crops - Understand domestication</p>
+<p><strong>3. Conservation</strong>: - Genetic diversity assessments - Identify unique populations - Guide breeding programs - Prioritize species for protection</p>
+<p><strong>4. Biotechnology</strong>: - Find useful genes in other organisms - Extremophiles (heat, cold, acid tolerance) - Industrial enzymes - Bioremediation</p>
+</section>
+</section>
+<section id="the-genome-as-a-history-book" class="level2" data-number="12.14">
+<h2 data-number="12.14" class="anchored" data-anchor-id="the-genome-as-a-history-book"><span class="header-section-number">12.14</span> The Genome as a History Book</h2>
+<section id="reading-our-past" class="level3" data-number="12.14.1">
+<h3 data-number="12.14.1" class="anchored" data-anchor-id="reading-our-past"><span class="header-section-number">12.14.1</span> Reading Our Past</h3>
+<p>Genomes contain records of: - Ancient viral infections (endogenous retroviruses) - Gene duplications - Chromosomal rearrangements - Population bottlenecks - Admixture events - Selective pressures</p>
+<p><strong>It’s like archaeology</strong>: - Digging through layers of time - Finding ancient “artifacts” (sequences) - Reconstructing the past</p>
+</section>
+</section>
+<section id="key-takeaways" class="level2" data-number="12.15">
+<h2 data-number="12.15" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">12.15</span> Key Takeaways</h2>
 <ul>
-<li><strong>Griffith</strong> never knew his work would lead to discovering DNA as genetic material—he died in 1941, before Avery’s team published their results!</li>
-<li><strong>Avery</strong> was 67 years old when he made his discovery—proving you’re never too old to do great science!</li>
-<li><strong>Martha Chase</strong> left science to raise a family but her contribution to the Hershey-Chase experiment was crucial</li>
-<li><strong>Alfred Hershey</strong> won the Nobel Prize in 1969 (for different work on phages)</li>
-<li>The “blender” they used was actually called a Waring blender—the same kind used to make smoothies!</li>
-<li>Before these experiments, most scientists bet on proteins being genetic material because proteins seemed more complex</li>
-</ul>
-</section>
-<section id="key-takeaways" class="level2" data-number="5.8">
-<h2 data-number="5.8" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">5.8</span> Key Takeaways</h2>
-<ul>
-<li><strong>Early Mystery</strong>: Scientists knew traits were inherited but didn’t know what molecule carried genetic information</li>
-<li><strong>Griffith (1928)</strong>: Discovered “transformation”—something from dead bacteria could change living bacteria</li>
-<li><strong>Avery, MacLeod, McCarty (1944)</strong>: Identified DNA as the “transforming principle”</li>
-<li><strong>Hershey-Chase (1952)</strong>: Confirmed DNA (not protein) is injected into bacteria and carries genetic information</li>
-<li><strong>Radioactive labeling</strong>: Clever technique to track molecules</li>
-<li>These discoveries proved <strong>DNA is the genetic material</strong></li>
-<li>This knowledge revolutionized biology and medicine</li>
-<li>Science builds on previous discoveries—each experiment answered new questions</li>
+<li><strong>Comparative genomics</strong> compares genomes across species</li>
+<li>All life is related - shares common ancestor</li>
+<li><strong>Conserved sequences</strong> indicate important functions</li>
+<li><strong>Molecular clocks</strong> date evolutionary events using mutation rates</li>
+<li><strong>Gene families</strong> evolve through duplication and divergence</li>
+<li><strong>Orthologs</strong> = same gene in different species</li>
+<li><strong>Paralogs</strong> = related genes in same species</li>
+<li>Small genetic changes can have huge effects (regulation matters!)</li>
+<li><strong>Evo-devo</strong> explains how development changes create new forms</li>
+<li><strong>Ancient DNA</strong> reveals history of extinct species and human evolution</li>
+<li><strong>Horizontal gene transfer</strong> shows evolution is complex</li>
+<li>Comparative genomics has practical applications in medicine, agriculture, conservation</li>
 </ul>
 <hr>
-<p><strong>Sources</strong>: Information adapted from Nature Scitable, Khan Academy Biology, university molecular biology courses, and historical accounts of these famous experiments.</p>
+<p><strong>Sources</strong>: Information adapted from comparative genomics research, evolutionary biology literature, and ancient DNA studies.</p>
 
 
 </section>
@@ -988,13 +1132,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./ch04-classical-genetics.html" class="pagination-link" aria-label="Classical Genetics">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Classical Genetics</span></span>
+      <a href="./ch11-mitochondria.html" class="pagination-link" aria-label="Mitochondrial and Organelle Genomes">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Mitochondrial and Organelle Genomes</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./ch06-molecular-era.html" class="pagination-link" aria-label="The Molecular Era">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Molecular Era</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./ch12-transcriptomics.html" class="pagination-link" aria-label="Transcriptomics">
+        <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Transcriptomics</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

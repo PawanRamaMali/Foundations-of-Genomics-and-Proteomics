@@ -33,18 +33,23 @@ book:
         - ch09-packaging.qmd
         - ch10-c-value-paradox.qmd
         - ch11-mitochondria.qmd
+        - ch11a-comparative-genomics.qmd
 
     - part: "Part IV – Beyond the Genome"
       chapters:
         - ch12-transcriptomics.qmd
+        - ch12a-gene-regulation.qmd
         - ch13-proteomics.qmd
         - ch14-epigenetics.qmd
+        - ch14a-metabolomics.qmd
 
     - part: "Part V – Experimental Tools and Applications"
       chapters:
         - ch15-sequencing.qmd
         - ch16-experimental-methods.qmd
         - ch17-applications.qmd
+        - ch17a-bioinformatics.qmd
+        - ch17b-metagenomics.qmd
 
     - part: "Part VI – Reflection and Future Directions"
       chapters:

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>5&nbsp; Discovery of DNA as Genetic Material – Foundations of Genomics and Proteomics</title>
+<title>14&nbsp; Gene Expression and Regulation – Foundations of Genomics and Proteomics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./ch06-molecular-era.html" rel="next">
-<link href="./ch04-classical-genetics.html" rel="prev">
+<link href="./ch13-proteomics.html" rel="next">
+<link href="./ch12-transcriptomics.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch04-classical-genetics.html">Part II – Historical Perspectives</a></li><li class="breadcrumb-item"><a href="./ch05-dna-discovery.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discovery of DNA as Genetic Material</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch12-transcriptomics.html">Part IV – Beyond the Genome</a></li><li class="breadcrumb-item"><a href="./ch12a-gene-regulation.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Gene Expression and Regulation</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -158,7 +158,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch05-dna-discovery.html" class="sidebar-item-text sidebar-link active">
+  <a href="./ch05-dna-discovery.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discovery of DNA as Genetic Material</span></span></a>
   </div>
 </li>
@@ -234,7 +234,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ch12a-gene-regulation.html" class="sidebar-item-text sidebar-link">
+  <a href="./ch12a-gene-regulation.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Gene Expression and Regulation</span></span></a>
   </div>
 </li>
@@ -338,52 +338,70 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#the-great-mystery" id="toc-the-great-mystery" class="nav-link active" data-scroll-target="#the-great-mystery"><span class="header-section-number">5.1</span> The Great Mystery</a>
+  <li><a href="#turning-genes-on-and-off" id="toc-turning-genes-on-and-off" class="nav-link active" data-scroll-target="#turning-genes-on-and-off"><span class="header-section-number">14.1</span> Turning Genes On and Off</a>
   <ul class="collapse">
-  <li><a href="#what-scientists-wondered" id="toc-what-scientists-wondered" class="nav-link" data-scroll-target="#what-scientists-wondered"><span class="header-section-number">5.1.1</span> What Scientists Wondered</a></li>
+  <li><a href="#the-light-switch-analogy" id="toc-the-light-switch-analogy" class="nav-link" data-scroll-target="#the-light-switch-analogy"><span class="header-section-number">14.1.1</span> The Light Switch Analogy</a></li>
   </ul></li>
-  <li><a href="#the-first-clue-griffiths-experiment-1928" id="toc-the-first-clue-griffiths-experiment-1928" class="nav-link" data-scroll-target="#the-first-clue-griffiths-experiment-1928"><span class="header-section-number">5.2</span> The First Clue: Griffith’s Experiment (1928)</a>
+  <li><a href="#why-gene-regulation-matters" id="toc-why-gene-regulation-matters" class="nav-link" data-scroll-target="#why-gene-regulation-matters"><span class="header-section-number">14.2</span> Why Gene Regulation Matters</a>
   <ul class="collapse">
-  <li><a href="#the-mystery-of-the-killer-bacteria" id="toc-the-mystery-of-the-killer-bacteria" class="nav-link" data-scroll-target="#the-mystery-of-the-killer-bacteria"><span class="header-section-number">5.2.1</span> The Mystery of the Killer Bacteria</a></li>
-  <li><a href="#the-surprising-discovery" id="toc-the-surprising-discovery" class="nav-link" data-scroll-target="#the-surprising-discovery"><span class="header-section-number">5.2.2</span> The Surprising Discovery</a></li>
-  <li><a href="#what-happened" id="toc-what-happened" class="nav-link" data-scroll-target="#what-happened"><span class="header-section-number">5.2.3</span> What Happened?</a></li>
+  <li><a href="#the-big-problem-to-solve" id="toc-the-big-problem-to-solve" class="nav-link" data-scroll-target="#the-big-problem-to-solve"><span class="header-section-number">14.2.1</span> The Big Problem to Solve</a></li>
+  <li><a href="#what-is-gene-regulation" id="toc-what-is-gene-regulation" class="nav-link" data-scroll-target="#what-is-gene-regulation"><span class="header-section-number">14.2.2</span> What Is Gene Regulation?</a></li>
   </ul></li>
-  <li><a href="#the-second-clue-avery-macleod-and-mccarty-1944" id="toc-the-second-clue-avery-macleod-and-mccarty-1944" class="nav-link" data-scroll-target="#the-second-clue-avery-macleod-and-mccarty-1944"><span class="header-section-number">5.3</span> The Second Clue: Avery, MacLeod, and McCarty (1944)</a>
+  <li><a href="#levels-of-gene-regulation" id="toc-levels-of-gene-regulation" class="nav-link" data-scroll-target="#levels-of-gene-regulation"><span class="header-section-number">14.3</span> Levels of Gene Regulation</a>
   <ul class="collapse">
-  <li><a href="#detective-work" id="toc-detective-work" class="nav-link" data-scroll-target="#detective-work"><span class="header-section-number">5.3.1</span> Detective Work!</a></li>
-  <li><a href="#the-experiment-plan" id="toc-the-experiment-plan" class="nav-link" data-scroll-target="#the-experiment-plan"><span class="header-section-number">5.3.2</span> The Experiment Plan</a></li>
-  <li><a href="#the-process" id="toc-the-process" class="nav-link" data-scroll-target="#the-process"><span class="header-section-number">5.3.3</span> The Process</a></li>
-  <li><a href="#the-big-discovery" id="toc-the-big-discovery" class="nav-link" data-scroll-target="#the-big-discovery"><span class="header-section-number">5.3.4</span> The Big Discovery</a></li>
+  <li><a href="#level-1-transcriptional-control-before-mrna" id="toc-level-1-transcriptional-control-before-mrna" class="nav-link" data-scroll-target="#level-1-transcriptional-control-before-mrna"><span class="header-section-number">14.3.1</span> Level 1: Transcriptional Control (Before mRNA)</a></li>
+  <li><a href="#level-2-post-transcriptional-control-after-mrna-made" id="toc-level-2-post-transcriptional-control-after-mrna-made" class="nav-link" data-scroll-target="#level-2-post-transcriptional-control-after-mrna-made"><span class="header-section-number">14.3.2</span> Level 2: Post-Transcriptional Control (After mRNA Made)</a></li>
+  <li><a href="#level-3-translational-control-during-protein-synthesis" id="toc-level-3-translational-control-during-protein-synthesis" class="nav-link" data-scroll-target="#level-3-translational-control-during-protein-synthesis"><span class="header-section-number">14.3.3</span> Level 3: Translational Control (During Protein Synthesis)</a></li>
+  <li><a href="#level-4-post-translational-control-after-protein-made" id="toc-level-4-post-translational-control-after-protein-made" class="nav-link" data-scroll-target="#level-4-post-translational-control-after-protein-made"><span class="header-section-number">14.3.4</span> Level 4: Post-Translational Control (After Protein Made)</a></li>
   </ul></li>
-  <li><a href="#the-final-proof-the-hershey-chase-experiment-1952" id="toc-the-final-proof-the-hershey-chase-experiment-1952" class="nav-link" data-scroll-target="#the-final-proof-the-hershey-chase-experiment-1952"><span class="header-section-number">5.4</span> The Final Proof: The Hershey-Chase Experiment (1952)</a>
+  <li><a href="#transcription-factors-the-master-controllers" id="toc-transcription-factors-the-master-controllers" class="nav-link" data-scroll-target="#transcription-factors-the-master-controllers"><span class="header-section-number">14.4</span> Transcription Factors: The Master Controllers</a>
   <ul class="collapse">
-  <li><a href="#enter-the-bacteriophages" id="toc-enter-the-bacteriophages" class="nav-link" data-scroll-target="#enter-the-bacteriophages"><span class="header-section-number">5.4.1</span> Enter the Bacteriophages!</a></li>
-  <li><a href="#the-clever-trick-radioactive-labels" id="toc-the-clever-trick-radioactive-labels" class="nav-link" data-scroll-target="#the-clever-trick-radioactive-labels"><span class="header-section-number">5.4.2</span> The Clever Trick: Radioactive Labels</a></li>
-  <li><a href="#the-experiment" id="toc-the-experiment" class="nav-link" data-scroll-target="#the-experiment"><span class="header-section-number">5.4.3</span> The Experiment</a></li>
-  <li><a href="#the-final-verdict" id="toc-the-final-verdict" class="nav-link" data-scroll-target="#the-final-verdict"><span class="header-section-number">5.4.4</span> The Final Verdict</a></li>
+  <li><a href="#what-are-transcription-factors" id="toc-what-are-transcription-factors" class="nav-link" data-scroll-target="#what-are-transcription-factors"><span class="header-section-number">14.4.1</span> What Are Transcription Factors?</a></li>
+  <li><a href="#types-of-transcription-factors" id="toc-types-of-transcription-factors" class="nav-link" data-scroll-target="#types-of-transcription-factors"><span class="header-section-number">14.4.2</span> Types of Transcription Factors</a></li>
+  <li><a href="#transcription-factor-domains" id="toc-transcription-factor-domains" class="nav-link" data-scroll-target="#transcription-factor-domains"><span class="header-section-number">14.4.3</span> Transcription Factor Domains</a></li>
+  <li><a href="#master-regulators" id="toc-master-regulators" class="nav-link" data-scroll-target="#master-regulators"><span class="header-section-number">14.4.4</span> Master Regulators</a></li>
   </ul></li>
-  <li><a href="#why-these-experiments-were-brilliant" id="toc-why-these-experiments-were-brilliant" class="nav-link" data-scroll-target="#why-these-experiments-were-brilliant"><span class="header-section-number">5.5</span> Why These Experiments Were Brilliant</a>
+  <li><a href="#combinatorial-control" id="toc-combinatorial-control" class="nav-link" data-scroll-target="#combinatorial-control"><span class="header-section-number">14.5</span> Combinatorial Control</a>
   <ul class="collapse">
-  <li><a href="#they-used-the-scientific-method" id="toc-they-used-the-scientific-method" class="nav-link" data-scroll-target="#they-used-the-scientific-method"><span class="header-section-number">5.5.1</span> They Used the Scientific Method</a></li>
-  <li><a href="#they-were-creative" id="toc-they-were-creative" class="nav-link" data-scroll-target="#they-were-creative"><span class="header-section-number">5.5.2</span> They Were Creative</a></li>
-  <li><a href="#they-built-on-each-others-work" id="toc-they-built-on-each-others-work" class="nav-link" data-scroll-target="#they-built-on-each-others-work"><span class="header-section-number">5.5.3</span> They Built on Each Other’s Work</a></li>
+  <li><a href="#many-regulators-work-together" id="toc-many-regulators-work-together" class="nav-link" data-scroll-target="#many-regulators-work-together"><span class="header-section-number">14.5.1</span> Many Regulators Work Together</a></li>
   </ul></li>
-  <li><a href="#the-impact" id="toc-the-impact" class="nav-link" data-scroll-target="#the-impact"><span class="header-section-number">5.6</span> The Impact</a>
+  <li><a href="#signal-transduction-and-gene-regulation" id="toc-signal-transduction-and-gene-regulation" class="nav-link" data-scroll-target="#signal-transduction-and-gene-regulation"><span class="header-section-number">14.6</span> Signal Transduction and Gene Regulation</a>
   <ul class="collapse">
-  <li><a href="#changing-biology-forever" id="toc-changing-biology-forever" class="nav-link" data-scroll-target="#changing-biology-forever"><span class="header-section-number">5.6.1</span> Changing Biology Forever</a></li>
-  <li><a href="#real-world-applications-today" id="toc-real-world-applications-today" class="nav-link" data-scroll-target="#real-world-applications-today"><span class="header-section-number">5.6.2</span> Real-World Applications Today</a></li>
+  <li><a href="#how-cells-respond-to-signals" id="toc-how-cells-respond-to-signals" class="nav-link" data-scroll-target="#how-cells-respond-to-signals"><span class="header-section-number">14.6.1</span> How Cells Respond to Signals</a></li>
+  <li><a href="#example-hormone-signaling" id="toc-example-hormone-signaling" class="nav-link" data-scroll-target="#example-hormone-signaling"><span class="header-section-number">14.6.2</span> Example: Hormone Signaling</a></li>
   </ul></li>
-  <li><a href="#fun-facts" id="toc-fun-facts" class="nav-link" data-scroll-target="#fun-facts"><span class="header-section-number">5.7</span> Fun Facts! 🎉</a></li>
-  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">5.8</span> Key Takeaways</a></li>
+  <li><a href="#feedback-loops" id="toc-feedback-loops" class="nav-link" data-scroll-target="#feedback-loops"><span class="header-section-number">14.7</span> Feedback Loops</a>
+  <ul class="collapse">
+  <li><a href="#self-regulating-systems" id="toc-self-regulating-systems" class="nav-link" data-scroll-target="#self-regulating-systems"><span class="header-section-number">14.7.1</span> Self-Regulating Systems</a></li>
+  </ul></li>
+  <li><a href="#development-and-gene-regulation" id="toc-development-and-gene-regulation" class="nav-link" data-scroll-target="#development-and-gene-regulation"><span class="header-section-number">14.8</span> Development and Gene Regulation</a>
+  <ul class="collapse">
+  <li><a href="#how-one-cell-becomes-many-cell-types" id="toc-how-one-cell-becomes-many-cell-types" class="nav-link" data-scroll-target="#how-one-cell-becomes-many-cell-types"><span class="header-section-number">14.8.1</span> How One Cell Becomes Many Cell Types</a></li>
+  <li><a href="#the-hox-genes" id="toc-the-hox-genes" class="nav-link" data-scroll-target="#the-hox-genes"><span class="header-section-number">14.8.2</span> The Hox Genes</a></li>
+  </ul></li>
+  <li><a href="#gene-regulation-in-prokaryotes-vs-eukaryotes" id="toc-gene-regulation-in-prokaryotes-vs-eukaryotes" class="nav-link" data-scroll-target="#gene-regulation-in-prokaryotes-vs-eukaryotes"><span class="header-section-number">14.9</span> Gene Regulation in Prokaryotes vs Eukaryotes</a>
+  <ul class="collapse">
+  <li><a href="#prokaryotic-gene-regulation-simpler" id="toc-prokaryotic-gene-regulation-simpler" class="nav-link" data-scroll-target="#prokaryotic-gene-regulation-simpler"><span class="header-section-number">14.9.1</span> Prokaryotic Gene Regulation (Simpler)</a></li>
+  <li><a href="#eukaryotic-gene-regulation-complex" id="toc-eukaryotic-gene-regulation-complex" class="nav-link" data-scroll-target="#eukaryotic-gene-regulation-complex"><span class="header-section-number">14.9.2</span> Eukaryotic Gene Regulation (Complex)</a></li>
+  </ul></li>
+  <li><a href="#diseases-of-gene-regulation" id="toc-diseases-of-gene-regulation" class="nav-link" data-scroll-target="#diseases-of-gene-regulation"><span class="header-section-number">14.10</span> Diseases of Gene Regulation</a>
+  <ul class="collapse">
+  <li><a href="#when-regulation-goes-wrong" id="toc-when-regulation-goes-wrong" class="nav-link" data-scroll-target="#when-regulation-goes-wrong"><span class="header-section-number">14.10.1</span> When Regulation Goes Wrong</a></li>
+  </ul></li>
+  <li><a href="#rna-interference-rnai" id="toc-rna-interference-rnai" class="nav-link" data-scroll-target="#rna-interference-rnai"><span class="header-section-number">14.11</span> RNA Interference (RNAi)</a>
+  <ul class="collapse">
+  <li><a href="#using-rna-to-regulate-genes" id="toc-using-rna-to-regulate-genes" class="nav-link" data-scroll-target="#using-rna-to-regulate-genes"><span class="header-section-number">14.11.1</span> Using RNA to Regulate Genes</a></li>
+  </ul></li>
+  <li><a href="#key-takeaways" id="toc-key-takeaways" class="nav-link" data-scroll-target="#key-takeaways"><span class="header-section-number">14.12</span> Key Takeaways</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch04-classical-genetics.html">Part II – Historical Perspectives</a></li><li class="breadcrumb-item"><a href="./ch05-dna-discovery.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discovery of DNA as Genetic Material</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ch12-transcriptomics.html">Part IV – Beyond the Genome</a></li><li class="breadcrumb-item"><a href="./ch12a-gene-regulation.html"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Gene Expression and Regulation</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Discovery of DNA as Genetic Material</span></h1>
+<h1 class="title"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Gene Expression and Regulation</span></h1>
 </div>
 
 
@@ -400,160 +418,199 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="the-great-mystery" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="the-great-mystery"><span class="header-section-number">5.1</span> The Great Mystery</h2>
-<section id="what-scientists-wondered" class="level3" data-number="5.1.1">
-<h3 data-number="5.1.1" class="anchored" data-anchor-id="what-scientists-wondered"><span class="header-section-number">5.1.1</span> What Scientists Wondered</h3>
-<p>In the early 1900s, scientists knew that children inherited traits from their parents (thanks to Mendel!). But they had a big question:</p>
-<p><strong>What exactly carries genetic information from parents to children?</strong></p>
-<p>It’s like knowing that letters get delivered to your house, but not knowing who delivers them!</p>
-<p>Scientists knew cells had several important parts: - Proteins (which do most of the work) - DNA (which was known but seemed too simple) - RNA (also known but mysterious) - Carbohydrates (sugars) and lipids (fats)</p>
-<p>Most scientists thought <strong>proteins</strong> must carry genetic information because they seemed complex enough. DNA seemed too simple with only 4 “letters”!</p>
-<p>They were wrong—and it took clever experiments to prove it!</p>
-</section>
-</section>
-<section id="the-first-clue-griffiths-experiment-1928" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="the-first-clue-griffiths-experiment-1928"><span class="header-section-number">5.2</span> The First Clue: Griffith’s Experiment (1928)</h2>
-<section id="the-mystery-of-the-killer-bacteria" class="level3" data-number="5.2.1">
-<h3 data-number="5.2.1" class="anchored" data-anchor-id="the-mystery-of-the-killer-bacteria"><span class="header-section-number">5.2.1</span> The Mystery of the Killer Bacteria</h3>
-<p>A British scientist named <strong>Frederick Griffith</strong> was studying bacteria that caused pneumonia (a lung disease).</p>
-<p>He discovered two types of these bacteria:</p>
-<p><strong>S-type bacteria (Smooth)</strong>: - Had a smooth, slimy coating - Made mice sick and killed them - Looked smooth and shiny in a dish</p>
-<p><strong>R-type bacteria (Rough)</strong>: - Had no coating - Did NOT make mice sick - Looked rough and bumpy in a dish</p>
-<p>Think of the S-type as wearing a protective raincoat, while the R-type bacteria were naked and harmless!</p>
-</section>
-<section id="the-surprising-discovery" class="level3" data-number="5.2.2">
-<h3 data-number="5.2.2" class="anchored" data-anchor-id="the-surprising-discovery"><span class="header-section-number">5.2.2</span> The Surprising Discovery</h3>
-<p>Griffith did four experiments:</p>
-<p><strong>Experiment 1</strong>: Give live S-type bacteria to a mouse - <strong>Result</strong>: Mouse dies 😢</p>
-<p><strong>Experiment 2</strong>: Give live R-type bacteria to a mouse - <strong>Result</strong>: Mouse lives! 😊</p>
-<p><strong>Experiment 3</strong>: Heat-kill the S-type bacteria (they’re dead!), then give them to a mouse - <strong>Result</strong>: Mouse lives! 😊 - Makes sense—dead bacteria can’t hurt you!</p>
-<p><strong>Experiment 4</strong>: Mix dead S-type bacteria with live R-type bacteria, give to mouse - <strong>Result</strong>: Mouse dies! 😱</p>
-<p><strong>Wait, what?!</strong> The dead bacteria somehow made the harmless bacteria deadly!</p>
-</section>
-<section id="what-happened" class="level3" data-number="5.2.3">
-<h3 data-number="5.2.3" class="anchored" data-anchor-id="what-happened"><span class="header-section-number">5.2.3</span> What Happened?</h3>
-<p>Griffith found that: - Something from the dead S-type bacteria “transformed” the living R-type bacteria - The R-type bacteria became S-type bacteria and could now kill mice - Even worse, the transformed bacteria stayed S-type forever and passed this on to their babies!</p>
-<p>Griffith called this <strong>transformation</strong>—something from the dead bacteria changed the living bacteria’s genetic information permanently!</p>
-<p><strong>But what was that “something”?</strong> Griffith didn’t know. He guessed it was some kind of “transforming principle.”</p>
-</section>
-</section>
-<section id="the-second-clue-avery-macleod-and-mccarty-1944" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="the-second-clue-avery-macleod-and-mccarty-1944"><span class="header-section-number">5.3</span> The Second Clue: Avery, MacLeod, and McCarty (1944)</h2>
-<section id="detective-work" class="level3" data-number="5.3.1">
-<h3 data-number="5.3.1" class="anchored" data-anchor-id="detective-work"><span class="header-section-number">5.3.1</span> Detective Work!</h3>
-<p>Sixteen years later, three scientists—<strong>Oswald Avery</strong>, <strong>Colin MacLeod</strong>, and <strong>Maclyn McCarty</strong>—decided to solve Griffith’s mystery.</p>
-<p>They wanted to find out: <strong>What exactly is the “transforming principle”?</strong></p>
-</section>
-<section id="the-experiment-plan" class="level3" data-number="5.3.2">
-<h3 data-number="5.3.2" class="anchored" data-anchor-id="the-experiment-plan"><span class="header-section-number">5.3.2</span> The Experiment Plan</h3>
-<p>They were like detectives eliminating suspects one by one!</p>
-<p>Here’s what they did: 1. Took dead S-type bacteria 2. Separated the bacteria into different parts (proteins, DNA, RNA, carbohydrates, lipids) 3. Tested each part to see which one could transform R-type bacteria into S-type</p>
-</section>
-<section id="the-process" class="level3" data-number="5.3.3">
-<h3 data-number="5.3.3" class="anchored" data-anchor-id="the-process"><span class="header-section-number">5.3.3</span> The Process</h3>
-<p><strong>Test 1: Remove all the proteins</strong> - Mixed the remaining stuff with R-type bacteria - <strong>Result</strong>: Transformation still happened! - <strong>Conclusion</strong>: It’s NOT proteins! (This was shocking—everyone thought it was proteins!)</p>
-<p><strong>Test 2: Remove all the RNA</strong> - Mixed the remaining stuff with R-type bacteria - <strong>Result</strong>: Transformation still happened! - <strong>Conclusion</strong>: It’s NOT RNA!</p>
-<p><strong>Test 3: Remove all the carbohydrates and lipids</strong> - Mixed the remaining stuff with R-type bacteria - <strong>Result</strong>: Transformation still happened! - <strong>Conclusion</strong>: It’s NOT carbohydrates or lipids!</p>
-<p><strong>Test 4: Destroy only the DNA</strong> (using an enzyme called DNase) - Mixed the remaining stuff with R-type bacteria - <strong>Result</strong>: NO transformation happened! - <strong>Conclusion</strong>: IT’S DNA!!!</p>
-</section>
-<section id="the-big-discovery" class="level3" data-number="5.3.4">
-<h3 data-number="5.3.4" class="anchored" data-anchor-id="the-big-discovery"><span class="header-section-number">5.3.4</span> The Big Discovery</h3>
-<p>Avery, MacLeod, and McCarty proved that: - <strong>DNA</strong> is the genetic material - DNA carries information from one generation to the next - Proteins are NOT the genetic material (surprise!)</p>
-<p>This was HUGE news! But some scientists still didn’t believe it. They needed more proof.</p>
-</section>
-</section>
-<section id="the-final-proof-the-hershey-chase-experiment-1952" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="the-final-proof-the-hershey-chase-experiment-1952"><span class="header-section-number">5.4</span> The Final Proof: The Hershey-Chase Experiment (1952)</h2>
-<section id="enter-the-bacteriophages" class="level3" data-number="5.4.1">
-<h3 data-number="5.4.1" class="anchored" data-anchor-id="enter-the-bacteriophages"><span class="header-section-number">5.4.1</span> Enter the Bacteriophages!</h3>
-<p>Eight years later, two scientists—<strong>Alfred Hershey</strong> and <strong>Martha Chase</strong>—did another brilliant experiment.</p>
-<p>They studied <strong>bacteriophages</strong> (we can call them “phages” for short). Phages are viruses that attack bacteria.</p>
-<p>Think of phages like tiny spaceships that: - Land on bacteria - Inject something inside - Use the bacteria to make more phages - Eventually burst the bacteria and release new phages</p>
-<p><strong>The Question</strong>: What do phages inject into bacteria—DNA or protein?</p>
-</section>
-<section id="the-clever-trick-radioactive-labels" class="level3" data-number="5.4.2">
-<h3 data-number="5.4.2" class="anchored" data-anchor-id="the-clever-trick-radioactive-labels"><span class="header-section-number">5.4.2</span> The Clever Trick: Radioactive Labels</h3>
-<p>Hershey and Chase used a brilliant trick—they “tagged” molecules with radioactive labels (like putting glow-in-the-dark stickers on things so you can track them!).</p>
-<p><strong>Key Facts About Phages</strong>: - Phages have a protein coat on the outside - Phages have DNA on the inside - Proteins contain an element called <strong>sulfur</strong> - DNA contains an element called <strong>phosphorus</strong></p>
-</section>
-<section id="the-experiment" class="level3" data-number="5.4.3">
-<h3 data-number="5.4.3" class="anchored" data-anchor-id="the-experiment"><span class="header-section-number">5.4.3</span> The Experiment</h3>
-<p>They did two experiments:</p>
-<p><strong>Experiment 1: Label the Protein</strong> 1. Grew phages with radioactive <strong>sulfur</strong> (this labels the protein) 2. Let the phages infect bacteria 3. Used a blender to separate the phage coats from the bacteria (yes, really—a blender!) 4. Checked where the radioactive label was</p>
-<p><strong>Result</strong>: The radioactive sulfur stayed OUTSIDE the bacteria (in the phage coat) <strong>Conclusion</strong>: Protein doesn’t go into the bacteria</p>
-<p><strong>Experiment 2: Label the DNA</strong> 1. Grew phages with radioactive <strong>phosphorus</strong> (this labels the DNA) 2. Let the phages infect bacteria 3. Used a blender to separate the phage coats from the bacteria 4. Checked where the radioactive label was</p>
-<p><strong>Result</strong>: The radioactive phosphorus was found INSIDE the bacteria! <strong>Conclusion</strong>: DNA goes into the bacteria</p>
-</section>
-<section id="the-final-verdict" class="level3" data-number="5.4.4">
-<h3 data-number="5.4.4" class="anchored" data-anchor-id="the-final-verdict"><span class="header-section-number">5.4.4</span> The Final Verdict</h3>
-<p>After the bacteria were infected: - New phages were created - These new phages had radioactive phosphorus (DNA), NOT radioactive sulfur (protein)</p>
-<p><strong>This proved</strong>: DNA is the genetic material that gets passed from parent to offspring!</p>
-<p>Think of it like this: - The phage is a syringe - The protein coat is the syringe body (stays outside) - The DNA is the medicine (gets injected inside) - The DNA contains the instructions to make new phages!</p>
-</section>
-</section>
-<section id="why-these-experiments-were-brilliant" class="level2" data-number="5.5">
-<h2 data-number="5.5" class="anchored" data-anchor-id="why-these-experiments-were-brilliant"><span class="header-section-number">5.5</span> Why These Experiments Were Brilliant</h2>
-<section id="they-used-the-scientific-method" class="level3" data-number="5.5.1">
-<h3 data-number="5.5.1" class="anchored" data-anchor-id="they-used-the-scientific-method"><span class="header-section-number">5.5.1</span> They Used the Scientific Method</h3>
-<p>All three experiments followed great scientific thinking:</p>
-<ol type="1">
-<li><strong>Observation</strong>: Something interesting happens</li>
-<li><strong>Question</strong>: Why does it happen?</li>
-<li><strong>Hypothesis</strong>: Maybe it’s because of X</li>
-<li><strong>Experiment</strong>: Test if X is true</li>
-<li><strong>Conclusion</strong>: Based on results, accept or reject the hypothesis</li>
-</ol>
-</section>
-<section id="they-were-creative" class="level3" data-number="5.5.2">
-<h3 data-number="5.5.2" class="anchored" data-anchor-id="they-were-creative"><span class="header-section-number">5.5.2</span> They Were Creative</h3>
+<section id="turning-genes-on-and-off" class="level2" data-number="14.1">
+<h2 data-number="14.1" class="anchored" data-anchor-id="turning-genes-on-and-off"><span class="header-section-number">14.1</span> Turning Genes On and Off</h2>
+<section id="the-light-switch-analogy" class="level3" data-number="14.1.1">
+<h3 data-number="14.1.1" class="anchored" data-anchor-id="the-light-switch-analogy"><span class="header-section-number">14.1.1</span> The Light Switch Analogy</h3>
+<p>Imagine your house has 20,000 light switches (genes), but you don’t need all lights on all the time!</p>
 <ul>
-<li>Griffith: Used living and dead bacteria in different combinations</li>
-<li>Avery, MacLeod, McCarty: Systematically removed different molecules</li>
-<li>Hershey and Chase: Used radioactive labels to track molecules</li>
+<li><strong>Kitchen lights</strong> ON during cooking</li>
+<li><strong>Bedroom lights</strong> ON at night</li>
+<li><strong>Bathroom lights</strong> ON when needed</li>
+<li>Most lights OFF most of the time</li>
 </ul>
-</section>
-<section id="they-built-on-each-others-work" class="level3" data-number="5.5.3">
-<h3 data-number="5.5.3" class="anchored" data-anchor-id="they-built-on-each-others-work"><span class="header-section-number">5.5.3</span> They Built on Each Other’s Work</h3>
-<p>Science is like building a tower—each scientist adds new blocks on top of previous discoveries: - Griffith found transformation (but didn’t know what caused it) - Avery, MacLeod, McCarty identified DNA as the transforming principle - Hershey and Chase confirmed DNA is the genetic material</p>
+<p>Your cells do the same with genes! They turn genes ON or OFF depending on what’s needed.</p>
 </section>
 </section>
-<section id="the-impact" class="level2" data-number="5.6">
-<h2 data-number="5.6" class="anchored" data-anchor-id="the-impact"><span class="header-section-number">5.6</span> The Impact</h2>
-<section id="changing-biology-forever" class="level3" data-number="5.6.1">
-<h3 data-number="5.6.1" class="anchored" data-anchor-id="changing-biology-forever"><span class="header-section-number">5.6.1</span> Changing Biology Forever</h3>
-<p>These discoveries: - Proved DNA carries genetic information - Shifted the focus of biology to DNA research - Led to the discovery of DNA’s structure (the double helix) in 1953 - Started the age of molecular biology - Eventually led to the Human Genome Project - Made modern genetic engineering possible</p>
+<section id="why-gene-regulation-matters" class="level2" data-number="14.2">
+<h2 data-number="14.2" class="anchored" data-anchor-id="why-gene-regulation-matters"><span class="header-section-number">14.2</span> Why Gene Regulation Matters</h2>
+<section id="the-big-problem-to-solve" class="level3" data-number="14.2.1">
+<h3 data-number="14.2.1" class="anchored" data-anchor-id="the-big-problem-to-solve"><span class="header-section-number">14.2.1</span> The Big Problem to Solve</h3>
+<p><strong>Every cell in your body has the SAME DNA</strong> (all 20,000-25,000 genes).</p>
+<p>But: - <strong>Brain cells</strong> act completely different from <strong>muscle cells</strong> - <strong>Liver cells</strong> do different jobs than <strong>skin cells</strong> - <strong>Eye cells</strong> need different proteins than <strong>stomach cells</strong></p>
+<p><strong>How?</strong> Gene regulation!</p>
 </section>
-<section id="real-world-applications-today" class="level3" data-number="5.6.2">
-<h3 data-number="5.6.2" class="anchored" data-anchor-id="real-world-applications-today"><span class="header-section-number">5.6.2</span> Real-World Applications Today</h3>
-<p>Understanding that DNA is genetic material allows us to: - Identify criminals through DNA fingerprinting - Test for genetic diseases - Create GMO crops that resist pests - Develop personalized medicine - Study evolution and how species are related - Bring back extinct species (like trying to revive mammoths!)</p>
+<section id="what-is-gene-regulation" class="level3" data-number="14.2.2">
+<h3 data-number="14.2.2" class="anchored" data-anchor-id="what-is-gene-regulation"><span class="header-section-number">14.2.2</span> What Is Gene Regulation?</h3>
+<p><strong>Gene regulation</strong> = Controlling which genes are turned ON (expressed) or OFF (silenced)</p>
+<p>Think of it like: - A conductor directing an orchestra (which instruments play when) - A traffic controller (which cars go when) - A restaurant manager (which dishes to make when)</p>
 </section>
 </section>
-<section id="fun-facts" class="level2" data-number="5.7">
-<h2 data-number="5.7" class="anchored" data-anchor-id="fun-facts"><span class="header-section-number">5.7</span> Fun Facts! 🎉</h2>
+<section id="levels-of-gene-regulation" class="level2" data-number="14.3">
+<h2 data-number="14.3" class="anchored" data-anchor-id="levels-of-gene-regulation"><span class="header-section-number">14.3</span> Levels of Gene Regulation</h2>
+<p>Gene expression can be controlled at many different steps!</p>
+<section id="level-1-transcriptional-control-before-mrna" class="level3" data-number="14.3.1">
+<h3 data-number="14.3.1" class="anchored" data-anchor-id="level-1-transcriptional-control-before-mrna"><span class="header-section-number">14.3.1</span> Level 1: Transcriptional Control (Before mRNA)</h3>
+<p><strong>Control whether DNA is transcribed into RNA</strong></p>
+<p><strong>Methods</strong>:</p>
+<p><strong>1. Transcription Factors</strong> - Proteins that bind to DNA - Can turn genes ON or OFF - Like keys that unlock or lock genes</p>
+<p><strong>Example - Heat Shock</strong>: - Cell gets hot (stress!) - Heat shock transcription factors activated - Turn ON heat shock protein genes - Proteins protect cell from heat damage</p>
+<p><strong>2. Chromatin Remodeling</strong> - Tight chromatin = gene OFF (inaccessible) - Loose chromatin = gene ON (accessible) - Chromatin remodeling complexes move nucleosomes</p>
+<p><strong>3. DNA Methylation</strong> - Adding methyl groups to DNA - Usually silences genes - Epigenetic control!</p>
+<p><strong>4. Enhancers and Silencers</strong> - DNA sequences far from genes - Enhancers boost gene expression - Silencers reduce gene expression - Can be thousands of base pairs away!</p>
+</section>
+<section id="level-2-post-transcriptional-control-after-mrna-made" class="level3" data-number="14.3.2">
+<h3 data-number="14.3.2" class="anchored" data-anchor-id="level-2-post-transcriptional-control-after-mrna-made"><span class="header-section-number">14.3.2</span> Level 2: Post-Transcriptional Control (After mRNA Made)</h3>
+<p><strong>Control what happens to mRNA after transcription</strong></p>
+<p><strong>Methods</strong>:</p>
+<p><strong>1. Alternative Splicing</strong> - Different exon combinations - One gene → multiple proteins - We covered this in Chapter 12!</p>
+<p><strong>2. mRNA Stability</strong> - Some mRNAs last hours - Others degrade in minutes - Controlled by sequences in mRNA - microRNAs can destabilize mRNA</p>
+<p><strong>3. mRNA Localization</strong> - Some mRNAs transported to specific cell locations - Proteins made where they’re needed - Like delivering mail to the right address!</p>
+</section>
+<section id="level-3-translational-control-during-protein-synthesis" class="level3" data-number="14.3.3">
+<h3 data-number="14.3.3" class="anchored" data-anchor-id="level-3-translational-control-during-protein-synthesis"><span class="header-section-number">14.3.3</span> Level 3: Translational Control (During Protein Synthesis)</h3>
+<p><strong>Control whether mRNA is translated into protein</strong></p>
+<p><strong>Methods</strong>:</p>
+<p><strong>1. Regulatory Proteins</strong> - Can block ribosome binding - Prevent translation - Like putting a “Closed” sign on mRNA</p>
+<p><strong>2. microRNAs (miRNAs)</strong> - Bind to mRNA - Block translation OR - Cause mRNA degradation</p>
+<p><strong>3. Ribosome Availability</strong> - If ribosomes are busy, translation slows - Cell can control ribosome numbers</p>
+</section>
+<section id="level-4-post-translational-control-after-protein-made" class="level3" data-number="14.3.4">
+<h3 data-number="14.3.4" class="anchored" data-anchor-id="level-4-post-translational-control-after-protein-made"><span class="header-section-number">14.3.4</span> Level 4: Post-Translational Control (After Protein Made)</h3>
+<p><strong>Control what happens to proteins after they’re made</strong></p>
+<p><strong>Methods</strong>:</p>
+<p><strong>1. Protein Modifications</strong> - Phosphorylation (activate or deactivate) - Ubiquitination (mark for degradation) - We covered PTMs in Chapter 13!</p>
+<p><strong>2. Protein Localization</strong> - Signal sequences direct proteins to destinations - Nucleus, mitochondria, membrane, etc.</p>
+<p><strong>3. Protein Degradation</strong> - Proteasome destroys tagged proteins - Controls protein lifespan</p>
+</section>
+</section>
+<section id="transcription-factors-the-master-controllers" class="level2" data-number="14.4">
+<h2 data-number="14.4" class="anchored" data-anchor-id="transcription-factors-the-master-controllers"><span class="header-section-number">14.4</span> Transcription Factors: The Master Controllers</h2>
+<section id="what-are-transcription-factors" class="level3" data-number="14.4.1">
+<h3 data-number="14.4.1" class="anchored" data-anchor-id="what-are-transcription-factors"><span class="header-section-number">14.4.1</span> What Are Transcription Factors?</h3>
+<p><strong>Transcription factors (TFs)</strong> = Proteins that control gene transcription</p>
+<p><strong>How they work</strong>: 1. TF binds to specific DNA sequence 2. Recruits RNA polymerase OR blocks it 3. Gene is turned ON or OFF</p>
+<p>Think of TFs like: - Boss giving orders (which work to do) - DJ choosing which songs to play - Chef deciding which recipes to make</p>
+</section>
+<section id="types-of-transcription-factors" class="level3" data-number="14.4.2">
+<h3 data-number="14.4.2" class="anchored" data-anchor-id="types-of-transcription-factors"><span class="header-section-number">14.4.2</span> Types of Transcription Factors</h3>
+<p><strong>Activators</strong>: - Turn genes ON - Help RNA polymerase bind - Increase transcription</p>
+<p><strong>Repressors</strong>: - Turn genes OFF - Block RNA polymerase - Decrease transcription</p>
+</section>
+<section id="transcription-factor-domains" class="level3" data-number="14.4.3">
+<h3 data-number="14.4.3" class="anchored" data-anchor-id="transcription-factor-domains"><span class="header-section-number">14.4.3</span> Transcription Factor Domains</h3>
+<p>Most TFs have two parts:</p>
+<p><strong>DNA-Binding Domain</strong>: - Recognizes specific DNA sequences - Like a lock and key - Determines which genes it controls</p>
+<p><strong>Activation Domain</strong>: - Interacts with other proteins - Recruits RNA polymerase - Actually does the regulating</p>
+</section>
+<section id="master-regulators" class="level3" data-number="14.4.4">
+<h3 data-number="14.4.4" class="anchored" data-anchor-id="master-regulators"><span class="header-section-number">14.4.4</span> Master Regulators</h3>
+<p>Some TFs control many genes:</p>
+<p><strong>Example - MyoD (Muscle Development)</strong>: - ONE transcription factor - Turns ON hundreds of muscle genes - Can convert skin cells into muscle cells! - Master regulator of muscle identity</p>
+<p><strong>Example - Oct4/Sox2/Nanog (Stem Cells)</strong>: - Three TFs working together - Keep cells in stem cell state - Turn OFF = cells differentiate</p>
+</section>
+</section>
+<section id="combinatorial-control" class="level2" data-number="14.5">
+<h2 data-number="14.5" class="anchored" data-anchor-id="combinatorial-control"><span class="header-section-number">14.5</span> Combinatorial Control</h2>
+<section id="many-regulators-work-together" class="level3" data-number="14.5.1">
+<h3 data-number="14.5.1" class="anchored" data-anchor-id="many-regulators-work-together"><span class="header-section-number">14.5.1</span> Many Regulators Work Together</h3>
+<p><strong>Combinatorial control</strong> = Multiple TFs work together to control genes</p>
+<p><strong>Why it’s powerful</strong>: - 10 TFs can create thousands of combinations - Fine-tuned control - Cell-type specific expression</p>
+<p><strong>Example</strong>: - Gene needs TF-A AND TF-B AND TF-C to turn ON - Like needing three keys to open a vault - Very specific control!</p>
+<p><strong>Liver cells</strong>: - Have TF-Liver1, TF-Liver2, TF-Liver3 - Together they activate liver genes - Don’t have muscle TFs - So muscle genes stay OFF</p>
+</section>
+</section>
+<section id="signal-transduction-and-gene-regulation" class="level2" data-number="14.6">
+<h2 data-number="14.6" class="anchored" data-anchor-id="signal-transduction-and-gene-regulation"><span class="header-section-number">14.6</span> Signal Transduction and Gene Regulation</h2>
+<section id="how-cells-respond-to-signals" class="level3" data-number="14.6.1">
+<h3 data-number="14.6.1" class="anchored" data-anchor-id="how-cells-respond-to-signals"><span class="header-section-number">14.6.1</span> How Cells Respond to Signals</h3>
+<p><strong>Signal transduction</strong> = Converting external signals into gene expression changes</p>
+<p><strong>The pathway</strong>: 1. <strong>Signal</strong> arrives (hormone, growth factor, stress) 2. <strong>Receptor</strong> on cell surface detects signal 3. <strong>Signaling cascade</strong> inside cell 4. <strong>Transcription factors</strong> activated 5. <strong>Genes</strong> turned ON or OFF 6. <strong>Proteins</strong> made 7. <strong>Cell response</strong></p>
+</section>
+<section id="example-hormone-signaling" class="level3" data-number="14.6.2">
+<h3 data-number="14.6.2" class="anchored" data-anchor-id="example-hormone-signaling"><span class="header-section-number">14.6.2</span> Example: Hormone Signaling</h3>
+<p><strong>Scenario</strong>: You’re scared, adrenaline released</p>
+<p><strong>What happens</strong>: 1. Adrenaline binds to receptors on cells 2. Activates signaling proteins inside 3. Transcription factors activated 4. Genes for stress response turned ON 5. Proteins made (more glucose, faster heart) 6. You’re ready to run!</p>
+<p><strong>All in seconds to minutes!</strong></p>
+</section>
+</section>
+<section id="feedback-loops" class="level2" data-number="14.7">
+<h2 data-number="14.7" class="anchored" data-anchor-id="feedback-loops"><span class="header-section-number">14.7</span> Feedback Loops</h2>
+<section id="self-regulating-systems" class="level3" data-number="14.7.1">
+<h3 data-number="14.7.1" class="anchored" data-anchor-id="self-regulating-systems"><span class="header-section-number">14.7.1</span> Self-Regulating Systems</h3>
+<p><strong>Positive Feedback</strong>: - Product enhances its own production - Like a snowball rolling downhill - Amplifies signals - Used for rapid responses</p>
+<p><strong>Example</strong>: Blood clotting - Clotting factor activates more clotting factors - Rapid cascade - Stops bleeding quickly</p>
+<p><strong>Negative Feedback</strong>: - Product inhibits its own production - Like a thermostat - Maintains steady levels - Most common type</p>
+<p><strong>Example</strong>: Thyroid hormone - High levels inhibit release of more hormone - Keeps levels stable</p>
+</section>
+</section>
+<section id="development-and-gene-regulation" class="level2" data-number="14.8">
+<h2 data-number="14.8" class="anchored" data-anchor-id="development-and-gene-regulation"><span class="header-section-number">14.8</span> Development and Gene Regulation</h2>
+<section id="how-one-cell-becomes-many-cell-types" class="level3" data-number="14.8.1">
+<h3 data-number="14.8.1" class="anchored" data-anchor-id="how-one-cell-becomes-many-cell-types"><span class="header-section-number">14.8.1</span> How One Cell Becomes Many Cell Types</h3>
+<p><strong>The amazing fact</strong>: All cells start with same DNA!</p>
+<p><strong>How specialization happens</strong>:</p>
+<p><strong>1. Maternal Factors</strong>: - Egg has proteins distributed unevenly - Different parts of embryo get different proteins - Sets up initial patterns</p>
+<p><strong>2. Morphogens</strong>: - Signaling molecules that form gradients - High concentration → one cell fate - Low concentration → different cell fate - Like a map with coordinates!</p>
+<p><strong>3. Transcription Factor Cascades</strong>: - First TFs activate second TFs - Second TFs activate third TFs - Complex patterns emerge</p>
+<p><strong>4. Cell-Cell Signaling</strong>: - Cells communicate with neighbors - Refine boundaries - Create sharp borders between cell types</p>
+</section>
+<section id="the-hox-genes" class="level3" data-number="14.8.2">
+<h3 data-number="14.8.2" class="anchored" data-anchor-id="the-hox-genes"><span class="header-section-number">14.8.2</span> The Hox Genes</h3>
+<p><strong>Hox genes</strong> = Master regulators of body plan</p>
+<p><strong>What they do</strong>: - Control head-to-tail pattern - Determine where body parts go - Highly conserved across animals</p>
+<p><strong>Amazing fact</strong>: Fly Hox genes work in mice! - Shows deep evolutionary conservation - All animals use similar developmental programs</p>
+</section>
+</section>
+<section id="gene-regulation-in-prokaryotes-vs-eukaryotes" class="level2" data-number="14.9">
+<h2 data-number="14.9" class="anchored" data-anchor-id="gene-regulation-in-prokaryotes-vs-eukaryotes"><span class="header-section-number">14.9</span> Gene Regulation in Prokaryotes vs Eukaryotes</h2>
+<section id="prokaryotic-gene-regulation-simpler" class="level3" data-number="14.9.1">
+<h3 data-number="14.9.1" class="anchored" data-anchor-id="prokaryotic-gene-regulation-simpler"><span class="header-section-number">14.9.1</span> Prokaryotic Gene Regulation (Simpler)</h3>
+<p><strong>Characteristics</strong>: - Mainly transcriptional control - Operons (groups of genes controlled together) - Fast response to environment - Less complex</p>
+<p><strong>The lac operon</strong> (we covered in Chapter 8): - Classic example - Genes for lactose digestion - Turned ON when lactose present - Turned OFF when lactose absent</p>
+</section>
+<section id="eukaryotic-gene-regulation-complex" class="level3" data-number="14.9.2">
+<h3 data-number="14.9.2" class="anchored" data-anchor-id="eukaryotic-gene-regulation-complex"><span class="header-section-number">14.9.2</span> Eukaryotic Gene Regulation (Complex)</h3>
+<p><strong>Characteristics</strong>: - Multiple levels of control - Chromatin structure important - Individual genes (not operons) - Long-distance regulation (enhancers) - More complex, more flexible</p>
+<p><strong>Why more complex?</strong> - Multicellular organisms - Cell differentiation needed - Developmental programs - Sophisticated responses</p>
+</section>
+</section>
+<section id="diseases-of-gene-regulation" class="level2" data-number="14.10">
+<h2 data-number="14.10" class="anchored" data-anchor-id="diseases-of-gene-regulation"><span class="header-section-number">14.10</span> Diseases of Gene Regulation</h2>
+<section id="when-regulation-goes-wrong" class="level3" data-number="14.10.1">
+<h3 data-number="14.10.1" class="anchored" data-anchor-id="when-regulation-goes-wrong"><span class="header-section-number">14.10.1</span> When Regulation Goes Wrong</h3>
+<p><strong>Cancer</strong>: - Tumor suppressor genes turned OFF (should be ON) - Oncogenes turned ON (should be OFF) - Loss of normal growth control</p>
+<p><strong>Developmental Disorders</strong>: - Hox gene mutations → body parts in wrong places - Transcription factor mutations → missing structures</p>
+<p><strong>Metabolic Diseases</strong>: - Insulin signaling disrupted (diabetes) - Cholesterol regulation abnormal (heart disease)</p>
+</section>
+</section>
+<section id="rna-interference-rnai" class="level2" data-number="14.11">
+<h2 data-number="14.11" class="anchored" data-anchor-id="rna-interference-rnai"><span class="header-section-number">14.11</span> RNA Interference (RNAi)</h2>
+<section id="using-rna-to-regulate-genes" class="level3" data-number="14.11.1">
+<h3 data-number="14.11.1" class="anchored" data-anchor-id="using-rna-to-regulate-genes"><span class="header-section-number">14.11.1</span> Using RNA to Regulate Genes</h3>
+<p><strong>RNA interference</strong> = Using small RNAs to silence genes</p>
+<p><strong>How it works</strong>: 1. Small RNAs (21-23 nucleotides) made 2. They bind to complementary mRNA 3. Either block translation OR degrade mRNA 4. Gene silenced!</p>
+<p><strong>Types</strong>: - <strong>miRNAs</strong> (microRNAs): Natural gene regulators - <strong>siRNAs</strong> (small interfering RNAs): Used in research/medicine</p>
+<p><strong>Applications</strong>: - Research tool (turn OFF genes to study function) - Potential therapies (silence disease genes) - Already FDA-approved for some diseases!</p>
+</section>
+</section>
+<section id="key-takeaways" class="level2" data-number="14.12">
+<h2 data-number="14.12" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">14.12</span> Key Takeaways</h2>
 <ul>
-<li><strong>Griffith</strong> never knew his work would lead to discovering DNA as genetic material—he died in 1941, before Avery’s team published their results!</li>
-<li><strong>Avery</strong> was 67 years old when he made his discovery—proving you’re never too old to do great science!</li>
-<li><strong>Martha Chase</strong> left science to raise a family but her contribution to the Hershey-Chase experiment was crucial</li>
-<li><strong>Alfred Hershey</strong> won the Nobel Prize in 1969 (for different work on phages)</li>
-<li>The “blender” they used was actually called a Waring blender—the same kind used to make smoothies!</li>
-<li>Before these experiments, most scientists bet on proteins being genetic material because proteins seemed more complex</li>
-</ul>
-</section>
-<section id="key-takeaways" class="level2" data-number="5.8">
-<h2 data-number="5.8" class="anchored" data-anchor-id="key-takeaways"><span class="header-section-number">5.8</span> Key Takeaways</h2>
-<ul>
-<li><strong>Early Mystery</strong>: Scientists knew traits were inherited but didn’t know what molecule carried genetic information</li>
-<li><strong>Griffith (1928)</strong>: Discovered “transformation”—something from dead bacteria could change living bacteria</li>
-<li><strong>Avery, MacLeod, McCarty (1944)</strong>: Identified DNA as the “transforming principle”</li>
-<li><strong>Hershey-Chase (1952)</strong>: Confirmed DNA (not protein) is injected into bacteria and carries genetic information</li>
-<li><strong>Radioactive labeling</strong>: Clever technique to track molecules</li>
-<li>These discoveries proved <strong>DNA is the genetic material</strong></li>
-<li>This knowledge revolutionized biology and medicine</li>
-<li>Science builds on previous discoveries—each experiment answered new questions</li>
+<li><strong>Gene regulation</strong> controls which genes are ON or OFF</li>
+<li><strong>Multiple levels</strong>: Transcriptional, post-transcriptional, translational, post-translational</li>
+<li><strong>Transcription factors</strong> are master controllers</li>
+<li><strong>Combinatorial control</strong> creates complexity from simple parts</li>
+<li><strong>Signal transduction</strong> connects external signals to gene expression</li>
+<li><strong>Feedback loops</strong> maintain stability or amplify signals</li>
+<li><strong>Development</strong> uses gene regulation to create specialized cells</li>
+<li><strong>Prokaryotes</strong> use simple regulation (operons)</li>
+<li><strong>Eukaryotes</strong> use complex, multi-layered regulation</li>
+<li><strong>Diseases</strong> often involve regulatory failures</li>
+<li><strong>RNAi</strong> is a powerful regulatory mechanism and research tool</li>
 </ul>
 <hr>
-<p><strong>Sources</strong>: Information adapted from Nature Scitable, Khan Academy Biology, university molecular biology courses, and historical accounts of these famous experiments.</p>
+<p><strong>Sources</strong>: Information adapted from molecular biology textbooks, Nature Education, Khan Academy, and gene regulation research literature.</p>
 
 
 </section>
@@ -988,13 +1045,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./ch04-classical-genetics.html" class="pagination-link" aria-label="Classical Genetics">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Classical Genetics</span></span>
+      <a href="./ch12-transcriptomics.html" class="pagination-link" aria-label="Transcriptomics">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Transcriptomics</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./ch06-molecular-era.html" class="pagination-link" aria-label="The Molecular Era">
-        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">The Molecular Era</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./ch13-proteomics.html" class="pagination-link" aria-label="Proteomics">
+        <span class="nav-page-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Proteomics</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
