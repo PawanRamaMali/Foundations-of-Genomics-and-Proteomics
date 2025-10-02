@@ -1,0 +1,67 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Foundations of Genomics and Proteomics"
+  subtitle: "Life's Source Code – From DNA to Data"
+  author: "Foundations Team"
+  date: today
+
+  chapters:
+    - index.qmd
+
+    - part: "Part I – Foundations of Molecular Biology"
+      chapters:
+        - ch01-introduction.qmd
+        - ch02-basics.qmd
+        - ch03-central-dogma.qmd
+
+    - part: "Part II – Historical Perspectives"
+      chapters:
+        - ch04-classical-genetics.qmd
+        - ch05-dna-discovery.qmd
+        - ch06-molecular-era.qmd
+
+    - part: "Part III – Genomes"
+      chapters:
+        - ch07-genome.qmd
+        - ch08-prokaryotic-eukaryotic.qmd
+        - ch09-packaging.qmd
+        - ch10-c-value-paradox.qmd
+        - ch11-mitochondria.qmd
+
+    - part: "Part IV – Beyond the Genome"
+      chapters:
+        - ch12-transcriptomics.qmd
+        - ch13-proteomics.qmd
+        - ch14-epigenetics.qmd
+
+    - part: "Part V – Experimental Tools and Applications"
+      chapters:
+        - ch15-sequencing.qmd
+        - ch16-experimental-methods.qmd
+        - ch17-applications.qmd
+
+    - part: "Part VI – Reflection and Future Directions"
+      chapters:
+        - ch18-discussion.qmd
+        - ch19-future-omics.qmd
+
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    code-fold: false
+    link-external-icon: true
+    link-external-newwindow: true
+  pdf:
+    documentclass: scrbook
+    toc: true
+    number-sections: true

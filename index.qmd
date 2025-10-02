@@ -1,0 +1,56 @@
+# Welcome! {.unnumbered}
+
+## Life's Source Code – From DNA to Data
+
+Welcome to **Foundations of Genomics and Proteomics**! This book is your friendly guide to understanding how life works at its most basic level.
+
+### What Will You Learn?
+
+Have you ever wondered:
+
+- Why do you look like your parents? 👨‍👩‍👧
+- What makes you unique? ✨
+- How do scientists read the "instruction manual" inside your cells? 📖
+- What can we learn from studying tiny bits of life? 🔬
+
+This book will answer all these questions and more!
+
+### Who Is This Book For?
+
+This book is perfect for:
+
+- **Beginners** who are curious about how life works
+- **Students** starting to learn about biology
+- **Anyone** who wants to understand genetics and proteins in simple terms
+
+**No science background needed!** We explain everything from the very beginning.
+
+### How to Read This Book
+
+Think of this book as a story about the amazing world inside every living thing. We'll start with the basics and build up your knowledge step by step.
+
+Each chapter includes:
+
+- **Simple explanations** that anyone can understand
+- **Fun examples** from everyday life
+- **Amazing facts** about science and nature
+- **Key takeaways** to remember the important stuff
+
+### The Journey Ahead
+
+We'll explore six exciting parts:
+
+1. **The Building Blocks** - What are DNA, RNA, and proteins?
+2. **History's Heroes** - Scientists who made amazing discoveries
+3. **The Instruction Manual** - How genomes work
+4. **Beyond DNA** - RNA and proteins in action
+5. **Cool Tools** - How scientists study genes today
+6. **The Future** - What's next in genomics?
+
+### Let's Begin!
+
+Ready to discover the incredible world of genomics and proteomics? Let's start our adventure into the microscopic world that makes all life possible!
+
+---
+
+**Note:** This book uses information from trusted sources like the National Human Genome Research Institute (NHGRI), Khan Academy, Nature Education, and other leading scientific organizations.

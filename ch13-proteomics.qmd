@@ -1,0 +1,368 @@
+# Proteomics
+
+## From Transcript to Protein
+
+### What Is Proteomics?
+
+**Proteomics** is the large-scale study of proteins—their structures, functions, and interactions.
+
+**The "ome" suffix**:
+- Gen**ome** = all DNA
+- Transcript**ome** = all RNA
+- Prote**ome** = all proteins
+
+Think of the proteome as all the workers actually doing jobs in your cells right now!
+
+### Why Study Proteins?
+
+**Proteins are where the action is**:
+- Genes are instructions
+- RNA is the messenger
+- **Proteins do the actual work**!
+
+Understanding proteins helps us:
+- Know how cells function
+- Understand diseases
+- Develop better medicines
+- Design new therapies
+
+## The Journey: DNA → RNA → Protein
+
+### Quick Review
+
+**1. Transcription**: DNA → RNA
+- Makes mRNA copy of gene
+- In the nucleus
+
+**2. Translation**: RNA → Protein
+- Ribosomes read mRNA
+- tRNAs bring amino acids
+- Amino acids link together
+- Forms protein chain
+
+**3. Protein Folding**: Linear chain → 3D structure
+- Protein folds into specific 3D shape
+- Shape determines function
+- "Structure equals function"!
+
+### The Proteome Is More Complex Than the Transcriptome
+
+**Why?**
+- One gene → multiple RNA variants (alternative splicing)
+- One RNA → one protein chain
+- BUT one protein chain → multiple modified forms!
+
+**Post-translational modifications** (we'll discuss next) create even MORE diversity!
+
+**Result**:
+- ~20,000 genes
+- ~100,000 RNA variants
+- **Over 1 million different protein forms**!
+
+## Post-Translational Modifications (PTMs)
+
+### Proteins Get Modified After They're Made
+
+After a protein is made, it can be modified in many ways!
+
+**Post-translational modifications (PTMs)** = Chemical changes to proteins after translation
+
+Think of it like:
+- Making a basic clay pot (translation)
+- Then decorating it (PTMs)
+- The decorations change how it's used!
+
+### Common Types of PTMs
+
+### 1. Phosphorylation
+
+**What happens**: Adding a phosphate group (PO₄) to amino acids
+
+**Where**: Usually on serine, threonine, or tyrosine amino acids
+
+**Effects**:
+- Changes protein shape
+- Can turn protein ON or OFF
+- Very common in cell signaling
+
+**Example**: Insulin signaling uses lots of phosphorylation to control blood sugar!
+
+### 2. Methylation
+
+**What happens**: Adding a methyl group (CH₃) to amino acids
+
+**Where**: Usually on lysine or arginine
+
+**Effects**:
+- Controls gene expression (on histones)
+- Affects protein-protein interactions
+- Important for epigenetics!
+
+### 3. Acetylation
+
+**What happens**: Adding an acetyl group to amino acids
+
+**Where**: Usually on lysine
+
+**Effects**:
+- Loosens chromatin (on histones)
+- Activates some enzymes
+- Opposite of methylation effects (sometimes)
+
+### 4. Ubiquitination
+
+**What happens**: Attaching ubiquitin (a small protein) to target protein
+
+**Effects**:
+- Tags protein for degradation (recycling)
+- Like putting a "trash" label on the protein
+- Controls protein lifespan
+
+### 5. Glycosylation
+
+**What happens**: Adding sugar molecules to protein
+
+**Where**: Usually on asparagine or serine/threonine
+
+**Effects**:
+- Protects protein from degradation
+- Helps protein folding
+- Important for cell recognition
+- About 50% of human proteins are glycosylated!
+
+### 6. Proteolytic Cleavage
+
+**What happens**: Cutting the protein chain into pieces
+
+**Effects**:
+- Activates some proteins (insulin is made this way!)
+- Inactivates others
+- Removes signaling sequences
+- Irreversible (can't be undone)
+
+### Why PTMs Matter
+
+**Creates enormous diversity**:
+- One protein can exist in many modified forms
+- Different modifications = different functions
+- Like having one tool that changes based on attachments!
+
+**Allows rapid regulation**:
+- Adding/removing PTMs is faster than making new proteins
+- Quick response to signals
+- Fine-tuned control
+
+**Examples of PTM importance**:
+- **Cancer**: Abnormal phosphorylation drives cancer growth
+- **Alzheimer's**: Abnormal protein modifications in brain
+- **Diabetes**: Insulin signaling requires proper phosphorylation
+- **Aging**: Accumulated protein modifications over time
+
+## Protein Structure and Function
+
+### The Four Levels of Protein Structure
+
+**Primary structure** (1°):
+- The sequence of amino acids
+- Like letters in a sentence
+- Determined by DNA sequence
+
+**Secondary structure** (2°):
+- Local folding patterns
+- Alpha helices (spiral staircases)
+- Beta sheets (zigzag ribbons)
+- Held together by hydrogen bonds
+
+**Tertiary structure** (3°):
+- Overall 3D shape of one protein chain
+- How secondary structures fold together
+- The complete 3D structure
+- Determines function!
+
+**Quaternary structure** (4°):
+- Multiple protein chains together
+- Not all proteins have this
+- Example: Hemoglobin (4 chains working together)
+
+### Structure = Function
+
+**The 3D shape determines what a protein does**:
+- Enzymes have pockets that fit specific molecules
+- Antibodies have shapes that recognize specific targets
+- Channels have tunnels for specific molecules to pass through
+
+If shape is wrong → protein doesn't work!
+
+**Example**: Sickle cell anemia
+- ONE amino acid change in hemoglobin
+- Changes protein shape
+- Causes red blood cells to become sickle-shaped
+- Leads to serious disease
+
+## Techniques in Proteomics
+
+### How Scientists Study Proteins
+
+### 1. Mass Spectrometry (MS)
+
+**What it does**: Identifies proteins and measures their amounts
+
+**How it works**:
+1. Break proteins into small pieces (peptides)
+2. Ionize the peptides (give them a charge)
+3. Measure their mass-to-charge ratio
+4. Computer identifies which protein it came from
+
+**Like**:
+- Weighing puzzle pieces to figure out which puzzle they're from
+- Very accurate and sensitive!
+
+**Used for**:
+- Identifying proteins in samples
+- Measuring protein amounts
+- Finding PTMs
+- Discovering new proteins
+
+### 2. Protein Microarrays
+
+**What they are**: Chips with thousands of proteins or antibodies
+
+**How they work**:
+- Put many different proteins on a chip
+- Add your sample
+- See which proteins interact with what
+- Like a dating app for proteins!
+
+**Used for**:
+- Finding protein-protein interactions
+- Detecting disease biomarkers
+- Drug discovery
+
+### 3. Western Blotting
+
+**What it does**: Detects specific proteins
+
+**How it works**:
+1. Separate proteins by size (gel electrophoresis)
+2. Transfer to membrane
+3. Use antibodies to detect specific protein
+4. Like using a highlighter to find one word in a book
+
+**Used for**:
+- Confirming presence of specific protein
+- Measuring protein amount
+- Detecting PTMs
+
+### 4. X-ray Crystallography & Cryo-EM
+
+**What they do**: Determine 3D protein structures
+
+**X-ray crystallography**:
+- Grow protein crystals
+- Shoot X-rays through
+- Calculate 3D structure from diffraction pattern
+
+**Cryo-EM** (Cryo-electron microscopy):
+- Freeze proteins quickly
+- Image with electron microscope
+- Reconstruct 3D structure
+- Nobel Prize 2017!
+
+**Used for**:
+- Understanding how proteins work
+- Drug design (fitting drugs into protein pockets)
+- Seeing proteins in action
+
+### 5. Yeast Two-Hybrid
+
+**What it does**: Finds protein-protein interactions
+
+**How it works**:
+- Use yeast cells as test tubes
+- If two proteins interact, yeast survives
+- If they don't interact, yeast dies
+- Like a matchmaking test!
+
+## Applications of Proteomics
+
+### Medicine
+
+**Disease Diagnosis**:
+- Protein biomarkers in blood/urine
+- Early cancer detection
+- Monitoring disease progression
+
+**Personalized Medicine**:
+- Protein profiles guide treatment
+- Predict drug response
+- Tailored therapies
+
+**Drug Discovery**:
+- Find new drug targets
+- Design drugs to fit protein structures
+- Understand side effects
+
+### Biotechnology
+
+**Industrial Enzymes**:
+- Laundry detergents
+- Food processing
+- Biofuels
+
+**Therapeutic Proteins**:
+- Insulin for diabetes
+- Antibodies for cancer
+- Growth factors for wounds
+
+### Research
+
+**Understanding Life**:
+- How cells work
+- Cell signaling pathways
+- Development and differentiation
+
+**Evolution**:
+- Compare proteins across species
+- Understand evolutionary relationships
+- See how proteins evolved
+
+## The Future of Proteomics
+
+### Emerging Technologies
+
+**Single-Cell Proteomics**:
+- Study proteins in individual cells
+- See cell-to-cell variation
+- Understand rare cell types
+
+**Spatial Proteomics**:
+- See where proteins are in tissues
+- 3D protein maps
+- Understand protein location and function
+
+**Integrative Multi-Omics**:
+- Combine genomics + transcriptomics + proteomics
+- Complete picture of cell state
+- Systems biology approach
+
+## Key Takeaways
+
+- **Proteomics** = Large-scale study of all proteins
+- **Proteome** is more complex than transcriptome due to PTMs
+- **Post-translational modifications (PTMs)** add diversity:
+  - Phosphorylation, methylation, acetylation
+  - Ubiquitination, glycosylation, cleavage
+  - Create over 1 million protein forms from 20,000 genes
+- **Protein structure** has 4 levels (1°, 2°, 3°, 4°)
+- **Structure determines function**
+- **Proteomics techniques**:
+  - Mass spectrometry (identify & quantify)
+  - Protein microarrays (interactions)
+  - Western blotting (detect specific proteins)
+  - X-ray crystallography & Cryo-EM (3D structures)
+- **Applications**: Medicine, drug discovery, biotechnology, research
+- Proteins are the actual workers—understanding them is crucial for understanding life!
+
+---
+
+**Sources**: Information adapted from Technology Networks, Abcam, PMC, and proteomics research literature.
