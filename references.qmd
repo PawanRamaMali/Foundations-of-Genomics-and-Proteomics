@@ -64,6 +64,32 @@ This book draws from numerous trusted scientific and educational sources. Below 
 - Research-level detail
 - Multiple volumes covering different aspects
 
+### Essential Reading for Gene Regulation
+
+**"A Genetic Switch: Phage Lambda Revisited" by Mark Ptashne**
+- **Classic text on molecular biology and gene regulation**
+- Essential reading for understanding gene regulatory mechanisms
+- Uses lambda phage and lac operon as model systems
+- Fundamental principles applicable to all gene regulation
+- Clear, elegant explanation of molecular biology concepts
+- Third edition (2004) includes modern developments
+- **Highly recommended** for students serious about molecular biology
+
+**Why this book matters**:
+- Ptashne's work on lambda phage repressor was groundbreaking
+- First demonstration of how transcription factors work
+- Established principles of gene regulation still used today
+- Beautiful example of rigorous molecular biology research
+- Influenced generations of molecular biologists
+
+**Topics covered**:
+- Lac operon (bacterial gene regulation)
+- Lambda phage life cycle and genetic switches
+- Transcription factor structure and function
+- Cooperative binding and allostery
+- Molecular basis of gene regulatory decisions
+- How proteins recognize specific DNA sequences
+
 ## Key Scientific Publications
 
 The following landmark papers and reviews are important but require advanced scientific background:

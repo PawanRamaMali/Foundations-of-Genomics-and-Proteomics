@@ -72,7 +72,7 @@ Some organisms have multiple complete copies of their genome!
 
 Having extra sets doesn't make you more complex—it's like having 4 copies of the same book instead of 1!
 
-### Reason 3: Transposable Elements ("Jumping Genes")
+### Reason 3: Transposable Elements and Repetitive Sequences
 
 **Transposable elements** are pieces of DNA that can copy themselves and jump to new locations.
 
@@ -91,6 +91,147 @@ These elements multiply over time, making genomes bigger without adding new gene
 Think of it like:
 - A book where sentences copy themselves over and over
 - The book gets huge but doesn't have more unique information
+
+#### Types of Repetitive DNA
+
+Repetitive sequences are a MAJOR component of eukaryotic genomes!
+
+### 1. Interspersed Repeats (Scattered Throughout Genome)
+
+**SINEs - Short Interspersed Nuclear Elements**:
+- **Short** repetitive sequences (~100-400 bp)
+- Copy themselves via RNA intermediate (retrotransposition)
+- **Cannot** move on their own (need help from LINEs)
+- **Humans**: ~1.5 million copies!
+
+**Famous example - Alu elements**:
+- Most common SINE in humans
+- ~300 bp long
+- ~1.1 million copies in your genome!
+- Makes up ~10% of human genome
+- Named after AluI restriction enzyme that cuts it
+
+**LINEs - Long Interspersed Nuclear Elements**:
+- **Long** repetitive sequences (~6,000 bp)
+- Can copy and paste themselves independently
+- Encode their own machinery for movement
+- **Humans**: ~500,000 copies
+
+**Famous example - LINE-1 (L1)**:
+- ~6 kb long
+- ~17% of human genome!
+- Codes for reverse transcriptase
+- Most copies are "dead" (cannot jump anymore)
+- ~80-100 still active in humans
+- Can cause diseases when they jump into genes!
+
+**LTRs - Long Terminal Repeats**:
+- From ancient **retroviruses** that infected our ancestors
+- Virus integrated into germline DNA
+- Got passed down through generations
+- **Humans**: ~8% of genome
+- Includes HERVs (Human Endogenous Retroviruses)
+- Most are now inactive
+
+**DNA Transposons**:
+- "Cut and paste" mechanism (not copy-paste)
+- Move directly as DNA (no RNA intermediate)
+- **Humans**: ~3% of genome
+- All are "dead" in humans (none can move anymore!)
+- Still active in some organisms (bacteria, plants, flies)
+
+### 2. Tandem Repeats (Clustered Together)
+
+**STRs - Short Tandem Repeats** (also called microsatellites):
+- Very short sequences (2-6 bp) repeated many times
+- Example: CACACACACACA (CA repeated 6 times)
+- Used in DNA fingerprinting!
+- Used in paternity tests
+- Highly variable between individuals
+
+**Satellite DNA**:
+- Very long arrays of repeats
+- Found at centromeres and telomeres
+- Important for chromosome structure
+- Named because they appear as "satellite" bands in density gradients
+
+**Example**:
+```
+Centromere satellite: AAATAT-AAATAT-AAATAT-AAATAT (repeated thousands of times)
+```
+
+#### Impact on Genome Annotation: Repeat Masking
+
+**The problem with repeats**:
+- Interfere with sequence assembly
+- Confuse gene prediction algorithms
+- Cause misalignment in sequence comparisons
+- Make genome analysis much harder!
+
+**Solution: Repeat Masking**
+
+**What is repeat masking?**
+- Computational process to identify and "hide" repetitive sequences
+- Replace repeats with "N"s or lowercase letters
+- Allows gene prediction to focus on unique sequences
+
+**How it works**:
+```
+Original sequence:
+ATGCCCAAAGGGALUALUALUATGCGATAG
+
+After repeat masking:
+ATGCCCAAGGGxxxxxxxxxxxATGCGATAG
+                ↑
+         Alu element masked
+```
+
+**Tools for repeat masking**:
+- **RepeatMasker**: Most widely used
+- **RepeatModeler**: Identifies novel repeats
+- Uses databases of known repeats (Repbase)
+
+**Workflow in genome annotation**:
+1. Sequence genome
+2. **Mask repeats first!** (critical step)
+3. Predict genes in masked sequence
+4. Avoid false gene predictions in repetitive regions
+
+**Why this matters**:
+- Without masking: Find "gene" in Alu element (wrong!)
+- With masking: Ignore Alu, find real genes
+- Improves annotation accuracy dramatically
+
+**Additional complications**:
+- Some transposons have been "domesticated"
+  - Now serve useful functions!
+  - Example: SETMAR gene in primates (from transposon)
+- Some regulatory elements evolved from transposons
+- So can't just ignore all repeats!
+
+#### Evolutionary Perspective on Transposons
+
+**Are transposons "junk" or functional?**
+
+**Arguments for "junk"**:
+- Most copies are broken/inactive
+- Seem parasitic (just copy themselves)
+- Cause diseases when they jump
+
+**Arguments for functional**:
+- Some became regulatory elements
+- Contribute to genome evolution
+- Source of genetic variation
+- Can be activated under stress
+
+**Current view**: Mostly junk, but some have been repurposed!
+
+**Barbara McClintock's discovery**:
+- Discovered transposable elements in corn (1940s-50s)
+- Called them "jumping genes"
+- Nobody believed her at first!
+- Won Nobel Prize in 1983 (finally recognized!)
+- Now we know they're in ALL organisms
 
 ### Reason 4: Intron Size Variation
 

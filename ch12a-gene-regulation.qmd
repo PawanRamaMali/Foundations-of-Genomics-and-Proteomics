@@ -72,6 +72,110 @@ Gene expression can be controlled at many different steps!
 - Silencers reduce gene expression
 - Can be thousands of base pairs away!
 
+## Cis vs Trans Regulatory Elements
+
+Understanding the difference between **cis** and **trans** regulation is crucial!
+
+### Cis-Regulatory Elements
+
+**Definition**: DNA sequences located on the **same DNA molecule** as the gene they regulate
+
+**Characteristics**:
+- **Position dependent** (must be near gene)
+- **Orientation dependent** (usually must be in correct direction)
+- Work in cis (on same chromosome)
+- Cannot regulate genes on other chromosomes
+
+**Examples**:
+1. **Promoters**
+   - Immediately upstream of gene
+   - Absolutely required for transcription
+   - Contains TATA box, CAAT box, etc.
+   - RNA polymerase binding site
+
+2. **Operators** (in prokaryotes)
+   - Part of the lac operon system
+   - Repressor proteins bind here
+   - Control access to promoter
+
+**Key point**: Cis elements are like **addresses** - they specify WHERE regulation happens
+
+### Trans-Regulatory Elements
+
+**Definition**: DNA sequences that can regulate genes located **anywhere** in the genome (even on different chromosomes)
+
+**Characteristics**:
+- **Position independent** (can be far away or on different chromosome!)
+- **Orientation independent** (can work in either direction)
+- Work through DNA looping
+- Can regulate multiple genes
+
+**Examples**:
+1. **Enhancers**
+   - Boost gene transcription
+   - Can be thousands of base pairs away
+   - Can be upstream, downstream, or even in introns!
+   - Work by DNA looping to bring them near promoter
+   - Bind **activator** transcription factors
+
+2. **Silencers**
+   - Decrease gene transcription
+   - Also work via DNA looping
+   - Bind **repressor** transcription factors
+   - Can be far from target gene
+
+3. **Super-Enhancers**
+   - Clusters of multiple enhancers
+   - Very strong activation
+   - Control cell identity genes
+   - Important in development and disease
+   - Found near master regulator genes
+
+**How trans elements work**:
+```
+DNA: =====[Enhancer]===========[Gene with Promoter]=====
+
+     DNA loops to bring enhancer close to promoter:
+
+          [Enhancer]
+             ∩
+DNA: ========╯╰==========[Gene]======
+```
+
+**Key point**: Trans elements work through **diffusible factors** (proteins) that can act at a distance
+
+### Long Non-Coding RNAs (lncRNAs)
+
+**What are they?**
+- RNA molecules longer than 200 nucleotides
+- Do NOT code for proteins
+- Act as regulatory molecules
+- Relatively recently discovered!
+
+**How many?**
+- Humans have ~20,000 protein-coding genes
+- But ~50,000+ lncRNAs!
+- Many still being discovered
+
+**Functions**:
+1. **Scaffold**: Bring proteins together
+2. **Guide**: Direct proteins to specific DNA locations
+3. **Decoy**: Bind proteins to prevent them acting elsewhere
+4. **Enhancer**: Activate gene expression
+
+**Famous example - XIST**:
+- Long non-coding RNA
+- Inactivates one X chromosome in females
+- Coats entire chromosome
+- Silences thousands of genes!
+- Essential for dosage compensation
+
+**Why they matter**:
+- Vastly expand regulatory complexity
+- Many diseases involve lncRNA dysregulation
+- Potential therapeutic targets
+- Change our understanding of genome function
+
 ### Level 2: Post-Transcriptional Control (After mRNA Made)
 
 **Control what happens to mRNA after transcription**

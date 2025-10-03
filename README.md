@@ -129,9 +129,10 @@ The book is designed for **beginners** who want to understand the principles, ex
 ---
 
 ## 📚 Suggested Reading
-- T.A. Brown – *Genomes*  
-- Alberts et al. – *Molecular Biology of the Cell*  
-- Nelson & Cox – *Lehninger Principles of Biochemistry*  
+- T.A. Brown – *Genomes*
+- Alberts et al. – *Molecular Biology of the Cell*
+- Nelson & Cox – *Lehninger Principles of Biochemistry*
+- Mark Ptashne – *A Genetic Switch: Phage Lambda Revisited* (essential for gene regulation)  
 
 ---
 

@@ -152,6 +152,67 @@ Think of it like:
 - Having extra footage when making a movie
 - You can edit it different ways to make different versions!
 
+### Complete Eukaryotic Gene Structure
+
+A complete eukaryotic gene has **much more** than just exons and introns!
+
+#### The Full Picture
+
+```
+[Promoter]--[5'UTR]-[Exon1]-[Intron1]-[Exon2]-[Intron2]-[Exon3]--[3'UTR]-[Poly-A signal]
+     ↑                ↑                                      ↑           ↑
+   Start          Start                                  Stop      Transcription
+Transcription   Translation                           Translation      Stop
+```
+
+**Key components**:
+
+**1. Promoter (Upstream)**:
+- Located **before** the gene (upstream)
+- Binding site for RNA polymerase
+- **Position and orientation dependent** (must be in right place and direction!)
+- Contains elements like TATA box, CAAT box
+- Without promoter = no transcription!
+
+**2. 5' UTR (5' Untranslated Region)**:
+- Part of mRNA but NOT translated into protein
+- Between transcription start site and translation start (ATG)
+- Contains regulatory sequences
+- Affects mRNA stability and translation efficiency
+- Called "5 prime UTR" because it's at the 5' end
+
+**3. Exons** (we covered these):
+- Coding sequences
+- First and last exons are always present
+- Internal exons may be alternatively spliced
+- **Important**: First exon and last exon also contain UTR sequences!
+
+**4. Introns** (we covered these):
+- Non-coding sequences
+- Removed during RNA splicing
+- Contain splice sites at boundaries
+
+**5. 3' UTR (3' Untranslated Region)**:
+- Part of mRNA but NOT translated into protein
+- Between stop codon and poly-A tail
+- Contains regulatory sequences
+- microRNA binding sites often here
+- Affects mRNA stability and localization
+- Called "3 prime UTR" because it's at the 3' end
+
+**6. Poly-A Signal**:
+- Short sequence (like AAUAAA in RNA)
+- Signals where to add poly-A tail
+- Usually 10-30 nucleotides before poly-A tail
+- Essential for mRNA stability!
+
+**Common Student Mistake**:
+Many students draw incomplete ORFs (Open Reading Frames) by forgetting that:
+- ORF starts at START codon (ATG) in first exon
+- ORF ends at STOP codon in last exon
+- ORF can be interrupted by introns
+- UTRs are NOT part of the ORF!
+
 ### Open Reading Frames (ORFs)
 
 **What's an ORF**?
