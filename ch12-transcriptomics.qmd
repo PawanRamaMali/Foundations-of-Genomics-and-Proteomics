@@ -7,12 +7,17 @@
 If the **genome** is all your DNA, the **transcriptome** is all the RNA being made in your cells right now!
 
 Think of it like:
+
 - **Genome** = Your complete cookbook (all possible recipes)
+
 - **Transcriptome** = The recipes you're actually using today
 
 The transcriptome changes:
+
 - Between different cell types (brain vs. muscle)
+
 - At different times (morning vs. evening)
+
 - In different conditions (healthy vs. sick)
 
 **Transcriptomics** is the study of all RNA molecules in a cell or organism.
@@ -26,16 +31,25 @@ The transcriptome changes:
 **Think of it like**: A photocopy of a recipe that goes to the kitchen
 
 **Key facts**:
+
 - Temporary (breaks down quickly)
+
 - Only about 1-5% of total RNA
+
 - Codes for proteins
+
 - Each mRNA corresponds to one gene (in eukaryotes)
 
 **Process**:
+
 1. Transcribed from DNA in the nucleus
+
 2. Processed (capping, poly-A tail, splicing)
+
 3. Travels to cytoplasm
+
 4. Read by ribosomes to make protein
+
 5. Eventually degrades
 
 ### 2. tRNA (Transfer RNA)
@@ -45,16 +59,25 @@ The transcriptome changes:
 **Think of it like**: Delivery trucks bringing ingredients to the kitchen
 
 **Key facts**:
+
 - Cloverleaf shape (looks like a three-leaf clover when flat)
+
 - 3D L-shape structure
+
 - About 15% of total RNA
+
 - Each tRNA carries one specific amino acid
+
 - Has an "anticodon" that matches mRNA codons
 
 **How it works**:
+
 1. tRNA picks up its specific amino acid
+
 2. Recognizes the matching codon on mRNA
+
 3. Delivers amino acid to growing protein chain
+
 4. Detaches and goes back for another amino acid
 
 There are different tRNAs for each of the 20 amino acids!
@@ -66,15 +89,23 @@ There are different tRNAs for each of the 20 amino acids!
 **Think of it like**: The factory building itself
 
 **Key facts**:
+
 - About 80% of total RNA! (Most abundant)
+
 - Combines with proteins to form ribosomes
+
 - Does NOT code for proteins
+
 - Actually catalyzes protein synthesis (it's an enzyme!)
+
 - Very ancient and conserved across all life
 
 **Structure**:
+
 - Humans have 4 types of rRNA
+
 - Combine with ~80 ribosomal proteins
+
 - Form large and small ribosomal subunits
 
 ## RNA Processing in Eukaryotes
@@ -88,13 +119,19 @@ In eukaryotes, RNA goes through major changes before it's ready! The initial RNA
 **What happens**: A special "cap" is added to the beginning (5' end) of the RNA
 
 **The cap**:
+
 - A modified guanine nucleotide
+
 - Added immediately after transcription starts
+
 - Like putting a protective cap on a pen
 
 **Why it matters**:
+
 - Protects mRNA from degradation
+
 - Helps ribosome recognize and bind to mRNA
+
 - Helps transport mRNA out of nucleus
 
 ### 2. 3' Poly-A Tail
@@ -102,14 +139,21 @@ In eukaryotes, RNA goes through major changes before it's ready! The initial RNA
 **What happens**: A long tail of adenine (A) nucleotides is added to the end (3' end)
 
 **The tail**:
+
 - About 200-250 adenines in a row (AAAAAAAA...)
+
 - Added after transcription finishes
+
 - Like a protective tail
 
 **Why it matters**:
+
 - Protects mRNA from degradation
+
 - Helps export mRNA from nucleus
+
 - Helps ribosomes find and bind mRNA
+
 - Longer tail = longer mRNA lifespan
 
 ### 3. Splicing: Removing Introns
@@ -117,15 +161,23 @@ In eukaryotes, RNA goes through major changes before it's ready! The initial RNA
 **What happens**: Introns (non-coding regions) are cut out, exons (coding regions) are joined together
 
 **The process**:
+
 1. Pre-mRNA contains both introns and exons
+
 2. **Spliceosome** (molecular machine) recognizes intron-exon boundaries
+
 3. Cuts out introns
+
 4. Joins exons together
+
 5. Introns are degraded
 
 Think of it like:
+
 - Filming a movie (transcription)
+
 - Editing out unwanted scenes (splicing)
+
 - Final cut ready for theaters (mature mRNA)!
 
 ## Alternative Splicing: One Gene, Many Proteins!
@@ -137,39 +189,59 @@ Here's where things get really interesting! **One gene can make multiple differe
 ### How Alternative Splicing Works
 
 Instead of always joining exons in the same order, cells can:
+
 - **Skip exons**: Leave some exons out
+
 - **Include or exclude exons**: Sometimes include, sometimes exclude
+
 - **Use alternative splice sites**: Cut at different positions
+
 - **Retain introns**: Sometimes keep an intron in
 
 Think of it like:
+
 - You have LEGO bricks numbered 1, 2, 3, 4, 5
+
 - You could build: 1-2-3-4-5 OR 1-3-4-5 OR 1-2-4-5 OR 1-2-3-5
+
 - Same bricks, different combinations, different structures!
 
 ### Why Alternative Splicing Is Powerful
 
 **Creates protein diversity**:
+
 - Humans have ~20,000 genes
+
 - But make ~100,000+ different proteins!
+
 - Alternative splicing explains this!
 
 **Examples**:
+
 - **DSCAM gene** (in fruit flies): Can make 38,000 different proteins from ONE gene!
+
 - **Human titin gene**: Makes different versions in different muscle types
+
 - **Antibody genes**: Create diverse antibodies through splicing
 
 **Allows fine-tuned regulation**:
+
 - Different tissues can make different protein versions
+
 - Respond to different conditions
+
 - Create proteins with slightly different functions
 
 ### Regulation of Alternative Splicing
 
 Special proteins called **splicing factors** control which exons are included:
+
 - Some promote exon inclusion
+
 - Some promote exon skipping
+
 - Different cells have different splicing factors
+
 - Responds to signals (hormones, stress, development)
 
 ## Non-Coding RNAs
@@ -185,13 +257,19 @@ We used to think all important RNA coded for proteins. We were wrong!
 **What they are**: Tiny RNAs (about 22 nucleotides long)
 
 **What they do**: Regulate gene expression by:
+
 - Binding to mRNA
+
 - Blocking translation OR
+
 - Causing mRNA degradation
 
 **Impact**:
+
 - One miRNA can regulate hundreds of different genes!
+
 - Important for development, cell division, disease
+
 - Dysregulation linked to cancer
 
 Think of them like: Volume controls that turn down gene expression
@@ -201,21 +279,31 @@ Think of them like: Volume controls that turn down gene expression
 **What they are**: Long RNA molecules (>200 nucleotides) that don't code for protein
 
 **What they do**: Many different functions:
+
 - Regulate gene expression
+
 - Organize chromatin
+
 - Guide proteins to specific DNA locations
+
 - Some functions still unknown!
 
 **Impact**:
+
 - More common than expected (thousands in humans!)
+
 - Important for development and disease
+
 - Active area of research
 
 ### Other Functional RNAs
 
 - **snRNAs**: Small nuclear RNAs (part of the spliceosome!)
+
 - **snoRNAs**: Small nucleolar RNAs (modify other RNAs)
+
 - **Ribozymes**: RNA molecules that act as enzymes
+
 - **siRNAs**: Small interfering RNAs (used in research and medicine)
 
 ## Studying the Transcriptome
@@ -223,13 +311,19 @@ Think of them like: Volume controls that turn down gene expression
 ### Why Study the Transcriptome?
 
 **Understanding gene expression**:
+
 - Which genes are turned on in different cells?
+
 - How does gene expression change in disease?
+
 - How do cells respond to signals?
 
 **Better than studying genome alone**:
+
 - Genome is the same in all cells
+
 - But transcriptome differs between cells!
+
 - Tells you what's actually happening
 
 ### RNA Sequencing (RNA-seq)
@@ -237,54 +331,89 @@ Think of them like: Volume controls that turn down gene expression
 **Modern method** to study the transcriptome:
 
 **How it works**:
+
 1. Extract all RNA from cells
+
 2. Convert RNA to DNA (more stable)
+
 3. Sequence the DNA
+
 4. Count how many copies of each RNA
+
 5. Determine which genes are active
 
 **What we learn**:
+
 - Which genes are expressed
+
 - How much each gene is expressed
+
 - Which splice variants are made
+
 - Discovery of new RNAs
 
 ### Applications
 
 **Medicine**:
+
 - Diagnose diseases by RNA patterns
+
 - Predict treatment response
+
 - Find new drug targets
+
 - Understand cancer
 
 **Development**:
+
 - How embryos develop
+
 - Cell differentiation
+
 - Tissue formation
 
 **Evolution**:
+
 - Compare gene expression across species
+
 - Understand how expression patterns evolved
 
 ## Key Takeaways
 
 - **Transcriptome** = All RNA molecules in a cell
+
 - **Transcriptomics** = Study of the transcriptome
+
 - **Three main RNA types**:
+
   - **mRNA** (1-5%): Codes for proteins
+
   - **tRNA** (15%): Delivers amino acids
+
   - **rRNA** (80%): Forms ribosomes
+
 - **RNA processing** in eukaryotes:
+
   - **5' capping**: Protective cap
+
   - **3' poly-A tail**: Protective tail
+
   - **Splicing**: Removing introns, joining exons
+
 - **Alternative splicing** = One gene → multiple proteins
+
   - Explains how 20,000 genes make 100,000+ proteins
+
   - Regulated by splicing factors
+
 - **Non-coding RNAs** have important functions:
+
   - **miRNAs**: Regulate gene expression
+
   - **lncRNAs**: Various regulatory functions
+
 - **RNA-seq** = Modern method to study transcriptome
+
 - Transcriptome varies between cell types, conditions, and times
 
 ---

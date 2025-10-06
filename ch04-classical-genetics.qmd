@@ -13,9 +13,13 @@ Mendel noticed something interesting: Sometimes baby plants looked like their pa
 Mendel chose to study **pea plants** because they were perfect for his experiments:
 
 **Pea plants are great because:**
+
 - 🌿 They grow quickly (fast results!)
+
 - 🎨 They have easy-to-see differences (tall vs. short, green vs. yellow, smooth vs. wrinkled)
+
 - 👶 They can make babies easily
+
 - 🎨 He could control which plants made babies with which other plants
 
 Think of it like choosing the perfect pet for a science project—you'd want one that's easy to take care of and shows clear results!
@@ -25,11 +29,17 @@ Think of it like choosing the perfect pet for a science project—you'd want one
 Mendel focused on **seven traits** that were easy to see:
 
 1. **Seed shape** - Round or wrinkled
+
 2. **Seed color** - Yellow or green
+
 3. **Flower color** - Purple or white
+
 4. **Pod shape** - Smooth or bumpy
+
 5. **Pod color** - Green or yellow
+
 6. **Flower position** - On the side or on top
+
 7. **Plant height** - Tall or short
 
 Each trait had only **two options**, making them easy to track!
@@ -39,8 +49,11 @@ Each trait had only **two options**, making them easy to track!
 ### The Setup
 
 Mendel started with **pure plants**—plants that always produced offspring that looked exactly like them:
+
 - Tall plants that always made tall babies
+
 - Short plants that always made short babies
+
 - Purple-flowered plants that always made purple-flowered babies
 
 ### The First Experiment: Crossing Different Plants
@@ -66,7 +79,9 @@ Mendel didn't stop there. He let those tall baby plants make babies with each ot
 **Guess what happened?**
 
 The short plants came back! But only some of them:
+
 - About 3 out of every 4 plants were tall
+
 - About 1 out of every 4 plants were short
 
 The ratio was about **3:1** (three tall for every one short).
@@ -78,7 +93,9 @@ The "short" trait hadn't disappeared—it was just hiding!
 ### Discovery 1: Genes Come in Pairs
 
 Mendel figured out that traits are controlled by what we now call **genes**, and every plant has **TWO copies** of each gene:
+
 - One copy from the mother plant
+
 - One copy from the father plant
 
 Think of it like having two shoes—you need a pair!
@@ -88,22 +105,31 @@ Think of it like having two shoes—you need a pair!
 Some versions of genes are **stronger** than others:
 
 **Dominant traits** (shown with a capital letter, like **T** for tall):
+
 - If you have even ONE copy, the dominant trait shows
+
 - They're like a loud voice that drowns out a quiet one
 
 **Recessive traits** (shown with a lowercase letter, like **t** for short):
+
 - You need TWO copies for the recessive trait to show
+
 - They're like a quiet voice that can only be heard when there's no loud voice
 
 ### Discovery 3: The Law of Segregation
 
 When plants make seeds, the two gene copies **separate** (segregate means to separate):
+
 - Each seed gets only ONE copy from each parent
+
 - It's random which copy it gets
 
 Think of it like:
+
 - Mom has two cards (one red, one blue)
+
 - Dad has two cards (one red, one blue)
+
 - Each baby gets one random card from mom and one random card from dad
 
 ## Understanding with Punnett Squares
@@ -115,7 +141,9 @@ Scientists use a tool called a **Punnett Square** to predict what babies might l
 ### Example: Tall vs. Short Pea Plants
 
 Let's say:
+
 - **T** = tall (dominant)
+
 - **t** = short (recessive)
 
 **Parent 1**: Has **Tt** (tall, but carrying the short gene)
@@ -132,9 +160,14 @@ t  | Tt | tt |
    +----+----+
 ```
 
+```
+
 **Results:**
+
 - **TT** = Tall (1 out of 4) = 25%
+
 - **Tt** = Tall (2 out of 4) = 50%
+
 - **tt** = Short (1 out of 4) = 25%
 
 So **3 out of 4 are tall**, and **1 out of 4 is short**—just like Mendel observed!
@@ -144,13 +177,19 @@ So **3 out of 4 are tall**, and **1 out of 4 is short**—just like Mendel obser
 ### Mendelian Inheritance (The Simple Rules)
 
 Mendel's rules work perfectly when:
+
 - One gene controls one trait
+
 - There are only two versions (dominant and recessive)
+
 - Genes don't influence each other
 
 Examples:
+
 - Widow's peak hairline
+
 - Attached or detached earlobes
+
 - Whether you can roll your tongue
 
 ### Non-Mendelian Inheritance (The Complicated Cases)
@@ -171,8 +210,11 @@ BOTH genes show up at the same time!
 Many genes work together to control one trait.
 
 **Examples**:
+
 - Height (controlled by many genes)
+
 - Skin color (controlled by many genes)
+
 - Eye color (more complex than Mendel's simple traits)
 
 #### 4. Genes on Sex Chromosomes
@@ -190,9 +232,13 @@ Sometimes the environment affects how genes are expressed.
 ### He Did It Without Modern Tools!
 
 Remember, Mendel did all this:
+
 - In the 1860s
+
 - Without knowing about DNA
+
 - Without microscopes good enough to see chromosomes
+
 - Just by carefully counting thousands of pea plants!
 
 It's like figuring out how a computer works just by watching what appears on the screen!
@@ -200,10 +246,15 @@ It's like figuring out how a computer works just by watching what appears on the
 ### He Discovered the Rules of Inheritance
 
 Mendel's work showed:
+
 - ✅ Traits are passed from parents to children
+
 - ✅ Traits are controlled by "factors" (we now call them genes)
+
 - ✅ These factors come in pairs
+
 - ✅ Some factors are dominant over others
+
 - ✅ The factors separate when making seeds
 
 ### Nobody Believed Him!
@@ -215,47 +266,251 @@ Sadly, during Mendel's lifetime (he died in 1884), most scientists didn't unders
 ### Modern Genetics Built on Mendel's Foundation
 
 Everything we know about genetics started with Mendel's pea plants:
+
 - Understanding genetic diseases
+
 - Breeding better crops and animals
+
 - DNA testing
+
 - Personalized medicine
+
 - Genetic engineering
 
 ### Real-World Applications
 
 **In Agriculture**:
+
 - Farmers use Mendel's principles to breed crops with desired traits
+
 - Creating disease-resistant plants
+
 - Developing more nutritious food
 
 **In Medicine**:
+
 - Predicting genetic diseases
+
 - Understanding how diseases are inherited
+
 - Developing treatments targeted to specific genes
 
 **In Everyday Life**:
+
 - Ancestry DNA tests
+
 - Understanding why you look like your parents
+
 - Predicting traits in children
 
 ## Fun Facts About Mendel! 🎉
 
 - Mendel studied about **28,000 pea plants** over 8 years!
+
 - He was also a beekeeper and studied meteorology (weather)
+
 - He failed his teaching exam twice but kept trying
+
 - His work was published in 1866 but ignored for 34 years
+
 - The monastery where he worked is now a museum in his honor
+
 - We celebrate "Mendel Day" on March 8th (though it's not an official holiday... yet!)
 
 ## Key Takeaways
 
 - **Gregor Mendel** discovered the basic rules of inheritance by studying pea plants in the 1860s
+
 - **Traits are controlled by genes** that come in pairs (one from each parent)
+
 - **Dominant traits** need only one copy to show; **recessive traits** need two copies
+
 - **Punnett squares** help predict what offspring will look like
+
 - **Mendelian inheritance** follows simple rules (one gene, two versions)
+
 - **Non-Mendelian inheritance** is more complex (incomplete dominance, codominance, multiple genes)
+
 - Mendel's discoveries form the foundation of modern genetics
+
+- His work helps us breed better crops, understand diseases, and predict traits
+
+---
+
+**Sources**: Information adapted from Khan Academy (Mendel and His Peas), Nature Scitable (Gregor Mendel and the Principles of Inheritance), Britannica Kids (Gregor Mendel), and university genetics course materials.
+
+
+**Results:**
+
+- **TT** = Tall (1 out of 4) = 25%
+
+- **Tt** = Tall (2 out of 4) = 50%
+
+- **tt** = Short (1 out of 4) = 25%
+
+So **3 out of 4 are tall**, and **1 out of 4 is short**—just like Mendel observed!
+
+## Mendelian vs. Non-Mendelian Inheritance
+
+### Mendelian Inheritance (The Simple Rules)
+
+Mendel's rules work perfectly when:
+
+- One gene controls one trait
+
+- There are only two versions (dominant and recessive)
+
+- Genes don't influence each other
+
+Examples:
+
+- Widow's peak hairline
+
+- Attached or detached earlobes
+
+- Whether you can roll your tongue
+
+### Non-Mendelian Inheritance (The Complicated Cases)
+
+But sometimes genetics is more complicated! Non-Mendelian inheritance happens when:
+
+#### 1. Incomplete Dominance
+Neither gene is fully dominant. It's like mixing paint!
+
+**Example**: Red flowers + White flowers = Pink flowers
+
+#### 2. Codominance
+BOTH genes show up at the same time!
+
+**Example**: Blood type AB—both A and B show up together
+
+#### 3. Multiple Genes
+Many genes work together to control one trait.
+
+**Examples**:
+
+- Height (controlled by many genes)
+
+- Skin color (controlled by many genes)
+
+- Eye color (more complex than Mendel's simple traits)
+
+#### 4. Genes on Sex Chromosomes
+Some genes are on the X or Y chromosomes.
+
+**Example**: Color blindness (much more common in boys than girls)
+
+#### 5. Environmental Factors
+Sometimes the environment affects how genes are expressed.
+
+**Example**: Himalayan rabbits are born white, but their fur turns black in cold areas (like ears and feet)!
+
+## Why Mendel's Work Was Amazing
+
+### He Did It Without Modern Tools!
+
+Remember, Mendel did all this:
+
+- In the 1860s
+
+- Without knowing about DNA
+
+- Without microscopes good enough to see chromosomes
+
+- Just by carefully counting thousands of pea plants!
+
+It's like figuring out how a computer works just by watching what appears on the screen!
+
+### He Discovered the Rules of Inheritance
+
+Mendel's work showed:
+
+- ✅ Traits are passed from parents to children
+
+- ✅ Traits are controlled by "factors" (we now call them genes)
+
+- ✅ These factors come in pairs
+
+- ✅ Some factors are dominant over others
+
+- ✅ The factors separate when making seeds
+
+### Nobody Believed Him!
+
+Sadly, during Mendel's lifetime (he died in 1884), most scientists didn't understand or appreciate his work. It was "rediscovered" in 1900, and then everyone realized how brilliant he was!
+
+## Mendel's Legacy Today
+
+### Modern Genetics Built on Mendel's Foundation
+
+Everything we know about genetics started with Mendel's pea plants:
+
+- Understanding genetic diseases
+
+- Breeding better crops and animals
+
+- DNA testing
+
+- Personalized medicine
+
+- Genetic engineering
+
+### Real-World Applications
+
+**In Agriculture**:
+
+- Farmers use Mendel's principles to breed crops with desired traits
+
+- Creating disease-resistant plants
+
+- Developing more nutritious food
+
+**In Medicine**:
+
+- Predicting genetic diseases
+
+- Understanding how diseases are inherited
+
+- Developing treatments targeted to specific genes
+
+**In Everyday Life**:
+
+- Ancestry DNA tests
+
+- Understanding why you look like your parents
+
+- Predicting traits in children
+
+## Fun Facts About Mendel! 🎉
+
+- Mendel studied about **28,000 pea plants** over 8 years!
+
+- He was also a beekeeper and studied meteorology (weather)
+
+- He failed his teaching exam twice but kept trying
+
+- His work was published in 1866 but ignored for 34 years
+
+- The monastery where he worked is now a museum in his honor
+
+- We celebrate "Mendel Day" on March 8th (though it's not an official holiday... yet!)
+
+## Key Takeaways
+
+- **Gregor Mendel** discovered the basic rules of inheritance by studying pea plants in the 1860s
+
+- **Traits are controlled by genes** that come in pairs (one from each parent)
+
+- **Dominant traits** need only one copy to show; **recessive traits** need two copies
+
+- **Punnett squares** help predict what offspring will look like
+
+- **Mendelian inheritance** follows simple rules (one gene, two versions)
+
+- **Non-Mendelian inheritance** is more complex (incomplete dominance, codominance, multiple genes)
+
+- Mendel's discoveries form the foundation of modern genetics
+
 - His work helps us breed better crops, understand diseases, and predict traits
 
 ---

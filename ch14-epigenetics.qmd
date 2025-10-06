@@ -7,13 +7,19 @@
 **Epigenetics** studies changes in gene activity that DON'T change the DNA sequence itself.
 
 **The word "epigenetic" means**:
+
 - **Epi** = above or on top of
+
 - **Genetic** = relating to genes
+
 - So: "Above genetics" or "On top of genes"
 
 Think of it like:
+
 - DNA = the words in a book
+
 - Epigenetics = highlighting, bookmarks, and notes that change how you read the book
+
 - Same words, but different reading experience!
 
 ### Why Epigenetics Matters
@@ -21,13 +27,19 @@ Think of it like:
 **The Big Question**: If all your cells have the same DNA, why are they different?
 
 - Brain cells and muscle cells have identical DNA
+
 - But they look and act completely different!
+
 - **Answer**: Epigenetics!
 
 Epigenetic marks determine:
+
 - Which genes are turned ON in each cell type
+
 - Which genes are turned OFF
+
 - How cells remember their identity
+
 - How cells respond to the environment
 
 ## DNA Methylation
@@ -37,30 +49,45 @@ Epigenetic marks determine:
 **DNA methylation** = Adding a methyl group (CH₃) to DNA
 
 **Where it happens**:
+
 - Usually on cytosine (C) bases
+
 - Specifically in "CpG" sequences (C next to G)
+
 - "p" stands for the phosphate between them
 
 **What it looks like**:
+
 - Normal: Cytosine (C)
+
 - Methylated: 5-methylcytosine (5mC)
+
 - Same base, just with a tiny chemical decoration
 
 Think of it like:
+
 - Putting a sticker on a letter
+
 - The letter is still there and readable
+
 - But the sticker changes how it's treated
 
 ### Effects of DNA Methylation
 
 **Generally, methylation = Gene is OFF**:
+
 - Methyl groups block proteins from reading genes
+
 - Recruit proteins that compact chromatin
+
 - Like putting a "Do Not Disturb" sign on a door
 
 **Where methylation happens**:
+
 - **Gene promoters**: Methylation → gene silenced
+
 - **Gene bodies**: Methylation → can actually increase expression!
+
 - **Repetitive DNA**: Methylation → keeps it quiet (good thing!)
 
 ### CpG Islands
@@ -68,27 +95,41 @@ Think of it like:
 **CpG islands** = Regions with lots of CpG sequences
 
 **Key facts**:
+
 - Found near gene promoters
+
 - Usually UN-methylated (genes are ready to be expressed)
+
 - If they GET methylated → gene is turned off
+
 - Important for gene regulation
 
 **Examples**:
+
 - **Cancer**: Tumor suppressor genes get abnormally methylated → cancer
+
 - **Development**: Methylation patterns change as embryo develops
+
 - **X-inactivation**: Methylation silences one X chromosome in females
 
 ### DNA Methylation in Development
 
 **During development**:
+
 1. **Fertilization**: Most methylation erased (reset!)
+
 2. **Early embryo**: New methylation patterns established
+
 3. **Different cell types**: Different methylation patterns
+
 4. **Maintained**: Patterns copied when cells divide
 
 Think of it like:
+
 - Resetting a computer (fertilization)
+
 - Installing new software (development)
+
 - Keeping settings when you save (cell division)
 
 ## Histone Modifications
@@ -100,43 +141,63 @@ Remember histones? DNA wraps around them like thread on spools.
 **Histone modifications** = Adding or removing chemical groups to histone proteins
 
 **Where modifications occur**:
+
 - Histone "tails" sticking out from nucleosomes
+
 - Like ribbons on wrapped presents
 
 ### Types of Histone Modifications
 
 **1. Acetylation** (adding acetyl groups):
+
 - **Effect**: Loosens chromatin, gene activation
+
 - **Where**: Lysine amino acids
+
 - **Think of it as**: Opening the curtains to let in light
 
 **2. Methylation** (adding methyl groups):
+
 - **Effect**: Can activate OR repress genes (depends on location!)
+
 - **Where**: Lysine or arginine amino acids
+
 - **Complex**: Different methylation patterns mean different things
 
 **3. Phosphorylation** (adding phosphate groups):
+
 - **Effect**: Various effects depending on location
+
 - **Important for**: Cell division, DNA repair
 
 **4. Ubiquitination** (adding ubiquitin protein):
+
 - **Effect**: Can activate or repress genes
+
 - **Also can**: Mark histones for degradation
 
 ### The Histone Code
 
 **The "histone code" hypothesis**:
+
 - Different combinations of modifications send different signals
+
 - Like a complex language written on histones
+
 - Specific proteins "read" these marks and respond accordingly
 
 **Examples**:
+
 - **H3K4me3** (Histone 3, Lysine 4, tri-methylation) → Gene activation
+
 - **H3K27me3** (Histone 3, Lysine 27, tri-methylation) → Gene repression
+
 - **H3K9ac** (Histone 3, Lysine 9, acetylation) → Gene activation
 
 Think of it like:
+
 - Different emoji combinations convey different meanings
+
 - Cells "read" histone modifications to know what to do
 
 ## Chromatin Remodeling
@@ -146,19 +207,29 @@ Think of it like:
 **Chromatin remodeling** = Moving, removing, or changing nucleosomes
 
 **Chromatin remodeling complexes** are molecular machines that:
+
 - Slide nucleosomes along DNA
+
 - Eject nucleosomes completely
+
 - Replace histones with variants
+
 - Loosen or tighten chromatin
 
 **Effects**:
+
 - Make DNA accessible (gene ON)
+
 - Make DNA inaccessible (gene OFF)
+
 - Respond to cellular signals
 
 Think of chromatin remodeling like:
+
 - Rearranging furniture to access different parts of a room
+
 - Opening or closing window blinds
+
 - Making space for activities
 
 ## Non-Coding RNAs in Epigenetics
@@ -170,26 +241,39 @@ Non-coding RNAs play important roles in epigenetic regulation!
 ### MicroRNAs (miRNAs)
 
 **What they do**:
+
 - Bind to mRNA
+
 - Block protein production
+
 - Cause mRNA degradation
 
 **How it's epigenetic**:
+
 - Changes gene expression without changing DNA
+
 - Can be inherited (passed to daughter cells)
+
 - Responds to environment
 
 ### Long Non-Coding RNAs (lncRNAs)
 
 **What they do**:
+
 - Guide epigenetic modifying proteins to specific genes
+
 - Organize chromatin structure
+
 - Regulate transcription
 
 **Famous example - XIST**:
+
 - Long non-coding RNA
+
 - Coats one X chromosome in females
+
 - Recruits silencing machinery
+
 - Shuts down entire chromosome!
 
 This is **X-inactivation** - how females silence one X chromosome!
@@ -205,20 +289,31 @@ Like proteomics studies all proteins, epigenomics studies all epigenetic modific
 ### Techniques in Epigenomics
 
 **1. Bisulfite Sequencing**:
+
 - Detects DNA methylation
+
 - Treats DNA with bisulfite (changes unmethylated C to U)
+
 - Methylated C stays as C
+
 - Sequence and compare!
 
 **2. ChIP-seq** (Chromatin Immunoprecipitation + Sequencing):
+
 - Detects histone modifications
+
 - Uses antibodies to pull down modified histones
+
 - Sequence the attached DNA
+
 - Map where modifications are genome-wide
 
 **3. ATAC-seq** (Assay for Transposase-Accessible Chromatin):
+
 - Finds open (accessible) chromatin regions
+
 - Open chromatin = active genes
+
 - Closed chromatin = silenced genes
 
 ## Differences in Prokaryotic vs. Eukaryotic Epigenomes
@@ -226,27 +321,41 @@ Like proteomics studies all proteins, epigenomics studies all epigenetic modific
 ### Prokaryotes: Limited Epigenetics
 
 **Prokaryotes have**:
+
 - DNA methylation (but different purposes)
+
 - No histones (so no histone modifications)
+
 - Simpler regulation
 
 **Prokaryotic methylation**:
+
 - Protects DNA from restriction enzymes
+
 - Helps DNA replication timing
+
 - Some gene regulation
 
 ### Eukaryotes: Complex Epigenetics
 
 **Eukaryotes have**:
+
 - Extensive DNA methylation
+
 - Many histone modifications
+
 - Chromatin remodeling
+
 - Non-coding RNAs
+
 - Complex epigenetic inheritance
 
 **Why the difference?**
+
 - Eukaryotes need more sophisticated regulation
+
 - Multicellular organisms need cell type identity
+
 - Complex development requires epigenetic memory
 
 ## Epigenetics and Environment
@@ -256,30 +365,47 @@ Like proteomics studies all proteins, epigenomics studies all epigenetic modific
 Epigenetics is the bridge between genes and environment!
 
 **Environmental factors that affect epigenetics**:
+
 - **Diet**: Nutrients affect methylation patterns
+
 - **Stress**: Changes chromatin structure
+
 - **Toxins**: Can alter epigenetic marks
+
 - **Exercise**: Modifies histones in muscle
+
 - **Social interaction**: Affects brain epigenetics
 
 **Famous examples**:
 
 **1. Dutch Hunger Winter (1944-1945)**:
+
 - Pregnant women experienced famine
+
 - Their children had epigenetic changes
+
 - These changes persisted into adulthood
+
 - Even affected grandchildren!
 
 **2. Agouti Mouse Experiment**:
+
 - Mother mice fed different diets
+
 - Offspring had different coat colors
+
 - Same genes, different epigenetic marks!
+
 - Diet changed epigenetics, which changed appearance
 
 **3. Bee Development**:
+
 - Queen bees and worker bees have identical DNA
+
 - Different diets (royal jelly vs. regular food)
+
 - Different epigenetic patterns
+
 - Completely different bodies and behaviors!
 
 ## Epigenetic Inheritance
@@ -291,19 +417,29 @@ Can epigenetic marks be inherited? **Sometimes, YES!**
 ### Types of Epigenetic Inheritance
 
 **1. Mitotic inheritance** (cell division):
+
 - Epigenetic marks copied when cells divide
+
 - How liver cells stay liver cells
+
 - Normal and common!
 
 **2. Transgenerational inheritance** (across generations):
+
 - Some epigenetic marks passed from parent to offspring
+
 - More controversial
+
 - Happens in plants and worms
+
 - Rare in mammals
 
 **Reset mechanisms**:
+
 - Most epigenetic marks are erased during reproduction
+
 - Prevents inheriting temporary changes
+
 - Some marks escape erasure!
 
 ## Epigenetics and Disease
@@ -311,24 +447,37 @@ Can epigenetic marks be inherited? **Sometimes, YES!**
 ### When Epigenetics Goes Wrong
 
 **Cancer**:
+
 - Abnormal DNA methylation
+
 - Tumor suppressor genes get silenced
+
 - Oncogenes get activated
+
 - Epigenetic drugs can help!
 
 **Developmental Disorders**:
+
 - Imprinting disorders (Prader-Willi, Angelman syndromes)
+
 - Rett syndrome (affects histone modifications)
+
 - Fragile X syndrome (abnormal methylation)
 
 **Aging**:
+
 - Epigenetic marks change with age
+
 - "Epigenetic clock" can predict biological age
+
 - Some age-related changes are reversible!
 
 **Neurological Disorders**:
+
 - Alzheimer's disease
+
 - Depression (responds to environment via epigenetics)
+
 - Addiction (epigenetic changes in brain)
 
 ## Epigenetic Therapies
@@ -338,31 +487,51 @@ Can epigenetic marks be inherited? **Sometimes, YES!**
 Unlike DNA mutations, epigenetic changes are **potentially reversible**!
 
 **Epigenetic drugs**:
+
 - **DNMT inhibitors**: Block DNA methylation
+
 - **HDAC inhibitors**: Affect histone acetylation
+
 - Already used to treat some cancers!
 
 **Future therapies**:
+
 - Editing epigenetic marks precisely
+
 - Reversing age-related changes
+
 - Treating complex diseases
 
 ## Key Takeaways
 
 - **Epigenetics** = Changes in gene activity without changing DNA sequence
+
 - **Main mechanisms**:
+
   - **DNA methylation**: Adding CH₃ to cytosines (usually silences genes)
+
   - **Histone modifications**: Chemical tags on histones (activate or repress genes)
+
   - **Chromatin remodeling**: Moving nucleosomes (changes accessibility)
+
   - **Non-coding RNAs**: Guide epigenetic changes
+
 - **CpG islands**: Regions with many CpG sites, usually unmethylated
+
 - **Histone code**: Different modification combinations mean different things
+
 - **Epigenomics**: Genome-wide study of epigenetic marks
+
 - **Prokaryotes**: Limited epigenetics (mainly DNA methylation)
+
 - **Eukaryotes**: Complex, multilayered epigenetic regulation
+
 - **Environment affects epigenetics**: Diet, stress, toxins, lifestyle
+
 - **Epigenetic inheritance**: Marks can be passed through cell divisions and sometimes across generations
+
 - **Disease connection**: Cancer, developmental disorders, aging, neurological diseases
+
 - **Therapies**: Epigenetic drugs can reverse some changes
 
 ---

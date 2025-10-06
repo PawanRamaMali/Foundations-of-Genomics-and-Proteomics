@@ -7,28 +7,43 @@
 **Bioinformatics** = Using computers and math to understand biological data
 
 Think of it like:
+
 - Using a calculator instead of counting by hand
+
 - Using GPS instead of paper maps
+
 - Using Google instead of encyclopedia
 
 But for:
+
 - DNA sequences
+
 - Protein structures
+
 - Gene expression data
+
 - Evolutionary relationships
 
 ### Why We Need Bioinformatics
 
 **The big data problem**:
+
 - Human genome: 3 billion letters
+
 - Would take 95 years to read out loud!
+
 - Can't analyze by hand
+
 - Need computers!
 
 **Modern biology generates MASSIVE data**:
+
 - One sequencing run: Billions of DNA letters
+
 - Gene expression study: Thousands of genes
+
 - Proteomics experiment: Thousands of proteins
+
 - Too much for humans alone
 
 **Solution**: Bioinformatics!
@@ -38,20 +53,29 @@ But for:
 ### How Much Data?
 
 **Human Genome Project (1990-2003)**:
+
 - 13 years to sequence one genome
+
 - 3 billion base pairs
+
 - Cost: $3 billion
 
 **Today (2025)**:
+
 - Sequence genome in 1-2 days
+
 - Cost: <$1,000
+
 - Thousands sequenced per day!
 
 **Result**: Exponentially growing data!
 
 **Genomic data is now BIGGER than**:
+
 - YouTube
+
 - Twitter
+
 - Astronomy
 
 We're drowning in biological data - bioinformatics is the life raft!
@@ -65,50 +89,80 @@ We're drowning in biological data - bioinformatics is the life raft!
 **Common tasks**:
 
 **Finding Genes**:
+
 - Where are genes in a genome?
+
 - Start and stop codons
+
 - Splicing signals
+
 - ORF (Open Reading Frame) prediction
 
 **Sequence Alignment**:
+
 - Comparing two or more sequences
+
 - Finding similarities and differences
+
 - Identifying conserved regions
 
 **Example**:
+
 ```
 Sequence 1: ATCGATCGATCG
 Sequence 2: ATCG--CGATCG
             **** ***** (matches)
 ```
 
+```
+
+```
+```
+
 **Motif Finding**:
+
 - Searching for patterns
+
 - Transcription factor binding sites
+
 - Protein domains
+
 - Regulatory elements
 
 ### 2. Genome Assembly
 
 **The puzzle problem**:
+
 - Sequencing breaks DNA into millions of pieces
+
 - Like a jigsaw puzzle with billions of pieces!
+
 - Computer assembles them back together
 
 **How it works**:
+
 1. Sequence millions of short DNA fragments
+
 2. Find overlapping regions
+
 3. Merge overlaps to build longer sequences
+
 4. Repeat until whole genome assembled
 
 **Challenges**:
+
 - Repetitive sequences (same piece fits many places!)
+
 - Sequencing errors
+
 - Huge computational requirements
 
 **Modern solutions**:
+
 - Better algorithms
+
 - Long-read sequencing helps
+
 - Multiple technologies combined
 
 ### 3. Gene Annotation
@@ -116,26 +170,39 @@ Sequence 2: ATCG--CGATCG
 **What it is**: Assigning biological meaning to raw genome sequences
 
 Think of it this way:
+
 - **Sequencing** gives you the letters (A, T, G, C)
+
 - **Annotation** gives you the words and their meanings
+
 - Like having a book in a foreign language vs. a translated, annotated edition!
 
 #### Why Annotation Matters
 
 **The problem**:
+
 - Raw genome sequence = billions of letters
+
 - Which parts are genes?
+
 - What do those genes do?
+
 - Where are regulatory elements?
+
 - Without annotation, genome is just meaningless data!
 
 **The solution**: Genome annotation!
 
 **Real-world importance**:
+
 - Disease gene identification
+
 - Drug target discovery
+
 - Understanding evolution
+
 - Personalized medicine
+
 - Agricultural improvements
 
 #### Dynamic Nature of Annotation
@@ -143,24 +210,37 @@ Think of it this way:
 **Annotations are constantly updated!**
 
 **Human genome builds** (versions):
+
 - **HG18** (2006) - NCBI Build 36
+
 - **HG19** (2009) - GRCh37 - Used for ~10 years
+
 - **HG38** (2013-present) - GRCh38 - Current standard
+
 - Future builds coming as we learn more!
 
 **What changes between builds?**
+
 - Better sequence assembly
+
 - New genes discovered
+
 - Gene boundaries refined
+
 - Regulatory elements added
+
 - Errors corrected
 
 **Amazing fact**: ~25% of human gene annotations have been modified in the last 2 years!
 
 **Why so many updates?**
+
 - New experimental data (RNA-seq, ChIP-seq, etc.)
+
 - Better computational methods
+
 - Improved understanding of biology
+
 - Discovery of new regulatory mechanisms
 
 **Practical implication**: Always note which genome build you're using in research!
@@ -176,46 +256,79 @@ There are **two main types** of annotation:
 **What it identifies**:
 
 **1. Protein-Coding Genes**:
+
 - Gene boundaries (start and end)
+
 - Exon locations
+
 - Intron locations
+
 - 5' UTR and 3' UTR
+
 - Splice sites
+
 - Start codon (ATG) and stop codons
 
 **2. RNA Genes**:
+
 - tRNA genes
+
 - rRNA genes
+
 - miRNA genes
+
 - lncRNA genes
+
 - snRNA, snoRNA genes
 
 **3. Regulatory Regions**:
+
 - Promoters (transcription start sites)
+
 - Enhancers
+
 - Silencers
+
 - Transcription factor binding sites
+
 - CpG islands
 
 **4. Repetitive Elements**:
+
 - **SINEs** (Short Interspersed Nuclear Elements)
+
   - Alu elements in humans
+
   - ~10% of human genome!
+
 - **LINEs** (Long Interspersed Nuclear Elements)
+
   - LINE-1 elements
+
   - ~17% of human genome!
+
 - **LTRs** (Long Terminal Repeats)
+
   - From ancient retroviruses
+
 - **Tandem repeats**
+
   - Satellites, microsatellites
+
 - **Transposons** ("jumping genes")
+
   - DNA transposons
+
   - Can move around genome!
 
 **5. Other Features**:
+
 - Pseudogenes (dead gene copies)
+
 - Centromeres
+
 - Telomeres
+
 - Origins of replication
 
 ### Functional Annotation
@@ -225,37 +338,64 @@ There are **two main types** of annotation:
 **What it predicts**:
 
 **1. Protein Function**:
+
 - What does this protein do?
+
 - What pathway is it in?
+
 - What cellular process?
+
 - Based on sequence similarity to known proteins
 
 **2. Protein Domains**:
+
 - Functional modules in proteins
+
 - DNA-binding domains
+
 - Kinase domains
+
 - Membrane-spanning domains
+
 - Use databases like Pfam, InterPro
 
 **3. Gene Ontology (GO) Terms**:
+
 - Standardized vocabulary for gene function
+
 - Three categories:
+
   - **Biological Process** (e.g., "DNA repair")
+
   - **Molecular Function** (e.g., "ATP binding")
+
   - **Cellular Component** (e.g., "nucleus")
+
 - We'll explore GO in detail in the next section!
 
 **4. Pathway Assignment**:
+
 - Which metabolic pathway?
+
 - Which signaling pathway?
+
 - Use databases like KEGG, Reactome
 
 **5. Disease Association**:
+
 - Is gene linked to diseases?
+
 - What mutations cause disease?
+
 - Use databases like OMIM, ClinVar
 
 **Example**:
+```
+
+```
+
+```
+
 ```
 Structural annotation:
 Gene: BRCA1
@@ -271,6 +411,11 @@ Disease: Breast and ovarian cancer when mutated
 GO terms: DNA repair, cell cycle checkpoint
 ```
 
+```
+
+```
+```
+
 #### Gene Prediction Approaches
 
 How do computers find genes in raw DNA sequence? There are **three main approaches**:
@@ -280,23 +425,35 @@ How do computers find genes in raw DNA sequence? There are **three main approach
 **"Ab initio" means "from the beginning"** - no external reference needed!
 
 **How it works**:
+
 - Uses statistical models to recognize gene patterns
+
 - Looks for gene "signals" in DNA sequence
+
 - Purely computational - no comparison to other genomes
 
 **What it looks for**:
 
 **Gene Signals**:
+
 - **Start codon**: ATG (marks where translation begins)
+
 - **Stop codons**: TAA, TAG, TGA (marks where translation ends)
+
 - **Splice sites**: GT...AG boundaries (intron-exon junctions)
+
 - **Promoter elements**: TATA box, CAAT box
+
 - **Poly-A signals**: AATAAA (marks mRNA end)
 
 **Statistical Features**:
+
 - **Open Reading Frames (ORFs)**: Long stretches without stop codons
+
 - **Codon bias**: Organisms prefer certain codons (explained below!)
+
 - **GC content**: Coding regions often have different GC% than non-coding
+
 - **Periodicity**: Coding sequences show 3-base-pair periodicity
 
 #### Understanding Codon Bias
@@ -304,13 +461,27 @@ How do computers find genes in raw DNA sequence? There are **three main approach
 **What is codon bias?**
 
 **The genetic code is redundant**:
+
 - 64 possible codons (4³ nucleotides)
+
 - Only 20 amino acids + 3 stop codons
+
 - Most amino acids have multiple codons (synonymous codons)
 
 **Example - Leucine** has 6 codons:
 ```
+
+```
+
+```
+
+```
 UUA, UUG, CUU, CUC, CUA, CUG → All code for Leucine
+```
+
+```
+
+```
 ```
 
 **Codon bias** = Non-random usage of synonymous codons
@@ -319,34 +490,60 @@ UUA, UUG, CUU, CUC, CUA, CUG → All code for Leucine
 
 **Example**:
 ```
+
+```
+
+```
+
+```
 E. coli prefers:
+
 - UUG for Leucine (used 50% of the time)
+
 - UUA for Leucine (used 10% of the time)
 
 Even though both code for same amino acid!
 ```
 
+```
+
+```
+```
+
 **Why codon bias exists?**
 
 **1. tRNA Availability**:
+
 - Cells have different amounts of each tRNA
+
 - Preferred codons match abundant tRNAs
+
 - Faster translation
+
 - Higher expression
 
 **2. Translation Efficiency**:
+
 - Rare codons slow down translation
+
 - Can cause ribosome stalling
+
 - Affects protein folding
 
 **3. mRNA Stability**:
+
 - Certain codon patterns affect mRNA structure
+
 - Influences half-life
 
 **Codon Adaptation Index (CAI)**:
+
 - Measure of codon bias (0 to 1)
+
 - 1.0 = Uses only preferred codons
+
 - 0.2 = Uses rare codons
+
 - Highly expressed genes have CAI ~0.8-1.0
 
 **Species-specific patterns**:
@@ -361,38 +558,72 @@ Even though both code for same amino acid!
 **Using codon bias in gene prediction**:
 
 **Coding regions**:
+
 - Show strong codon bias
+
 - Match organism's preference
+
 - Higher CAI score
 
 **Non-coding regions**:
+
 - Random codon usage
+
 - No bias pattern
+
 - Lower CAI score
 
 **Ab initio gene finders use this**:
+```
+
+```
+
+```
+
 ```
 Sequence with high CAI → Likely coding
 Sequence with low CAI → Likely non-coding
 ```
 
+```
+
+```
+```
+
 **Practical application - Recombinant Protein Production**:
 
 **Problem**: Express human gene in E. coli
+
 - Human uses different codons than E. coli
+
 - Gene has rare E. coli codons
+
 - Low expression!
 
 **Solution**: Codon optimization
+
 - Replace human codons with E. coli preferred codons
+
 - Same protein sequence
+
 - 10-1000x higher expression!
 
 **Example**:
 ```
+
+```
+
+```
+
+```
 Human gene: ...UUA-CUA-UUA... (rare in E. coli)
 Optimized:  ...UUG-CUG-UUG... (preferred in E. coli)
 Same protein, better expression!
+```
+
+```
+
+```
 ```
 
 #### ORF Detection Algorithm (Detailed)
@@ -402,10 +633,18 @@ Same protein, better expression!
 **Step-by-step algorithm**:
 
 **1. Consider all 6 reading frames**:
+
 - **3 frames on forward strand** (+1, +2, +3)
+
 - **3 frames on reverse complement** (-1, -2, -3)
 
 **Example DNA sequence**:
+```
+
+```
+
+```
+
 ```
 Forward: 5'-ATGCATGGATAA-3'
 
@@ -420,26 +659,48 @@ Reading frame -2: T TAT AGG TAC GTA
 Reading frame -3: TT ATA GGT ACG TA
 ```
 
+```
+
+```
+```
+
 **2. Scan for start codons (ATG)**:
+
 - Mark all ATG positions in each frame
+
 - Each is potential ORF start
 
 **3. Extend until stop codon**:
+
 - Read triplets from ATG
+
 - Continue until TAA, TAG, or TGA
+
 - This is one ORF
 
 **4. Calculate ORF length**:
+
 - Count nucleotides from start to stop
+
 - Divide by 3 = number of codons
 
 **5. Apply filters**:
+
 - **Minimum length**: Usually >300 bp (100 codons)
+
 - Too short → likely random
+
 - **Codon bias**: Check if matches organism
+
 - **Blast search**: Does it match known proteins?
 
 **Example - Finding ORFs**:
+```
+
+```
+
+```
+
 ```
 Sequence: 5'-ATGAAATTTGCATAA-3'
 
@@ -453,45 +714,75 @@ Protein = M K F A * (4 amino acids)
 Too short? If minimum is 100 codons, this is rejected!
 ```
 
+```
+
+```
+```
+
 **Longest ORF heuristic**:
+
 - In a random sequence, expect short ORFs
+
 - Real genes = long ORFs
+
 - **Find longest ORF in each frame**
+
 - Usually the real gene!
 
 **Statistics**:
+
 - Random sequence: Average ORF = 64 codons (192 bp)
+
 - Real genes: Average = 300-500 codons (900-1500 bp)
 
 **Prokaryotic vs. Eukaryotic ORF Finding**:
 
 **Prokaryotes** (easier):
+
 - No introns
+
 - ORF = gene
+
 - High gene density
+
 - Start-to-stop is complete
 
 **Eukaryotes** (harder):
+
 - Introns interrupt ORFs!
+
 - Need to predict exons
+
 - Splice sites required
+
 - Much more complex
 
 **Tools for ORF Finding**:
+
 - **ORF Finder** (NCBI): Web-based, simple
+
 - **GeneMark**: Ab initio with species-specific models
+
 - **Glimmer**: Especially for bacteria
+
 - **Augustus**: For eukaryotes with introns
 
 **Computational Methods**:
+
 - **Hidden Markov Models (HMMs)**: Statistical models of gene structure
+
 - **Neural networks**: Machine learning approaches
+
 - **Support vector machines**: Classification algorithms
 
 **Famous ab initio tools**:
+
 - GeneMark
+
 - Augustus
+
 - GENSCAN
+
 - GlimmerHMM
 
 **Pros**:
@@ -514,11 +805,20 @@ Too short? If minimum is 100 codons, this is rejected!
 **"Homology" means similarity** - compares to known genes!
 
 **How it works**:
+
 - Compares new genome to databases of known genes
+
 - Uses evolutionary conservation
+
 - If sequence is similar to known gene, probably also a gene!
 
 **The principle**:
+```
+
+```
+
+```
+
 ```
 Known gene in mouse: ATGCCCAAAGGG
 Your new sequence:   ATGCCCAAGGGG
@@ -526,29 +826,49 @@ Your new sequence:   ATGCCCAAGGGG
 → Probably same gene in your organism!
 ```
 
+```
+
+```
+```
+
 **Methods**:
 
 **1. Protein-to-Genome Alignment**:
+
 - Use known proteins from databases
+
 - Align them to genome
+
 - Tools: BLASTX, GeneWise, Exonerate
 
 **2. Genome-to-Genome Alignment**:
+
 - Compare entire genomes
+
 - Human vs. chimpanzee (99% similar!)
+
 - Human vs. mouse (useful for finding conserved genes)
+
 - Tools: BLAST, BLAT
 
 **3. Expressed Sequence Evidence**:
+
 - Use mRNA/cDNA sequences
+
 - Direct evidence of gene expression!
+
 - RNA-seq data is gold standard
+
 - EST (Expressed Sequence Tag) databases
 
 **Example**:
+
 - Sequenced new organism (e.g., bonobo)
+
 - Compare to human genome (very similar!)
+
 - Transfer annotations from human to bonobo
+
 - Refine with experimental data
 
 **Pros**:
@@ -570,14 +890,26 @@ Your new sequence:   ATGCCCAAGGGG
 **Combining multiple evidence sources** - the modern standard!
 
 **What it integrates**:
+
 1. **Ab initio predictions** (statistical signals)
+
 2. **Homology evidence** (similarity to known genes)
+
 3. **RNA-seq data** (experimental evidence of transcription)
+
 4. **Protein data** (mass spectrometry evidence)
+
 5. **Comparative genomics** (conservation across species)
+
 6. **Epigenomic data** (chromatin marks, histone modifications)
 
 **How it works**:
+```
+
+```
+
+```
+
 ```
 Ab initio: Gene predicted at position X
 Homology:  Similar to mouse gene at position X
@@ -590,19 +922,35 @@ RNA-seq:   No expression
 → LOW CONFIDENCE: Probably false positive
 ```
 
+```
+
+```
+```
+
 **Modern integrated tools**:
+
 - **MAKER**: Combines evidence, widely used
+
 - **BRAKER**: Uses RNA-seq + ab initio
+
 - **Ensembl pipeline**: Human genome annotation
+
 - **NCBI pipeline**: RefSeq annotations
 
 **Workflow**:
+
 1. **Repeat masking** (remove repetitive DNA first!)
+
 2. **Ab initio prediction** (first pass)
+
 3. **Homology search** (compare to databases)
+
 4. **RNA-seq alignment** (experimental evidence)
+
 5. **Evidence integration** (combine all signals)
+
 6. **Manual curation** (experts review tricky cases)
+
 7. **Functional annotation** (predict gene functions)
 
 **Pros**:
@@ -627,14 +975,21 @@ RNA-seq:   No expression
 **Gene Ontology (GO)** is a standardized classification system for describing gene and protein functions across all organisms [@geneontology2000; @geneontology2021].
 
 Think of it like:
+
 - 🌍 **Universal language** for biology (like how scientists worldwide use Latin names for species)
+
 - 📚 **Dewey Decimal System** for genes (standardized classification)
+
 - 🏷️ **Hashtags** for gene functions (standardized labels)
 
 **Why we need GO**:
+
 - Different organisms, same gene names mean different things
+
 - Need consistent terminology across species
+
 - Enables computational analysis
+
 - Facilitates data sharing and integration
 
 **Amazing fact**: GO terms are used to annotate genes from bacteria to humans!
@@ -651,17 +1006,20 @@ Think of it as: **"What does this molecule DO?"**
 
 **Examples**:
 
-| GO Term ID | Term Name | Description | Example Genes |
+| GO Term ID | Term Name | What it Means | Example Genes |
 |------------|-----------|-------------|---------------|
-| GO:0003677 | DNA binding | Interacts with DNA | Transcription factors |
-| GO:0004672 | Protein kinase activity | Phosphorylates proteins | PKA, PKC |
-| GO:0005524 | ATP binding | Binds ATP molecules | Many enzymes |
-| GO:0016491 | Oxidoreductase activity | Catalyzes oxidation-reduction | Cytochrome P450 |
-| GO:0003723 | RNA binding | Interacts with RNA | RNA-binding proteins |
+| GO:0003677 | DNA binding | Sticks to DNA | Transcription factors |
+| GO:0004672 | Protein kinase activity | Adds phosphate groups to proteins | PKA, PKC |
+| GO:0005524 | ATP binding | Grabs ATP molecules | Many enzymes |
+| GO:0016491 | Oxidoreductase activity | Moves electrons between molecules | Cytochrome P450 |
+| GO:0003723 | RNA binding | Sticks to RNA | RNA-binding proteins |
 
-**Key characteristics**:
+**Key points:**
+
 - Describes the biochemical action
+
 - Independent of where or when it happens
+
 - Based on the inherent capability of the molecule
 
 **Important**: A gene can have **multiple molecular functions**!
@@ -674,7 +1032,7 @@ Think of it as: **"What is this molecule PART OF?"**
 
 **Examples**:
 
-| GO Term ID | Term Name | Description | Example Genes |
+| GO Term ID | Term Name | What it Means | Example Genes |
 |------------|-----------|-------------|---------------|
 | GO:0006281 | DNA repair | Fixing damaged DNA | BRCA1, BRCA2 |
 | GO:0007049 | Cell cycle | Cell division process | Cyclins, CDKs |
@@ -682,17 +1040,31 @@ Think of it as: **"What is this molecule PART OF?"**
 | GO:0006955 | Immune response | Fighting infections | Antibodies, cytokines |
 | GO:0007165 | Signal transduction | Cellular signaling | Receptors, kinases |
 
-**Key characteristics**:
+**Key points:**
+
 - Describes the larger biological context
+
 - Multiple molecular functions contribute to one process
+
 - Can be hierarchical (specific → general)
 
 **Example hierarchy**:
+```
+
+```
+
+```
+
 ```
 DNA metabolic process (broad)
   └─ DNA repair (more specific)
       └─ Double-strand break repair (very specific)
           └─ Homologous recombination (most specific)
+```
+
+```
+
+```
 ```
 
 ### 3. Cellular Component (CC)
@@ -703,7 +1075,7 @@ Think of it as: **"WHERE in the cell is this molecule?"**
 
 **Examples**:
 
-| GO Term ID | Term Name | Description | Example Genes |
+| GO Term ID | Term Name | What it Means | Example Genes |
 |------------|-----------|-------------|---------------|
 | GO:0005634 | Nucleus | Inside nuclear membrane | Histones, transcription factors |
 | GO:0005739 | Mitochondrion | Mitochondrial compartment | Respiratory chain proteins |
@@ -711,12 +1083,21 @@ Think of it as: **"WHERE in the cell is this molecule?"**
 | GO:0005737 | Cytoplasm | Cellular cytoplasm | Many metabolic enzymes |
 | GO:0005576 | Extracellular region | Outside the cell | Secreted proteins, antibodies |
 
-**Key characteristics**:
+**Key points:**
+
 - Describes subcellular localization
+
 - Can include complexes (e.g., "ribosome")
+
 - Important for understanding protein function
 
 **Subcompartments** exist too:
+```
+
+```
+
+```
+
 ```
 Mitochondrion (general)
   ├─ Mitochondrial matrix
@@ -724,15 +1105,30 @@ Mitochondrion (general)
   └─ Mitochondrial intermembrane space
 ```
 
+```
+
+```
+```
+
 ### GO Term Structure and Identifiers
 
 **Every GO term has**:
+
 - **Unique ID**: GO:XXXXXXX (7 digits)
+
 - **Term name**: Human-readable name
+
 - **Definition**: Precise description
+
 - **Relationships**: Connections to other terms
 
 **Example - GO:0003677 (DNA binding)**:
+```
+
+```
+
+```
+
 ```
 ID: GO:0003677
 Name: DNA binding
@@ -741,13 +1137,24 @@ Definition: Any molecular function by which a gene product
             interacts selectively and non-covalently with DNA
 Synonyms: microtubule/chromatin interaction
 Relationships:
+
   - is_a: nucleic acid binding (GO:0003676)
+
   - part_of: Various processes
+
+```
+
+```
+```
+
 ```
 
 **Hierarchical structure** (parent-child relationships):
+
 - **More general terms** at top (parents)
+
 - **More specific terms** below (children)
+
 - Allows for different levels of detail
 
 ### Practical Example: Actin Gene
@@ -759,17 +1166,25 @@ Let's annotate **Actin** (a cytoskeletal protein):
 **GO Annotations**:
 
 **Molecular Function**:
+
 - GO:0003779 - Actin binding
+
 - GO:0005200 - Structural constituent of cytoskeleton
 
 **Biological Process**:
+
 - GO:0030036 - Actin cytoskeleton organization
+
 - GO:0016477 - Cell migration
+
 - GO:0051301 - Cell division
 
 **Cellular Component**:
+
 - GO:0005737 - Cytoplasm
+
 - GO:0005856 - Cytoskeleton
+
 - GO:0015629 - Actin cytoskeleton
 
 **Why multiple terms?** Actin does many things in different contexts!
@@ -781,19 +1196,29 @@ Let's annotate **Actin** (a cytoskeletal protein):
 **GO Annotations**:
 
 **Molecular Function**:
+
 - GO:0003677 - DNA binding
+
 - GO:0004842 - Ubiquitin-protein transferase activity
+
 - GO:0008270 - Zinc ion binding
 
 **Biological Process**:
+
 - GO:0006281 - DNA repair
+
 - GO:0000724 - Double-strand break repair via homologous recombination
+
 - GO:0007049 - Cell cycle
+
 - GO:0006974 - Cellular response to DNA damage stimulus
+
 - GO:0008283 - Cell proliferation
 
 **Cellular Component**:
+
 - GO:0005634 - Nucleus
+
 - GO:0000785 - Chromatin
 
 **Clinical relevance**: Mutations in BRCA1 disrupt DNA repair (GO:0006281), leading to cancer!
@@ -803,22 +1228,35 @@ Let's annotate **Actin** (a cytoskeletal protein):
 **Two main approaches**:
 
 **1. Manual Curation** (gold standard):
+
 - Expert scientists read research papers
+
 - Extract evidence for gene function
+
 - Assign GO terms with evidence codes
+
 - Time-consuming but accurate
 
 **2. Computational Prediction**:
+
 - Based on sequence similarity (homology)
+
 - Transfer annotations from well-studied organisms
+
 - Machine learning approaches
+
 - Faster but less certain
 
-**Evidence codes** indicate quality:
+**Quality codes:**
+
 - **EXP**: Inferred from Experiment (most reliable)
+
 - **IDA**: Inferred from Direct Assay
+
 - **IMP**: Inferred from Mutant Phenotype
+
 - **ISS**: Inferred from Sequence Similarity (computational)
+
 - **IEA**: Inferred from Electronic Annotation (least reliable)
 
 **Always check evidence codes!** Experimentally verified annotations are more trustworthy.
@@ -828,15 +1266,23 @@ Let's annotate **Actin** (a cytoskeletal protein):
 **GO enables cross-species comparisons!**
 
 **Example - Actin**:
+
 - Found in yeast, plants, mice, humans
+
 - Same GO terms across species!
+
 - GO:0003779 (Actin binding) applies to all
+
 - Reveals evolutionary conservation
 
 **Comparative genomics workflow**:
+
 1. Identify homologous genes across species
+
 2. Compare GO annotations
+
 3. Conserved GO terms → essential functions
+
 4. Species-specific GO terms → unique adaptations
 
 ### Using GO in Research
@@ -844,36 +1290,66 @@ Let's annotate **Actin** (a cytoskeletal protein):
 **Common applications**:
 
 **1. Gene Set Enrichment Analysis**:
+
 - Have list of 500 upregulated genes
+
 - Which biological processes are enriched?
+
 - Statistical test: Are certain GO terms over-represented?
+
 - Reveals coordinated biological responses
 
 **Example**:
 ```
+
+```
+
+```
+
+```
 Input: 500 genes upregulated in cancer
 Output:
+
   - DNA repair (GO:0006281) - 50 genes (p < 0.001)
+
   - Cell cycle (GO:0007049) - 75 genes (p < 0.001)
+
   → Cancer affects DNA repair and cell division!
 ```
 
+```
+
+```
+```
+
 **2. Functional Annotation of New Genomes**:
+
 - Sequence unknown organism
+
 - Find homologous genes with BLAST
+
 - Transfer GO annotations from known organisms
+
 - Predict functions computationally
 
 **3. Disease Gene Discovery**:
+
 - Identify disease-associated mutations
+
 - Check GO annotations
+
 - Understand disrupted pathways
+
 - Design targeted therapies
 
 **4. Drug Target Identification**:
+
 - Need drugs for pathway X
+
 - Query GO for genes in pathway X
+
 - Prioritize druggable targets
+
 - Accelerate drug discovery
 
 ### GO Databases and Tools
@@ -881,27 +1357,43 @@ Output:
 **Major resources**:
 
 **1. Gene Ontology Consortium** (http://geneontology.org):
+
 - Official GO database
+
 - Browse/search GO terms
+
 - Download annotations
+
 - Documentation
 
 **2. AmiGO** (Browser):
+
 - User-friendly GO browser
+
 - Search genes or GO terms
+
 - Visualize hierarchies
+
 - Export data
 
 **3. QuickGO** (EBI):
+
 - European GO browser
+
 - Fast searching
+
 - Annotation statistics
+
 - API access
 
 **4. GO Enrichment Tools**:
+
 - **DAVID**: Functional annotation clustering
+
 - **GOseq**: Accounts for gene length bias
+
 - **topGO**: R package for enrichment
+
 - **g:Profiler**: Web-based enrichment analysis
 
 ### Major Genome Annotation Repositories
@@ -909,44 +1401,75 @@ Output:
 **Where annotations are stored and accessed**:
 
 **1. GENCODE** (https://www.gencodegenes.org):
+
 - **Comprehensive gene annotation** for human and mouse
+
 - Part of ENCODE project
+
 - High-quality manual curation
+
 - Includes:
+
   - Protein-coding genes
+
   - Long non-coding RNAs (lncRNAs)
+
   - Small RNAs
+
   - Pseudogenes
+
 - **Current version**: Updates regularly
+
 - **Human**: ~60,000 genes (20,000 protein-coding)
+
 - Gold standard for human genome annotation
 
 **What GENCODE provides**:
+
 - Gene structures (exons, introns)
+
 - Transcript isoforms (alternative splicing)
+
 - Functional annotations
+
 - GTF/GFF files for analysis
 
 **2. RefSeq** (NCBI Reference Sequence):
+
 - Curated non-redundant sequences
+
 - Covers many organisms (not just human/mouse)
+
 - Expert curation + computational methods
+
 - Stable identifiers (e.g., NM_000546 for TP53)
+
 - Used in clinical genetics
 
 **3. Ensembl** (https://www.ensembl.org):
+
 - European annotation resource
+
 - Automated pipeline + manual curation
+
 - Comparative genomics across species
+
 - Gene trees and orthologs
+
 - Variant annotation (Variant Effect Predictor)
 
 **4. UniProt** (https://www.uniprot.org):
+
 - For proteins specifically
+
 - **Swiss-Prot**: Manually reviewed (gold standard)
+
 - **TrEMBL**: Computationally annotated
+
 - Functional information
+
 - Protein domains, PTMs
+
 - Literature references
 
 **Comparison**:
@@ -959,13 +1482,22 @@ Output:
 | **UniProt** | Proteins | Manual (Swiss-Prot) | All organisms |
 
 **Version control is critical**:
+
 - Annotations change over time
+
 - Always cite which version used!
+
 - Example: "GENCODE v44 (2023)"
 
 **Accessing annotations**:
 
 **Programmatic access**:
+```bash
+
+```bash
+
+```bash
+
 ```bash
 # Download GENCODE human annotations
 wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/gencode.v44.annotation.gtf.gz
@@ -974,37 +1506,67 @@ wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/gencode.
 wget ftp://ftp.ensembl.org/pub/release-110/gtf/homo_sapiens/
 ```
 
+```
+
+```
+```
+
 **Web browsers**:
+
 - UCSC Genome Browser: Shows RefSeq, GENCODE, Ensembl tracks
+
 - Ensembl browser: Shows Ensembl annotations
+
 - Can compare different annotation sources side-by-side!
 
 **Annotation file formats**:
 
 **GTF (Gene Transfer Format)**:
 ```
+
+```
+
+```
+
+```
 chr1  HAVANA  gene  11869  14409  .  +  .  gene_id "ENSG00000223972"
 chr1  HAVANA  transcript  11869  14409  .  +  .  transcript_id "ENST00000456328"
 chr1  HAVANA  exon  11869  12227  .  +  .  exon_id "ENSE00002234944"
 ```
 
+```
+
+```
+```
+
 **GFF3 (General Feature Format)**:
+
 - Similar to GTF
+
 - More flexible
+
 - Supports hierarchical features
 
 **Why multiple databases?**
 
 **Different strengths**:
+
 - **GENCODE**: Best for human/mouse RNA-seq analysis
+
 - **RefSeq**: Best for clinical variant interpretation
+
 - **Ensembl**: Best for comparative genomics
+
 - **UniProt**: Best for protein function
 
 **Discrepancies exist!**
+
 - Same gene, different annotations
+
 - Number of isoforms varies
+
 - Exon boundaries differ slightly
+
 - Choose database appropriate for your application
 
 ### Limitations of GO
@@ -1012,24 +1574,37 @@ chr1  HAVANA  exon  11869  12227  .  +  .  exon_id "ENSE00002234944"
 **Important caveats**:
 
 **1. Incompleteness**:
+
 - Not all genes are annotated
+
 - New functions continually discovered
+
 - Bias toward well-studied organisms
 
 **2. Annotation Quality Varies**:
+
 - Some genes: extensive experimental evidence
+
 - Others: only computational predictions
+
 - Always check evidence codes!
 
 **3. Context-Dependent Functions**:
+
 - Gene may have different functions in different tissues
+
 - GO doesn't always capture this nuance
+
 - Temporal aspects not well represented
 
 **4. Updating Annotations**:
+
 - GO is constantly evolving
+
 - Terms added, modified, made obsolete
+
 - Need to use current version
+
 - Citation matters!
 
 ### Best Practices for Using GO
@@ -1052,10 +1627,15 @@ chr1  HAVANA  exon  11869  12227  .  +  .  exon_id "ENSE00002234944"
 ### Future of Gene Ontology
 
 **Ongoing developments**:
+
 - **Causal Activity Models (CAMs)**: Representing molecular pathways
+
 - **GO-CAM**: Integrating GO with pathway information
+
 - **Better context representation**: Tissue-specific, temporal annotations
+
 - **Machine learning**: Automated, high-quality predictions
+
 - **Integration**: Linking GO with other ontologies (disease, anatomy, etc.)
 
 **Vision**: Complete functional map of all genes in all organisms!
@@ -1065,31 +1645,49 @@ chr1  HAVANA  exon  11869  12227  .  +  .  exon_id "ENSE00002234944"
 **Why is gene prediction hard?**
 
 **1. Alternative Splicing**:
+
 - One gene → multiple transcripts
+
 - Which exons are used when?
+
 - ~95% of human genes alternatively spliced!
+
 - Creates enormous complexity
 
 **2. Overlapping Genes**:
+
 - Genes on opposite DNA strands
+
 - Genes within introns of other genes
+
 - Hard for algorithms to detect
 
 **3. Small Genes**:
+
 - Short ORFs often missed
+
 - Could be real genes or random
+
 - MicroRNA genes are tiny!
 
 **4. Pseudogenes**:
+
 - Look like genes but are non-functional
+
 - "Dead" copies from evolution
+
 - ~20,000 pseudogenes in human genome
+
 - Hard to distinguish from real genes
 
 **5. Repetitive Sequences**:
+
 - ~45% of human genome is repetitive!
+
 - LINEs, SINEs, transposons everywhere
+
 - Must be masked before annotation
+
 - Can interfere with gene prediction
 
 ### 4. Variant Calling
@@ -1097,16 +1695,25 @@ chr1  HAVANA  exon  11869  12227  .  +  .  exon_id "ENSE00002234944"
 **What it is**: Finding differences between genomes
 
 **Why it matters**:
+
 - Disease-causing mutations
+
 - Drug response variants
+
 - Evolutionary changes
+
 - Personalized medicine
 
 **Process**:
+
 1. Sequence individual's genome
+
 2. Compare to reference genome
+
 3. Identify differences (SNPs, indels, etc.)
+
 4. Annotate variants (what genes affected?)
+
 5. Predict impact (harmful, benign, unknown?)
 
 ### 5. Gene Expression Analysis
@@ -1114,15 +1721,23 @@ chr1  HAVANA  exon  11869  12227  .  +  .  exon_id "ENSE00002234944"
 **What it is**: Measuring which genes are active
 
 **RNA-seq analysis**:
+
 1. Sequence all RNA in sample
+
 2. Count reads for each gene
+
 3. Normalize data
+
 4. Compare conditions (healthy vs. diseased)
+
 5. Find differentially expressed genes
 
 **Challenges**:
+
 - Statistical analysis needed
+
 - Multiple testing correction
+
 - Biological vs. technical variation
 
 ### 6. Phylogenetic Analysis
@@ -1130,15 +1745,23 @@ chr1  HAVANA  exon  11869  12227  .  +  .  exon_id "ENSE00002234944"
 **What it is**: Building evolutionary trees
 
 **Process**:
+
 1. Collect sequences from multiple species
+
 2. Align sequences
+
 3. Calculate evolutionary distances
+
 4. Build tree showing relationships
 
 **Uses**:
+
 - Understanding evolution
+
 - Tracking disease outbreaks (COVID-19!)
+
 - Conservation biology
+
 - Drug development
 
 ## Genome Browsers: Visualizing the Genome
@@ -1148,17 +1771,27 @@ chr1  HAVANA  exon  11869  12227  .  +  .  exon_id "ENSE00002234944"
 **Genome browser** = Interactive tool to visualize genome annotations and experimental data
 
 Think of it like:
+
 - Google Maps for the genome!
+
 - Shows genes, regulatory elements, and experimental data
+
 - Navigate by chromosome position
+
 - Zoom in/out from whole chromosome to single nucleotide
 
 **Why use genome browsers?**
+
 - Visualize gene structure (exons, introns, UTRs)
+
 - See regulatory elements (promoters, enhancers)
+
 - View experimental data (RNA-seq, ChIP-seq, etc.)
+
 - Compare across species
+
 - Plan experiments
+
 - Interpret variants
 
 ### UCSC Genome Browser (Most Popular!)
@@ -1170,6 +1803,12 @@ Think of it like:
 **What it shows**:
 
 **1. Main Display** (Genome View):
+```
+
+```
+
+```
+
 ```
 Chromosome 17: 43,000,000 - 43,100,000 bp
 
@@ -1187,10 +1826,19 @@ SNPs:         | | |  |   | |
               (genetic variants)
 ```
 
+```
+
+```
+```
+
 **2. Navigation Controls**:
+
 - **Search by**: Gene name, position, keyword
+
 - **Zoom**: In/out by 1.5x, 3x, 10x, 100x
+
 - **Move**: Left/right along chromosome
+
 - **Jump**: To specific region
 
 ### Key Tracks in UCSC Browser
@@ -1198,35 +1846,55 @@ SNPs:         | | |  |   | |
 **Tracks** = Layers of information displayed on the genome
 
 **Gene Tracks**:
+
 - **RefSeq Genes**: Curated gene annotations
+
 - **GENCODE**: Comprehensive gene set
+
 - **Shows**: Exons (thick boxes), introns (lines), UTRs (thin boxes)
+
 - **Direction**: Arrow shows transcription direction
 
 **Regulatory Tracks**:
+
 - **CpG Islands**: Potential promoter regions
+
 - **Transcription Factor ChIP-seq**: Where TFs bind
+
 - **DNase Hypersensitivity**: Open chromatin regions
+
 - **Enhancers**: Predicted regulatory elements
 
 **Variation Tracks**:
+
 - **dbSNP**: Single nucleotide polymorphisms
+
 - **ClinVar**: Disease-associated variants
+
 - **gnomAD**: Population allele frequencies
 
 **Comparative Genomics**:
+
 - **Conservation**: Evolutionary conservation across species
+
 - **Vertebrate alignment**: Compare 100 vertebrate genomes
+
 - **Shows conserved regions** (likely functional!)
 
 **RNA-seq Tracks**:
+
 - Gene expression levels
+
 - Different tissues/conditions
+
 - Alternative splicing visualization
 
 **Epigenomic Tracks**:
+
 - Histone modifications (H3K4me3, H3K27ac, etc.)
+
 - DNA methylation
+
 - Chromatin states (active, repressed, etc.)
 
 ### Using UCSC Browser: Example Workflow
@@ -1236,111 +1904,177 @@ SNPs:         | | |  |   | |
 **Steps**:
 
 **1. Search**:
+
 - Enter "BRCA1" in search box
+
 - Browser zooms to BRCA1 on chromosome 17
 
 **2. Gene Structure**:
+
 - See 24 exons (thick blue boxes)
+
 - See introns (lines connecting exons)
+
 - See 5' and 3' UTRs (thin boxes)
+
 - Total gene length: ~81 kb
+
 - mRNA length: ~7.2 kb (much smaller - introns removed!)
 
 **3. Regulatory Elements**:
+
 - Enable "CpG Islands" track
+
 - See CpG island at promoter (typical!)
+
 - Enable "Layered H3K27Ac" (active enhancer mark)
+
 - See several enhancers near gene
 
 **4. Variants**:
+
 - Enable "ClinVar" track
+
 - See disease-causing mutations
+
 - Red markers = pathogenic variants
+
 - Click on variant for details (disease association, frequency, etc.)
 
 **5. Conservation**:
+
 - Enable "Conservation" track
+
 - Dark peaks = highly conserved
+
 - Conservation in exons (expected!)
+
 - Also conservation in some introns (regulatory elements?)
 
 **6. Expression**:
+
 - Enable "GTEx Gene" track
+
 - See BRCA1 expressed in many tissues
+
 - Highest in testis, ovary, thymus
 
 ### Other Popular Genome Browsers
 
 **Ensembl** (European)
+
 - URL: https://www.ensembl.org
+
 - Similar to UCSC
+
 - Strong comparative genomics
+
 - More international species
+
 - Good variant effect predictor
 
 **IGV (Integrative Genomics Viewer)**
+
 - Desktop application (not web-based)
+
 - Fast for large datasets
+
 - Great for RNA-seq and variant viewing
+
 - Researchers' favorite for detailed analysis!
 
 **NCBI Genome Data Viewer**
+
 - From National Center for Biotechnology Information
+
 - Integrated with other NCBI resources
+
 - Shows RefSeq annotations
 
 ### Practical Tips for Using Genome Browsers
 
 **Understand coordinates**:
+
 - **1-based**: UCSC uses 1-based coordinates
+
 - **0-based**: BED files use 0-based
+
 - Can cause off-by-one errors!
 
 **Choose correct genome build**:
+
 - HG38 (current)
+
 - HG19 (older, still used)
+
 - **Don't mix!** Coordinates differ between builds
 
 **Custom tracks**:
+
 - Upload your own data
+
 - View alongside reference annotations
+
 - Great for interpreting experiments
 
 **Export images**:
+
 - PDF or PNG for publications
+
 - Customize colors and labels
 
 **Session saving**:
+
 - Save your track configuration
+
 - Share with collaborators
+
 - Reproducible views
 
 ### Real-World Use Cases
 
 **1. Clinical Genetics**:
+
 - Patient has variant in gene
+
 - View in UCSC browser
+
 - Check if variant in conserved region
+
 - Check ClinVar for known disease association
+
 - Predict pathogenicity
 
 **2. Research**:
+
 - Found interesting gene in RNA-seq
+
 - View structure in browser
+
 - Design primers for qPCR (avoid introns!)
+
 - Check tissue expression
+
 - Find regulatory elements
 
 **3. Evolutionary Studies**:
+
 - Compare gene across species
+
 - View conservation track
+
 - Identify conserved non-coding elements
+
 - Study gene gain/loss events
 
 **4. Drug Development**:
+
 - Target gene for drug
+
 - View isoforms (alternative splicing)
+
 - Check tissue-specific expression
+
 - Design specific inhibitors
 
 ### Genome Build Versions (Human)
@@ -1350,31 +2084,54 @@ Understanding **genome builds** is critical!
 **Major human genome builds**:
 
 **HG18** (NCBI Build 36, 2006):
+
 - First "complete" draft
+
 - Many gaps and errors
+
 - Now obsolete - don't use!
 
 **HG19** (GRCh37, 2009):
+
 - Major improvement
+
 - Used for ~10 years
+
 - Still used in many studies
+
 - Many databases still in HG19
 
 **HG38** (GRCh38, 2013-present):
+
 - Current standard
+
 - Better assembly
+
 - Fewer gaps
+
 - Better representation of genetic diversity
+
 - Includes alternate loci (variants)
 
 **What changes between builds?**
+
 - **Sequence corrections**: Errors fixed
+
 - **Gap filling**: Unknown regions sequenced
+
 - **Coordinate changes**: Same gene, different position!
+
 - **New genes added**: ~200-500 genes updated per build
+
 - **Removed sequences**: Some were artifacts
 
 **Critical warning**:
+```
+
+```
+
+```
+
 ```
 Gene X in HG19: chr17:43,044,295-43,125,483
 Gene X in HG38: chr17:43,009,127-43,090,315
@@ -1382,11 +2139,19 @@ Gene X in HG38: chr17:43,009,127-43,090,315
               Different coordinates!
 ```
 
+```
+
+```
+```
+
 **Always specify genome build in publications!**
 
 **Liftover tools**:
+
 - Convert coordinates between builds
+
 - UCSC LiftOver tool
+
 - Not always perfect - some regions can't convert!
 
 ### Why Genome Builds Keep Updating
@@ -1396,28 +2161,43 @@ Gene X in HG38: chr17:43,009,127-43,090,315
 **Reasons for updates**:
 
 **1. New experimental data**:
+
 - More RNA-seq experiments
+
 - New transcripts discovered
+
 - Alternative splicing patterns refined
 
 **2. Better computational methods**:
+
 - Improved gene prediction algorithms
+
 - Machine learning approaches
+
 - Better integration of evidence
 
 **3. Error corrections**:
+
 - Previous annotations were wrong
+
 - Pseudogenes misclassified as genes
+
 - Gene boundaries corrected
 
 **4. New regulatory elements**:
+
 - ENCODE project found millions of regulatory regions
+
 - Enhancers identified
+
 - Non-coding RNAs discovered
 
 **5. Improved diversity representation**:
+
 - Original genome from few individuals
+
 - Adding more diverse sequences
+
 - Representing human variation better
 
 **Future**: Pangenome (multiple reference genomes representing diversity)
@@ -1427,34 +2207,53 @@ Gene X in HG38: chr17:43,009,127-43,090,315
 ### Major Biological Databases
 
 **GenBank (NCBI)**:
+
 - DNA and RNA sequences
+
 - Over 1 trillion bases!
+
 - Publicly accessible
+
 - Updated daily
 
 **UniProt**:
+
 - Protein sequences and functions
+
 - Millions of proteins
+
 - Annotated information
 
 **PDB (Protein Data Bank)**:
+
 - 3D protein structures
+
 - X-ray crystallography and Cryo-EM data
+
 - Visualize proteins
 
 **Ensembl**:
+
 - Genome browsers
+
 - Gene annotations
+
 - Comparative genomics
 
 **KEGG (Kyoto Encyclopedia of Genes and Genomes)**:
+
 - Metabolic pathways
+
 - Gene functions
+
 - Disease information
 
 **Think of databases as**:
+
 - Google for genes
+
 - Wikipedia for proteins
+
 - Library of Congress for genomes
 
 ## Sequence Alignment Algorithms
@@ -1462,9 +2261,13 @@ Gene X in HG38: chr17:43,009,127-43,090,315
 ### Finding Similarities
 
 **Why align sequences?**
+
 - Find related genes
+
 - Predict function
+
 - Understand evolution
+
 - Identify mutations
 
 ### BLAST: The Google of Bioinformatics
@@ -1472,14 +2275,21 @@ Gene X in HG38: chr17:43,009,127-43,090,315
 **BLAST** = Basic Local Alignment Search Tool [@altschul1990basic; @altschul1997gapped]
 
 **What it does**:
+
 - Takes your sequence
+
 - Searches entire database
+
 - Finds similar sequences
+
 - Returns matches ranked by similarity
 
 **How fast?**
+
 - Searches millions of sequences in seconds!
+
 - Incredibly useful!
+
 - Used millions of times per day worldwide!
 
 ### Types of BLAST
@@ -1497,27 +2307,43 @@ Gene X in HG38: chr17:43,009,127-43,090,315
 **When to use each**:
 
 **BLASTN**:
+
 - Identify species from DNA barcode
+
 - Find orthologs in closely related species
+
 - Map primers to genome
+
 - Find contamination in sequencing
 
 **BLASTP**:
+
 - Predict protein function
+
 - Find protein families
+
 - Identify domains
+
 - Evolutionary studies
 
 **BLASTX**:
+
 - Translate DNA in all 6 reading frames
+
 - Search for protein homologs
+
 - When you have DNA but want to find protein function
+
 - Useful for ESTs, RNA-seq data
 
 **Example use**:
+
 - Found unknown gene in organism
+
 - BLAST against database
+
 - Find it matches insulin in mice
+
 - Probably insulin in your organism too!
 
 ### Understanding BLAST Results
@@ -1525,59 +2351,108 @@ Gene X in HG38: chr17:43,009,127-43,090,315
 **Key metrics in BLAST output**:
 
 **1. E-value (Expectation value)**:
+
 - **Most important metric!**
+
 - Probability of finding match by chance
+
 - Lower = better!
 
 **Interpretation**:
+
 - **E < 1e-50**: Extremely significant match (almost certainly homologous)
+
 - **E < 1e-10**: Very significant (likely homologous)
+
 - **E < 0.01**: Significant (probably homologous)
+
 - **E > 0.01**: Not significant (might be random)
 
 **Example**:
+```
+
+```
+
+```
+
 ```
 E-value = 1e-100: Expect 1 match by chance in 10^100 searches (excellent!)
 E-value = 0.05: Expect 1 match by chance in 20 searches (weak)
 ```
 
+```
+
+```
+```
+
 **2. Bit Score**:
+
 - Normalized alignment score
+
 - Higher = better
+
 - Independent of database size (unlike E-value)
+
 - Use for comparing across databases
 
 **3. Percent Identity**:
+
 - Percentage of identical residues
+
 - **Critical for functional inference!**
 
 **Identity thresholds for function prediction**:
+
 - **>70%**: Very likely same function
+
 - **40-70%**: Possibly related function (use caution!)
+
 - **<40%**: Uncertain relationship (different function likely)
 
 **Example**:
 ```
+
+```
+
+```
+
+```
 Query: Unknown protein from bacteria
 Top BLAST hit:
+
   - Description: DNA helicase
+
   - E-value: 1e-85
+
   - Identity: 78%
+
   - Bit score: 320
 
 Interpretation: Highly significant match (E-value), high identity (78%)
 → Query protein is likely a DNA helicase with similar function!
 ```
 
+```
+
+```
+```
+
 **4. Query Coverage**:
+
 - Percentage of query sequence aligned
+
 - Important for full-length matches
+
 - Low coverage might indicate partial match or domain
 
 **Best match characteristics**:
+
 - Low E-value (< 1e-10)
+
 - High identity (>70% for function)
+
 - High coverage (>80%)
+
 - High bit score
 
 ### Sequence Similarity and Functional Inference
@@ -1606,24 +2481,43 @@ Interpretation: Highly significant match (E-value), high identity (78%)
 **Important caveats**:
 
 **1. Domain matches**:
+
 - Proteins may share domains but have different functions
+
 - Check if match is full-length or just domain!
 
 **Example**:
+```
+
+```
+
+```
+
 ```
 Query: 500 aa protein
 BLAST match: Kinase domain (100 aa) at 80% identity
 → Query has kinase domain but overall function unclear
 ```
 
+```
+
+```
+```
+
 **2. Multidomain proteins**:
+
 - Proteins with multiple domains
+
 - Each domain may match different proteins
+
 - Function depends on domain combination
 
 **3. Paralog vs. Ortholog**:
+
 - **Orthologs**: Same gene in different species (usually same function)
+
 - **Paralogs**: Related genes from duplication (often different function)
+
 - High similarity doesn't guarantee same function if paralogs!
 
 ### Gene Families and Homology
@@ -1633,44 +2527,85 @@ BLAST match: Kinase domain (100 aa) at 80% identity
 **Types**:
 
 **1. Orthologs**:
+
 - Same gene in different species
+
 - Arose from speciation
+
 - **Usually same function**
+
 - Best for functional transfer!
 
 **Example**:
+```
+
+```
+
+```
+
 ```
 Human β-globin ←→ Mouse β-globin (orthologs)
 Both carry oxygen in red blood cells
 ```
 
+```
+
+```
+```
+
 **2. Paralogs**:
+
 - Related genes within same genome
+
 - Arose from gene duplication
+
 - **Often diverged functions**
+
 - Be careful transferring function!
 
 **Example**:
+```
+
+```
+
+```
+
 ```
 Human α-globin ←→ Human β-globin (paralogs)
 Both in hemoglobin but slightly different roles
 ```
 
+```
+
+```
+```
+
 **3. Gene Families**:
+
 - Groups of related genes
+
 - Share common ancestor
+
 - Varying degrees of functional similarity
 
 **Examples of gene families**:
+
 - **Globin family**: α-globin, β-globin, myoglobin
+
 - **Immunoglobulin family**: Antibodies, T-cell receptors
+
 - **HOX genes**: Developmental regulators
+
 - **Kinase family**: Thousands of kinases with related activity
 
 **Phylogenetic analysis** helps distinguish orthologs from paralogs:
+
 1. BLAST to find homologs
+
 2. Build phylogenetic tree
+
 3. Identify ortholog groups
+
 4. Transfer function to orthologs (not paralogs!)
 
 ### Homology-Based Functional Annotation
@@ -1679,12 +2614,29 @@ Both in hemoglobin but slightly different roles
 
 **Step 1: BLAST Search**
 ```
+
+```
+
+```
+
+```
 Query: Unknown gene from new organism
 Database: NCBI nr (non-redundant protein)
 Result: Top 100 hits
 ```
 
+```
+
+```
+```
+
 **Step 2: Examine Top Hits**
+```
+
+```
+
+```
+
 ```
 Hit 1: DNA polymerase III (E=1e-120, ID=75%)
 Hit 2: DNA polymerase III (E=1e-118, ID=74%)
@@ -1693,28 +2645,55 @@ Hit 3: DNA polymerase III (E=1e-115, ID=73%)
 → Consistent annotation!
 ```
 
+```
+
+```
+```
+
 **Step 3: Check Evidence Quality**
+
 - Are top hits experimentally validated?
+
 - Or just computational predictions?
+
 - Look for "RefSeq", "SwissProt" (curated)
+
 - Avoid "TrEMBL", "Predicted" (less reliable)
 
 **Step 4: Examine Domains**
+
 - Use InterPro, Pfam to find domains
+
 - DNA polymerase has polymerase domain
+
 - Confirms function!
 
 **Step 5: Check GO Terms**
+
 - DNA polymerase III:
+
   - MF: DNA-directed DNA polymerase activity
+
   - BP: DNA replication
+
   - CC: Replisome
 
 **Step 6: Assign Function with Confidence Level**
 ```
+
+```
+
+```
+
+```
 Gene annotation: DNA polymerase III subunit alpha
 Evidence: BLAST (E=1e-120, ID=75%), Pfam domain, GO terms
 Confidence: HIGH
+```
+
+```
+
+```
 ```
 
 ### Common BLAST Pitfalls
@@ -1725,8 +2704,19 @@ Confidence: HIGH
 
 **Solution**: Use low-complexity filter (default in BLAST)
 ```
+
+```
+
+```
+
+```
 BLAST parameter: -seg yes (for proteins)
                   -dust yes (for DNA)
+```
+
+```
+
+```
 ```
 
 **Problem 2: Short queries**
@@ -1734,8 +2724,11 @@ BLAST parameter: -seg yes (for proteins)
 **Issue**: Short sequences give many spurious hits
 
 **Solution**:
+
 - Need >30 aa for proteins, >50 bp for DNA
+
 - Lower E-value threshold
+
 - Use higher word size
 
 **Problem 3: Database choice**
@@ -1743,10 +2736,15 @@ BLAST parameter: -seg yes (for proteins)
 **Issue**: Wrong database gives misleading results
 
 **Databases**:
+
 - **nr**: All sequences (comprehensive but noisy)
+
 - **RefSeq**: Curated, high quality (recommended!)
+
 - **SwissProt**: Manually curated proteins (gold standard, but incomplete)
+
 - **PDB**: Only sequences with 3D structures
+
 - **Organism-specific**: Limit to taxonomic group
 
 **Problem 4: Outdated databases**
@@ -1766,21 +2764,33 @@ BLAST parameter: -seg yes (for proteins)
 **PSI-BLAST** = Position-Specific Iterated BLAST
 
 **What it does**:
+
 - Iterative search
+
 - Builds profile from first results
+
 - Uses profile to find more distant homologs
+
 - **Detects remote homologs** that regular BLAST misses!
 
 **Workflow**:
+
 1. Run initial BLAST
+
 2. Build position-specific scoring matrix (PSSM) from hits
+
 3. Search again with PSSM
+
 4. Iterate 3-5 rounds
+
 5. Finds distant family members!
 
 **Use cases**:
+
 - Find distant evolutionary relationships
+
 - Expand protein families
+
 - Detect remote homologs (<30% identity)
 
 **Caution**: Can diverge and pick up false positives in later iterations!
@@ -1792,15 +2802,23 @@ BLAST parameter: -seg yes (for proteins)
 **Goal**: Ensure primers bind only to target gene
 
 **Workflow**:
+
 1. Design primers for gene of interest
+
 2. BLAST each primer against genome
+
 3. Check for off-target matches
+
 4. Redesign if necessary
 
 **Settings for primer BLAST**:
+
 - Short query (18-25 bp primers)
+
 - Allow some mismatches
+
 - Check both forward and reverse primers
+
 - Use organism-specific database
 
 **Tool**: NCBI Primer-BLAST (specialized for this!)
@@ -1813,17 +2831,37 @@ BLAST parameter: -seg yes (for proteins)
 
 **BLAST results** (simplified):
 ```
+
+```
+
+```
+```
+
 1. Mouse β-actin      (E=0, ID=99%)  ← Ortholog
+
 2. Rat β-actin        (E=0, ID=98%)  ← Ortholog
+
 3. Human α-actin      (E=1e-180, ID=93%)  ← Paralog
+
 4. Yeast actin        (E=1e-150, ID=88%)  ← Ancient ortholog
+
 5. Plant actin        (E=1e-140, ID=85%)  ← Ancient ortholog
+
+```
+
+```
+```
+
 ```
 
 **Interpretation**:
+
 - β-actin highly conserved across mammals (orthologs)
+
 - α-actin and β-actin are paralogs (gene duplication)
+
 - Actin family ancient (found in yeast, plants!)
+
 - All have similar function (cytoskeleton)
 
 ### BLAST Databases
@@ -1831,36 +2869,57 @@ BLAST parameter: -seg yes (for proteins)
 **Major databases**:
 
 **1. NCBI nr (non-redundant)**:
+
 - All GenBank + RefSeq + PDB + SwissProt
+
 - Most comprehensive
+
 - Updated daily
+
 - Some redundancy despite name!
 
 **2. RefSeq**:
+
 - Curated reference sequences
+
 - High quality annotations
+
 - Non-redundant
+
 - **Recommended for most uses**
 
 **3. SwissProt** (UniProtKB/Swiss-Prot):
+
 - Manually curated
+
 - Highest quality
+
 - Experimental evidence
+
 - But incomplete coverage
 
 **4. TrEMBL** (UniProtKB/TrEMBL):
+
 - Computationally annotated
+
 - Comprehensive but lower quality
+
 - Supplement to SwissProt
 
 **5. PDB**:
+
 - Only proteins with 3D structures
+
 - Small but high-quality
+
 - Use for structural comparisons
 
 **6. Organism-specific**:
+
 - Human, mouse, E. coli, etc.
+
 - Faster searches
+
 - More relevant results
 
 ### Interpreting BLAST for Pathogen Identification
@@ -1868,23 +2927,42 @@ BLAST parameter: -seg yes (for proteins)
 **Use case**: Unknown bacteria, want to identify species
 
 **Workflow**:
+
 1. Sequence 16S rRNA gene (universal barcode)
+
 2. BLAST against 16S rRNA database
+
 3. Top hit identifies species
 
 **Example**:
 ```
+
+```
+
+```
+
+```
 Query: 16S rRNA from unknown bacteria
 Top BLAST hit:
+
   - Escherichia coli str. K-12 (E=0, ID=99.8%)
 
 Interpretation: Sample is E. coli K-12 strain
 ```
 
+```
+
+```
+```
+
 **Critical thresholds** (16S rRNA):
+
 - **>99%**: Same species
+
 - **97-99%**: Likely same species
+
 - **95-97%**: Same genus
+
 - **<95%**: Different genus
 
 ### BLAST Best Practices
@@ -1912,19 +2990,27 @@ Interpretation: Sample is E. coli K-12 strain
 **Comparing two sequences**:
 
 **Global alignment** (Needleman-Wunsch):
+
 - Align entire sequences end-to-end
+
 - Best for similar-length, similar sequences
 
 **Local alignment** (Smith-Waterman):
+
 - Find best matching regions
+
 - Don't need to align everything
+
 - BLAST uses this approach!
 
 ### Multiple Sequence Alignment
 
 **Aligning many sequences at once**:
+
 - Finds conserved regions across species
+
 - Reveals important functional sites
+
 - Used for phylogenetics
 
 **Tools**: MUSCLE, MAFFT, Clustal Omega
@@ -1936,16 +3022,23 @@ Interpretation: Sample is E. coli K-12 strain
 **Conservation** = How similar a DNA/protein sequence is across different species or within a genome [@siepel2005evolutionarily; @pollard2010detection].
 
 Think of it like:
+
 - 📖 **Ancient texts** preserved through copying (important texts conserved more carefully)
+
 - 🏛️ **Historical buildings** maintained over centuries (functional ones preserved)
+
 - 💎 **Family heirlooms** passed down unchanged (valuable things kept safe)
 
 **The principle**: **If a sequence is conserved, it's probably important!**
 
 **Why?**
+
 - Natural selection eliminates harmful mutations
+
 - Functional sequences resist change
+
 - Non-functional sequences accumulate random mutations
+
 - Evolution is the ultimate experiment!
 
 ### Why Conservation Matters
@@ -1953,24 +3046,37 @@ Think of it like:
 **Conservation reveals**:
 
 **1. Functional Importance**:
+
 - Highly conserved → functionally critical
+
 - Variable regions → less critical
+
 - Like finding which parts of a machine are essential
 
 **2. Regulatory Elements**:
+
 - Conserved non-coding sequences often regulatory
+
 - Enhancers, promoters, silencers
+
 - Hard to find by sequence alone
+
 - Conservation highlights them!
 
 **3. Disease-Causing Mutations**:
+
 - Mutations in conserved regions more likely pathogenic
+
 - Used in clinical variant interpretation
+
 - Conservation score predicts impact
 
 **4. Drug Targets**:
+
 - Target conserved regions in pathogens
+
 - Avoid conserved regions in humans
+
 - Reduces side effects
 
 ### Measuring Conservation
@@ -1978,28 +3084,43 @@ Think of it like:
 **Conservation score** = Quantitative measure of sequence similarity
 
 **Range**: Typically 0 to 1 (or 0 to 100%)
+
 - **1.0** (100%) = Perfectly conserved (identical across species)
+
 - **0.5** (50%) = Moderately conserved
+
 - **0.0** (0%) = Not conserved (random variation)
 
 **Popular methods**:
 
 **1. PhyloP**:
+
 - Tests for conservation vs. neutral evolution
+
 - Positive scores = conserved
+
 - Negative scores = accelerated evolution
+
 - Based on phylogenetic trees
 
 **2. PhastCons**:
+
 - Identifies conserved elements
+
 - Hidden Markov Model approach
+
 - Returns probability of conservation
+
 - Smooths across neighboring bases
 
 **3. GERP (Genomic Evolutionary Rate Profiling)**:
+
 - Detects constrained elements
+
 - Compares observed vs. expected substitutions
+
 - Positive scores = conserved
+
 - Widely used in clinical genomics
 
 ### Conservation Across Genome Regions
@@ -2019,10 +3140,21 @@ Different parts of genes show different conservation levels:
 
 **Example - BRCA1 gene**:
 ```
+
+```
+
+```
+
+```
 Conservation track (UCSC Genome Browser):
 Exon 11: ████████████ (0.95 - highly conserved)
 Intron 10: ▒▒▒░░░▒▒░░░ (0.35 - less conserved)
 Promoter: ████▒▒████ (0.80 - conserved)
+```
+
+```
+
+```
 ```
 
 **Interpretation**: Exons and promoter are conserved (functional), introns less so
@@ -2032,20 +3164,31 @@ Promoter: ████▒▒████ (0.80 - conserved)
 **Synonymous vs. Non-synonymous mutations**:
 
 **Synonymous (silent) mutations**:
+
 - Change DNA codon but **NOT** amino acid
+
 - Example: CTT → CTC (both code for Leucine)
+
 - Often tolerated (lower selection pressure)
+
 - Lower impact on conservation
 
 **Non-synonymous mutations**:
+
 - Change DNA codon AND amino acid
+
 - Example: CTT (Leu) → CAT (His)
+
 - Often deleterious if in conserved region
+
 - Higher selection pressure against them
 
 **Conservation scoring accounts for this**:
+
 - Non-synonymous changes in conserved regions → high pathogenicity score
+
 - Synonymous changes → lower pathogenicity score
+
 - Transition mutations (purine ↔ purine, pyrimidine ↔ pyrimidine) more tolerated than transversions
 
 ### Example: Actin Conservation
@@ -2053,15 +3196,23 @@ Promoter: ████▒▒████ (0.80 - conserved)
 **Actin** is one of the most conserved proteins!
 
 **Comparison**:
+
 - Yeast actin vs. Human actin
+
 - **Sequence similarity: ~90%!**
+
 - Separated by >1 billion years of evolution
+
 - Conservation score near 1.0 across entire gene
 
 **Why so conserved?**
+
 - Essential for cell structure
+
 - Interacts with many proteins
+
 - Changes break cellular machinery
+
 - Strong negative selection
 
 **Practical implication**: Can study human actin in yeast! (Model organisms)
@@ -2071,18 +3222,27 @@ Promoter: ████▒▒████ (0.80 - conserved)
 **5' and 3' UTRs** (Untranslated Regions):
 
 **Generally less conserved than exons**:
+
 - Exons: 0.85-0.95 conservation
+
 - UTRs: 0.50-0.70 conservation
 
 **But important exceptions**:
+
 - microRNA binding sites in 3' UTR → highly conserved
+
 - Regulatory elements in 5' UTR → conserved
+
 - Shows functional importance!
 
 **Practical use**:
+
 1. Sequence gene across species
+
 2. Align UTRs
+
 3. Find conserved patches
+
 4. → Likely regulatory elements!
 
 ### PhyloP and PhastCons Scores
@@ -2090,35 +3250,61 @@ Promoter: ████▒▒████ (0.80 - conserved)
 **PhyloP** (Phylogenetic P-values):
 
 **What it measures**:
+
 - Conservation or acceleration at each position
+
 - Based on multiple species alignment
+
 - Statistical significance of conservation
 
 **Score interpretation**:
+
 - **PhyloP > +2.0**: Highly conserved (p < 0.05)
+
 - **PhyloP = 0**: Neutral evolution
+
 - **PhyloP < -2.0**: Accelerated evolution (positive selection?)
 
 **PhastCons** (Phylogenetic Hidden Markov Model Conservation):
 
 **What it measures**:
+
 - Probability that each position is in a conserved element
+
 - Considers neighboring positions (smoothing)
+
 - Better for finding conserved regions (not just bases)
 
 **Score interpretation**:
+
 - **PhastCons > 0.8**: Likely in conserved element
+
 - **PhastCons 0.3-0.8**: Moderate conservation
+
 - **PhastCons < 0.3**: Not conserved
 
 **Visualizing in genome browser**:
 ```
+
+```
+
+```
+
+```
 UCSC Genome Browser → Add Track → Conservation
+
 - Vertebrate Conservation (100 species)
+
 - Mammal Conservation (60 species)
+
 - Primate Conservation (20 species)
 
 View PhyloP and PhastCons tracks side-by-side!
+```
+
+```
+
+```
 ```
 
 ### Using Conservation in Variant Interpretation
@@ -2138,6 +3324,12 @@ View PhyloP and PhastCons tracks side-by-side!
 
 **Example**:
 ```
+
+```
+
+```
+
+```
 Patient variant: BRCA1 c.5266dupC (frameshift)
 Position: Exon 20
 PhyloP score: 6.8 (extremely conserved)
@@ -2145,9 +3337,17 @@ Interpretation: Highly conserved region → variant likely pathogenic
 Clinical action: High-risk cancer surveillance
 ```
 
+```
+
+```
+```
+
 **ACMG Guidelines** (Clinical variant interpretation):
+
 - Conservation is **"Supporting" evidence** for pathogenicity
+
 - Combined with other evidence (functional studies, population frequency, etc.)
+
 - Not used alone!
 
 ### Conserved Non-Coding Elements
@@ -2157,25 +3357,39 @@ Clinical action: High-risk cancer surveillance
 **Examples**:
 
 **1. Ultraconserved Elements (UCEs)**:
+
 - **100% identical** across human, mouse, rat
+
 - Often >200 bp long
+
 - Function often unknown!
+
 - Likely critical regulatory elements
 
 **2. Conserved Non-coding Sequences (CNS)**:
+
 - High conservation in intergenic regions
+
 - Enhancers for developmental genes
+
 - Many near Hox genes, transcription factors
 
 **3. MicroRNA binding sites**:
+
 - Short conserved sequences in 3' UTRs
+
 - ~7 nucleotides (seed region)
+
 - Critical for gene regulation
 
 **Discovery method**:
+
 1. Align human genome to 100 vertebrate genomes
+
 2. Find conserved regions outside genes
+
 3. Test in experiments (reporter assays)
+
 4. → Many are enhancers!
 
 **Clinical importance**: Mutations in these regions can cause disease!
@@ -2187,23 +3401,35 @@ Clinical action: High-risk cancer surveillance
 **Rate of evolution** varies by selective pressure:
 
 **Strong purifying selection** (negative selection):
+
 - Removes harmful mutations
+
 - **Result**: High conservation
+
 - **Example**: Active site of enzymes
 
 **Neutral evolution**:
+
 - No selection pressure
+
 - **Result**: Low conservation
+
 - **Example**: Synonymous sites, intergenic regions
 
 **Positive selection**:
+
 - Favors new mutations
+
 - **Result**: Accelerated evolution (low conservation, but meaningful!)
+
 - **Example**: Immune system genes (fighting ever-changing pathogens)
 
 **dN/dS ratio** (Non-synonymous/Synonymous substitution rate):
+
 - **dN/dS < 1**: Purifying selection (conserved)
+
 - **dN/dS = 1**: Neutral evolution
+
 - **dN/dS > 1**: Positive selection (adaptive)
 
 ### Conservation-Based Gene Finding
@@ -2211,21 +3437,38 @@ Clinical action: High-risk cancer surveillance
 **Strategy**: Use conservation to find genes!
 
 **Approach**:
+
 1. Align genome to related species
+
 2. Find conserved ORFs
+
 3. → Likely protein-coding genes!
 
 **Advantages**:
+
 - Confirms ab initio predictions
+
 - Finds genes missed by other methods
+
 - Reduces false positives
 
 **Example**:
+```
+
+```
+
+```
+
 ```
 Ab initio prediction: 100 potential genes
 Conservation filtering: 82 conserved ORFs
 → High confidence: 82 genes
 → Low confidence: 18 genes (likely false positives)
+```
+
+```
+
+```
 ```
 
 ### Mutation Types and Conservation Impact
@@ -2245,18 +3488,27 @@ Conservation filtering: 82 conserved ORFs
 ### Tools for Conservation Analysis
 
 **Genome browsers**:
+
 - **UCSC Genome Browser**: PhyloP, PhastCons tracks
+
 - **Ensembl**: Conservation scores
+
 - **IGV**: Load conservation tracks
 
 **Variant effect predictors**:
+
 - **CADD** (Combined Annotation Dependent Depletion): Integrates conservation
+
 - **SIFT**: Uses sequence conservation to predict impact
+
 - **PolyPhen-2**: Considers conservation in pathogenicity scoring
 
 **Command-line tools**:
+
 - **phyloP**: Calculate conservation scores
+
 - **phastCons**: Identify conserved elements
+
 - **GERP++**: Genomic conservation scoring
 
 ### Limitations of Conservation Analysis
@@ -2264,23 +3516,35 @@ Conservation filtering: 82 conserved ORFs
 **Important caveats**:
 
 **1. Species-Specific Functions**:
+
 - Not all functional elements are conserved
+
 - Recent evolutionary innovations not conserved
+
 - Human-specific regulatory elements missed
 
 **2. Incomplete Sampling**:
+
 - Conservation depends on which species compared
+
 - More species → better power
+
 - But bias toward well-sequenced organisms
 
 **3. Neutral Conserved Regions**:
+
 - Low mutation rate ≠ functional importance
+
 - Some regions conserved by chance
+
 - Need experimental validation
 
 **4. Rapidly Evolving Functional Elements**:
+
 - Some genes under positive selection
+
 - Immune genes, olfactory receptors
+
 - Low conservation doesn't mean non-functional!
 
 ### Best Practices
@@ -2310,8 +3574,19 @@ Conservation filtering: 82 conserved ORFs
 
 **Step 1: Variant Detection from Sequencing**
 ```
+
+```
+
+```
+
+```
 Patient DNA → Whole exome/genome sequencing → Variant calling
 Result: List of ~20,000-100,000 variants (SNPs, indels) per patient
+```
+
+```
+
+```
 ```
 
 **Challenge**: Which variant causes disease?
@@ -2319,20 +3594,31 @@ Result: List of ~20,000-100,000 variants (SNPs, indels) per patient
 **Step 2: Variant Filtering**
 
 **Apply computational filters**:
+
 1. **Frequency filter**: Remove common variants (MAF > 1%)
+
    - Disease-causing variants usually rare
+
    - Use gnomAD database
+
    - Reduces to ~1,000 variants
 
 2. **Gene filter**: Focus on disease-relevant genes
+
    - Known disease genes
+
    - Genes in relevant pathway
+
    - Reduces to ~100-500 variants
 
 3. **Functional impact filter**: Prioritize high-impact variants
+
    - Nonsense, frameshift → HIGH
+
    - Missense in conserved region → MODERATE
+
    - Synonymous → LOW
+
    - Reduces to ~10-50 candidates
 
 **Step 3: Variant Annotation**
@@ -2340,75 +3626,125 @@ Result: List of ~20,000-100,000 variants (SNPs, indels) per patient
 **For each candidate variant, determine**:
 
 **A. Gene and Region Affected**
+
 - Which gene?
+
 - Exon, intron, UTR, promoter?
+
 - Use genome browser (UCSC, Ensembl)
 
 **B. Functional Prediction**
+
 - BLAST homology: Is position conserved?
+
 - PhyloP conservation score
+
 - SIFT/PolyPhen prediction (pathogenic vs. benign)
 
 **C. Existing Knowledge**
+
 - Check ClinVar database
+
 - Has this variant been reported?
+
 - Known pathogenic/benign classification?
 
 **D. Gene Ontology**
+
 - What pathways affected?
+
 - Compatible with patient phenotype?
 
 **Step 4: Detailed Analysis of Top Candidate**
 
 **Example case**:
 ```
+
+```
+
+```
+
+```
 Patient: 8-year-old with cardiomyopathy (heart muscle disease)
 Sequencing: Exome sequencing
 Candidate variant: MYH7 c.2389C>T (p.Arg797Cys)
 ```
 
+```
+
+```
+```
+
 **Annotation workflow**:
 
 **1. Gene identification**:
+
 - Gene: MYH7 (myosin heavy chain 7)
+
 - Location: Chromosome 14
+
 - Function: Cardiac muscle contraction
 
 **2. ORF and protein impact**:
+
 - ORF disruption: Missense mutation (Arg → Cys)
+
 - Position: Codon 797 in exon 21
+
 - Protein domain: Motor domain (critical!)
 
 **3. Conservation analysis**:
+
 - BLAST MYH7 across species:
+
   - Human-Mouse: 98% identity
+
   - Human-Zebrafish: 85% identity
+
 - Position 797 (Arg):
+
   - PhyloP score: 7.2 (highly conserved!)
+
   - 100% conserved across all vertebrates
+
 - → Mutation at highly conserved position
 
 **4. Functional prediction**:
+
 - SIFT score: 0.01 (deleterious, cutoff 0.05)
+
 - PolyPhen-2: 0.98 (probably damaging, cutoff 0.85)
+
 - CADD score: 28 (pathogenic, cutoff 20)
+
 - → All predictors agree: pathogenic!
 
 **5. Gene Ontology**:
+
 - MF: Motor activity (GO:0003774)
+
 - BP: Cardiac muscle contraction (GO:0060048)
+
 - CC: Myosin complex (GO:0016459)
+
 - → Gene function matches patient phenotype!
 
 **6. ClinVar check**:
+
 - Variant reported 15 times
+
 - Classification: **Pathogenic**
+
 - Associated disease: Hypertrophic cardiomyopathy
+
 - → Known disease-causing variant!
 
 **7. Literature review**:
+
 - PubMed search: MYH7 + cardiomyopathy
+
 - Multiple papers confirm pathogenicity
+
 - Functional studies show disrupted muscle contraction
 
 **Conclusion**: MYH7 p.Arg797Cys is disease-causing variant
@@ -2424,27 +3760,46 @@ Candidate variant: MYH7 c.2389C>T (p.Arg797Cys)
 **Analysis approach**:
 
 **1. Identify promoter elements**:
+
 - Use genome browser (UCSC)
+
 - Look for CpG islands, TATA box, transcription factor binding sites
+
 - Check conservation across species
 
 **2. Assess mutation location**:
+
 - Is mutation in core promoter? (critical!)
+
 - In enhancer region?
+
 - In transcription factor binding site?
 
 **3. Predict transcriptional impact**:
+
 - Mutations in TATA box → reduced transcription
+
 - Mutations in enhancer → tissue-specific effects
+
 - Use tools: JASPAR (TF binding site prediction)
 
 **4. Experimental validation**:
+
 - Reporter assays (luciferase)
+
 - Clone promoter with/without mutation
+
 - Measure expression level
+
 - Validate computational predictions!
 
 **Example**:
+```
+
+```
+
+```
+
 ```
 Variant: β-globin promoter mutation (-28 A>G)
 Effect: Reduced transcription by 70%
@@ -2452,22 +3807,37 @@ Disease: β-thalassemia (low hemoglobin)
 Mechanism: Disrupts TATA box recognition
 ```
 
+```
+
+```
+```
+
 ### Mutation Analysis: UTR Regions
 
 **5' UTR mutations**:
+
 - Affect translation efficiency
+
 - Can create upstream ORFs (uORFs)
+
 - Interfere with ribosome scanning
 
 **3' UTR mutations**:
+
 - Affect mRNA stability
+
 - Disrupt microRNA binding sites
+
 - Change polyadenylation
 
 **Analysis**:
+
 1. Check conservation (conserved UTR patches → regulatory!)
+
 2. Predict microRNA binding sites (TargetScan, miRanda)
+
 3. Assess polyadenylation signals
+
 4. Reporter assays to measure mRNA stability
 
 ### Drug Target Discovery Workflow
@@ -2480,17 +3850,37 @@ Mechanism: Disrupts TATA box recognition
 
 **Step 1: Sequence pathogen genome**
 ```
+
+```
+
+```
+
+```
 Example: New drug-resistant Staphylococcus aureus strain
 → Whole genome sequencing
 → Gene annotation (ab initio + homology)
 ```
 
+```
+
+```
+```
+
 **Step 2: Identify essential genes**
+
 - Literature: Known essential genes in related bacteria
+
 - Experiments: Transposon mutagenesis screens
+
 - Result: ~300 essential genes
 
 **Step 3: Filter for bacterial-specific genes**
+```
+
+```
+
+```
+
 ```
 For each essential gene:
   BLAST against human genome
@@ -2500,36 +3890,73 @@ For each essential gene:
 Result: ~150 bacterial-specific essential genes
 ```
 
+```
+
+```
+```
+
 **Step 4: GO term analysis**
+
 - Group by function:
+
   - Cell wall synthesis (30 genes)
+
   - DNA replication (25 genes)
+
   - Protein synthesis (40 genes)
+
   - Metabolism (55 genes)
 
 **Step 5: Prioritize druggable targets**
+
 - Enzymes > structural proteins (easier to inhibit)
+
 - Look for active sites, binding pockets
+
 - Check if similar targets already drugged
+
 - Result: ~20 high-priority targets
 
 **Step 6: Conservation across bacterial strains**
 ```
+
+```
+
+```
+
+```
 BLAST each target across:
+
   - Multiple S. aureus strains
+
   - Related bacteria (broad-spectrum potential)
 
 Highly conserved (>90%) → Broad-spectrum antibiotic!
 Variable → Strain-specific target
 ```
 
+```
+
+```
+```
+
 **Step 7: Experimental validation**
+
 - Synthesize/purify target protein
+
 - Screen chemical libraries for inhibitors
+
 - Test in bacterial growth assays
+
 - Lead optimization
 
 **Example outcome**:
+```
+
+```
+
+```
+
 ```
 Target: FabI (enoyl-ACP reductase)
 Function: Fatty acid synthesis (essential)
@@ -2540,41 +3967,67 @@ Drug: Triclosan (proof of concept)
 Status: Validated antibiotic target!
 ```
 
+```
+
+```
+```
+
 ### Annotation Best Practices Summary
 
 From the lecture notes, **key principles for robust annotation**:
 
 **1. Cross-validation**:
+
 - Use multiple algorithms (ab initio + homology + RNA-seq)
+
 - Compare results
+
 - Trust consensus predictions
 
 **2. Avoid automation errors**:
+
 - Computational predictions not perfect
+
 - Manual curation essential for important genes
+
 - Expert review reduces errors
 
 **3. Account for alternative splicing**:
+
 - Multiple isoforms from one gene
+
 - Different proteins, different functions
+
 - Annotate all isoforms
 
 **4. Document methods clearly**:
+
 - Which tools used?
+
 - Which databases?
+
 - Which genome build (HG19 vs HG38)?
+
 - Essential for reproducibility!
 
 **5. Use multiple evidence types**:
+
 - Sequence similarity (BLAST)
+
 - Conservation (PhyloP/PhastCons)
+
 - Expression data (RNA-seq)
+
 - Protein evidence (mass spec)
+
 - Literature (PubMed)
 
 **6. Uncertainty handling**:
+
 - If uncertain → mark as "hypothetical protein"
+
 - Better than wrong annotation!
+
 - Provides confidence scores when possible
 
 ### Integration Example: Full Workflow
@@ -2584,36 +4037,60 @@ From the lecture notes, **key principles for robust annotation**:
 **Complete annotation pipeline**:
 
 **1. ORF Detection**:
+
 - Scan for start codon (ATG)
+
 - Find stop codons
+
 - Identify longest ORF
+
 - Check for introns (if eukaryote)
 
 **2. Homology Search (BLAST)**:
+
 - BLASTP against RefSeq
+
 - Top hit: 75% identity to DNA helicase
+
 - E-value: 1e-120 (highly significant)
 
 **3. Domain Analysis**:
+
 - InterPro/Pfam scan
+
 - Detects: Helicase domain (IPR001650)
+
 - Confirms BLAST prediction
 
 **4. Conservation**:
+
 - PhyloP: 6.5 (highly conserved)
+
 - Aligns across 50 species
+
 - Critical residues 100% conserved
 
 **5. Gene Ontology**:
+
 - MF: DNA helicase activity (GO:0003678)
+
 - BP: DNA replication (GO:0006260)
+
 - CC: Nucleus (GO:0005634)
 
 **6. Expression (if available)**:
+
 - RNA-seq: Highly expressed in dividing cells
+
 - Consistent with replication function
 
 **7. Final Annotation**:
+```
+
+```
+
+```
+
 ```
 Gene: helicase-1 (hel1)
 Product: DNA helicase, putative
@@ -2624,10 +4101,19 @@ Confidence: HIGH
 GO: 0003678, 0006260, 0005634
 ```
 
+```
+
+```
+```
+
 **Quality control**:
+
 - Multiple lines of evidence agree ✓
+
 - High confidence annotation ✓
+
 - Well-documented ✓
+
 - Ready for publication/database submission ✓
 
 ## Primer Design and Quantitative PCR (qPCR)
@@ -2637,13 +4123,19 @@ GO: 0003678, 0006260, 0005634
 **Primers** = Short DNA sequences (18-25 nucleotides) that bind to template DNA and initiate DNA synthesis
 
 Think of primers like:
+
 - 🎯 **GPS coordinates** telling DNA polymerase where to start
+
 - 🔑 **Keys** that unlock specific DNA regions for amplification
+
 - 🏁 **Starting flags** marking where copying begins
 
 **Why we need them**:
+
 - DNA polymerase cannot start synthesis de novo (from scratch)
+
 - Needs 3'-OH group from existing nucleotide
+
 - Primers provide this starting point!
 
 **Historical note**: This is why DNA polymerase differs from RNA polymerase (which CAN start de novo)
@@ -2653,17 +4145,30 @@ Think of primers like:
 **Critical parameters** for successful primers:
 
 **1. Length**:
+
 - **Optimal**: 18-25 nucleotides
+
 - **Too short** (<15 bp): Not specific enough (binds multiple sites)
+
 - **Too long** (>30 bp): Expensive, slow annealing
 
 **2. Melting Temperature (Tm)**:
+
 - Temperature at which 50% of primers bind to template
+
 - **Optimal**: 55-65°C
+
 - **Forward and reverse primers should have similar Tm** (within 2-3°C)
+
 - Calculate using formula or online tools
 
 **Basic Tm calculation**:
+```
+
+```
+
+```
+
 ```
 Tm = 4(G+C) + 2(A+T)  (rough estimate)
 
@@ -2672,33 +4177,67 @@ A=4, T=3, G=5, C=6
 Tm = 4(5+6) + 2(4+3) = 44 + 14 = 58°C
 ```
 
+```
+
+```
+```
+
 **More accurate**: Use Nearest-Neighbor method or online calculators
 
 **3. GC Content**:
+
 - Percentage of G and C nucleotides
+
 - **Optimal**: 40-60%
+
 - **Too low** (<30%): Weak binding
+
 - **Too high** (>70%): Too strong binding, non-specific
 
 **4. Specificity**:
+
 - Primer should bind ONLY to target sequence
+
 - Check with BLAST (Primer-BLAST tool)
+
 - Avoid repetitive sequences
+
 - Avoid homopolymeric runs (AAAA, GGGG, etc.)
 
 **5. Avoiding Secondary Structures**:
 
 **Self-complementarity**:
+
 - Primer shouldn't bind to itself
+
 - Causes primer-dimers (waste primers!)
+
+```
+```
+
+```
+
 ```
 Bad: 5'-ATGCGCGCAT-3'
       ||||||||| (palindrome - binds to itself!)
 ```
 
+```
+
+```
+```
+
 **Hairpins**:
+
 - Intramolecular folding
+
 - Prevents primer from binding template
+
+```
+```
+
+```
+
 ```
 Bad primer with hairpin:
 5'-ATGCGGCCGCAT-3'
@@ -2706,9 +4245,17 @@ Bad primer with hairpin:
     ====== (stem-loop structure)
 ```
 
+```
+
+```
+```
+
 **6. 3' End Stability**:
+
 - Last 5 nucleotides at 3' end critical
+
 - Should have 1-2 G or C (but not all GCs!)
+
 - **Avoid**: Multiple Gs/Cs at 3' end (binds non-specifically)
 
 ### Primer Design for Different Applications
@@ -2718,12 +4265,22 @@ Bad primer with hairpin:
 **Goal**: Amplify specific DNA region
 
 **Design strategy**:
+
 1. Identify target region (gene, exon, etc.)
+
 2. Design forward primer at 5' end of region
+
 3. Design reverse primer at 3' end (complement!)
+
 4. Product size: 100-1000 bp ideal
 
 **Example**:
+```
+
+```
+
+```
+
 ```
 Target: Amplify exon 5 of BRCA1 gene
 
@@ -2737,12 +4294,23 @@ Reverse primer (RP): Binds at end (reverse complement!)
 Product: Complete exon 5 sequence
 ```
 
+```
+
+```
+```
+
 **Using genome browser for primer design**:
+
 1. Open UCSC Genome Browser
+
 2. Navigate to target gene
+
 3. Zoom to region of interest
+
 4. View sequence (Tools → View DNA)
+
 5. Extract sequences for primer design
+
 6. **Avoid introns!** (primers should span exon-exon junctions or be in exons only)
 
 ### B. qPCR (Quantitative PCR / Real-Time PCR)
@@ -2750,8 +4318,11 @@ Product: Complete exon 5 sequence
 **Goal**: Measure gene expression levels (how much mRNA?)
 
 **Different from regular PCR**:
+
 - Measures product in **real-time** (not just endpoint)
+
 - Quantitative (not just yes/no)
+
 - Uses fluorescent dyes or probes
 
 **Primer design for qPCR is MORE STRINGENT**:
@@ -2759,14 +4330,24 @@ Product: Complete exon 5 sequence
 **Key differences**:
 
 **1. Product size**:
+
 - **Optimal**: 80-150 bp (shorter than regular PCR!)
+
 - Short amplicons = more efficient qPCR
 
 **2. Avoid genomic DNA contamination**:
+
 - Design primers across exon-exon junctions
+
 - Or use DNase treatment
 
 **Example**:
+```
+
+```
+
+```
+
 ```
 Gene structure:
 [Exon 1]--intron--[Exon 2]--intron--[Exon 3]
@@ -2783,36 +4364,62 @@ Genomic DNA gives no product (intron too large)
 cDNA gives short product (introns removed)
 ```
 
+```
+
+```
+```
+
 **3. No template controls essential**:
+
 - Include wells with no template
+
 - Check for primer-dimers
 
 **4. Reference genes**:
+
 - Need housekeeping gene for normalization
+
 - GAPDH, β-actin, 18S rRNA
+
 - Should have stable expression
 
 ### qPCR Workflow
 
 **Step 1: RNA Extraction**
+
 - Extract total RNA from cells/tissue
+
 - Measure concentration (NanoDrop, Qubit)
 
 **Step 2: Reverse Transcription (RT)**
+
 - Convert RNA → cDNA using reverse transcriptase
+
 - Now have DNA template for qPCR
 
 **Step 3: qPCR Reaction**
+
 - Mix cDNA + primers + fluorescent dye (e.g., SYBR Green)
+
 - Run thermal cycles
+
 - Monitor fluorescence in real-time
 
 **Step 4: Data Analysis**
+
 - Ct value (Cycle threshold): Cycle at which fluorescence exceeds background
+
 - Lower Ct = more template (higher expression!)
+
 - **ΔΔCt method** for quantification
 
 **Ct interpretation**:
+```
+
+```
+
+```
+
 ```
 Gene A in control cells: Ct = 20
 Gene A in treated cells: Ct = 17
@@ -2822,37 +4429,61 @@ Each cycle = 2x amplification
 2^3 = 8-fold higher expression in treated cells!
 ```
 
+```
+
+```
+```
+
 ### Primer Design Tools
 
 **Online tools** (free and widely used):
 
 **1. NCBI Primer-BLAST**:
+
 - URL: https://www.ncbi.nlm.nih.gov/tools/primer-blast/
+
 - Best for specificity checking
+
 - BLAST primers against genome
+
 - Finds potential off-target sites
 
 **Workflow**:
+
 1. Enter target sequence or gene name
+
 2. Specify primer parameters (size, Tm, GC%)
+
 3. Tool designs primers automatically
+
 4. Checks specificity by BLAST
+
 5. Returns primers with no off-targets!
 
 **2. Primer3**:
+
 - URL: https://primer3.ut.ee/
+
 - Widely used, flexible
+
 - Many parameters customizable
+
 - Good for general PCR
 
 **3. IDT PrimerQuest**:
+
 - From Integrated DNA Technologies
+
 - Commercial but free to use
+
 - Good for qPCR primer design
 
 **4. UCSC In-Silico PCR**:
+
 - Test if primers amplify expected product
+
 - Uses genome sequence
+
 - Predicts product size
 
 ### Practical Example: Design qPCR Primers for BRCA1
@@ -2861,16 +4492,35 @@ Each cycle = 2x amplification
 
 **Step 1: Open UCSC Genome Browser**
 ```
+
+```
+
+```
+
+```
 Search: BRCA1
 → Chr 17: 43,000,000-43,100,000
 View gene structure
 ```
 
+```
+
+```
+```
+
 **Step 2: Choose target region**
+
 - Exons 10-11 (frequently expressed, large exons)
+
 - Design primers spanning exon junction
 
 **Step 3: Extract sequences**
+```
+
+```
+
+```
+
 ```
 Exon 10: ...GCTATGAAGAATGGAAG...
 Exon 11: ...AATGCCAAGAACTATGC...
@@ -2879,7 +4529,18 @@ Junction: GAATGGAAG|AATGCCAAG
            Exon 10 | Exon 11
 ```
 
+```
+
+```
+```
+
 **Step 4: Design primers**
+```
+
+```
+
+```
+
 ```
 Forward primer (spans junction):
 5'-GAATGGAAGAATGCCAAG-3'
@@ -2893,14 +4554,25 @@ Reverse primer (in exon 11):
 Product size: 120 bp (ideal for qPCR!)
 ```
 
+```
+
+```
+```
+
 **Step 5: Check specificity with Primer-BLAST**
+
 - No off-target amplification ✓
+
 - Only hits BRCA1 ✓
+
 - Ready to order!
 
 **Step 6: Experimental validation**
+
 - Test primers with positive control (BRCA1 cDNA)
+
 - Check melt curve (single peak = specific!)
+
 - Confirm product size by gel electrophoresis
 
 ### Troubleshooting Primer Problems
@@ -2908,46 +4580,67 @@ Product size: 120 bp (ideal for qPCR!)
 **Problem 1: No amplification**
 
 **Causes**:
+
 - Primers don't bind (wrong sequence)
+
 - Template degraded
+
 - Annealing temperature too high
 
 **Solutions**:
+
 - Check primer sequences
+
 - Fresh template
+
 - Gradient PCR (test range of temperatures)
 
 **Problem 2: Multiple bands**
 
 **Causes**:
+
 - Non-specific primer binding
+
 - Primer-dimers
 
 **Solutions**:
+
 - Redesign primers (higher specificity)
+
 - Increase annealing temperature
+
 - Touchdown PCR protocol
 
 **Problem 3: Primer-dimers in qPCR**
 
 **Cause**:
+
 - Primers bind to each other instead of template
 
 **Solution**:
+
 - Redesign to avoid complementarity
+
 - Reduce primer concentration
+
 - Check no-template control
 
 **Problem 4: Variable Ct values (qPCR)**
 
 **Causes**:
+
 - Pipetting errors
+
 - RNA quality issues
+
 - Inhibitors in reaction
 
 **Solutions**:
+
 - Careful pipetting (use repeat pipettors)
+
 - Check RNA integrity (RIN score)
+
 - Dilute template (reduce inhibitors)
 
 ### Expression vs. Amplification Primer Design
@@ -2955,17 +4648,30 @@ Product size: 120 bp (ideal for qPCR!)
 **Key difference**: Where primers bind matters for purpose!
 
 **For expression quantification (qPCR)**:
+
 - Primers must be **mRNA-specific**
+
 - Span exon-exon junctions
+
 - Avoid amplifying genomic DNA
+
 - In coding region of gene
 
 **For gene verification/amplification**:
+
 - Primers can be anywhere in gene
+
 - Introns OK if amplifying genomic DNA
+
 - Promoter region OK for regulatory studies
 
 **Example**:
+```
+
+```
+
+```
+
 ```
 Quantify BRCA1 expression (qPCR):
   → Primers span exon 10-11 junction
@@ -2975,6 +4681,11 @@ Amplify BRCA1 promoter (regular PCR):
   → Primers in promoter region
   → Amplifies genomic DNA
   → Use for mutation screening
+```
+
+```
+
+```
 ```
 
 ### Best Practices for Primer Design
@@ -3000,41 +4711,61 @@ Amplify BRCA1 promoter (regular PCR):
 ### Predicting Protein Structures
 
 **Why it matters**:
+
 - Structure determines function
+
 - Drug design needs structures
+
 - Understanding disease mutations
 
 **The problem**:
+
 - Experiments are slow and expensive
+
 - Can we predict structure from sequence?
 
 ### AlphaFold: AI Solves 50-Year Problem!
 
 **AlphaFold** (Google DeepMind, 2020):
+
 - Uses deep learning / AI
+
 - Predicts 3D structure from sequence
+
 - Near-experimental accuracy!
+
 - **Revolutionary!**
 
 **Impact**:
+
 - Predicted structures for 200+ million proteins!
+
 - Free database (AlphaFold DB)
+
 - Accelerating drug discovery
+
 - Nobel Prize potential
 
 ### Homology Modeling
 
 **Approach**:
+
 - If protein A's structure is known
+
 - And protein B is similar sequence
+
 - Model B based on A's structure
+
 - Works well for similar proteins!
 
 ### Protein-Protein Docking
 
 **Predicting how proteins interact**:
+
 - Important for understanding cell signaling
+
 - Drug development
+
 - Protein engineering
 
 ## Machine Learning in Biology
@@ -3046,28 +4777,43 @@ Amplify BRCA1 promoter (regular PCR):
 **Applications**:
 
 **1. Disease Prediction**:
+
 - Analyze genomes to predict disease risk
+
 - Better than humans at finding subtle patterns
+
 - Personalized risk scores
 
 **2. Variant Interpretation**:
+
 - Millions of variants in each genome
+
 - Which are disease-causing?
+
 - ML helps classify them
 
 **3. Drug Discovery**:
+
 - Predict which molecules bind to targets
+
 - Design new drugs
+
 - Much faster than traditional methods
 
 **4. Image Analysis**:
+
 - Analyze microscopy images
+
 - Count cells automatically
+
 - Detect cancer in pathology slides
 
 **5. Gene Regulation**:
+
 - Predict which sequences control genes
+
 - Understand regulatory code
+
 - Design synthetic promoters
 
 ### Deep Learning Revolution
@@ -3075,9 +4821,13 @@ Amplify BRCA1 promoter (regular PCR):
 **Deep learning** = Advanced ML using neural networks
 
 **Successes**:
+
 - AlphaFold (protein structure)
+
 - DeepVariant (variant calling)
+
 - BaseNJ (DNA sequencing accuracy)
+
 - Drug response prediction
 
 **Future**: AI will be essential partner in biology!
@@ -3087,36 +4837,55 @@ Amplify BRCA1 promoter (regular PCR):
 ### Standard File Formats
 
 **FASTA**:
+
 - Sequence format
+
 - Simple text file
+
 - >Header
+
 - ATCGATCG...
 
 **FASTQ**:
+
 - Sequence + quality scores
+
 - Raw sequencing data
 
 **SAM/BAM**:
+
 - Aligned sequences
+
 - Maps reads to genome
+
 - BAM is compressed SAM
 
 **VCF (Variant Call Format)**:
+
 - Lists genetic variants
+
 - Position, reference, alternate
+
 - Standard for sharing variants
 
 **GFF/GTF**:
+
 - Gene annotations
+
 - Where genes are located
+
 - Exons, introns, etc.
 
 ### Why Standards Matter
 
 **Benefits**:
+
 - Different tools work together
+
 - Share data easily
+
 - Reproducible research
+
 - Collaborate globally
 
 ## Programming in Bioinformatics
@@ -3124,32 +4893,51 @@ Amplify BRCA1 promoter (regular PCR):
 ### Common Languages
 
 **Python**:
+
 - Most popular in bioinformatics
+
 - Easy to learn
+
 - Powerful libraries (BioPython)
+
 - Great for data analysis
 
 **R**:
+
 - Statistical computing
+
 - Excellent for genomics
+
 - BioConductor (huge package collection)
+
 - Beautiful visualizations
 
 **Perl**:
+
 - Text processing
+
 - Older but still used
+
 - BioPerl
 
 **Unix/Linux Command Line**:
+
 - Essential skill!
+
 - File manipulation
+
 - Running tools
+
 - Automating workflows
 
 **Typical workflow**:
+
 1. Process data with Unix commands
+
 2. Analyze with Python/R
+
 3. Visualize results
+
 4. Repeat!
 
 ## Cloud Computing and Big Data
@@ -3157,22 +4945,33 @@ Amplify BRCA1 promoter (regular PCR):
 ### Scaling Up
 
 **The problem**:
+
 - Genomic datasets are HUGE
+
 - Laptop can't handle it
+
 - Need supercomputers
 
 **Solution**: Cloud computing!
 
 **Benefits**:
+
 - Rent computing power as needed
+
 - Scale up or down
+
 - Pay only for what you use
+
 - No need to buy expensive servers
 
 **Platforms**:
+
 - Amazon Web Services (AWS)
+
 - Google Cloud
+
 - Microsoft Azure
+
 - Specialized: DNAnexus, Seven Bridges
 
 ## Workflows and Pipelines
@@ -3182,24 +4981,39 @@ Amplify BRCA1 promoter (regular PCR):
 **Bioinformatics pipeline** = Series of analysis steps run automatically
 
 **Example RNA-seq pipeline**:
+
 1. Quality control (check raw data)
+
 2. Trim adapters
+
 3. Align to genome
+
 4. Count reads per gene
+
 5. Normalize
+
 6. Statistical analysis
+
 7. Visualize results
 
 **Tools for building pipelines**:
+
 - **Nextflow**: Modern, powerful
+
 - **Snakemake**: Python-based
+
 - **Galaxy**: Web-based (no programming!)
+
 - **WDL**: Workflow Description Language
 
 **Benefits**:
+
 - Reproducible
+
 - Automated
+
 - Scalable
+
 - Shareable
 
 ## Challenges in Bioinformatics
@@ -3207,30 +5021,47 @@ Amplify BRCA1 promoter (regular PCR):
 ### Current Problems
 
 **1. Data Quality**:
+
 - Garbage in, garbage out
+
 - Sequencing errors
+
 - Sample contamination
+
 - Need better quality control
 
 **2. Data Integration**:
+
 - Combining different data types
+
 - Genomics + transcriptomics + proteomics
+
 - Different formats, scales, biases
+
 - Multi-omics challenge!
 
 **3. Interpretation**:
+
 - Finding genes is easy
+
 - Understanding function is hard
+
 - Most genes poorly characterized
 
 **4. Reproducibility**:
+
 - Different tools give different results
+
 - Version control important
+
 - Need standard pipelines
 
 **5. Computational Resources**:
+
 - Always need more!
+
 - Costs can be high
+
 - Environmental impact of computing
 
 ## Career Paths in Bioinformatics
@@ -3238,31 +5069,51 @@ Amplify BRCA1 promoter (regular PCR):
 ### Exciting Opportunities!
 
 **What bioinformaticians do**:
+
 - Develop new algorithms
+
 - Analyze genomic data
+
 - Build databases
+
 - Create visualization tools
+
 - Apply ML to biology
+
 - Collaborate with biologists
 
 **Where they work**:
+
 - Universities (research)
+
 - Pharmaceutical companies (drug discovery)
+
 - Biotech startups (diagnostics)
+
 - Hospitals (clinical genomics)
+
 - Government (public health)
+
 - Tech companies (Google, Amazon, Microsoft)
 
 **Skills needed**:
+
 - Biology knowledge
+
 - Programming (Python, R)
+
 - Statistics
+
 - Problem-solving
+
 - Communication (work with biologists!)
 
 **High demand**:
+
 - More data than people to analyze it
+
 - Great job prospects
+
 - Competitive salaries
 
 ## The Future of Bioinformatics
@@ -3270,43 +5121,1578 @@ Amplify BRCA1 promoter (regular PCR):
 ### What's Coming
 
 **1. Real-Time Analysis**:
+
 - Analyze as data is generated
+
 - Feedback during experiments
+
 - Faster discoveries
 
 **2. AI Integration**:
+
 - AI assistants for data analysis
+
 - Automated interpretation
+
 - Hypothesis generation
 
 **3. Personalized Medicine**:
+
 - Analyze your genome on your phone
+
 - Instant health insights
+
 - Continuous monitoring
 
 **4. Synthetic Biology Design**:
+
 - Design organisms on computer
+
 - Predict behavior before building
+
 - Engineering life
 
 **5. Multi-Omics Integration**:
+
 - Combine all data types
+
 - Complete cell picture
+
 - Systems biology realization
 
 ## Key Takeaways
 
 - **Bioinformatics** uses computers to analyze biological data
+
 - Essential due to **massive data** from modern biology
+
 - **Core tasks**: Sequence analysis, assembly, annotation, variant calling
+
 - **Databases** store and share biological information
+
 - **BLAST** is the Google of genomics
+
 - **AlphaFold** revolutionized protein structure prediction with AI
+
 - **Machine learning** increasingly important in biology
+
 - **Programming** (Python, R) is essential skill
+
 - **Cloud computing** handles big data
+
 - **Pipelines** automate and standardize analyses
+
 - High demand for bioinformatics skills
+
+- Future bright with AI integration and personalized medicine
+
+---
+
+**Sources**: Information adapted from bioinformatics textbooks, NCBI resources, and computational biology literature.
+
+
+### Best Practices for Primer Design
+
+**Do's**:
+✅ Use online tools (Primer3, Primer-BLAST)
+✅ Check specificity with BLAST
+✅ Design primers with similar Tm
+✅ Avoid secondary structures
+✅ For qPCR: span exon junctions
+✅ Include positive and negative controls
+✅ Validate experimentally
+
+**Don'ts**:
+❌ Don't use primers with >3 G/C at 3' end
+❌ Don't ignore secondary structure prediction
+❌ Don't skip BLAST specificity check
+❌ Don't design primers in repetitive regions
+❌ Don't use primers from different species (unless checking conservation)
+
+## Structural Bioinformatics
+
+### Predicting Protein Structures
+
+**Why it matters**:
+
+- Structure determines function
+
+- Drug design needs structures
+
+- Understanding disease mutations
+
+**The problem**:
+
+- Experiments are slow and expensive
+
+- Can we predict structure from sequence?
+
+### AlphaFold: AI Solves 50-Year Problem!
+
+**AlphaFold** (Google DeepMind, 2020):
+
+- Uses deep learning / AI
+
+- Predicts 3D structure from sequence
+
+- Near-experimental accuracy!
+
+- **Revolutionary!**
+
+**Impact**:
+
+- Predicted structures for 200+ million proteins!
+
+- Free database (AlphaFold DB)
+
+- Accelerating drug discovery
+
+- Nobel Prize potential
+
+### Homology Modeling
+
+**Approach**:
+
+- If protein A's structure is known
+
+- And protein B is similar sequence
+
+- Model B based on A's structure
+
+- Works well for similar proteins!
+
+### Protein-Protein Docking
+
+**Predicting how proteins interact**:
+
+- Important for understanding cell signaling
+
+- Drug development
+
+- Protein engineering
+
+## Machine Learning in Biology
+
+### AI Meets Genomics
+
+**Machine learning** = Teaching computers to learn patterns from data
+
+**Applications**:
+
+**1. Disease Prediction**:
+
+- Analyze genomes to predict disease risk
+
+- Better than humans at finding subtle patterns
+
+- Personalized risk scores
+
+**2. Variant Interpretation**:
+
+- Millions of variants in each genome
+
+- Which are disease-causing?
+
+- ML helps classify them
+
+**3. Drug Discovery**:
+
+- Predict which molecules bind to targets
+
+- Design new drugs
+
+- Much faster than traditional methods
+
+**4. Image Analysis**:
+
+- Analyze microscopy images
+
+- Count cells automatically
+
+- Detect cancer in pathology slides
+
+**5. Gene Regulation**:
+
+- Predict which sequences control genes
+
+- Understand regulatory code
+
+- Design synthetic promoters
+
+### Deep Learning Revolution
+
+**Deep learning** = Advanced ML using neural networks
+
+**Successes**:
+
+- AlphaFold (protein structure)
+
+- DeepVariant (variant calling)
+
+- BaseNJ (DNA sequencing accuracy)
+
+- Drug response prediction
+
+**Future**: AI will be essential partner in biology!
+
+## Genomic Data Formats
+
+### Standard File Formats
+
+**FASTA**:
+
+- Sequence format
+
+- Simple text file
+
+- >Header
+
+- ATCGATCG...
+
+**FASTQ**:
+
+- Sequence + quality scores
+
+- Raw sequencing data
+
+**SAM/BAM**:
+
+- Aligned sequences
+
+- Maps reads to genome
+
+- BAM is compressed SAM
+
+**VCF (Variant Call Format)**:
+
+- Lists genetic variants
+
+- Position, reference, alternate
+
+- Standard for sharing variants
+
+**GFF/GTF**:
+
+- Gene annotations
+
+- Where genes are located
+
+- Exons, introns, etc.
+
+### Why Standards Matter
+
+**Benefits**:
+
+- Different tools work together
+
+- Share data easily
+
+- Reproducible research
+
+- Collaborate globally
+
+## Programming in Bioinformatics
+
+### Common Languages
+
+**Python**:
+
+- Most popular in bioinformatics
+
+- Easy to learn
+
+- Powerful libraries (BioPython)
+
+- Great for data analysis
+
+**R**:
+
+- Statistical computing
+
+- Excellent for genomics
+
+- BioConductor (huge package collection)
+
+- Beautiful visualizations
+
+**Perl**:
+
+- Text processing
+
+- Older but still used
+
+- BioPerl
+
+**Unix/Linux Command Line**:
+
+- Essential skill!
+
+- File manipulation
+
+- Running tools
+
+- Automating workflows
+
+**Typical workflow**:
+
+1. Process data with Unix commands
+
+2. Analyze with Python/R
+
+3. Visualize results
+
+4. Repeat!
+
+## Cloud Computing and Big Data
+
+### Scaling Up
+
+**The problem**:
+
+- Genomic datasets are HUGE
+
+- Laptop can't handle it
+
+- Need supercomputers
+
+**Solution**: Cloud computing!
+
+**Benefits**:
+
+- Rent computing power as needed
+
+- Scale up or down
+
+- Pay only for what you use
+
+- No need to buy expensive servers
+
+**Platforms**:
+
+- Amazon Web Services (AWS)
+
+- Google Cloud
+
+- Microsoft Azure
+
+- Specialized: DNAnexus, Seven Bridges
+
+## Workflows and Pipelines
+
+### Automating Analysis
+
+**Bioinformatics pipeline** = Series of analysis steps run automatically
+
+**Example RNA-seq pipeline**:
+
+1. Quality control (check raw data)
+
+2. Trim adapters
+
+3. Align to genome
+
+4. Count reads per gene
+
+5. Normalize
+
+6. Statistical analysis
+
+7. Visualize results
+
+**Tools for building pipelines**:
+
+- **Nextflow**: Modern, powerful
+
+- **Snakemake**: Python-based
+
+- **Galaxy**: Web-based (no programming!)
+
+- **WDL**: Workflow Description Language
+
+**Benefits**:
+
+- Reproducible
+
+- Automated
+
+- Scalable
+
+- Shareable
+
+## Challenges in Bioinformatics
+
+### Current Problems
+
+**1. Data Quality**:
+
+- Garbage in, garbage out
+
+- Sequencing errors
+
+- Sample contamination
+
+- Need better quality control
+
+**2. Data Integration**:
+
+- Combining different data types
+
+- Genomics + transcriptomics + proteomics
+
+- Different formats, scales, biases
+
+- Multi-omics challenge!
+
+**3. Interpretation**:
+
+- Finding genes is easy
+
+- Understanding function is hard
+
+- Most genes poorly characterized
+
+**4. Reproducibility**:
+
+- Different tools give different results
+
+- Version control important
+
+- Need standard pipelines
+
+**5. Computational Resources**:
+
+- Always need more!
+
+- Costs can be high
+
+- Environmental impact of computing
+
+## Career Paths in Bioinformatics
+
+### Exciting Opportunities!
+
+**What bioinformaticians do**:
+
+- Develop new algorithms
+
+- Analyze genomic data
+
+- Build databases
+
+- Create visualization tools
+
+- Apply ML to biology
+
+- Collaborate with biologists
+
+**Where they work**:
+
+- Universities (research)
+
+- Pharmaceutical companies (drug discovery)
+
+- Biotech startups (diagnostics)
+
+- Hospitals (clinical genomics)
+
+- Government (public health)
+
+- Tech companies (Google, Amazon, Microsoft)
+
+**Skills needed**:
+
+- Biology knowledge
+
+- Programming (Python, R)
+
+- Statistics
+
+- Problem-solving
+
+- Communication (work with biologists!)
+
+**High demand**:
+
+- More data than people to analyze it
+
+- Great job prospects
+
+- Competitive salaries
+
+## The Future of Bioinformatics
+
+### What's Coming
+
+**1. Real-Time Analysis**:
+
+- Analyze as data is generated
+
+- Feedback during experiments
+
+- Faster discoveries
+
+**2. AI Integration**:
+
+- AI assistants for data analysis
+
+- Automated interpretation
+
+- Hypothesis generation
+
+**3. Personalized Medicine**:
+
+- Analyze your genome on your phone
+
+- Instant health insights
+
+- Continuous monitoring
+
+**4. Synthetic Biology Design**:
+
+- Design organisms on computer
+
+- Predict behavior before building
+
+- Engineering life
+
+**5. Multi-Omics Integration**:
+
+- Combine all data types
+
+- Complete cell picture
+
+- Systems biology realization
+
+## Key Takeaways
+
+- **Bioinformatics** uses computers to analyze biological data
+
+- Essential due to **massive data** from modern biology
+
+- **Core tasks**: Sequence analysis, assembly, annotation, variant calling
+
+- **Databases** store and share biological information
+
+- **BLAST** is the Google of genomics
+
+- **AlphaFold** revolutionized protein structure prediction with AI
+
+- **Machine learning** increasingly important in biology
+
+- **Programming** (Python, R) is essential skill
+
+- **Cloud computing** handles big data
+
+- **Pipelines** automate and standardize analyses
+
+- High demand for bioinformatics skills
+
+- Future bright with AI integration and personalized medicine
+
+---
+
+**Sources**: Information adapted from bioinformatics textbooks, NCBI resources, and computational biology literature.
+
+
+### Best Practices for Primer Design
+
+**Do's**:
+✅ Use online tools (Primer3, Primer-BLAST)
+✅ Check specificity with BLAST
+✅ Design primers with similar Tm
+✅ Avoid secondary structures
+✅ For qPCR: span exon junctions
+✅ Include positive and negative controls
+✅ Validate experimentally
+
+**Don'ts**:
+❌ Don't use primers with >3 G/C at 3' end
+❌ Don't ignore secondary structure prediction
+❌ Don't skip BLAST specificity check
+❌ Don't design primers in repetitive regions
+❌ Don't use primers from different species (unless checking conservation)
+
+## Structural Bioinformatics
+
+### Predicting Protein Structures
+
+**Why it matters**:
+
+- Structure determines function
+
+- Drug design needs structures
+
+- Understanding disease mutations
+
+**The problem**:
+
+- Experiments are slow and expensive
+
+- Can we predict structure from sequence?
+
+### AlphaFold: AI Solves 50-Year Problem!
+
+**AlphaFold** (Google DeepMind, 2020):
+
+- Uses deep learning / AI
+
+- Predicts 3D structure from sequence
+
+- Near-experimental accuracy!
+
+- **Revolutionary!**
+
+**Impact**:
+
+- Predicted structures for 200+ million proteins!
+
+- Free database (AlphaFold DB)
+
+- Accelerating drug discovery
+
+- Nobel Prize potential
+
+### Homology Modeling
+
+**Approach**:
+
+- If protein A's structure is known
+
+- And protein B is similar sequence
+
+- Model B based on A's structure
+
+- Works well for similar proteins!
+
+### Protein-Protein Docking
+
+**Predicting how proteins interact**:
+
+- Important for understanding cell signaling
+
+- Drug development
+
+- Protein engineering
+
+## Machine Learning in Biology
+
+### AI Meets Genomics
+
+**Machine learning** = Teaching computers to learn patterns from data
+
+**Applications**:
+
+**1. Disease Prediction**:
+
+- Analyze genomes to predict disease risk
+
+- Better than humans at finding subtle patterns
+
+- Personalized risk scores
+
+**2. Variant Interpretation**:
+
+- Millions of variants in each genome
+
+- Which are disease-causing?
+
+- ML helps classify them
+
+**3. Drug Discovery**:
+
+- Predict which molecules bind to targets
+
+- Design new drugs
+
+- Much faster than traditional methods
+
+**4. Image Analysis**:
+
+- Analyze microscopy images
+
+- Count cells automatically
+
+- Detect cancer in pathology slides
+
+**5. Gene Regulation**:
+
+- Predict which sequences control genes
+
+- Understand regulatory code
+
+- Design synthetic promoters
+
+### Deep Learning Revolution
+
+**Deep learning** = Advanced ML using neural networks
+
+**Successes**:
+
+- AlphaFold (protein structure)
+
+- DeepVariant (variant calling)
+
+- BaseNJ (DNA sequencing accuracy)
+
+- Drug response prediction
+
+**Future**: AI will be essential partner in biology!
+
+## Genomic Data Formats
+
+### Standard File Formats
+
+**FASTA**:
+
+- Sequence format
+
+- Simple text file
+
+- >Header
+
+- ATCGATCG...
+
+**FASTQ**:
+
+- Sequence + quality scores
+
+- Raw sequencing data
+
+**SAM/BAM**:
+
+- Aligned sequences
+
+- Maps reads to genome
+
+- BAM is compressed SAM
+
+**VCF (Variant Call Format)**:
+
+- Lists genetic variants
+
+- Position, reference, alternate
+
+- Standard for sharing variants
+
+**GFF/GTF**:
+
+- Gene annotations
+
+- Where genes are located
+
+- Exons, introns, etc.
+
+### Why Standards Matter
+
+**Benefits**:
+
+- Different tools work together
+
+- Share data easily
+
+- Reproducible research
+
+- Collaborate globally
+
+## Programming in Bioinformatics
+
+### Common Languages
+
+**Python**:
+
+- Most popular in bioinformatics
+
+- Easy to learn
+
+- Powerful libraries (BioPython)
+
+- Great for data analysis
+
+**R**:
+
+- Statistical computing
+
+- Excellent for genomics
+
+- BioConductor (huge package collection)
+
+- Beautiful visualizations
+
+**Perl**:
+
+- Text processing
+
+- Older but still used
+
+- BioPerl
+
+**Unix/Linux Command Line**:
+
+- Essential skill!
+
+- File manipulation
+
+- Running tools
+
+- Automating workflows
+
+**Typical workflow**:
+
+1. Process data with Unix commands
+
+2. Analyze with Python/R
+
+3. Visualize results
+
+4. Repeat!
+
+## Cloud Computing and Big Data
+
+### Scaling Up
+
+**The problem**:
+
+- Genomic datasets are HUGE
+
+- Laptop can't handle it
+
+- Need supercomputers
+
+**Solution**: Cloud computing!
+
+**Benefits**:
+
+- Rent computing power as needed
+
+- Scale up or down
+
+- Pay only for what you use
+
+- No need to buy expensive servers
+
+**Platforms**:
+
+- Amazon Web Services (AWS)
+
+- Google Cloud
+
+- Microsoft Azure
+
+- Specialized: DNAnexus, Seven Bridges
+
+## Workflows and Pipelines
+
+### Automating Analysis
+
+**Bioinformatics pipeline** = Series of analysis steps run automatically
+
+**Example RNA-seq pipeline**:
+
+1. Quality control (check raw data)
+
+2. Trim adapters
+
+3. Align to genome
+
+4. Count reads per gene
+
+5. Normalize
+
+6. Statistical analysis
+
+7. Visualize results
+
+**Tools for building pipelines**:
+
+- **Nextflow**: Modern, powerful
+
+- **Snakemake**: Python-based
+
+- **Galaxy**: Web-based (no programming!)
+
+- **WDL**: Workflow Description Language
+
+**Benefits**:
+
+- Reproducible
+
+- Automated
+
+- Scalable
+
+- Shareable
+
+## Challenges in Bioinformatics
+
+### Current Problems
+
+**1. Data Quality**:
+
+- Garbage in, garbage out
+
+- Sequencing errors
+
+- Sample contamination
+
+- Need better quality control
+
+**2. Data Integration**:
+
+- Combining different data types
+
+- Genomics + transcriptomics + proteomics
+
+- Different formats, scales, biases
+
+- Multi-omics challenge!
+
+**3. Interpretation**:
+
+- Finding genes is easy
+
+- Understanding function is hard
+
+- Most genes poorly characterized
+
+**4. Reproducibility**:
+
+- Different tools give different results
+
+- Version control important
+
+- Need standard pipelines
+
+**5. Computational Resources**:
+
+- Always need more!
+
+- Costs can be high
+
+- Environmental impact of computing
+
+## Career Paths in Bioinformatics
+
+### Exciting Opportunities!
+
+**What bioinformaticians do**:
+
+- Develop new algorithms
+
+- Analyze genomic data
+
+- Build databases
+
+- Create visualization tools
+
+- Apply ML to biology
+
+- Collaborate with biologists
+
+**Where they work**:
+
+- Universities (research)
+
+- Pharmaceutical companies (drug discovery)
+
+- Biotech startups (diagnostics)
+
+- Hospitals (clinical genomics)
+
+- Government (public health)
+
+- Tech companies (Google, Amazon, Microsoft)
+
+**Skills needed**:
+
+- Biology knowledge
+
+- Programming (Python, R)
+
+- Statistics
+
+- Problem-solving
+
+- Communication (work with biologists!)
+
+**High demand**:
+
+- More data than people to analyze it
+
+- Great job prospects
+
+- Competitive salaries
+
+## The Future of Bioinformatics
+
+### What's Coming
+
+**1. Real-Time Analysis**:
+
+- Analyze as data is generated
+
+- Feedback during experiments
+
+- Faster discoveries
+
+**2. AI Integration**:
+
+- AI assistants for data analysis
+
+- Automated interpretation
+
+- Hypothesis generation
+
+**3. Personalized Medicine**:
+
+- Analyze your genome on your phone
+
+- Instant health insights
+
+- Continuous monitoring
+
+**4. Synthetic Biology Design**:
+
+- Design organisms on computer
+
+- Predict behavior before building
+
+- Engineering life
+
+**5. Multi-Omics Integration**:
+
+- Combine all data types
+
+- Complete cell picture
+
+- Systems biology realization
+
+## Key Takeaways
+
+- **Bioinformatics** uses computers to analyze biological data
+
+- Essential due to **massive data** from modern biology
+
+- **Core tasks**: Sequence analysis, assembly, annotation, variant calling
+
+- **Databases** store and share biological information
+
+- **BLAST** is the Google of genomics
+
+- **AlphaFold** revolutionized protein structure prediction with AI
+
+- **Machine learning** increasingly important in biology
+
+- **Programming** (Python, R) is essential skill
+
+- **Cloud computing** handles big data
+
+- **Pipelines** automate and standardize analyses
+
+- High demand for bioinformatics skills
+
+- Future bright with AI integration and personalized medicine
+
+---
+
+**Sources**: Information adapted from bioinformatics textbooks, NCBI resources, and computational biology literature.
+
+
+### Best Practices for Primer Design
+
+**Do's**:
+✅ Use online tools (Primer3, Primer-BLAST)
+✅ Check specificity with BLAST
+✅ Design primers with similar Tm
+✅ Avoid secondary structures
+✅ For qPCR: span exon junctions
+✅ Include positive and negative controls
+✅ Validate experimentally
+
+**Don'ts**:
+❌ Don't use primers with >3 G/C at 3' end
+❌ Don't ignore secondary structure prediction
+❌ Don't skip BLAST specificity check
+❌ Don't design primers in repetitive regions
+❌ Don't use primers from different species (unless checking conservation)
+
+## Structural Bioinformatics
+
+### Predicting Protein Structures
+
+**Why it matters**:
+
+- Structure determines function
+
+- Drug design needs structures
+
+- Understanding disease mutations
+
+**The problem**:
+
+- Experiments are slow and expensive
+
+- Can we predict structure from sequence?
+
+### AlphaFold: AI Solves 50-Year Problem!
+
+**AlphaFold** (Google DeepMind, 2020):
+
+- Uses deep learning / AI
+
+- Predicts 3D structure from sequence
+
+- Near-experimental accuracy!
+
+- **Revolutionary!**
+
+**Impact**:
+
+- Predicted structures for 200+ million proteins!
+
+- Free database (AlphaFold DB)
+
+- Accelerating drug discovery
+
+- Nobel Prize potential
+
+### Homology Modeling
+
+**Approach**:
+
+- If protein A's structure is known
+
+- And protein B is similar sequence
+
+- Model B based on A's structure
+
+- Works well for similar proteins!
+
+### Protein-Protein Docking
+
+**Predicting how proteins interact**:
+
+- Important for understanding cell signaling
+
+- Drug development
+
+- Protein engineering
+
+## Machine Learning in Biology
+
+### AI Meets Genomics
+
+**Machine learning** = Teaching computers to learn patterns from data
+
+**Applications**:
+
+**1. Disease Prediction**:
+
+- Analyze genomes to predict disease risk
+
+- Better than humans at finding subtle patterns
+
+- Personalized risk scores
+
+**2. Variant Interpretation**:
+
+- Millions of variants in each genome
+
+- Which are disease-causing?
+
+- ML helps classify them
+
+**3. Drug Discovery**:
+
+- Predict which molecules bind to targets
+
+- Design new drugs
+
+- Much faster than traditional methods
+
+**4. Image Analysis**:
+
+- Analyze microscopy images
+
+- Count cells automatically
+
+- Detect cancer in pathology slides
+
+**5. Gene Regulation**:
+
+- Predict which sequences control genes
+
+- Understand regulatory code
+
+- Design synthetic promoters
+
+### Deep Learning Revolution
+
+**Deep learning** = Advanced ML using neural networks
+
+**Successes**:
+
+- AlphaFold (protein structure)
+
+- DeepVariant (variant calling)
+
+- BaseNJ (DNA sequencing accuracy)
+
+- Drug response prediction
+
+**Future**: AI will be essential partner in biology!
+
+## Genomic Data Formats
+
+### Standard File Formats
+
+**FASTA**:
+
+- Sequence format
+
+- Simple text file
+
+- >Header
+
+- ATCGATCG...
+
+**FASTQ**:
+
+- Sequence + quality scores
+
+- Raw sequencing data
+
+**SAM/BAM**:
+
+- Aligned sequences
+
+- Maps reads to genome
+
+- BAM is compressed SAM
+
+**VCF (Variant Call Format)**:
+
+- Lists genetic variants
+
+- Position, reference, alternate
+
+- Standard for sharing variants
+
+**GFF/GTF**:
+
+- Gene annotations
+
+- Where genes are located
+
+- Exons, introns, etc.
+
+### Why Standards Matter
+
+**Benefits**:
+
+- Different tools work together
+
+- Share data easily
+
+- Reproducible research
+
+- Collaborate globally
+
+## Programming in Bioinformatics
+
+### Common Languages
+
+**Python**:
+
+- Most popular in bioinformatics
+
+- Easy to learn
+
+- Powerful libraries (BioPython)
+
+- Great for data analysis
+
+**R**:
+
+- Statistical computing
+
+- Excellent for genomics
+
+- BioConductor (huge package collection)
+
+- Beautiful visualizations
+
+**Perl**:
+
+- Text processing
+
+- Older but still used
+
+- BioPerl
+
+**Unix/Linux Command Line**:
+
+- Essential skill!
+
+- File manipulation
+
+- Running tools
+
+- Automating workflows
+
+**Typical workflow**:
+
+1. Process data with Unix commands
+
+2. Analyze with Python/R
+
+3. Visualize results
+
+4. Repeat!
+
+## Cloud Computing and Big Data
+
+### Scaling Up
+
+**The problem**:
+
+- Genomic datasets are HUGE
+
+- Laptop can't handle it
+
+- Need supercomputers
+
+**Solution**: Cloud computing!
+
+**Benefits**:
+
+- Rent computing power as needed
+
+- Scale up or down
+
+- Pay only for what you use
+
+- No need to buy expensive servers
+
+**Platforms**:
+
+- Amazon Web Services (AWS)
+
+- Google Cloud
+
+- Microsoft Azure
+
+- Specialized: DNAnexus, Seven Bridges
+
+## Workflows and Pipelines
+
+### Automating Analysis
+
+**Bioinformatics pipeline** = Series of analysis steps run automatically
+
+**Example RNA-seq pipeline**:
+
+1. Quality control (check raw data)
+
+2. Trim adapters
+
+3. Align to genome
+
+4. Count reads per gene
+
+5. Normalize
+
+6. Statistical analysis
+
+7. Visualize results
+
+**Tools for building pipelines**:
+
+- **Nextflow**: Modern, powerful
+
+- **Snakemake**: Python-based
+
+- **Galaxy**: Web-based (no programming!)
+
+- **WDL**: Workflow Description Language
+
+**Benefits**:
+
+- Reproducible
+
+- Automated
+
+- Scalable
+
+- Shareable
+
+## Challenges in Bioinformatics
+
+### Current Problems
+
+**1. Data Quality**:
+
+- Garbage in, garbage out
+
+- Sequencing errors
+
+- Sample contamination
+
+- Need better quality control
+
+**2. Data Integration**:
+
+- Combining different data types
+
+- Genomics + transcriptomics + proteomics
+
+- Different formats, scales, biases
+
+- Multi-omics challenge!
+
+**3. Interpretation**:
+
+- Finding genes is easy
+
+- Understanding function is hard
+
+- Most genes poorly characterized
+
+**4. Reproducibility**:
+
+- Different tools give different results
+
+- Version control important
+
+- Need standard pipelines
+
+**5. Computational Resources**:
+
+- Always need more!
+
+- Costs can be high
+
+- Environmental impact of computing
+
+## Career Paths in Bioinformatics
+
+### Exciting Opportunities!
+
+**What bioinformaticians do**:
+
+- Develop new algorithms
+
+- Analyze genomic data
+
+- Build databases
+
+- Create visualization tools
+
+- Apply ML to biology
+
+- Collaborate with biologists
+
+**Where they work**:
+
+- Universities (research)
+
+- Pharmaceutical companies (drug discovery)
+
+- Biotech startups (diagnostics)
+
+- Hospitals (clinical genomics)
+
+- Government (public health)
+
+- Tech companies (Google, Amazon, Microsoft)
+
+**Skills needed**:
+
+- Biology knowledge
+
+- Programming (Python, R)
+
+- Statistics
+
+- Problem-solving
+
+- Communication (work with biologists!)
+
+**High demand**:
+
+- More data than people to analyze it
+
+- Great job prospects
+
+- Competitive salaries
+
+## The Future of Bioinformatics
+
+### What's Coming
+
+**1. Real-Time Analysis**:
+
+- Analyze as data is generated
+
+- Feedback during experiments
+
+- Faster discoveries
+
+**2. AI Integration**:
+
+- AI assistants for data analysis
+
+- Automated interpretation
+
+- Hypothesis generation
+
+**3. Personalized Medicine**:
+
+- Analyze your genome on your phone
+
+- Instant health insights
+
+- Continuous monitoring
+
+**4. Synthetic Biology Design**:
+
+- Design organisms on computer
+
+- Predict behavior before building
+
+- Engineering life
+
+**5. Multi-Omics Integration**:
+
+- Combine all data types
+
+- Complete cell picture
+
+- Systems biology realization
+
+## Key Takeaways
+
+- **Bioinformatics** uses computers to analyze biological data
+
+- Essential due to **massive data** from modern biology
+
+- **Core tasks**: Sequence analysis, assembly, annotation, variant calling
+
+- **Databases** store and share biological information
+
+- **BLAST** is the Google of genomics
+
+- **AlphaFold** revolutionized protein structure prediction with AI
+
+- **Machine learning** increasingly important in biology
+
+- **Programming** (Python, R) is essential skill
+
+- **Cloud computing** handles big data
+
+- **Pipelines** automate and standardize analyses
+
+- High demand for bioinformatics skills
+
 - Future bright with AI integration and personalized medicine
 
 ---

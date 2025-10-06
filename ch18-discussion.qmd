@@ -13,40 +13,61 @@ If you lived in the 1940s before the famous experiments, how would YOU prove tha
 ### Think About:
 
 **What you need to show**:
+
 - Genetic material must carry information
+
 - It must be copied accurately
+
 - It must be passed from parent to offspring
+
 - Changes in it must cause changes in traits
 
 **Possible approaches**:
 
 **1. Transformation Experiments** (like Griffith):
+
 - Transfer genetic material between organisms
+
 - See if traits transfer
+
 - Then identify what molecule was transferred
 
 **2. Chemical Analysis**:
+
 - Compare DNA vs. protein in chromosomes
+
 - Which molecule shows more variation?
+
 - Which correlates with heredity?
 
 **3. Treatment Experiments**:
+
 - Destroy DNA specifically (with DNase enzyme)
+
 - Does heredity still work?
+
 - Destroy protein specifically (with protease enzyme)
+
 - Does heredity still work?
 
 **4. Labeling Experiments** (like Hershey-Chase):
+
 - Tag DNA and protein differently
+
 - See which enters cells during infection
+
 - See which appears in offspring
 
 ### Your Turn!
 
 Design an experiment to prove DNA is genetic material. Consider:
+
 - What organism would you use? (bacteria, viruses, plants, animals?)
+
 - What techniques are available?
+
 - What results would prove your hypothesis?
+
 - What controls would you need?
 
 ## Why Are Plant Genomes Larger?
@@ -58,23 +79,35 @@ We learned that plants often have much larger genomes than animals. An onion has
 ### Review the Reasons:
 
 **1. Plants Don't Move**:
+
 - Animals need efficient cells for movement
+
 - Large genomes are costly (more DNA to replicate)
+
 - Plants can afford the extra DNA
 
 **2. Polyploidy**:
+
 - Plants tolerate multiple genome copies
+
 - Wheat has 6 sets of chromosomes!
+
 - Animals usually can't survive polyploidy
 
 **3. Transposable Elements**:
+
 - "Jumping genes" accumulate in plant genomes
+
 - Some plants are >90% transposable elements
+
 - Less pressure to remove them
 
 **4. Less DNA Deletion**:
+
 - Animals efficiently delete unnecessary DNA
+
 - Plants less so
+
 - "Junk DNA" accumulates over time
 
 ### Discussion Points:
@@ -82,24 +115,35 @@ We learned that plants often have much larger genomes than animals. An onion has
 **Question 1**: Is a larger genome a disadvantage for plants? Why or why not?
 
 **Think about**:
+
 - Energy cost of replicating more DNA
+
 - But plants make energy from sunlight (abundant!)
+
 - Larger cells (more DNA = larger nucleus = larger cell)
+
 - But plants don't move anyway
 
 **Question 2**: Could this change with climate change?
 
 **Consider**:
+
 - If resources become scarce
+
 - If plants need to adapt quickly
+
 - Smaller genomes might become advantageous
+
 - Or polyploidy might help adaptation!
 
 **Question 3**: Why do some plants (like pufferfish) have very compact genomes?
 
 **Answer hints**:
+
 - Pufferfish need buoyancy
+
 - Smaller cells help float
+
 - Shows environmental pressures CAN favor small genomes
 
 ## How Does Alternative Splicing Expand Protein Diversity?
@@ -111,16 +155,25 @@ Humans have only ~20,000 genes but make 100,000+ different proteins. How does al
 ### Review Alternative Splicing:
 
 **Remember**:
+
 - Genes have exons (coding) and introns (non-coding)
+
 - Exons can be included or excluded
+
 - Different combinations → different proteins
 
 **Example**:
+
 - Gene with exons 1, 2, 3, 4, 5
+
 - Could make:
+
   - Protein A: 1-2-3-4-5
+
   - Protein B: 1-2-4-5 (skip exon 3)
+
   - Protein C: 1-3-4-5 (skip exon 2)
+
   - Protein D: 1-2-5 (skip exons 3 and 4)
 
 ### Calculate Diversity:
@@ -128,12 +181,17 @@ Humans have only ~20,000 genes but make 100,000+ different proteins. How does al
 **Math time!**
 
 If a gene has 10 exons, and each can be included or excluded:
+
 - That's 2^10 = 1,024 possible proteins!
+
 - From ONE gene!
 
 **Extreme example**:
+
 - DSCAM gene in fruit flies
+
 - Can produce 38,000 different proteins
+
 - From one gene!
 
 ### Discussion Points:
@@ -141,24 +199,35 @@ If a gene has 10 exons, and each can be included or excluded:
 **Question 1**: What are the advantages of alternative splicing?
 
 **Advantages**:
+
 - More proteins without more genes
+
 - Saves space in genome
+
 - Fine-tuned regulation (different proteins in different tissues)
+
 - Evolutionary flexibility
 
 **Question 2**: What are the disadvantages?
 
 **Disadvantages**:
+
 - Complex regulation needed
+
 - Mistakes can happen (wrong splicing → disease)
+
 - Harder to predict proteins from DNA sequence
 
 **Question 3**: Why don't prokaryotes use alternative splicing?
 
 **Think about**:
+
 - Prokaryotes have no introns!
+
 - Simpler, more direct gene expression
+
 - Don't need the complexity
+
 - Different lifestyle (single cells, respond quickly to environment)
 
 ## What Does the C-Value Paradox Teach Us About Evolution?
@@ -172,8 +241,11 @@ The C-value paradox shows that genome size doesn't correlate with complexity. Wh
 **1. Evolution Doesn't Always Optimize**
 
 - Not everything is perfectly designed
+
 - "Good enough" often survives
+
 - Extra DNA isn't harmful enough to be removed
+
 - Evolution works with what's there, not ideal designs
 
 **Question**: Does this surprise you? Why or why not?
@@ -181,8 +253,11 @@ The C-value paradox shows that genome size doesn't correlate with complexity. Wh
 **2. Different Solutions for Different Lifestyles**
 
 - Compact genomes work for some organisms (pufferfish)
+
 - Large genomes work for others (lungfish, onions)
+
 - No single "best" strategy
+
 - Context matters!
 
 **Question**: Can you think of other examples in evolution where different solutions work equally well?
@@ -190,7 +265,9 @@ The C-value paradox shows that genome size doesn't correlate with complexity. Wh
 **3. Complexity Comes from Regulation, Not Raw Material**
 
 - It's HOW you use genes, not how many you have
+
 - Like cooking: A master chef can make amazing food with simple ingredients
+
 - A novice cook might waste fancy ingredients
 
 **Question**: How does this apply to human intelligence vs. other animals?
@@ -198,7 +275,9 @@ The C-value paradox shows that genome size doesn't correlate with complexity. Wh
 **4. The Importance of Non-Coding DNA**
 
 - Used to think "junk DNA" was useless
+
 - Now we know much of it regulates genes
+
 - The "junk" paradox helped us discover this!
 
 **Question**: What else might we be wrong about that seems like "junk"?
@@ -206,18 +285,27 @@ The C-value paradox shows that genome size doesn't correlate with complexity. Wh
 ### Broader Implications:
 
 **For understanding life**:
+
 - Life is complex in unexpected ways
+
 - Simple measurements (genome size) don't capture complexity
+
 - Need to look deeper
 
 **For medicine**:
+
 - Can't judge genes by quantity alone
+
 - Regulation matters as much as genes themselves
+
 - Epigenetics is crucial!
 
 **For technology**:
+
 - Biological systems inspire engineering
+
 - Efficiency isn't always the goal
+
 - Redundancy and flexibility have value
 
 ## How Does Genome Organization Affect Sequencing and Analysis?
@@ -231,12 +319,17 @@ We've learned about chromosome structure, packaging, and organization. How do th
 **1. Repetitive DNA**
 
 **Problem**:
+
 - Many genomes have lots of repeated sequences
+
 - Short sequencing reads can't tell repeats apart
+
 - Like trying to assemble a puzzle with many identical pieces!
 
 **Solution**:
+
 - Long-read sequencing spans repeats
+
 - Can see which repeat is which
 
 **Question**: Why do you think it took until 2022 to complete the human genome when the first draft was in 2000?
@@ -244,47 +337,69 @@ We've learned about chromosome structure, packaging, and organization. How do th
 **2. Heterochromatin**
 
 **Problem**:
+
 - Tightly packed DNA is hard to sequence
+
 - Centromeres, telomeres were gaps in original human genome
+
 - Very repetitive, very condensed
 
 **Solution**:
+
 - Better sequencing technology
+
 - Long reads
+
 - Specialized methods
 
 **3. DNA Modifications**
 
 **Problem**:
+
 - DNA methylation affects how DNA behaves
+
 - Standard sequencing doesn't detect modifications
+
 - Lost information!
 
 **Solution**:
+
 - Bisulfite sequencing for methylation
+
 - Third-generation sequencing detects modifications directly
 
 **4. Chromosome Structure**
 
 **Problem**:
+
 - Genes interact across long distances
+
 - Enhancers can be far from genes they control
+
 - 3D structure matters!
 
 **Solution**:
+
 - Hi-C and other 3D genome mapping methods
+
 - Capture chromosome conformation
 
 ### Applications:
 
 **Disease Understanding**:
+
 - Structural variants (large chromosomal changes) cause disease
+
 - Repeats can expand and cause disease (Huntington's)
+
 - Understanding 3D structure reveals regulation
 
 **Evolution**:
+
 - Chromosome rearrangements drive evolution
+
 - Gene order matters
+
 - Comparing organization across species
 
 ### Discussion:
@@ -292,27 +407,41 @@ We've learned about chromosome structure, packaging, and organization. How do th
 **Question 1**: If you were designing the "perfect" genome for easy sequencing and analysis, what would it look like?
 
 **Possible features**:
+
 - No repeats
+
 - No introns
+
 - Evenly spaced genes
+
 - No heterochromatin
+
 - Linear (not circular)
+
 - Medium-sized
 
 **Question 2**: But would that "perfect" genome be good for the organism? Why or why not?
 
 **Trade-offs**:
+
 - Repeats have functions!
+
 - Introns allow alternative splicing
+
 - Heterochromatin regulates genes
+
 - Complexity enables complexity!
 
 **Question 3**: How might future technology overcome current limitations?
 
 **Ideas**:
+
 - Even longer reads
+
 - Real-time 3D genome imaging
+
 - Single-molecule sequencing in living cells
+
 - AI to predict structure from sequence
 
 ## Synthesis Questions
@@ -322,40 +451,63 @@ We've learned about chromosome structure, packaging, and organization. How do th
 **Big Question 1**: How do the genome, transcriptome, proteome, and epigenome work together?
 
 **Think about**:
+
 - Genome: The instruction manual (static)
+
 - Transcriptome: Which instructions are being read (dynamic)
+
 - Proteome: The workers doing jobs (dynamic)
+
 - Epigenome: Bookmarks and highlights (semi-stable)
+
 - They all interact and influence each other!
 
 **Big Question 2**: If you could sequence anything, what would you choose and why?
 
 **Options**:
+
 - Your own genome?
+
 - An endangered species?
+
 - Microbes in your gut?
+
 - Ancient DNA from fossils?
+
 - Soil microbes?
+
 - Tumor cells?
 
 **Big Question 3**: What's the next big breakthrough in genomics/proteomics?
 
 **Possibilities**:
+
 - Routine gene therapy for all genetic diseases?
+
 - Complete understanding of non-coding DNA?
+
 - Cheap real-time genome sequencing?
+
 - Sequencing in living organisms (no extraction)?
+
 - Full protein structure prediction for all proteins?
+
 - Understanding consciousness through genomics?
 
 ## Key Takeaways
 
 - **Critical thinking** is essential in science
+
 - **One experiment** can answer big questions (if cleverly designed)
+
 - **Trade-offs** exist in biology (no perfect solution)
+
 - **Complexity** comes from organization, not just components
+
 - **Technology** limits and enables discovery
+
 - **Big questions** often have complex answers
+
 - Keep asking "why?" and "how do we know?"
 
 ---

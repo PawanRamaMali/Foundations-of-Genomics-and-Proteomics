@@ -18,8 +18,11 @@ Or in words:
 **DNA makes RNA, and RNA makes Protein**
 
 Think of it like a factory assembly line:
+
 1. **DNA** is the blueprint/instruction manual (stored in the office)
+
 2. **RNA** is the work order/copy of instructions (delivered to the factory floor)
+
 3. **Protein** is the finished product (built following the instructions)
 
 ## The Two Main Steps
@@ -32,28 +35,41 @@ The central dogma has two main steps with fancy names. Let's learn what they mea
 
 #### What Happens:
 - The DNA stays safely in the nucleus (like the original cookbook stays in the library)
+
 - A special enzyme "reads" the DNA
+
 - It makes a copy of the instructions using RNA letters
+
 - This copy is called **mRNA** (messenger RNA)
 
 #### Think of It Like This:
 Imagine you have a precious, old cookbook you want to protect:
+
 - You wouldn't take it into the kitchen where it might get dirty
+
 - Instead, you'd photocopy the recipe you need
+
 - The photocopy goes to the kitchen, not the original book!
 
 That's exactly what transcription does—it makes a temporary copy (RNA) of the permanent instructions (DNA).
 
 #### The Details:
 1. DNA unzips (the twisted ladder opens up)
+
 2. An enzyme called **RNA polymerase** reads one side of the DNA
+
 3. It builds an RNA strand using the DNA as a template
+
 4. The RNA uses the same letters as DNA, except U (Uracil) instead of T (Thymine)
 
 **Pairing Rules:**
+
 - DNA has **A** → RNA gets **U**
+
 - DNA has **T** → RNA gets **A**
+
 - DNA has **G** → RNA gets **C**
+
 - DNA has **C** → RNA gets **G**
 
 ### Step 2: Translation (RNA → Protein)
@@ -62,30 +78,44 @@ That's exactly what transcription does—it makes a temporary copy (RNA) of the 
 
 #### What Happens:
 - The mRNA leaves the nucleus and goes to a protein-making factory called a **ribosome**
+
 - The ribosome "reads" the RNA code
+
 - It translates the RNA letters into amino acids
+
 - The amino acids link together to make a protein
 
 #### Think of It Like This:
 Imagine you have a recipe written in French, but you speak English:
+
 - You need to **translate** the recipe from French to English
+
 - Once translated, you can follow the instructions to make the dish
 
 That's what translation does—it changes the "language" from RNA code into amino acid sequences!
 
 #### The Details:
 1. mRNA attaches to a ribosome
+
 2. The ribosome reads the mRNA in groups of 3 letters at a time
+
 3. Each group of 3 letters is called a **codon**
+
 4. Each codon tells the ribosome which amino acid to add next
+
 5. **tRNA** (transfer RNA) brings the correct amino acids
+
 6. The amino acids link together like beads on a string to form a protein
 
 #### The Genetic Code:
 Every 3 letters of RNA code for 1 amino acid. For example:
+
 - **AUG** = Start making the protein! (and codes for amino acid Methionine)
+
 - **UUU** = Add the amino acid Phenylalanine
+
 - **GGG** = Add the amino acid Glycine
+
 - **UAA** = Stop! The protein is finished!
 
 This code is used by almost all living things on Earth—from bacteria to blue whales to you!
@@ -102,13 +132,19 @@ Every time a cell divides (to make new cells), it needs to copy all its DNA so t
 
 #### How It Works:
 1. The DNA double helix unzips down the middle
+
 2. Each side serves as a template
+
 3. New DNA letters attach to each side following the pairing rules (A with T, G with C)
+
 4. You end up with two identical copies of the original DNA
 
 Think of it like:
+
 - Unzipping a zipper
+
 - Each side of the zipper gets new matching teeth
+
 - Now you have two complete zippers!
 
 ## Exceptions to the Rule
@@ -146,26 +182,39 @@ Viruses are not quite alive and not quite dead. They're in between! And they hav
 **Types of Viral Genomes:**
 
 1. **DNA Viruses**
+
    - Their genome is DNA (like ours)
+
    - They follow the normal central dogma
+
    - Examples: Chickenpox, herpes
 
 2. **RNA Viruses**
+
    - Their genome is RNA (not DNA!)
+
    - They need to make proteins directly from RNA
+
    - Examples: Flu, common cold, COVID-19
 
 3. **Retroviruses**
+
    - Their genome is RNA
+
    - They convert their RNA into DNA using reverse transcriptase
+
    - Then they follow normal DNA → RNA → Protein
+
    - Example: HIV
 
 ### Why This Matters:
 
 Understanding how viruses break the rules helps scientists:
+
 - Develop better medicines and vaccines
+
 - Understand evolution
+
 - Learn about the flexibility of life
 
 ## Putting It All Together
@@ -175,25 +224,37 @@ Let's review the complete journey from DNA to protein:
 ### The Normal Path:
 
 1. **Replication** (when cells divide)
+
    - DNA → DNA
+
    - Making copies of the instruction manual
 
 2. **Transcription** (making mRNA)
+
    - DNA → RNA
+
    - Copying instructions from the manual
 
 3. **Translation** (making proteins)
+
    - RNA → Protein
+
    - Building the final product
 
 ### The Big Picture:
 
 Think of your cells like a factory:
+
 - **DNA** = The master blueprints (kept safe in the office)
+
 - **Transcription** = Photocopying specific blueprints
+
 - **mRNA** = The photocopied work orders
+
 - **Translation** = Following the work orders on the factory floor
+
 - **Proteins** = The finished products that do the work
+
 - **Replication** = Making exact copies of all the blueprints (for new factories)
 
 ## Why Is This Important?
@@ -201,18 +262,25 @@ Think of your cells like a factory:
 Understanding the central dogma helps us:
 
 1. **Understand Diseases**
+
    - Many diseases happen when something goes wrong in these processes
+
    - Some medicines work by affecting transcription or translation
 
 2. **Develop New Technologies**
+
    - Scientists can now "edit" DNA (like spell-check for genes!)
+
    - We can make bacteria produce human proteins (like insulin for diabetes)
 
 3. **Study Evolution**
+
    - All living things use the same basic process
+
    - This shows we're all connected through deep time
 
 4. **Personalize Medicine**
+
    - Understanding your DNA can help doctors choose the best treatments for you
 
 ## Codon Bias: Not All Codons Are Equal!
@@ -220,13 +288,19 @@ Understanding the central dogma helps us:
 ### The Redundancy Problem
 
 Remember the genetic code is **redundant** (also called "degenerate"):
+
 - 64 possible codons (4³ = 4 × 4 × 4)
+
 - Only 20 amino acids (+ 3 stop signals)
+
 - **Multiple codons code for the same amino acid!**
 
 **Example - Leucine**:
+
 - Has **6 different codons**: UUA, UUG, CUU, CUC, CUA, CUG
+
 - All mean "add leucine"
+
 - So which one does the cell use?
 
 **You might think**: All codons for an amino acid used equally, right?
@@ -238,31 +312,47 @@ Remember the genetic code is **redundant** (also called "degenerate"):
 **Codon bias** = Organisms preferentially use certain codons over others, even though they code for the same amino acid
 
 **Example in E. coli bacteria**:
+
 - Leucine codon **CTG** is used very often
+
 - Leucine codon **CTA** is used rarely
+
 - Both code for leucine!
+
 - But bacteria "prefer" CTG
 
 **Why does this happen?**
 
 **1. tRNA Availability**:
+
 - Different organisms have different amounts of different tRNAs
+
 - Preferred codons match abundant tRNAs
+
 - Allows faster, more efficient translation
 
 **2. Translation Efficiency**:
+
 - Highly expressed genes use "optimal" codons
+
 - Optimal = codons with abundant matching tRNAs
+
 - Faster translation = more protein made
 
 **3. Translation Accuracy**:
+
 - Some codons translated more accurately
+
 - Important genes use more accurate codons
+
 - Reduces errors in critical proteins
 
 **4. Evolutionary Selection**:
+
 - Natural selection favors efficient codon usage
+
 - Especially in fast-growing organisms (like bacteria)
+
 - Less pressure in slow-growing organisms
 
 ### Codon Bias Is Organism-Specific!
@@ -284,11 +374,15 @@ Remember the genetic code is **redundant** (also called "degenerate"):
 **"Heterologous expression"** = Making one organism produce a protein from another organism
 
 **Common scenario**:
+
 - Take human gene
+
 - Put it in bacteria
+
 - Make bacteria produce human protein (like insulin!)
 
 **The problem**:
+
 ```
 Human gene uses human codon preferences
 Bacteria have different tRNA abundances
@@ -296,10 +390,16 @@ Bacteria have different tRNA abundances
 → Low protein production or even failure!
 ```
 
+```
+
 **Real example - Human insulin production**:
+
 - Original human insulin gene → poor expression in E. coli
+
 - Many codons rare in bacteria
+
 - Translation stalls, protein misfolds
+
 - **Solution needed!**
 
 ### Solution: Codon Optimization
@@ -307,13 +407,20 @@ Bacteria have different tRNA abundances
 **Codon optimization** = Changing DNA sequence to use host organism's preferred codons, **without changing the amino acid sequence**!
 
 **How it works**:
+
 1. Take human gene sequence
+
 2. Identify which codons are rare in bacteria
+
 3. Replace with synonymous codons preferred by bacteria
+
 4. **Amino acid sequence stays identical!**
+
 5. But bacteria translate it much better!
 
 **Example - Leucine in human vs bacteria**:
+```
+
 ```
 Original human gene: ...UUA-UUA-UUA... (rare in bacteria)
                          ↓
@@ -323,17 +430,28 @@ Both sequences code for: Leu-Leu-Leu
 But bacteria prefer CUG!
 ```
 
+```
+
 **Results after optimization**:
+
 - ✅ 10-100x more protein produced!
+
 - ✅ Better protein folding
+
 - ✅ Higher purity
+
 - ✅ More economical production
 
 **Real-world applications**:
+
 - Insulin for diabetes (optimized for E. coli)
+
 - Vaccines (optimized for yeast or bacteria)
+
 - Industrial enzymes
+
 - Research proteins
+
 - Antibody production
 
 ### Codon Usage in Gene Prediction
@@ -341,15 +459,23 @@ But bacteria prefer CUG!
 Codon bias also helps in **bioinformatics**!
 
 **How computers find genes**:
+
 - Calculate codon usage in DNA sequence
+
 - Compare to organism's known codon preferences
+
 - Regions matching codon bias → likely coding!
+
 - Regions not matching → likely non-coding
 
 **Example**:
 ```
+
+```
 Sequence A: Uses organism's preferred codons → Probably a gene!
 Sequence B: Random codon usage → Probably not a gene
+```
+
 ```
 
 This is one signal used in **ab initio gene prediction** (covered in Chapter 17a)!
@@ -359,49 +485,77 @@ This is one signal used in **ab initio gene prediction** (covered in Chapter 17a
 **CAI** = Measure of how well a gene's codons match organism's preferences
 
 **Scale**: 0 to 1
+
 - **CAI = 1.0**: Perfect match (uses all optimal codons)
+
 - **CAI = 0.5**: Medium match
+
 - **CAI < 0.3**: Poor match (uses rare codons)
 
 **In practice**:
+
 - Highly expressed genes: CAI ~0.7-0.9
+
 - Lowly expressed genes: CAI ~0.3-0.5
+
 - Foreign genes (before optimization): CAI often < 0.3
 
 **Use in biotech**:
+
 - Calculate CAI before cloning gene
+
 - If CAI < 0.4 in host → optimize!
+
 - Predicts expression success
 
 ### Exceptions and Special Cases
 
 **Not all organisms show strong codon bias**:
+
 - **Bacteria**: Strong bias (need efficiency!)
+
 - **Yeast**: Moderate bias
+
 - **Mammals**: Weaker bias (can afford inefficiency)
+
 - **Plants**: Variable bias
 
 **Why weaker bias in complex organisms?**
+
 - Slower growth rate (less time pressure)
+
 - More complex regulation needed
+
 - Different selection pressures
 
 **Rare codons can be functional!**
+
 - Sometimes rare codons used intentionally
+
 - Slow down translation at specific points
+
 - Allow proper protein folding
+
 - Regulatory mechanism!
 
 ### Key Takeaways - Codon Bias
 
 - **Redundant genetic code**: Multiple codons per amino acid
+
 - **Codon bias**: Organisms prefer certain synonymous codons
+
 - **Organism-specific**: Each species has different preferences
+
 - **Linked to tRNA availability**: Preferred codons have abundant tRNAs
+
 - **Affects translation efficiency**: Optimal codons = faster translation
+
 - **Critical for biotech**: Must optimize codons for heterologous expression
+
 - **Used in gene prediction**: Codon usage helps identify coding regions
+
 - **CAI metric**: Measures codon optimization
+
 - **Can be regulatory**: Rare codons sometimes serve functions
 
 **Bottom line**: The genetic code is universal, but codon preferences are not!
@@ -409,21 +563,152 @@ This is one signal used in **ab initio gene prediction** (covered in Chapter 17a
 ## Fun Facts! 🎉
 
 - Your cells transcribe genes into RNA constantly—thousands of times per second!
+
 - A typical human cell makes about 10,000 different proteins
+
 - Translation happens incredibly fast—a ribosome can add about 20 amino acids per second
+
 - The genetic code is almost universal—the same codons mean the same amino acids in nearly all living things
+
 - Some proteins are just a few dozen amino acids long, while others have thousands!
+
 - **Bacteria can prefer certain codons so strongly that rare codons are used <5% as often as optimal ones!**
 
 ## Key Takeaways
 
 - **Central Dogma**: DNA → RNA → Protein (the flow of genetic information)
+
 - **Transcription**: Making RNA from DNA (like photocopying a recipe)
+
 - **Translation**: Making proteins from RNA (like following the recipe to cook)
+
 - **Replication**: Making copies of DNA (when cells divide)
+
 - **Genetic Code**: 3 RNA letters = 1 amino acid
+
 - **Exceptions exist**: Some viruses use reverse transcription (RNA → DNA)
+
 - **Universal process**: Almost all living things use the same basic system
+
+- This understanding helps us develop medicines, study evolution, and understand diseases
+
+---
+
+**Sources**: Information adapted from Khan Academy (Intro to Gene Expression - Central Dogma), NHGRI Genetics Glossary, Nature Scitable, and Biology LibreTexts (Central Dogma of Molecular Biology).
+
+
+This is one signal used in **ab initio gene prediction** (covered in Chapter 17a)!
+
+### Codon Adaptation Index (CAI)
+
+**CAI** = Measure of how well a gene's codons match organism's preferences
+
+**Scale**: 0 to 1
+
+- **CAI = 1.0**: Perfect match (uses all optimal codons)
+
+- **CAI = 0.5**: Medium match
+
+- **CAI < 0.3**: Poor match (uses rare codons)
+
+**In practice**:
+
+- Highly expressed genes: CAI ~0.7-0.9
+
+- Lowly expressed genes: CAI ~0.3-0.5
+
+- Foreign genes (before optimization): CAI often < 0.3
+
+**Use in biotech**:
+
+- Calculate CAI before cloning gene
+
+- If CAI < 0.4 in host → optimize!
+
+- Predicts expression success
+
+### Exceptions and Special Cases
+
+**Not all organisms show strong codon bias**:
+
+- **Bacteria**: Strong bias (need efficiency!)
+
+- **Yeast**: Moderate bias
+
+- **Mammals**: Weaker bias (can afford inefficiency)
+
+- **Plants**: Variable bias
+
+**Why weaker bias in complex organisms?**
+
+- Slower growth rate (less time pressure)
+
+- More complex regulation needed
+
+- Different selection pressures
+
+**Rare codons can be functional!**
+
+- Sometimes rare codons used intentionally
+
+- Slow down translation at specific points
+
+- Allow proper protein folding
+
+- Regulatory mechanism!
+
+### Key Takeaways - Codon Bias
+
+- **Redundant genetic code**: Multiple codons per amino acid
+
+- **Codon bias**: Organisms prefer certain synonymous codons
+
+- **Organism-specific**: Each species has different preferences
+
+- **Linked to tRNA availability**: Preferred codons have abundant tRNAs
+
+- **Affects translation efficiency**: Optimal codons = faster translation
+
+- **Critical for biotech**: Must optimize codons for heterologous expression
+
+- **Used in gene prediction**: Codon usage helps identify coding regions
+
+- **CAI metric**: Measures codon optimization
+
+- **Can be regulatory**: Rare codons sometimes serve functions
+
+**Bottom line**: The genetic code is universal, but codon preferences are not!
+
+## Fun Facts! 🎉
+
+- Your cells transcribe genes into RNA constantly—thousands of times per second!
+
+- A typical human cell makes about 10,000 different proteins
+
+- Translation happens incredibly fast—a ribosome can add about 20 amino acids per second
+
+- The genetic code is almost universal—the same codons mean the same amino acids in nearly all living things
+
+- Some proteins are just a few dozen amino acids long, while others have thousands!
+
+- **Bacteria can prefer certain codons so strongly that rare codons are used <5% as often as optimal ones!**
+
+## Key Takeaways
+
+- **Central Dogma**: DNA → RNA → Protein (the flow of genetic information)
+
+- **Transcription**: Making RNA from DNA (like photocopying a recipe)
+
+- **Translation**: Making proteins from RNA (like following the recipe to cook)
+
+- **Replication**: Making copies of DNA (when cells divide)
+
+- **Genetic Code**: 3 RNA letters = 1 amino acid
+
+- **Exceptions exist**: Some viruses use reverse transcription (RNA → DNA)
+
+- **Universal process**: Almost all living things use the same basic system
+
 - This understanding helps us develop medicines, study evolution, and understand diseases
 
 ---
