@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -345,9 +365,19 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#from-sanger-to-next-generation-sequencing" id="toc-from-sanger-to-next-generation-sequencing" class="nav-link" data-scroll-target="#from-sanger-to-next-generation-sequencing"><span class="header-section-number">18.2</span> From Sanger to Next-Generation Sequencing</a>
   <ul class="collapse">
   <li><a href="#the-first-method-sanger-sequencing-1977" id="toc-the-first-method-sanger-sequencing-1977" class="nav-link" data-scroll-target="#the-first-method-sanger-sequencing-1977"><span class="header-section-number">18.2.1</span> The First Method: Sanger Sequencing (1977)</a></li>
-  <li><a href="#the-revolution-next-generation-sequencing-ngs" id="toc-the-revolution-next-generation-sequencing-ngs" class="nav-link" data-scroll-target="#the-revolution-next-generation-sequencing-ngs"><span class="header-section-number">18.2.2</span> The Revolution: Next-Generation Sequencing (NGS)</a></li>
-  <li><a href="#how-ngs-works-general-process" id="toc-how-ngs-works-general-process" class="nav-link" data-scroll-target="#how-ngs-works-general-process"><span class="header-section-number">18.2.3</span> How NGS Works (General Process)</a></li>
-  <li><a href="#ngs-platforms" id="toc-ngs-platforms" class="nav-link" data-scroll-target="#ngs-platforms"><span class="header-section-number">18.2.4</span> NGS Platforms</a></li>
+  <li><a href="#sanger-sequencing-the-detailed-mechanism" id="toc-sanger-sequencing-the-detailed-mechanism" class="nav-link" data-scroll-target="#sanger-sequencing-the-detailed-mechanism"><span class="header-section-number">18.2.2</span> Sanger Sequencing: The Detailed Mechanism</a></li>
+  <li><a href="#the-chemistry-of-sanger-sequencing" id="toc-the-chemistry-of-sanger-sequencing" class="nav-link" data-scroll-target="#the-chemistry-of-sanger-sequencing"><span class="header-section-number">18.2.3</span> The Chemistry of Sanger Sequencing</a></li>
+  <li><a href="#modern-sanger-sequencing-protocol" id="toc-modern-sanger-sequencing-protocol" class="nav-link" data-scroll-target="#modern-sanger-sequencing-protocol"><span class="header-section-number">18.2.4</span> Modern Sanger Sequencing Protocol</a></li>
+  <li><a href="#reading-a-sanger-chromatogram" id="toc-reading-a-sanger-chromatogram" class="nav-link" data-scroll-target="#reading-a-sanger-chromatogram"><span class="header-section-number">18.2.5</span> Reading a Sanger Chromatogram</a></li>
+  <li><a href="#semi-conservative-replication-revisited" id="toc-semi-conservative-replication-revisited" class="nav-link" data-scroll-target="#semi-conservative-replication-revisited"><span class="header-section-number">18.2.6</span> Semi-Conservative Replication Revisited</a></li>
+  <li><a href="#why-semi-conservative-replication-matters-for-sequencing" id="toc-why-semi-conservative-replication-matters-for-sequencing" class="nav-link" data-scroll-target="#why-semi-conservative-replication-matters-for-sequencing"><span class="header-section-number">18.2.7</span> Why Semi-Conservative Replication Matters for Sequencing</a></li>
+  <li><a href="#sanger-sequencing-applications-today" id="toc-sanger-sequencing-applications-today" class="nav-link" data-scroll-target="#sanger-sequencing-applications-today"><span class="header-section-number">18.2.8</span> Sanger Sequencing Applications Today</a></li>
+  <li><a href="#limitations-of-sanger-sequencing" id="toc-limitations-of-sanger-sequencing" class="nav-link" data-scroll-target="#limitations-of-sanger-sequencing"><span class="header-section-number">18.2.9</span> Limitations of Sanger Sequencing</a></li>
+  <li><a href="#historical-impact" id="toc-historical-impact" class="nav-link" data-scroll-target="#historical-impact"><span class="header-section-number">18.2.10</span> Historical Impact</a></li>
+  <li><a href="#comparison-table-sanger-vs.-ngs" id="toc-comparison-table-sanger-vs.-ngs" class="nav-link" data-scroll-target="#comparison-table-sanger-vs.-ngs"><span class="header-section-number">18.2.11</span> Comparison Table: Sanger vs.&nbsp;NGS</a></li>
+  <li><a href="#the-revolution-next-generation-sequencing-ngs" id="toc-the-revolution-next-generation-sequencing-ngs" class="nav-link" data-scroll-target="#the-revolution-next-generation-sequencing-ngs"><span class="header-section-number">18.2.12</span> The Revolution: Next-Generation Sequencing (NGS)</a></li>
+  <li><a href="#how-ngs-works-general-process" id="toc-how-ngs-works-general-process" class="nav-link" data-scroll-target="#how-ngs-works-general-process"><span class="header-section-number">18.2.13</span> How NGS Works (General Process)</a></li>
+  <li><a href="#ngs-platforms" id="toc-ngs-platforms" class="nav-link" data-scroll-target="#ngs-platforms"><span class="header-section-number">18.2.14</span> NGS Platforms</a></li>
   </ul></li>
   <li><a href="#human-genome-sequencing-then-vs.-now" id="toc-human-genome-sequencing-then-vs.-now" class="nav-link" data-scroll-target="#human-genome-sequencing-then-vs.-now"><span class="header-section-number">18.3</span> Human Genome Sequencing: Then vs.&nbsp;Now</a>
   <ul class="collapse">
@@ -412,29 +442,301 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="18.2" class="anchored" data-anchor-id="from-sanger-to-next-generation-sequencing"><span class="header-section-number">18.2</span> From Sanger to Next-Generation Sequencing</h2>
 <section id="the-first-method-sanger-sequencing-1977" class="level3" data-number="18.2.1">
 <h3 data-number="18.2.1" class="anchored" data-anchor-id="the-first-method-sanger-sequencing-1977"><span class="header-section-number">18.2.1</span> The First Method: Sanger Sequencing (1977)</h3>
-<p><strong>Developed by</strong>: Frederick Sanger (won his 2nd Nobel Prize for this!)</p>
-<p><strong>How it works (simplified)</strong>: 1. Start with DNA template 2. Add special labeled nucleotides that STOP copying when incorporated 3. Create DNA fragments of different lengths 4. Separate fragments by size 5. Read the sequence from the pattern!</p>
-<p><strong>Characteristics</strong>: - <strong>Accurate</strong>: 99.99% accuracy! - <strong>Slow</strong>: One sequence at a time - <strong>Expensive</strong>: Cost millions for whole genomes - <strong>Read length</strong>: Up to ~1,000 base pairs per read</p>
-<p><strong>Impact</strong>: - Used for the Human Genome Project! - Still used today for small-scale sequencing - Gold standard for accuracy</p>
-<p><strong>The Human Genome Project timeline</strong>: - Started: 1990 - Finished: 2003 - Cost: $3 billion - Time: 13 years - Method: Sanger sequencing</p>
+<p><strong>Developed by</strong>: Frederick Sanger (won his 2nd Nobel Prize for this!) <span class="citation" data-cites="sanger1977dna">(<a href="#ref-sanger1977dna" role="doc-biblioref">Sanger, Nicklen, and Coulson 1977</a>)</span></p>
+<p><strong>How it works (simplified)</strong>:</p>
+<ol type="1">
+<li>Start with DNA template</li>
+<li>Add special labeled nucleotides that STOP copying when incorporated</li>
+<li>Create DNA fragments of different lengths</li>
+<li>Separate fragments by size</li>
+<li>Read the sequence from the pattern!</li>
+</ol>
+<p><strong>Characteristics</strong>:</p>
+<ul>
+<li><strong>Accurate</strong>: 99.99% accuracy!</li>
+<li><strong>Slow</strong>: One sequence at a time</li>
+<li><strong>Expensive</strong>: Cost millions for whole genomes</li>
+<li><strong>Read length</strong>: Up to ~1,000 base pairs per read</li>
+</ul>
+<p><strong>Impact</strong>:</p>
+<ul>
+<li>Used for the Human Genome Project!</li>
+<li>Still used today for small-scale sequencing</li>
+<li>Gold standard for accuracy</li>
+</ul>
+<p><strong>The Human Genome Project timeline</strong>:</p>
+<ul>
+<li><strong>Started</strong>: 1990</li>
+<li><strong>Finished</strong>: 2003</li>
+<li><strong>Cost</strong>: $3 billion</li>
+<li><strong>Time</strong>: 13 years</li>
+<li><strong>Method</strong>: Sanger sequencing</li>
+</ul>
 <p>That’s $1 per base pair!</p>
 </section>
-<section id="the-revolution-next-generation-sequencing-ngs" class="level3" data-number="18.2.2">
-<h3 data-number="18.2.2" class="anchored" data-anchor-id="the-revolution-next-generation-sequencing-ngs"><span class="header-section-number">18.2.2</span> The Revolution: Next-Generation Sequencing (NGS)</h3>
+<section id="sanger-sequencing-the-detailed-mechanism" class="level3" data-number="18.2.2">
+<h3 data-number="18.2.2" class="anchored" data-anchor-id="sanger-sequencing-the-detailed-mechanism"><span class="header-section-number">18.2.2</span> Sanger Sequencing: The Detailed Mechanism</h3>
+<section id="the-biological-foundation" class="level4" data-number="18.2.2.1">
+<h4 data-number="18.2.2.1" class="anchored" data-anchor-id="the-biological-foundation"><span class="header-section-number">18.2.2.1</span> The Biological Foundation</h4>
+<p>Sanger sequencing is based on <strong>semi-conservative DNA replication</strong> - the same process cells use to copy DNA.</p>
+<p><strong>What is semi-conservative replication?</strong></p>
+<p>Think of DNA like a zipper with two sides:</p>
+<ul>
+<li>One side stays (the template)</li>
+<li>One new side is built (the copy)</li>
+<li>The old side guides making the new side</li>
+</ul>
+<p><strong>Key facts</strong>:</p>
+<ul>
+<li>DNA replication needs a template strand</li>
+<li>One strand serves as the template (parent)</li>
+<li>A new strand is built matching the template (daughter)</li>
+<li>Watson and Crick predicted this in 1953</li>
+<li>Meselson-Stahl proved it in 1958</li>
+</ul>
+</section>
+<section id="why-dna-polymerase-needs-a-primer" class="level4" data-number="18.2.2.2">
+<h4 data-number="18.2.2.2" class="anchored" data-anchor-id="why-dna-polymerase-needs-a-primer"><span class="header-section-number">18.2.2.2</span> Why DNA Polymerase Needs a Primer</h4>
+<p>This is an important question! Here’s the simple answer:</p>
+<p><strong>The problem</strong>:</p>
+<ul>
+<li><strong>RNA polymerase</strong> → Can start making RNA from nothing</li>
+<li><strong>DNA polymerase</strong> → Cannot start from nothing, needs a primer first</li>
+</ul>
+<p><strong>Why the difference?</strong></p>
+<p>Think of it like starting a zipper:</p>
+<ul>
+<li>RNA polymerase is like a self-starting zipper</li>
+<li>DNA polymerase is like a zipper that needs the first tooth in place</li>
+</ul>
+<p><strong>Three reasons DNA polymerase needs a primer</strong>:</p>
+<p><strong>Reason 1: Error checking</strong></p>
+<ul>
+<li>DNA polymerase checks each base it adds (proofreading)</li>
+<li>It needs something to hold onto to check properly</li>
+<li>Like needing a ruler to measure accurately</li>
+<li>RNA polymerase doesn’t check as carefully (RNA is temporary anyway)</li>
+</ul>
+<p><strong>Reason 2: Chemical differences</strong></p>
+<ul>
+<li>RNA polymerase uses NTPs (have an extra -OH group)</li>
+<li>DNA polymerase uses dNTPs (missing that -OH group)</li>
+<li>That extra -OH helps start from nothing</li>
+<li>DNA polymerase lost this ability during evolution</li>
+</ul>
+<p><strong>Reason 3: Accuracy matters</strong></p>
+<ul>
+<li>DNA is permanent → needs to be perfect</li>
+<li>Primer gives DNA polymerase a stable starting point</li>
+<li>Like building a house - you need a foundation first</li>
+<li>This reduces copying errors</li>
+</ul>
+<p><strong>Why this matters</strong>:</p>
+<ul>
+<li><strong>PCR</strong> → Needs primers to work</li>
+<li><strong>Sanger sequencing</strong> → Needs primers to work</li>
+<li><strong>Cell DNA replication</strong> → Uses RNA primers (made by primase enzyme)</li>
+</ul>
+</section>
+</section>
+<section id="the-chemistry-of-sanger-sequencing" class="level3" data-number="18.2.3">
+<h3 data-number="18.2.3" class="anchored" data-anchor-id="the-chemistry-of-sanger-sequencing"><span class="header-section-number">18.2.3</span> The Chemistry of Sanger Sequencing</h3>
+<section id="the-special-ingredients" class="level4" data-number="18.2.3.1">
+<h4 data-number="18.2.3.1" class="anchored" data-anchor-id="the-special-ingredients"><span class="header-section-number">18.2.3.1</span> The Special Ingredients</h4>
+<p>Sanger sequencing uses TWO types of building blocks:</p>
+<p><strong>1. Normal dNTPs (regular DNA building blocks)</strong>:</p>
+<ul>
+<li><strong>What they are</strong>: dATP, dTTP, dGTP, dCTP</li>
+<li><strong>What they do</strong>: Build DNA normally</li>
+<li><strong>Key feature</strong>: Have a 3’-OH group</li>
+<li><strong>Result</strong>: DNA chain keeps growing</li>
+</ul>
+<p><strong>2. Special ddNTPs (chain terminators)</strong>:</p>
+<ul>
+<li><strong>What they are</strong>: ddATP, ddTTP, ddGTP, ddCTP</li>
+<li><strong>What they do</strong>: STOP DNA growth when added</li>
+<li><strong>Key feature</strong>: MISSING the 3’-OH group</li>
+<li><strong>Result</strong>: DNA chain stops immediately</li>
+<li><strong>Bonus</strong>: Each is labeled with a different fluorescent color
+<ul>
+<li>ddA = Green</li>
+<li>ddT = Red</li>
+<li>ddG = Yellow</li>
+<li>ddC = Blue</li>
+</ul></li>
+</ul>
+</section>
+<section id="the-simple-difference" class="level4" data-number="18.2.3.2">
+<h4 data-number="18.2.3.2" class="anchored" data-anchor-id="the-simple-difference"><span class="header-section-number">18.2.3.2</span> The Simple Difference</h4>
+<p><strong>Normal dNTP</strong> (keeps going):</p>
+<pre><code>Has -OH group → Next base can attach → Chain grows</code></pre>
+<p><strong>Special ddNTP</strong> (stops):</p>
+<pre><code>NO -OH group → Next base CANNOT attach → Chain stops</code></pre>
+<p>Think of it like: - Normal dNTP = Lego brick with connectors on top - Special ddNTP = Lego brick with flat top (nothing can attach)</p>
+</section>
+<section id="how-sanger-sequencing-works-step-by-step" class="level4" data-number="18.2.3.3">
+<h4 data-number="18.2.3.3" class="anchored" data-anchor-id="how-sanger-sequencing-works-step-by-step"><span class="header-section-number">18.2.3.3</span> How Sanger Sequencing Works (Step by Step)</h4>
+<p>Let’s sequence this DNA: <code>5'-TACGGCATGCTA-3'</code></p>
+<p><strong>Step 1: Add primer</strong></p>
+<p>The primer tells DNA polymerase where to start:</p>
+<pre><code>Template DNA: 5'---TACGGCATGCTA---3'
+Primer:            3'-ATGC-5'
+                       ↑
+                  Start here!</code></pre>
+<p><strong>Step 2: Add the mixture</strong></p>
+<p>We add: - <strong>LOTS</strong> of normal dNTPs (A, T, G, C) - <strong>A FEW</strong> special ddNTPs (ddA, ddT, ddG, ddC) with colors</p>
+<p><strong>Step 3: DNA polymerase starts copying</strong></p>
+<p>Sometimes it adds a normal base → keeps going Sometimes it adds a special colored base → STOPS</p>
+<p>This creates fragments of different lengths:</p>
+<pre><code>Fragment 1: 3'-ATGCCGddT-5'      (Stopped at position 7, RED)
+Fragment 2: 3'-ATGCCGTAddC-5'    (Stopped at position 8, BLUE)
+Fragment 3: 3'-ATGCCGTACddG-5'   (Stopped at position 9, YELLOW)
+Fragment 4: 3'-ATGCCGTACGddA-5'  (Stopped at position 10, GREEN)
+Fragment 5: 3'-ATGCCGTACGAddT-5' (Stopped at position 11, RED)</code></pre>
+<p>Each fragment ends with a colored base!</p>
+<p><strong>Step 4: Separate by size</strong></p>
+<ul>
+<li>Pour fragments through a thin tube</li>
+<li>Small fragments run fast → detected first</li>
+<li>Large fragments run slow → detected last</li>
+<li>Like a race where smaller runners are faster</li>
+</ul>
+<p><strong>Step 5: Read the colors</strong></p>
+<p>Camera sees colors in order:</p>
+<pre><code>Position 7:  RED    → T was added
+Position 8:  BLUE   → C was added
+Position 9:  YELLOW → G was added
+Position 10: GREEN  → A was added
+Position 11: RED    → T was added
+
+Sequence = TCGAT...</code></pre>
+<p>Done! We just read the DNA sequence!</p>
+</section>
+</section>
+<section id="modern-sanger-sequencing-protocol" class="level3" data-number="18.2.4">
+<h3 data-number="18.2.4" class="anchored" data-anchor-id="modern-sanger-sequencing-protocol"><span class="header-section-number">18.2.4</span> Modern Sanger Sequencing Protocol</h3>
+<p><strong>Workflow</strong>:</p>
+<p><strong>Step 1: PCR Amplification</strong> (optional but common): - Amplify target region - Purify PCR product - Ensures enough template</p>
+<p><strong>Step 2: Sequencing Reaction</strong>: - Mix template DNA + sequencing primer - Add DNA polymerase (thermostable, e.g., Taq) - Add mix of dNTPs and fluorescent-labeled ddNTPs - Thermal cycling (like PCR, but linear amplification)</p>
+<p><strong>Typical mix ratio</strong>: - dNTPs:ddNTPs = ~100:1 - Ensures most reactions continue - But some terminate at each position</p>
+<p><strong>Step 3: Cleanup</strong>: - Remove excess ddNTPs - Remove salts (interfere with electrophoresis) - Use spin columns or magnetic beads</p>
+<p><strong>Step 4: Capillary Electrophoresis</strong>: - Inject sample into capillary - Apply electric field - Fragments separate by size - Laser excites fluorophores - Camera detects emission</p>
+<p><strong>Step 5: Data Analysis</strong>: - Software converts peaks to sequence - Quality scores assigned to each base - Generate chromatogram (peak visualization)</p>
+</section>
+<section id="reading-a-sanger-chromatogram" class="level3" data-number="18.2.5">
+<h3 data-number="18.2.5" class="anchored" data-anchor-id="reading-a-sanger-chromatogram"><span class="header-section-number">18.2.5</span> Reading a Sanger Chromatogram</h3>
+<p><strong>What you see</strong>:</p>
+<pre><code>      A    G    C    T    A    G    C    T
+      |    |    |    |    |    |    |    |
+     Peak Peak Peak Peak Peak Peak Peak Peak</code></pre>
+<p><strong>Quality indicators</strong>:</p>
+<p><strong>Good quality</strong>: - Sharp, well-separated peaks - Single color at each position - Uniform peak height - High signal-to-noise ratio</p>
+<p><strong>Poor quality</strong>: - Overlapping peaks (multiple colors) - Broad peaks - Low peak height - Often at start (primer) or end (long reads) of sequence</p>
+<p><strong>Phred quality score</strong>: - Q20 = 99% accuracy (1 error in 100 bases) - Q30 = 99.9% accuracy (1 error in 1,000 bases) - Most modern Sanger reads Q30 for first 700-800 bp</p>
+</section>
+<section id="semi-conservative-replication-revisited" class="level3" data-number="18.2.6">
+<h3 data-number="18.2.6" class="anchored" data-anchor-id="semi-conservative-replication-revisited"><span class="header-section-number">18.2.6</span> Semi-Conservative Replication Revisited</h3>
+<p><strong>Meselson-Stahl Experiment (1958)</strong> proved semi-conservative replication:</p>
+<p><strong>Experiment</strong>: 1. Grow E. coli in heavy nitrogen (¹⁵N) medium 2. DNA becomes “heavy” (labeled) 3. Switch to normal nitrogen (¹⁴N) medium 4. After one replication: DNA is “hybrid” (one heavy, one light strand) 5. After two replications: Half hybrid, half light</p>
+<p><strong>Result</strong>: Proved DNA replicates semi-conservatively - One template strand conserved - One new strand synthesized</p>
+<p><strong>This principle underlies</strong>: - All DNA replication in cells - PCR amplification - Sanger sequencing - All DNA synthesis!</p>
+<p><strong>Connection to Sanger sequencing</strong>: - Template strand = original DNA - Newly synthesized strand = sequence read - ddNTPs terminate synthesis at random positions - Pattern reveals template sequence</p>
+</section>
+<section id="why-semi-conservative-replication-matters-for-sequencing" class="level3" data-number="18.2.7">
+<h3 data-number="18.2.7" class="anchored" data-anchor-id="why-semi-conservative-replication-matters-for-sequencing"><span class="header-section-number">18.2.7</span> Why Semi-Conservative Replication Matters for Sequencing</h3>
+<p><strong>Advantages</strong>: 1. <strong>Accuracy</strong>: Template strand provides perfect guide 2. <strong>Complementarity</strong>: A pairs with T, G pairs with C 3. <strong>Proofreading</strong>: DNA polymerase checks each base 4. <strong>Reliability</strong>: Same template gives same sequence</p>
+<p><strong>Fidelity</strong>: - DNA polymerase error rate: ~1 in 10⁷ (with proofreading) - Sanger sequencing error rate: ~1 in 10⁴ (due to termination randomness) - Still extremely accurate!</p>
+</section>
+<section id="sanger-sequencing-applications-today" class="level3" data-number="18.2.8">
+<h3 data-number="18.2.8" class="anchored" data-anchor-id="sanger-sequencing-applications-today"><span class="header-section-number">18.2.8</span> Sanger Sequencing Applications Today</h3>
+<p><strong>Despite NGS dominance, Sanger still used for</strong>:</p>
+<p><strong>1. Variant Validation</strong>: - NGS finds potential mutation - Sanger confirms it - Gold standard for clinical diagnostics</p>
+<p><strong>2. Small-Scale Projects</strong>: - Sequencing few genes - Checking clones - Verifying plasmids - More cost-effective than NGS setup</p>
+<p><strong>3. Long Reads</strong>: - Up to 1,000 bp in single read - NGS reads much shorter (typically 150-300 bp) - Useful for spanning repetitive regions</p>
+<p><strong>4. Low-Throughput Needs</strong>: - 1-96 samples at a time - Don’t need millions of reads - Academic labs, clinical labs</p>
+</section>
+<section id="limitations-of-sanger-sequencing" class="level3" data-number="18.2.9">
+<h3 data-number="18.2.9" class="anchored" data-anchor-id="limitations-of-sanger-sequencing"><span class="header-section-number">18.2.9</span> Limitations of Sanger Sequencing</h3>
+<p><strong>Compared to NGS</strong>: - <strong>Throughput</strong>: Only 96 samples/run vs.&nbsp;millions in NGS - <strong>Cost</strong>: $5-10 per reaction vs.&nbsp;$0.01 per Mb for NGS - <strong>Speed</strong>: Hours per sample vs.&nbsp;days for whole genome (but millions of sequences!) - <strong>Scalability</strong>: Cannot do whole genomes economically</p>
+<p><strong>When NOT to use Sanger</strong>: - Whole genome sequencing - RNA-seq experiments - ChIP-seq experiments - Metagenomics - Any high-throughput application</p>
+</section>
+<section id="historical-impact" class="level3" data-number="18.2.10">
+<h3 data-number="18.2.10" class="anchored" data-anchor-id="historical-impact"><span class="header-section-number">18.2.10</span> Historical Impact</h3>
+<p><strong>Before Sanger sequencing</strong> (pre-1977): - No way to read DNA sequence directly - Relied on protein sequencing (slower, harder) - Genetic code deciphered with difficulty</p>
+<p><strong>After Sanger sequencing</strong> (1977-2005): - First genes sequenced - First genomes sequenced (viruses, bacteria) - <strong>Human Genome Project possible</strong>! - Molecular biology revolution - Medical genetics born</p>
+<p><strong>Key milestones using Sanger</strong>: - 1977: First DNA sequence (bacteriophage φX174, 5,375 bp) - 1995: First bacterial genome (H. influenzae, 1.8 Mb) - 1996: First eukaryotic genome (yeast, 12 Mb) - 2001: Human genome draft (3 Gb!) - 2003: Human genome complete</p>
+<p><strong>Nobel Prizes related to sequencing</strong>: - 1980: Sanger - DNA sequencing method - 1993: Mullis - PCR (enables sequencing) - 2020: Charpentier &amp; Doudna - CRISPR (genome editing, relies on sequencing)</p>
+</section>
+<section id="comparison-table-sanger-vs.-ngs" class="level3" data-number="18.2.11">
+<h3 data-number="18.2.11" class="anchored" data-anchor-id="comparison-table-sanger-vs.-ngs"><span class="header-section-number">18.2.11</span> Comparison Table: Sanger vs.&nbsp;NGS</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 33%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Sanger Sequencing</th>
+<th>Next-Generation Sequencing</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Read length</strong></td>
+<td>700-1,000 bp</td>
+<td>100-300 bp (Illumina)</td>
+</tr>
+<tr class="even">
+<td><strong>Accuracy</strong></td>
+<td>99.9% (Q30)</td>
+<td>99%+ (depends on platform)</td>
+</tr>
+<tr class="odd">
+<td><strong>Throughput</strong></td>
+<td>1-96 sequences/run</td>
+<td>Millions to billions/run</td>
+</tr>
+<tr class="even">
+<td><strong>Cost per Mb</strong></td>
+<td>$500-1,000</td>
+<td>$0.01-0.10</td>
+</tr>
+<tr class="odd">
+<td><strong>Time</strong></td>
+<td>Hours</td>
+<td>Days (for whole genome)</td>
+</tr>
+<tr class="even">
+<td><strong>Applications</strong></td>
+<td>Validation, cloning, small projects</td>
+<td>WGS, RNA-seq, variant discovery</td>
+</tr>
+<tr class="odd">
+<td><strong>Best for</strong></td>
+<td>Low throughput, long reads</td>
+<td>High throughput, discovery</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="the-revolution-next-generation-sequencing-ngs" class="level3" data-number="18.2.12">
+<h3 data-number="18.2.12" class="anchored" data-anchor-id="the-revolution-next-generation-sequencing-ngs"><span class="header-section-number">18.2.12</span> The Revolution: Next-Generation Sequencing (NGS)</h3>
 <p><strong>What changed</strong>: In the mid-2000s, new technologies emerged!</p>
 <p><strong>NGS characteristics</strong>: - <strong>Massively parallel</strong>: Sequence millions of fragments simultaneously! - <strong>Fast</strong>: Whole genome in days instead of years - <strong>Cheap</strong>: Now costs less than $1,000 per genome - <strong>High-throughput</strong>: Generate billions of base pairs of data</p>
 <p><strong>Key difference from Sanger</strong>: - Sanger: Read ONE sequence at a time (serial) - NGS: Read MILLIONS of sequences at once (parallel)</p>
 <p>Think of it like: - <strong>Sanger</strong>: Reading one book - <strong>NGS</strong>: Reading an entire library simultaneously!</p>
 </section>
-<section id="how-ngs-works-general-process" class="level3" data-number="18.2.3">
-<h3 data-number="18.2.3" class="anchored" data-anchor-id="how-ngs-works-general-process"><span class="header-section-number">18.2.3</span> How NGS Works (General Process)</h3>
+<section id="how-ngs-works-general-process" class="level3" data-number="18.2.13">
+<h3 data-number="18.2.13" class="anchored" data-anchor-id="how-ngs-works-general-process"><span class="header-section-number">18.2.13</span> How NGS Works (General Process)</h3>
 <p><strong>1. Library Preparation</strong>: - Break DNA into small fragments - Add special “adapters” to fragment ends - Like putting address labels on letters</p>
 <p><strong>2. Amplification</strong>: - Make many copies of each fragment - Like photocopying letters many times</p>
 <p><strong>3. Sequencing</strong>: - Fragments attach to a surface - Nucleotides added one at a time - Each nucleotide emits light (different colors for A, T, G, C) - Camera records the lights - Computer determines sequence!</p>
 <p><strong>4. Data Analysis</strong>: - Assemble millions of short sequences - Like putting together a jigsaw puzzle - Compare to reference genome - Identify differences</p>
 </section>
-<section id="ngs-platforms" class="level3" data-number="18.2.4">
-<h3 data-number="18.2.4" class="anchored" data-anchor-id="ngs-platforms"><span class="header-section-number">18.2.4</span> NGS Platforms</h3>
+<section id="ngs-platforms" class="level3" data-number="18.2.14">
+<h3 data-number="18.2.14" class="anchored" data-anchor-id="ngs-platforms"><span class="header-section-number">18.2.14</span> NGS Platforms</h3>
 <p><strong>Illumina</strong> (most popular): - Short reads (100-300 bp) - Very accurate - Most widely used - Relatively cheap</p>
 <p><strong>Ion Torrent</strong>: - Detects pH changes (not light) - Faster - Good for targeted sequencing</p>
 <p><strong>Others</strong>: Many platforms exist, each with trade-offs!</p>
@@ -597,6 +899,11 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Sources</strong>: Information adapted from Illumina, NHGRI, Technology Networks, and sequencing technology literature.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-sanger1977dna" class="csl-entry" role="listitem">
+Sanger, Frederick, Steven Nicklen, and Alan R. Coulson. 1977. <span>“DNA Sequencing with Chain-Terminating Inhibitors.”</span> <em>Proceedings of the National Academy of Sciences</em> 74 (12): 5463–67.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

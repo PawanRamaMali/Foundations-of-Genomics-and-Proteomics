@@ -295,9 +295,193 @@ How do computers find genes in raw DNA sequence? There are **three main approach
 
 **Statistical Features**:
 - **Open Reading Frames (ORFs)**: Long stretches without stop codons
-- **Codon bias**: Organisms prefer certain codons (more on this below!)
+- **Codon bias**: Organisms prefer certain codons (explained below!)
 - **GC content**: Coding regions often have different GC% than non-coding
 - **Periodicity**: Coding sequences show 3-base-pair periodicity
+
+#### Understanding Codon Bias
+
+**What is codon bias?**
+
+**The genetic code is redundant**:
+- 64 possible codons (4³ nucleotides)
+- Only 20 amino acids + 3 stop codons
+- Most amino acids have multiple codons (synonymous codons)
+
+**Example - Leucine** has 6 codons:
+```
+UUA, UUG, CUU, CUC, CUA, CUG → All code for Leucine
+```
+
+**Codon bias** = Non-random usage of synonymous codons
+
+**Organisms prefer certain codons over others!**
+
+**Example**:
+```
+E. coli prefers:
+- UUG for Leucine (used 50% of the time)
+- UUA for Leucine (used 10% of the time)
+
+Even though both code for same amino acid!
+```
+
+**Why codon bias exists?**
+
+**1. tRNA Availability**:
+- Cells have different amounts of each tRNA
+- Preferred codons match abundant tRNAs
+- Faster translation
+- Higher expression
+
+**2. Translation Efficiency**:
+- Rare codons slow down translation
+- Can cause ribosome stalling
+- Affects protein folding
+
+**3. mRNA Stability**:
+- Certain codon patterns affect mRNA structure
+- Influences half-life
+
+**Codon Adaptation Index (CAI)**:
+- Measure of codon bias (0 to 1)
+- 1.0 = Uses only preferred codons
+- 0.2 = Uses rare codons
+- Highly expressed genes have CAI ~0.8-1.0
+
+**Species-specific patterns**:
+
+| Organism | GC Content | Preferred Codons |
+|----------|------------|------------------|
+| E. coli | ~50% | G/C at 3rd position |
+| Yeast | ~40% | A/T at 3rd position |
+| Human | ~40-45% | Variable by isochore |
+| Plasmodium (malaria) | ~20% | Extremely A/T rich |
+
+**Using codon bias in gene prediction**:
+
+**Coding regions**:
+- Show strong codon bias
+- Match organism's preference
+- Higher CAI score
+
+**Non-coding regions**:
+- Random codon usage
+- No bias pattern
+- Lower CAI score
+
+**Ab initio gene finders use this**:
+```
+Sequence with high CAI → Likely coding
+Sequence with low CAI → Likely non-coding
+```
+
+**Practical application - Recombinant Protein Production**:
+
+**Problem**: Express human gene in E. coli
+- Human uses different codons than E. coli
+- Gene has rare E. coli codons
+- Low expression!
+
+**Solution**: Codon optimization
+- Replace human codons with E. coli preferred codons
+- Same protein sequence
+- 10-1000x higher expression!
+
+**Example**:
+```
+Human gene: ...UUA-CUA-UUA... (rare in E. coli)
+Optimized:  ...UUG-CUG-UUG... (preferred in E. coli)
+Same protein, better expression!
+```
+
+#### ORF Detection Algorithm (Detailed)
+
+**The computational method** to find ORFs:
+
+**Step-by-step algorithm**:
+
+**1. Consider all 6 reading frames**:
+- **3 frames on forward strand** (+1, +2, +3)
+- **3 frames on reverse complement** (-1, -2, -3)
+
+**Example DNA sequence**:
+```
+Forward: 5'-ATGCATGGATAA-3'
+
+Reading frame +1: ATG CAT GGA TAA (start...stop) ← ORF!
+Reading frame +2: A TGC ATG GAT AA
+Reading frame +3: AT GCA TGG ATA A
+
+Reverse complement: 3'-TACGTACCTATTT-5' = 5'-TTATAGGTACGTA-3'
+
+Reading frame -1: TTA TAG GTA CGT A
+Reading frame -2: T TAT AGG TAC GTA
+Reading frame -3: TT ATA GGT ACG TA
+```
+
+**2. Scan for start codons (ATG)**:
+- Mark all ATG positions in each frame
+- Each is potential ORF start
+
+**3. Extend until stop codon**:
+- Read triplets from ATG
+- Continue until TAA, TAG, or TGA
+- This is one ORF
+
+**4. Calculate ORF length**:
+- Count nucleotides from start to stop
+- Divide by 3 = number of codons
+
+**5. Apply filters**:
+- **Minimum length**: Usually >300 bp (100 codons)
+- Too short → likely random
+- **Codon bias**: Check if matches organism
+- **Blast search**: Does it match known proteins?
+
+**Example - Finding ORFs**:
+```
+Sequence: 5'-ATGAAATTTGCATAA-3'
+
+Frame +1: ATG AAA TTT GCA TAA
+          ↑                ↑
+        Start            Stop
+
+ORF = ATG AAA TTT GCA TAA (15 bp, 5 codons)
+Protein = M K F A * (4 amino acids)
+
+Too short? If minimum is 100 codons, this is rejected!
+```
+
+**Longest ORF heuristic**:
+- In a random sequence, expect short ORFs
+- Real genes = long ORFs
+- **Find longest ORF in each frame**
+- Usually the real gene!
+
+**Statistics**:
+- Random sequence: Average ORF = 64 codons (192 bp)
+- Real genes: Average = 300-500 codons (900-1500 bp)
+
+**Prokaryotic vs. Eukaryotic ORF Finding**:
+
+**Prokaryotes** (easier):
+- No introns
+- ORF = gene
+- High gene density
+- Start-to-stop is complete
+
+**Eukaryotes** (harder):
+- Introns interrupt ORFs!
+- Need to predict exons
+- Splice sites required
+- Much more complex
+
+**Tools for ORF Finding**:
+- **ORF Finder** (NCBI): Web-based, simple
+- **GeneMark**: Ab initio with species-specific models
+- **Glimmer**: Especially for bacteria
+- **Augustus**: For eukaryotes with introns
 
 **Computational Methods**:
 - **Hidden Markov Models (HMMs)**: Statistical models of gene structure
@@ -719,6 +903,109 @@ Output:
 - **GOseq**: Accounts for gene length bias
 - **topGO**: R package for enrichment
 - **g:Profiler**: Web-based enrichment analysis
+
+### Major Genome Annotation Repositories
+
+**Where annotations are stored and accessed**:
+
+**1. GENCODE** (https://www.gencodegenes.org):
+- **Comprehensive gene annotation** for human and mouse
+- Part of ENCODE project
+- High-quality manual curation
+- Includes:
+  - Protein-coding genes
+  - Long non-coding RNAs (lncRNAs)
+  - Small RNAs
+  - Pseudogenes
+- **Current version**: Updates regularly
+- **Human**: ~60,000 genes (20,000 protein-coding)
+- Gold standard for human genome annotation
+
+**What GENCODE provides**:
+- Gene structures (exons, introns)
+- Transcript isoforms (alternative splicing)
+- Functional annotations
+- GTF/GFF files for analysis
+
+**2. RefSeq** (NCBI Reference Sequence):
+- Curated non-redundant sequences
+- Covers many organisms (not just human/mouse)
+- Expert curation + computational methods
+- Stable identifiers (e.g., NM_000546 for TP53)
+- Used in clinical genetics
+
+**3. Ensembl** (https://www.ensembl.org):
+- European annotation resource
+- Automated pipeline + manual curation
+- Comparative genomics across species
+- Gene trees and orthologs
+- Variant annotation (Variant Effect Predictor)
+
+**4. UniProt** (https://www.uniprot.org):
+- For proteins specifically
+- **Swiss-Prot**: Manually reviewed (gold standard)
+- **TrEMBL**: Computationally annotated
+- Functional information
+- Protein domains, PTMs
+- Literature references
+
+**Comparison**:
+
+| Database | Focus | Curation | Species Coverage |
+|----------|-------|----------|------------------|
+| **GENCODE** | Human/mouse genes | Manual + auto | Human, mouse |
+| **RefSeq** | Reference sequences | Manual + auto | All organisms |
+| **Ensembl** | Comparative genomics | Automated pipeline | 100+ vertebrates |
+| **UniProt** | Proteins | Manual (Swiss-Prot) | All organisms |
+
+**Version control is critical**:
+- Annotations change over time
+- Always cite which version used!
+- Example: "GENCODE v44 (2023)"
+
+**Accessing annotations**:
+
+**Programmatic access**:
+```bash
+# Download GENCODE human annotations
+wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_44/gencode.v44.annotation.gtf.gz
+
+# Download via Ensembl
+wget ftp://ftp.ensembl.org/pub/release-110/gtf/homo_sapiens/
+```
+
+**Web browsers**:
+- UCSC Genome Browser: Shows RefSeq, GENCODE, Ensembl tracks
+- Ensembl browser: Shows Ensembl annotations
+- Can compare different annotation sources side-by-side!
+
+**Annotation file formats**:
+
+**GTF (Gene Transfer Format)**:
+```
+chr1  HAVANA  gene  11869  14409  .  +  .  gene_id "ENSG00000223972"
+chr1  HAVANA  transcript  11869  14409  .  +  .  transcript_id "ENST00000456328"
+chr1  HAVANA  exon  11869  12227  .  +  .  exon_id "ENSE00002234944"
+```
+
+**GFF3 (General Feature Format)**:
+- Similar to GTF
+- More flexible
+- Supports hierarchical features
+
+**Why multiple databases?**
+
+**Different strengths**:
+- **GENCODE**: Best for human/mouse RNA-seq analysis
+- **RefSeq**: Best for clinical variant interpretation
+- **Ensembl**: Best for comparative genomics
+- **UniProt**: Best for protein function
+
+**Discrepancies exist!**
+- Same gene, different annotations
+- Number of isoforms varies
+- Exon boundaries differ slightly
+- Choose database appropriate for your application
 
 ### Limitations of GO
 
