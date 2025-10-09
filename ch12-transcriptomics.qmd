@@ -326,9 +326,244 @@ Think of them like: Volume controls that turn down gene expression
 
 - Tells you what's actually happening
 
+### Why RNA is Unstable (And Why We Convert to cDNA)
+
+Before we discuss methods to study RNA, we need to understand an important challenge: **RNA is extremely unstable**!
+
+**The problem with RNA**:
+
+- **Chemically unstable**: RNA has an extra -OH group at the 2' position
+  - This makes RNA reactive and prone to breaking
+  - DNA is more stable (no 2'-OH group)
+
+- **RNases everywhere**: Enzymes that degrade RNA (RNases) are literally everywhere!
+  - On your skin
+  - In the air
+  - In cells (lots of them!)
+  - Very stable and hard to inactivate
+
+**Why so many RNases? An evolutionary defense!**
+
+This is actually evolution being clever:
+
+- **Viral defense**: Many viruses have RNA genomes
+- **Immune system**: Our cells have RNases to destroy viral RNA
+- **Quality control**: Cells need to degrade old or damaged RNA quickly
+- **Gene regulation**: Controlling RNA degradation = controlling gene expression
+
+Think of it like:
+
+- Your body treats all external RNA as potentially dangerous
+- RNases are like security guards everywhere
+- They destroy RNA before it can cause problems
+- Unfortunately, this makes working with RNA experimentally very difficult!
+
+**The solution: Convert RNA to cDNA**
+
+**cDNA** = Complementary DNA (DNA copy of RNA)
+
+**Why cDNA is better**:
+
+- **Stable**: DNA is chemically stable (no 2'-OH group)
+- **RNase-resistant**: RNases only cut RNA, not DNA
+- **Can be amplified**: Use PCR to make many copies
+- **Easier to work with**: Standard DNA techniques apply
+- **Long-term storage**: Can store cDNA for years
+
+**How RNA → cDNA conversion works**:
+
+1. Extract RNA from cells (work quickly, keep everything cold!)
+2. Add **reverse transcriptase** enzyme (from retroviruses)
+   - This special enzyme makes DNA from RNA template
+   - Regular DNA polymerase cannot do this!
+3. Add primers (usually oligo-dT primers that bind to poly-A tail)
+4. Reverse transcriptase synthesizes DNA copy of RNA
+5. Now you have stable cDNA to work with!
+
+Think of it like:
+
+- RNA = fragile ice sculpture (melts quickly)
+- cDNA = photograph of the ice sculpture (stable, permanent)
+- You can't keep the ice sculpture, but the photo preserves the information!
+
+### DNA Microarrays: Measuring Gene Expression
+
+Before NGS sequencing became popular, scientists used **microarrays** to measure gene expression [@schena1995quantitative; @shalon1996dna]. Microarrays are still used today for certain applications!
+
+#### What Is a DNA Microarray?
+
+A **DNA microarray** is like a gene expression chip:
+
+- Glass slide (like a microscope slide)
+- Thousands of spots, each containing DNA probes for one gene
+- Measures expression of thousands of genes simultaneously!
+
+Think of it like:
+
+- Each spot = a fishing hook for one specific gene
+- Different colored fish = RNA from different samples
+- Count how many fish each hook catches = measure gene expression!
+
+#### How Microarrays Work
+
+**Step 1: Create the array**
+
+- Synthesize or print short DNA sequences (probes) onto glass slide
+- Each spot contains probes for one specific gene
+- Can have 10,000-50,000+ spots on one slide!
+- Each probe is complementary to a specific mRNA
+
+**Step 2: Prepare samples**
+
+1. Extract RNA from cells (e.g., normal cells vs. cancer cells)
+2. Convert RNA to cDNA using reverse transcriptase
+   - Why? RNA is unstable!
+   - cDNA is much more stable and easier to work with
+3. Label cDNA with fluorescent dyes
+   - **Normal cells**: Label with green dye (Cy3)
+   - **Cancer cells**: Label with red dye (Cy5)
+
+**Step 3: Hybridization**
+
+- Mix both labeled cDNA samples together
+- Apply to microarray slide
+- Incubate (allow cDNA to bind to matching probes)
+- Wash away unbound cDNA
+
+**Step 4: Scan and analyze**
+
+- Scan slide with laser
+  - Green laser detects Cy3 (normal sample)
+  - Red laser detects Cy5 (cancer sample)
+- Camera captures fluorescent signals
+- Computer measures intensity at each spot
+
+#### Interpreting Microarray Colors
+
+**Two-color microarray results**:
+
+- **Green spot**: Gene higher in normal sample
+- **Red spot**: Gene higher in cancer sample
+- **Yellow spot**: Gene equal in both samples (red + green = yellow)
+- **Black/dark spot**: Gene not expressed in either sample
+
+**Example interpretation**:
+
+```
+Spot Color    → Meaning
+───────────────────────────────────────────
+Red           → Gene upregulated in disease
+Green         → Gene downregulated in disease
+Yellow        → No change in expression
+Black         → Gene not expressed
+```
+
+**Quantitative data**:
+
+- Actually, you get **two intensity values** per spot:
+  - Green intensity (Cy3)
+  - Red intensity (Cy5)
+- Calculate ratio: Red/Green
+  - Ratio > 1 = upregulated in cancer
+  - Ratio < 1 = downregulated in cancer
+  - Ratio ≈ 1 = no change
+
+#### Single-Color vs. Two-Color Microarrays
+
+**Two-color microarrays**:
+
+- Compare two samples directly on same array
+- Use two fluorescent dyes (e.g., Cy3 and Cy5)
+- Measures **relative** differences
+- Good for comparing disease vs. normal
+
+**Single-color microarrays** (e.g., Affymetrix):
+
+- One sample per array, one dye
+- Measure absolute intensity for each sample separately
+- Compare results across multiple arrays
+- Better for comparing many samples
+
+#### Microarray Applications
+
+**Gene expression profiling**:
+
+- Compare disease vs. healthy tissue
+- Identify disease biomarkers
+- Classify cancer subtypes
+
+**Drug response**:
+
+- Which genes change when drug is added?
+- Predict drug efficacy
+- Identify drug targets
+
+**Developmental biology**:
+
+- How does gene expression change during development?
+- Track changes over time
+
+**Example - Cancer classification**:
+
+1. Extract RNA from tumor sample
+2. Convert to cDNA, label with fluorescent dye
+3. Hybridize to microarray
+4. Compare expression pattern to database
+5. Classify tumor type based on gene expression profile!
+
+#### Limitations of Microarrays
+
+**Prior knowledge required**:
+
+- Can only detect genes you put probes for
+- Cannot discover new genes or transcripts
+- Limited to known sequences
+
+**Relative quantification only**:
+
+- Measures relative differences (fold-change)
+- Cannot tell absolute number of RNA molecules
+- Limited dynamic range
+
+**Background noise**:
+
+- Non-specific binding creates noise
+- Cross-hybridization between similar sequences
+
+**Limited sensitivity**:
+
+- Hard to detect low-abundance transcripts
+- Saturation at high expression levels
+
+#### Microarrays vs. RNA-seq
+
+| Feature | Microarray | RNA-seq |
+|---------|-----------|---------|
+| **Prior knowledge** | Required | Not required |
+| **New transcripts** | Cannot detect | Can discover |
+| **Quantification** | Relative | Absolute possible |
+| **Dynamic range** | Limited (~3 orders) | Wide (~5 orders) |
+| **Cost** | Lower for targeted | Lower for discovery |
+| **Sensitivity** | Moderate | High |
+| **Applications** | Known genes, routine | Discovery, novel transcripts |
+
+**When to use microarrays**:
+
+- Focused gene expression studies
+- Routine clinical diagnostics
+- Cost-effective for specific gene panels
+- Comparing expression of known genes
+
+**When to use RNA-seq**:
+
+- Discovering new transcripts
+- Detecting splice variants
+- Measuring absolute expression levels
+- Studying organisms without reference genome
+
 ### RNA Sequencing (RNA-seq)
 
-**Modern method** to study the transcriptome:
+**Modern method** to study the transcriptome [@wang2009rna; @mortazavi2008mapping]:
 
 **How it works**:
 
@@ -418,4 +653,4 @@ Think of them like: Volume controls that turn down gene expression
 
 ---
 
-**Sources**: Information adapted from Khan Academy, Nature Education, and transcriptomics research literature.
+**Sources**: Information adapted from Khan Academy, Nature Education, and transcriptomics research literature [@wang2009rna; @mortazavi2008mapping; @schena1995quantitative].

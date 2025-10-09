@@ -657,676 +657,338 @@ Think of it like:
 
 **Others**: Many platforms exist, each with trade-offs!
 
-## Human Genome Sequencing: Then vs. Now
+## Illumina Sequencing: The Details
 
-### The Amazing Progress
+### Why Illumina Dominates NGS
 
-| Feature | 2003 (HGP) | 2025 (Today) |
-|---------|------------|--------------|
-| **Cost** | $3 billion | <$1,000 |
-| **Time** | 13 years | 1-2 days |
-| **Method** | Sanger sequencing | NGS (Illumina) |
-| **Accuracy** | 99.99% | 99.9% |
-| **Availability** | Research only | Clinical & consumer |
+**Illumina/Solexa sequencing** is the most widely used NGS technology today. It was developed by Solexa (acquired by Illumina in 2007) and has become the gold standard for high-throughput sequencing [@bentley2008accurate].
 
-**That's a reduction of**:
+**Key advantages**:
 
-- Cost: **3 million-fold**!
+- **Massively parallel**: Sequence millions of DNA fragments simultaneously
+- **High accuracy**: 99%+ accuracy with quality scores
+- **Cost-effective**: Cheapest per-base cost
+- **Versatile**: Used for genome sequencing, RNA-seq, ChIP-seq, and more
 
-- Time: **2,000-fold**!
+### The Core Principle: Sequencing by Synthesis (SBS)
 
-It's like going from a price of a house to a coffee!
+Illumina uses **sequencing by synthesis (SBS)** - it sequences DNA by watching DNA polymerase add nucleotides one at a time!
 
-### What This Enables
+**The brilliant idea**:
 
-**1. Personalized Medicine**:
-
-- Sequence your genome to find disease risks
-
-- Choose treatments based on your genetics
-
-- Predict drug responses
-
-**2. Cancer Genomics**:
-
-- Sequence tumor DNA
-
-- Find specific mutations
-
-- Target treatments to specific mutations
-
-- Monitor treatment response
-
-**3. Rare Disease Diagnosis**:
-
-- Sequence patients with unknown diseases
-
-- Find causative mutations
-
-- Enable treatment or management
-
-**4. Prenatal Testing**:
-
-- Non-invasive prenatal testing (NIPT)
-
-- Detect genetic disorders before birth
-
-- From mother's blood (no risk to baby!)
-
-**5. Consumer Genomics**:
-
-- 23andMe, Ancestry.com
-
-- Learn about ancestry
-
-- Find genetic relatives
-
-- Some health information
-
-## Third-Generation Sequencing
-
-### Long-Read Technologies
-
-**Problem with NGS (2nd gen)**:
-
-- Short reads (100-300 bp)
-
-- Hard to assemble repetitive regions
-
-- Miss large structural variations
-
-**Solution**: Third-generation sequencing!
-
-### PacBio (Pacific Biosciences)
-
-**Key feature**: Very long reads (10,000-100,000+ bp)
-
-**How it works**:
-
-- Single molecule sequencing
-
-- Watch DNA polymerase add nucleotides in real-time
-
-- Each nucleotide fluoresces
-
-- Incredible! Like watching a molecular movie!
-
-**Advantages**:
-
-- Long reads span difficult regions
-
-- Can sequence through repetitive DNA
-
-- Detects DNA modifications directly
-
-**Disadvantages**:
-
-- Higher error rate (but getting better!)
-
-- More expensive
-
-- Lower throughput
-
-### Oxford Nanopore
-
-**Key feature**: Extremely long reads (up to 2 million bp!)
-
-**How it works**:
-
-- DNA passes through a tiny protein pore (nanopore)
-
-- Changes in electrical current identify each base
-
-- Portable (USB stick size!)
-
-- Real-time sequencing
-
-**Advantages**:
-
-- Longest reads available
-
-- Portable (used in field, space station!)
-
-- Real-time results
-
-- Direct RNA sequencing (no conversion to DNA)
-
-**Disadvantages**:
-
-- Higher error rate
-
-- More expensive per base
-
-- Newer technology (still improving)
-
-### Why Long Reads Matter
-
-**1. Complete Genome Assembly**:
-
-- 2022: First truly complete human genome
-
-- Used long reads to fill gaps
-
-- Repetitive regions finally sequenced!
-
-**2. Structural Variants**:
-
-- Large deletions, insertions, inversions
-
-- Hard to detect with short reads
-
-- Easy with long reads
-
-**3. Phasing**:
-
-- Determine which variants are on same chromosome
-
-- Important for understanding genetics
-
-**4. Repeat Regions**:
-
-- Centromeres, telomeres
-
-- Highly repetitive
-
-- Spanned by long reads
-
-## Applications of Sequencing
-
-### Research
-
-**Genomics**:
-
-- Sequence genomes of any organism
-
-- Understand evolution
-
-- Discover new species
-
-**Transcriptomics** (RNA-seq):
-
-- Sequence all RNA in cells
-
-- Measure gene expression
-
-- Find new transcripts
-
-**Metagenomics**:
-
-- Sequence all DNA in an environment
-
-- Discover microbes in gut, ocean, soil
-
-- Don't need to culture them!
-
-**Epigenomics**:
-
-- Some methods detect DNA methylation
-
-- Map epigenetic modifications
-
-### Medicine
-
-**Diagnosis**:
-
-- Identify genetic diseases
-
-- Diagnose infections (sequence pathogen)
-
-- Cancer genomics
-
-**Pharmacogenomics**:
-
-- Predict drug responses
-
-- Avoid adverse reactions
-
-- Personalize medication
-
-**Liquid Biopsies**:
-
-- Sequence cell-free DNA in blood
-
-- Early cancer detection
-
-- Monitor treatment
-
-### Agriculture
-
-**Crop Improvement**:
-
-- Sequence crop genomes
-
-- Find beneficial genes
-
-- Speed up breeding
-
-**Livestock**:
-
-- Breed healthier animals
-
-- Understand genetics
-
-- Disease resistance
-
-### Forensics
-
-**Criminal Justice**:
-
-- DNA fingerprinting
-
-- Identify suspects or victims
-
-- Solve cold cases
-
-**Paternity Testing**:
-
-- Determine biological relationships
-
-### Conservation
-
-**Endangered Species**:
-
-- Sequence threatened species
-
-- Preserve genetic diversity
-
-- Plan breeding programs
-
-**Ancient DNA**:
-
-- Sequence extinct species (mammoths, Neanderthals!)
-
-- Understand evolution
-
-- Learn about history
-
-## The Future of Sequencing
-
-### Emerging Technologies
-
-**Real-Time Single-Molecule Sequencing**:
-
-- Watch individual DNA molecules being read
-
-- No amplification needed
-
-- Detect modifications directly
-
-**In Situ Sequencing**:
-
-- Sequence DNA/RNA inside intact cells and tissues
-
-- See spatial organization
-
-- Preserve 3D context
-
-**$100 Genome**:
-
-- Even cheaper than today
-
-- Routine for everyone
-
-- Preventive medicine
-
-### Challenges Ahead
-
-**Data Analysis**:
-
-- Generating data is easy now
-
-- Interpreting data is hard!
-
-- Need better algorithms and AI
-
-**Ethical Issues**:
-
-- Privacy of genetic information
-
-- Insurance discrimination
-
-- Incidental findings (finding diseases you weren't looking for)
-
-**Equity**:
-
-- Making sequencing available to everyone
-
-- Not just wealthy countries/people
-
-- Global health applications
-
-## Key Takeaways
-
-- **DNA sequencing** = Reading the order of A, T, G, C in DNA
-
-- **Sanger sequencing** (1977):
-
-  - First method
-
-  - Accurate but slow and expensive
-
-  - Used for Human Genome Project
-
-- **Next-Generation Sequencing (NGS)**:
-
-  - Massively parallel (millions of sequences at once)
-
-  - Fast, cheap, high-throughput
-
-  - Revolutionized genomics!
-
-- **Progress**: $3 billion/13 years → <$1,000/1-2 days
-
-- **Third-generation sequencing**:
-
-  - Long reads (up to millions of base pairs!)
-
-  - PacBio and Oxford Nanopore
-
-  - Completed the human genome
-
-- **Applications**: Medicine, research, agriculture, forensics, conservation
-
-- **Future**: Even cheaper, faster, better analysis, ethical considerations
-
----
-
-**Sources**: Information adapted from Illumina, NHGRI, Technology Networks, and sequencing technology literature.
-
-
-**Quality indicators**:
-
-**Good quality**:
-
-- Sharp, well-separated peaks
-
-- Single color at each position
-
-- Uniform peak height
-
-- High signal-to-noise ratio
-
-**Poor quality**:
-
-- Overlapping peaks (multiple colors)
-
-- Broad peaks
-
-- Low peak height
-
-- Often at start (primer) or end (long reads) of sequence
-
-**Phred quality score**:
-
-- Q20 = 99% accuracy (1 error in 100 bases)
-
-- Q30 = 99.9% accuracy (1 error in 1,000 bases)
-
-- Most modern Sanger reads Q30 for first 700-800 bp
-
-### Semi-Conservative Replication Revisited
-
-**Meselson-Stahl Experiment (1958)** proved semi-conservative replication:
-
-**Experiment**:
-
-1. Grow E. coli in heavy nitrogen (¹⁵N) medium
-
-2. DNA becomes "heavy" (labeled)
-
-3. Switch to normal nitrogen (¹⁴N) medium
-
-4. After one replication: DNA is "hybrid" (one heavy, one light strand)
-
-5. After two replications: Half hybrid, half light
-
-**Result**: Proved DNA replicates semi-conservatively
-
-- One template strand conserved
-
-- One new strand synthesized
-
-**This principle underlies**:
-
-- All DNA replication in cells
-
-- PCR amplification
-
-- Sanger sequencing
-
-- All DNA synthesis!
-
-**Connection to Sanger sequencing**:
-
-- Template strand = original DNA
-
-- Newly synthesized strand = sequence read
-
-- ddNTPs terminate synthesis at random positions
-
-- Pattern reveals template sequence
-
-### Why Semi-Conservative Replication Matters for Sequencing
-
-**Advantages**:
-
-1. **Accuracy**: Template strand provides perfect guide
-
-2. **Complementarity**: A pairs with T, G pairs with C
-
-3. **Proofreading**: DNA polymerase checks each base
-
-4. **Reliability**: Same template gives same sequence
-
-**Fidelity**:
-
-- DNA polymerase error rate: ~1 in 10⁷ (with proofreading)
-
-- Sanger sequencing error rate: ~1 in 10⁴ (due to termination randomness)
-
-- Still extremely accurate!
-
-### Sanger Sequencing Applications Today
-
-**Despite NGS dominance, Sanger still used for**:
-
-**1. Variant Validation**:
-
-- NGS finds potential mutation
-
-- Sanger confirms it
-
-- Gold standard for clinical diagnostics
-
-**2. Small-Scale Projects**:
-
-- Sequencing few genes
-
-- Checking clones
-
-- Verifying plasmids
-
-- More cost-effective than NGS setup
-
-**3. Long Reads**:
-
-- Up to 1,000 bp in single read
-
-- NGS reads much shorter (typically 150-300 bp)
-
-- Useful for spanning repetitive regions
-
-**4. Low-Throughput Needs**:
-
-- 1-96 samples at a time
-
-- Don't need millions of reads
-
-- Academic labs, clinical labs
-
-### Limitations of Sanger Sequencing
-
-**Compared to NGS**:
-
-- **Throughput**: Only 96 samples/run vs. millions in NGS
-
-- **Cost**: $5-10 per reaction vs. $0.01 per Mb for NGS
-
-- **Speed**: Hours per sample vs. days for whole genome (but millions of sequences!)
-
-- **Scalability**: Cannot do whole genomes economically
-
-**When NOT to use Sanger**:
-
-- Whole genome sequencing
-
-- RNA-seq experiments
-
-- ChIP-seq experiments
-
-- Metagenomics
-
-- Any high-throughput application
-
-### Historical Impact
-
-**Before Sanger sequencing** (pre-1977):
-
-- No way to read DNA sequence directly
-
-- Relied on protein sequencing (slower, harder)
-
-- Genetic code deciphered with difficulty
-
-**After Sanger sequencing** (1977-2005):
-
-- First genes sequenced
-
-- First genomes sequenced (viruses, bacteria)
-
-- **Human Genome Project possible**!
-
-- Molecular biology revolution
-
-- Medical genetics born
-
-**Key milestones using Sanger**:
-
-- 1977: First DNA sequence (bacteriophage φX174, 5,375 bp)
-
-- 1995: First bacterial genome (H. influenzae, 1.8 Mb)
-
-- 1996: First eukaryotic genome (yeast, 12 Mb)
-
-- 2001: Human genome draft (3 Gb!)
-
-- 2003: Human genome complete
-
-**Nobel Prizes related to sequencing**:
-
-- 1980: Sanger - DNA sequencing method
-
-- 1993: Mullis - PCR (enables sequencing)
-
-- 2020: Charpentier & Doudna - CRISPR (genome editing, relies on sequencing)
-
-### Comparison Table: Sanger vs. NGS
-
-| Feature | Sanger Sequencing | Next-Generation Sequencing |
-|---------|-------------------|----------------------------|
-| **Read length** | 700-1,000 bp | 100-300 bp (Illumina) |
-| **Accuracy** | 99.9% (Q30) | 99%+ (depends on platform) |
-| **Throughput** | 1-96 sequences/run | Millions to billions/run |
-| **Cost per Mb** | $500-1,000 | $0.01-0.10 |
-| **Time** | Hours | Days (for whole genome) |
-| **Applications** | Validation, cloning, small projects | WGS, RNA-seq, variant discovery |
-| **Best for** | Low throughput, long reads | High throughput, discovery |
-
-### The Revolution: Next-Generation Sequencing (NGS)
-
-**What changed**: In the mid-2000s, new technologies emerged!
-
-**NGS characteristics**:
-
-- **Massively parallel**: Sequence millions of fragments simultaneously!
-
-- **Fast**: Whole genome in days instead of years
-
-- **Cheap**: Now costs less than $1,000 per genome
-
-- **High-throughput**: Generate billions of base pairs of data
-
-**Key difference from Sanger**:
-
-- Sanger: Read ONE sequence at a time (serial)
-
-- NGS: Read MILLIONS of sequences at once (parallel)
+- Use special fluorescent nucleotides
+- Each base (A, T, G, C) glows a different color
+- Watch which color appears → know which base was added
+- Repeat for every position in the DNA!
 
 Think of it like:
 
-- **Sanger**: Reading one book
+- DNA polymerase is building a LEGO tower
+- Each LEGO brick glows a different color
+- A camera takes a picture after each brick is added
+- The color sequence reveals the DNA sequence!
 
-- **NGS**: Reading an entire library simultaneously!
+### The Magic Ingredient: Reversible Terminator Nucleotides
 
-### How NGS Works (General Process)
+**Normal dNTPs** (regular DNA building blocks):
 
-**1. Library Preparation**:
+- DNA polymerase can add them continuously
+- Hard to control - might add multiple bases at once
 
-- Break DNA into small fragments
+**Illumina's reversible terminators**:
 
-- Add special "adapters" to fragment ends
+- **Modified dNTPs** with two special features:
+  1. **Fluorescent dye** attached (different color for A, T, G, C)
+  2. **Reversible terminator** group at 3' position
 
-- Like putting address labels on letters
+**How they work**:
 
-**2. Amplification**:
+1. DNA polymerase adds ONE modified nucleotide
+2. The terminator BLOCKS the next base from being added
+3. Camera captures the fluorescent signal
+4. Enzymes REMOVE the fluorescent dye and terminator
+5. Next cycle begins!
 
-- Make many copies of each fragment
+**The four colors**:
 
-- Like photocopying letters many times
+- **Adenine (A)**: Green fluorescence
+- **Thymine (T)**: Red fluorescence
+- **Guanine (G)**: Yellow fluorescence
+- **Cytosine (C)**: Blue fluorescence
 
-**3. Sequencing**:
+(Note: Exact colors vary by Illumina platform, but each base has a unique signal)
 
-- Fragments attach to a surface
+### Step-by-Step: How Illumina Sequencing Works
 
-- Nucleotides added one at a time
+#### Step 1: Library Preparation
 
-- Each nucleotide emits light (different colors for A, T, G, C)
+**Goal**: Prepare DNA fragments with special adapters
 
-- Camera records the lights
+**Process**:
 
-- Computer determines sequence!
+1. **Fragment DNA**: Break genomic DNA into small pieces (typically 200-500 bp)
+   - Use enzymes (restriction enzymes) OR
+   - Physical shearing (sonication, nebulization)
 
-**4. Data Analysis**:
+2. **Repair ends**: Make fragment ends smooth and blunt
 
-- Assemble millions of short sequences
+3. **Add adapters**: Attach short DNA sequences to both ends
+   - Adapter sequence is known
+   - Contains binding sites for primers
+   - Allows fragments to attach to flow cell
 
-- Like putting together a jigsaw puzzle
+**Why adapters matter**:
 
-- Compare to reference genome
+- Let fragments stick to flow cell surface
+- Provide primer binding sites for sequencing
+- Add barcodes (for multiplexing - mixing multiple samples)
 
-- Identify differences
+#### Step 2: Cluster Generation (Bridge Amplification)
 
-### NGS Platforms
+**The flow cell**:
 
-**Illumina** (most popular):
+- Glass slide with millions of tiny spots
+- Each spot has oligonucleotides (short DNA sequences) attached
+- These oligos match the adapter sequences
 
-- Short reads (100-300 bp)
+**Bridge amplification process**:
 
-- Very accurate
+1. **Attach**: DNA fragment binds to flow cell via adapter
+2. **Bend**: Fragment bends over and binds to nearby oligo (makes a "bridge")
+3. **Amplify**: DNA polymerase copies the fragment
+4. **Separate**: Double-stranded DNA is denatured (separated)
+5. **Repeat**: Process repeats ~30-35 times
 
-- Most widely used
+**Result**: Each single DNA molecule becomes a "cluster" of ~1,000 identical copies in one tiny spot!
 
-- Relatively cheap
+**Why clustering is brilliant**:
 
-**Ion Torrent**:
+- **Signal amplification**: 1,000 copies glow much brighter than 1 molecule
+- **Accuracy**: All copies in cluster have same sequence
+- **Millions of clusters**: Each original DNA fragment gets its own cluster
+- **Parallel sequencing**: All clusters sequenced simultaneously!
 
-- Detects pH changes (not light)
+Think of it like:
 
-- Faster
+- One person shouting = hard to hear
+- 1,000 people shouting the same thing = very loud and clear!
 
-- Good for targeted sequencing
+#### Step 3: Sequencing by Synthesis
 
-**Others**: Many platforms exist, each with trade-offs!
+**Now the actual sequencing begins**!
+
+**Cycle 1: Add first base**
+
+1. **Add mix** to flow cell:
+   - All four fluorescent reversible terminator dNTPs (A, T, G, C)
+   - DNA polymerase
+   - Sequencing primer (binds to adapter)
+
+2. **Incorporation**:
+   - DNA polymerase adds ONE base to each cluster
+   - Only the complementary base binds
+   - Terminator prevents adding more bases
+
+3. **Wash**: Remove unincorporated nucleotides
+
+4. **Image**:
+   - Laser excites fluorescent dyes
+   - Camera captures emission from each cluster
+   - Computer records which color (which base)
+
+5. **Cleave**:
+   - Enzymes remove fluorescent dye
+   - Enzymes remove terminator group
+   - 3'-OH is restored for next cycle
+
+**Cycle 2: Add second base**
+
+- Repeat exact same process
+- Add second base
+- Image the color
+- Record the base
+
+**Cycles 3, 4, 5... up to 150-300 cycles**:
+
+- Continue adding one base at a time
+- Image each cycle
+- Build up the complete sequence!
+
+**Key features**:
+
+- **One base per cycle**: Reversible terminators prevent errors from homopolymers (like AAAAA)
+- **All four dNTPs present**: Natural competition minimizes bias
+- **Massively parallel**: Millions of clusters sequenced simultaneously
+
+#### Step 4: Data Analysis and Base Calling
+
+**What happens to the images**:
+
+1. **Image analysis**: Software identifies each cluster spot
+
+2. **Intensity measurement**: Measures fluorescence intensity and color for each cluster
+
+3. **Base calling**: Determines which base (A, T, G, C) was added
+   - Compares signal to expected wavelengths
+   - Assigns most likely base
+
+4. **Quality scoring**: Assigns confidence score (Phred score) to each base
+   - **Q20** = 99% accuracy (1 error in 100 bases)
+   - **Q30** = 99.9% accuracy (1 error in 1,000 bases)
+   - **Q40** = 99.99% accuracy (1 error in 10,000 bases)
+
+5. **FASTQ file generation**: Creates file with:
+   - Read sequence
+   - Quality score for each base
+   - Read identifier
+
+**Quality control**:
+
+- Low-quality reads filtered out
+- Adapter sequences trimmed
+- Reads ready for alignment or assembly!
+
+### Paired-End Sequencing
+
+**Even more powerful**: Illumina can sequence BOTH ends of each DNA fragment!
+
+**How it works**:
+
+1. Sequence one end (forward read, 150 bp)
+2. Wash away sequencing reagents
+3. Perform bridge amplification again to regenerate clusters
+4. Sequence the OTHER end (reverse read, 150 bp)
+
+**Advantages**:
+
+- **Better mapping**: Know exact distance between two ends
+- **Detect rearrangements**: Identify insertions, deletions, inversions
+- **Span repetitive regions**: One end maps uniquely, helps place the other
+- **Improved accuracy**: Two reads better than one
+
+**Applications**:
+
+- **Genome assembly**: Connect contigs
+- **Variant detection**: Find structural variants
+- **RNA-seq**: Identify splice junctions
+- **Metagenomics**: Better species identification
+
+### Illumina Platforms Comparison
+
+| Platform | Reads per Run | Output per Run | Read Length | Time |
+|----------|---------------|----------------|-------------|------|
+| **MiSeq** | 25 million | 15 Gb | 2 × 300 bp | 4-55 hours |
+| **NextSeq** | 400 million | 120 Gb | 2 × 150 bp | 12-30 hours |
+| **HiSeq** | 5 billion | 1,500 Gb | 2 × 150 bp | 1-6 days |
+| **NovaSeq** | 20 billion | 6,000 Gb | 2 × 250 bp | 13-44 hours |
+
+**Choosing a platform**:
+
+- **Small projects** (targeted sequencing): MiSeq
+- **Medium projects** (RNA-seq, exomes): NextSeq
+- **Large projects** (whole genomes): NovaSeq
+- **Clinical labs**: MiSeq, NextSeq (faster turnaround)
+
+### Common Applications of Illumina Sequencing
+
+**Whole Genome Sequencing (WGS)**:
+
+- Sequence entire genome
+- Human genome: ~30× coverage typical
+- Detect all types of variants
+
+**Whole Exome Sequencing (WES)**:
+
+- Sequence only protein-coding regions (~1% of genome)
+- Much cheaper than WGS
+- Good for finding disease-causing mutations
+
+**RNA-seq (Transcriptomics)**:
+
+- Sequence all RNA in sample
+- Measure gene expression levels
+- Find splice variants, fusion genes
+
+**ChIP-seq (Epigenomics)**:
+
+- Map protein-DNA interactions
+- Find transcription factor binding sites
+- Map histone modifications
+
+**Targeted Sequencing**:
+
+- Sequence specific genes or regions
+- Cancer panels (e.g., 50 cancer-related genes)
+- Very deep coverage of specific regions
+
+**Metagenomics**:
+
+- Sequence all DNA in environmental sample
+- Identify microbes in gut, soil, ocean
+- Don't need to culture organisms!
+
+### Limitations and Challenges
+
+**Compared to Sanger sequencing**:
+
+- **Shorter reads**: 150-300 bp vs. 700-1,000 bp
+- **More complex data analysis**: Millions of short reads to assemble
+- **Higher upfront cost**: Equipment is expensive
+
+**Compared to long-read sequencing** (PacBio, Nanopore):
+
+- **Cannot span large repetitive regions**: Short reads get "lost"
+- **Miss structural variants**: Large insertions/deletions hard to detect
+- **Phasing difficult**: Hard to tell which variants are on same chromosome
+
+**Technical challenges**:
+
+- **GC bias**: GC-rich regions harder to sequence
+- **PCR duplicates**: Multiple reads from same original molecule
+- **Coverage uniformity**: Some regions get more reads than others
+- **Data storage**: Terabytes of data per run!
+
+### The Future of Illumina Technology
+
+**Recent improvements**:
+
+- **Longer reads**: Now up to 2 × 250 bp or 2 × 300 bp
+- **Higher accuracy**: Improved chemistry, better base calling algorithms
+- **Faster runs**: Hours instead of days
+- **Lower cost**: Approaching $100 per human genome
+
+**Emerging technologies**:
+
+- **Complete Long-Read**: Illumina acquiring long-read technology
+- **Single-cell sequencing**: Sequence individual cells
+- **Spatial transcriptomics**: Sequence RNA with spatial location information
+
+### Summary: Illumina Sequencing
+
+**What it is**: Sequencing by synthesis using fluorescent reversible terminators
+
+**How it works**:
+
+1. Fragment DNA and add adapters
+2. Create clusters by bridge amplification
+3. Sequence one base at a time (different color for each base)
+4. Image after each base addition
+5. Repeat for 150-300 cycles
+
+**Key advantages**:
+
+- Massively parallel (millions of reads simultaneously)
+- High accuracy (99%+)
+- Cost-effective
+- Versatile applications
+
+**Key limitations**:
+
+- Short reads
+- GC bias
+- Complex data analysis
+
+**Impact**: Revolutionized genomics, enabling personalized medicine, cancer genomics, microbiome research, and much more!
 
 ## Human Genome Sequencing: Then vs. Now
 
@@ -1702,4 +1364,4 @@ It's like going from a price of a house to a coffee!
 
 ---
 
-**Sources**: Information adapted from Illumina, NHGRI, Technology Networks, and sequencing technology literature.
+**Sources**: Information adapted from Illumina, NHGRI, Technology Networks, and sequencing technology literature [@bentley2008accurate; @shendure2008next; @mardis2017dna].
