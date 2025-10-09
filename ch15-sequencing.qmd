@@ -1106,31 +1106,69 @@ It's like going from a price of a house to a coffee!
 
 **How it works**:
 
-- DNA passes through a tiny protein pore (nanopore)
+**The revolutionary principle**: Instead of detecting fluorescence, Oxford Nanopore measures **changes in electrical current**!
 
-- Changes in electrical current identify each base
+**Step-by-step**:
 
-- Portable (USB stick size!)
+1. **The nanopore**: A tiny protein pore embedded in a membrane
+   - Think of it like a donut hole that DNA passes through
+   - Maintains an electrical current flowing through it
 
-- Real-time sequencing
+2. **DNA threading**: Single-stranded DNA is pulled through the pore
+   - Motor protein controls speed
+   - DNA passes through one base at a time
+
+3. **Current disruption**: Each base (A, T, G, C) blocks current differently
+   - Each base has a unique electrical signature
+   - Computer records current changes in real-time
+   - Pattern of disruptions reveals the sequence!
+
+4. **No amplification needed**: Sequences single DNA molecules directly
+   - **No PCR required** (unlike Illumina!)
+   - Avoids PCR errors and biases
+   - Detects DNA modifications directly (methylation, etc.)
+
+**Key advantages of no PCR**:
+
+- Faster workflow (skip amplification step)
+- More accurate (no PCR duplication errors)
+- Detects epigenetic modifications
+- Lower sample requirements
+
+**Device features**:
+
+- **Portable**: USB stick size (MinION device)
+- **Real-time sequencing**: Watch sequences appear live!
+- **Direct RNA sequencing**: Can sequence RNA without converting to DNA first
 
 **Advantages**:
 
-- Longest reads available
-
-- Portable (used in field, space station!)
-
-- Real-time results
-
-- Direct RNA sequencing (no conversion to DNA)
+- **Longest reads available**: Regular reads >10 kb, ultra-long reads >100 kb, record >2 Mb!
+- **Portable**: Used in field research, remote locations, even the International Space Station!
+- **Real-time results**: No need to wait for run to finish
+- **Direct RNA sequencing**: Preserves modifications, no reverse transcription needed
+- **No amplification bias**: Sequences original molecules
+- **Epigenetic detection**: Detects methylation and other modifications directly
 
 **Disadvantages**:
 
-- Higher error rate
+- **Higher error rate**: ~92-95% accuracy (vs. 99%+ for Illumina)
+  - But improving rapidly with better algorithms
+  - Errors are random, not systematic
+  - Can be corrected with higher coverage
 
-- More expensive per base
+- **More expensive per base**: Still more costly than Illumina for high coverage
 
-- Newer technology (still improving)
+- **Newer technology**: Still improving (algorithms, chemistry, accuracy)
+
+**Applications where Nanopore excels**:
+
+- **Structural variants**: Long reads easily span deletions, insertions, inversions
+- **Repetitive regions**: Can read through repeats that confuse short reads
+- **Transcript isoforms**: Full-length RNA sequencing reveals splice variants
+- **Metagenomics**: Long reads better for species identification
+- **Rapid diagnostics**: Real-time results for outbreak response
+- **Field work**: Portable sequencing where labs don't exist!
 
 ### Why Long Reads Matter
 
