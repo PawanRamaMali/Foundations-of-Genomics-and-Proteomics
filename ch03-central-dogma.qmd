@@ -17,6 +17,12 @@ Here's the central dogma in its simplest form:
 Or in words:
 **DNA makes RNA, and RNA makes Protein**
 
+![Central Dogma Overview](images/ch03/central-dogma-overview.jpg)
+
+**Figure 3.1**: The Central Dogma of molecular biology showing the flow of genetic information from DNA to RNA (transcription) to Protein (translation).
+
+*Image credit: Wikimedia Commons, CC BY-SA 4.0*
+
 Think of it like a factory assembly line:
 
 1. **DNA** is the blueprint/instruction manual (stored in the office)
@@ -138,6 +144,12 @@ Every time a cell divides (to make new cells), it needs to copy all its DNA so t
 3. New DNA letters attach to each side following the pairing rules (A with T, G with C)
 
 4. You end up with two identical copies of the original DNA
+
+![DNA Replication](images/ch03/dna-replication.svg)
+
+**Figure 3.2**: Semi-conservative DNA replication showing the double helix unwinding and each strand serving as a template for a new complementary strand.
+
+*Image credit: Mariana Ruiz LadyofHats, Wikimedia Commons, CC BY-SA 3.0*
 
 Think of it like:
 

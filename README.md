@@ -137,11 +137,30 @@ The book is designed for **beginners** who want to understand the principles, ex
 ---
 
 ## 🛠 How to Use this Repository
-- Each chapter will have:
-  - **Lecture notes**  
-  - **Diagrams & figures**  
-  - **Practice questions**  
-  - **Suggested further readings**  
+
+### For Readers
+- Each chapter includes:
+  - **Lecture notes**
+  - **Diagrams & figures**
+  - **Practice questions**
+  - **Suggested further readings**
+
+### For Contributors
+
+**New! Formatting Resources:**
+- **FORMATTING_GUIDE.md** - Complete style guide for consistent formatting
+- **format_checker.py** - Automated tool to check formatting issues
+- **FORMATTING_STATUS.md** - Current status and action plan
+
+**To check a chapter:**
+```bash
+python format_checker.py chapter-name.qmd
+```
+
+**To render book:**
+```bash
+quarto render
+```  
 
 ---
 

@@ -32,6 +32,12 @@ Think of DNA like:
 
 If you could see DNA with a super-powerful microscope, it would look like a **twisted ladder**. Scientists call this shape a "double helix"—which just means a ladder that's been twisted around and around.
 
+![DNA Double Helix Structure](images/ch02/dna-double-helix.svg)
+
+**Figure 2.1**: The DNA double helix structure showing the twisted ladder shape with base pairs forming the rungs.
+
+*Image credit: Zephyris, Wikimedia Commons, CC BY-SA 4.0*
+
 **The Parts of the DNA Ladder:**
 
 - The **sides** of the ladder are like handrails

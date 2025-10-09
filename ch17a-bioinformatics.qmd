@@ -998,6 +998,12 @@ Think of it like:
 
 GO classifies genes into **three independent categories** (called ontologies):
 
+![Gene Ontology Three Categories](images/ch17a/gene-ontology-overview.png)
+
+**Figure 17.1**: The three main categories of Gene Ontology (GO): Molecular Function (what the molecule does), Biological Process (what larger process it's part of), and Cellular Component (where it's located).
+
+*Image credit: Gene Ontology Consortium, CC BY 4.0*
+
 ### 1. Molecular Function (MF)
 
 **Definition**: The **biochemical activity** of the gene product at the molecular level
@@ -2283,6 +2289,12 @@ Gene X in HG38: chr17:43,009,127-43,090,315
 - Finds similar sequences
 
 - Returns matches ranked by similarity
+
+![BLAST Algorithm Overview](images/ch17a/blast-query-words.svg)
+
+**Figure 17.2**: BLAST (Basic Local Alignment Search Tool) algorithm showing the seed-and-extend strategy for finding similar sequences in databases.
+
+*Image credit: Wikimedia Commons, Public Domain*
 
 **How fast?**
 

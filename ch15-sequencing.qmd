@@ -267,6 +267,12 @@ Each fragment ends with a colored base!
 
 - Like a race where smaller runners are faster
 
+![Sanger Sequencing Method](images/ch15/sanger-sequencing.svg)
+
+**Figure 15.1**: Sanger sequencing chain termination method showing how ddNTPs terminate DNA synthesis at different positions, creating fragments of varying lengths that reveal the DNA sequence.
+
+*Image credit: Estevezj, Wikimedia Commons, CC BY-SA 3.0*
+
 **Step 5: Read the colors**
 
 Camera sees colors in order:
