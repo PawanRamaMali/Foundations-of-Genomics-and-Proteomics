@@ -292,6 +292,81 @@ Sequence = TCGAT...
 
 Done! We just read the DNA sequence!
 
+### The Original Sanger Method: Four Tubes
+
+**Historical note**: The method we just described is the MODERN version (1-tube with 4 colors). The original Sanger method (1977) was different!
+
+**How the original method worked**:
+
+Instead of one tube with all four ddNTPs (each a different color), Sanger used **FOUR SEPARATE TUBES**:
+
+- **Tube 1**: dNTPs + ddATP (stops at A)
+- **Tube 2**: dNTPs + ddTTP (stops at T)
+- **Tube 3**: dNTPs + ddGTP (stops at G)
+- **Tube 4**: dNTPs + ddCTP (stops at C)
+
+Think of it like:
+
+- Modern method = one race with 4 colored jerseys
+- Original method = 4 separate races!
+
+**The original labeling**:
+
+- Used **radioactive labels** (³²P or ³⁵S), not fluorescent colors
+- All fragments in one tube were the same "color" (radioactive)
+- No fancy colors - just radioactive signal!
+
+**Reading the results**:
+
+1. Run each tube on separate lanes of a gel
+2. Use **gel electrophoresis** (fragments separate by size)
+3. Expose gel to X-ray film (autoradiography)
+4. Dark bands appear where radioactive fragments are
+5. Read sequence by comparing the 4 lanes!
+
+**Example reading**:
+
+```
+        A lane   T lane   G lane   C lane
+        ----     ----     ----     ----
+Small   -        -        band     -        → G (smallest = first base)
+        band     -        -        -        → A (next)
+        -        band     -        -        → T (next)
+        -        -        -        band     → C (next)
+        -        -        band     -        → G (next)
+Large   -        band     -        -        → T (largest = last base)
+
+Sequence = GATCGT
+```
+
+**Why this was challenging**:
+
+- Needed 4 separate reactions (4× more work!)
+- Manual reading of gel bands (tedious, error-prone)
+- Radioactive materials (safety concerns)
+- Limited to ~300-400 bases per gel
+- Took hours to days per sequence
+
+**The improvement to modern method**:
+
+- **1986-1987**: Fluorescent dyes instead of radioactivity
+  - Safer (no radiation)
+  - Four colors = one tube instead of four!
+  - Automated detection with lasers
+
+- **1990s**: Capillary electrophoresis instead of gel
+  - Faster (minutes instead of hours)
+  - Automated (no manual reading)
+  - Longer reads (up to 1,000 bp)
+  - High-throughput (96 samples simultaneously)
+
+**Why learn about the old method?**
+
+- Helps understand the principle (ddNTPs stop synthesis)
+- Appreciates modern automation
+- Many papers from 1977-2005 use this method
+- Nobel Prize-winning technique!
+
 ### Modern Sanger Sequencing Protocol
 
 **Workflow**:
@@ -657,6 +732,199 @@ Think of it like:
 
 **Others**: Many platforms exist, each with trade-offs!
 
+### The Evolution of Read Lengths
+
+**Read length** = How many bases we can sequence in one continuous read
+
+Think of it like:
+
+- **Short reads** = reading one sentence at a time
+- **Long reads** = reading entire paragraphs or pages!
+
+**Historical progression of NGS read lengths**:
+
+**Early days (2005-2008)**:
+
+- **25-35 bp** reads
+- Illumina Genome Analyzer
+- Very short! Like reading only 2-3 words at a time
+- Hard to assemble genomes
+- But: massively parallel, millions of reads!
+
+**First generation NGS (2008-2012)**:
+
+- **50-75 bp** reads (single-end)
+- **2 × 50 bp** (paired-end) = 100 bp total information
+- Better, but still challenging
+- Could map to reference genomes
+- Assembly still difficult
+
+**Second generation (2012-2015)**:
+
+- **100-150 bp** reads
+- **2 × 100 bp** or **2 × 150 bp** (paired-end)
+- Big improvement!
+- Good for most applications
+- Became the standard
+
+**Modern era (2015-present)**:
+
+- **150-300 bp** reads (standard)
+- **2 × 150 bp** or **2 × 250 bp** common
+- Some platforms: **2 × 300 bp**!
+- Long enough for most needs
+- Good balance of length, accuracy, and cost
+
+**Longest Illumina reads today**:
+
+- MiSeq: Up to **2 × 300 bp** (600 bp total)
+- NovaSeq: Usually **2 × 250 bp** (500 bp total)
+- NextSeq: **2 × 150 bp** (300 bp total)
+
+### Why Read Length Matters
+
+**Longer reads are better for**:
+
+1. **Genome assembly**:
+   - Longer reads span more of the genome
+   - Easier to put pieces together
+   - Like having larger puzzle pieces
+
+2. **Repetitive regions**:
+   - Genomes have many repeats (same sequence multiple times)
+   - Short reads get "lost" in repeats
+   - Longer reads can span repeats
+   - Like reading "AAAAAAA..." - need to read the whole thing to know how many As!
+
+3. **Structural variants**:
+   - Large deletions, insertions, inversions
+   - Need to span the variant
+   - Short reads might miss it entirely
+
+4. **Isoform detection** (RNA-seq):
+   - Full-length transcripts are thousands of bases long
+   - Longer reads capture more of each isoform
+   - Better identification of splice variants
+
+**Shorter reads are better for**:
+
+1. **Accuracy**:
+   - Short reads have fewer errors
+   - Quality degrades toward the end of reads
+   - 50 bp at Q30 is better than 300 bp at Q20
+
+2. **Cost**:
+   - Shorter reads = cheaper per base
+   - More reads per run
+   - Better for high-throughput applications
+
+3. **Speed**:
+   - Shorter reads sequence faster
+   - Fewer cycles = faster run time
+
+### The Trade-Offs
+
+| Read Length | Accuracy | Cost | Speed | Best For |
+|-------------|----------|------|-------|----------|
+| **50-75 bp** | Highest | Cheapest | Fastest | RNA-seq, ChIP-seq, targeted sequencing |
+| **100-150 bp** | High | Moderate | Moderate | Standard WGS, exomes, most applications |
+| **250-300 bp** | Good | Higher | Slower | Assembly, amplicon sequencing, metagenomics |
+
+**Most common today**: **2 × 150 bp** (paired-end, 300 bp total information)
+
+- Good balance of everything
+- Cheap enough for routine use
+- Long enough for most applications
+- Standard for clinical sequencing
+
+### Why We Couldn't Make Long Reads Earlier
+
+**Technical challenges**:
+
+1. **Reversible terminators don't work well for long reads**:
+   - Each cycle adds chemicals that must be removed
+   - After ~300 cycles, too much residue builds up
+   - Signals get weaker and noisier
+   - Like photocopying a photocopy 300 times - gets fuzzy!
+
+2. **Chemistry degradation**:
+   - DNA polymerase efficiency decreases
+   - Fluorescent dyes accumulate
+   - Clusters get dimmer
+   - Error rate increases
+
+3. **Phasing problems**:
+   - In a cluster of 1,000 identical molecules
+   - All should be at the same position
+   - But some lag behind or jump ahead (phasing errors)
+   - After 200-300 cycles, too much variation
+   - Signal becomes mixed and unclear
+
+**Recent improvements**:
+
+- **Better chemistry**: More stable reagents
+- **Better enzymes**: DNA polymerase that works longer
+- **Better optics**: Brighter signals, better cameras
+- **Better algorithms**: Correct for phasing errors
+- **Result**: 300 bp reads now routine!
+
+### Paired-End vs. Single-End
+
+**Single-end sequencing**:
+
+- Sequence only one end of fragment
+- One read per fragment
+- Example: 150 bp read
+
+**Paired-end sequencing**:
+
+- Sequence BOTH ends of fragment
+- Two reads per fragment
+- Example: 2 × 150 bp = two 150 bp reads from same fragment
+- Know the distance between reads (~300-500 bp)
+
+**Why paired-end is better**:
+
+- **More information**: Two reads instead of one!
+- **Better mapping**: Know both ends help place fragment
+- **Detect structural variants**: If distance is wrong, something's inserted or deleted
+- **Span gaps**: One end maps, helps place the other end
+
+**Standard today**: Almost always paired-end!
+
+### Long-Read Technologies (3rd Generation)
+
+**The limit of short-read technologies**:
+
+- Illumina: Maximum ~300-500 bp (paired-end)
+- Even with improvements, can't go much longer
+- Fundamental chemistry limitations
+
+**Solution**: Completely different technologies!
+
+**PacBio**:
+
+- **10,000-100,000+ bp** reads
+- Average: ~10-20 kb
+- Longest: > 100 kb!
+- Uses single-molecule real-time sequencing
+- Different chemistry (not reversible terminators)
+
+**Oxford Nanopore**:
+
+- **Regular reads**: 10-50 kb
+- **Ultra-long reads**: 100-200 kb
+- **Record**: > 2 million bp!
+- Uses electrical current (not fluorescence)
+- Can sequence indefinitely until DNA breaks
+
+**Trade-offs for long reads**:
+
+- **Pros**: Much longer! Span repetitive regions, complete genomes
+- **Cons**: Higher error rate (~90-95% vs. 99%+), more expensive, lower throughput
+
+**The future**: Combine short accurate reads (Illumina) with long reads (PacBio/Nanopore) for best of both!
+
 ## Illumina Sequencing: The Details
 
 ### Why Illumina Dominates NGS
@@ -724,24 +992,235 @@ Think of it like:
 
 **Goal**: Prepare DNA fragments with special adapters
 
+Library preparation is like preparing letters for mailing - you need to put addresses and return addresses on them so they get to the right place!
+
 **Process**:
 
-1. **Fragment DNA**: Break genomic DNA into small pieces (typically 200-500 bp)
-   - Use enzymes (restriction enzymes) OR
-   - Physical shearing (sonication, nebulization)
+**1. Fragment DNA**: Break genomic DNA into small pieces (typically 200-500 bp)
 
-2. **Repair ends**: Make fragment ends smooth and blunt
+**Methods to fragment DNA**:
 
-3. **Add adapters**: Attach short DNA sequences to both ends
-   - Adapter sequence is known
-   - Contains binding sites for primers
-   - Allows fragments to attach to flow cell
+**a) Enzymatic fragmentation** (using enzymes):
+
+- **Restriction enzymes**: Cut DNA at specific sequences
+  - Like molecular scissors that only cut at certain words
+  - Problem: Cuts are not random, biased toward certain sequences
+  - Less common for NGS
+
+- **Tagmentation** (Nextera method):
+  - Enzyme (transposase) cuts AND adds adapters simultaneously!
+  - Very fast (minutes instead of hours)
+  - Becoming very popular
+  - Like a machine that stamps and addresses letters at once
+
+**b) Physical fragmentation** (mechanical):
+
+- **Sonication**: Use sound waves to break DNA
+  - High-frequency sound vibrates DNA until it breaks
+  - Like using a jackhammer on ice
+  - Creates random fragments
+  - Takes 5-30 minutes
+
+- **Nebulization**: Force DNA through tiny holes
+  - High pressure shears the DNA
+  - Like pushing spaghetti through a screen
+  - Also creates random fragments
+  - Quick but uses more DNA
+
+- **Enzymatic shearing**: Enzymes that cut randomly
+  - More gentle, less biased
+  - Like using scissors randomly on a string
+
+**Why fragment size matters**:
+
+- **Too short** (< 100 bp): Hard to map uniquely to genome
+- **Too long** (> 800 bp): Won't fit in sequencer, harder to amplify
+- **Just right** (200-500 bp): Perfect for Illumina!
+
+**2. End repair**: Make fragment ends smooth and blunt
+
+After fragmentation, DNA ends are ragged (like torn paper edges). We need to smooth them out!
+
+- Remove overhangs (extra single-stranded bits)
+- Fill in gaps
+- Make all ends blunt (flat)
+- Like filing down rough edges on wood
+
+**Why this matters**: Adapters can only attach to blunt ends properly
+
+**3. A-tailing**: Add single "A" nucleotide to 3' ends
+
+- Adds one adenine (A) to each end
+- Prepares for adapter ligation
+- Like adding a hook to hang things on
+
+**4. Add adapters**: Attach short DNA sequences to both ends
+
+**What are adapters?**
+
+Adapters are short DNA sequences (20-100 bp) that get attached to BOTH ends of every DNA fragment.
+
+Think of adapters like:
+
+- **Mailing addresses** on letters
+- **Barcode labels** on packages
+- **Handles** on suitcases
+
+**Adapter structure**:
+
+```
+5'— [P5 adapter] —[Your DNA fragment]— [P7 adapter] —3'
+         ↑                                      ↑
+    Binds to flow cell                   Binds to flow cell
+    + sequencing primer                  + sequencing primer
+```
+
+**What adapters contain**:
+
+1. **Flow cell binding sequences**:
+   - Let fragments stick to flow cell surface
+   - Complementary to oligos on flow cell
+   - Like Velcro hooks that match Velcro loops
+
+2. **Sequencing primer binding sites**:
+   - Where sequencing primers attach
+   - Start point for DNA polymerase
+   - Like "Start here" signs
+
+3. **Index/Barcode sequences** (optional):
+   - Unique tags (6-8 bp) to identify samples
+   - Like apartment numbers on an address
+   - Allows multiplexing!
+
+**5. Ligation**: Glue adapters to DNA fragments
+
+- Use DNA ligase enzyme (molecular glue)
+- Creates covalent bonds
+- Very stable connection
+- Like super-gluing handles onto boxes
+
+**6. Size selection**: Keep only fragments of desired size
+
+After adapter ligation, we have fragments of many sizes. We need to keep only the ones we want!
+
+**Methods**:
+
+- **Gel electrophoresis**: Separate by size, cut out desired band
+- **Magnetic beads** (SPRI beads): Most common today
+  - Beads bind DNA based on fragment size
+  - Add magnets to pull beads (with DNA) to side
+  - Wash away unwanted fragments
+  - Like using a magnet to sort iron filings by size
+
+**Typical target**: 300-500 bp fragments (including adapters)
+
+**7. PCR amplification**: Make many copies of each fragment
+
+- Need millions of each fragment for clustering
+- Use PCR primers that bind to adapters
+- Typically 8-12 PCR cycles
+- Too many cycles = bias and duplicates
+- Too few cycles = not enough DNA
+
+Think of it like:
+
+- Photocopying important documents
+- Need enough copies to work with
+- But too many copies waste paper!
+
+**Quality control at each step**:
+
+- **After fragmentation**: Check size distribution (should be 200-500 bp)
+- **After adapter ligation**: Check that adapters attached (size increases by ~120 bp)
+- **After PCR**: Check DNA concentration (need enough!) and size
+- **Use**: Bioanalyzer or TapeStation (measures DNA size electronically)
+
+**Why library prep matters**:
+
+- **Good library** = high-quality sequencing data
+- **Bad library** = garbage data (garbage in, garbage out!)
+- **Most common source of sequencing errors** is poor library prep
+
+### Multiplexing: Sequencing Many Samples at Once
+
+**The problem**: Illumina machines generate BILLIONS of reads per run. But you might only need MILLIONS for your sample. Wasteful!
+
+**The solution**: **Multiplexing** = mix multiple samples in one sequencing run!
+
+**How it works**:
+
+1. **Sample 1**: Add index "ATCACG" to adapters
+2. **Sample 2**: Add index "CGATGT" to adapters
+3. **Sample 3**: Add index "TTAGGC" to adapters
+4. Mix all three samples together
+5. Sequence them all at once!
+6. Computer reads the index and sorts reads by sample
+
+Think of it like:
+
+- Mailing 100 letters from different people in one mailbag
+- Each letter has a return address (index)
+- Post office sorts them by return address at destination!
+
+**Benefits**:
+
+- **Cost-effective**: Share one expensive sequencing run
+- **Efficient**: Don't waste billions of reads on one sample
+- **Common**: Can multiplex 12, 24, 96, or even 384 samples!
+
+**Real example**:
+
+- NovaSeq generates 20 billion reads
+- You need only 100 million reads per genome
+- Can sequence 200 genomes in one run!
+- Cost: $10,000 run ÷ 200 samples = $50 per genome!
+
+### Vector-Based Sequencing (Older Method)
+
+**Historical note**: Before modern library prep, scientists used **vectors** (bacterial plasmids):
+
+**Old method**:
+
+1. Insert your DNA fragment into a plasmid (circular DNA)
+2. Transform bacteria with plasmid
+3. Grow bacteria (each makes many copies)
+4. Extract plasmid DNA
+5. Sequence using Sanger sequencing
+6. Primers bind to known vector sequences
+
+**Why vectors were used**:
+
+- Amplified DNA (bacteria copy it millions of times)
+- Provided known primer binding sites
+- Cloned DNA for storage
+
+**Why we don't use them for NGS**:
+
+- Too slow (growing bacteria takes days)
+- Not needed (PCR amplifies DNA faster)
+- Can't multiplex easily
+- Modern library prep is faster and better!
+
+**Still used for**:
+
+- Sanger sequencing of cloned genes
+- Making DNA constructs for experiments
+- Long-term storage of DNA sequences
 
 **Why adapters matter**:
 
-- Let fragments stick to flow cell surface
-- Provide primer binding sites for sequencing
-- Add barcodes (for multiplexing - mixing multiple samples)
+- **Let fragments stick to flow cell surface** (P5/P7 sequences)
+- **Provide primer binding sites** for sequencing
+- **Add barcodes** (for multiplexing - mixing multiple samples)
+- **Enable bridge amplification** (clustering on flow cell)
+
+**Library = collection of all DNA fragments with adapters attached**
+
+Think of library like:
+
+- All books in a library have call numbers (adapters)
+- Call numbers let you find and organize books
+- Same way, adapters let us find and sequence DNA fragments!
 
 #### Step 2: Cluster Generation (Bridge Amplification)
 
@@ -989,6 +1468,192 @@ Think of it like:
 - Complex data analysis
 
 **Impact**: Revolutionized genomics, enabling personalized medicine, cancer genomics, microbiome research, and much more!
+
+## Coverage and Depth: Reading Each Base Multiple Times
+
+### What Is Coverage?
+
+When sequencing a genome, we don't just read each base once - we read it MANY times! This is called **coverage** or **depth**.
+
+**Coverage** = How many times, on average, each base is sequenced
+
+Think of it like:
+
+- Reading a book once → might miss typos
+- Reading a book 30 times → very confident about every word!
+
+**Notation**:
+
+- **30× coverage** (pronounced "30 ex") = each base read 30 times on average
+- **50× coverage** = each base read 50 times
+- **100× coverage** = each base read 100 times
+
+### Why Do We Need Multiple Reads?
+
+**Sequencing errors happen!**
+
+- Illumina: ~99% accuracy per base
+- That means 1 error per 100 bases!
+- Human genome = 3 billion bases
+- 1% error = 30 million errors if we only read once!
+
+**Solution**: Read each base many times and vote!
+
+**Example**:
+
+If we sequence one position 30 times and get:
+
+- 28 reads say "A"
+- 1 read says "T"
+- 1 read says "C"
+
+We're confident the correct base is **A** (the errors were T and C).
+
+Think of it like:
+
+- 30 witnesses to an event
+- 28 say "the car was red"
+- 2 say "the car was blue"
+- You trust the majority → the car was red!
+
+### How Coverage Works in Practice
+
+**Low coverage (10× or less)**:
+
+- **Pros**: Cheap, fast
+- **Cons**: Less confident, might miss variants
+- **Uses**: Population studies (many individuals, shallow depth)
+
+**Medium coverage (30×)**:
+
+- **Pros**: Good balance of cost and accuracy
+- **Cons**: Might miss some rare variants
+- **Uses**: Clinical sequencing, most research
+
+**High coverage (50-100×)**:
+
+- **Pros**: Very confident, detects rare variants
+- **Cons**: Expensive, more data to store
+- **Uses**: Cancer sequencing, rare disease diagnosis
+
+**Ultra-high coverage (500× or more)**:
+
+- **Pros**: Can detect tiny fractions of variant alleles
+- **Cons**: Very expensive
+- **Uses**: Liquid biopsies (detecting 1% cancer DNA in blood)
+
+### Coverage in Different Applications
+
+**Whole genome sequencing (WGS)**:
+
+- **Clinical diagnostic**: 30× coverage
+- **Research**: 30-50× coverage
+- **Population studies**: 10-15× coverage
+
+**Whole exome sequencing (WES)**:
+
+- **Typical**: 100× coverage (only sequencing 1% of genome, so can afford more depth)
+
+**RNA-seq**:
+
+- **Coverage** here means number of reads per gene
+- Not the same as genome coverage!
+
+**Targeted sequencing** (specific genes):
+
+- **Cancer panels**: 500-1,000× coverage
+- **Why so high?** To detect mutations in small % of cells
+
+### The Cost-Coverage Trade-off
+
+**More coverage = more cost**:
+
+- 30× human genome: ~$1,000
+- 50× human genome: ~$1,500
+- 100× human genome: ~$3,000
+
+**Diminishing returns**:
+
+- Going from 10× to 30× = huge improvement
+- Going from 30× to 50× = moderate improvement
+- Going from 50× to 100× = small improvement
+
+Think of it like:
+
+- Adding the 10th security camera helps a lot
+- Adding the 100th security camera doesn't help much more
+
+### Coverage Is Not Uniform
+
+**Important note**: Coverage is an AVERAGE, but some regions get more reads than others!
+
+**Reasons for uneven coverage**:
+
+- **GC content**: GC-rich regions often have lower coverage
+- **Repetitive sequences**: Hard to sequence, lower coverage
+- **PCR bias**: Some fragments amplify better than others
+- **Random chance**: Statistical variation
+
+**Example**:
+
+With 30× average coverage:
+
+- Some bases might have 50× coverage
+- Other bases might have 10× coverage
+- A few bases might have 0× coverage (gaps!)
+
+### Quality Scores and Coverage
+
+Coverage and **quality scores** work together:
+
+- **High coverage + high quality** = very confident
+- **High coverage + low quality** = less confident (many bad reads)
+- **Low coverage + high quality** = somewhat confident
+- **Low coverage + low quality** = not confident!
+
+**Quality score** (Phred score):
+
+- Q30 = 99.9% accuracy
+- Q20 = 99% accuracy
+- Below Q20 = often filtered out
+
+### Real-World Example: Diagnosing a Genetic Disease
+
+**Scenario**: Patient with unknown genetic disease
+
+**Approach**:
+
+1. Sequence patient's genome at 30× coverage
+2. Each base read ~30 times
+3. Computer identifies variants (differences from reference)
+4. High coverage = confident these variants are real
+5. Find causative mutation!
+
+**Why 30× matters**:
+
+- Can confidently call heterozygous variants (one copy mutated)
+- Expected ratio: 15 reads normal, 15 reads mutated
+- Clear signal!
+
+With only 5× coverage:
+
+- Might see: 3 reads normal, 2 reads mutated
+- OR: 4 reads normal, 1 read mutated
+- Hard to tell if it's real or an error!
+
+### Key Takeaways on Coverage
+
+- **Coverage** = number of times each base is sequenced
+- **30×** is standard for clinical sequencing
+- **Higher coverage** = more confident, but more expensive
+- **Coverage is uneven** across the genome
+- **Multiple reads allow error correction** through voting
+- **Different applications need different coverage levels**
+
+Think of coverage like:
+
+- Insurance: More coverage = more protection, but costs more!
+- Witnesses: More witnesses = more confident about the truth!
 
 ## Human Genome Sequencing: Then vs. Now
 
