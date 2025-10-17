@@ -3451,34 +3451,2078 @@ Positive feedback
 
 ## Epigenetic Mechanisms in Disease
 
+Epigenetic dysregulation is a hallmark of many diseases, particularly cancer. Unlike genetic mutations, epigenetic changes are potentially reversible, making them attractive therapeutic targets.
+
+### Cancer
+
+**Epigenetic alterations in cancer** are as important as genetic mutations!
+
+**Three major epigenetic changes**:
+
+**1. CpG island hypermethylation**:
+
+**Tumor suppressor silencing**:
+- VHL (von Hippel-Lindau): Renal cell carcinoma
+- BRCA1: Breast/ovarian cancer
+- MLH1: Colorectal cancer (Lynch syndrome)
+- CDKN2A (p16): Many cancers
+- MGMT: Glioblastoma
+
+**Mechanism**:
+```
+Normal cell:
+CpG island unmethylated → Tumor suppressor ON
+
+Cancer cell:
+CpG island methylated → Tumor suppressor OFF
+→ Loss of growth control
+→ Cell proliferation
+```
+
+**CIMP** (CpG Island Methylator Phenotype):
+- Widespread CpG island methylation
+- Subset of colorectal, gastric, gliomas
+- Distinct molecular subtype
+- Different prognosis and treatment response
+
+**2. Global hypomethylation**:
+
+**Effects**:
+- Chromosomal instability
+- Activation of transposons
+- Oncogene activation
+- Loss of imprinting
+
+**Examples**:
+- LOI (Loss of Imprinting) at IGF2
+- Hypomethylation of repetitive elements
+- Reactivation of silenced genes
+
+**3. Histone modification alterations**:
+
+**Common changes**:
+- Loss of H4K20me3 (genome stability mark)
+- Loss of H4K16ac (active mark)
+- Aberrant H3K27me3 patterns
+- EZH2 overexpression (many cancers)
+
+**Mutations in epigenetic regulators**:
+
+**Frequently mutated**:
+- **DNMT3A**: Acute myeloid leukemia (AML)
+- **TET2**: Myeloid malignancies
+- **IDH1/2**: Gliomas, AML (produce oncometabolite)
+- **EZH2**: Lymphomas, solid tumors
+- **KMT2A (MLL)**: Leukemias (translocations)
+- **SWI/SNF components**: 20% of cancers
+- **ARID1A**: Ovarian, endometrial cancers
+
+**Cancer-specific patterns**:
+
+| Cancer Type | Key Epigenetic Change | Target Gene/Pathway |
+|-------------|---------------------|---------------------|
+| **Colorectal** | MLH1 methylation | DNA mismatch repair |
+| **Glioblastoma** | MGMT methylation | DNA repair |
+| **Breast** | BRCA1 methylation | DNA repair |
+| **Leukemia** | MLL translocations | Histone methylation |
+| **Lymphoma** | EZH2 mutations | H3K27 methylation |
+| **Renal** | VHL methylation | HIF pathway |
+
+### Neurological Disorders
+
+**Rett Syndrome**:
+
+**Cause**: Mutations in MECP2 (MethylCpG-binding Protein 2)
+
+**Function of MeCP2**:
+- Binds methylated DNA
+- Recruits transcriptional repressors
+- Regulates thousands of neuronal genes
+- Critical for brain development and function
+
+**Symptoms**:
+- Normal development until 6-18 months
+- Then regression: loss of speech, hand skills
+- Autism-like features
+- Seizures, breathing problems
+- Almost exclusively affects females (X-linked)
+
+**Epigenetic mechanism**:
+- Loss of gene repression
+- Inappropriate gene expression in neurons
+- Synaptic dysfunction
+
+**Fragile X Syndrome**:
+
+**Cause**: CGG repeat expansion in FMR1 gene
+
+**Epigenetic silencing**:
+- Repeats trigger DNA methylation
+- FMR1 promoter methylated
+- Gene silenced
+- No FMRP protein produced
+
+**Symptoms**:
+- Intellectual disability
+- Autism spectrum features
+- Physical features (long face, large ears)
+- Most common inherited intellectual disability
+
+**Mechanism**:
+- Abnormal methylation spreads from repeats
+- Heterochromatin formation
+- Complete gene silencing
+- Loss of translational regulation
+
+**Alzheimer's Disease**:
+
+**Epigenetic changes**:
+- Global DNA hypomethylation
+- Region-specific hypermethylation
+- Histone deacetylation
+- Changes in genes for synaptic function
+
+**Therapeutic potential**:
+- HDAC inhibitors improve memory in models
+- Targeting epigenetic changes may help
+- Reversibility is promising
+
+**Huntington's Disease**:
+
+**Epigenetic effects**:
+- Mutant huntingtin affects HATs
+- Reduced histone acetylation
+- Transcriptional dysregulation
+- HDAC inhibitors show promise in models
+
+### Metabolic and Cardiovascular Diseases
+
+**Type 2 Diabetes**:
+
+**Epigenetic factors**:
+- Methylation changes in insulin signaling genes
+- Pancreatic β-cell dysfunction
+- Skeletal muscle insulin resistance
+- Influenced by maternal nutrition
+
+**Fetal programming**:
+- Maternal diabetes affects offspring epigenome
+- Increased diabetes risk in offspring
+- Transgenerational effects possible
+
+**Cardiovascular Disease**:
+
+**Atherosclerosis**:
+- Endothelial dysfunction
+- Inflammatory gene activation
+- Smooth muscle proliferation
+- Epigenetic changes in all cell types
+
+**Heart failure**:
+- Altered gene expression patterns
+- Fetal gene program reactivation
+- Epigenetic regulation of cardiac remodeling
+
+**Hypertension**:
+- Prenatal influences
+- Epigenetic programming of blood pressure regulation
+
+**Obesity**:
+
+**Epigenetic contribution**:
+- Adipocyte differentiation
+- Metabolism regulation
+- Inflammatory state
+- Influenced by diet and exercise
+
+**Developmental origins**:
+- Maternal obesity affects offspring
+- Epigenetic changes in metabolic genes
+- Increased obesity risk in children
+
+### Aging and Epigenetic Drift
+
+**Epigenetic changes with age**:
+
+**Global patterns**:
+- Overall DNA hypomethylation
+- CpG island hypermethylation
+- Loss of heterochromatin
+- Changes in histone marks
+
+**Epigenetic clock**:
+- Specific CpG sites change predictably with age
+- Can estimate biological age
+- Developed by Steve Horvath and others
+- Different clocks for different purposes
+
+**Consequences**:
+- Increased transcriptional noise
+- Loss of cellular identity
+- Senescence
+- Increased cancer risk
+- Reduced regenerative capacity
+
+**Interventions**:
+- Caloric restriction affects epigenome
+- Exercise modifies epigenetic marks
+- Potential to slow epigenetic aging
+- Reprogramming partially reverses age
+
+## Epigenetic Biomarkers
+
+### Diagnostic Methylation Markers
+
+**Clinical utility**: Epigenetic marks can indicate disease presence, type, or outcome.
+
+**MGMT methylation** (Glioblastoma):
+
+**What it is**:
+- MGMT = O6-Methylguanine-DNA Methyltransferase
+- DNA repair enzyme
+
+**Clinical significance**:
+- Methylated MGMT → Gene silenced
+- Tumors can't repair alkylation damage
+- Better response to temozolomide (chemotherapy)
+- Better prognosis
+- **Routine clinical test!**
+
+**Testing**:
+- Bisulfite sequencing
+- Methylation-specific PCR
+- Guides treatment decisions
+
+**BRCA1 methylation** (Breast/Ovarian Cancer):
+
+**Significance**:
+- Silences BRCA1 without mutation
+- Creates "BRCAness" phenotype
+- Sensitive to PARP inhibitors
+- May respond to platinum therapy
+
+**Potential as biomarker**:
+- Identify patients for targeted therapy
+- Complement genetic testing
+- More common than mutations
+
+**Septin 9 methylation** (Colorectal Cancer):
+
+**Application**:
+- Blood-based screening test
+- Detects methylated SEPT9 DNA
+- FDA-approved (Epi proColon)
+- Non-invasive alternative to colonoscopy
+
+**Performance**:
+- ~70-90% sensitivity for CRC
+- ~80-95% specificity
+- Detects some advanced adenomas
+
+**Cell-free DNA methylation**:
+
+**Liquid biopsies**:
+- Detect tumor DNA in blood
+- Methylation patterns indicate:
+  - Presence of cancer
+  - Tissue of origin
+  - Tumor burden
+  - Treatment response
+
+**Advantages**:
+- Non-invasive
+- Can monitor over time
+- Detect minimal residual disease
+- Earlier than imaging
+
+**Examples**:
+- Galleri test (multi-cancer detection)
+- GRAIL's technology
+- Guardant Health products
+
+### Prognostic and Therapeutic Indicators
+
+**Prognostic methylation patterns**:
+
+**AML** (Acute Myeloid Leukemia):
+- DNMT3A mutations → Worse prognosis
+- IDH1/2 mutations → Altered methylation, better with targeted therapy
+- TET2 mutations → Affect outcome
+
+**Neuroblastoma**:
+- Methylation classification
+- Predicts outcome
+- Guides intensity of treatment
+
+**Medulloblastoma**:
+- DNA methylation profiling
+- Identifies subgroups
+- Different prognoses and treatments
+
+**Predictive biomarkers**:
+
+Predict response to specific therapies:
+
+**MGMT** (as above): Temozolomide response
+
+**MLH1 methylation**: 
+- Colorectal cancer
+- Microsatellite instability
+- May respond to immunotherapy
+
+**PITX2 methylation**:
+- Breast cancer
+- Predicts benefit from tamoxifen
+
+**DNA methylation signatures**:
+
+**Smoking signature**:
+- Robust, persistent
+- Lung cancer risk
+- cg05575921 (AHRR gene)
+- Reverses slowly after quitting
+
+**Alcohol signature**:
+- Associated with consumption
+- Cancer and disease risk
+
+**Exercise signature**:
+- Changes with physical activity
+- Metabolic benefits
+
+## Epigenetic Therapies
+
+### DNMT Inhibitors
+
+**Mechanism**: Block DNA methyltransferases → Reduce DNA methylation → Reactivate silenced genes
+
+**5-Azacytidine (Vidaza) and Decitabine (Dacogen)**:
+
+**Mechanism**:
+- Nucleoside analogs
+- Incorporated into DNA during replication
+- Form covalent complex with DNMTs
+- Trap and degrade DNMTs
+- Result: DNA demethylation
+
+**Approved uses**:
+- Myelodysplastic syndromes (MDS)
+- Acute myeloid leukemia (AML)
+- Chronic myelomonocytic leukemia (CMML)
+
+**Effects**:
+- Reactivate tumor suppressors
+- Increase immune recognition
+- Differentiation therapy
+- Improve survival
+
+**Challenges**:
+- Non-specific (genome-wide effects)
+- Require cell division (S-phase)
+- Transient effects
+- Need ongoing treatment
+
+### HDAC Inhibitors
+
+**Mechanism**: Block histone deacetylases → Increase histone acetylation → Open chromatin → Gene activation
+
+**FDA-Approved HDAC Inhibitors**:
+
+**Vorinostat (SAHA, Zolinza)**:
+- Approved for cutaneous T-cell lymphoma (CTCL)
+- Pan-HDAC inhibitor
+- Oral administration
+
+**Romidepsin (Istodax)**:
+- Approved for CTCL and peripheral T-cell lymphoma
+- Class I HDAC inhibitor
+- IV administration
+
+**Belinostat (Beleodaq)**:
+- Approved for peripheral T-cell lymphoma
+- Pan-HDAC inhibitor
+
+**Panobinostat (Farydak)**:
+- Approved for multiple myeloma
+- Pan-HDAC inhibitor
+- Used with bortezomib and dexamethasone
+
+**Mechanisms of action**:
+- Increase acetylation → gene expression changes
+- Induce apoptosis
+- Cell cycle arrest
+- Differentiation
+- Immune effects
+- DNA damage sensitization
+
+**Combination therapies**:
+
+**DNMT + HDAC inhibitors**:
+- Synergistic effects
+- Used together in MDS/AML
+- More effective than either alone
+- Target complementary mechanisms
+
+**Rationale**:
+- DNA demethylation + histone acetylation
+- Maximize gene reactivation
+- Overcome resistance
+
+### BET Inhibitors
+
+**Target**: BET (Bromodomain and Extra-Terminal) proteins
+
+**BET proteins**:
+- BRD2, BRD3, BRD4, BRDT
+- Read acetylated histones (via bromodomains)
+- Recruit transcriptional machinery
+- Especially active at super-enhancers
+
+**BET inhibitors** (e.g., JQ1, I-BET, OTX015):
+
+**Mechanism**:
+- Compete with acetylated lysines
+- Displace BET proteins from chromatin
+- Disrupt super-enhancer function
+- Silence oncogene expression
+
+**Targets**:
+- MYC oncogene (many cancers)
+- Other super-enhancer-driven genes
+- Particularly effective in certain leukemias
+
+**Status**:
+- Multiple clinical trials
+- Promising preclinical data
+- Not yet FDA-approved
+- Challenges with resistance
+
+### EZH2 Inhibitors
+
+**Target**: EZH2 (Enhancer of Zeste Homolog 2)
+
+**Function of EZH2**:
+- Catalytic component of PRC2
+- Deposits H3K27me3
+- Silences tumor suppressors
+- Often overexpressed/mutated in cancer
+
+**EZH2 inhibitors** (Tazemetostat):
+
+**Mechanism**:
+- Block EZH2 methyltransferase activity
+- Reduce H3K27me3
+- Reactivate silenced genes
+
+**FDA approval**:
+- Epithelioid sarcoma (2020)
+- Follicular lymphoma with EZH2 mutation (2020)
+
+**Clinical applications**:
+- EZH2-mutant cancers
+- EZH2-overexpressing cancers
+- Being tested in various tumors
+
+### LSD1 Inhibitors
+
+**Target**: LSD1 (Lysine-Specific Demethylase 1)
+
+**Function of LSD1**:
+- Removes H3K4me1/me2 (activating marks)
+- Can also remove H3K9me1/me2
+- Important in cancer and differentiation
+
+**Inhibitors** (tranylcypromine, ORY-1001, others):
+
+**Applications**:
+- Acute myeloid leukemia
+- Small cell lung cancer
+- Promotes differentiation
+- Clinical trials ongoing
+
+### Limitations and Future Directions
+
+**Current challenges**:
+
+**Specificity**:
+- Current drugs affect genome-wide
+- Hard to target specific genes
+- Off-target effects
+
+**Resistance**:
+- Cells adapt
+- Redundant pathways
+- Requires combination therapy
+
+**Delivery**:
+- Some drugs have poor bioavailability
+- Toxicity concerns
+- Need better formulations
+
+**Patient selection**:
+- Who will respond?
+- Biomarker-driven approaches needed
+- Precision epigenetic medicine
+
+**Future strategies**:
+
+- More selective inhibitors
+- Combination therapies
+- Epigenome editing (next section!)
+- Personalized approaches
+- Early intervention/prevention
+
+## Epigenome Editing and CRISPR Applications
+
+### Targeted Epigenetic Modification
+
+Unlike genome editing (which changes DNA sequence), **epigenome editing** changes epigenetic marks at specific loci without altering sequence.
+
+### dCas9-Based Epigenome Editors
+
+**dCas9** (dead Cas9):
+- Cas9 with inactivated nuclease domains
+- Can still bind DNA when guided by sgRNA
+- Doesn't cut—just sits there
+- Platform for recruiting effectors
+
+**General strategy**:
+```
+sgRNA designs → Target locus
+    ↓
+dCas9 binds to target
+    ↓
+Fused epigenetic effector acts locally
+    ↓
+Epigenetic change at specific site
+```
+
+### dCas9-TET1 Systems
+
+**For DNA demethylation**:
+
+**Design**:
+- dCas9 fused to TET1 catalytic domain
+- Or recruit via adapter proteins (SunTag, etc.)
+
+**Function**:
+- TET1 converts 5mC → 5hmC → demethylation
+- Targeted to specific CpGs
+- Can reactivate methylation-silenced genes
+
+**Applications demonstrated**:
+- Reactivate BRCA1 in cancer cells
+- Demethylate specific CpG islands
+- Reverse pathological methylation
+- Research tool for causality studies
+
+**Examples**:
+```
+Cancer cell: BRCA1 promoter methylated → Gene OFF
+    ↓
+dCas9-TET1 targeted to BRCA1
+    ↓
+Local demethylation
+    ↓
+BRCA1 reactivated → Gene ON
+```
+
+### dCas9-DNMT3A Systems
+
+**For DNA methylation**:
+
+**Design**:
+- dCas9 fused to DNMT3A catalytic domain
+- Target hypomethylated oncogenes
+
+**Function**:
+- Add methylation to specific sites
+- Silence target genes
+- Establish stable repression
+
+**Applications**:
+- Silence oncogenes
+- Model disease methylation patterns
+- Study function of methylation
+- Potential therapeutic approach
+
+### Targeted Histone Modification
+
+**dCas9-p300** (Histone acetyltransferase):
+
+**Function**:
+- Acetylate histones at target locus
+- Activate gene expression
+- Open chromatin
+
+**Applications**:
+- Activate tumor suppressors
+- Rescue disease mutations
+- Enhance endogenous expression
+
+**Results**:
+- Robust activation (>100-fold)
+- Specific to target gene
+- Durable effects
+
+**dCas9-LSD1** (Histone demethylase):
+
+**Function**:
+- Remove H3K4me2 at targets
+- Repress gene expression
+
+**dCas9-EZH2 or dCas9-KRAB**:
+
+**Function**:
+- Deposit H3K27me3 (EZH2)
+- Or recruit heterochromatin (KRAB)
+- Silence genes
+
+**CRISPRa and CRISPRi**:
+
+**CRISPRa** (Activation):
+- dCas9-VP64 or dCas9-VPR
+- Strong transcriptional activators
+- Epigenetic remodeling follows
+
+**CRISPRi** (Interference):
+- dCas9-KRAB
+- Deposits H3K9me3
+- Stable repression
+- "Epi-silencing"
+
+### Multiplexing and Screening
+
+**Multiple targets simultaneously**:
+- Array of sgRNAs
+- Edit multiple loci
+- Create complex patterns
+- Model disease states
+
+**Epigenome-wide screens**:
+- Perturb chromatin regulators
+- Identify functional elements
+- Map enhancers
+- Understand gene regulation
+
+### Challenges and Future Directions
+
+**Current limitations**:
+
+**Specificity**:
+- Off-target binding possible
+- Need highly specific sgRNAs
+- Validation required
+
+**Efficiency**:
+- Variable efficacy at different loci
+- Some sites hard to edit
+- Chromatin accessibility matters
+
+**Durability**:
+- Some changes temporary
+- Need stable modification
+- Maintenance mechanisms
+
+**Delivery**:
+- Get tools into cells
+- In vivo delivery challenging
+- Size of constructs
+
+**Future improvements**:
+
+**Better editors**:
+- More specific Cas variants
+- Smaller size (Cas12, Cas14)
+- Improved catalytic domains
+
+**Delivery methods**:
+- AAV vectors
+- Nanoparticles
+- Exosomes
+- Direct protein delivery
+
+**Clinical translation**:
+- Ex vivo editing (like CAR-T)
+- In vivo targeting
+- Disease-specific applications
+- Combination with genome editing
+
+**Therapeutic potential**:
+
+**Cancer**:
+- Reactivate tumor suppressors
+- Silence oncogenes
+- Reverse abnormal methylation
+
+**Genetic diseases**:
+- Compensate for mutations
+- Activate compensatory genes
+- Silence toxic repeat expansions (like Huntington's)
+
+**Regenerative medicine**:
+- Enhance reprogramming
+- Direct cell fate conversion
+- Improve differentiation protocols
+
+**Research applications**:
+
+- Dissect cause vs. effect of epigenetic changes
+- Map functional elements
+- Understand gene regulation
+- Validate therapeutic targets
+- Model diseases
+
+## Epigenomics Techniques
+
+### Studying Epigenetic Marks Genome-Wide
+
+**Epigenomics** = Studying all epigenetic marks across the entire genome
+
+Like proteomics studies all proteins, epigenomics studies all epigenetic modifications!
+
+Modern techniques allow genome-wide mapping of:
+- DNA methylation
+- Histone modifications
+- Chromatin accessibility
+- 3D chromosome organization
+- Non-coding RNA expression
+
+### Bisulfite Sequencing
+
+**Purpose**: Map DNA methylation at single-base resolution
+
+**Principle**: Bisulfite converts unmethylated C to U, methylated C stays as C
+
+**Chemistry**:
+```
+Unmethylated Cytosine + Bisulfite → Uracil → reads as T
+Methylated Cytosine + Bisulfite → Cytosine → reads as C
+```
+
+**Methods**:
+
+**1. Whole Genome Bisulfite Sequencing (WGBS)**:
+
+**Protocol**:
+1. Extract genomic DNA
+2. Treat with sodium bisulfite
+3. PCR amplify (U → T)
+4. High-throughput sequencing
+5. Map reads to genome
+6. Calculate methylation %
+
+**Advantages**:
+- Complete coverage
+- Single-base resolution
+- Quantitative
+- Unbiased
+
+**Disadvantages**:
+- Expensive (high coverage needed)
+- Requires significant DNA input
+- Complex data analysis
+- Can't distinguish 5mC from 5hmC
+
+**2. Reduced Representation Bisulfite Sequencing (RRBS)**:
+
+**Protocol**:
+- Digest DNA with MspI (cuts at CCGG)
+- Enriches for CpG-rich regions
+- Size selection
+- Bisulfite treatment
+- Sequencing
+
+**Advantages**:
+- More cost-effective
+- Covers most CpG islands
+- Less DNA required
+- Good for precious samples
+
+**Disadvantages**:
+- Incomplete coverage
+- Biased toward CpG islands
+- Misses intergenic regions
+
+**3. Targeted Bisulfite Sequencing**:
+
+- Focus on specific regions
+- PCR amplification of targets
+- Deep coverage of regions of interest
+- Very cost-effective for limited targets
+
+**5hmC detection**:
+
+- oxidative bisulfite sequencing (oxBS-seq)
+- TET-assisted bisulfite sequencing (TAB-seq)
+- Can distinguish 5hmC from 5mC
+- More complex protocols
+
+### ChIP-Based Methods
+
+**Chromatin Immunoprecipitation (ChIP)**: Core technique for studying histone modifications and protein-DNA interactions
+
+**Basic ChIP protocol**:
+
+1. **Crosslinking**:
+   - Formaldehyde fixes proteins to DNA
+   - Captures transient interactions
+   - Preserves in vivo state
+
+2. **Chromatin fragmentation**:
+   - Sonication or enzymatic digestion
+   - 200-500 bp fragments
+   - Nucleosome-sized pieces
+
+3. **Immunoprecipitation**:
+   - Add specific antibody
+   - Antibody binds target (histone mark, TF, etc.)
+   - Pull down with beads
+   - Wash away non-specific binding
+
+4. **DNA purification**:
+   - Reverse crosslinks
+   - Purify DNA
+   - DNA that was bound by target protein
+
+5. **Analysis**:
+   - qPCR for specific regions (ChIP-qPCR)
+   - OR sequencing for genome-wide (ChIP-seq)
+
+**ChIP-seq** (ChIP + sequencing):
+
+**Workflow**:
+- Standard ChIP protocol
+- Library preparation
+- High-throughput sequencing
+- Map reads to genome
+- Call "peaks" (enriched regions)
+
+**Applications**:
+- Map histone modifications genome-wide
+- Find transcription factor binding sites
+- Identify regulatory elements
+- Compare between conditions/cell types
+
+**Advantages**:
+- Genome-wide
+- Quantitative
+- High resolution (depends on fragment size)
+- Well-established
+
+**Challenges**:
+- Antibody quality critical
+- Requires many cells (millions)
+- Some epitopes hard to ChIP
+- Analysis complexity
+
+**Variations**:
+
+**ChIP-exo**:
+- Adds exonuclease digestion
+- Near base-pair resolution
+- Very precise binding sites
+
+**Mint-ChIP**:
+- Multiplexed barcoding
+- Many samples simultaneously
+- Cost-effective
+
+### CUT&RUN and CUT&Tag
+
+**Improvements over ChIP**: Less input, better signal-to-noise, no crosslinking artifacts
+
+**CUT&RUN** (Cleavage Under Targets & Release Using Nuclease):
+
+**Protocol**:
+1. Bind cells to beads
+2. Permeabilize cells (keep nuclei intact)
+3. Add antibody against target
+4. Add protein A-MNase fusion
+5. Activate MNase with calcium
+6. MNase cuts DNA around antibody binding
+7. Released fragments diffuse out
+8. Sequence released DNA
+
+**Advantages**:
+- Low cell number (1,000-100,000 cells)
+- Low background
+- No crosslinking needed
+- Fast protocol
+- Better signal-to-noise than ChIP
+
+**CUT&Tag** (Cleavage Under Targets & Tagmentation):
+
+**Protocol**:
+- Similar to CUT&RUN
+- But uses Tn5 transposase
+- Tn5 cuts AND adds adapters
+- Streamlined library prep
+
+**Advantages**:
+- Even lower cell number (100-1,000 cells)
+- Faster library prep
+- Very low background
+- Excellent for rare cell types
+
+**Applications**:
+- Same as ChIP (histone marks, TFs)
+- Better for limited samples
+- Single-cell versions emerging
+
+### Chromatin Accessibility
+
+**Principle**: Open chromatin (active regulatory regions) is accessible to enzymes
+
+**ATAC-seq** (Assay for Transposase-Accessible Chromatin):
+
+**Protocol**:
+1. Isolate nuclei
+2. Add Tn5 transposase
+3. Tn5 inserts into accessible DNA
+4. Simultaneously fragments and tags
+5. PCR amplify
+6. Sequence
+
+**What it reveals**:
+- Open chromatin regions
+- Nucleosome positioning
+- Transcription factor footprints
+- Active regulatory elements
+
+**Advantages**:
+- Very fast (hours, not days)
+- Low cell number (500-50,000 cells)
+- Simple protocol
+- No antibodies needed
+
+**Applications**:
+- Map enhancers and promoters
+- Identify active regulatory regions
+- Compare cell types/conditions
+- TF footprinting
+
+**DNase-seq** (DNase I hypersensitive sites sequencing):
+
+**Protocol**:
+- Treat nuclei with DNase I
+- DNase cuts accessible regions
+- Sequence cut fragments
+- Map hypersensitive sites
+
+**History**:
+- Older method than ATAC-seq
+- ENCODE project used extensively
+- Now largely replaced by ATAC-seq
+- But large existing datasets
+
+**MNase-seq**:
+- Uses micrococcal nuclease
+- Cuts between nucleosomes
+- Maps nucleosome positions
+- Reveals phasing, spacing
+
+### Chromosome Conformation Capture
+
+**Purpose**: Understand 3D chromosome organization—which DNA regions physically interact
+
+**3C** (Chromosome Conformation Capture):
+
+**Protocol**:
+1. Crosslink proteins to DNA (formaldehyde)
+2. Digest with restriction enzyme
+3. Ligate nearby fragments (captures interactions)
+4. Reverse crosslinks
+5. PCR to detect specific interactions
+
+**Limitation**: Only one-to-one interactions, specific loci
+
+**4C** (Circular 3C):
+- One-to-all interactions
+- Pick one "viewpoint"
+- Find all interactions with that locus
+
+**5C** (3C-Carbon Copy):
+- Many-to-many within a region
+- Uses primers for many loci
+- More throughput than 3C
+
+**Hi-C**:
+
+**Protocol**:
+- Similar to 3C
+- But biotin mark at junctions
+- Pull down with streptavidin
+- Pair-end sequencing
+- **All-to-all interactions genome-wide!**
+
+**What it reveals**:
+- Topologically Associated Domains (TADs)
+- A/B compartments (active/inactive)
+- Chromatin loops
+- Enhancer-promoter interactions
+- 3D genome structure
+
+**Applications**:
+- Map genome organization
+- Identify regulatory interactions
+- Understand structural variants
+- Disease mechanisms
+
+**Micro-C and Micro-C XL**:
+- Use MNase instead of restriction enzymes
+- Higher resolution
+- Nucleosome-level interactions
+
+**ChIA-PET** (Chromatin Interaction Analysis by Paired-End Tag):
+- Combines ChIP + Hi-C
+- Protein-mediated interactions
+- Example: Map all loops involving a specific TF
+
+### RNA-seq for Epigenetic Studies
+
+**RNA-seq**: Sequence all RNA to measure gene expression
+
+**Standard RNA-seq**:
+- Measures mRNA levels
+- Shows which genes are ON/OFF
+- Consequence of epigenetic state
+
+**Small RNA-seq**:
+- Specifically sequences small RNAs
+- miRNAs, siRNAs, piRNAs
+- 18-40 nucleotide size selection
+- Different library prep
+
+**Applications for epigenetics**:
+- Profile miRNA expression
+- Discover novel small RNAs
+- Study RNA-mediated silencing
+
+**GRO-seq / PRO-seq** (Global Run-On sequencing):
+- Measures active transcription
+- Nascent RNA
+- More direct measure than RNA-seq
+- Detects enhancer RNAs (eRNAs)
+
+### Single-Cell Epigenomics
+
+**Why single-cell?**:
+- Cell-to-cell heterogeneity
+- Rare cell populations
+- Developmental trajectories
+- Tumor heterogeneity
+
+**Technologies**:
+
+**scATAC-seq**:
+- Single-cell chromatin accessibility
+- 100s-1000s of cells
+- Identify cell types by accessibility
+- Trace lineages
+
+**scChIP-seq**:
+- Challenging (low material)
+- Limited success
+- Being improved
+
+**scCUT&Tag**:
+- Better for single cells
+- Low background
+- Works well
+
+**scBS-seq** / scWGBS:
+- Single-cell methylation
+- Sparse coverage
+- Can still identify patterns
+
+**sc-Multi-omics**:
+- Combine multiple measurements
+- Example: scNMT-seq (methylation + transcriptome + accessibility)
+- Comprehensive cell state
+
+### Spatial Epigenomics
+
+**Emerging field**: Map epigenetic marks while preserving tissue spatial information
+
+**Technologies**:
+- Spatial ATAC-seq
+- Spatial Cut&Tag
+- In situ sequencing methods
+
+**Applications**:
+- Understand tissue organization
+- Cell-cell interactions
+- Disease microenvironments
+
+## Epigenetic Databases and Bioinformatics
+
+### Major Epigenomics Resources
+
+**ENCODE** (Encyclopedia of DNA Elements):
+
+**What it is**:
+- International consortium
+- Map functional elements in human genome
+- Comprehensive epigenomic data
+
+**Data types**:
+- ChIP-seq for many histone marks, TFs
+- DNA methylation (WGBS, RRBS)
+- Chromatin accessibility (DNase-seq, ATAC-seq)
+- RNA-seq
+- Hi-C
+- Multiple cell types and tissues
+
+**Access**:
+- www.encodeproject.org
+- Freely available
+- Searchable database
+- Track hubs for genome browsers
+
+**Roadmap Epigenomics**:
+
+**Focus**: Human tissue and cell type reference
+
+**Coverage**:
+- 127 reference epigenomes
+- Primary cells and tissues
+- Histone modifications
+- DNA methylation
+- RNA-seq
+
+**Applications**:
+- Reference for "normal" epigenomes
+- Identify regulatory elements
+- Understand disease variants
+- Tissue-specific patterns
+
+**Access**:
+- www.roadmapepigenomics.org
+- Integrated with ENCODE
+
+**IHEC** (International Human Epigenome Consortium):
+
+- Global collaboration
+- >1000 reference epigenomes planned
+- Multiple countries contributing
+- Standardized protocols
+
+**GEO** (Gene Expression Omnibus):
+
+**What it is**:
+- NIH database
+- Archive for functional genomics data
+- Includes epigenomics datasets
+
+**Contents**:
+- ChIP-seq, ATAC-seq, RNA-seq, methylation
+- Published and unpublished data
+- Searchable by technique, organism, etc.
+
+**Access**:
+- www.ncbi.nlm.nih.gov/geo
+- Free download
+- GEOquery R package
+
+**ArrayExpress** (EBI):
+- European equivalent of GEO
+- Similar data types
+- www.ebi.ac.uk/arrayexpress
+
+**TCGA** (The Cancer Genome Atlas):
+
+**For cancer epigenomics**:
+- DNA methylation (450K, EPIC arrays)
+- RNA-seq
+- Clinical data
+- Many cancer types
+
+**4D Nucleome**:
+- Chromosome structure
+- Hi-C and other 3D data
+- Nuclear organization
+- www.4dnucleome.org
+
+**Blueprint Epigenome**:
+- Blood cell epigenomes
+- Hematopoietic system focus
+- Reference for blood disorders
+
+### Visualization Tools
+
+**UCSC Genome Browser**:
+
+**Features**:
+- Visualize genomic data
+- Multiple tracks simultaneously
+- Compare samples
+- Custom track upload
+
+**For epigenomics**:
+- Display ChIP-seq peaks
+- Show methylation levels
+- Overlay multiple marks
+- Connect to ENCODE data
+
+**Access**: genome.ucsc.edu
+
+**IGV** (Integrative Genomics Viewer):
+
+**Features**:
+- Desktop application
+- Fast visualization
+- Multiple file formats
+- Good for detailed examination
+
+**Use for**:
+- View BAM/BigWig files
+- Check specific loci
+- Compare conditions
+- Quality control
+
+**Download**: software.broadinstitute.org/software/igv
+
+**WashU Epigenome Browser**:
+- Excellent for Hi-C data
+- Virtual 4C
+- Long-range interactions
+- epigenomegateway.wustl.edu
+
+**HiGlass**:
+- Specialized for Hi-C
+- Fast, interactive
+- Compare multiple Hi-C datasets
+- higlass.io
+
+### Analysis Tools and Pipelines
+
+**For ChIP-seq**:
+- MACS2: Peak calling
+- DiffBind: Differential binding
+- ChIPseeker: Annotation
+- deepTools: Visualization
+
+**For ATAC-seq**:
+- Same as ChIP-seq tools
+- Plus footprinting tools
+- HINT, Wellington for TF footprints
+
+**For BS-seq**:
+- Bismark: Alignment and methylation calling
+- methylKit: Differential methylation
+- bsseq: Statistical analysis
+- dmrseq: Find DMRs
+
+**For Hi-C**:
+- Juicer: Processing Hi-C data
+- HiC-Pro: Complete pipeline
+- cooltools: Analysis and visualization
+- HiCExplorer: TAD calling, interactions
+
+**Machine Learning**:
+- Predict enhancers from sequence
+- Classify chromatin states
+- Impute missing marks
+- ChromHMM, Segway: State segmentation
+
+## Epigenetics and Evolution
+
+### Role in Adaptation and Phenotypic Plasticity
+
+**Epigenetics as evolutionary mechanism**:
+
+Unlike genetic mutations, epigenetic changes:
+- Arise more rapidly
+- Are often reversible
+- Can respond to environment
+- May facilitate adaptation
+
+**Phenotypic plasticity**:
+
+**Definition**: Same genotype produces different phenotypes based on environment
+
+**Epigenetic basis**:
+- Environmental signals → epigenetic changes
+- Rapid phenotypic adjustments
+- Without genetic change
+- Reversible if environment changes
+
+**Examples**:
+
+**Honeybees**:
+- Queen vs. worker determined by diet
+- Same genome, different methylation
+- Royal jelly alters epigenome
+- Produces dramatically different phenotypes
+
+**Locusts**:
+- Solitary vs. gregarious forms
+- Crowding induces epigenetic changes
+- Color, behavior, morphology change
+- Serotonin-mediated epigenetic switch
+
+**Plants**:
+- Same plant produces different leaves
+- Sun vs. shade leaves
+- Underwater vs. aerial leaves
+- Methylation differences
+
+### Lamarckian Inheritance Revisited
+
+**Lamarck's hypothesis** (1809):
+- Organisms pass acquired characteristics to offspring
+- "Use and disuse"
+- Giraffes stretch necks → offspring have longer necks
+
+**Modern view**:
+- Mostly wrong for genetic inheritance
+- BUT: Epigenetic inheritance shows Lamarckian features
+- Environment can affect heritable marks (sometimes)
+- Transgenerational epigenetic inheritance IS real (in some cases)
+
+**Evidence**:
+
+**C. elegans starvation**:
+- Starvation alters small RNA pathways
+- Effects last 3+ generations
+- Metabolic adaptations inherited
+- piRNA-mediated
+
+**Plant stress memory**:
+- Stress induces methylation changes
+- Some changes inherited
+- Offspring more stress-resistant
+- Adaptive advantage
+
+**Human examples** (debated):
+- Dutch Hunger Winter effects
+- Överkalix study
+- Mechanisms unclear in mammals
+
+**Why limited in mammals?**:
+- Extensive epigenetic reprogramming
+- Two waves of erasure (germline + zygotic)
+- Protects against inheriting damage
+- But some marks escape
+
+### Evolutionary Dynamics
+
+**Neutral drift**:
+- Epigenetic marks can drift
+- Creates epigenetic diversity
+- Raw material for selection
+
+**Canalization**:
+- Developmental buffering
+- Epigenetics maintains consistent development
+- Despite genetic or environmental variation
+
+**Evolutionary capacitance**:
+- Epigenetic variation hidden
+- Released under stress
+- Source of rapid adaptation
+- HSP90 example in Drosophila
+
+**Facilitated variation**:
+- Epigenetics enables phenotypic exploration
+- Without genetic commitment
+- "Try before you buy"
+- If beneficial, may become genetic
+
+## Epigenetics in Reproduction
+
+### Gametogenesis
+
+**Sperm epigenome**:
+
+**Unique features**:
+- Most histones replaced by protamines
+- Hypercondensed DNA
+- Some histones retained at:
+  - Developmental genes
+  - Imprinted loci
+  - Regulatory elements
+
+**Retained histones**:
+- Carry modifications (H3K4me3, H3K27me3)
+- May mark important genes
+- Potential information transfer
+
+**DNA methylation**:
+- Established during spermatogenesis
+- Paternal imprints set
+- Maintained after fertilization (at imprints)
+
+**Small RNAs**:
+- Abundant in sperm
+- piRNAs, miRNAs, tsRNAs
+- May carry information to egg
+- Role unclear but intriguing
+
+**Egg epigenome**:
+
+**Characteristics**:
+- Histones with maternal modifications
+- Maternal imprints established
+- Large cytoplasm with RNAs
+- TET3 protein for paternal demethylation
+
+**Maternal factors**:
+- Proteins inherited from egg
+- Guide early development
+- Include epigenetic regulators
+- Critical for zygotic reprogramming
+
+### Imprinting Maintenance
+
+**Challenge**: Maintain imprints through reprogramming
+
+**Protection mechanisms**:
+
+**At imprinting centers**:
+- Resist demethylation in PGCs
+- Protected by specific factors
+- Maintain parental identity
+- Critical for development
+
+**PGC7/STELLA**:
+- Protein that protects methylation
+- Binds to H3K9me2
+- Prevents TET-mediated demethylation
+- Important for imprints
+
+**ZFP57**:
+- Zinc finger protein
+- Recognizes methylated ICRs
+- Recruits maintenance machinery
+- Mutations cause imprinting disorders
+
+### Embryo Development
+
+**Preimplantation**:
+- Zygotic genome activation
+- First cell fate decisions
+- Establishing pluripotency
+- ICM vs. trophectoderm
+
+**Epigenetic control**:
+- Different methylation patterns
+- Histone modifications guide fate
+- ncRNAs regulate development
+- Chromatin remodeling essential
+
+**Implantation and gastrulation**:
+- Lineage commitment
+- Tissue-specific patterns established
+- Bivalent domains resolved
+- Irreversible differentiation begins
+
+## Epigenetics and the Microbiome
+
+### Microbial Metabolites Influencing Host Epigenome
+
+**Key concept**: Gut microbes produce metabolites that enter circulation and affect host epigenetics
+
+**Short-Chain Fatty Acids (SCFAs)**:
+
+**Butyrate, propionate, acetate**:
+
+**Production**:
+- Bacterial fermentation of fiber
+- Produced in gut
+- Absorbed into bloodstream
+- Reach tissues
+
+**Mechanism**:
+- **HDAC inhibitors**!
+- Increase histone acetylation
+- Alter gene expression
+- Especially in colon cells
+
+**Effects**:
+- Anti-inflammatory
+- Enhance barrier function
+- Reduce cancer risk
+- Affect metabolism
+
+**Studies**:
+- High-fiber diet → More SCFAs → Beneficial epigenetic changes
+- Germ-free mice have different histone acetylation
+- Restore with SCFA supplementation
+
+**Other microbial metabolites**:
+
+**Folate**:
+- Produced by gut bacteria
+- Methyl donor
+- Affects DNA methylation
+
+**Trimethylamine N-oxide (TMAO)**:
+- From dietary choline
+- Bacterial metabolism required
+- Linked to cardiovascular disease
+- May have epigenetic effects
+
+**Polyphenol metabolites**:
+- Plant compounds metabolized by microbes
+- Can affect DNMTs, HDACs
+- Green tea catechins, resveratrol
+
+**Immune effects**:
+- Microbiome affects immune cell epigenetics
+- Regulatory T cell differentiation
+- TET expression affected by metabolites
+- Impacts inflammation, tolerance
+
+**Disease implications**:
+
+**Colon cancer**:
+- Dysbiosis alters metabolite profile
+- Changes in colonic cell epigenetics
+- Reduced butyrate production
+- Loss of protective effects
+
+**Obesity and metabolism**:
+- Microbiome affects host metabolism partly via epigenetics
+- SCFA effects on adipocytes
+- Changes in metabolic gene expression
+
+**IBD** (Inflammatory Bowel Disease):
+- Altered microbiome and metabolites
+- Epigenetic changes in intestinal cells
+- Barrier dysfunction
+- Chronic inflammation
+
+**Therapeutic potential**:
+- Prebiotics, probiotics
+- Fecal transplants
+- Microbiome modulation
+- Indirect epigenetic therapy
+
+## Epigenetics in Plants
+
+### Paramutation
+
+**Paramutation** = One allele influences the epigenetic state of another allele
+
+**Classic example**: Maize b1 locus (pigmentation)
+
+**Mechanism**:
+- B-I allele (high pigment)
+- B' allele (low pigment)
+- When together, B-I → B'
+- Change is heritable!
+- Mediated by small RNAs and chromatin changes
+
+**Mechanism**:
+```
+B-I/B' heterozygote
+    ↓
+siRNAs from B' locus
+    ↓
+Guide DNA methylation at B-I
+    ↓
+B-I becomes B'*
+    ↓
+Change maintained in offspring
+    ↓
+Even without B' allele!
+```
+
+**Significance**:
+- Trans-generational epigenetic change
+- Communication between alleles
+- Role of small RNAs
+- Examples in multiple organisms
+
+### Transposon Silencing
+
+**Challenge**: Plants have many transposons
+
+**Epigenetic silencing**:
+- DNA methylation
+- Histone modifications (H3K9me2)
+- Small RNA-directed
+
+**RdDM pathway** (RNA-directed DNA Methylation):
+
+**Mechanism**:
+1. Transposon transcribed (Pol IV)
+2. Produces dsRNA
+3. Dicer processes to siRNAs
+4. siRNAs guide AGO proteins
+5. AGO recruits DNA methylation machinery
+6. Transposon methylated and silenced
+
+**Importance**:
+- Genome defense
+- Prevent transposon mobilization
+- Maintain genome stability
+- Heritable silencing
+
+**Transgenerational**:
+- Silencing inherited
+- Can last many generations
+- Adaptive advantage
+
+### Vernalization
+
+**Vernalization** = Cold treatment induces flowering
+
+**Epigenetic mechanism** in Arabidopsis:
+
+**FLC gene** (Flowering Locus C):
+- Repressor of flowering
+- Prevents flowering before winter
+
+**Before cold**:
+- FLC high → No flowering
+
+**During cold**:
+- FLC gradually silenced
+- PRC2 recruits to FLC
+- H3K27me3 accumulates
+- Takes weeks of cold
+
+**After cold**:
+- FLC remains silenced
+- H3K27me3 maintained
+- Flowering can occur
+- Memory of winter!
+
+**Mechanism details**:
+```
+Cold exposure
+    ↓
+COLDAIR lncRNA induced
+    ↓
+Recruits PRC2 to FLC
+    ↓
+H3K27me3 spreads
+    ↓
+FLC silenced
+    ↓
+Mitotically stable
+    ↓
+Flowering competence acquired
+```
+
+**Reset**:
+- Each generation must experience cold
+- Reprogramming in germline
+- FLC reactivated in seeds
+
+**Agricultural importance**:
+- Many crops require vernalization
+- Winter wheat vs. spring wheat
+- Understanding allows manipulation
+- Breeding applications
+
+### Other Plant Epigenetic Phenomena
+
+**Hybrid vigor (heterosis)**:
+- Small RNAs from parents
+- Create new epialleles
+- Contribute to hybrid performance
+
+**Grafting effects**:
+- Mobile small RNAs
+- Move between stock and scion
+- Can cause heritable changes
+- Epigenetic communication
+
+**Stress memory**:
+- Plants "remember" stress
+- Faster/stronger response on re-exposure
+- Some changes heritable
+- Adaptive transgenerational plasticity
+
+## Epigenetic Clock and Aging
+
+### DNA Methylation-Based Aging Biomarkers
+
+**Epigenetic clock** = Predictor of age based on DNA methylation
+
+**Key concept**: Specific CpG sites change methylation predictably with age
+
+### Horvath Clock (2013)
+
+**Development**:
+- Steve Horvath analyzed thousands of samples
+- Found 353 CpG sites that change with age
+- Works across tissues
+- Predicts chronological age (r=0.96!)
+
+**Features**:
+- Pan-tissue (works in most cell types)
+- Accurate across ages
+- Can estimate age within 3-4 years
+- Ticks in post-mitotic cells (neurons)
+
+**Applications**:
+- Estimate age of sample
+- Forensics
+- Biological age vs. chronological age
+
+**Biological age**:
+- Epigenetic age ≠ chronological age
+- Accelerated aging associated with:
+  - Obesity
+  - Smoking
+  - Stress
+  - Disease
+- Decelerated aging with:
+  - Healthy lifestyle
+  - Caloric restriction (in models)
+
+### Hannum Clock
+
+**Different approach**:
+- Blood-specific
+- 71 CpG sites
+- Also accurate
+- Captures different aspects
+
+### PhenoAge
+
+**Purpose**: Predict mortality and healthspan
+
+**Design**:
+- Trained on mortality data
+- 513 CpG sites
+- Better predicts outcomes than chronological age
+
+**Clinical utility**:
+- Risk stratification
+- Intervention trials
+- Track biological age changes
+
+### GrimAge
+
+**Most recent and predictive**:
+- Predicts mortality, healthspan
+- Includes smoking pack-years
+- Multiple protein levels estimated
+- Best performer for outcomes
+
+### Mechanisms of Epigenetic Aging
+
+**What causes clock changes?**
+
+**Theories**:
+
+1. **Epigenetic drift**:
+   - Random accumulation of errors
+   - Loss of maintenance fidelity
+   - Stochastic changes
+
+2. **Programmed aging**:
+   - Developmental program continues
+   - Regulated changes
+   - Adaptive (or maladaptive) response
+
+3. **Damage accumulation**:
+   - DNA damage
+   - Oxidative stress
+   - Inflammatory signals
+   - Drive epigenetic changes
+
+**Consequences**:
+- Loss of cell identity
+- Transcriptional noise
+- Dysfunction
+- Senescence
+- Disease risk
+
+### Interventions
+
+**Can we slow the clock?**
+
+**Caloric restriction**:
+- Slows epigenetic aging (in models)
+- Effects in humans being studied
+- Metabolic benefits
+
+**Exercise**:
+- Associated with younger epigenetic age
+- Reduces accelerated aging
+- Muscle-specific effects
+
+**Reprogramming**:
+- Partial reprogramming reverses age
+- Yamanaka factors (transient)
+- Rejuvenates cells
+- Without losing identity
+
+**Senolytic drugs**:
+- Clear senescent cells
+- Improve healthspan
+- May affect epigenetic age
+
+**NAD+ boosters**:
+- Sirtuin activators
+- May slow some aging marks
+- Ongoing research
+
+**Future**:
+- Epigenetic age as clinical outcome
+- Personalized interventions
+- Track intervention efficacy
+- "Add years to life, life to years"
+
+## Systems and Computational Epigenetics
+
+### Integration of Multi-Omics
+
+**Multi-omics approach**: Combine epigenomics with other -omics for comprehensive understanding
+
+**Data types integrated**:
+
+**Genomics**:
+- DNA sequence variants
+- Mutations
+- SNPs
+
+**Epigenomics**:
+- DNA methylation
+- Histone modifications
+- Chromatin accessibility
+- 3D structure
+
+**Transcriptomics**:
+- mRNA levels
+- ncRNA expression
+- Alternative splicing
+- Single-cell resolution
+
+**Proteomics**:
+- Protein abundance
+- Post-translational modifications
+- Protein-protein interactions
+
+**Metabolomics**:
+- Small molecules
+- Metabolic pathways
+- Metabolic state
+
+**Integration benefits**:
+- Understand causality
+- Gene regulation logic
+- Disease mechanisms
+- Identify therapeutic targets
+
+**Example workflow**:
+```
+Genomics: What CAN happen (potential)
+    ↓
+Epigenomics: What's ACCESSIBLE (possibility)
+    ↓
+Transcriptomics: What's TRANSCRIBED (activity)
+    ↓
+Proteomics: What's MADE (function)
+    ↓
+Metabolomics: What's HAPPENING (outcome)
+```
+
+### Machine Learning Models for Epigenetic Prediction
+
+**Applications of ML/AI**:
+
+**1. Predicting chromatin states**:
+
+**ChromHMM, Segway**:
+- Hidden Markov Models
+- Integrate multiple histone marks
+- Classify genome into states
+- Promoter, enhancer, quiescent, etc.
+
+**Deep learning**:
+- Neural networks
+- Predict chromatin state from sequence
+- More flexible than HMMs
+
+**2. Predicting regulatory elements**:
+
+**DeepSEA**:
+- Predicts chromatin features from DNA sequence
+- Trained on ENCODE data
+- Identifies functional variants
+
+**Basenji, Enformer**:
+- Predict gene expression from sequence
+- Incorporate epigenomic features
+- Very large models (transformers)
+
+**3. Imputation of missing marks**:
+
+**ChromImpute**:
+- Predict unmeasured epigenetic marks
+- Use correlation with other marks
+- Fill in incomplete datasets
+
+**Avocado**:
+- Deep tensor factorization
+- Impute missing experiments
+- Pan-tissue, pan-mark
+
+**4. Variant effect prediction**:
+
+**DeepSEA, Basset**:
+- Predict effects of SNPs on regulatory elements
+- Identify functional variants
+- Prioritize GWAS hits
+
+**5. Single-cell analysis**:
+
+**Dimensionality reduction**:
+- Handle sparse scATAC-seq data
+- Identify cell types
+- Pseudotime trajectories
+
+**Integration**:
+- Seurat, Signac
+- Combine scRNA + scATAC
+- Multi-modal analysis
+
+**6. Disease classification**:
+
+**DNA methylation classifiers**:
+- Brain tumor classification
+- Cancer type identification
+- Better than histology alone
+
+**Example - CNS tumors**:
+- 450K methylation array
+- Classifier identifies >100 tumor types
+- Clinically implemented
+- Changes diagnosis in ~10% of cases
+
+### Network Modeling
+
+**Gene regulatory networks**:
+- Transcription factors
+- Enhancers
+- Target genes
+- Epigenetic states
+
+**Tools**:
+- SCENIC (scRNA-seq)
+- PECA (integrative)
+- CausalPath
+
+**Chromatin interaction networks**:
+- Hi-C data
+- Enhancer-promoter links
+- Predict target genes of enhancers
+
+### Challenges and Future Directions
+
+**Data integration challenges**:
+- Different platforms
+- Batch effects
+- Missing data
+- Causality inference
+
+**Interpretability**:
+- Black-box models
+- Need biological insight
+- Explainable AI important
+
+**Future directions**:
+- Foundation models (like GPT for genomes)
+- Better causal inference
+- Personalized predictions
+- Clinical decision support
+- Drug response prediction
+
+## Key Takeaways
+
+- **Epigenetics** = Changes in gene activity without changing DNA sequence
+
 - **Main mechanisms**:
-
   - **DNA methylation**: Adding CH₃ to cytosines (usually silences genes)
-
   - **Histone modifications**: Chemical tags on histones (activate or repress genes)
-
   - **Chromatin remodeling**: Moving nucleosomes (changes accessibility)
-
   - **Non-coding RNAs**: Guide epigenetic changes
 
-- **CpG islands**: Regions with many CpG sites, usually unmethylated
+- **Key players**:
+  - **DNMTs** (DNMT1, DNMT3A/B): Add methyl groups
+  - **TET enzymes**: Remove methyl groups
+  - **HATs/HDACs**: Add/remove histone acetylation
+  - **HMTs/KDMs**: Add/remove histone methylation
+  - **Chromatin remodelers** (SWI/SNF, ISWI, CHD, INO80): Reorganize nucleosomes
+  - **lncRNAs, miRNAs, siRNAs, piRNAs**: Regulatory RNAs
 
-- **Histone code**: Different modification combinations mean different things
+- **Important concepts**:
+  - **CpG islands**: Usually unmethylated, mark promoters
+  - **Histone code**: Modification combinations convey meaning
+  - **Bivalent domains**: Poised genes in stem cells (H3K4me3 + H3K27me3)
+  - **Polycomb/Trithorax**: Maintain silenced/active states
+  - **Imprinting**: Parent-of-origin-specific expression
+  - **X-inactivation**: Dosage compensation in females
 
-- **Epigenomics**: Genome-wide study of epigenetic marks
+- **Development and differentiation**:
+  - Progressive restriction of potency
+  - Lineage-specific epigenetic patterns
+  - Maintained through cell divisions
 
-- **Prokaryotes**: Limited epigenetics (mainly DNA methylation)
+- **Reprogramming**:
+  - Germline: Reset between generations
+  - Zygotic: Reset after fertilization
+  - iPSCs: Artificial reprogramming to pluripotency
 
-- **Eukaryotes**: Complex, multilayered epigenetic regulation
+- **Environmental sensitivity**:
+  - Diet (methyl donors, SCFAs)
+  - Toxins (BPA, heavy metals, smoke)
+  - Stress (early life experiences)
+  - Exercise and lifestyle
+  - Potentially transgenerational
 
-- **Environment affects epigenetics**: Diet, stress, toxins, lifestyle
+- **Disease involvement**:
+  - **Cancer**: Hypermethylation of tumor suppressors, global hypomethylation
+  - **Neurological**: Rett (MECP2), Fragile X (FMR1 methylation)
+  - **Metabolic**: Diabetes, obesity, cardiovascular
+  - **Aging**: Epigenetic drift, clock changes
 
-- **Epigenetic inheritance**: Marks can be passed through cell divisions and sometimes across generations
+- **Biomarkers**:
+  - MGMT methylation (glioblastoma prognosis)
+  - Epigenetic clocks (biological age)
+  - Liquid biopsies (cancer detection)
+  - Disease classification
 
-- **Disease connection**: Cancer, developmental disorders, aging, neurological diseases
+- **Therapies**:
+  - **DNMT inhibitors**: 5-azacytidine, decitabine (FDA-approved for MDS/AML)
+  - **HDAC inhibitors**: Vorinostat, romidepsin (FDA-approved for lymphoma)
+  - **EZH2 inhibitors**: Tazemetostat (FDA-approved)
+  - **Combination therapy**: DNMT + HDAC inhibitors
+  - **Epigenome editing**: dCas9-based tools (experimental)
 
-- **Therapies**: Epigenetic drugs can reverse some changes
+- **Techniques**:
+  - **BS-seq** (WGBS, RRBS): DNA methylation mapping
+  - **ChIP-seq**: Histone modifications and TF binding
+  - **CUT&RUN/CUT&Tag**: Improved ChIP alternatives
+  - **ATAC-seq**: Chromatin accessibility
+  - **Hi-C**: 3D genome organization
+  - **Single-cell methods**: Cell-to-cell variation
+
+- **Resources**:
+  - **ENCODE**: Comprehensive functional elements
+  - **Roadmap Epigenomics**: Reference epigenomes
+  - **UCSC Genome Browser, IGV**: Visualization
+  - **Machine learning**: Prediction and integration
+
+- **Evolution and adaptation**:
+  - Phenotypic plasticity
+  - Potential Lamarckian inheritance (limited)
+  - Evolutionary capacitance
+
+- **Special topics**:
+  - **Plants**: Paramutation, vernalization, transposon silencing
+  - **Microbiome**: Metabolites affect host epigenome
+  - **Reproduction**: Germline reprogramming, imprint maintenance
+  - **Aging**: Epigenetic clocks, potential interventions
 
 ---
 
-**Sources**: Information adapted from MedlinePlus Genetics, Nature Reviews, NCBI, and current epigenetics research literature.
+**Sources**: Information adapted from MedlinePlus Genetics, Nature Reviews, NCBI, current epigenetics research literature, ENCODE Project, Roadmap Epigenomics Project, and recent publications in epigenetics and epigenomics.
