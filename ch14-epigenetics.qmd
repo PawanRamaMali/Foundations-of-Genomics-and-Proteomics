@@ -1561,13 +1561,333 @@ Target of that miRNA is expressed
 Cellular phenotype changes
 ```
 
-## Epigenomics
+## Epigenetic Control of Gene Expression
 
-### Studying Epigenetic Marks Genome-Wide
+### How Epigenetic Mechanisms Regulate Transcription
 
-**Epigenomics** = Studying all epigenetic marks across the entire genome
+Epigenetic mechanisms don't work in isolation—they coordinate to control when, where, and how much genes are expressed.
 
-Like proteomics studies all proteins, epigenomics studies all epigenetic modifications!
+### Promoter Silencing and Activation
+
+**Promoters** = DNA sequences where transcription begins
+
+**Active promoter characteristics**:
+
+1. **Open chromatin**:
+   - Nucleosome-free region (NFR) at TSS
+   - Accessible to transcription factors
+   - DNase/ATAC-seq hypersensitive
+
+2. **Activating histone marks**:
+   - H3K4me3 (strong signal)
+   - H3K9ac, H3K27ac
+   - H3K4me1 (at some promoters)
+
+3. **Unmethylated DNA**:
+   - CpG island typically unmethylated
+   - Allows transcription factor binding
+
+4. **Bound transcription factors**:
+   - Can recruit HATs
+   - Can recruit chromatin remodelers
+   - Initiate transcription
+
+**Silenced promoter characteristics**:
+
+1. **Closed chromatin**:
+   - Nucleosomes positioned over TSS
+   - Inaccessible to transcription factors
+   - Compact structure
+
+2. **Repressive histone marks**:
+   - H3K27me3 (facultative silencing)
+   - H3K9me3 (constitutive silencing)
+   - Deacetylated histones
+
+3. **Methylated DNA**:
+   - CpG island methylated
+   - Blocks transcription factor binding
+   - Recruits MBD proteins and repressors
+
+4. **Repressive complexes**:
+   - PRC2/PRC1 (Polycomb)
+   - HP1 proteins
+   - HDACs
+
+**Transition between states**:
+
+```
+SILENT PROMOTER:
+Methylated DNA, H3K27me3, positioned nucleosomes
+                ↓
+           Activation signal
+                ↓
+Step 1: Pioneer factors bind (can access nucleosomal DNA)
+Step 2: Recruit TET enzymes → DNA demethylation
+Step 3: Recruit HATs → Histone acetylation
+Step 4: Recruit chromatin remodelers → Nucleosome eviction
+Step 5: H3K4 methyltransferases → H3K4me3 deposition
+Step 6: Transcription factors bind
+Step 7: RNA Pol II recruited
+                ↓
+ACTIVE PROMOTER:
+Unmethylated DNA, H3K4me3, H3K27ac, open chromatin, active transcription
+```
+
+### Enhancers, Insulators, and Boundary Elements
+
+**Enhancers**:
+
+**What they are**:
+- Regulatory DNA sequences
+- Activate transcription from a distance
+- Can be 10 kb or more from target gene
+- Can be upstream, downstream, or in introns
+
+**Epigenetic signatures of active enhancers**:
+
+1. **H3K4me1** (mono-methylation):
+   - Marks both active and poised enhancers
+   - Distinguish from promoters (which have H3K4me3)
+
+2. **H3K27ac** (acetylation):
+   - Marks ACTIVE enhancers specifically
+   - Poised enhancers lack this mark
+
+3. **Open chromatin**:
+   - DNase/ATAC-seq accessible
+   - Nucleosome-depleted regions
+
+4. **Bound transcription factors**:
+   - Cell-type specific
+   - Often clustered ("enhancer clusters")
+
+5. **Enhancer RNAs (eRNAs)**:
+   - Transcribed from active enhancers
+   - Mark of enhancer activity
+
+**Enhancer states**:
+
+| State | H3K4me1 | H3K27ac | Activity |
+|-------|---------|---------|----------|
+| **Active** | + | + | Actively enhancing |
+| **Poised** | + | - | Ready to activate |
+| **Primed** | + | - | Developmental potential |
+| **Inactive** | - | - | Not functional |
+
+**Super-enhancers**:
+- Clusters of enhancers
+- Very high levels of H3K27ac
+- Drive cell identity genes
+- Enriched for disease-associated variants
+- Often dysregulated in cancer
+
+**Enhancer-promoter interactions**:
+
+Physical contact through DNA looping:
+```
+Enhancer ----[looping]---- Promoter
+  ↑                           ↑
+H3K27ac                    H3K4me3
+TF bound                   Pol II
+
+      Mediator complex
+      Cohesin complex
+```
+
+**Insulators** (Boundary elements):
+
+**What they are**:
+- DNA sequences that block interactions
+- Create boundaries between chromatin domains
+- Prevent inappropriate enhancer-promoter contacts
+
+**CTCF** - Master insulator protein:
+
+**Functions**:
+1. **Enhancer blocking**:
+   - Prevents enhancers from activating wrong genes
+   - Creates regulatory boundaries
+
+2. **Barrier function**:
+   - Blocks spread of heterochromatin
+   - Maintains euchromatin/heterochromatin boundaries
+
+3. **Chromatin organization**:
+   - Anchors chromatin loops
+   - Organizes TADs (Topologically Associated Domains)
+
+4. **Imprinting control**:
+   - Regulates parent-specific expression
+   - Critical for imprinting centers
+
+**CTCF mechanism**:
+
+```
+Enhancer [----CTCF----] Gene A    Gene B
+
+Without CTCF:
+Enhancer activates both Gene A and Gene B
+
+With CTCF:
+Enhancer ----| CTCF barrier
+             ↓
+Only Gene A activated
+Gene B insulated
+```
+
+**Epigenetic regulation of CTCF**:
+
+- **DNA methylation blocks CTCF binding**
+  - Methylation at CTCF sites → loss of insulation
+  - Important for imprinting control
+  - Used at some imprinted loci
+
+- **Example - H19/Igf2 locus**:
+  - CTCF binds unmethylated ICR
+  - Blocks Igf2 enhancer access
+  - Methylation of ICR blocks CTCF
+  - Allows Igf2 activation
+
+### Role of Transcription Factors and Cofactors
+
+**Transcription factors (TFs)**:
+
+**Pioneer factors**:
+- Can bind to nucleosomal DNA
+- First factors to access closed chromatin
+- Recruit chromatin remodelers
+- Examples: FoxA, GATA, PU.1, Oct4
+
+**Sequence-specific TFs**:
+- Recognize specific DNA motifs
+- Recruit coactivators or corepressors
+- Integrate multiple signals
+
+**Epigenetic TF interactions**:
+
+1. **TFs recruit epigenetic modifiers**:
+   - HATs/HDACs
+   - Methyltransferases
+   - Chromatin remodelers
+
+2. **Epigenetic state affects TF binding**:
+   - Open chromatin → easier binding
+   - DNA methylation → blocks binding
+   - Some TFs require specific histone marks
+
+3. **Positive feedback loops**:
+   ```
+   TF binds → Recruits HAT → Acetylation →
+   → More TFs bind → More acetylation →
+   → Stable active state
+   ```
+
+**Coactivators**:
+
+**p300/CBP**:
+- HAT activity
+- Platform for multiple factors
+- Integrates signals from many TFs
+- Often rate-limiting for activation
+
+**Mediator complex**:
+- Large complex (>30 subunits)
+- Bridge between enhancers and promoters
+- Interacts with RNA Pol II
+- Required for most transcription
+
+**TIP60/NuA4**:
+- HAT complex
+- Activates transcription
+- DNA damage response
+
+**Corepressors**:
+
+**NCoR/SMRT**:
+- Recruit HDACs
+- Mediate transcriptional repression
+- Nuclear receptor corepressors
+
+**NuRD complex**:
+- Contains CHD3/4 (remodeler) + HDAC1/2
+- Both remodeling and deacetylation
+- Gene silencing
+
+**CtBP (C-terminal Binding Protein)**:
+- Recruits HDACs and HMTs
+- Mediates repression by many TFs
+
+### Polycomb and Trithorax Systems
+
+Two ancient opposing systems that maintain cell identity:
+
+**Polycomb Group (PcG) Proteins** - The Silencers:
+
+**PRC2 (Polycomb Repressive Complex 2)**:
+- **Catalytic subunit**: EZH2 (or EZH1)
+- **Activity**: Deposits H3K27me3
+- **Function**: Initiates silencing
+- **Targets**: Developmental genes
+
+**PRC1 (Polycomb Repressive Complex 1)**:
+- **Activity**: Ubiquitinates H2A (H2AK119ub1)
+- **Function**: Maintains/reinforces silencing
+- **Can**: Compact chromatin
+- **Recruitment**: By H3K27me3 or DNA binding
+
+**Polycomb mechanism**:
+```
+Development signal
+    ↓
+PRC2 recruited to gene
+    ↓
+H3K27me3 deposited
+    ↓
+PRC1 recruited
+    ↓
+H2AK119ub1 added
+    ↓
+Chromatin compaction
+    ↓
+Gene stably silenced
+    ↓
+Maintained through cell divisions
+```
+
+**Trithorax Group (TrxG) Proteins** - The Activators:
+
+**MLL complexes** (Mixed Lineage Leukemia):
+- **Activity**: Deposit H3K4me3
+- **Function**: Maintain active state
+- **Oppose**: Polycomb silencing
+
+**Function**: 
+- Keep developmental genes ON
+- Maintain differentiated state
+- Remember activation decisions
+
+**Balance determines fate**:
+```
+Stem cells:
+Many genes have BOTH H3K4me3 AND H3K27me3
+→ "Bivalent" state
+→ Poised for activation OR silencing
+
+Differentiation:
+Cell type A:
+Gene X: H3K4me3 only → Active
+Gene Y: H3K27me3 only → Silent
+
+Cell type B:
+Gene X: H3K27me3 only → Silent
+Gene Y: H3K4me3 only → Active
+```
+
+**Clinical significance**:
+- EZH2 overexpressed in many cancers
+- MLL translocations cause leukemia
+- Therapeutic targets
 
 ### Techniques in Epigenomics
 
@@ -1785,9 +2105,1351 @@ Unlike DNA mutations, epigenetic changes are **potentially reversible**!
 
 - Treating complex diseases
 
-## Key Takeaways
+## Epigenetic Reprogramming
 
-- **Epigenetics** = Changes in gene activity without changing DNA sequence
+### Resetting the Epigenetic Landscape
+
+**Epigenetic reprogramming** = Widespread erasure and re-establishment of epigenetic marks
+
+This is essential for development and can be induced for research/therapeutic purposes.
+
+### Germline Reprogramming
+
+**When it happens**: During formation of sperm and eggs (gametogenesis)
+
+**Why it's necessary**:
+- Erase somatic cell epigenetic patterns
+- Reset for totipotency
+- Establish sex-specific imprints
+- Prepare for next generation
+
+**Timeline in mammals**:
+
+**1. Primordial Germ Cell (PGC) Specification** (E6.5-E7.25 in mice):
+- Cells destined to become gametes specified
+- Still retain somatic epigenetic marks
+
+**2. Migration Phase** (E7.5-E10.5):
+- PGCs migrate to developing gonads
+- Begin losing DNA methylation
+
+**3. Major Reprogramming** (E10.5-E13.5):
+- **Massive DNA demethylation**:
+  - Global loss of DNA methylation
+  - Down to ~10% of normal levels
+  - Most CpG islands demethylated
+  - Imprints erased
+- **Histone modification changes**:
+  - Loss of repressive marks
+  - H3K9me2 reduction
+  - H3K27me3 preserved at some regions
+- **Chromatin remodeling**:
+  - More open chromatin state
+  - Increased accessibility
+
+**4. Re-methylation** (sex-specific):
+
+**In males (prospermatogonia)**:
+- Begins at E14.5
+- Continues post-natally
+- Establishes paternal imprints
+- Methylation of repetitive elements
+
+**In females (oocytes)**:
+- Begins at birth (in humans, in utero)
+- Continues during oocyte growth
+- Establishes maternal imprints
+- Different pattern from sperm
+
+**Mechanisms of germline demethylation**:
+
+1. **TET-mediated oxidation**:
+   - TET1 and TET2 highly expressed
+   - Convert 5mC → 5hmC → 5fC → 5caC
+   - Base excision repair removes modified bases
+
+2. **Passive dilution**:
+   - PGC proliferation without maintenance methylation
+   - Dilutes existing marks through replication
+
+3. **Active demethylation**:
+   - TDG-mediated base excision repair
+   - Removes oxidized methylcytosines
+
+**Importance**:
+- Prevents transgenerational inheritance of acquired marks (mostly)
+- Resets cellular potential
+- Allows each generation to start fresh
+- Some marks escape erasure (transgenerational epigenetic inheritance)
+
+**Marks that escape reprogramming**:
+- Some transposable element methylation
+- Some imprinted genes (depends on locus)
+- Basis for transgenerational inheritance
+- More common in plants and invertebrates
+
+### Zygotic Reprogramming (During Embryogenesis)
+
+**When it happens**: Shortly after fertilization
+
+**Why it's necessary**:
+- Transition from gamete to embryo
+- Establish totipotency
+- Prepare for development
+- Different from germline reprogramming in several ways
+
+**Asymmetric reprogramming**:
+
+**Paternal genome (from sperm)**:
+- **Rapid, active demethylation**
+- Occurs within hours of fertilization
+- TET3-mediated oxidation
+- 5mC → 5hmC → 5fC → 5caC
+- Protamines replaced with histones
+- Most methylation lost by pronuclear stage
+
+**Maternal genome (from egg)**:
+- **Slower, passive demethylation**
+- Lost during DNA replication
+- DNMT1 excluded from nucleus (some embryos)
+- Gradual loss over cleavage divisions
+- Some methylation persists longer
+
+**Timeline (in mammals)**:
+
+```
+Fertilization
+    ↓
+Hours 0-6: Paternal active demethylation (TET3)
+    ↓
+Day 1-4: Maternal passive demethylation
+    ↓
+Day 3-4: Morula stage, minimal methylation (~10%)
+    ↓
+Day 4-6: Blastocyst, begin re-methylation
+    ↓
+Day 6+: Implantation, lineage-specific methylation
+    ↓
+Gastrulation: Establish somatic methylation patterns
+```
+
+**De novo methylation in embryo**:
+
+- Begins at blastocyst stage
+- DNMT3A and DNMT3B active
+- DNMT3L helps in some regions
+- Establishes embryonic patterns
+- Lineage-specific differences emerge
+
+**Regions protected from reprogramming**:
+
+1. **Imprinted genes**:
+   - Maintain parent-of-origin-specific methylation
+   - Protected from both germline and zygotic reprogramming
+   - Essential for normal development
+
+2. **Some repetitive elements**:
+   - IAPs (Intracisternal A Particles) in mice
+   - Remain methylated
+   - Genomic defense mechanism
+
+3. **Some CpG islands**:
+   - Housekeeping genes
+   - Essential genes
+
+**Histone modifications during reprogramming**:
+
+- Sperm chromatin: Mostly protamines, some histones
+- Rapid histone incorporation after fertilization
+- H3K4me3 and H3K27me3 re-established
+- Bivalent domains form in ES cells
+
+### Induced Pluripotency (iPSCs)
+
+**What it is**: Reprogramming somatic cells back to stem cell state
+
+**Discovery**: Shinya Yamanaka, 2006 (Nobel Prize 2012)
+
+**The Yamanaka Factors** - Four transcription factors:
+1. **Oct4** (Octamer-binding transcription factor 4)
+2. **Sox2** (Sex determining region Y-box 2)
+3. **Klf4** (Kruppel-like factor 4)
+4. **c-Myc** (Cellular Myc)
+
+**How it works**:
+
+**Initial phase** (Days 0-3):
+- Forced expression of OSKM factors
+- Changes in cell morphology
+- Metabolic shift
+- MET (Mesenchymal-Epithelial Transition)
+
+**Intermediate phase** (Days 3-9):
+- Stochastic gene expression changes
+- Some cells begin reprogramming
+- Many cells fail or senesce
+- Low efficiency (~0.1-1%)
+
+**Maturation phase** (Days 9-15+):
+- Endogenous pluripotency genes activated
+- Oct4/Sox2/Nanog expression from endogenous loci
+- Exogenous factors no longer needed
+- iPSC colonies form
+
+**Epigenetic changes during reprogramming**:
+
+1. **DNA demethylation**:
+   - Promoters of pluripotency genes demethylated
+   - TET enzymes activated
+   - Gradual global changes
+
+2. **Histone modifications**:
+   - Loss of differentiation-associated marks
+   - Gain of ES cell marks
+   - H3K4me3 at pluripotency genes
+   - Bivalent domains re-established
+
+3. **Chromatin remodeling**:
+   - More open chromatin
+   - Nucleosome repositioning
+   - Changes in TAD structure
+
+4. **X-reactivation** (in female cells):
+   - Inactive X can reactivate
+   - XIST silenced
+   - Both X chromosomes active (like ES cells)
+
+**Barriers to reprogramming**:
+
+1. **Epigenetic memory**:
+   - Somatic methylation patterns
+   - Silenced pluripotency genes
+   - Hard to erase
+
+2. **Senescence**:
+   - p53/p21 pathway activation
+   - Cell cycle arrest
+   - Prevents transformation
+
+3. **Apoptosis**:
+   - Stress response
+   - Many cells die
+
+**Enhancing reprogramming**:
+
+- Vitamin C (enhances TET activity)
+- HDAC inhibitors (Valproic acid)
+- Demethylating agents (limited use)
+- Replace c-Myc with safer factors
+- Small molecules instead of factors
+
+**Applications**:
+
+1. **Disease modeling**:
+   - Generate patient-specific cells
+   - Study disease mechanisms
+   - Drug screening
+
+2. **Regenerative medicine**:
+   - Personalized cell therapies
+   - Avoid immune rejection
+   - Generate replacement tissues
+
+3. **Basic research**:
+   - Study cell fate decisions
+   - Understand pluripotency
+   - Model development
+
+**Challenges**:
+
+- Incomplete reprogramming
+- Epigenetic memory persists
+- Genomic instability risk
+- Tumor formation risk
+- Efficiency still low
+- Quality control needed
+
+**Comparison of reprogramming types**:
+
+| Feature | Germline | Zygotic | iPSC |
+|---------|----------|---------|------|
+| **Trigger** | Developmental program | Fertilization | Yamanaka factors |
+| **Speed** | Weeks | Days | Weeks |
+| **Completeness** | Very high | Very high | Variable |
+| **Methylation change** | Extensive | Extensive | Moderate |
+| **Histone changes** | Extensive | Extensive | Moderate |
+| **Efficiency** | 100% | 100% | <1% |
+| **Natural** | Yes | Yes | No |
+
+## Genomic Imprinting
+
+### Parent-of-Origin Specific Gene Expression
+
+**Genomic imprinting** = Genes expressed from only one parental allele
+
+**Key concept**:
+- Most genes: Both copies (maternal + paternal) expressed
+- Imprinted genes: Only ONE copy expressed
+- Which copy expressed depends on parent of origin
+- Established by epigenetic marks (primarily DNA methylation)
+
+**Statistics**:
+- ~150 known imprinted genes in mice
+- ~100 known imprinted genes in humans
+- Often found in clusters
+- Evolutionarily conserved in mammals
+- Rare in other organisms (except some plants, insects)
+
+### Mechanism of Imprinting
+
+**Imprinting Control Regions (ICRs)**:
+
+**What they are**:
+- Regulatory DNA sequences
+- Control imprinted gene clusters
+- Differentially methylated between parents
+- Act as master switches
+
+**How they work**:
+
+**During gametogenesis**:
+```
+Germline reprogramming
+    ↓
+Erasure of imprints
+    ↓
+Sex-specific de novo methylation
+    ↓
+Maternal ICRs: methylated in egg OR
+Paternal ICRs: methylated in sperm
+    ↓
+Imprint established
+```
+
+**After fertilization**:
+```
+Embryo has:
+- Maternal chromosome (ICR pattern from egg)
+- Paternal chromosome (ICR pattern from sperm)
+    ↓
+ICR methylation maintained through development
+    ↓
+Differential expression based on parent of origin
+```
+
+**Two main mechanisms**:
+
+**1. Enhancer competition model**:
+```
+Maternal chromosome (ICR unmethylated):
+CTCF binds ICR → Blocks enhancer → Gene A silenced
+                → Allows enhancer → Gene B expressed
+
+Paternal chromosome (ICR methylated):
+CTCF can't bind → Enhancer accesses Gene A → Gene A expressed
+                → Gene B silenced
+```
+
+**2. ncRNA-mediated silencing**:
+```
+Maternal chromosome (ICR unmethylated):
+lncRNA transcribed from ICR
+    ↓
+lncRNA spreads in cis
+    ↓
+Recruits repressive complexes
+    ↓
+Neighboring genes silenced
+```
+
+### Examples of Imprinted Genes
+
+**IGF2 (Insulin-like Growth Factor 2)**:
+
+**Expression**: Paternally expressed (maternal copy silenced)
+
+**Function**: Promotes fetal growth
+
+**Mechanism**:
+- H19/IGF2 locus on chromosome 11
+- Shared enhancers
+- ICR between H19 and IGF2
+
+**Maternal allele**:
+```
+ICR unmethylated
+    ↓
+CTCF binds ICR
+    ↓
+Insulator blocks IGF2 enhancer access
+    ↓
+IGF2 silenced, H19 expressed
+```
+
+**Paternal allele**:
+```
+ICR methylated
+    ↓
+CTCF cannot bind
+    ↓
+Enhancers access IGF2
+    ↓
+IGF2 expressed, H19 silenced
+```
+
+**Clinical significance**:
+- Beckwith-Wiedemann Syndrome: Loss of imprinting → IGF2 overexpression
+- Associated with childhood cancers
+- Overgrowth, organomegaly
+
+**H19**:
+
+**Expression**: Maternally expressed (paternal copy silenced)
+
+**Function**: 
+- lncRNA (doesn't code for protein)
+- Tumor suppressor properties
+- Processed into miR-675
+- Growth regulator
+
+**Relationship to IGF2**:
+- Reciprocally imprinted with IGF2
+- Share regulatory elements
+- Opposite expression patterns
+
+**UBE3A (Ubiquitin Protein Ligase E3A)**:
+
+**Expression**: **Brain-specific** maternal expression
+
+**Unique feature**:
+- In most tissues: Biallelic (both copies expressed)
+- In neurons: Monoallelic (maternal only)
+- Paternal silencing by SNHG14 antisense lncRNA
+
+**Function**:
+- E3 ubiquitin ligase
+- Targets proteins for degradation
+- Important for synaptic function
+
+**Clinical significance**:
+
+**Angelman Syndrome** (maternal loss):
+- Deletion of maternal 15q11-13
+- OR maternal UBE3A mutation
+- OR paternal uniparental disomy (both chr 15 from father)
+- Symptoms:
+  - Severe intellectual disability
+  - Speech impairment
+  - Happy demeanor, frequent laughter
+  - Ataxia, seizures
+
+**Prader-Willi Syndrome** (paternal loss):
+- Deletion of paternal 15q11-13
+- OR paternal mutations
+- OR maternal uniparental disomy
+- Different genes affected (SNRPN and others)
+- Symptoms:
+  - Intellectual disability (milder)
+  - Hyperphagia (excessive eating)
+  - Obesity
+  - Hypogonadism
+  - Short stature
+
+**Same region, opposite syndromes!**
+
+**SNRPN/SNURF**:
+
+**Expression**: Paternally expressed
+
+**Function**: 
+- SNRPN: Splicing factor
+- Also produces SNHG14 lncRNA
+- SNHG14 silences paternal UBE3A in neurons
+
+**Clinical relevance**: Prader-Willi Syndrome
+
+### Evolutionary Theories of Imprinting
+
+**Parental Conflict Hypothesis** (David Haig):
+
+**Theory**: 
+- Maternal and paternal genes have conflicting interests
+- Related to resource allocation
+
+**Paternal genes**:
+- Favor increased resource extraction from mother
+- Promote fetal growth
+- Tend to be growth-promoting when expressed
+
+**Maternal genes**:
+- Must balance resources among all offspring
+- Limit any single fetus's demands
+- Tend to be growth-limiting when expressed
+
+**Examples**:
+- IGF2 (paternal): Growth promoter
+- IGF2R (maternal): Degrades IGF2
+- Opposing effects on fetal growth
+
+**Evidence**:
+- Paternally expressed genes often promote growth
+- Maternally expressed genes often restrict growth
+- Important in placental mammals
+
+### Imprinting Disorders
+
+| Disorder | Genetic Cause | Chromosome | Key Features |
+|----------|---------------|------------|--------------|
+| **Prader-Willi** | Loss of paternal 15q11-13 | 15 | Hyperphagia, obesity, ID |
+| **Angelman** | Loss of maternal UBE3A | 15 | Severe ID, happy demeanor |
+| **Beckwith-Wiedemann** | Loss of maternal 11p15 | 11 | Overgrowth, cancer risk |
+| **Silver-Russell** | Loss of paternal 11p15 | 11 | Growth restriction |
+| **Transient neonatal diabetes** | Loss of maternal 6q24 | 6 | Temporary diabetes |
+
+## X-Chromosome Inactivation (XCI)
+
+### Dosage Compensation in Mammals
+
+**The problem**:
+- Females: XX (two X chromosomes)
+- Males: XY (one X chromosome)
+- X chromosome has ~1000 genes
+- Without compensation: Females would have 2X gene expression
+
+**The solution**: X-Chromosome Inactivation (XCI)
+
+- Inactivate one X chromosome in each female cell
+- Occurs early in development
+- Random choice of which X to silence
+- Maintains choice through all cell divisions
+- Creates mosaic pattern in females
+
+### The XIST/TSIX Regulatory System
+
+**XIST** (X-Inactive Specific Transcript):
+
+**Type**: Long non-coding RNA (~17 kb in humans)
+
+**Function**: Master regulator of XCI
+
+**Mechanism**:
+
+1. **Counting phase**:
+   - Cells "count" how many X chromosomes present
+   - Prepare for XCI if more than one X
+
+2. **Choice phase**:
+   - ONE X chosen to remain active
+   - OTHER X(s) will be inactivated
+   - Random in most cells
+   - Some cells show skewing
+
+3. **Initiation**:
+   - XIST transcribed from Xi (inactive X)
+   - Accumulates in cis (on same chromosome)
+   - Coats the entire X chromosome
+   - Visible as "cloud" in nucleus
+
+4. **Spreading**:
+   - XIST spreads along chromosome
+   - ~150 copies of XIST coat Xi
+   - Recruits silencing complexes
+
+5. **Maintenance**:
+   - DNA methylation locks in silence
+   - Histone modifications
+   - Late replication
+   - Nuclear periphery localization
+
+**Protein partners of XIST**:
+
+- **PRC2 complex** → Deposits H3K27me3
+- **PRC1 complex** → Adds H2AK119ub1
+- **SMCHD1** → DNA methylation, chromatin compaction
+- **HDACs** → Histone deacetylation
+- **MacroH2A** → Histone variant enrichment
+
+**TSIX** (XIST antisense):
+
+**Type**: lncRNA antisense to XIST
+
+**Function**: Represses XIST
+
+**Mechanism**:
+- Transcribed from Xa (active X)
+- Antisense orientation to XIST
+- Blocks XIST expression
+- Ensures only one X makes XIST
+
+**Regulatory loop**:
+```
+Before XCI:
+Both X chromosomes: TSIX expressed, XIST repressed
+
+XCI initiation:
+Future Xi: TSIX silenced, XIST activated
+Future Xa: TSIX maintained, XIST repressed
+
+Result:
+Xi: No TSIX, high XIST → Inactivation
+Xa: High TSIX, no XIST → Remains active
+```
+
+### Stages of XCI
+
+**1. Initiation (Early embryo, day 5-6)**:
+
+- Counting and choice
+- XIST upregulation on Xi
+- Chromosome-wide transcriptional silencing begins
+
+**2. Spreading (Day 6-7)**:
+
+- XIST coating entire chromosome
+- Histone modifications accumulate:
+  - H3K27me3 enrichment
+  - H3K9me3 at some regions
+  - Loss of H3K4me2/me3
+  - Histone deacetylation
+  - MacroH2A incorporation
+
+**3. Establishment (Day 7-8)**:
+
+- Transcriptional silencing complete
+- CpG island methylation begins
+- Most genes silenced
+- Some "escape" genes remain active
+
+**4. Maintenance (Throughout life)**:
+
+- DNA methylation locks in silence
+- XIST may be dispensable
+- Chromatin state maintained
+- Late replication
+- Xi visible as Barr body
+
+**Chromatin features of Xi**:
+
+| Feature | Active X (Xa) | Inactive X (Xi) |
+|---------|---------------|-----------------|
+| **XIST coating** | No | Yes |
+| **H3K27me3** | Low | High |
+| **H3K9me3** | Low | Moderate |
+| **H4 acetylation** | High | Low |
+| **DNA methylation** | Low | High |
+| **MacroH2A** | Normal | Enriched |
+| **Replication** | Early S | Late S |
+| **Location** | Nuclear interior | Periphery |
+| **Structure** | Euchromatic | Heterochromatic |
+
+### Random vs Imprinted X Inactivation
+
+**Imprinted XCI** (Extraembryonic tissues):
+
+- Occurs very early (4-cell stage)
+- **Always** silences paternal X
+- Non-random
+- In placenta and yolk sac
+- Evolutionary significance debated
+
+**Random XCI** (Embryo proper):
+
+- Occurs at blastocyst stage
+- **Random** choice of which X
+- ~50:50 ratio (but can skew)
+- In all somatic cells
+- Creates mosaic
+
+**Skewed XCI**:
+
+When inactivation isn't 50:50:
+
+**Causes**:
+- Random chance (especially with few cells)
+- Selection advantage/disadvantage
+- X-linked mutations favoring one X
+- Age (skewing increases with age)
+
+**Consequences**:
+- Variable disease severity in carriers
+- Some females with X-linked diseases symptomatic
+- Example: Some female DMD carriers have muscle weakness
+
+### Escape from XCI
+
+**Not all genes are silenced**:
+
+- ~15% of X-linked genes "escape" XCI in humans
+- Expressed from both X chromosomes
+- Variable between individuals
+- May contribute to sex differences
+
+**Examples of escape genes**:
+- XIST itself
+- KDM6A (H3K27me3 demethylase)
+- KDM5C (H3K4 demethylase)
+- SHOX (short stature gene)
+- Many pseudoautosomal region genes
+
+### Clinical Significance of XCI
+
+**1. X-linked disease carriers**:
+- Usually protected by having one normal X
+- Severity depends on XCI pattern
+- Skewed XCI can lead to symptoms
+
+**2. Turner Syndrome (45,X)**:
+- Only one X chromosome
+- No XCI needed
+- But escape genes affected
+- Short stature, ovarian dysgenesis
+
+**3. Klinefelter Syndrome (47,XXY)**:
+- One X inactivated (like normal females)
+- But still have phenotypic effects
+- Possibly due to escape genes
+
+**4. Female mosaicism**:
+- Every female is mosaic for X-linked genes
+- Can see this in:
+  - Anhidrotic ectodermal dysplasia (patchy sweating)
+  - Ornithine transcarbamylase deficiency
+  - Some calico cats!
+
+**5. Cancer**:
+- XCI maintenance lost in some cancers
+- Xi can reactivate
+- XIST deletions in some tumors
+
+## Epigenetics in Development and Differentiation
+
+### Lineage Commitment
+
+**Developmental progression**:
+
+```
+Zygote (Totipotent)
+    ↓
+Blastocyst
+    ↓ Lineage decisions
+├─ Inner Cell Mass (Pluripotent) → Embryo
+│   └─ Epiblast → Three germ layers
+│       ├─ Ectoderm → Nervous system, skin
+│       ├─ Mesoderm → Muscle, blood, bone
+│       └─ Endoderm → Gut, lungs, liver
+└─ Trophectoderm → Placenta
+```
+
+**Epigenetic changes during differentiation**:
+
+**1. Progressive restriction of potency**:
+
+**Pluripotent stem cells**:
+- Open chromatin
+- Bivalent promoters (H3K4me3 + H3K27me3)
+- Low DNA methylation at regulatory elements
+- High plasticity
+
+**Multipotent progenitors**:
+- Some lineage genes silenced (H3K27me3)
+- Other lineage genes activated (H3K4me3)
+- Increased DNA methylation at silenced loci
+- Reduced plasticity
+
+**Differentiated cells**:
+- Extensive DNA methylation
+- Clear H3K4me3 or H3K27me3 (not both)
+- Stable chromatin states
+- Committed identity
+
+**2. Bivalent domains in ES cells**:
+
+**What they are**:
+- Promoters with BOTH H3K4me3 AND H3K27me3
+- "Poised" for activation or silencing
+- Found at developmental transcription factors
+- Unique to stem cells
+
+**Function**:
+- Keep genes repressed but ready
+- Maintained by PRC2 (H3K27me3) and MLL (H3K4me3)
+- Allow rapid activation when needed
+- Resolution during differentiation
+
+**Resolution during differentiation**:
+```
+ES cell: Gene X has H3K4me3 + H3K27me3 (bivalent)
+                    ↓
+            Differentiation signal
+                    ↓
+        ┌───────────┴───────────┐
+    Cell A                  Cell B
+H3K4me3 only            H3K27me3 only
+Gene ON                 Gene OFF
+```
+
+**3. Pioneer factors**:
+
+**Definition**: Transcription factors that:
+- Bind to closed chromatin
+- Can access nucleosomal DNA
+- Initiate opening of chromatin
+- Recruit other factors
+
+**Examples**:
+- **FoxA**: Liver development
+- **GATA**: Blood cell development
+- **PU.1**: Macrophage differentiation
+- **Oct4, Sox2, Nanog**: Pluripotency
+- **MyoD**: Muscle differentiation
+
+**Mechanism**:
+```
+Closed chromatin
+    ↓
+Pioneer factor binds
+    ↓
+Recruits chromatin remodelers
+    ↓
+Recruits HATs
+    ↓
+Open chromatin
+    ↓
+Other TFs can bind
+    ↓
+Gene activation
+    ↓
+Lineage commitment
+```
+
+### Tissue-Specific Gene Expression
+
+**How cells maintain identity**:
+
+**DNA methylation patterns**:
+- Liver-specific genes: Unmethylated in liver, methylated in brain
+- Neuron-specific genes: Unmethylated in neurons, methylated in liver
+- Maintained through divisions
+- Stable and heritable
+
+**Enhancer landscapes**:
+- Different cell types activate different enhancers
+- Marked by H3K27ac in active tissues
+- Cell-type-specific transcription factors
+- Super-enhancers at identity genes
+
+**Example - Blood cell differentiation**:
+
+```
+Hematopoietic Stem Cell
+        ↓
+    ┌───┴───┐
+Myeloid    Lymphoid
+    ↓          ↓
+  ┌─┴─┐      ┌─┴─┐
+Granulocyte Monocyte  B cell  T cell
+```
+
+**Epigenetic changes**:
+- PU.1 high: Macrophage fate
+- GATA1 high: Erythrocyte fate
+- Antagonistic interactions
+- Mutual exclusion by chromatin changes
+- Progressive methylation of alternate fates
+
+### Stem Cell Plasticity
+
+**Types of stem cells**:
+
+**1. Embryonic Stem Cells (ESCs)**:
+- Pluripotent
+- Can become any cell type
+- Bivalent chromatin domains
+- Open chromatin overall
+- Low DNA methylation
+
+**2. Adult Stem Cells**:
+- Multipotent (limited fates)
+- Tissue-specific (hematopoietic, neural, etc.)
+- More restricted chromatin
+- Higher DNA methylation
+- Tissue-specific enhancers active
+
+**3. Induced Pluripotent Stem Cells (iPSCs)**:
+- Reprogrammed somatic cells
+- Similar to ESCs (but not identical)
+- Some epigenetic memory retained
+- Variable quality
+
+**Maintenance of stemness**:
+
+**Pluripotency network**:
+- Oct4, Sox2, Nanog transcription factors
+- Auto-regulatory loops
+- Repress differentiation genes
+- Maintain open chromatin
+
+**Epigenetic requirements**:
+- Active DNA demethylation (TET1/2)
+- Polycomb silencing of differentiation genes
+- Open chromatin (chromatin remodelers)
+- Specific histone marks
+
+**Niche signals**:
+- LIF/STAT3 (mouse ES cells)
+- FGF/ERK and TGFβ (human ES cells)
+- Maintain pluripotency network
+- Prevent spontaneous differentiation
+
+## Environmental Epigenetics
+
+### Nutrition, Toxins, and Stress Effects
+
+Epigenetics is the molecular bridge between environment and gene expression!
+
+### Nutritional Effects
+
+**Methyl donors and one-carbon metabolism**:
+
+**Key nutrients**:
+- Folate (Vitamin B9)
+- Vitamin B12
+- Choline
+- Methionine
+- Betaine
+
+**Biochemical pathway**:
+```
+Dietary methyl donors
+    ↓
+S-Adenosyl Methionine (SAM)
+    ↓ (methyl donor for DNMTs)
+DNA methylation
+    ↓
+S-Adenosyl Homocysteine (SAH)
+```
+
+**Effects of deficiency**:
+- Reduced SAM availability
+- Global hypomethylation
+- CpG island hypermethylation (paradoxically)
+- Neural tube defects
+- Cancer risk increased
+
+**Agouti Mouse Experiment** (Classic example):
+
+**Background**:
+- Avy allele: Agouti gene with retrotransposon
+- Methylation of retrotransposon → normal brown coat
+- Unmethylated → yellow coat, obesity, diabetes
+
+**Experiment**:
+- Pregnant mice fed methyl-donor-rich diet
+- OR control diet
+
+**Results**:
+- Supplemented diet → More brown offspring
+- Control diet → More yellow offspring
+- **Same genes, different epigenetic marks!**
+- **Diet changed epigenetics, changed phenotype**
+
+**Implications**:
+- Maternal nutrition affects offspring epigenome
+- Effects can persist into adulthood
+- Demonstrates environmental epigenetic effects
+
+**Genistein (soy compound)**:
+- Also shifts Agouti phenotype
+- DNMT inhibitor
+- Shows dietary compounds can affect epigenome
+
+### Toxic Exposures
+
+**Endocrine disruptors**:
+
+**Bisphenol A (BPA)**:
+- Plastic component
+- Estrogen mimic
+- Effects:
+  - Alters DNA methylation patterns
+  - Affects developmental genes
+  - Transgenerational effects in rodents
+  - Linked to obesity, reproductive issues
+
+**Diethylstilbestrol (DES)**:
+- Synthetic estrogen (used 1940s-1970s)
+- Given to pregnant women
+- Epigenetic effects:
+  - Altered methylation in offspring
+  - Increased cancer risk (daughters)
+  - Effects in grandchildren too
+  - Classic transgenerational example
+
+**Heavy metals**:
+
+**Arsenic**:
+- Interferes with SAM metabolism
+- Alters DNA methylation globally
+- Histone modification changes
+- Cancer risk
+
+**Lead**:
+- Changes DNA methylation
+- Affects neurodevelopment
+- Persistent effects
+
+**Cadmium**:
+- Mimics zinc, interferes with enzymes
+- Epigenetic dysregulation
+- Found in cigarette smoke
+
+**Air pollution**:
+- Particulate matter exposure
+- Changes DNA methylation
+- Effects on cardiovascular genes
+- Respiratory disease risk
+
+### Stress Effects
+
+**Psychological stress**:
+
+**Hypothalamic-Pituitary-Adrenal (HPA) axis**:
+- Stress → Cortisol release
+- Affects gene expression
+- Can cause epigenetic changes
+- Long-lasting effects
+
+**Early life stress**:
+
+**Maternal care in rats** (Michael Meaney's work):
+
+**High maternal care**:
+- Increased licking/grooming
+- Offspring: Less stressed as adults
+- Glucocorticoid receptor gene LESS methylated
+- Higher receptor expression
+- Better stress response
+
+**Low maternal care**:
+- Less licking/grooming
+- Offspring: More stressed as adults
+- Glucocorticoid receptor gene MORE methylated
+- Lower receptor expression
+- Poor stress response
+
+**Reversibility**:
+- Cross-fostering reverses effect
+- HDAC inhibitors reverse methylation
+- Shows epigenetic, not genetic
+
+**Human studies**:
+
+**Childhood adversity**:
+- Abuse, neglect alter epigenome
+- Changes in stress response genes
+- Increased psychiatric disorder risk
+- Changes detectable in blood cells
+
+**PTSD** (Post-Traumatic Stress Disorder):
+- Altered methylation patterns
+- Especially in stress-related genes
+- May predispose or result from PTSD
+- Potential biomarkers
+
+### Transgenerational Epigenetic Inheritance
+
+**Definitions**:
+
+**Intergenerational** (F1, F2):
+- Direct exposure occurred
+- F0: Pregnant mother exposed
+- F1: Developing fetus exposed
+- F2: Developing germ cells in F1 exposed
+- Not "true" transgenerational
+
+**Transgenerational** (F3+):
+- No direct exposure
+- Effects in F3 generation
+- True epigenetic inheritance
+- Controversial in mammals
+
+**Evidence in different organisms**:
+
+**Plants**:
+- Well-documented
+- Stress-induced changes persist
+- Paramutation phenomena
+- RNA-based inheritance
+
+**C. elegans**:
+- Strong evidence
+- RNAi effects last generations
+- piRNA-based inheritance
+- Can last >100 generations
+
+**Mammals**:
+- Limited clear examples
+- Most marks erased in germline
+- Some evidence for:
+  - Metabolic effects
+  - Stress responses
+  - Toxin exposure effects
+- Mechanisms unclear
+
+**Dutch Hunger Winter (1944-1945)**:
+
+**Background**:
+- Severe famine in Netherlands
+- Well-documented population
+- Pregnant women exposed
+
+**Findings in offspring (F1)**:
+- Exposed in early pregnancy: Increased obesity, cardiovascular disease
+- Exposed in late pregnancy: Glucose intolerance
+- DNA methylation changes detected decades later
+- Specific genes affected (IGF2, others)
+
+**F2 generation**:
+- Some effects in grandchildren
+- Lower birth weights
+- Increased disease risk
+- Debated if true transgenerational (F1 gametes exposed)
+
+**Överkalix Study (Sweden)**:
+
+**Design**:
+- Historical records of food availability
+- Multi-generational health data
+
+**Findings**:
+- Paternal grandfather's food abundance
+- Affected grandson's longevity
+- Sex-specific effects
+- Suggested epigenetic inheritance
+
+**Interpretation**:
+- Controversial
+- Confounding factors possible
+- Mechanism unknown
+- Needs replication
+
+### Epigenetic Epidemiology
+
+**Epigenome-Wide Association Studies (EWAS)**:
+
+**Similar to GWAS, but**:
+- Measure DNA methylation (usually)
+- Associate with disease/trait
+- Identify epigenetic risk factors
+
+**Challenges**:
+- Tissue specificity (blood vs target tissue)
+- Causation vs correlation
+- Environmental confounders
+- Temporal dynamics
+
+**Successes**:
+- Smoking: Robust methylation signatures
+- Aging: Epigenetic clock markers
+- Some diseases: Consistent findings
+
+**Biobanks**:
+- Large-scale epigenetic profiling
+- UK Biobank, others
+- Longitudinal data
+- Gene-environment interactions
+
+## Epigenetic Crosstalk
+
+### Interaction Between DNA Methylation, Histone Marks, and ncRNAs
+
+Epigenetic mechanisms don't work in isolation—they communicate and reinforce each other.
+
+### DNA Methylation ↔ Histone Modifications
+
+**1. DNA methylation recruits histone modifiers**:
+
+**MBD proteins** (Methyl-CpG Binding Domain):
+- Bind methylated DNA
+- Recruit HDACs
+- Remove activating histone marks
+- Example: MeCP2, MBD1-4
+
+**Pathway**:
+```
+DNA methylation
+    ↓
+MBD proteins bind
+    ↓
+Recruit NuRD complex (HDAC + chromatin remodeler)
+    ↓
+Histone deacetylation
+    ↓
+Chromatin compaction
+    ↓
+Gene silencing reinforced
+```
+
+**2. Histone modifications guide DNA methylation**:
+
+**H3K9me3 → DNA methylation**:
+- DNMT3A/B recognize H3K9me3
+- UHRF1 binds H3K9me3
+- Recruits DNMT1
+- Establishes/maintains DNA methylation
+
+**H3K4me3 → Prevents DNA methylation**:
+- DNMT3A/L inhibited by H3K4me3
+- Protects CpG islands
+- Keeps promoters unmethylated
+
+**H3K36me3 → Gene body methylation**:
+- DNMT3B recruited to H3K36me3
+- Explains high methylation in gene bodies
+- Different from promoter methylation
+
+**Feedback loops**:
+```
+Scenario 1 - Silencing:
+DNA methylation → MBD → HDAC → H3K9 deacetylation
+       ↑                              ↓
+       ←─────── SUV39H ←──── H3K9me3 ←┘
+       
+Self-reinforcing silencing
+
+Scenario 2 - Activation:
+Unmethylated DNA → TET enzymes → 5hmC
+       ↑                              ↓
+       ←─────── Active marks ←──── Open chromatin
+       
+Self-reinforcing activation
+```
+
+### Histone Modifications ↔ ncRNAs
+
+**1. ncRNAs recruit histone modifiers**:
+
+**lncRNAs as guides**:
+- HOTAIR recruits PRC2 (H3K27me3) and LSD1 (removes H3K4me)
+- XIST recruits PRC2 and PRC1
+- AIR recruits G9a (H3K9me2)
+- Provides specificity to enzyme complexes
+
+**2. Histone marks affect ncRNA expression**:
+
+**miRNA genes**:
+- Can be silenced by DNA methylation
+- Regulated by histone modifications
+- Example: miR-34 regulated by p53 and epigenetics
+
+**lncRNA loci**:
+- Often have bivalent marks in ES cells
+- Developmentally regulated
+- Epigenetic control of their expression
+
+### DNA Methylation ↔ ncRNAs
+
+**1. ncRNAs direct DNA methylation** (in some organisms):
+
+**In plants** (RdDM pathway):
+- siRNAs guide DNA methylation
+- Target complementary sequences
+- Direct de novo methylation
+
+**In mammals** (limited):
+- piRNAs in germline
+- May guide DNA methylation to transposons
+- Mechanism less clear than plants
+
+**2. DNA methylation affects ncRNA expression**:
+
+**miRNA silencing**:
+- miRNA gene promoters can be methylated
+- Turns off tumor suppressor miRNAs
+- Cancer mechanism
+
+**lncRNA regulation**:
+- Many lncRNA loci controlled by methylation
+- Tissue-specific patterns
+
+### Three-Way Interactions
+
+**Polycomb silencing**:
+
+```
+lncRNA (e.g., XIST)
+    ↓
+Recruits PRC2
+    ↓
+H3K27me3 deposited
+    ↓
+Recruits PRC1
+    ↓
+H2AK119ub1 added
+    ↓
+Recruits DNMTs
+    ↓
+DNA methylation
+    ↓
+Stable, maintained silencing
+```
+
+**All three mechanisms collaborate!**
+
+**Activating network**:
+
+```
+TF binding
+    ↓
+Recruits TET enzymes (DNA demethylation)
+    ↓
+Recruits HATs (histone acetylation)
+    ↓
+Chromatin remodeling
+    ↓
+H3K4me3 deposition
+    ↓
+Blocks DNA methylation
+    ↓
+Transcription (including eRNAs, miRNAs)
+    ↓
+Positive feedback
+```
+
+### Crosstalk in Different Contexts
+
+**Development**:
+- Coordinated changes in all marks
+- Sequential recruitment
+- Stable cell identity
+
+**Cancer**:
+- Dysregulation of crosstalk
+- Hypermethylation + loss of H3K4me3
+- Abnormal ncRNA expression
+- Vicious cycles
+
+**Aging**:
+- Loss of coordination
+- Stochastic changes
+- "Epigenetic drift"
+- Accumulated errors
+
+### Therapeutic Implications
+
+**Combination therapies**:
+- DNMT inhibitors + HDAC inhibitors
+- Synergistic effects
+- FDA-approved combinations
+- Target multiple mechanisms
+
+**Understanding crosstalk helps**:
+- Predict drug effects
+- Design better therapies
+- Avoid resistance mechanisms
+- Target feedback loops
+
+## Epigenetic Mechanisms in Disease
 
 - **Main mechanisms**:
 
