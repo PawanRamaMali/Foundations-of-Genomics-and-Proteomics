@@ -659,8 +659,8 @@ pheatmap(log_counts, scale="row", clustering_distance_rows="correlation")
 - **Better extraction protocols**:
   - Use high-quality kits (Qiagen, Zymo Research)
   - Assess quality before sequencing (Bioanalyzer, Qubit)
-  - RIN score >7 for RNA-seq
-  - DNA integrity number (DIN) for DNA
+  - RIN score >7 for RNA-seq (10 = perfect)
+  - DNA Integrity Number (DIN) >7 for DNA (10 = perfect)
 - **QC tools at every step**:
   - Pre-sequencing: Assess nucleic acid quality
   - Post-sequencing: FastQC, alignment metrics
@@ -1123,7 +1123,7 @@ pheatmap(log_counts, scale="row", clustering_distance_rows="correlation")
 - Need more efficient algorithms
 - GPU acceleration
 - Cloud computing
-- Quantum computing (future?)
+- Distributed computing and parallelization
 
 **Ethical considerations**:
 - Data privacy (human subjects)
