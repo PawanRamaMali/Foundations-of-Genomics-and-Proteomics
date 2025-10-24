@@ -50,6 +50,7 @@ book:
         - ch17-applications.qmd
         - ch17a-bioinformatics.qmd
         - ch17b-metagenomics.qmd
+        - ch17c-ngs-analysis.qmd
 
     - part: "Part VI – Reflection and Future Directions"
       chapters:
