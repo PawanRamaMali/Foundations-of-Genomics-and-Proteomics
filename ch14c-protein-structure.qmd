@@ -1,0 +1,457 @@
+# Protein Structure and Analysis
+
+## Introduction
+
+Proteins are the molecular machines of life. Understanding protein structure is essential because **structure determines function**. In this chapter, we explore how proteins fold, techniques to determine their structure, and computational methods to predict structure—including the revolutionary AlphaFold.
+
+## Why Protein Structure Matters
+
+**Key principle**: Structure → Function
+
+- Enzymes: Active site structure enables catalysis
+- Antibodies: Binding site structure determines specificity
+- Receptors: Structure enables ligand binding
+- Structural proteins: Shape provides mechanical support
+
+**Clinical importance**:
+- Many diseases involve misfolded proteins
+- Drug design targets protein structures
+- Personalized medicine considers protein variants
+
+## Levels of Protein Structure
+
+### Primary Structure (1°)
+
+**Definition**: Linear sequence of amino acids
+
+**Key facts**:
+- 20 standard amino acids
+- Linked by peptide bonds
+- Sequence encoded by DNA
+- Determines all higher-level structure
+
+**Example**: Insulin A chain
+```
+GIVEQCCTSICSLYQLENYCN
+```
+
+### Secondary Structure (2°)
+
+**Definition**: Local folding patterns
+
+**Major types**:
+
+**α-helix**:
+- Right-handed spiral
+- 3.6 residues per turn
+- Stabilized by hydrogen bonds (C=O···H-N)
+- Common in proteins (~30%)
+
+**β-sheet**:
+- Extended strands
+- Side-by-side arrangement
+- Parallel or antiparallel
+- Stabilized by hydrogen bonds between strands
+
+**Loops/turns**:
+- Connect α-helices and β-sheets
+- Often functional (binding sites)
+
+**Prediction**: Secondary structure can be predicted from sequence (>80% accuracy)
+
+### Tertiary Structure (3°)
+
+**Definition**: Overall 3D fold of single polypeptide
+
+**Stabilized by**:
+- Hydrogen bonds
+- Disulfide bridges (Cys-Cys)
+- Ionic interactions (salt bridges)
+- Hydrophobic effect (core burial)
+- Van der Waals forces
+
+**Protein domains**:
+- Independently folding units
+- 50-200 amino acids typically
+- Modular building blocks
+- Can occur in multiple proteins
+
+**Example**: Immunoglobulin domain
+- Found in antibodies
+- β-sandwich structure
+- Recognizable fold
+
+### Quaternary Structure (4°)
+
+**Definition**: Assembly of multiple polypeptide chains
+
+**Examples**:
+- **Hemoglobin**: 4 subunits (2α, 2β)
+- **DNA polymerase**: Multiple subunits
+- **Proteasome**: 28 subunits
+- **Viral capsids**: Many copies of proteins
+
+**Oligomeric states**: Monomers, dimers, trimers, tetramers, etc.
+
+## Protein Folding
+
+### Anfinsen's Dogma
+
+**Discovery**: Proteins can spontaneously refold after denaturation
+
+**Conclusion**: All information for folding is in primary structure
+
+**Implication**: Sequence determines structure
+
+### The Protein Folding Problem
+
+**Challenge**: Predict 3D structure from sequence
+
+**Levinthal's Paradox**:
+- Too many possible conformations to sample randomly
+- Yet proteins fold in milliseconds to seconds
+- Must follow folding pathway, not random search
+
+**Solution**: Folding funnel
+- Proteins gradually narrow conformational space
+- Guided by energy landscape
+- Molten globule → Native state
+
+### Chaperones
+
+**Reality**: Many proteins need help folding
+
+**Chaperones**: Proteins that assist folding
+- GroEL/GroES (bacteria)
+- Hsp70, Hsp90 (heat shock proteins)
+- Prevent aggregation
+- Provide folding chamber
+
+**Diseases**: Chaperonopathies when chaperones malfunction
+
+## Protein Misfolding Diseases
+
+### Amyloid Diseases
+
+**Amyloids**: Misfolded proteins forming β-sheet-rich fibrils
+
+**Examples**:
+- **Alzheimer's disease**: Aβ peptide, tau protein
+- **Parkinson's disease**: α-synuclein
+- **Prion diseases**: PrP protein (Mad Cow, CJD)
+- **Type 2 diabetes**: Islet amyloid
+- **Huntington's disease**: Polyglutamine expansions
+
+**Prions**: Infectious proteins
+- Misfolded conformation is infectious
+- Converts normal protein to misfolded form
+- No nucleic acid required!
+
+### Loss-of-Function
+
+**Cystic fibrosis**: CFTR protein misfolded, degraded
+- ΔF508 mutation prevents proper folding
+- Protein trapped in ER
+- Doesn't reach membrane
+
+## Techniques to Determine Protein Structure
+
+### X-ray Crystallography
+
+**Principle**: X-rays diffract off electron clouds
+
+**Process**:
+1. Purify and crystallize protein
+2. Shoot X-ray beam through crystal
+3. Collect diffraction pattern
+4. Computationally solve structure (phase problem)
+5. Build atomic model
+
+**Resolution**: Can reach <1 Å (atomic resolution)
+
+**Pros**:
+- High resolution
+- Gold standard
+- Most structures in PDB from X-ray
+
+**Cons**:
+- Requires crystals (difficult for many proteins)
+- Static snapshot (not dynamics)
+- Non-physiological conditions
+
+**Famous structures**:
+- DNA double helix (Franklin & Wilkins)
+- Hemoglobin (Perutz)
+- Ribosome (Ramakrishnan, Steitz, Yonath—Nobel 2009)
+
+### Nuclear Magnetic Resonance (NMR)
+
+**Principle**: Atomic nuclei resonate in magnetic field
+
+**Process**:
+1. Purify protein in solution
+2. Place in strong magnetic field
+3. Apply radio waves
+4. Measure nuclear resonances
+5. Calculate distances between atoms
+6. Solve structure
+
+**Resolution**: ~2-3 Å typically
+
+**Pros**:
+- Solution structure (physiological)
+- Dynamics information
+- No crystals needed
+
+**Cons**:
+- Size limit (~30-40 kDa)
+- Lower resolution than X-ray
+- Requires isotope labeling (¹⁵N, ¹³C)
+
+### Cryo-Electron Microscopy (Cryo-EM)
+
+**Principle**: Image frozen proteins with electron beam
+
+**Process**:
+1. Flash-freeze protein solution
+2. Image with electron microscope
+3. Collect thousands of images (particles)
+4. Computationally average and reconstruct 3D structure
+
+**Resolution**: "Resolution revolution"—now reaching ~1.2 Å!
+
+**Pros**:
+- No crystals needed
+- Large complexes possible (ribosomes, viruses)
+- Near-native conditions
+- Flexible proteins
+
+**Cons**:
+- Expensive equipment
+- Computational intensive
+- Historically lower resolution (improved dramatically since 2013)
+
+**Nobel Prize 2017**: Jacques Dubochet, Joachim Frank, Richard Henderson
+
+**Game-changer**: Can now solve structures impossible by X-ray
+- Membrane proteins
+- Large complexes
+- Flexible proteins
+
+### Other Methods
+
+**Small-Angle X-ray Scattering (SAXS)**:
+- Low-resolution overall shape
+- Solution conditions
+- Protein flexibility
+
+**Hydrogen-Deuterium Exchange (HDX)**:
+- Monitors solvent accessibility
+- Protein dynamics
+- Conformational changes
+
+**Cross-linking Mass Spectrometry (XL-MS)**:
+- Distance constraints
+- Protein-protein interactions
+- Complementary to other methods
+
+## Protein Structure Prediction
+
+### Homology Modeling
+
+**Principle**: Model unknown structure based on known homolog
+
+**Process**:
+1. Find template with known structure (>30% identity ideal)
+2. Align query to template
+3. Build model based on template
+4. Refine model
+
+**Accuracy**: Good if high homology
+
+**Limitation**: Requires known template
+
+### Ab Initio Prediction
+
+**Principle**: Predict structure from sequence alone (no template)
+
+**Historically very difficult**: Limited success before 2020
+
+### AlphaFold Revolution
+
+**AlphaFold** (DeepMind, 2020):
+- Deep learning model
+- Predicts structure from sequence
+- Trained on all known structures
+
+**AlphaFold2 accuracy**:
+- CASP14 competition: Near-experimental accuracy
+- Median backbone accuracy: 0.96 Å
+- Revolutionary breakthrough
+
+**AlphaFold Database**:
+- >200 million predicted structures
+- Covers most known proteins
+- Freely available
+
+**Impact**:
+- Accelerates structural biology
+- Enables structure-based drug design
+- Understands protein function
+
+**RoseTTAFold** (Baker lab): Similar performance
+
+**Limitations**:
+- Static structures (not dynamics)
+- Doesn't predict ligand binding well
+- Confidence varies (pLDDT score)
+
+## Protein Structure Databases
+
+### Protein Data Bank (PDB)
+
+**Repository**: Experimentally determined structures
+
+**Stats** (2024):
+- >200,000 structures
+- X-ray: ~85%
+- NMR: ~10%
+- Cryo-EM: ~5% (rapidly growing)
+
+**Access**: www.rcsb.org, www.ebi.ac.uk/pdbe
+
+**PDB format**: Standard file format for 3D coordinates
+
+### AlphaFold Database
+
+**Repository**: Predicted structures
+
+**Stats**:
+- >200 million predicted structures
+- Covers UniProt database
+- Confidence scores provided
+
+**Access**: alphafold.ebi.ac.uk
+
+### Other Resources
+
+- **SCOP/CATH**: Structural classification
+- **Pfam**: Protein domain families
+- **InterPro**: Protein family database
+
+## Structure-Based Drug Design
+
+**Rational drug design**: Design drugs to fit protein binding sites
+
+**Process**:
+1. Determine target protein structure
+2. Identify binding site
+3. Screen or design molecules that fit
+4. Test and optimize
+
+**Success stories**:
+- HIV protease inhibitors
+- Kinase inhibitors (cancer drugs)
+- EGFR inhibitors
+- BRAF inhibitors
+
+**Challenges**:
+- Protein flexibility (induced fit)
+- Solubility and bioavailability
+- Off-target effects
+
+## Protein Dynamics
+
+**Reality**: Proteins are not static
+
+**Importance**:
+- Conformational changes enable function
+- Allostery: Binding at one site affects another
+- Dynamics determine binding specificity
+
+**Methods to study dynamics**:
+- NMR (timescales: ps to ms)
+- Molecular dynamics simulations
+- Fluorescence spectroscopy
+- Single-molecule techniques
+
+## Computational Tools
+
+### Visualization
+
+- **PyMOL**: Most popular
+- **Chimera/ChimeraX**: Powerful, free
+- **VMD**: Molecular dynamics
+- **Jmol**: Web-based
+
+### Analysis
+
+- **DSSP**: Secondary structure assignment
+- **PROCHECK**: Structure quality
+- **RMSD**: Compare structures
+
+### Prediction
+
+- **AlphaFold**: Best structure prediction
+- **RoseTTAFold**: Alternative predictor
+- **SWISS-MODEL**: Homology modeling
+- **Phyre2**: Fold recognition
+
+## Key Terms
+
+- **Primary structure**: Amino acid sequence
+- **Secondary structure**: Local folding (α-helix, β-sheet)
+- **Tertiary structure**: Overall 3D fold
+- **Quaternary structure**: Multi-subunit assembly
+- **X-ray crystallography**: Structure determination using X-rays
+- **NMR**: Structure determination using magnetic resonance
+- **Cryo-EM**: Structure determination using electron microscopy
+- **AlphaFold**: AI-based structure prediction
+- **PDB**: Protein Data Bank
+- **Amyloid**: Misfolded protein aggregates
+
+## Practice Questions
+
+1. What are the four levels of protein structure?
+
+2. What forces stabilize tertiary structure?
+
+3. What is Anfinsen's dogma?
+
+4. Compare X-ray crystallography, NMR, and cryo-EM.
+
+5. What is AlphaFold and why is it revolutionary?
+
+6. Give three examples of protein misfolding diseases.
+
+7. Why are prion diseases unusual?
+
+8. How does structure-based drug design work?
+
+9. What information does the PDB contain?
+
+10. Why is protein dynamics important for function?
+
+## Summary
+
+In this chapter, we learned:
+
+- Proteins have four levels of structure: primary, secondary, tertiary, quaternary
+- Structure determines function
+- Proteins fold spontaneously, guided by energy landscape
+- Misfolded proteins cause diseases (amyloids, prions)
+- X-ray crystallography, NMR, and cryo-EM determine structures
+- Cryo-EM has revolutionized structural biology
+- AlphaFold accurately predicts structure from sequence
+- PDB contains >200,000 experimentally determined structures
+- Structure-based drug design enables rational therapeutics
+- Protein dynamics are essential for function
+
+Understanding protein structure bridges genomics and function, enabling drug design and disease understanding.
+
+## Further Reading
+
+- Branden, C. and Tooze, J. (1999). *Introduction to Protein Structure*. 2nd ed. Garland Science.
+- Jumper, J. et al. (2021). "Highly accurate protein structure prediction with AlphaFold." *Nature* 596: 583-589.
+- Chiti, F. and Dobson, C.M. (2017). "Protein Misfolding, Amyloid Formation, and Human Disease." *Annual Review of Biochemistry* 86: 27-68.
+- Kühlbrandt, W. (2014). "Biochemistry: The resolution revolution." *Science* 343: 1443-1444.

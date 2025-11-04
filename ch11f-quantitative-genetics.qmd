@@ -1,0 +1,454 @@
+# Quantitative Genetics and GWAS
+
+## Introduction
+
+Most traits we care about—height, intelligence, disease susceptibility, crop yield—aren't controlled by single genes. They're **quantitative traits**: influenced by many genes plus environment. Quantitative genetics studies these complex traits, bridging classical genetics and genomics.
+
+This chapter covers:
+- Quantitative vs. Mendelian traits
+- Heritability and its estimation
+- QTL mapping
+- Genome-wide association studies (GWAS)
+- Polygenic risk scores
+- Applications to medicine and agriculture
+
+## Quantitative vs. Mendelian Traits
+
+### Mendelian Traits
+
+**Characteristics**:
+- Controlled by single genes
+- Discrete categories (affected/unaffected)
+- Clear inheritance patterns
+- High penetrance
+
+**Examples**:
+- ABO blood type
+- Cystic fibrosis
+- Huntington's disease
+- Sickle cell anemia
+
+### Quantitative Traits
+
+**Characteristics**:
+- Controlled by many genes (**polygenic**)
+- Continuous distribution
+- Environmental influence
+- Complex inheritance
+
+**Examples**:
+- Height
+- Weight, BMI
+- Blood pressure
+- Intelligence (IQ)
+- Disease risk (diabetes, heart disease, schizophrenia)
+- Crop yield, milk production
+
+### The Continuum
+
+**Reality**: Most traits fall on a spectrum:
+- Some diseases are purely Mendelian (rare)
+- Some traits purely polygenic (common)
+- Many are in between (oligogenic: few genes of large effect)
+
+## Basic Concepts
+
+### Phenotypic Value
+
+**Phenotype (P)** = **Genotype (G)** + **Environment (E)** + **G×E interaction**
+
+```
+P = G + E + G×E
+```
+
+**Example - Height**:
+- Genotype: Genetic potential
+- Environment: Nutrition, health
+- G×E: Some genotypes more responsive to good nutrition
+
+### Variance Components
+
+**Phenotypic variance**: Total variation in trait
+
+```
+VP = VG + VE + VG×E
+```
+
+**Genetic variance (VG)** can be partitioned:
+
+```
+VG = VA + VD + VI
+```
+
+Where:
+- **VA**: Additive genetic variance (sum of allele effects)
+- **VD**: Dominance variance (allele interactions within locus)
+- **VI**: Epistatic variance (interactions between loci)
+
+**Additive variance (VA)** is most important because:
+- Passed from parents to offspring
+- Responds to selection
+- Basis for heritability
+
+## Heritability
+
+### Broad-Sense Heritability (H²)
+
+**Definition**: Proportion of phenotypic variance due to all genetic effects
+
+```
+H² = VG / VP
+```
+
+**Interpretation**:
+- H² = 0: All variation environmental
+- H² = 1: All variation genetic
+- H² = 0.5: Half genetic, half environmental
+
+### Narrow-Sense Heritability (h²)
+
+**Definition**: Proportion of phenotypic variance due to additive genetic effects
+
+```
+h² = VA / VP
+```
+
+**More useful than H²** because:
+- Predicts response to selection
+- Determines parent-offspring resemblance
+- Used in breeding programs
+
+### Example Heritabilities
+
+| Trait | h² |
+|-------|-----|
+| Height | 0.80 |
+| Weight | 0.70 |
+| BMI | 0.70 |
+| Blood pressure | 0.50 |
+| Intelligence (IQ) | 0.50 |
+| Schizophrenia risk | 0.80 |
+| Type 2 diabetes risk | 0.50 |
+| Milk yield (cattle) | 0.35 |
+
+**Important caveats**:
+- Heritability is population-specific
+- Heritability is environment-specific
+- High heritability doesn't mean unchangeable
+- Heritability says nothing about between-group differences
+
+### Estimating Heritability
+
+**Methods**:
+
+1. **Parent-offspring regression**:
+   - Plot offspring vs. parent trait values
+   - Slope = h²
+
+2. **Twin studies**:
+   - Compare identical (MZ) vs. fraternal (DZ) twins
+   - h² ≈ 2(rMZ - rDZ)
+
+3. **Genomic heritability (SNP heritability)**:
+   - Use genome-wide SNPs
+   - Estimate genetic similarity between unrelated individuals
+   - GREML (Genomic REML) method
+
+## QTL Mapping
+
+### What Are QTLs?
+
+**Quantitative Trait Locus (QTL)**: A genomic region containing genes that influence a quantitative trait.
+
+**Strategy**: Use genetic markers to map QTLs
+
+### Linkage-Based QTL Mapping
+
+**In experimental crosses** (plants, animals):
+
+1. Cross two inbred strains differing in trait
+2. Generate F2 or backcross population
+3. Genotype with molecular markers
+4. Measure trait values
+5. Test association between markers and trait
+
+**LOD score**: Logarithm of odds
+- LOD > 3: Significant QTL (1000:1 odds)
+
+**Resolution**: Typically 10-30 cM (10-30 Mb in mammals)
+- Low resolution because few recombination events
+
+### Association-Based QTL Mapping
+
+**In natural populations**:
+
+Use linkage disequilibrium (LD) between markers and causal variants
+
+**Advantages**:
+- Higher resolution (accumulated recombination over many generations)
+- Relevant to natural populations
+
+**Disadvantages**:
+- Population structure confounds
+- Requires correction for relatedness
+
+## Genome-Wide Association Studies (GWAS)
+
+### Overview
+
+**GWAS**: Scan genome for SNPs associated with trait
+
+**Typical design**:
+- 1,000-1,000,000 individuals
+- 500,000-10,000,000 SNPs
+- Test each SNP for association
+- Correct for multiple testing
+
+### Statistical Methods
+
+**For binary traits** (case-control):
+- Logistic regression
+- Chi-square test
+
+**For quantitative traits**:
+- Linear regression
+- Mixed models (control for relatedness)
+
+**Model**:
+```
+Trait ~ SNP + Covariates + Population Structure + Random Effects
+```
+
+**Covariates**: Age, sex, batch effects
+
+**Population structure**: Principal components
+
+### Multiple Testing Correction
+
+**Problem**: Testing millions of SNPs
+
+**Bonferroni correction**:
+```
+α = 0.05 / # tests
+```
+
+**Genome-wide significance**: p < 5×10⁻⁸
+- Standard for GWAS
+- Assumes ~1 million independent tests
+
+**False discovery rate (FDR)**: Control proportion of false positives
+
+### Effect Sizes
+
+Most GWAS hits have **small effects**:
+- Typical SNP: 0.1-1% of variance
+- Largest SNPs: 1-5% of variance
+
+**Example - Height**:
+- 697 variants identified (2018 study)
+- Together explain ~20% of variance
+- Tallest vs. shortest genotypes: ~15 cm difference
+
+**Missing heritability**:
+- Heritability from twins: 80%
+- Variance explained by GWAS: 20-50%
+- Where's the rest?
+  - Rare variants (not on SNP arrays)
+  - Structural variants
+  - Epistasis
+  - G×E interactions
+  - Overestimated h²?
+
+### Interpreting GWAS Results
+
+**Challenge**: Most hits are non-coding
+
+**Strategies**:
+1. **Positional candidate**: Nearest gene
+2. **eQTL analysis**: SNPs affecting gene expression
+3. **Chromatin state**: Active regulatory regions
+4. **Cross-species conservation**
+5. **Functional experiments**: Test candidate variants
+
+**Success stories**:
+- FTO locus: Obesity risk
+- TCF7L2: Type 2 diabetes
+- C4A: Schizophrenia
+- APOE: Alzheimer's disease
+
+## Polygenic Risk Scores (PRS)
+
+### Concept
+
+**PRS**: Sum of risk alleles weighted by effect sizes
+
+```
+PRS = Σ (βi × SNPi)
+```
+
+Where:
+- βi = effect size of SNP i
+- SNPi = genotype (0, 1, or 2 copies of risk allele)
+
+### Applications
+
+**Disease risk prediction**:
+- Identify high-risk individuals
+- Personalized screening
+- Drug targeting
+
+**Example - Breast cancer**:
+- Top 1% PRS: 3× higher risk than average
+- Bottom 1% PRS: 3× lower risk
+- Could guide mammography frequency
+
+**Limitations**:
+- Population-specific (trained on Europeans)
+- Modest predictive power (AUC typically 0.55-0.65)
+- Ethical concerns (discrimination, anxiety)
+
+## Applications
+
+### Medicine
+
+**Disease risk prediction**:
+- Identify high-risk individuals
+- Personalized prevention
+- Drug development (target genes in GWAS loci)
+
+**Pharmacogenomics**:
+- Drug response variation
+- Adverse effect prediction
+- Dose optimization
+
+### Agriculture
+
+**Genomic selection**:
+- Predict breeding values from genotypes
+- Accelerate crop and livestock improvement
+- No need to wait for phenotypes
+
+**Marker-assisted selection**:
+- Select for favorable QTL alleles
+- Combine desirable traits faster
+- Reduce inbreeding
+
+**Success stories**:
+- Dairy cattle: Milk yield improvement
+- Crops: Drought resistance, disease resistance
+- Aquaculture: Growth rate
+
+## Gene-Environment Interactions
+
+### G×E Interactions
+
+**Definition**: Genotype effects depend on environment
+
+**Example - PKU**:
+- Genotype (mutant PAH): Disease if normal diet
+- Environment (low-phenylalanine diet): Normal phenotype
+- G×E: Diet eliminates disease
+
+**Implications**:
+- Heritability environment-dependent
+- Personalized interventions possible
+- Complicates GWAS interpretation
+
+### Detecting G×E
+
+**Methods**:
+- Stratify by environment
+- Interaction terms in models
+- Variance QTL (vQTL): SNPs affecting trait variance
+
+**Challenges**:
+- Requires large sample sizes
+- Environment measurement difficult
+- Multiple environments needed
+
+## Missing Heritability
+
+### The Problem
+
+**Twin-based h²** > **GWAS-based h²**
+
+**Example - Height**:
+- Twin studies: h² ≈ 0.80
+- GWAS (common SNPs): h² ≈ 0.50
+- Missing: 0.30
+
+### Explanations
+
+1. **Rare variants**: Not captured by SNP arrays
+2. **Structural variants**: CNVs, inversions
+3. **Epistasis**: Gene-gene interactions
+4. **G×E interactions**
+5. **Epigenetics**: Inherited epigenetic marks
+6. **Assortative mating**: Non-random mating
+7. **Overestimated twin h²**: Shared environment
+
+### Solutions
+
+- **Whole-genome sequencing**: Capture rare variants
+- **Larger sample sizes**: Find smaller effects
+- **Better statistical methods**: Model complexity
+- **Multi-omics**: Integrate multiple data types
+
+## Key Terms
+
+- **Quantitative trait**: Continuous trait influenced by many genes
+- **Polygenic**: Controlled by many genes
+- **Heritability (h²)**: Proportion of variance due to additive genetics
+- **QTL**: Quantitative trait locus
+- **GWAS**: Genome-wide association study
+- **Effect size**: Magnitude of variant's impact
+- **Polygenic risk score (PRS)**: Sum of risk alleles
+- **Missing heritability**: Gap between twin and SNP heritability
+- **Genomic selection**: Breeding based on genotypes
+- **G×E interaction**: Genotype effect depends on environment
+
+## Practice Questions
+
+1. What's the difference between broad-sense and narrow-sense heritability?
+
+2. If a trait has h² = 0.60, what does this mean? What doesn't it mean?
+
+3. Why is narrow-sense heritability more useful for breeding than broad-sense?
+
+4. What is the typical effect size of a GWAS-identified SNP?
+
+5. Explain the "missing heritability" problem.
+
+6. How does GWAS differ from traditional QTL mapping?
+
+7. What is a polygenic risk score and what are its limitations?
+
+8. Why is it challenging to identify genes underlying quantitative traits?
+
+9. Give an example of a gene-environment interaction.
+
+10. How has genomic selection revolutionized agriculture?
+
+## Summary
+
+In this chapter, we learned:
+
+- Quantitative traits are influenced by many genes plus environment
+- Heritability measures the genetic contribution to trait variation
+- QTL mapping identifies genomic regions affecting quantitative traits
+- GWAS scans genome for trait-associated variants
+- Most GWAS variants have small effects
+- Polygenic risk scores predict disease risk from many variants
+- Missing heritability remains a major puzzle
+- Quantitative genetics enables genomic selection in agriculture
+- G×E interactions complicate trait prediction
+- Understanding complex traits requires large studies and advanced methods
+
+Quantitative genetics is central to understanding human disease, agricultural improvement, and evolution of complex adaptations.
+
+## Further Reading
+
+- Lynch, M. and Walsh, B. (1998). *Genetics and Analysis of Quantitative Traits*. Sinauer Associates.
+- Visscher, P.M. et al. (2017). "10 Years of GWAS Discovery." *American Journal of Human Genetics* 101: 5-22.
+- Yengo, L. et al. (2018). "Meta-analysis of genome-wide association studies for height and body mass index in ~700,000 individuals of European ancestry." *Human Molecular Genetics* 27: 3641-3649.
+- Torkamani, A. et al. (2018). "The personal and clinical utility of polygenic risk scores." *Nature Reviews Genetics* 19: 581-590.

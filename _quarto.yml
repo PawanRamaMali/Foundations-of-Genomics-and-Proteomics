@@ -19,6 +19,7 @@ book:
         - ch01-introduction.qmd
         - ch02-basics.qmd
         - ch03-central-dogma.qmd
+        - ch03a-cell-division.qmd
 
     - part: "Part II – Historical Perspectives"
       chapters:
@@ -34,6 +35,12 @@ book:
         - ch10-c-value-paradox.qmd
         - ch11-mitochondria.qmd
         - ch11a-comparative-genomics.qmd
+        - ch11b-genetic-variation.qmd
+        - ch11c-recombination-mapping.qmd
+        - ch11d-model-organisms.qmd
+        - ch11e-population-genetics.qmd
+        - ch11f-quantitative-genetics.qmd
+        - ch11g-molecular-evolution.qmd
 
     - part: "Part IV – Beyond the Genome"
       chapters:
@@ -42,15 +49,21 @@ book:
         - ch13-proteomics.qmd
         - ch14-epigenetics.qmd
         - ch14a-metabolomics.qmd
+        - ch14b-noncoding-rna.qmd
+        - ch14c-protein-structure.qmd
 
     - part: "Part V – Experimental Tools and Applications"
       chapters:
         - ch15-sequencing.qmd
         - ch16-experimental-methods.qmd
+        - ch16a-functional-genomics.qmd
         - ch17-applications.qmd
         - ch17a-bioinformatics.qmd
         - ch17b-metagenomics.qmd
         - ch17c-ngs-analysis.qmd
+        - ch17d-cancer-genomics.qmd
+        - ch17e-pharmacogenomics.qmd
+        - ch17f-systems-biology.qmd
 
     - part: "Part VI – Reflection and Future Directions"
       chapters:

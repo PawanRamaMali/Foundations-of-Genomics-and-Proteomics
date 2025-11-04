@@ -1,0 +1,655 @@
+# Population Genetics
+
+## Introduction
+
+So far, we've focused on genetics at the individual level—how genes work, how they're inherited, and how mutations arise. But to understand evolution, adaptation, and disease, we need to study **population genetics**: how genetic variation is distributed and changes in populations over time.
+
+Population genetics bridges molecular biology and evolution, and is foundational for:
+
+- Understanding evolution and adaptation
+- Identifying disease genes (GWAS)
+- Conservation biology
+- Agriculture and breeding
+- Forensics and ancestry testing
+
+## What Is a Population?
+
+### Definitions
+
+**Population**: A group of interbreeding individuals of the same species living in the same geographic area.
+
+**Gene pool**: All the alleles of all genes in a population.
+
+**Allele frequency**: The proportion of a particular allele among all alleles at that locus in a population.
+
+### Calculating Allele Frequencies
+
+**Example**: Gene with two alleles (A and a) in diploid population
+
+- 100 individuals total
+- Genotype counts:
+  - AA: 50 individuals (100 A alleles)
+  - Aa: 40 individuals (40 A + 40 a alleles)
+  - aa: 10 individuals (20 a alleles)
+
+**Total alleles**: 200 (each individual has 2)
+
+**Frequency of A**:
+```
+p = (100 + 40) / 200 = 140 / 200 = 0.70 (70%)
+```
+
+**Frequency of a**:
+```
+q = (40 + 20) / 200 = 60 / 200 = 0.30 (30%)
+```
+
+**Check**: p + q = 1.0
+
+### Genotype Frequencies
+
+**Genotype frequency**: Proportion of individuals with a particular genotype
+
+From above:
+- Frequency of AA = 50/100 = 0.50
+- Frequency of Aa = 40/100 = 0.40
+- Frequency of aa = 10/100 = 0.10
+
+**Check**: 0.50 + 0.40 + 0.10 = 1.0
+
+## The Hardy-Weinberg Principle
+
+### The Foundation of Population Genetics
+
+**Hardy-Weinberg (HW) Principle**: In an ideal population, allele and genotype frequencies remain constant from generation to generation.
+
+**Historical note**: Independently proposed by G.H. Hardy (mathematician) and Wilhelm Weinberg (physician) in 1908.
+
+### Assumptions
+
+HW equilibrium requires:
+
+1. **No mutations**: No new alleles created
+2. **Random mating**: Individuals pair randomly (no inbreeding, no mate choice)
+3. **No gene flow**: No migration in or out
+4. **Large population size**: No genetic drift
+5. **No natural selection**: All genotypes equal fitness
+
+**Reality check**: No real population meets all these assumptions! But HW provides a **null hypothesis**—we can identify evolutionary forces by detecting deviations from HW.
+
+### Hardy-Weinberg Equations
+
+If allele frequencies are p (for A) and q (for a):
+
+**Genotype frequencies after one generation of random mating**:
+
+```
+Frequency of AA = p²
+Frequency of Aa = 2pq
+Frequency of aa = q²
+```
+
+**Check**: p² + 2pq + q² = 1
+
+**Why?** This comes from the Punnett square:
+
+|  | A (p) | a (q) |
+|---|---|---|
+| **A (p)** | AA (p²) | Aa (pq) |
+| **a (q)** | Aa (pq) | aa (q²) |
+
+Aa can form two ways: Aa or aA, so frequency = 2pq
+
+### Example Calculation
+
+If p = 0.70 and q = 0.30:
+
+```
+Frequency of AA = (0.70)² = 0.49
+Frequency of Aa = 2(0.70)(0.30) = 0.42
+Frequency of aa = (0.30)² = 0.09
+```
+
+**Check**: 0.49 + 0.42 + 0.09 = 1.00 ✓
+
+### Applications
+
+**1. Estimating allele frequencies from genotype frequencies**
+
+If we know genotype frequencies (e.g., from sequencing):
+```
+p = frequency of AA + (1/2)(frequency of Aa)
+q = frequency of aa + (1/2)(frequency of Aa)
+```
+
+Or for recessive alleles:
+```
+q = √(frequency of aa)
+p = 1 - q
+```
+
+**2. Estimating carrier frequencies**
+
+For recessive diseases (genotype aa causes disease):
+
+**Example - Cystic fibrosis**:
+- Disease frequency: 1 in 2,500 (0.0004)
+- q² = 0.0004
+- q = √0.0004 = 0.02
+- p = 1 - 0.02 = 0.98
+- Carrier frequency (Aa) = 2pq = 2(0.98)(0.02) = 0.039 (≈1 in 25!)
+
+**Insight**: Recessive disease alleles are much more common than the disease because most are hidden in heterozygotes.
+
+### Testing for HW Equilibrium
+
+**Chi-square test**: Compare observed vs. expected genotype frequencies
+
+**Steps**:
+1. Calculate expected genotype frequencies using HW
+2. Compare observed vs. expected using χ²
+3. Determine if deviation is statistically significant
+
+**Deviations from HW indicate**:
+- Inbreeding (excess homozygotes)
+- Population structure (subpopulations)
+- Selection
+- Recent migration
+- Genotyping errors
+
+## Forces of Evolution
+
+HW equilibrium is the null hypothesis. Four forces cause deviations and drive evolution:
+
+### 1. Mutation
+
+**Effect**: Creates new alleles
+
+**Rate**: Typically 10⁻⁸ to 10⁻⁹ per base per generation
+
+**Impact on allele frequencies**:
+- Very slow by itself
+- But ultimate source of all variation
+- Balance with selection and drift
+
+**Mutation-selection balance**:
+- Deleterious mutations constantly created
+- Selection removes them
+- Equilibrium frequency depends on mutation rate (μ) and selection coefficient (s)
+
+For recessive alleles:
+```
+q ≈ √(μ/s)
+```
+
+**Example**: Why do genetic diseases persist?
+- Mutation keeps creating disease alleles
+- Selection removes them
+- Balance maintains low frequency
+
+### 2. Gene Flow (Migration)
+
+**Effect**: Movement of alleles between populations
+
+**Impact**:
+- Increases variation within populations
+- Decreases differences between populations
+- Even small amounts prevent differentiation
+
+**Change in allele frequency**:
+```
+Δp = m(pm - p)
+```
+
+Where:
+- m = migration rate (proportion of migrants)
+- pm = allele frequency in migrants
+- p = allele frequency in recipient population
+
+**Example - Humans**:
+- Historically high gene flow
+- Explains why humans are genetically very similar worldwide
+- ~85% of human variation is within populations, only ~15% between populations
+
+### 3. Genetic Drift
+
+**Effect**: Random changes in allele frequencies
+
+**Cause**: Random sampling of gametes each generation
+
+**Key property**: Inversely proportional to population size
+- Large populations: Little drift
+- Small populations: Strong drift
+
+### How Drift Works
+
+Imagine flipping a coin:
+- 10 flips: Might get 7 heads (70%)
+- 10,000 flips: Very close to 50% heads
+
+Same with allele frequencies:
+- Small population: Large random fluctuations
+- Large population: Stable frequencies
+
+### Consequences of Drift
+
+1. **Allele frequency changes**: Random walk
+2. **Loss of variation**: Alleles randomly lost
+3. **Fixation**: Eventually one allele reaches 100%
+4. **Differentiation**: Different populations diverge
+
+### Effective Population Size (Ne)
+
+**Effective population size**: Number of breeding individuals contributing to next generation
+
+Usually Ne < actual population size because:
+- Not all individuals breed
+- Variance in reproductive success
+- Unequal sex ratios
+
+**Importance**: Drift intensity depends on Ne, not total population size
+
+**Examples**:
+- Endangered species: Ne can be very small
+- Cheetahs: Went through bottleneck, low genetic diversity
+- Humans: Current Ne ≈ 10,000 (even though billions exist)
+
+### Genetic Bottlenecks
+
+**Bottleneck**: Severe population size reduction
+
+**Effects**:
+- Loss of genetic variation
+- Random changes in allele frequencies
+- Increased inbreeding
+
+**Examples**:
+- **Cheetahs**: Bottleneck ~10,000 years ago, very low diversity
+- **Northern elephant seals**: Hunted to <100 individuals
+- **Human population**: Bottleneck ~70,000 years ago (Toba volcanic eruption hypothesis)
+
+### Founder Effects
+
+**Founder effect**: New population started by small number of individuals
+
+**Result**: Allele frequencies differ from source population
+
+**Examples**:
+- **Finnish disease heritage**: Certain diseases common due to founder effect
+- **Amish populations**: High frequency of rare genetic diseases
+- **Island populations**: Often show founder effects
+
+### 4. Natural Selection
+
+**Effect**: Differential survival and reproduction based on genotype
+
+**Result**: Changes in allele frequencies toward beneficial alleles
+
+**Key concept**: Selection acts on phenotypes, but affects allele frequencies
+
+### Fitness
+
+**Fitness (w)**: Relative reproductive success of a genotype
+
+**Selection coefficient (s)**: Reduction in fitness
+```
+s = 1 - w
+```
+
+**Example**:
+- Genotype AA: fitness w = 1.0 (reference)
+- Genotype Aa: fitness w = 0.95 (5% reduction, s = 0.05)
+- Genotype aa: fitness w = 0.80 (20% reduction, s = 0.20)
+
+### Types of Selection
+
+**1. Directional selection**: One allele favored
+
+```
+Before:           After:
+  |                    |
+  |                    |
+  |__  aa              |     aa
+  |    / \             |      / \
+  |   /   \            |     /   \
+__|__/__A__\__     __|____/_____A\___
+  Phenotype          Phenotype (shift→)
+```
+
+- Antibiotic resistance in bacteria
+- Pesticide resistance in insects
+- Lactase persistence in humans
+
+**2. Balancing selection**: Heterozygote advantage or frequency-dependent selection
+
+Maintains multiple alleles in population
+
+**Example - Sickle cell anemia**:
+- AA: Normal, susceptible to malaria
+- AS: Carrier, resistant to malaria (heterozygote advantage)
+- SS: Sickle cell disease
+
+In malarial regions, S allele maintained despite harm in homozygotes
+
+**3. Purifying (negative) selection**: Removes deleterious alleles
+
+- Most common type
+- Maintains functional sequences
+- Explains evolutionary conservation
+
+**4. Positive selection**: Favors beneficial alleles
+
+- Relatively rare
+- Drives adaptation
+- Detectable in genomic scans
+
+### Selection and Allele Frequency Change
+
+For directional selection on a dominant allele:
+
+```
+Δp = (sp(1-p)q) / (1 - sq²)
+```
+
+**Insights**:
+- Selection is most effective at intermediate frequencies
+- Rare alleles change slowly
+- Selection against recessive alleles is slow (hidden in heterozygotes)
+
+**Time to fixation**:
+- Strong selection: Faster
+- Weak selection: Slower
+- Dominant alleles: Fix faster than recessive
+
+## Population Structure
+
+Real populations aren't random-mating pools—they have structure.
+
+### Inbreeding
+
+**Inbreeding**: Mating between relatives
+
+**Effect**: Increases homozygosity
+
+**Inbreeding coefficient (F)**:
+- F = 0: Random mating
+- F = 1: Complete inbreeding (self-fertilization)
+
+**Genotype frequencies with inbreeding**:
+```
+Frequency of AA = p² + Fpq
+Frequency of Aa = 2pq - 2Fpq
+Frequency of aa = q² + Fpq
+```
+
+**Consequences**:
+- Increased expression of recessive diseases
+- Decreased fitness ("inbreeding depression")
+- Problem for conservation biology
+
+### Wahlund Effect
+
+**Scenario**: Population structure (subpopulations) mistaken for single population
+
+**Effect**: Apparent excess of homozygotes (deficit of heterozygotes)
+
+**Example**:
+Two subpopulations:
+- Subpop 1: p = 0.8
+- Subpop 2: p = 0.4
+- Combined: p = 0.6
+
+Expected heterozygosity if single population: 2(0.6)(0.4) = 0.48
+
+Actual heterozygosity (average of subpops):
+- Subpop 1: 2(0.8)(0.2) = 0.32
+- Subpop 2: 2(0.4)(0.6) = 0.48
+- Average: (0.32 + 0.48)/2 = 0.40
+
+**Result**: Fewer heterozygotes than expected!
+
+## Measuring Genetic Diversity
+
+### Heterozygosity
+
+**Expected heterozygosity (He)**: Under HW equilibrium
+
+For two alleles:
+```
+He = 2pq
+```
+
+For multiple alleles:
+```
+He = 1 - Σpi²
+```
+
+Where pi is frequency of allele i
+
+**Observed heterozygosity (Ho)**: Actual proportion of heterozygotes
+
+**Comparison**:
+- Ho < He: Inbreeding or population structure
+- Ho = He: Random mating
+- Ho > He: Rare (negative assortative mating)
+
+### Nucleotide Diversity (π)
+
+**Nucleotide diversity**: Average proportion of nucleotide differences between two randomly chosen sequences
+
+```
+π = Σ xixj πij
+```
+
+Where:
+- xi, xj = frequencies of sequences i and j
+- πij = proportion of differences between i and j
+
+**Human genome**: π ≈ 0.001 (0.1%)
+- We differ at ~1 in 1,000 bases
+- 3 million differences per genome
+
+### FST: Population Differentiation
+
+**FST**: Proportion of genetic variance between populations
+
+```
+FST = (HT - HS) / HT
+```
+
+Where:
+- HT = heterozygosity in total population
+- HS = average heterozygosity within subpopulations
+
+**Interpretation**:
+- FST = 0: No differentiation (one panmictic population)
+- FST = 1: Complete differentiation (no shared alleles)
+
+**Typical values**:
+- FST < 0.05: Little differentiation
+- FST = 0.05-0.15: Moderate differentiation
+- FST > 0.15: High differentiation
+
+**Human populations**: FST ≈ 0.10-0.15 between major geographic groups
+
+## Genome-Wide Association Studies (GWAS)
+
+### Principle
+
+**Goal**: Find genetic variants associated with diseases or traits
+
+**Method**:
+1. Genotype many SNPs across genome in cases and controls
+2. Test each SNP for association with trait
+3. Identify variants significantly associated
+
+**Relies on**:
+- Linkage disequilibrium (LD)
+- Associated SNP may not be causal, but linked to causal variant
+
+### GWAS Design
+
+**Requirements**:
+- Large sample sizes (thousands to millions)
+- Genome-wide genotyping (500K-5M SNPs)
+- Careful statistical corrections (multiple testing)
+
+**Study design**:
+- **Case-control**: Compare diseased vs. healthy
+- **Quantitative trait**: Correlate genotype with trait value
+
+### Significance Thresholds
+
+**Multiple testing problem**: Testing millions of SNPs
+
+**Bonferroni correction**:
+```
+Significance threshold = 0.05 / number of tests
+```
+
+**Genome-wide significance**: p < 5 × 10⁻⁸
+- Standard threshold for GWAS
+
+### Manhattan Plot
+
+**Visualization**: Plot -log₁₀(p-value) vs. genomic position
+
+```
+    |                *
+-log|               *
+(p) |           *
+    |    *  *
+    |____________
+      Chromosomes
+```
+
+**Interpretation**:
+- Peaks above threshold: Significant associations
+- Named after Manhattan skyline appearance
+
+### Major Findings
+
+**GWAS has identified loci for**:
+- Type 2 diabetes
+- Cardiovascular disease
+- Autoimmune diseases
+- Psychiatric disorders
+- Height, BMI, educational attainment
+- Many more...
+
+**Limitations**:
+- Most variants have small effects
+- "Missing heritability" problem
+- Often non-coding variants (regulatory)
+- Population-specific effects
+
+## Applications of Population Genetics
+
+### 1. Conservation Biology
+
+**Genetic diversity crucial for**:
+- Adaptation to environmental change
+- Disease resistance
+- Avoiding inbreeding depression
+
+**Tools**:
+- Measure heterozygosity, Ne
+- Plan breeding programs
+- Identify populations for protection
+
+### 2. Forensics
+
+**DNA fingerprinting**:
+- Uses population allele frequencies
+- Calculate match probability
+- "Random match probability"
+
+**Example**: If 13 STR loci used
+- Each locus: ~1 in 10 chance of match
+- All 13: ~1 in 10¹³ (trillions)
+
+### 3. Ancestry Testing
+
+**Principle**: Allele frequencies differ among populations
+
+**Methods**:
+- Compare individual's genotype to reference populations
+- Calculate ancestry proportions
+
+**Limitations**:
+- Continuous variation, not discrete "races"
+- Recent admixture complicates analysis
+
+### 4. Agriculture
+
+**Animal and plant breeding**:
+- Estimate heritability
+- Predict breeding values
+- Maintain genetic diversity
+- Genomic selection
+
+## Key Terms
+
+- **Population**: Interbreeding group of individuals
+- **Gene pool**: All alleles in a population
+- **Allele frequency**: Proportion of an allele in a population
+- **Hardy-Weinberg equilibrium**: Constant allele frequencies across generations
+- **Genetic drift**: Random changes in allele frequencies
+- **Gene flow**: Movement of alleles between populations
+- **Natural selection**: Differential reproductive success
+- **Fitness**: Relative reproductive success
+- **Effective population size (Ne)**: Number of breeding individuals
+- **Bottleneck**: Severe population size reduction
+- **Founder effect**: New population from few individuals
+- **Inbreeding**: Mating between relatives
+- **FST**: Measure of population differentiation
+- **GWAS**: Genome-wide association study
+- **Heterozygosity**: Proportion of heterozygotes
+
+## Practice Questions
+
+1. In a population, allele A has frequency 0.6. Under HW equilibrium, what are the genotype frequencies?
+
+2. A disease affects 1 in 10,000 people. Assuming HW equilibrium and recessive inheritance, what is the carrier frequency?
+
+3. What are the five assumptions of Hardy-Weinberg equilibrium?
+
+4. Explain why genetic drift is stronger in small populations.
+
+5. What is the difference between a bottleneck and a founder effect?
+
+6. Why does selection against recessive alleles take longer than selection against dominant alleles?
+
+7. Calculate the allele frequencies given: 40 AA, 40 Aa, 20 aa individuals.
+
+8. What does FST measure and what do different values mean?
+
+9. Why is heterozygote advantage a form of balancing selection?
+
+10. Explain how GWAS relies on linkage disequilibrium.
+
+## Summary
+
+In this chapter, we learned:
+
+- Population genetics studies genetic variation in populations
+- Hardy-Weinberg equilibrium provides a null hypothesis for no evolution
+- Four forces drive evolution: mutation, gene flow, drift, and selection
+- Genetic drift is stronger in small populations
+- Natural selection changes allele frequencies toward beneficial alleles
+- Different types of selection: directional, balancing, purifying, positive
+- Inbreeding increases homozygosity
+- Population structure causes apparent HW deviations
+- Genetic diversity measured by heterozygosity, nucleotide diversity, FST
+- GWAS uses population genetic principles to find disease genes
+- Population genetics has applications in medicine, conservation, forensics, and agriculture
+
+Understanding population genetics is essential for interpreting genomic variation, understanding evolution, and applying genomics to real-world problems.
+
+## Further Reading
+
+- Hartl, D.L. and Clark, A.G. (2021). *Principles of Population Genetics*. 4th edition. Sinauer Associates.
+- Nielsen, R. and Slatkin, M. (2013). *An Introduction to Population Genetics: Theory and Applications*. Sinauer Associates.
+- Visscher, P.M. et al. (2017). "10 Years of GWAS Discovery: Biology, Function, and Translation." *American Journal of Human Genetics* 101: 5-22.
+- Ellegren, H. and Galtier, N. (2016). "Determinants of genetic diversity." *Nature Reviews Genetics* 17: 422-433.
+- International HapMap Consortium. (2005). "A haplotype map of the human genome." *Nature* 437: 1299-1320.

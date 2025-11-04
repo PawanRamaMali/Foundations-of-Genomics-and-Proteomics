@@ -1,0 +1,443 @@
+# Pharmacogenomics and Precision Medicine
+
+## Introduction
+
+Why do some people respond to drugs while others don't? Why do some experience severe side effects? The answer often lies in our genes. **Pharmacogenomics** studies how genetic variation affects drug response, enabling personalized medicine.
+
+## What Is Pharmacogenomics?
+
+**Pharmacogenomics**: Study of how genes affect drug response
+
+**Related terms**:
+- **Pharmacogenetics**: Earlier term, often used interchangeably
+- **Precision medicine**: Tailoring treatment to individual characteristics
+- **Personalized medicine**: Another term for precision medicine
+
+**Key insight**: "One size fits all" doesn't work for medications
+
+## Why Genetic Variation Matters for Drugs
+
+### Drug Response Variability
+
+**Observations**:
+- Only 30-60% of patients respond to typical drugs
+- Adverse drug reactions cause >100,000 deaths/year in US
+- ~6th leading cause of death
+
+**Sources of variability**:
+- Genetics (20-95% depending on drug)
+- Age, sex, diet, lifestyle
+- Drug-drug interactions
+- Disease state
+- Microbiome
+
+**Focus**: Genetic factors are predictable and actionable
+
+### The Four Processes (ADME)
+
+Genes affect all stages of drug handling:
+
+**1. Absorption**: Uptake from gut/injection site
+- Transporters (e.g., SLCO1B1)
+
+**2. Distribution**: Movement to tissues
+- Plasma protein binding
+- Blood-brain barrier
+
+**3. Metabolism**: Chemical modification
+- Phase I: Cytochrome P450s (CYPs)
+- Phase II: Conjugation enzymes
+
+**4. Excretion**: Removal from body
+- Kidney transporters
+- Bile secretion
+
+**Plus**:
+
+**5. Target interaction**: Drug binds receptor/enzyme
+- Target protein variants affect efficacy
+
+## Cytochrome P450 Enzymes
+
+### The CYP Superfamily
+
+**Function**: Metabolize ~75% of drugs
+
+**Key enzymes**:
+- **CYP2D6**: 25% of drugs (antidepressants, beta-blockers, opioids)
+- **CYP2C19**: 10% of drugs (clopidogrel, proton pump inhibitors)
+- **CYP2C9**: 15% of drugs (warfarin, NSAIDs)
+- **CYP3A4/5**: 50% of drugs (statins, immunosuppressants)
+
+### CYP2D6 Polymorphisms
+
+**Most studied pharmacogene**
+
+**Metabolizer phenotypes**:
+
+**Ultra-rapid metabolizers (UMs)**:
+- Gene duplication (>2 copies)
+- Very fast metabolism
+- May need higher doses
+- Frequency: ~2% Europeans, ~30% East Africans
+
+**Extensive metabolizers (EMs)**:
+- Normal activity (reference)
+- Most common
+- Standard dosing
+
+**Intermediate metabolizers (IMs)**:
+- Reduced activity
+- One functional allele
+- May need lower doses
+
+**Poor metabolizers (PMs)**:
+- No functional enzyme
+- Two non-functional alleles
+- Higher drug levels → toxicity risk
+- Frequency: ~7% Europeans
+
+### Clinical Examples
+
+**Codeine** (CYP2D6):
+- Prodrug: Needs conversion to morphine
+- PMs: No pain relief
+- UMs: Excessive morphine → toxicity
+- FDA black box warning for children
+
+**Tamoxifen** (CYP2D6):
+- Breast cancer drug
+- Needs conversion to active form
+- PMs have worse outcomes
+
+## Warfarin Pharmacogenomics
+
+**Warfarin**: Anticoagulant with narrow therapeutic window
+
+**Challenge**: Dosing is tricky
+- Too little: Clots
+- Too much: Bleeding
+
+**Genetic factors**:
+
+**1. CYP2C9** (metabolism):
+- *2 and *3 alleles: Slower metabolism
+- Need lower dose
+
+**2. VKORC1** (target):
+- Vitamin K epoxide reductase (target of warfarin)
+- Variants affect sensitivity
+- -1639G>A: More sensitive
+
+**Dosing algorithms**:
+- Include genetics, age, sex, body size
+- FDA-approved pharmacogenetic test
+- Improves outcomes
+
+## Thiopurine Methyltransferase (TPMT)
+
+**Drug**: Thiopurines (azathioprine, 6-mercaptopurine)
+
+**Use**: Immunosuppression, cancer
+
+**TPMT function**: Inactivates thiopurines
+
+**Variants**:
+- Reduced/absent TPMT activity
+- Frequency: 0.3% very low, 10% intermediate
+
+**Clinical significance**:
+- Low TPMT → severe myelosuppression
+- Life-threatening
+- FDA requires testing before treatment
+
+**Implementation**: Pre-treatment genotyping standard of care
+
+## HLA and Drug Hypersensitivity
+
+**HLA** (Human Leukocyte Antigen): Presents peptides to immune system
+
+**Variants associated with severe reactions**:
+
+**HLA-B*5701 and abacavir**:
+- HIV drug
+- Causes hypersensitivity in carriers
+- 100% sensitivity, 96% specificity
+- **Mandatory testing** before prescribing
+
+**HLA-B*1502 and carbamazepine**:
+- Anticonvulsant
+- Stevens-Johnson syndrome in Asians
+- FDA recommends testing in Asians
+
+**HLA-A*3101 and carbamazepine**:
+- European and Japanese populations
+- Drug-induced hypersensitivity
+
+**Allopurinol and HLA-B*5801**:
+- Gout treatment
+- Severe cutaneous reactions
+- High frequency in Asians
+
+## Clopidogrel and CYP2C19
+
+**Clopidogrel** (Plavix): Antiplatelet drug
+
+**Mechanism**: Prodrug requiring CYP2C19 activation
+
+**CYP2C19 loss-of-function alleles** (*2, *3):
+- Reduced activation
+- Less platelet inhibition
+- Increased cardiovascular events
+
+**Frequency**: ~30% of populations carry loss-of-function alleles
+
+**FDA black box warning**: Diminished effectiveness in poor metabolizers
+
+**Alternative**: Prasugrel or ticagrelor (don't require CYP2C19)
+
+## Cancer Pharmacogenomics
+
+### DPYD and Fluoropyrimidines
+
+**5-Fluorouracil (5-FU)**: Common chemotherapy
+
+**DPYD**: Dihydropyrimidine dehydrogenase (metabolizes 5-FU)
+
+**DPYD variants**:
+- Reduced activity
+- Severe toxicity (diarrhea, mucositis, myelosuppression)
+- Can be fatal
+
+**Implementation**: Pre-treatment testing recommended
+
+### UGT1A1 and Irinotecan
+
+**Irinotecan**: Colon cancer chemotherapy
+
+**UGT1A1**: Glucuronidates (inactivates) irinotecan metabolite
+
+**UGT1A1*28 allele**:
+- Reduced activity
+- Severe neutropenia
+- Frequency: ~10% homozygotes (Caucasians)
+
+**FDA recommendation**: Consider dose reduction
+
+### TPMT (see above)
+
+## Statin Response
+
+**Statins**: Cholesterol-lowering drugs
+
+**SLCO1B1 gene**: Encodes transporter OATP1B1
+
+**rs4149056 (c.521T>C)**:
+- Reduced uptake into liver
+- Higher blood levels
+- Increased myopathy risk
+- Especially with simvastatin
+
+**Clinical utility**: Consider alternative statin or lower dose
+
+## G6PD Deficiency
+
+**G6PD**: Glucose-6-phosphate dehydrogenase
+
+**Function**: Protects red blood cells from oxidative stress
+
+**Deficiency**:
+- X-linked
+- Most common enzyme deficiency (~400 million people)
+- High frequency in malaria-endemic regions
+
+**Drugs causing hemolysis in G6PD-deficient individuals**:
+- Antimalarials (primaquine)
+- Antibiotics (sulfonamides, nitrofurantoin)
+- Aspirin (high doses)
+- Rasburicase
+
+**Testing**: Enzyme activity test before certain drugs
+
+## Implementing Pharmacogenomics
+
+### Preemptive Genotyping
+
+**Concept**: Test before prescription needed
+
+**Approach**:
+- Test panel of pharmacogenes once
+- Store results in electronic health record (EHR)
+- Clinical decision support alerts prescriber
+
+**Advantages**:
+- No delay when drug needed
+- Comprehensive
+
+**Examples**:
+- Vanderbilt PREDICT
+- St. Jude PG4KDS
+- eMERGE Network
+
+### Clinical Decision Support
+
+**Integration with EHR**:
+- Genotype automatically checked
+- Alert if actionable variant
+- Dosing recommendations
+
+**CPIC**: Clinical Pharmacogenetics Implementation Consortium
+- Evidence-based guidelines
+- Gene-drug pairs
+- Freely available
+
+### Barriers to Implementation
+
+**Challenges**:
+- Cost (decreasing)
+- Reimbursement
+- Physician education
+- EHR integration
+- Interpretation complexity
+
+**Solutions**:
+- Declining sequencing costs
+- Growing evidence base
+- Implementation consortia
+
+## Direct-to-Consumer Pharmacogenomics
+
+**Companies**: 23andMe, AncestryDNA (via third parties)
+
+**Pros**:
+- Consumer access
+- Raises awareness
+
+**Cons**:
+- Limited variants tested
+- No clinical context
+- Risk of misinterpretation
+- Privacy concerns
+
+**FDA stance**: Regulates some health claims
+
+## Future Directions
+
+### Polygenic Pharmacogenomics
+
+**Current**: Single-gene variants
+
+**Future**: Integrate multiple variants
+- Polygenic scores for drug response
+- Complex interactions
+
+### Multi-omics Integration
+
+**Beyond DNA**:
+- RNA expression (which genes are on)
+- Proteins (which are present)
+- Metabolites
+- Microbiome
+
+**Goal**: Comprehensive prediction
+
+### Pharmacoepigenomics
+
+**Epigenetic modifications** affect drug response:
+- DNA methylation
+- Histone modifications
+
+**Application**: Predict response and toxicity
+
+### AI and Machine Learning
+
+**Use**: Predict drug response from complex data
+
+**Challenges**: Interpretability, validation
+
+## Ethical and Social Issues
+
+### Equity
+
+**Problem**: Most studies in European populations
+
+**Result**: Pharmacogenomic data less applicable to other groups
+
+**Solution**: Diverse cohorts (All of Us, H3Africa)
+
+### Privacy
+
+**Genetic information is sensitive**:
+- Discrimination concerns (employment, insurance)
+- GINA protects in US (limited)
+
+### Access
+
+**Will pharmacogenomics increase disparities?**
+- Cost barriers
+- Healthcare access
+
+### Incidental Findings
+
+**Genotyping may reveal**:
+- Disease risk variants
+- Carrier status
+- Paternity questions
+
+## Key Terms
+
+- **Pharmacogenomics**: Study of genetic effects on drug response
+- **ADME**: Absorption, Distribution, Metabolism, Excretion
+- **Cytochrome P450 (CYP)**: Enzymes metabolizing drugs
+- **Poor metabolizer**: Individual with reduced/absent enzyme activity
+- **Prodrug**: Inactive drug requiring metabolic activation
+- **HLA**: Human Leukocyte Antigen (immune system genes)
+- **CPIC**: Clinical Pharmacogenetics Implementation Consortium
+- **Preemptive genotyping**: Testing before drug needed
+- **Adverse drug reaction**: Harmful response to medication
+
+## Practice Questions
+
+1. What are the four processes (ADME) affected by genetic variation?
+
+2. Explain why codeine doesn't work for CYP2D6 poor metabolizers.
+
+3. Why is HLA-B*5701 testing mandatory before prescribing abacavir?
+
+4. What two genes affect warfarin dosing and why?
+
+5. What is preemptive genotyping and what are its advantages?
+
+6. Why does clopidogrel not work well in CYP2C19 poor metabolizers?
+
+7. What is the role of CPIC?
+
+8. Explain the clinical significance of TPMT variants.
+
+9. Why is pharmacogenomics less applicable to non-European populations?
+
+10. What are the barriers to implementing pharmacogenomics in healthcare?
+
+## Summary
+
+In this chapter, we learned:
+
+- Genetic variation causes significant drug response variability
+- Pharmacogenomics studies how genes affect drug response
+- CYP enzymes metabolize most drugs; variants alter drug levels
+- Poor metabolizers risk toxicity; ultra-rapid metabolizers risk treatment failure
+- Warfarin dosing guided by CYP2C9 and VKORC1 genotypes
+- HLA variants predict severe drug hypersensitivity
+- TPMT testing prevents life-threatening toxicity from thiopurines
+- Preemptive genotyping enables proactive medication management
+- CPIC provides evidence-based implementation guidelines
+- Pharmacogenomics enables precision medicine but faces implementation challenges
+
+Pharmacogenomics is transforming medicine, making drug therapy safer and more effective through personalized approaches.
+
+## Further Reading
+
+- Relling, M.V. and Evans, W.E. (2015). "Pharmacogenomics in the clinic." *Nature* 526: 343-350.
+- Caudle, K.E. et al. (2014). "Incorporation of pharmacogenomics into routine clinical practice." *Clinical Pharmacology & Therapeutics* 95: 267-270.
+- PharmGKB database: www.pharmgkb.org
+- CPIC guidelines: cpicpgx.org

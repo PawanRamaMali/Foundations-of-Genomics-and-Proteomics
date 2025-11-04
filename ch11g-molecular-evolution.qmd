@@ -1,0 +1,474 @@
+# Molecular Evolution and Phylogenetics
+
+## Introduction
+
+Evolution occurs at the molecular level—changes in DNA, RNA, and protein sequences over time. **Molecular evolution** studies how these sequences change and uses them to understand evolutionary relationships, natural selection, and the history of life.
+
+This chapter explores:
+- Molecular clocks
+- Types of selection at the molecular level
+- Phylogenetic tree construction
+- Applications to genomics
+
+## Molecular Evolution Basics
+
+### Sequence Divergence
+
+**Key observation**: Related species have similar DNA/protein sequences
+
+**Divergence time correlates with sequence differences**:
+- Recently diverged: Few differences
+- Anciently diverged: Many differences
+
+**Example - Hemoglobin α chain** (amino acid differences from human):
+- Chimpanzee: 0 differences
+- Mouse: 18 differences
+- Chicken: 45 differences
+- Frog: 67 differences
+
+### Rates of Evolution
+
+**Different sequences evolve at different rates**:
+
+| Sequence Type | Relative Rate | Reason |
+|--------------|---------------|---------|
+| Pseudogenes | Fast | No function, no selection |
+| Synonymous sites | Fast | Don't change amino acid |
+| Introns | Fast | Non-coding |
+| 3' UTRs | Moderate | Some regulatory function |
+| Non-synonymous sites | Slow | Change amino acid, under selection |
+| Active sites | Very slow | Critical function |
+
+**Key principle**: **Functional constraint slows evolution**
+
+## The Molecular Clock
+
+### Concept
+
+**Molecular clock hypothesis**: Molecules evolve at approximately constant rates
+
+**Implication**: Sequence divergence ∝ time since common ancestor
+
+**Formula**:
+```
+d = 2μt
+```
+
+Where:
+- d = sequence divergence
+- μ = mutation rate per year
+- t = time since divergence
+- Factor of 2 because both lineages accumulating mutations
+
+### Evidence for Molecular Clock
+
+**Observations**:
+- Linear relationship between sequence divergence and time
+- Constant substitution rates in many genes
+
+**Why does it work?**
+- Most mutations neutral
+- Fixed by genetic drift at constant rate
+- Rate = mutation rate (for neutral mutations)
+
+### Complications
+
+**Molecular clock is "approximate"**:
+
+1. **Generation time effects**:
+   - Shorter generations → more mutations → faster evolution
+   - Mice evolve faster than elephants
+
+2. **Metabolic rate**:
+   - Higher metabolism → more ROS → more DNA damage
+   - But weak effect
+
+3. **Selection**:
+   - Positive selection speeds evolution
+   - Purifying selection slows evolution
+
+4. **Population size**:
+   - Larger Ne → more efficient selection
+   - Affects fixation of slightly deleterious mutations
+
+### Calibrating the Clock
+
+**Need known divergence times**:
+
+- Fossil record
+- Geological events (island formation)
+- Archaeological evidence (domestication)
+
+**Example - Human-chimp divergence**:
+- Fossil evidence: ~6-7 million years ago
+- Sequence divergence: ~1.2%
+- Molecular clock rate: ~1% per 5-6 million years
+
+**Human mutation rate**:
+- ~1.2 × 10⁻⁸ per base per generation
+- ~60-70 new mutations per generation
+- Can refine using parent-offspring trios
+
+## Types of Selection
+
+### Neutrality
+
+**Neutral theory** (Kimura, 1968):
+- Most molecular evolution neutral
+- Fixed by drift, not selection
+- "Selectionism vs. neutralism" debate
+
+**Evidence for neutrality**:
+- Synonymous substitutions more common than non-synonymous
+- Pseudogenes evolve fast (no function)
+- Molecular clock approximation works
+
+**Important**: Many mutations neutral, but functional changes under selection
+
+### Measuring Selection
+
+**dN/dS ratio** (also called Ka/Ks or ω):
+
+- **dN**: Non-synonymous substitution rate (changes amino acid)
+- **dS**: Synonymous substitution rate (doesn't change amino acid)
+
+**Interpretation**:
+- **dN/dS < 1**: Purifying (negative) selection
+  - Non-synonymous changes removed
+  - Most genes show this
+
+- **dN/dS = 1**: Neutral evolution
+  - No selection on amino acid changes
+
+- **dN/dS > 1**: Positive (adaptive) selection
+  - Non-synonymous changes favored
+  - Rare but important
+
+### Examples
+
+**Purifying selection** (dN/dS << 1):
+- Histones: dN/dS ≈ 0.01 (highly conserved)
+- Housekeeping genes
+- Enzymes' active sites
+
+**Neutral evolution** (dN/dS ≈ 1):
+- Pseudogenes
+- Some duplicated genes after redundancy
+
+**Positive selection** (dN/dS > 1):
+- Immune system genes (MHC, antibodies)
+- Pathogen-interacting proteins
+- Reproductive proteins (sperm-egg recognition)
+- Primate brain genes (some)
+
+### Detecting Positive Selection
+
+**Genome-wide scans**:
+
+1. **dN/dS > 1**: Adaptive evolution
+2. **Reduced diversity**: Selective sweep
+3. **Extended haplotypes**: Recent selection
+4. **Population differentiation**: Local adaptation
+
+**Classic example**: Lactase persistence
+- Selection for adult lactose digestion
+- In populations with dairy farming
+- Signatures: reduced diversity, extended haplotypes
+
+## Phylogenetic Trees
+
+### What Are Phylogenetic Trees?
+
+**Phylogeny**: Evolutionary relationships among species or genes
+
+**Phylogenetic tree components**:
+- **Tips (leaves)**: Species or sequences
+- **Branches**: Evolutionary lineages
+- **Nodes**: Common ancestors
+- **Root**: Most recent common ancestor of all
+
+### Types of Trees
+
+**Rooted vs. Unrooted**:
+- **Rooted**: Direction of evolution known
+- **Unrooted**: Only relationships, no direction
+
+**Bifurcating vs. Multifurcating**:
+- **Bifurcating**: Each ancestor gives rise to two descendants
+- **Multifurcating**: More than two (polytomy), indicates uncertainty
+
+### Reading Trees
+
+**Key principle**: Only topology matters, not arrangement
+
+```
+Same tree, different drawings:
+
+    A           C              B
+   / \         / \            / \
+  B   C       A   B          A   C
+```
+
+**Sister groups**: Taxa sharing immediate common ancestor
+
+**Monophyletic group (clade)**: Ancestor and all descendants
+
+## Building Phylogenetic Trees
+
+### Steps
+
+1. **Sequence alignment**: Line up homologous positions
+2. **Choose model**: Evolutionary model
+3. **Tree building**: Construct tree from alignment
+4. **Evaluate support**: Assess confidence in tree
+
+### Sequence Alignment
+
+**Goal**: Identify homologous positions
+
+**Methods**:
+- **Global alignment**: Align entire sequences (Needleman-Wunsch)
+- **Local alignment**: Find similar regions (Smith-Waterman)
+- **Multiple alignment**: Align many sequences (MUSCLE, MAFFT, Clustal)
+
+**Challenges**:
+- Insertions/deletions (indels)
+- Highly diverged sequences
+- Repetitive regions
+
+### Tree-Building Methods
+
+**Distance-based**:
+- Calculate pairwise distances
+- Cluster based on distance
+- Fast but less accurate
+- Examples: UPGMA, Neighbor-Joining
+
+**Character-based**:
+- Use actual sequence characters
+- More computationally intensive
+- More accurate
+- Examples: Maximum Parsimony, Maximum Likelihood, Bayesian
+
+**Maximum Likelihood (ML)**:
+- Find tree that maximizes probability of observing data
+- Requires evolutionary model
+- Widely used
+- Software: RAxML, PhyML, IQ-TREE
+
+**Bayesian Inference**:
+- Samples from posterior distribution of trees
+- Provides probability of each tree
+- Computationally intensive
+- Software: MrBayes, BEAST
+
+### Assessing Confidence
+
+**Bootstrapping**:
+- Resample alignment columns with replacement
+- Rebuild tree many times (typically 1000)
+- Bootstrap support = % of trees with same clade
+
+**Posterior probabilities** (Bayesian):
+- Probability of clade given data
+- Values > 0.95 considered strong support
+
+## Molecular Phylogenetics Applications
+
+### Evolutionary Relationships
+
+**Resolving the tree of life**:
+- Bacteria, Archaea, Eukarya relationships
+- Animal phylogeny (e.g., placement of placozoans)
+- Plant phylogeny
+
+**Example**: Molecular data showed:
+- Birds more closely related to crocodiles than other reptiles
+- Whales closely related to hippos
+- Humans closer to chimps than gorillas
+
+### Timing Evolutionary Events
+
+**Molecular dating**:
+- Use molecular clock to estimate divergence times
+- Calibrated with fossils
+- Reconstructs timing of evolutionary events
+
+**Applications**:
+- Human migration out of Africa (~60,000 years ago)
+- Origin of SARS-CoV-2 (~November 2019)
+- Diversification of flowering plants
+
+### Gene Family Evolution
+
+**Track gene duplication and loss**:
+- Gene trees vs. species trees
+- Identify orthologs and paralogs
+- Infer gene function by homology
+
+**Example - Olfactory receptors**:
+- ~400 functional genes in humans
+- ~1,000 in mice
+- Many pseudogenes in humans (less reliance on smell)
+
+### Pathogen Evolution
+
+**Track disease outbreaks**:
+- HIV origins and spread
+- Influenza evolution and vaccine design
+- COVID-19 variants
+- Antibiotic resistance
+
+**Forensic applications**:
+- HIV transmission cases
+- Bioterrorism investigations
+
+### Ancient DNA
+
+**Sequence extinct species**:
+- Neanderthals
+- Denisovans
+- Woolly mammoths
+- Cave bears
+
+**Findings**:
+- Modern humans interbred with Neanderthals (~2% Neanderthal DNA in non-Africans)
+- Denisovan introgression in Melanesians
+- Extinct species' biology and adaptations
+
+## Comparative Genomics
+
+### Genome Alignments
+
+**Whole-genome alignments**:
+- Align entire genomes
+- Identify conserved regions
+- Infer functional elements
+
+**Tools**:
+- BLAST: Sequence similarity search
+- BLAT: Fast BLAST-like alignment tool
+- LASTZ: Pairwise whole-genome alignment
+
+### Conservation and Function
+
+**Principle**: Functionally important regions are conserved
+
+**PhyloP and PhastCons**:
+- Conservation scores across 100 vertebrate genomes
+- Identify conserved elements
+- Many conserved non-coding regions → regulatory elements
+
+**Example**:
+- ENCODE project: 80% of genome biochemically active
+- But only ~10% under evolutionary constraint
+- Debate over "junk DNA"
+
+### Synteny
+
+**Synteny**: Conservation of gene order between species
+
+**Uses**:
+- Identify orthologs
+- Study chromosome evolution
+- Understand genome rearrangements
+
+**Observations**:
+- High synteny between human and mouse
+- Inversions, translocations, fusions between species
+- Ancient karyotypes can be reconstructed
+
+## Molecular Evolution of Humans
+
+### Human-Chimp Comparison
+
+**Genomic differences**:
+- ~1.2% sequence divergence
+- ~35 million single-nucleotide differences
+- ~5 million indels
+- Chromosomal fusions (human chr 2 = chimp chr 2A + 2B)
+
+**What makes us human?**
+- Gene expression changes (especially brain)
+- Regulatory changes
+- Loss of some genes (e.g., olfactory receptors)
+- Gain of others (e.g., copy number variation in amylase)
+
+### Genes Under Selection in Humans
+
+**Positive selection in**:
+- **FOXP2**: Language and speech
+- **EDAR**: Hair, teeth, sweat glands (Asian populations)
+- **LCT**: Lactase persistence (European, African pastoralists)
+- **SLC24A5**: Skin pigmentation
+- **EPAS1**: High-altitude adaptation (Tibetans)
+
+### Human Population History
+
+**Molecular data reveals**:
+- Origin in Africa (~200,000-300,000 years ago)
+- Out of Africa (~60,000 years ago)
+- Neanderthal admixture (~2-4%)
+- Denisovan admixture (Melanesians, ~5%)
+- Population bottlenecks and expansions
+
+## Key Terms
+
+- **Molecular clock**: Approximately constant rate of molecular evolution
+- **dN/dS**: Ratio of non-synonymous to synonymous substitution rates
+- **Purifying selection**: Removes deleterious mutations (dN/dS < 1)
+- **Positive selection**: Favors beneficial mutations (dN/dS > 1)
+- **Phylogenetic tree**: Diagram showing evolutionary relationships
+- **Bootstrap**: Method to assess tree confidence
+- **Ortholog**: Genes in different species from common ancestor
+- **Paralog**: Duplicated genes within species
+- **Synteny**: Conserved gene order between species
+- **Conservation**: Maintenance of sequence similarity due to functional constraint
+
+## Practice Questions
+
+1. What is the molecular clock and what does it assume?
+
+2. What does a dN/dS ratio of 0.1 indicate? What about 2.0?
+
+3. Why do synonymous sites evolve faster than non-synonymous sites?
+
+4. Explain why pseudogenes evolve rapidly.
+
+5. What information do phylogenetic trees provide?
+
+6. How is bootstrapping used to assess confidence in phylogenetic trees?
+
+7. Why are orthologous genes more likely to have similar functions than paralogous genes?
+
+8. How can molecular evolution identify functionally important genomic regions?
+
+9. What molecular evidence indicates that humans interbred with Neanderthals?
+
+10. Why is the molecular clock "approximate" rather than exact?
+
+## Summary
+
+In this chapter, we learned:
+
+- Molecular evolution studies changes in DNA/protein sequences over time
+- The molecular clock allows dating of evolutionary events
+- dN/dS ratio distinguishes neutral, purifying, and positive selection
+- Most molecular evolution is neutral or under purifying selection
+- Positive selection is rare but important for adaptation
+- Phylogenetic trees show evolutionary relationships
+- Multiple methods exist for tree construction
+- Molecular phylogenetics resolves evolutionary relationships
+- Comparative genomics identifies functional elements
+- Human evolution revealed through molecular comparisons
+- Molecular data tracks pathogen spread and evolution
+
+Molecular evolution provides a framework for understanding genome function, adaptation, and the history of life—essential for interpreting genomic data.
+
+## Further Reading
+
+- Nei, M. and Kumar, S. (2000). *Molecular Evolution and Phylogenetics*. Oxford University Press.
+- Yang, Z. (2014). *Molecular Evolution: A Statistical Approach*. Oxford University Press.
+- Felsenstein, J. (2004). *Inferring Phylogenies*. Sinauer Associates.
+- Kimura, M. (1983). *The Neutral Theory of Molecular Evolution*. Cambridge University Press.
+- Green, R.E. et al. (2010). "A draft sequence of the Neandertal genome." *Science* 328: 710-722.
