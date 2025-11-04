@@ -50,6 +50,7 @@ book:
         - ch14-epigenetics.qmd
         - ch14a-metabolomics.qmd
         - ch14b-noncoding-rna.qmd
+        - ch14b1-mirna-mechanisms.qmd
         - ch14c-protein-structure.qmd
 
     - part: "Part V – Experimental Tools and Applications"
