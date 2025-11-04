@@ -1,0 +1,442 @@
+# Cancer Genomics
+
+## Introduction
+
+Cancer is fundamentally a disease of the genome. Understanding cancer at the genomic level has revolutionized diagnosis, prognosis, and treatment. **Cancer genomics** studies the genetic and epigenetic alterations that drive cancer development and progression.
+
+## Cancer as a Genetic Disease
+
+### The Hallmarks of Cancer
+
+**Classic hallmarks** (Hanahan & Weinberg):
+1. Sustained proliferative signaling
+2. Evading growth suppressors
+3. Resisting cell death
+4. Enabling replicative immortality
+5. Inducing angiogenesis
+6. Activating invasion and metastasis
+
+**Emerging hallmarks**:
+7. Deregulating cellular energetics
+8. Avoiding immune destruction
+9. Genome instability and mutation
+10. Tumor-promoting inflammation
+
+**Enabling characteristics**:
+- Genome instability
+- Tumor-promoting inflammation
+
+### Somatic vs. Germline Mutations
+
+**Somatic mutations**:
+- Occur in body cells
+- Not inherited
+- Found only in tumor
+- ~90-95% of cancers
+
+**Germline mutations**:
+- Inherited from parents
+- In all cells
+- Increase cancer risk
+- ~5-10% of cancers
+
+**Examples of inherited cancer syndromes**:
+- BRCA1/BRCA2: Breast/ovarian cancer
+- Lynch syndrome: Colorectal cancer
+- Li-Fraumeni syndrome (TP53): Multiple cancers
+- Retinoblastoma (RB1): Eye cancer
+
+## Driver vs. Passenger Mutations
+
+### Driver Mutations
+
+**Definition**: Mutations that confer growth advantage
+
+**Characteristics**:
+- Positively selected
+- Recurrent across patients
+- In cancer genes
+- Functional impact
+
+**Examples**:
+- KRAS mutations (colon, lung, pancreatic cancer)
+- TP53 mutations (most cancers)
+- EGFR mutations (lung cancer)
+- BRAF V600E (melanoma)
+
+### Passenger Mutations
+
+**Definition**: Mutations with no selective advantage
+
+**Characteristics**:
+- Random accumulation
+- No functional impact on cancer
+- Unique to each tumor
+- Most mutations are passengers
+
+**Challenge**: Distinguishing drivers from passengers
+
+**Typical tumor**:
+- 4-5 driver mutations
+- 50-100 total mutations (solid tumors)
+- Thousands in some cancers (e.g., melanoma, lung cancer from smoking)
+
+## Classes of Cancer Genes
+
+### Oncogenes
+
+**Definition**: Genes that promote cell growth when activated
+
+**Mechanism**: Gain-of-function mutations
+
+**Examples**:
+
+**RAS family** (KRAS, NRAS, HRAS):
+- GTPases in growth signaling
+- Mutations lock in active state
+- Most common oncogenes (~30% of cancers)
+
+**MYC**:
+- Transcription factor
+- Promotes proliferation
+- Amplified in many cancers
+
+**ERBB2 (HER2)**:
+- Receptor tyrosine kinase
+- Amplified in breast cancer
+- Target of trastuzumab (Herceptin)
+
+**BCR-ABL**:
+- Fusion protein from Philadelphia chromosome
+- Constitutively active kinase
+- Causes chronic myeloid leukemia
+- Target of imatinib (Gleevec)
+
+### Tumor Suppressors
+
+**Definition**: Genes that inhibit cell growth
+
+**Mechanism**: Loss-of-function mutations
+
+**Knudson's two-hit hypothesis**:
+- Need to lose both copies
+- First hit: Inherited or somatic
+- Second hit: Somatic
+
+**Examples**:
+
+**TP53** (p53):
+- "Guardian of the genome"
+- Mutated in >50% of cancers
+- Responds to DNA damage
+- Triggers cell cycle arrest or apoptosis
+
+**RB1** (Retinoblastoma):
+- Controls G1/S transition
+- First tumor suppressor identified
+- Loss causes retinoblastoma
+
+**PTEN**:
+- Phosphatase opposing PI3K/AKT
+- Loss activates growth signaling
+- Mutated in many cancers
+
+**APC**:
+- Wnt pathway regulator
+- Mutated in colorectal cancer
+- Familial adenomatous polyposis
+
+### DNA Repair Genes
+
+**Definition**: Genes maintaining genome integrity
+
+**Mechanism**: Loss leads to mutation accumulation
+
+**Examples**:
+
+**BRCA1/BRCA2**:
+- Homologous recombination repair
+- Breast and ovarian cancer predisposition
+- Synthetic lethal with PARP inhibitors
+
+**Mismatch repair genes** (MLH1, MSH2, MSH6, PMS2):
+- Lynch syndrome
+- Colorectal and endometrial cancer
+- Microsatellite instability (MSI)
+
+## Types of Genomic Alterations in Cancer
+
+### Point Mutations
+
+**Single nucleotide variants** (SNVs)
+
+**Hotspots**: Specific positions frequently mutated
+- BRAF V600E
+- PIK3CA H1047R
+- KRAS G12D
+
+### Copy Number Alterations (CNAs)
+
+**Amplifications**: Extra copies of genes
+- MYC amplification
+- ERBB2 (HER2) amplification
+- EGFR amplification
+
+**Deletions**: Loss of genes
+- CDKN2A deletion (p16)
+- PTEN deletion
+
+### Chromosomal Rearrangements
+
+**Translocations**:
+- BCR-ABL (Philadelphia chromosome)
+- EML4-ALK (lung cancer)
+- TMPRSS2-ERG (prostate cancer)
+
+**Inversions, deletions, duplications**
+
+### Chromothripsis
+
+**Definition**: Massive chromosomal rearrangement in single event
+
+**Characteristics**:
+- Thousands of breakpoints
+- Localized to one or few chromosomes
+- Like chromosome "shattering and stitching back"
+- Found in ~2-3% of cancers
+
+## Tumor Evolution and Heterogeneity
+
+### Clonal Evolution
+
+**Model**: Cancer evolves like species
+
+**Process**:
+1. Normal cell acquires first mutation
+2. Clonal expansion
+3. Additional mutations in subclones
+4. Selection for fittest clones
+5. Iterative process
+
+**Result**: Tumor is mosaic of related clones
+
+### Intratumor Heterogeneity
+
+**Spatial heterogeneity**: Different regions have different mutations
+
+**Temporal heterogeneity**: Tumor evolves over time
+
+**Implications**:
+- Single biopsy may miss important mutations
+- Resistance can evolve from minor clones
+- Challenges for precision medicine
+
+### Liquid Biopsies
+
+**Concept**: Detect tumor DNA in blood (ctDNA)
+
+**Applications**:
+- Monitor treatment response
+- Detect minimal residual disease
+- Track resistance mutations
+- Less invasive than tissue biopsy
+
+## Cancer Genome Sequencing
+
+### The Cancer Genome Atlas (TCGA)
+
+**Project**: Comprehensive molecular characterization of 33 cancer types
+
+**Data**:
+- >11,000 tumors
+- Whole-genome, exome, RNA-seq
+- DNA methylation, copy number
+- Clinical data
+
+**Findings**:
+- Catalog of cancer genes
+- Molecular subtypes
+- Therapeutic targets
+
+### International Cancer Genome Consortium (ICGC)
+
+**Goal**: Genomic characterization of 50 cancer types
+
+**Complementary to TCGA**
+
+### Pediatric Cancer Genomics
+
+**Unique features**:
+- Fewer mutations than adult cancers
+- Structural variants more common
+- Germline predisposition more frequent
+
+**Projects**: Pediatric Cancer Genome Project, TARGET
+
+## Precision Oncology
+
+### Molecular Profiling
+
+**Approach**: Sequence tumor, identify actionable mutations
+
+**Methods**:
+- Targeted gene panels (50-500 genes)
+- Whole-exome sequencing
+- Whole-genome sequencing
+- RNA-seq (fusion detection)
+
+### Targeted Therapies
+
+**Examples**:
+
+**BRAF inhibitors** (vemurafenib, dabrafenib):
+- Target BRAF V600E
+- Melanoma
+
+**EGFR inhibitors** (erlotinib, gefitinib):
+- Target EGFR mutations
+- Lung cancer
+
+**ALK inhibitors** (crizotinib, alectinib):
+- Target EML4-ALK fusion
+- Lung cancer
+
+**PARP inhibitors** (olaparib, rucaparib):
+- Synthetic lethality in BRCA-mutant cancers
+- Breast, ovarian cancer
+
+**HER2 inhibitors** (trastuzumab):
+- Target HER2 amplification
+- Breast cancer
+
+### Resistance Mechanisms
+
+**Primary resistance**: Tumor never responds
+
+**Acquired resistance**: Tumor initially responds, then progresses
+
+**Mechanisms**:
+- On-target: New mutation in target gene
+- Off-target: Activation of bypass pathway
+- Histological transformation
+
+**Example - EGFR-mutant lung cancer**:
+- Initially responds to EGFR inhibitors
+- Acquires T790M mutation → resistance
+- Treat with 3rd-generation inhibitor (osimertinib)
+- Eventually acquires C797S mutation → resistance
+
+**Solution**: Combination therapies
+
+## Immunogenomics
+
+### Tumor Mutational Burden (TMB)
+
+**Definition**: Number of mutations per megabase
+
+**High TMB**:
+- More neoantigens (tumor-specific peptides)
+- More immunogenic
+- Better response to immunotherapy
+
+**Examples**: Melanoma, lung cancer (smoking-related)
+
+### Microsatellite Instability (MSI)
+
+**Cause**: Defective mismatch repair
+
+**Result**: High mutation rate
+
+**Clinical significance**:
+- Lynch syndrome
+- Excellent response to checkpoint inhibitors (pembrolizumab)
+- First tissue-agnostic FDA approval
+
+### Checkpoint Inhibitors
+
+**Targets**:
+- PD-1/PD-L1
+- CTLA-4
+
+**Mechanism**: Release brakes on immune system
+
+**Predictive biomarkers**:
+- PD-L1 expression
+- TMB
+- MSI status
+
+## Liquid Biopsies and ctDNA
+
+**Circulating tumor DNA (ctDNA)**:
+- Tumor DNA in bloodstream
+- From dying tumor cells
+
+**Applications**:
+- Early detection
+- Monitor treatment
+- Detect minimal residual disease
+- Track resistance
+
+**Challenges**:
+- Low concentration (0.01-10% of cell-free DNA)
+- Requires high sensitivity
+
+## Key Terms
+
+- **Driver mutation**: Mutation conferring growth advantage
+- **Passenger mutation**: Neutral mutation
+- **Oncogene**: Gene promoting growth when activated
+- **Tumor suppressor**: Gene inhibiting growth when functional
+- **Clonal evolution**: Iterative mutation and selection
+- **Heterogeneity**: Diversity within tumor
+- **Precision oncology**: Treatment based on tumor molecular profile
+- **Liquid biopsy**: Detection of tumor DNA in blood
+- **TMB**: Tumor mutational burden
+- **MSI**: Microsatellite instability
+
+## Practice Questions
+
+1. What is the difference between driver and passenger mutations?
+
+2. Compare oncogenes and tumor suppressors. Give examples.
+
+3. Explain Knudson's two-hit hypothesis.
+
+4. What is intratumor heterogeneity and why does it matter?
+
+5. How does precision oncology work?
+
+6. What is tumor mutational burden and why does it predict immunotherapy response?
+
+7. Explain how PARP inhibitors work through synthetic lethality.
+
+8. What are liquid biopsies and what are they used for?
+
+9. Why do cancers become resistant to targeted therapies?
+
+10. What was the major contribution of TCGA?
+
+## Summary
+
+In this chapter, we learned:
+
+- Cancer is a disease of the genome caused by accumulating mutations
+- Driver mutations provide growth advantage; passengers are neutral
+- Oncogenes promote growth (gain-of-function); tumor suppressors inhibit it (loss-of-function)
+- Cancers evolve through clonal evolution
+- Intratumor heterogeneity complicates treatment
+- TCGA characterized molecular landscape of 33 cancer types
+- Precision oncology matches therapies to tumor mutations
+- Targeted therapies block specific oncogenic drivers
+- Resistance inevitably emerges through new mutations or bypass pathways
+- Immunotherapy harnesses immune system; TMB and MSI predict response
+- Liquid biopsies detect tumor DNA in blood for monitoring
+
+Cancer genomics has transformed oncology, enabling personalized treatment and improving outcomes.
+
+## Further Reading
+
+- Vogelstein, B. et al. (2013). "Cancer genome landscapes." *Science* 339: 1546-1558.
+- Hanahan, D. and Weinberg, R.A. (2011). "Hallmarks of cancer: the next generation." *Cell* 144: 646-674.
+- TCGA Research Network. (2013). "Comprehensive molecular characterization of clear cell renal cell carcinoma." *Nature* 499: 43-49.
+- Stratton, M.R. et al. (2009). "The cancer genome." *Nature* 458: 719-724.

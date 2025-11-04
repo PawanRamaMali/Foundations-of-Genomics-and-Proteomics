@@ -1,0 +1,511 @@
+# Recombination and Genetic Mapping
+
+## Introduction
+
+In Chapter 3a, we learned that crossing over during meiosis creates genetic diversity. But recombination is more than just a mechanism for diversity—it's also a tool that geneticists use to map the locations of genes on chromosomes.
+
+In this chapter, we'll explore:
+
+- How recombination works at the molecular level
+- Linkage and independent assortment
+- How to create genetic maps
+- The relationship between genetic and physical maps
+- Applications of recombination in genomics
+
+## Recombination: Breaking and Rejoining DNA
+
+### What Is Recombination?
+
+**Recombination** (or **crossing over**) is the exchange of DNA segments between homologous chromosomes during meiosis.
+
+**Where it happens**: Prophase I of meiosis
+
+**Result**: Chromosomes with new combinations of alleles
+
+### The Molecular Mechanism
+
+The process involves several steps:
+
+1. **Chromosome pairing (Synapsis)**:
+   - Homologous chromosomes align along their length
+   - Synaptonemal complex forms between them
+
+2. **Double-strand break formation**:
+   - Enzyme Spo11 creates breaks in DNA
+   - Occurs at "hotspots" throughout genome
+
+3. **Strand invasion**:
+   - Broken strand invades homologous chromosome
+   - Forms a structure called a Holliday junction
+
+4. **Resolution**:
+   - Holliday junction resolved
+   - Results in exchange of DNA segments
+
+### Recombination Frequency
+
+Not all chromosome pairs undergo recombination equally:
+
+- **Average**: 1-3 crossovers per chromosome pair in humans
+- **Variation**: Some chromosomes more than others
+- **Constraints**: At least one crossover per chromosome (ensures proper segregation)
+
+**Sex differences**:
+- More recombination in females than males
+- Female meiosis: ~1.65 crossovers per chromosome on average
+- Male meiosis: ~0.95 crossovers per chromosome on average
+
+## Linkage and Independent Assortment
+
+### Mendel's Law of Independent Assortment
+
+Gregor Mendel observed that different traits assort independently:
+
+**Example**: Pea plants with genes for:
+- Seed color: Y (yellow) or y (green)
+- Seed shape: R (round) or r (wrinkled)
+
+Cross: YyRr × YyRr
+
+**Mendel's prediction**: 9:3:3:1 ratio
+
+This works when genes are on different chromosomes!
+
+### Linked Genes
+
+**Linkage**: Genes on the same chromosome tend to be inherited together.
+
+**Example**: If genes A and B are on the same chromosome:
+
+```
+Chromosome from parent 1: [A------B]
+Chromosome from parent 2: [a------b]
+```
+
+Without recombination, offspring get either [A-B] or [a-b], not [A-b] or [a-B].
+
+**Key insight**: The closer genes are on a chromosome, the less likely recombination occurs between them.
+
+### Recombinant vs. Parental Types
+
+Consider a cross: AB/ab × ab/ab
+
+**Parental types**: Original combinations (AB and ab)
+
+**Recombinant types**: New combinations (Ab and aB)
+
+**Recombination frequency**: Percentage of recombinant offspring
+
+```
+Recombination frequency = (# recombinants / total offspring) × 100%
+```
+
+## Genetic Mapping
+
+### The Principle
+
+**Key idea**: Recombination frequency reflects distance between genes.
+
+- **Close genes**: Low recombination frequency (< 5%)
+- **Far genes**: High recombination frequency (up to 50%)
+- **Very far genes or on different chromosomes**: 50% (independent assortment)
+
+### Map Units (Centimorgans)
+
+**1 map unit (m.u.)** = **1 centimorgan (cM)** = **1% recombination frequency**
+
+**Example**:
+- If genes A and B show 10% recombination
+- They are 10 map units (10 cM) apart
+
+**Named after**: Thomas Hunt Morgan (Drosophila geneticist)
+
+### Three-Point Cross
+
+To determine gene order, use three genes:
+
+**Example**: Genes A, B, C
+
+Possible orders:
+1. A—B—C
+2. A—C—B
+3. B—A—C
+
+**Method**:
+1. Perform cross with heterozygote (ABC/abc)
+2. Score offspring phenotypes
+3. Calculate recombination frequencies for each pair
+4. The gene in the middle will have recombination frequency = sum of the other two
+
+**Example results**:
+- A-B: 5 cM
+- B-C: 8 cM
+- A-C: 13 cM
+
+**Conclusion**: Order is A—B—C (because 5 + 8 = 13)
+
+### Interference
+
+**Observation**: One crossover reduces probability of another nearby.
+
+**Coefficient of coincidence (COC)**:
+```
+COC = Observed double crossovers / Expected double crossovers
+```
+
+**Interference**:
+```
+Interference = 1 - COC
+```
+
+**Positive interference**: COC < 1 (usual case)
+- One crossover inhibits another nearby
+
+**Biological reason**: Mechanical constraints during meiosis
+
+## Limitations of Genetic Mapping
+
+### 1. Maximum Recombination Frequency
+
+Genes far apart on a chromosome show maximum 50% recombination (like independent assortment).
+
+**Why?** Multiple crossovers between distant genes:
+- Even number of crossovers: Parental type
+- Odd number of crossovers: Recombinant type
+- Average out to 50%
+
+**Solution**: Use intermediate genes to map large distances
+
+### 2. Recombination Hotspots
+
+Recombination doesn't occur uniformly:
+
+- **Hotspots**: Regions with high recombination
+- **Coldspots**: Regions with low recombination
+- Centromeres and telomeres have unusual recombination rates
+
+**Implication**: Genetic distance ≠ physical distance
+
+### 3. Sex Differences
+
+Males and females have different recombination rates:
+
+- Females: Higher recombination (more crossovers)
+- Males: Lower recombination (fewer crossovers)
+
+**Result**: Sex-specific genetic maps differ
+
+## Genetic Maps vs. Physical Maps
+
+### Genetic Maps
+
+**Based on**: Recombination frequencies
+
+**Units**: Centimorgans (cM)
+
+**Advantages**:
+- Can be constructed without knowing DNA sequence
+- Useful for identifying disease genes
+
+**Disadvantages**:
+- Resolution limited by number of offspring
+- Affected by recombination hotspots
+
+### Physical Maps
+
+**Based on**: Actual DNA sequence and distance
+
+**Units**: Base pairs (bp), kilobases (kb), megabases (Mb)
+
+**Types**:
+1. **Cytogenetic maps**: Based on chromosome banding patterns
+2. **Restriction maps**: Based on restriction enzyme cut sites
+3. **Sequence maps**: Complete DNA sequence
+
+**Advantages**:
+- Precise
+- Directly reveals genes and sequence
+
+### Relationship Between Maps
+
+**Average in humans**:
+- 1 cM ≈ 1 million base pairs (1 Mb)
+- Total human genome: ~3,000 Mb
+- Total genetic map: ~3,000 cM (30 Morgans)
+
+**But this varies**:
+- Recombination hotspots: 1 cM << 1 Mb
+- Recombination coldspots: 1 cM >> 1 Mb
+
+## Linkage Disequilibrium (LD)
+
+### What Is LD?
+
+**Linkage disequilibrium**: Non-random association of alleles at different loci.
+
+If two SNPs are in LD:
+- Certain allele combinations occur more often than expected by chance
+
+**Example**:
+- SNP 1: Alleles A or T
+- SNP 2: Alleles G or C
+
+If A always occurs with G, and T always occurs with C, they're in perfect LD.
+
+### Why Does LD Exist?
+
+1. **Physical linkage**: SNPs close together on chromosome
+2. **Recent mutation**: Not enough time for recombination to break up association
+3. **Selection**: Certain combinations favored
+4. **Population history**: Founder effects, bottlenecks
+
+### Measuring LD
+
+Two common measures:
+
+**1. D' (D-prime)**:
+- Ranges from 0 to 1
+- D' = 1: No recombination between sites (or no recombinants observed)
+
+**2. r² (r-squared)**:
+- Ranges from 0 to 1
+- r² = 1: Perfect correlation between alleles
+- Used more in association studies
+
+### LD Blocks and Haplotypes
+
+Human genome organized into **LD blocks**:
+- Within blocks: High LD
+- Between blocks: Low LD (recombination hotspots)
+
+**Haplotype**: Set of alleles on same chromosome inherited together
+
+**Example**:
+```
+Block 1: SNP1-SNP2-SNP3
+Common haplotypes:
+- A-G-T (40%)
+- T-C-C (35%)
+- A-C-T (20%)
+- T-G-C (5%)
+```
+
+## Applications of Recombination and Mapping
+
+### 1. Linkage Analysis for Disease Genes
+
+**Strategy**: Track disease through families using genetic markers
+
+**Logic**:
+- If a marker is linked to disease gene
+- Marker and disease co-segregate in families
+
+**Success stories**:
+- Huntington's disease gene (1983-1993)
+- Cystic fibrosis gene (1985-1989)
+- BRCA1 breast cancer gene (1990-1994)
+
+**Modern approach**: Combine linkage analysis with sequencing
+
+### 2. Genome-Wide Association Studies (GWAS)
+
+**Principle**: Use LD to find disease-associated variants
+
+**Logic**:
+- Don't need to test every SNP
+- Test "tag SNPs" that represent LD blocks
+- If tag SNP associated with disease, causal variant is nearby
+
+**Advantages**:
+- Can find disease genes without family data
+- Unbiased genome-wide search
+
+We'll learn more about GWAS in the next chapter on population genetics.
+
+### 3. Evolutionary Studies
+
+Recombination affects evolution:
+
+- **With recombination**: Beneficial mutations can spread independently
+- **Without recombination**: Beneficial mutations compete (Hill-Robertson effect)
+
+**Example**: Y chromosome and mitochondrial DNA lack recombination
+- Y chromosome accumulating deleterious mutations
+- Mitochondrial DNA also susceptible
+
+### 4. Breeding and Agriculture
+
+**Marker-assisted selection**:
+- Identify plants/animals with desired traits using linked markers
+- Faster than waiting to see phenotype
+- Don't need to grow to maturity
+
+**Example**: Select for drought resistance in crops using DNA markers
+
+### 5. Determining Parentage
+
+Recombination creates unique combinations:
+- Used in paternity testing
+- Forensic identification
+- Tracking inheritance of specific alleles
+
+## Recombination in Different Organisms
+
+### Bacteria
+
+Bacteria are haploid and reproduce asexually, but have three recombination mechanisms:
+
+1. **Transformation**: Uptake of DNA from environment
+2. **Transduction**: DNA transfer via virus
+3. **Conjugation**: DNA transfer through pilus
+
+**Use in mapping**: Interrupted mating experiments
+
+### Yeast and Fungi
+
+**Advantages for mapping**:
+- Can analyze all four products of meiosis (tetrad analysis)
+- Large numbers of offspring
+- Short generation time
+
+**Saccharomyces cerevisiae** (baker's yeast):
+- First eukaryotic genome sequenced (1996)
+- Extensive genetic and physical maps
+
+### Drosophila
+
+Thomas Hunt Morgan's fruit flies:
+- First genetic maps (1913)
+- Established that genes are on chromosomes
+- Showed sex-linked inheritance
+
+### Plants
+
+**High recombination rates** in many plants:
+- Arabidopsis: ~4 cM/Mb (4× higher than humans)
+- Tomato: ~3 cM/Mb
+
+**Use**: Excellent for genetic mapping
+
+### Humans
+
+**Challenges**:
+- Long generation time
+- Small family sizes
+- Can't do controlled crosses
+
+**Solutions**:
+- Use population data
+- Study large pedigrees
+- Combine with genomic sequencing
+
+## Recombination and Genome Evolution
+
+### Creating New Allelic Combinations
+
+Recombination shuffles existing variation:
+- Speeds up adaptation
+- Helps purge deleterious mutations
+- Creates diversity for selection
+
+### Ectopic Recombination
+
+**Non-allelic homologous recombination (NAHR)**:
+- Recombination between similar sequences at different locations
+- Can cause deletions, duplications, inversions
+
+**Example**:
+- Human chromosome 22 prone to NAHR
+- Causes DiGeorge syndrome (22q11.2 deletion)
+
+### Gene Conversion
+
+**Gene conversion**: Non-reciprocal transfer of information
+- One allele "converted" to match the other
+- Can bias allele frequencies
+
+**Mechanism**: During recombination, mismatch repair favors one strand
+
+## Computational Tools for Mapping
+
+Modern genomics uses computational approaches:
+
+### Linkage Analysis Software
+
+- **MERLIN**: Multi-point engine for rapid likelihood inference
+- **PLINK**: Whole-genome association analysis
+- **Haploview**: LD and haplotype analysis
+
+### Haplotype Phasing
+
+**Problem**: Genome sequencing gives unordered alleles
+
+**Example**:
+- Heterozygous at SNP1 (A/T) and SNP2 (G/C)
+- But which chromosome has A and which has T?
+- Four possibilities: A-G, T-C or A-C, T-G
+
+**Solutions**:
+- Experimental: Sequence single chromosomes
+- Computational: Statistical phasing (SHAPEIT, Beagle)
+- Family data: Trace inheritance
+
+## Key Terms
+
+- **Recombination (crossing over)**: Exchange of DNA between homologous chromosomes
+- **Linkage**: Genes on same chromosome inherited together
+- **Parental types**: Original allele combinations
+- **Recombinant types**: New allele combinations from crossing over
+- **Genetic map**: Map based on recombination frequencies
+- **Physical map**: Map based on DNA sequence and distance
+- **Centimorgan (cM)**: Unit of genetic distance (1% recombination)
+- **Linkage disequilibrium (LD)**: Non-random association of alleles
+- **Haplotype**: Set of alleles on same chromosome inherited together
+- **Hotspot**: Region with high recombination rate
+- **Interference**: One crossover reducing probability of another nearby
+
+## Practice Questions
+
+1. What is the relationship between recombination frequency and genetic distance?
+
+2. Two genes show 8% recombination frequency. How many map units apart are they?
+
+3. Why is the maximum recombination frequency 50%, not 100%?
+
+4. Explain the difference between a genetic map and a physical map.
+
+5. What is linkage disequilibrium and why does it matter for GWAS?
+
+6. In a three-point cross, genes A-B show 5% recombination, B-C show 10% recombination, and A-C show 15% recombination. What is the gene order?
+
+7. Why is recombination important for evolution?
+
+8. What are recombination hotspots and why do they complicate genetic mapping?
+
+9. How does linkage analysis help identify disease genes?
+
+10. Why do males and females have different genetic maps?
+
+## Summary
+
+In this chapter, we learned:
+
+- Recombination exchanges DNA segments between homologous chromosomes during meiosis
+- Linked genes on the same chromosome tend to be inherited together
+- Recombination frequency reflects distance between genes
+- Genetic maps measure distance in centimorgans based on recombination
+- Physical maps measure distance in base pairs based on DNA sequence
+- Linkage disequilibrium describes non-random association of alleles
+- Recombination enables genetic mapping and disease gene identification
+- GWAS relies on LD to find disease-associated variants
+- Recombination rates vary across the genome and between sexes
+- Recombination is crucial for evolution and genetic diversity
+
+Understanding recombination and genetic mapping provides the foundation for population genetics, association studies, and understanding how genomes evolve.
+
+## Further Reading
+
+- Sturtevant, A.H. (1913). "The linear arrangement of six sex-linked factors in Drosophila, as shown by their mode of association." *Journal of Experimental Zoology* 14: 43-59. [Classic paper on first genetic map]
+- Kong, A. et al. (2010). "Fine-scale recombination rate differences between sexes, populations and individuals." *Nature* 467: 1099-1103.
+- International HapMap Consortium. (2005). "A haplotype map of the human genome." *Nature* 437: 1299-1320.
+- Coop, G. and Przeworski, M. (2007). "An evolutionary view of human recombination." *Nature Reviews Genetics* 8: 23-34.

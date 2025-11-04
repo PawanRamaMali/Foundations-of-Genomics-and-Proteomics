@@ -1,0 +1,431 @@
+# Non-coding RNA Biology
+
+## Introduction
+
+For decades, RNA was viewed simply as an intermediate between DNA and protein. We now know this is far from the truth—**non-coding RNAs (ncRNAs)** are functional molecules that regulate gene expression, modify other RNAs, provide scaffolds, and much more.
+
+In fact, while only ~2% of the human genome codes for proteins, at least **75% is transcribed** into RNA. Most of this RNA doesn't code for proteins but performs regulatory and structural functions.
+
+This chapter covers:
+- Classes of non-coding RNAs
+- Functions and mechanisms
+- RNA modifications (epitranscriptomics)
+- Methods to study RNA
+- Clinical relevance
+
+## Why Non-coding RNAs Matter
+
+**Key facts**:
+- >60,000 ncRNA genes in human genome
+- More ncRNA genes than protein-coding genes!
+- Critical for development, disease, evolution
+- Therapeutic targets and biomarkers
+
+**Paradigm shift**: RNA is not just a messenger—it's a major regulatory layer
+
+## Classes of Non-coding RNA
+
+### 1. Ribosomal RNA (rRNA)
+
+**Function**: Structural and catalytic components of ribosomes
+
+**Key facts**:
+- Most abundant RNA in cells (~80% of total RNA)
+- Three in prokaryotes (16S, 23S, 5S)
+- Four in eukaryotes (18S, 28S, 5.8S, 5S)
+- **rRNA is a ribozyme**: Catalyzes peptide bond formation
+- Highly conserved (used for phylogenetics)
+
+**Clinical relevance**: Antibiotic targets (e.g., streptomycin binds 16S rRNA)
+
+### 2. Transfer RNA (tRNA)
+
+**Function**: Adaptor molecules linking codons to amino acids
+
+**Key facts**:
+- ~500 tRNA genes in humans
+- Cloverleaf secondary structure, L-shaped tertiary structure
+- Anticodon pairs with mRNA codon
+- Charged with amino acid by aminoacyl-tRNA synthetases
+- Modified nucleotides (>100 types!)
+
+**Wobble pairing**: tRNA anticodon can pair with multiple codons
+- Explains why 45 tRNAs sufficient for 61 codons
+
+### 3. Small Nuclear RNA (snRNA)
+
+**Function**: Components of spliceosome (splicing machinery)
+
+**Key snRNAs**:
+- **U1, U2, U4, U5, U6**: Major spliceosome (remove U2-type introns)
+- **U11, U12, U4atac, U6atac**: Minor spliceosome (remove U12-type introns)
+
+**Mechanism**:
+- Recognize splice sites
+- Catalyze splicing reactions
+- snRNAs are ribozymes
+
+**Disease**: Mutations in snRNAs cause splicing disorders
+
+### 4. Small Nucleolar RNA (snoRNA)
+
+**Function**: Guide chemical modifications of rRNAs and snRNAs
+
+**Two classes**:
+- **C/D box snoRNAs**: Guide 2'-O-methylation
+- **H/ACA box snoRNAs**: Guide pseudouridylation
+
+**Mechanism**:
+- Base-pair with target RNA
+- Recruit modification enzymes
+- ~200 snoRNAs in humans
+
+**Unusual**: Some snoRNAs encoded in introns of host genes
+
+### 5. MicroRNA (miRNA)
+
+**Function**: Post-transcriptional gene regulation
+
+**Key facts**:
+- ~2,600 miRNAs in humans
+- ~22 nucleotides long
+- Regulate >60% of protein-coding genes
+- Typically repress translation or promote mRNA decay
+
+**Biogenesis**:
+1. **pri-miRNA**: Transcribed by Pol II, contains hairpin
+2. **pre-miRNA**: Cleaved by Drosha (nucleus), ~70 nt hairpin
+3. **Mature miRNA**: Exported, cleaved by Dicer (cytoplasm), ~22 nt
+4. **RISC loading**: Loaded into RNA-Induced Silencing Complex
+
+**Mechanism**:
+- miRNA guides RISC to target mRNA
+- Base-pairing (imperfect) with 3' UTR
+- Seed sequence (nucleotides 2-7) crucial for targeting
+- Recruits silencing machinery
+
+**One miRNA → many targets**: Each miRNA regulates hundreds of genes
+
+**Clinical relevance**:
+- Dysregulated in cancer (oncomiRs, tumor suppressors)
+- Biomarkers (circulating miRNAs)
+- Therapeutic targets (anti-miRs, miRNA mimics)
+
+### 6. Small Interfering RNA (siRNA)
+
+**Function**: Gene silencing (RNAi pathway)
+
+**Origin**:
+- Exogenous (viruses, transposons, synthetic)
+- Processed from long dsRNA by Dicer
+- ~21-23 nucleotides
+
+**Mechanism**:
+- Similar to miRNA
+- But typically perfect complementarity to target
+- Cleaves target mRNA (stronger silencing than miRNA)
+
+**Applications**:
+- Research tool (knockdown genes)
+- Therapeutics (Patisiran: first FDA-approved siRNA drug, 2018)
+
+**RNAi pathway** (discovered by Fire & Mello, Nobel Prize 2006):
+```
+dsRNA → Dicer → siRNA → RISC → target cleavage
+```
+
+### 7. Piwi-Interacting RNA (piRNA)
+
+**Function**: Transposon silencing in germline
+
+**Key facts**:
+- 24-31 nucleotides (longer than miRNA/siRNA)
+- Millions of unique piRNAs
+- Bind PIWI proteins
+- Found in germline cells
+
+**Mechanism**:
+- Recognize transposon transcripts
+- Promote DNA methylation and heterochromatin
+- Protect genome integrity
+
+**Importance**: Mutations cause infertility in model organisms
+
+### 8. Long Non-coding RNA (lncRNA)
+
+**Function**: Diverse regulatory roles
+
+**Key facts**:
+- >200 nucleotides long
+- >20,000 lncRNAs in humans (more than protein-coding genes!)
+- Often tissue-specific expression
+- Poorly conserved (but some highly conserved)
+
+**Mechanisms**:
+1. **Scaffolds**: Bring proteins together
+2. **Guides**: Recruit proteins to specific DNA loci
+3. **Decoys**: Sequester proteins or miRNAs
+4. **Enhancers**: Regulate nearby gene transcription
+
+**Famous examples**:
+
+**XIST** (X-inactive specific transcript):
+- ~17 kb lncRNA
+- Coats entire X chromosome
+- Triggers X-inactivation in female mammals
+- Silences one X chromosome (dosage compensation)
+
+**HOTAIR** (HOX transcript antisense RNA):
+- Recruits chromatin modifiers (PRC2)
+- Regulates HOX genes
+- Overexpressed in cancer
+
+**MALAT1** (Metastasis associated lung adenocarcinoma transcript 1):
+- Nuclear lncRNA
+- Regulates splicing
+- Cancer association
+
+**H19**:
+- Imprinted lncRNA
+- Acts as miRNA sponge
+- Developmental regulator
+
+**Challenges**:
+- Many lncRNAs, few well-characterized
+- Function often unclear
+- Some may be transcriptional noise
+
+### 9. Circular RNA (circRNA)
+
+**Function**: Gene regulation, miRNA sponges
+
+**Key facts**:
+- Covalently closed loops (no 5' or 3' end)
+- Formed by back-splicing
+- Very stable (no exonuclease degradation)
+- >100,000 in humans
+
+**Mechanism**:
+- Act as miRNA sponges
+- Regulate translation
+- Some translated to proteins!
+
+**Example**: **circRNA CDR1as**
+- Contains >70 miR-7 binding sites
+- Sponges miR-7
+- Expressed in brain
+
+**Emerging field**: Function of most circRNAs unknown
+
+### 10. Enhancer RNA (eRNA)
+
+**Function**: Transcribed from enhancers, activate transcription
+
+**Key facts**:
+- Transcribed from active enhancers
+- Often bidirectional
+- Unstable (short-lived)
+- Correlate with gene activation
+
+**Mechanism**:
+- Help recruit transcriptional machinery
+- Promote enhancer-promoter looping
+- Activate transcription
+
+## RNA Modifications (Epitranscriptomics)
+
+Just as DNA can be modified (epigenetics), **RNA can be chemically modified** too!
+
+### Types of Modifications
+
+**>150 types of RNA modifications** known, including:
+
+1. **m6A** (N6-methyladenosine):
+   - Most abundant mRNA modification
+   - Affects splicing, stability, translation
+   - "Writers": METTL3/METTL14 complex
+   - "Erasers": FTO, ALKBH5
+   - "Readers": YTH domain proteins
+
+2. **m5C** (5-methylcytosine):
+   - Found in tRNA, rRNA, mRNA
+   - Affects RNA stability
+
+3. **Pseudouridine (Ψ)**:
+   - Most abundant modification
+   - "Fifth nucleoside"
+   - Abundant in rRNA, tRNA, snRNA
+
+4. **Inosine (I)** (from A-to-I editing):
+   - RNA editing by ADAR enzymes
+   - Decoded as guanosine
+   - Can recodeamino acids!
+
+**Epitranscriptomics**: Study of RNA modifications and their functions
+
+**Methods to detect**:
+- **m6A-seq, MeRIP-seq**: Map m6A
+- **CLIP-seq**: Identify RNA-protein interactions
+- **Mass spectrometry**: Identify novel modifications
+
+**Clinical relevance**:
+- Dysregulated in cancer
+- Neurological disorders
+- Metabolic diseases
+
+## Methods to Study ncRNAs
+
+### RNA Sequencing (RNA-seq)
+
+**Standard RNA-seq**:
+- Captures poly(A)+ RNA (mostly mRNA)
+- Misses most ncRNAs!
+
+**Total RNA-seq**:
+- Depletes rRNA
+- Captures other RNAs
+- Detects lncRNAs
+
+**Small RNA-seq**:
+- Size-selects small RNAs (18-40 nt)
+- Identifies miRNAs, siRNAs, piRNAs
+
+### RNA Structure Probing
+
+**Methods**:
+- **SHAPE**: Detects flexible nucleotides
+- **DMS-seq**: Probes accessible bases
+- **PARS**: Detects double-stranded RNA
+
+**Reveals**:
+- Secondary and tertiary structure
+- Protein binding sites
+- Functional conformations
+
+### RNA-Protein Interactions
+
+**CLIP-seq** (Crosslinking and Immunoprecipitation):
+- UV-crosslink RNA to protein
+- Immunoprecipitate protein
+- Sequence bound RNAs
+- Maps RNA-protein interaction sites
+
+**Variants**: PAR-CLIP, iCLIP, eCLIP
+
+### Functional Studies
+
+**Knockdown**:
+- siRNA, shRNA, antisense oligonucleotides (ASOs)
+- Deplete target RNA
+
+**Overexpression**:
+- Plasmids, lentivirus
+- Increase target RNA
+
+**CRISPR**:
+- CRISPRi: Repress transcription
+- CRISPRa: Activate transcription
+- CRISPR knockout: Delete RNA gene
+
+## Functions of ncRNAs: Summary
+
+| ncRNA Class | Size | Main Function |
+|-------------|------|---------------|
+| rRNA | 100-5000 nt | Ribosome structure, catalysis |
+| tRNA | 76-90 nt | Translation adapter |
+| snRNA | 100-300 nt | Splicing |
+| snoRNA | 60-300 nt | RNA modifications |
+| miRNA | ~22 nt | Gene regulation |
+| siRNA | ~21 nt | Gene silencing (RNAi) |
+| piRNA | 24-31 nt | Transposon silencing |
+| lncRNA | >200 nt | Diverse regulatory roles |
+| circRNA | Variable | miRNA sponges, regulation |
+| eRNA | 50-2000 nt | Transcriptional activation |
+
+## Clinical Applications
+
+### Diagnostics
+
+**Biomarkers**:
+- Circulating miRNAs in blood
+- Cancer detection and prognosis
+- Non-invasive prenatal testing
+
+**Example**: miR-141 elevated in prostate cancer
+
+### Therapeutics
+
+**Approved drugs**:
+- **Patisiran** (siRNA): Hereditary transthyretin amyloidosis
+- **Givosiran** (siRNA): Acute hepatic porphyria
+- **Nusinersen** (ASO): Spinal muscular atrophy
+
+**In development**:
+- Anti-miRs (inhibit miRNAs)
+- miRNA mimics (restore miRNA function)
+- ASOs (antisense oligonucleotides)
+
+**Challenges**:
+- Delivery to target tissues
+- Avoiding off-target effects
+- Stability in bloodstream
+
+## Key Terms
+
+- **Non-coding RNA (ncRNA)**: Functional RNA not translated to protein
+- **miRNA**: Small RNA regulating gene expression
+- **lncRNA**: Long non-coding RNA with diverse functions
+- **siRNA**: Small interfering RNA for gene silencing
+- **piRNA**: Piwi-interacting RNA silencing transposons
+- **circRNA**: Circular RNA formed by back-splicing
+- **Ribozyme**: Catalytic RNA
+- **RNAi**: RNA interference pathway
+- **RISC**: RNA-Induced Silencing Complex
+- **Epitranscriptomics**: Study of RNA modifications
+- **m6A**: N6-methyladenosine, most common mRNA modification
+
+## Practice Questions
+
+1. What percentage of the human genome is transcribed, and what percentage codes for proteins?
+
+2. What is the difference between miRNA and siRNA?
+
+3. Describe the biogenesis of miRNA from pri-miRNA to mature miRNA.
+
+4. What is XIST and what is its function?
+
+5. How do miRNAs regulate gene expression?
+
+6. What is a ribozyme? Give two examples.
+
+7. What are the main classes of lncRNA functions?
+
+8. What is epitranscriptomics?
+
+9. How has RNAi been used therapeutically?
+
+10. Why are circRNAs more stable than linear RNAs?
+
+## Summary
+
+In this chapter, we learned:
+
+- Non-coding RNAs are functional molecules, not just "junk"
+- rRNA and tRNA are essential for translation
+- snRNAs and snoRNAs process other RNAs
+- miRNAs and siRNAs regulate gene expression
+- piRNAs silence transposons in germline
+- lncRNAs have diverse regulatory roles (scaffolds, guides, decoys)
+- circRNAs are stable, act as miRNA sponges
+- RNA can be chemically modified (epitranscriptomics)
+- ncRNAs are biomarkers and therapeutic targets
+- Multiple methods exist to study ncRNA structure and function
+
+Non-coding RNAs represent a major regulatory layer in cells, essential for development, disease, and evolution. Understanding ncRNAs is crucial for modern genomics and molecular biology.
+
+## Further Reading
+
+- Morris, K.V. and Mattick, J.S. (2014). "The rise of regulatory RNA." *Nature Reviews Genetics* 15: 423-437.
+- Esteller, M. (2011). "Non-coding RNAs in human disease." *Nature Reviews Genetics* 12: 861-874.
+- Roundtree, I.A. et al. (2017). "Dynamic RNA modifications in gene expression regulation." *Cell* 169: 1187-1200.
+- Fire, A. et al. (1998). "Potent and specific genetic interference by double-stranded RNA in Caenorhabditis elegans." *Nature* 391: 806-811. [Nobel Prize work on RNAi]

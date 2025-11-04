@@ -1,0 +1,400 @@
+# Functional Genomics
+
+## Introduction
+
+Sequencing genomes is just the beginning. **Functional genomics** asks: What do all these genes do? How do they work together? When and where are they expressed?
+
+This chapter covers experimental approaches to systematically determine gene function across entire genomes.
+
+## What Is Functional Genomics?
+
+**Definition**: Genome-wide characterization of gene function
+
+**Contrasts with**:
+- **Forward genetics**: Phenotype → Gene
+- **Reverse genetics**: Gene → Phenotype
+- **Functional genomics**: ALL genes → ALL phenotypes (systematically)
+
+**Goals**:
+- Assign function to every gene
+- Understand gene regulatory networks
+- Identify drug targets
+- Model diseases
+
+## Gene Knockout and Knockdown
+
+### Gene Knockout
+
+**Definition**: Complete inactivation of a gene
+
+**Methods**:
+
+**1. Homologous recombination** (traditional):
+- Replace gene with selectable marker
+- Used in mouse ES cells
+- Nobel Prize 2007 (Capecchi, Evans, Smithies)
+- Slow and expensive
+
+**2. CRISPR-Cas9** (modern):
+- Guide RNA directs Cas9 nuclease to target
+- Creates double-strand break
+- Non-homologous end joining introduces indels
+- Fast, cheap, efficient
+- Nobel Prize 2020 (Doudna, Charpentier)
+
+**Genome-wide knockout screens**:
+- Create library of knockouts for every gene
+- Select for phenotype (survival, growth, etc.)
+- Sequence survivors to identify important genes
+
+**Example**: Cancer drug resistance screens
+- Knockout each gene
+- Treat with drug
+- Which knockouts survive?
+- Identifies drug resistance mechanisms
+
+### Gene Knockdown
+
+**Definition**: Reduce (not eliminate) gene expression
+
+**Methods**:
+
+**1. RNA interference (RNAi)**:
+- siRNA or shRNA
+- Degrades mRNA
+- Partial, transient knockdown
+
+**2. CRISPRi (CRISPR interference)**:
+- Dead Cas9 (dCas9) without nuclease activity
+- Blocks transcription
+- Reversible, tunable
+
+**3. Antisense oligonucleotides (ASOs)**:
+- Synthetic DNA/RNA complementary to target
+- Block translation or splicing
+
+**Advantages over knockout**:
+- Study essential genes (knockout would be lethal)
+- Dose-dependent effects
+- Faster
+
+## Overexpression Studies
+
+### Gain-of-Function
+
+**Approach**: Increase gene expression
+
+**Methods**:
+- Plasmid transfection
+- Lentiviral transduction
+- CRISPRa (CRISPR activation)
+
+**Applications**:
+- Identify oncogenes (cancer-causing genes)
+- Screen for beneficial genes
+- Study protein interactions
+
+**Example**: Yamanaka factors
+- Overexpression of Oct4, Sox2, Klf4, c-Myc
+- Converts somatic cells to induced pluripotent stem cells (iPSCs)
+- Nobel Prize 2012
+
+## CRISPR Screens
+
+**Power**: Genome-scale functional screens
+
+### Pooled CRISPR Screens
+
+**Process**:
+1. Create library of sgRNAs targeting every gene
+2. Transduce cells with Cas9 + sgRNA library
+3. Select for phenotype (drug resistance, growth, etc.)
+4. Sequence sgRNAs in survivors vs. non-survivors
+5. Identify enriched/depleted genes
+
+**Types**:
+
+**Positive selection**: Genes that when knocked out, provide advantage
+- Example: Drug resistance genes
+
+**Negative selection**: Genes that when knocked out, cause disadvantage
+- Example: Essential genes, tumor suppressors
+
+**Applications**:
+- Identify essential genes
+- Find drug targets
+- Understand genetic interactions
+- Map signaling pathways
+
+### Arrayed CRISPR Screens
+
+**Approach**: One gene per well
+
+**Process**:
+1. Knockout genes individually
+2. Measure phenotype for each
+3. High-throughput imaging or assays
+
+**Advantages**:
+- Detailed phenotyping possible
+- Can track individual cells
+- Spatial information
+
+**Example**: Cell morphology screens
+- Knockout each gene
+- Image cells
+- Identify genes affecting cell shape, division, migration
+
+## Perturb-seq and CROP-seq
+
+**Concept**: Combine CRISPR perturbations with single-cell RNA-seq
+
+**Process**:
+1. Deliver sgRNAs to cells (each cell gets one sgRNA)
+2. Perform single-cell RNA-seq
+3. Identify which sgRNA each cell received (from sgRNA barcode)
+4. Analyze transcriptome changes from each perturbation
+
+**Power**: Measure genome-wide response to perturbations at single-cell resolution
+
+**Applications**:
+- Map gene regulatory networks
+- Identify genetic interactions
+- Understand cell state transitions
+
+## Expression Profiling
+
+### Microarrays
+
+**Concept**: Measure expression of thousands of genes simultaneously
+
+**Process**:
+1. Extract RNA
+2. Convert to labeled cDNA
+3. Hybridize to array of gene-specific probes
+4. Measure fluorescence
+
+**Limitations**: Replaced by RNA-seq
+
+### RNA Sequencing (RNA-seq)
+
+**Advantages over microarrays**:
+- Higher dynamic range
+- Detects novel transcripts
+- Identifies splice variants
+- Lower background
+- Quantitative
+
+**Types**:
+- **Bulk RNA-seq**: Average across many cells
+- **Single-cell RNA-seq**: Individual cell transcriptomes
+- **Spatial transcriptomics**: Location information preserved
+
+**Applications**:
+- Compare conditions (disease vs. healthy)
+- Identify differentially expressed genes
+- Discover new transcripts
+- Study alternative splicing
+
+## Reporter Assays
+
+**Concept**: Test regulatory elements
+
+**Types**:
+
+**1. Promoter reporters**:
+- Clone promoter upstream of reporter gene (GFP, luciferase)
+- Measure reporter expression
+- Identifies regulatory elements
+
+**2. Massively parallel reporter assays (MPRAs)**:
+- Test thousands of sequences simultaneously
+- Each variant barcoded
+- Measure activity by sequencing barcodes in RNA
+
+**Applications**:
+- Identify active enhancers
+- Map transcription factor binding sites
+- Test disease-associated variants
+
+## Protein-DNA Interactions
+
+### ChIP-seq
+
+**ChIP-seq**: Chromatin Immunoprecipitation + sequencing
+
+**Process**:
+1. Crosslink proteins to DNA
+2. Fragment DNA
+3. Immunoprecipitate protein of interest
+4. Sequence bound DNA
+
+**Applications**:
+- Map transcription factor binding sites
+- Identify histone modifications
+- Study chromatin structure
+
+**Variants**:
+- **ChIP-exo**: Higher resolution
+- **CUT&RUN**: Lower background
+- **CUT&TAG**: Improved sensitivity
+
+### DAP-seq
+
+**DNA Affinity Purification sequencing**:
+- In vitro binding of TF to genomic DNA
+- No antibody needed
+- Maps potential binding sites
+
+## Protein-Protein Interactions
+
+### Yeast Two-Hybrid (Y2H)
+
+**Concept**: Detect interactions in yeast
+
+**Components**:
+- DNA-binding domain fused to protein A
+- Activation domain fused to protein B
+- If A and B interact, transcription activates reporter
+
+**Limitations**:
+- High false positives
+- Misses membrane proteins
+- Non-physiological (in yeast nucleus)
+
+### Affinity Purification-Mass Spectrometry (AP-MS)
+
+**Process**:
+1. Express tagged protein (FLAG, HA, etc.)
+2. Immunoprecipitate
+3. Identify interacting proteins by mass spec
+
+**Advantages**:
+- Detects complexes
+- Quantitative
+- Physiological conditions
+
+### Proximity Labeling (BioID, APEX)
+
+**Concept**: Tag nearby proteins with biotin
+
+**Process**:
+1. Fuse protein of interest to biotin ligase
+2. Add biotin
+3. Nearby proteins get biotinylated
+4. Purify and identify by mass spec
+
+**Advantage**: Works in living cells, captures transient interactions
+
+## High-Throughput Phenotyping
+
+### Cell Painting
+
+**Concept**: Stain cells with multiple dyes, image, extract features
+
+**Uses**:
+- Phenotypic drug screening
+- Identify compound mechanisms
+- Classify genetic perturbations
+
+### Optical Pooled Screens
+
+**Concept**: Combine perturbations with in situ sequencing
+
+**Process**:
+1. Perturb cells (CRISPR, drugs)
+2. Image phenotypes
+3. Sequence in situ to identify perturbation
+4. Link phenotype to genotype
+
+## Model Organism Resources
+
+### International Mouse Phenotyping Consortium (IMPC)
+
+**Goal**: Knockout every mouse gene and phenotype
+
+**Progress**: >8,000 genes knocked out and phenotyped
+
+**Data**: Viability, morphology, behavior, metabolism, etc.
+
+### Fly Stocks
+
+**Drosophila Gene Disruption Project**: Insertional mutants for most genes
+
+### Worm and Yeast Collections
+
+**C. elegans**: Gene knockout consortium
+
+**Yeast**: Deletion collection covers ~all non-essential genes
+
+## Synthetic Lethality
+
+**Concept**: Two genes that are non-essential individually, but lethal together
+
+**Application**:
+- Cancer therapy
+- If cancer cells have mutation in gene A
+- Target gene B (synthetic lethal partner)
+- Normal cells (with functional A) unaffected
+
+**Example**: BRCA-mutant cancers + PARP inhibitors
+- BRCA1/2 mutations impair DNA repair
+- PARP inhibition creates synthetic lethality
+- Clinical success (olaparib approved 2014)
+
+## Key Terms
+
+- **Functional genomics**: Genome-wide study of gene function
+- **CRISPR**: Gene editing tool
+- **CRISPRi/a**: CRISPR interference/activation
+- **RNAi**: RNA interference knockdown
+- **Perturb-seq**: CRISPR + single-cell RNA-seq
+- **ChIP-seq**: Map protein-DNA interactions
+- **RNA-seq**: Transcriptome sequencing
+- **Synthetic lethality**: Two genes lethal together
+- **AP-MS**: Affinity purification mass spectrometry
+
+## Practice Questions
+
+1. What is the difference between gene knockout and knockdown?
+
+2. How does CRISPR-Cas9 work for gene editing?
+
+3. What are the advantages of CRISPR screens over traditional approaches?
+
+4. Explain how Perturb-seq combines perturbations with transcriptomics.
+
+5. What is synthetic lethality and how is it used in cancer therapy?
+
+6. Compare ChIP-seq and RNA-seq—what does each measure?
+
+7. What are the advantages of RNA-seq over microarrays?
+
+8. How do pooled CRISPR screens work?
+
+9. What is the goal of the International Mouse Phenotyping Consortium?
+
+10. Explain how proximity labeling (BioID) detects protein interactions.
+
+## Summary
+
+In this chapter, we learned:
+
+- Functional genomics systematically determines gene function genome-wide
+- CRISPR enables rapid gene knockout and large-scale screens
+- Knockdown (RNAi, CRISPRi) reduces gene expression
+- Perturb-seq combines perturbations with single-cell transcriptomics
+- RNA-seq measures genome-wide expression
+- ChIP-seq maps protein-DNA interactions
+- Protein interactions studied by Y2H, AP-MS, proximity labeling
+- Model organism resources provide phenotype data
+- Synthetic lethality offers therapeutic opportunities
+- Functional genomics bridges genotype and phenotype
+
+These approaches are transforming our understanding of gene function and enabling precision medicine.
+
+## Further Reading
+
+- Shalem, O. et al. (2015). "High-throughput functional genomics using CRISPR-Cas9." *Nature Reviews Genetics* 16: 299-311.
+- Dixit, A. et al. (2016). "Perturb-Seq: Dissecting Molecular Circuits with Scalable Single-Cell RNA Profiling of Pooled Genetic Screens." *Cell* 167: 1853-1866.
+- Lord, C.J. and Ashworth, A. (2017). "PARP inhibitors: Synthetic lethality in the clinic." *Science* 355: 1152-1158.
